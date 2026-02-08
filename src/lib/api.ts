@@ -1,5 +1,5 @@
-// Real-time API service for fetching AI news and YouTube videos
-// All calls happen client-side (static export compatible)
+// Real-time data service using FREE RSS feeds (no API keys needed)
+// Google News RSS + YouTube RSS — all fetched client-side via CORS proxy
 
 export interface NewsArticle {
   id: string;
@@ -22,163 +22,200 @@ export interface YouTubeVideo {
   channelTitle: string;
 }
 
-// ─── YouTube Data API v3 ───────────────────────────────────────────
+// ─── CORS Proxy ────────────────────────────────────────────────────
+// Needed because RSS feeds don't set CORS headers for browsers
 
-const YOUTUBE_API_BASE = "https://www.googleapis.com/youtube/v3";
-const THE_DAY_AFTER_AI_CHANNEL = "thedayafterai";
+const CORS_PROXIES = [
+  (url: string) => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
+  (url: string) => `https://corsproxy.io/?${encodeURIComponent(url)}`,
+];
 
-function getYouTubeKey(): string | null {
-  if (typeof window === "undefined") return null;
-  return (
-    localStorage.getItem("YOUTUBE_API_KEY") ||
-    process.env.NEXT_PUBLIC_YOUTUBE_API_KEY ||
-    null
-  );
+async function fetchWithProxy(url: string): Promise<string> {
+  for (const proxy of CORS_PROXIES) {
+    try {
+      const res = await fetch(proxy(url));
+      if (res.ok) return await res.text();
+    } catch {
+      // try next proxy
+    }
+  }
+  throw new Error(`All proxies failed for: ${url}`);
 }
 
-function getNewsKey(): string | null {
-  if (typeof window === "undefined") return null;
-  return (
-    localStorage.getItem("NEWS_API_KEY") ||
-    process.env.NEXT_PUBLIC_GNEWS_API_KEY ||
-    null
-  );
+// ─── XML Parser Helper ─────────────────────────────────────────────
+
+function parseXML(text: string): Document {
+  return new DOMParser().parseFromString(text, "text/xml");
 }
 
-/** Resolve the @thedayafterai handle to a channel ID, then fetch uploads */
-export async function fetchChannelVideos(
-  maxResults = 6
-): Promise<YouTubeVideo[]> {
-  const key = getYouTubeKey();
-  if (!key) return [];
+function getTextContent(el: Element, tag: string): string {
+  return el.getElementsByTagName(tag)[0]?.textContent?.trim() || "";
+}
 
+// ─── Google News RSS (100% free, no key) ───────────────────────────
+
+const GOOGLE_NEWS_RSS = "https://news.google.com/rss/search";
+
+export async function fetchNews(
+  topicKeywords: string[] = [],
+  freeTextQuery = "",
+  maxResults = 30
+): Promise<NewsArticle[]> {
   try {
-    // Step 1 – resolve handle → channelId
-    const searchRes = await fetch(
-      `${YOUTUBE_API_BASE}/search?part=snippet&q=${THE_DAY_AFTER_AI_CHANNEL}&type=channel&maxResults=1&key=${key}`
-    );
-    const searchData = await searchRes.json();
-    const channelId = searchData.items?.[0]?.snippet?.channelId
-      ?? searchData.items?.[0]?.id?.channelId;
-    if (!channelId) return [];
+    let q = "artificial intelligence";
+    if (freeTextQuery.trim()) {
+      q = `AI ${freeTextQuery.trim()}`;
+    } else if (topicKeywords.length > 0) {
+      q = `AI (${topicKeywords.slice(0, 4).join(" OR ")})`;
+    }
 
-    // Step 2 – get latest videos from this channel
-    const videosRes = await fetch(
-      `${YOUTUBE_API_BASE}/search?part=snippet&channelId=${channelId}&order=date&type=video&maxResults=${maxResults}&key=${key}`
-    );
-    const videosData = await videosRes.json();
+    const rssUrl = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en`;
+    const xml = await fetchWithProxy(rssUrl);
+    const doc = parseXML(xml);
+    const items = doc.getElementsByTagName("item");
 
-    return (videosData.items || []).map(
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (item: any) => ({
-        id: item.id.videoId,
-        videoId: item.id.videoId,
-        title: item.snippet.title,
-        thumbnail:
-          item.snippet.thumbnails?.high?.url ||
-          item.snippet.thumbnails?.medium?.url ||
-          item.snippet.thumbnails?.default?.url,
-        publishedAt: item.snippet.publishedAt,
-        description: item.snippet.description,
-        channelTitle: item.snippet.channelTitle,
-      })
-    );
+    const articles: NewsArticle[] = [];
+    const len = Math.min(items.length, maxResults);
+
+    for (let i = 0; i < len; i++) {
+      const item = items[i];
+      const title = getTextContent(item, "title");
+      const link = getTextContent(item, "link");
+      const pubDate = getTextContent(item, "pubDate");
+      const source = getTextContent(item, "source");
+      const description = getTextContent(item, "description");
+
+      // Strip HTML tags from description
+      const summary = description.replace(/<[^>]*>/g, "").trim();
+
+      articles.push({
+        id: `gn-${i}-${Date.now()}`,
+        title,
+        summary: summary || title,
+        topic: matchTopic(
+          title + " " + summary,
+          topicKeywords.map((k) => k.toLowerCase())
+        ),
+        source: source || "Google News",
+        date: pubDate,
+        imageUrl: placeholderImage(i),
+        url: link,
+      });
+    }
+
+    return articles;
   } catch (err) {
-    console.error("YouTube channel fetch failed:", err);
+    console.error("Google News RSS fetch failed:", err);
     return [];
   }
 }
 
-/** Search YouTube for AI news videos matching a query */
-export async function searchYouTubeVideos(
-  query: string,
+// ─── YouTube RSS (100% free, no key) ───────────────────────────────
+
+// The Day After AI channel ID (resolved from @thedayafterai)
+const CHANNEL_ID = "UCwHJaEBaaSQPFHLUiMjHTtg";
+const YOUTUBE_RSS = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
+
+export async function fetchChannelVideos(
   maxResults = 6
 ): Promise<YouTubeVideo[]> {
-  const key = getYouTubeKey();
-  if (!key) return [];
-
   try {
-    const q = encodeURIComponent(`AI ${query} news`);
-    const res = await fetch(
-      `${YOUTUBE_API_BASE}/search?part=snippet&q=${q}&type=video&order=date&maxResults=${maxResults}&key=${key}`
-    );
-    const data = await res.json();
+    const xml = await fetchWithProxy(YOUTUBE_RSS);
+    const doc = parseXML(xml);
+    const entries = doc.getElementsByTagName("entry");
+    const channelTitle =
+      doc.getElementsByTagName("title")[0]?.textContent || "The Day After AI";
 
-    return (data.items || []).map(
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (item: any) => ({
-        id: item.id.videoId,
-        videoId: item.id.videoId,
-        title: item.snippet.title,
-        thumbnail:
-          item.snippet.thumbnails?.high?.url ||
-          item.snippet.thumbnails?.medium?.url ||
-          item.snippet.thumbnails?.default?.url,
-        publishedAt: item.snippet.publishedAt,
-        description: item.snippet.description,
-        channelTitle: item.snippet.channelTitle,
-      })
-    );
+    const videos: YouTubeVideo[] = [];
+    const len = Math.min(entries.length, maxResults);
+
+    for (let i = 0; i < len; i++) {
+      const entry = entries[i];
+      const videoId =
+        entry.getElementsByTagName("yt:videoId")[0]?.textContent || "";
+      const title = getTextContent(entry, "title");
+      const published = getTextContent(entry, "published");
+      const mediaGroup = entry.getElementsByTagName("media:group")[0];
+      const description = mediaGroup
+        ? mediaGroup.getElementsByTagName("media:description")[0]
+            ?.textContent || ""
+        : "";
+      const thumbnail = mediaGroup
+        ? mediaGroup
+            .getElementsByTagName("media:thumbnail")[0]
+            ?.getAttribute("url") || ""
+        : "";
+
+      videos.push({
+        id: videoId,
+        videoId,
+        title,
+        thumbnail: thumbnail || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
+        publishedAt: published,
+        description,
+        channelTitle,
+      });
+    }
+
+    return videos;
+  } catch (err) {
+    console.error("YouTube RSS fetch failed:", err);
+    return [];
+  }
+}
+
+/** Search YouTube for AI news videos — uses RSS search workaround */
+export async function searchYouTubeVideos(
+  query: string,
+  maxResults = 9
+): Promise<YouTubeVideo[]> {
+  try {
+    // YouTube doesn't have an official search RSS, so we use Google's
+    // YouTube-specific search via Google News video results or a
+    // site-restricted search
+    const q = `AI ${query} site:youtube.com`;
+    const rssUrl = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en`;
+    const xml = await fetchWithProxy(rssUrl);
+    const doc = parseXML(xml);
+    const items = doc.getElementsByTagName("item");
+
+    const videos: YouTubeVideo[] = [];
+    const len = Math.min(items.length, maxResults);
+
+    for (let i = 0; i < len; i++) {
+      const item = items[i];
+      const title = getTextContent(item, "title");
+      const link = getTextContent(item, "link");
+      const pubDate = getTextContent(item, "pubDate");
+      const source = getTextContent(item, "source");
+
+      // Extract video ID from YouTube URLs
+      const videoIdMatch = link.match(
+        /(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/
+      );
+      if (!videoIdMatch) continue;
+
+      const videoId = videoIdMatch[1];
+      videos.push({
+        id: videoId,
+        videoId,
+        title,
+        thumbnail: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
+        publishedAt: pubDate,
+        description: "",
+        channelTitle: source || "YouTube",
+      });
+    }
+
+    return videos;
   } catch (err) {
     console.error("YouTube search failed:", err);
     return [];
   }
 }
 
-// ─── News API (GNews) ──────────────────────────────────────────────
-
-const GNEWS_API_BASE = "https://gnews.io/api/v4";
-
-/** Fetch real AI news articles, optionally filtered by topic keywords */
-export async function fetchNews(
-  topicKeywords: string[] = [],
-  freeTextQuery = "",
-  maxResults = 30
-): Promise<NewsArticle[]> {
-  const key = getNewsKey();
-  if (!key) return [];
-
-  try {
-    let q = "artificial intelligence";
-    if (freeTextQuery.trim()) {
-      q = `AI ${freeTextQuery.trim()}`;
-    } else if (topicKeywords.length > 0) {
-      q = `AI ${topicKeywords.slice(0, 3).join(" OR ")}`;
-    }
-
-    const params = new URLSearchParams({
-      q,
-      lang: "en",
-      max: String(Math.min(maxResults, 100)),
-      sortby: "publishedAt",
-      apikey: key,
-    });
-
-    const res = await fetch(`${GNEWS_API_BASE}/search?${params}`);
-    const data = await res.json();
-
-    return (data.articles || []).map(
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (article: any, i: number) => ({
-        id: `gnews-${i}-${Date.now()}`,
-        title: article.title,
-        summary: article.description || article.content || "",
-        topic: matchTopic(article.title + " " + article.description, topicKeywords),
-        source: article.source?.name || "Unknown",
-        date: article.publishedAt,
-        imageUrl: article.image || placeholderImage(i),
-        url: article.url,
-      })
-    );
-  } catch (err) {
-    console.error("News fetch failed:", err);
-    return [];
-  }
-}
-
 // ─── Helpers ───────────────────────────────────────────────────────
 
-/** Try to match a news article to one of the user's selected topics */
 function matchTopic(text: string, selectedTopics: string[]): string {
   const lower = text.toLowerCase();
   for (const topic of selectedTopics) {
@@ -187,13 +224,12 @@ function matchTopic(text: string, selectedTopics: string[]): string {
       return topic;
     }
   }
-  // Fallback: try all topics
   for (const [topic, keywords] of Object.entries(topicSearchTerms)) {
     if (keywords.some((kw) => lower.includes(kw))) {
       return topic;
     }
   }
-  return "technology"; // default bucket
+  return "technology";
 }
 
 const topicSearchTerms: Record<string, string[]> = {
@@ -217,7 +253,6 @@ const topicSearchTerms: Record<string, string[]> = {
   drone: ["drone", "uav", "unmanned", "aerial", "quadcopter", "flying", "flight"],
 };
 
-/** Map topic ids to more specific search terms for the APIs */
 export const topicToSearchQuery: Record<string, string> = {
   academy: "education university",
   business: "business startup",
@@ -251,7 +286,6 @@ function placeholderImage(index: number): string {
   return images[index % images.length];
 }
 
-/** Sort any array with a date field, newest first */
 export function sortByDateDesc<T extends { date?: string; publishedAt?: string }>(
   items: T[]
 ): T[] {
@@ -266,22 +300,3 @@ export function sortByDateDesc<T extends { date?: string; publishedAt?: string }
 
 export const CHANNEL_URL = "https://www.youtube.com/@thedayafterai";
 export const CHANNEL_NAME = "The Day After AI";
-
-// ─── API key management ────────────────────────────────────────────
-
-export function hasApiKeys(): { youtube: boolean; news: boolean } {
-  return {
-    youtube: !!getYouTubeKey(),
-    news: !!getNewsKey(),
-  };
-}
-
-export function saveApiKeys(youtube?: string, news?: string) {
-  if (youtube !== undefined) localStorage.setItem("YOUTUBE_API_KEY", youtube);
-  if (news !== undefined) localStorage.setItem("NEWS_API_KEY", news);
-}
-
-export function clearApiKeys() {
-  localStorage.removeItem("YOUTUBE_API_KEY");
-  localStorage.removeItem("NEWS_API_KEY");
-}
