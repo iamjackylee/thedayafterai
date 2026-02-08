@@ -77,73 +77,66 @@ function FeedContent() {
   const [loadingVideos, setLoadingVideos] = useState(true);
   const [loadingChannel, setLoadingChannel] = useState(true);
 
-  // Fetch data
+  // Fetch data — all 3 sources in parallel for speed
   const loadData = useCallback(async () => {
     const topicKeywords = selectedTopics.map(
       (id) => TOPICS.find((t) => t.id === id)?.label || id
     );
 
-    // News (Google News RSS)
     setLoadingNews(true);
-    try {
-      const data = await fetchNews(topicKeywords, searchQuery);
-      if (data.length > 0) {
-        setArticles(sortByDateDesc(data));
-      } else {
-        let fallback;
-        if (searchQuery.trim()) {
-          fallback = searchFallbackNews(searchQuery);
-          if (selectedTopics.length > 0) {
-            fallback = fallback.filter((a) =>
-              selectedTopics.includes(a.topic)
-            );
-          }
-        } else {
-          fallback = getFallbackNews(selectedTopics);
-        }
-        setArticles(sortByDateDesc(fallback));
-      }
-    } catch {
-      let fallback;
-      if (searchQuery.trim()) {
-        fallback = searchFallbackNews(searchQuery);
-      } else {
-        fallback = getFallbackNews(selectedTopics);
-      }
-      setArticles(sortByDateDesc(fallback));
-    }
-    setLoadingNews(false);
-
-    // Topic videos
     setLoadingVideos(true);
-    try {
-      const query =
-        searchQuery.trim() ||
-        selectedTopics.map((id) => topicToSearchQuery[id] || id).join(" ");
-      const vids = await searchYouTubeVideos(query || "latest", 9);
-      if (vids.length > 0) {
-        setTopicVideos(vids);
-      } else {
-        setTopicVideos(adaptFallbackVideos(getFallbackVideos(selectedTopics)));
-      }
-    } catch {
-      setTopicVideos(adaptFallbackVideos(getFallbackVideos(selectedTopics)));
-    }
-    setLoadingVideos(false);
-
-    // Channel videos
     setLoadingChannel(true);
-    try {
-      const ch = await fetchChannelVideos(6);
-      if (ch.length > 0) {
-        setChannelVideos(ch);
-      } else {
+
+    // Run all fetches in parallel
+    const newsPromise = fetchNews(topicKeywords, searchQuery)
+      .then((data) => {
+        if (data.length > 0) {
+          setArticles(sortByDateDesc(data));
+        } else {
+          const fallback = searchQuery.trim()
+            ? searchFallbackNews(searchQuery)
+            : getFallbackNews(selectedTopics);
+          setArticles(sortByDateDesc(fallback));
+        }
+      })
+      .catch(() => {
+        const fallback = searchQuery.trim()
+          ? searchFallbackNews(searchQuery)
+          : getFallbackNews(selectedTopics);
+        setArticles(sortByDateDesc(fallback));
+      })
+      .finally(() => setLoadingNews(false));
+
+    const videoQuery =
+      searchQuery.trim() ||
+      selectedTopics.map((id) => topicToSearchQuery[id] || id).join(" ");
+    const videosPromise = searchYouTubeVideos(videoQuery || "latest", 9)
+      .then((vids) => {
+        if (vids.length > 0) {
+          setTopicVideos(vids);
+        } else {
+          setTopicVideos(adaptFallbackVideos(getFallbackVideos(selectedTopics)));
+        }
+      })
+      .catch(() => {
+        setTopicVideos(adaptFallbackVideos(getFallbackVideos(selectedTopics)));
+      })
+      .finally(() => setLoadingVideos(false));
+
+    const channelPromise = fetchChannelVideos(6)
+      .then((ch) => {
+        if (ch.length > 0) {
+          setChannelVideos(ch);
+        } else {
+          setChannelVideos(adaptFallbackVideos(FALLBACK_CHANNEL));
+        }
+      })
+      .catch(() => {
         setChannelVideos(adaptFallbackVideos(FALLBACK_CHANNEL));
-      }
-    } catch {
-      setChannelVideos(adaptFallbackVideos(FALLBACK_CHANNEL));
-    }
-    setLoadingChannel(false);
+      })
+      .finally(() => setLoadingChannel(false));
+
+    await Promise.allSettled([newsPromise, videosPromise, channelPromise]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedTopics.join(","), searchQuery]);
 
