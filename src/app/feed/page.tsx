@@ -11,7 +11,6 @@ import {
   Video,
   Newspaper,
   X,
-  Key,
   Loader2,
   RefreshCw,
 } from "lucide-react";
@@ -21,7 +20,6 @@ import NewsCard from "@/components/NewsCard";
 import VideoCard from "@/components/VideoCard";
 import DailyNewsBar from "@/components/DailyNewsBar";
 import ChannelSection from "@/components/ChannelSection";
-import ApiKeyModal from "@/components/ApiKeyModal";
 import { TOPICS } from "@/lib/topics";
 import {
   fetchNews,
@@ -29,7 +27,6 @@ import {
   searchYouTubeVideos,
   sortByDateDesc,
   topicToSearchQuery,
-  hasApiKeys,
   type NewsArticle,
   type YouTubeVideo,
 } from "@/lib/api";
@@ -72,7 +69,6 @@ function FeedContent() {
   const [activeTab, setActiveTab] = useState<"all" | "articles" | "videos">(
     "all"
   );
-  const [showApiModal, setShowApiModal] = useState(false);
 
   // Data state
   const [articles, setArticles] = useState<NewsArticle[]>([]);
@@ -82,33 +78,39 @@ function FeedContent() {
   const [loadingNews, setLoadingNews] = useState(true);
   const [loadingVideos, setLoadingVideos] = useState(true);
   const [loadingChannel, setLoadingChannel] = useState(true);
-  const [usingLiveData, setUsingLiveData] = useState(false);
 
   // ─── Fetch data ──────────────────────────────────────────────────
 
   const loadData = useCallback(async () => {
-    const keys = hasApiKeys();
-    const isLive = keys.youtube || keys.news;
-    setUsingLiveData(isLive);
-
-    // Build search query string from selected topics
     const topicKeywords = selectedTopics.map(
       (id) => TOPICS.find((t) => t.id === id)?.label || id
     );
 
-    // ── News ──
+    // ── News (Google News RSS — free) ──
     setLoadingNews(true);
-    if (keys.news) {
+    try {
       const data = await fetchNews(topicKeywords, searchQuery);
-      setArticles(sortByDateDesc(data));
-    } else {
-      // fallback to mock data
+      if (data.length > 0) {
+        setArticles(sortByDateDesc(data));
+      } else {
+        // RSS returned nothing, use fallback
+        let fallback;
+        if (searchQuery.trim()) {
+          fallback = searchFallbackNews(searchQuery);
+          if (selectedTopics.length > 0) {
+            fallback = fallback.filter((a) =>
+              selectedTopics.includes(a.topic)
+            );
+          }
+        } else {
+          fallback = getFallbackNews(selectedTopics);
+        }
+        setArticles(sortByDateDesc(fallback));
+      }
+    } catch {
       let fallback;
       if (searchQuery.trim()) {
         fallback = searchFallbackNews(searchQuery);
-        if (selectedTopics.length > 0) {
-          fallback = fallback.filter((a) => selectedTopics.includes(a.topic));
-        }
       } else {
         fallback = getFallbackNews(selectedTopics);
       }
@@ -116,25 +118,33 @@ function FeedContent() {
     }
     setLoadingNews(false);
 
-    // ── Topic videos ──
+    // ── Topic videos (Google News RSS for YouTube — free) ──
     setLoadingVideos(true);
-    if (keys.youtube) {
+    try {
       const query =
         searchQuery.trim() ||
         selectedTopics.map((id) => topicToSearchQuery[id] || id).join(" ");
       const vids = await searchYouTubeVideos(query || "latest", 9);
-      setTopicVideos(vids);
-    } else {
+      if (vids.length > 0) {
+        setTopicVideos(vids);
+      } else {
+        setTopicVideos(adaptFallbackVideos(getFallbackVideos(selectedTopics)));
+      }
+    } catch {
       setTopicVideos(adaptFallbackVideos(getFallbackVideos(selectedTopics)));
     }
     setLoadingVideos(false);
 
-    // ── Channel videos ──
+    // ── Channel videos (YouTube RSS — free) ──
     setLoadingChannel(true);
-    if (keys.youtube) {
+    try {
       const ch = await fetchChannelVideos(6);
-      setChannelVideos(ch);
-    } else {
+      if (ch.length > 0) {
+        setChannelVideos(ch);
+      } else {
+        setChannelVideos(adaptFallbackVideos(FALLBACK_CHANNEL));
+      }
+    } catch {
       setChannelVideos(adaptFallbackVideos(FALLBACK_CHANNEL));
     }
     setLoadingChannel(false);
@@ -253,23 +263,6 @@ function FeedContent() {
                 />
               </motion.button>
 
-              {/* API key button */}
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => setShowApiModal(true)}
-                className={`flex items-center gap-1.5 px-3 py-2.5 rounded-xl text-xs font-medium transition-all ${
-                  usingLiveData
-                    ? "bg-green-600/10 border border-green-500/20 text-green-400"
-                    : "bg-amber-600/10 border border-amber-500/20 text-amber-400"
-                }`}
-              >
-                <Key size={14} />
-                <span className="hidden sm:block">
-                  {usingLiveData ? "Live" : "Demo"}
-                </span>
-              </motion.button>
-
               {/* Filter toggle */}
               <motion.button
                 whileHover={{ scale: 1.05 }}
@@ -346,25 +339,6 @@ function FeedContent() {
           )}
         </AnimatePresence>
       </header>
-
-      {/* Data source indicator */}
-      {!usingLiveData && (
-        <div className="relative z-10 max-w-7xl mx-auto px-4 pt-4">
-          <div className="flex items-center gap-2 p-3 rounded-xl bg-amber-500/5 border border-amber-500/10 text-xs text-amber-300/80">
-            <Key size={14} className="shrink-0" />
-            <span>
-              Showing demo data.{" "}
-              <button
-                onClick={() => setShowApiModal(true)}
-                className="underline hover:text-amber-200 transition-colors"
-              >
-                Add API keys
-              </button>{" "}
-              for real-time news and YouTube videos sorted by latest.
-            </span>
-          </div>
-        </div>
-      )}
 
       {/* Content tabs */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 pt-6">
@@ -510,13 +484,6 @@ function FeedContent() {
           </p>
         </div>
       </footer>
-
-      {/* API Key Modal */}
-      <ApiKeyModal
-        open={showApiModal}
-        onClose={() => setShowApiModal(false)}
-        onSaved={loadData}
-      />
     </div>
   );
 }
