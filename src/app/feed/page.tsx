@@ -2,19 +2,17 @@
 
 import { useState, useEffect, useCallback, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowLeft,
   Search,
   SlidersHorizontal,
-  Zap,
   Video,
   Newspaper,
   X,
   Loader2,
   RefreshCw,
+  LayoutGrid,
 } from "lucide-react";
-import NeuralBackground from "@/components/NeuralBackground";
 import TopicPill from "@/components/TopicPill";
 import NewsCard from "@/components/NewsCard";
 import VideoCard from "@/components/VideoCard";
@@ -79,21 +77,19 @@ function FeedContent() {
   const [loadingVideos, setLoadingVideos] = useState(true);
   const [loadingChannel, setLoadingChannel] = useState(true);
 
-  // ─── Fetch data ──────────────────────────────────────────────────
-
+  // Fetch data
   const loadData = useCallback(async () => {
     const topicKeywords = selectedTopics.map(
       (id) => TOPICS.find((t) => t.id === id)?.label || id
     );
 
-    // ── News (Google News RSS — free) ──
+    // News (Google News RSS)
     setLoadingNews(true);
     try {
       const data = await fetchNews(topicKeywords, searchQuery);
       if (data.length > 0) {
         setArticles(sortByDateDesc(data));
       } else {
-        // RSS returned nothing, use fallback
         let fallback;
         if (searchQuery.trim()) {
           fallback = searchFallbackNews(searchQuery);
@@ -118,7 +114,7 @@ function FeedContent() {
     }
     setLoadingNews(false);
 
-    // ── Topic videos (Google News RSS for YouTube — free) ──
+    // Topic videos
     setLoadingVideos(true);
     try {
       const query =
@@ -135,7 +131,7 @@ function FeedContent() {
     }
     setLoadingVideos(false);
 
-    // ── Channel videos (YouTube RSS — free) ──
+    // Channel videos
     setLoadingChannel(true);
     try {
       const ch = await fetchChannelVideos(6);
@@ -155,7 +151,7 @@ function FeedContent() {
     loadData();
   }, [loadData]);
 
-  // ── URL sync ──
+  // URL sync
   useEffect(() => {
     const params = new URLSearchParams();
     if (selectedTopics.length > 0)
@@ -166,7 +162,7 @@ function FeedContent() {
     window.history.replaceState(null, "", newUrl);
   }, [selectedTopics, searchQuery]);
 
-  // ── Debounced search ──
+  // Debounced search
   const [debouncedQuery, setDebouncedQuery] = useState(searchQuery);
   useEffect(() => {
     const t = setTimeout(() => setSearchQuery(debouncedQuery), 500);
@@ -190,39 +186,27 @@ function FeedContent() {
     .filter(Boolean);
 
   return (
-    <div className="relative min-h-screen">
-      <NeuralBackground />
-
-      {/* Gradient overlays */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute top-0 left-1/4 w-[600px] h-[400px] bg-purple-600/8 rounded-full blur-[120px]" />
-        <div className="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-indigo-600/5 rounded-full blur-[100px]" />
-      </div>
-
+    <div className="min-h-screen bg-gray-50">
       {/* Daily news bar */}
-      <div className="relative z-20">
-        <DailyNewsBar latestVideo={channelVideos[0] || null} />
-      </div>
+      <DailyNewsBar latestVideo={channelVideos[0] || null} />
 
       {/* Header */}
-      <header className="relative z-10 border-b border-white/[0.06] backdrop-blur-xl bg-black/20">
-        <div className="max-w-7xl mx-auto px-4 py-4">
+      <header className="bg-white border-b border-gray-200 sticky top-0 z-30">
+        <div className="max-w-7xl mx-auto px-4 py-3">
           <div className="flex items-center justify-between gap-4 flex-wrap">
             {/* Back + Brand */}
-            <div className="flex items-center gap-4">
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
+            <div className="flex items-center gap-3">
+              <button
                 onClick={() => router.push("/")}
-                className="p-2 rounded-xl bg-white/5 hover:bg-white/10 transition-colors"
+                className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <ArrowLeft size={18} className="text-gray-400" />
-              </motion.button>
+                <ArrowLeft size={18} className="text-gray-600" />
+              </button>
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center">
-                  <Zap size={16} className="text-white" />
+                <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">AI</span>
                 </div>
-                <span className="font-bold text-lg gradient-text hidden sm:block">
+                <span className="font-bold text-lg text-gray-900 hidden sm:block">
                   The Day After AI
                 </span>
               </div>
@@ -233,128 +217,109 @@ function FeedContent() {
               <div className="relative">
                 <Search
                   size={16}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
                 />
                 <input
                   type="text"
                   value={debouncedQuery}
                   onChange={(e) => setDebouncedQuery(e.target.value)}
                   placeholder="Search AI news..."
-                  className="w-full bg-white/[0.04] border border-white/[0.08] rounded-xl pl-10 pr-4 py-2.5 text-sm text-white placeholder:text-gray-600 outline-none focus:border-purple-500/50 transition-colors"
+                  className="w-full bg-gray-100 border border-gray-200 rounded-lg pl-10 pr-4 py-2 text-sm text-gray-900 placeholder:text-gray-400 outline-none focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-100 transition-colors"
                 />
               </div>
             </div>
 
             {/* Actions */}
             <div className="flex items-center gap-2">
-              {/* Refresh */}
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
+              <button
                 onClick={loadData}
                 title="Refresh"
-                className="p-2.5 rounded-xl bg-white/5 hover:bg-white/10 transition-colors"
+                className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
               >
                 <RefreshCw
                   size={16}
-                  className={`text-gray-400 ${
+                  className={`text-gray-500 ${
                     loadingNews ? "animate-spin" : ""
                   }`}
                 />
-              </motion.button>
+              </button>
 
-              {/* Filter toggle */}
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+              <button
                 onClick={() => setShowFilters(!showFilters)}
-                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all ${
+                className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
                   showFilters || selectedTopics.length > 0
-                    ? "bg-purple-600/20 border border-purple-500/30 text-purple-300"
-                    : "bg-white/5 border border-white/[0.08] text-gray-400 hover:text-white"
+                    ? "bg-blue-50 border border-blue-200 text-blue-700"
+                    : "bg-gray-100 border border-gray-200 text-gray-600 hover:bg-gray-200"
                 }`}
               >
                 <SlidersHorizontal size={16} />
                 <span className="hidden sm:block">Topics</span>
                 {selectedTopics.length > 0 && (
-                  <span className="w-5 h-5 rounded-full bg-purple-500 text-white text-xs flex items-center justify-center">
+                  <span className="w-5 h-5 rounded-full bg-blue-600 text-white text-xs flex items-center justify-center">
                     {selectedTopics.length}
                   </span>
                 )}
-              </motion.button>
+              </button>
             </div>
           </div>
 
           {/* Active filters */}
           {selectedTopicLabels.length > 0 && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              className="flex items-center gap-2 mt-3 flex-wrap"
-            >
+            <div className="flex items-center gap-2 mt-3 flex-wrap">
               <span className="text-xs text-gray-500">Filtered by:</span>
               {selectedTopicLabels.map((label) => (
                 <span
                   key={label}
-                  className="text-xs px-2 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/20"
+                  className="text-xs px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200"
                 >
                   {label}
                 </span>
               ))}
               <button
                 onClick={clearFilters}
-                className="text-xs text-gray-500 hover:text-gray-300 flex items-center gap-1 transition-colors"
+                className="text-xs text-gray-500 hover:text-gray-700 flex items-center gap-1 transition-colors"
               >
                 <X size={12} />
                 Clear all
               </button>
-            </motion.div>
+            </div>
           )}
         </div>
 
         {/* Expandable topic filter panel */}
-        <AnimatePresence>
-          {showFilters && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
-              className="border-t border-white/[0.04] overflow-hidden"
-            >
-              <div className="max-w-7xl mx-auto px-4 py-4">
-                <div className="flex flex-wrap gap-2">
-                  {TOPICS.map((topic, i) => (
-                    <TopicPill
-                      key={topic.id}
-                      topic={topic}
-                      selected={selectedTopics.includes(topic.id)}
-                      onToggle={toggleTopic}
-                      index={i}
-                    />
-                  ))}
-                </div>
+        {showFilters && (
+          <div className="border-t border-gray-200">
+            <div className="max-w-7xl mx-auto px-4 py-4">
+              <div className="flex flex-wrap gap-2">
+                {TOPICS.map((topic) => (
+                  <TopicPill
+                    key={topic.id}
+                    topic={topic}
+                    selected={selectedTopics.includes(topic.id)}
+                    onToggle={toggleTopic}
+                  />
+                ))}
               </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+            </div>
+          </div>
+        )}
       </header>
 
       {/* Content tabs */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 pt-6">
-        <div className="flex items-center gap-1 mb-6 bg-white/[0.03] rounded-xl p-1 w-fit border border-white/[0.06]">
+      <div className="max-w-7xl mx-auto px-4 pt-6">
+        <div className="flex items-center gap-1 mb-6 bg-white rounded-lg p-1 w-fit border border-gray-200 shadow-sm">
           {[
-            { id: "all" as const, label: "All", icon: Zap },
+            { id: "all" as const, label: "All", icon: LayoutGrid },
             { id: "articles" as const, label: "Articles", icon: Newspaper },
             { id: "videos" as const, label: "Videos", icon: Video },
           ].map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+              className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-all ${
                 activeTab === tab.id
-                  ? "bg-purple-600/20 text-purple-300"
-                  : "text-gray-500 hover:text-gray-300"
+                  ? "bg-blue-600 text-white"
+                  : "text-gray-500 hover:text-gray-700 hover:bg-gray-50"
               }`}
             >
               <tab.icon size={14} />
@@ -365,12 +330,12 @@ function FeedContent() {
       </div>
 
       {/* Main content */}
-      <main className="relative z-10 max-w-7xl mx-auto px-4 pb-16">
+      <main className="max-w-7xl mx-auto px-4 pb-16">
         {(activeTab === "all" || activeTab === "articles") && (
           <>
             <div className="flex items-center justify-between mb-6">
               <div>
-                <h2 className="text-2xl font-bold text-white">
+                <h2 className="text-2xl font-bold text-gray-900">
                   {searchQuery
                     ? `Results for "${searchQuery}"`
                     : selectedTopics.length > 0
@@ -387,11 +352,8 @@ function FeedContent() {
 
             {loadingNews ? (
               <div className="flex items-center justify-center py-16 mb-12">
-                <Loader2
-                  size={28}
-                  className="text-purple-400 animate-spin"
-                />
-                <span className="ml-3 text-gray-400">
+                <Loader2 size={24} className="text-blue-600 animate-spin" />
+                <span className="ml-3 text-gray-500">
                   Fetching latest news...
                 </span>
               </div>
@@ -402,15 +364,11 @@ function FeedContent() {
                 ))}
               </div>
             ) : (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="text-center py-16 mb-12"
-              >
-                <div className="w-16 h-16 rounded-full bg-purple-500/10 flex items-center justify-center mx-auto mb-4">
-                  <Search size={24} className="text-purple-400" />
+              <div className="text-center py-16 mb-12">
+                <div className="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center mx-auto mb-4">
+                  <Search size={22} className="text-gray-400" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-300 mb-2">
+                <h3 className="text-lg font-semibold text-gray-700 mb-2">
                   No articles found
                 </h3>
                 <p className="text-gray-500 text-sm">
@@ -418,48 +376,43 @@ function FeedContent() {
                 </p>
                 <button
                   onClick={clearFilters}
-                  className="mt-4 text-sm text-purple-400 hover:text-purple-300 transition-colors"
+                  className="mt-4 text-sm text-blue-600 hover:text-blue-700 transition-colors"
                 >
                   Clear all filters
                 </button>
-              </motion.div>
+              </div>
             )}
           </>
         )}
 
         {/* Topic videos */}
         {(activeTab === "all" || activeTab === "videos") && (
-          <>
-            <div className="mb-12">
-              <h2 className="text-2xl font-bold text-white mb-2">
-                Related AI Videos
-              </h2>
-              <p className="text-sm text-gray-500 mb-6">
-                Watch the latest AI coverage on YouTube
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              Related AI Videos
+            </h2>
+            <p className="text-sm text-gray-500 mb-6">
+              Watch the latest AI coverage on YouTube
+            </p>
+            {loadingVideos ? (
+              <div className="flex items-center justify-center py-12">
+                <Loader2 size={24} className="text-blue-600 animate-spin" />
+                <span className="ml-3 text-gray-500">
+                  Searching YouTube...
+                </span>
+              </div>
+            ) : topicVideos.length > 0 ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {topicVideos.map((video, i) => (
+                  <VideoCard key={video.id} video={video} index={i} />
+                ))}
+              </div>
+            ) : (
+              <p className="text-gray-500 text-sm text-center py-8">
+                No related videos found.
               </p>
-              {loadingVideos ? (
-                <div className="flex items-center justify-center py-12">
-                  <Loader2
-                    size={28}
-                    className="text-purple-400 animate-spin"
-                  />
-                  <span className="ml-3 text-gray-400">
-                    Searching YouTube...
-                  </span>
-                </div>
-              ) : topicVideos.length > 0 ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                  {topicVideos.map((video, i) => (
-                    <VideoCard key={video.id} video={video} index={i} />
-                  ))}
-                </div>
-              ) : (
-                <p className="text-gray-600 text-sm text-center py-8">
-                  No related videos found.
-                </p>
-              )}
-            </div>
-          </>
+            )}
+          </div>
         )}
 
         {/* Channel section - always visible */}
@@ -469,17 +422,17 @@ function FeedContent() {
       </main>
 
       {/* Footer */}
-      <footer className="relative z-10 border-t border-white/[0.06] py-8">
+      <footer className="border-t border-gray-200 bg-white py-8">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between flex-wrap gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-md bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center">
-              <Zap size={12} className="text-white" />
+            <div className="w-6 h-6 rounded-md bg-blue-600 flex items-center justify-center">
+              <span className="text-white font-bold text-[10px]">AI</span>
             </div>
             <span className="text-sm text-gray-500">
               The Day After AI &copy; {new Date().getFullYear()}
             </span>
           </div>
-          <p className="text-xs text-gray-600">
+          <p className="text-xs text-gray-400">
             Powered by AI. Curated for humans.
           </p>
         </div>
@@ -492,8 +445,8 @@ export default function FeedPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen bg-[#030014] flex items-center justify-center">
-          <div className="w-8 h-8 border-2 border-purple-500 border-t-transparent rounded-full animate-spin" />
+        <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+          <Loader2 size={24} className="text-blue-600 animate-spin" />
         </div>
       }
     >

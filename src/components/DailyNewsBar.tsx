@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Play, Radio, ExternalLink } from "lucide-react";
 import { CHANNEL_URL, CHANNEL_NAME, type YouTubeVideo } from "@/lib/api";
 
@@ -10,44 +9,39 @@ interface DailyNewsBarProps {
 
 export default function DailyNewsBar({ latestVideo }: DailyNewsBarProps) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="w-full bg-gradient-to-r from-purple-900/40 via-indigo-900/40 to-purple-900/40 border-b border-purple-500/20 backdrop-blur-xl"
-    >
-      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4 flex-wrap">
+    <div className="w-full bg-gray-900 text-white">
+      <div className="max-w-7xl mx-auto px-4 py-2.5 flex items-center justify-between gap-4 flex-wrap">
         {/* Channel branding */}
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2">
             <div className="relative">
-              <Radio size={18} className="text-red-400" />
+              <Radio size={16} className="text-red-400" />
               <span className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-red-500 rounded-full animate-pulse" />
             </div>
-            <span className="text-sm font-bold text-white tracking-wide">
+            <span className="text-sm font-semibold">
               {CHANNEL_NAME}
             </span>
           </div>
-          <span className="hidden sm:block text-purple-300/60">|</span>
-          <span className="hidden sm:block text-sm text-purple-200/70">
+          <span className="hidden sm:block text-gray-500">|</span>
+          <span className="hidden sm:block text-sm text-gray-400">
             Daily AI News
           </span>
         </div>
 
         {/* Latest video */}
-        <div className="flex items-center gap-3 flex-1 min-w-0 justify-center">
-          <Play size={14} className="text-red-400 shrink-0" fill="currentColor" />
+        <div className="flex items-center gap-2 flex-1 min-w-0 justify-center">
+          <Play size={12} className="text-red-400 shrink-0" fill="currentColor" />
           {latestVideo ? (
             <a
               href={`https://www.youtube.com/watch?v=${latestVideo.videoId}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-gray-200 truncate hover:text-purple-300 transition-colors"
+              className="text-sm text-gray-300 truncate hover:text-white transition-colors"
             >
               {latestVideo.title}
             </a>
           ) : (
-            <span className="text-sm text-gray-400 truncate">
+            <span className="text-sm text-gray-500 truncate">
               Loading latest video...
             </span>
           )}
@@ -58,12 +52,12 @@ export default function DailyNewsBar({ latestVideo }: DailyNewsBarProps) {
           href={CHANNEL_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-1.5 text-xs font-medium text-purple-300 hover:text-purple-100 transition-colors shrink-0"
+          className="flex items-center gap-1.5 text-xs font-medium text-gray-400 hover:text-white transition-colors shrink-0"
         >
           Watch on YouTube
           <ExternalLink size={12} />
         </a>
       </div>
-    </motion.div>
+    </div>
   );
 }
