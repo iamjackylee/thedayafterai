@@ -1,11 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Youtube, ExternalLink, Bell } from "lucide-react";
-import { DAILY_CHANNEL_VIDEOS, CHANNEL_URL, CHANNEL_NAME } from "@/lib/youtube";
+import { Youtube, ExternalLink, Bell, Loader2 } from "lucide-react";
+import { CHANNEL_URL, CHANNEL_NAME, type YouTubeVideo } from "@/lib/api";
 import VideoCard from "./VideoCard";
 
-export default function ChannelSection() {
+interface ChannelSectionProps {
+  videos: YouTubeVideo[];
+  loading: boolean;
+}
+
+export default function ChannelSection({ videos, loading }: ChannelSectionProps) {
   return (
     <motion.section
       initial={{ opacity: 0, y: 30 }}
@@ -49,11 +54,39 @@ export default function ChannelSection() {
       </div>
 
       {/* Videos grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {DAILY_CHANNEL_VIDEOS.map((video, i) => (
-          <VideoCard key={video.id} video={video} index={i} featured={i === 0} />
-        ))}
-      </div>
+      {loading ? (
+        <div className="flex items-center justify-center py-12">
+          <Loader2 size={28} className="text-purple-400 animate-spin" />
+          <span className="ml-3 text-gray-400 text-sm">
+            Loading latest videos...
+          </span>
+        </div>
+      ) : videos.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {videos.map((video, i) => (
+            <VideoCard
+              key={video.id}
+              video={video}
+              index={i}
+              featured={i === 0}
+            />
+          ))}
+        </div>
+      ) : (
+        <div className="text-center py-10">
+          <p className="text-gray-500 text-sm mb-2">
+            No videos loaded yet.
+          </p>
+          <a
+            href={CHANNEL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-purple-400 hover:text-purple-300 transition-colors"
+          >
+            Visit the channel on YouTube &rarr;
+          </a>
+        </div>
+      )}
 
       {/* Decorative gradient */}
       <div className="absolute -top-32 -right-32 w-64 h-64 bg-red-500/5 rounded-full blur-3xl pointer-events-none" />

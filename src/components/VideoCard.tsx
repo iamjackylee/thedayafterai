@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
-import type { YouTubeVideo } from "@/lib/youtube";
+import type { YouTubeVideo } from "@/lib/api";
 
 interface VideoCardProps {
   video: YouTubeVideo;
@@ -10,18 +10,35 @@ interface VideoCardProps {
   featured?: boolean;
 }
 
+function formatDate(dateStr: string): string {
+  try {
+    return new Date(dateStr).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+  } catch {
+    return dateStr;
+  }
+}
+
 export default function VideoCard({
   video,
   index,
   featured = false,
 }: VideoCardProps) {
+  const youtubeUrl = `https://www.youtube.com/watch?v=${video.videoId}`;
+
   return (
-    <motion.div
+    <motion.a
+      href={youtubeUrl}
+      target="_blank"
+      rel="noopener noreferrer"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.08, duration: 0.4 }}
       whileHover={{ y: -3 }}
-      className={`group relative rounded-2xl overflow-hidden bg-white/[0.03] border border-white/[0.06] backdrop-blur-md hover:border-purple-500/30 transition-all duration-500 cursor-pointer ${
+      className={`group relative rounded-2xl overflow-hidden bg-white/[0.03] border border-white/[0.06] backdrop-blur-md hover:border-purple-500/30 transition-all duration-500 cursor-pointer block ${
         featured ? "col-span-full" : ""
       }`}
     >
@@ -63,13 +80,25 @@ export default function VideoCard({
         >
           {video.title}
         </h4>
-        <p className="text-gray-500 text-xs mt-1.5">{video.publishedAt}</p>
-        {featured && (
+        <div className="flex items-center gap-2 mt-1.5">
+          <span className="text-gray-500 text-xs">
+            {formatDate(video.publishedAt)}
+          </span>
+          {video.channelTitle && (
+            <>
+              <span className="text-gray-700 text-xs">|</span>
+              <span className="text-gray-500 text-xs truncate">
+                {video.channelTitle}
+              </span>
+            </>
+          )}
+        </div>
+        {featured && video.description && (
           <p className="text-gray-400 text-sm mt-2 line-clamp-2">
             {video.description}
           </p>
         )}
       </div>
-    </motion.div>
+    </motion.a>
   );
 }

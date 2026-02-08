@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink, Clock } from "lucide-react";
-import type { NewsArticle } from "@/lib/newsData";
+import type { NewsArticle } from "@/lib/api";
 import { TOPICS } from "@/lib/topics";
 
 interface NewsCardProps {
@@ -10,16 +10,31 @@ interface NewsCardProps {
   index: number;
 }
 
+function formatDate(dateStr: string): string {
+  try {
+    return new Date(dateStr).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+  } catch {
+    return dateStr;
+  }
+}
+
 export default function NewsCard({ article, index }: NewsCardProps) {
   const topic = TOPICS.find((t) => t.id === article.topic);
 
   return (
-    <motion.article
+    <motion.a
+      href={article.url}
+      target="_blank"
+      rel="noopener noreferrer"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.05, duration: 0.4 }}
       whileHover={{ y: -4, scale: 1.01 }}
-      className="group relative rounded-2xl overflow-hidden bg-white/[0.03] border border-white/[0.06] backdrop-blur-md hover:border-white/[0.15] transition-all duration-500"
+      className="group relative rounded-2xl overflow-hidden bg-white/[0.03] border border-white/[0.06] backdrop-blur-md hover:border-white/[0.15] transition-all duration-500 block"
     >
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
@@ -49,7 +64,7 @@ export default function NewsCard({ article, index }: NewsCardProps) {
         <div className="flex items-center justify-between text-xs text-gray-500">
           <div className="flex items-center gap-1.5">
             <Clock size={12} />
-            <span>{article.date}</span>
+            <span>{formatDate(article.date)}</span>
           </div>
           <div className="flex items-center gap-1.5">
             <span>{article.source}</span>
@@ -67,6 +82,6 @@ export default function NewsCard({ article, index }: NewsCardProps) {
             : undefined,
         }}
       />
-    </motion.article>
+    </motion.a>
   );
 }

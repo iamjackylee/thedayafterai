@@ -2,11 +2,13 @@
 
 import { motion } from "framer-motion";
 import { Play, Radio, ExternalLink } from "lucide-react";
-import { DAILY_CHANNEL_VIDEOS, CHANNEL_URL, CHANNEL_NAME } from "@/lib/youtube";
+import { CHANNEL_URL, CHANNEL_NAME, type YouTubeVideo } from "@/lib/api";
 
-export default function DailyNewsBar() {
-  const latest = DAILY_CHANNEL_VIDEOS[0];
+interface DailyNewsBarProps {
+  latestVideo: YouTubeVideo | null;
+}
 
+export default function DailyNewsBar({ latestVideo }: DailyNewsBarProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: -20 }}
@@ -35,7 +37,20 @@ export default function DailyNewsBar() {
         {/* Latest video */}
         <div className="flex items-center gap-3 flex-1 min-w-0 justify-center">
           <Play size={14} className="text-red-400 shrink-0" fill="currentColor" />
-          <span className="text-sm text-gray-200 truncate">{latest.title}</span>
+          {latestVideo ? (
+            <a
+              href={`https://www.youtube.com/watch?v=${latestVideo.videoId}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-200 truncate hover:text-purple-300 transition-colors"
+            >
+              {latestVideo.title}
+            </a>
+          ) : (
+            <span className="text-sm text-gray-400 truncate">
+              Loading latest video...
+            </span>
+          )}
         </div>
 
         {/* Watch link */}
