@@ -151,7 +151,8 @@ function FeedContent() {
     if (selectedTopics.length > 0)
       params.set("topics", selectedTopics.join(","));
     if (searchQuery.trim()) params.set("q", searchQuery.trim());
-    const newUrl = `/feed${params.toString() ? `?${params.toString()}` : ""}`;
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+    const newUrl = `${basePath}/feed${params.toString() ? `?${params.toString()}` : ""}`;
     window.history.replaceState(null, "", newUrl);
   }, [selectedTopics, searchQuery]);
 
