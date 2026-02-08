@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Youtube, ExternalLink, Bell, Loader2 } from "lucide-react";
 import { CHANNEL_URL, CHANNEL_NAME, type YouTubeVideo } from "@/lib/api";
 import VideoCard from "./VideoCard";
@@ -12,21 +11,16 @@ interface ChannelSectionProps {
 
 export default function ChannelSection({ videos, loading }: ChannelSectionProps) {
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.3 }}
-      className="relative rounded-3xl overflow-hidden border border-red-500/20 bg-gradient-to-br from-red-950/30 via-black/40 to-purple-950/30 backdrop-blur-xl p-6 md:p-8"
-    >
+    <section className="bg-white rounded-lg border border-gray-200 p-6 md:p-8">
       {/* Header */}
       <div className="flex items-center justify-between mb-6 flex-wrap gap-4">
         <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center">
-            <Youtube size={24} className="text-white" />
+          <div className="w-11 h-11 rounded-full bg-red-600 flex items-center justify-center">
+            <Youtube size={22} className="text-white" />
           </div>
           <div>
-            <h2 className="text-xl font-bold text-white">{CHANNEL_NAME}</h2>
-            <p className="text-sm text-gray-400">
+            <h2 className="text-lg font-bold text-gray-900">{CHANNEL_NAME}</h2>
+            <p className="text-sm text-gray-500">
               Daily AI News &amp; Analysis
             </p>
           </div>
@@ -36,7 +30,7 @@ export default function ChannelSection({ videos, loading }: ChannelSectionProps)
             href={CHANNEL_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-red-600 hover:bg-red-500 text-white text-sm font-semibold transition-colors"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-red-600 hover:bg-red-700 text-white text-sm font-medium transition-colors"
           >
             <Bell size={14} />
             Subscribe
@@ -45,7 +39,7 @@ export default function ChannelSection({ videos, loading }: ChannelSectionProps)
             href={CHANNEL_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 hover:border-white/25 text-gray-300 hover:text-white text-sm font-medium transition-all"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-50 text-gray-700 text-sm font-medium transition-colors"
           >
             Visit Channel
             <ExternalLink size={14} />
@@ -56,8 +50,8 @@ export default function ChannelSection({ videos, loading }: ChannelSectionProps)
       {/* Videos grid */}
       {loading ? (
         <div className="flex items-center justify-center py-12">
-          <Loader2 size={28} className="text-purple-400 animate-spin" />
-          <span className="ml-3 text-gray-400 text-sm">
+          <Loader2 size={24} className="text-blue-600 animate-spin" />
+          <span className="ml-3 text-gray-500 text-sm">
             Loading latest videos...
           </span>
         </div>
@@ -81,16 +75,12 @@ export default function ChannelSection({ videos, loading }: ChannelSectionProps)
             href={CHANNEL_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-purple-400 hover:text-purple-300 transition-colors"
+            className="text-sm text-blue-600 hover:text-blue-700 transition-colors"
           >
             Visit the channel on YouTube &rarr;
           </a>
         </div>
       )}
-
-      {/* Decorative gradient */}
-      <div className="absolute -top-32 -right-32 w-64 h-64 bg-red-500/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl pointer-events-none" />
-    </motion.section>
+    </section>
   );
 }
