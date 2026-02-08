@@ -30,10 +30,21 @@ const CORS_PROXIES = [
   (url: string) => `https://corsproxy.io/?${encodeURIComponent(url)}`,
 ];
 
+async function fetchWithTimeout(url: string, timeoutMs = 8000): Promise<Response> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const res = await fetch(url, { signal: controller.signal });
+    return res;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 async function fetchWithProxy(url: string): Promise<string> {
   for (const proxy of CORS_PROXIES) {
     try {
-      const res = await fetch(proxy(url));
+      const res = await fetchWithTimeout(proxy(url));
       if (res.ok) return await res.text();
     } catch {
       // try next proxy
