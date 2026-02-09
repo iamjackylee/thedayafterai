@@ -264,41 +264,47 @@ export default function Home() {
           ) : sortedChannelVideos.length > 0 ? (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
               {/* Featured first video - large left */}
-              <div>
-                <a
-                  href={`https://www.youtube.com/watch?v=${sortedChannelVideos[0].videoId}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group block relative h-full bg-[var(--surface)] overflow-hidden card-hover"
-                >
-                  <div className="relative aspect-video overflow-hidden">
-                    <div
-                      className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                      style={{ backgroundImage: `url(${sortedChannelVideos[0].thumbnail})` }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                      <div className="w-20 h-20 rounded-full bg-[#ff0050] flex items-center justify-center shadow-2xl">
-                        <Play size={36} className="text-white ml-1" fill="white" />
-                      </div>
-                    </div>
-                    <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <div className="px-2.5 py-1 bg-[#ff0050] text-white text-[10px] font-black uppercase tracking-widest inline-block mb-3">
-                        Latest Episode
-                      </div>
-                      <h3 className="text-xl md:text-2xl font-black text-white leading-tight group-hover:text-[var(--accent)] transition-colors line-clamp-2">
-                        {sortedChannelVideos[0].title}
-                      </h3>
-                      {sortedChannelVideos[0].description && (
-                        <p className="text-sm text-gray-300 mt-2 line-clamp-2">{sortedChannelVideos[0].description}</p>
-                      )}
-                      <span className="text-xs text-gray-500 mt-3 block font-medium">
-                        {new Date(sortedChannelVideos[0].publishedAt).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
-                      </span>
+              <a
+                href={`https://www.youtube.com/watch?v=${sortedChannelVideos[0].videoId}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block bg-[var(--surface)] overflow-hidden border border-[var(--border)] hover:border-[var(--border-light)] transition-all card-hover"
+              >
+                {/* Thumbnail - full width, no cropping */}
+                <div className="relative overflow-hidden">
+                  <img
+                    src={sortedChannelVideos[0].thumbnail}
+                    alt={sortedChannelVideos[0].title}
+                    className="w-full aspect-video object-contain bg-black transition-transform duration-500 group-hover:scale-105"
+                  />
+                  {/* Play button overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="w-16 h-16 rounded-full bg-[#ff0050] flex items-center justify-center shadow-2xl">
+                      <Play size={28} className="text-white ml-1" fill="white" />
                     </div>
                   </div>
-                </a>
-              </div>
+                  {/* Badge */}
+                  <div className="absolute top-0 left-0 px-2.5 py-1 bg-[#ff0050] text-white text-[10px] font-black uppercase tracking-widest">
+                    Latest Episode
+                  </div>
+                </div>
+                {/* Info below thumbnail */}
+                <div className="p-4">
+                  <h3 className="text-lg md:text-xl font-black text-white leading-tight group-hover:text-[var(--accent)] transition-colors line-clamp-2">
+                    {sortedChannelVideos[0].title}
+                  </h3>
+                  {sortedChannelVideos[0].description && (
+                    <p className="text-sm text-[var(--text-secondary)] mt-2 line-clamp-2">{sortedChannelVideos[0].description}</p>
+                  )}
+                  <div className="flex items-center gap-2 mt-3">
+                    <span className="text-xs text-[var(--muted)] font-medium">
+                      {new Date(sortedChannelVideos[0].publishedAt).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
+                    </span>
+                    <span className="text-[var(--border-light)]">|</span>
+                    <span className="text-xs text-[var(--muted)]">The Day After AI</span>
+                  </div>
+                </div>
+              </a>
               {/* 4 small videos - 2x2 grid on right */}
               <div className="grid grid-cols-2 gap-3">
                 {sortedChannelVideos.slice(1, 5).map((video, i) => (
