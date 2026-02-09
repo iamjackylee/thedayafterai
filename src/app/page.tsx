@@ -20,11 +20,14 @@ import {
   fetchNews,
   fetchChannelVideos,
   fetchCustomSections,
+  fetchTdaaiArticles,
+  enhanceArticleImages,
   sortByDateDesc,
   PLAYLIST_URL,
   type NewsArticle,
   type YouTubeVideo,
   type CustomSection,
+  type TdaaiArticle,
 } from "@/lib/api";
 import {
   getNewsByTopics as getFallbackNews,
@@ -150,6 +153,127 @@ function CustomSectionRow({ section }: { section: CustomSection }) {
   );
 }
 
+function TdaaiSectionRow({ articles }: { articles: TdaaiArticle[] }) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+  const sectionColor = "#3cffd0";
+
+  const checkScroll = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 0);
+    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 10);
+  }, []);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    checkScroll();
+    el.addEventListener("scroll", checkScroll, { passive: true });
+    return () => el.removeEventListener("scroll", checkScroll);
+  }, [checkScroll, articles]);
+
+  const scroll = (dir: "left" | "right") => {
+    scrollRef.current?.scrollBy({
+      left: dir === "left" ? -600 : 600,
+      behavior: "smooth",
+    });
+  };
+
+  if (articles.length === 0) return null;
+
+  return (
+    <div className="category-section">
+      <div className="flex items-center justify-between mb-4">
+        <div
+          className="category-header"
+          style={{ borderLeftColor: sectionColor } as React.CSSProperties}
+        >
+          <div className="flex items-center gap-3">
+            <h3 className="text-lg font-black text-white uppercase tracking-wide">
+              From TheDayAfterAI.com
+            </h3>
+            <span
+              className="text-[10px] font-bold px-2 py-0.5 rounded-sm"
+              style={{ backgroundColor: sectionColor + "20", color: sectionColor }}
+            >
+              {articles.length} articles
+            </span>
+          </div>
+        </div>
+        <div className="flex items-center gap-1">
+          <button
+            onClick={() => scroll("left")}
+            disabled={!canScrollLeft}
+            className="p-2 rounded-sm transition-colors disabled:opacity-20"
+            style={{ color: canScrollLeft ? sectionColor : undefined }}
+          >
+            <ChevronLeft size={20} />
+          </button>
+          <button
+            onClick={() => scroll("right")}
+            disabled={!canScrollRight}
+            className="p-2 rounded-sm transition-colors disabled:opacity-20"
+            style={{ color: canScrollRight ? sectionColor : undefined }}
+          >
+            <ChevronRight size={20} />
+          </button>
+        </div>
+      </div>
+      <div
+        ref={scrollRef}
+        className="category-scroll flex gap-4 overflow-x-auto pb-4 scroll-smooth"
+        style={{ scrollbarWidth: "none" }}
+      >
+        {articles.map((article) => (
+          <a
+            key={article.id}
+            href={article.url || "https://thedayafterai.com"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 w-[280px] group block bg-[var(--surface)] overflow-hidden border border-[var(--border)] hover:border-[var(--border-light)] transition-all card-hover"
+          >
+            <div className="relative aspect-[16/10] overflow-hidden">
+              {article.imageUrl ? (
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                  style={{ backgroundImage: `url(${article.imageUrl})` }}
+                />
+              ) : (
+                <div className="absolute inset-0 bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364] flex items-center justify-center">
+                  <span className="text-3xl opacity-40">📰</span>
+                </div>
+              )}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+              <div className="absolute top-0 left-0 px-2 py-0.5 bg-[#3cffd0] text-black text-[9px] font-black uppercase tracking-widest">
+                TheDayAfterAI
+              </div>
+            </div>
+            <div className="p-3">
+              <h4 className="text-xs font-bold text-white group-hover:text-[var(--accent)] transition-colors line-clamp-2 leading-snug">
+                {article.title}
+              </h4>
+              {article.summary && article.summary !== article.title && (
+                <p className="text-[var(--muted)] text-[10px] leading-relaxed mt-1 line-clamp-2">
+                  {article.summary}
+                </p>
+              )}
+              <div className="flex items-center gap-2 mt-2">
+                <span className="text-[var(--text-secondary)] text-[10px] font-medium">
+                  {article.date
+                    ? new Date(article.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })
+                    : "TheDayAfterAI.com"}
+                </span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function CategoryRow({ topic, articles, id }: { topic: typeof TOPICS[number]; articles: NewsArticle[]; id?: string }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
@@ -242,6 +366,7 @@ export default function Home() {
   const [articles, setArticles] = useState<NewsArticle[]>([]);
   const [channelVideos, setChannelVideos] = useState<YouTubeVideo[]>([]);
   const [customSections, setCustomSections] = useState<CustomSection[]>([]);
+  const [tdaaiArticles, setTdaaiArticles] = useState<TdaaiArticle[]>([]);
   const [loadingNews, setLoadingNews] = useState(true);
   const [loadingChannel, setLoadingChannel] = useState(true);
 
@@ -259,9 +384,12 @@ export default function Home() {
     setLoadingChannel(true);
 
     const newsPromise = fetchNews(topicKeywords, searchQuery)
-      .then((data) => {
+      .then(async (data) => {
         if (data.length > 0) {
-          setArticles(sortByDateDesc(data));
+          const sorted = sortByDateDesc(data);
+          setArticles(sorted);
+          // Enhance images in background (don't block render)
+          enhanceArticleImages(sorted, 5).then(() => setArticles([...sorted]));
         } else {
           const fallback = searchQuery.trim()
             ? searchFallbackNews(searchQuery)
@@ -290,7 +418,11 @@ export default function Home() {
       .then((sections) => setCustomSections(sections))
       .catch(() => {});
 
-    await Promise.allSettled([newsPromise, channelPromise, customPromise]);
+    const tdaaiPromise = fetchTdaaiArticles()
+      .then((arts) => setTdaaiArticles(arts))
+      .catch(() => {});
+
+    await Promise.allSettled([newsPromise, channelPromise, customPromise, tdaaiPromise]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedTopics.join(","), searchQuery]);
 
@@ -430,35 +562,37 @@ export default function Home() {
               </button>
               {TOPICS.map((topic) => {
                 const isSelected = selectedTopics.includes(topic.id);
-                const isActive = !isSelected && activeSection === topic.id;
+                const isViewing = !isSelected && activeSection === topic.id;
                 return (
                   <button
                     key={topic.id}
                     data-nav-topic={topic.id}
                     onClick={() => toggleTopic(topic.id)}
-                    className="shrink-0 px-4 py-1.5 text-xs font-bold uppercase tracking-wider transition-all border"
+                    className={`shrink-0 px-4 py-1.5 text-xs font-bold uppercase tracking-wider border topic-pill ${isSelected ? "selected" : ""} ${isViewing ? "viewing" : ""}`}
                     style={
                       isSelected
-                        ? { backgroundColor: topic.color, color: "#000", borderColor: topic.color }
-                        : isActive
-                        ? { color: topic.color, borderColor: topic.color, borderBottomWidth: "2px" }
-                        : { color: "var(--muted)", borderColor: "transparent" }
+                        ? {
+                            backgroundColor: topic.color,
+                            color: "#000",
+                            borderColor: topic.color,
+                            ["--pill-color" as string]: topic.color,
+                            ["--pill-border" as string]: topic.color,
+                          }
+                        : isViewing
+                        ? {
+                            color: topic.color,
+                            borderColor: topic.color,
+                            borderBottomWidth: "2px",
+                            ["--pill-color" as string]: topic.color,
+                            ["--pill-border" as string]: topic.color + "40",
+                          }
+                        : {
+                            color: "var(--muted)",
+                            borderColor: "transparent",
+                            ["--pill-color" as string]: topic.color,
+                            ["--pill-border" as string]: topic.color + "40",
+                          }
                     }
-                    onMouseEnter={(e) => {
-                      if (!isSelected) {
-                        (e.target as HTMLElement).style.color = topic.color;
-                        (e.target as HTMLElement).style.borderColor = topic.color + "40";
-                      }
-                    }}
-                    onMouseLeave={(e) => {
-                      if (!isSelected && !isActive) {
-                        (e.target as HTMLElement).style.color = "var(--muted)";
-                        (e.target as HTMLElement).style.borderColor = "transparent";
-                      } else if (isActive) {
-                        (e.target as HTMLElement).style.color = topic.color;
-                        (e.target as HTMLElement).style.borderColor = topic.color;
-                      }
-                    }}
                   >
                     {topic.label}
                   </button>
@@ -568,6 +702,11 @@ export default function Home() {
 
         {/* Divider */}
         <div className="h-px bg-[var(--border-light)] mb-10" />
+
+        {/* TheDayAfterAI.com Blog Articles Section */}
+        {tdaaiArticles.length > 0 && (
+          <TdaaiSectionRow articles={tdaaiArticles} />
+        )}
 
         {/* Custom editorial sections (e.g. AI Market Insight) */}
         {customSections.map((section) => (
