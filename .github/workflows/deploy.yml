@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Pre-fetch news data
+        run: node scripts/fetch-news.js
+
       - name: Build
         env:
           NEXT_PUBLIC_BASE_PATH: /thedayafterai

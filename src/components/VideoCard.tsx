@@ -50,13 +50,13 @@ export default function VideoCard({
 
         {/* Play button */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-14 h-14 rounded-full bg-[#e63946] flex items-center justify-center shadow-lg group-hover:bg-[#d62839] transition-colors">
+          <div className="w-14 h-14 rounded-full bg-[#1d4ed8] flex items-center justify-center shadow-lg group-hover:bg-[#1e40af] transition-colors">
             <Play size={22} className="text-white ml-0.5" fill="white" />
           </div>
         </div>
 
         {/* YouTube badge */}
-        <div className="absolute top-3 right-3 px-2 py-0.5 bg-[#e63946] text-white text-xs font-bold uppercase tracking-wider">
+        <div className="absolute top-3 right-3 px-2 py-0.5 bg-[#1d4ed8] text-white text-xs font-bold uppercase tracking-wider">
           YouTube
         </div>
       </div>
@@ -64,7 +64,7 @@ export default function VideoCard({
       {/* Info */}
       <div className="p-4">
         <h4
-          className={`font-bold text-white group-hover:text-[#e63946] transition-colors line-clamp-2 ${
+          className={`font-bold text-white group-hover:text-[#1d4ed8] transition-colors line-clamp-2 ${
             featured ? "text-base" : "text-sm"
           }`}
         >
