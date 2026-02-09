@@ -60,6 +60,38 @@ async function loadPrefetched(): Promise<PrefetchedData | null> {
   }
 }
 
+// ─── Custom articles (your own editorial content) ───────────────
+
+export interface CustomArticle {
+  id: string;
+  title: string;
+  date: string;
+  imageUrl: string;
+  url: string;
+  source: string;
+}
+
+export interface CustomSection {
+  id: string;
+  title: string;
+  color: string;
+  articles: CustomArticle[];
+}
+
+export async function fetchCustomSections(): Promise<CustomSection[]> {
+  try {
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+    const res = await fetch(`${basePath}/data/custom-articles.json`, {
+      cache: "no-store",
+    });
+    if (!res.ok) return [];
+    const data = await res.json();
+    return data.sections || [];
+  } catch {
+    return [];
+  }
+}
+
 // ─── CORS Proxy (fallback for live fetching) ──────────────────────
 
 const CORS_PROXIES = [
