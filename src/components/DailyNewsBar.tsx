@@ -9,8 +9,8 @@ interface DailyNewsBarProps {
 
 export default function DailyNewsBar({ latestVideo }: DailyNewsBarProps) {
   return (
-    <div className="w-full bg-[#1d4ed8]">
-      <div className="max-w-[1800px] mx-auto px-[4vw] py-2 flex items-center justify-between gap-4 flex-wrap">
+    <div className="w-full bg-[var(--accent)]">
+      <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-2 flex items-center justify-between gap-4 flex-wrap">
         {/* Channel branding */}
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2">

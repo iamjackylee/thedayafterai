@@ -69,27 +69,20 @@ const PLACEHOLDER_IMAGES = [
   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
 ];
 
-// ── Topic matching ─────────────────────────────────────────────────
+// ── Topic matching (11 grouped categories) ────────────────────────
 
 const topicSearchTerms = {
-  academy: ["university", "education", "student", "academic", "research", "school", "learning"],
-  business: ["business", "company", "startup", "enterprise", "market", "invest", "funding"],
-  economy: ["economy", "economic", "gdp", "trade", "finance", "stock", "inflation"],
+  "ai-academy": ["university", "education", "student", "academic", "research", "school", "learning", "curriculum"],
+  "business-economy": ["business", "company", "startup", "enterprise", "market", "invest", "funding", "economy", "economic", "gdp", "trade", "finance", "stock", "inflation"],
   "chatbot-development": ["chatbot", "gpt", "llm", "language model", "claude", "gemini", "openai"],
-  "digital-security": ["security", "cyber", "hack", "privacy", "encryption", "malware"],
-  environment: ["environment", "climate", "carbon", "green", "sustainable", "emission"],
-  science: ["science", "scientific", "discovery", "physics", "biology", "quantum"],
-  governance: ["governance", "regulation", "policy", "compliance", "framework"],
-  politics: ["politic", "government", "election", "congress", "legislation"],
-  health: ["health", "medical", "hospital", "patient", "disease", "drug", "diagnos"],
-  style: ["fashion", "style", "design", "trend", "luxury"],
-  music: ["music", "song", "album", "artist", "spotify", "audio"],
-  art: ["art", "painting", "gallery", "museum", "creative", "artwork"],
-  photography: ["photo", "camera", "image", "portrait", "lens"],
-  cameras: ["camera", "lens", "sensor", "megapixel", "dslr", "mirrorless"],
-  technology: ["tech", "software", "hardware", "chip", "processor", "computing"],
-  innovation: ["innovation", "breakthrough", "frontier", "pioneer", "revolutio"],
-  drone: ["drone", "uav", "unmanned", "aerial", "quadcopter"],
+  "digital-security": ["security", "cyber", "hack", "privacy", "encryption", "malware", "breach"],
+  "environment-science": ["environment", "climate", "carbon", "green", "sustainable", "emission", "science", "scientific", "discovery", "physics", "biology", "quantum"],
+  "governance-politics": ["governance", "regulation", "policy", "compliance", "framework", "politic", "government", "election", "congress", "legislation"],
+  "health-style": ["health", "medical", "hospital", "patient", "disease", "drug", "diagnos", "fashion", "style", "trend", "luxury"],
+  "musical-art": ["music", "song", "album", "artist", "spotify", "audio", "compose", "melody"],
+  "technology-innovation": ["tech", "software", "hardware", "chip", "processor", "computing", "innovation", "breakthrough", "frontier", "pioneer"],
+  "unmanned-aircraft": ["drone", "uav", "unmanned", "aerial", "quadcopter"],
+  "visual-art-photography": ["art", "painting", "gallery", "museum", "creative", "artwork", "photo", "camera", "image", "portrait", "lens", "sensor", "dslr", "mirrorless"],
 };
 
 function matchTopic(text) {
@@ -97,7 +90,7 @@ function matchTopic(text) {
   for (const [topic, keywords] of Object.entries(topicSearchTerms)) {
     if (keywords.some((kw) => lower.includes(kw))) return topic;
   }
-  return "technology";
+  return "technology-innovation";
 }
 
 // ── Fetch with retry ───────────────────────────────────────────────
@@ -121,7 +114,6 @@ async function fetchWithRetry(url, retries = 3) {
 // ── Fetch news ─────────────────────────────────────────────────────
 
 async function fetchAllNews() {
-  // Fetch general AI news + a few topic-specific queries
   const queries = [
     "artificial intelligence",
     "AI chatbot GPT",
