@@ -453,40 +453,74 @@ export default function Home() {
     ? groupedArticles.filter((g) => selectedTopics.includes(g.topic.id))
     : groupedArticles;
 
-  // Scroll-spy: highlight nav button for visible category section
+  // Scroll-spy: highlight nav button for the topmost visible category section.
+  // We track all intersecting sections and pick the one closest to the top of
+  // the viewport, debouncing the state update to prevent rapid toggling when
+  // scrolling across section boundaries.
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const sections = document.querySelectorAll("[data-topic-section]");
     if (sections.length === 0) return;
 
+    const visibleSet = new Map<Element, IntersectionObserverEntry>();
+    let debounceTimer: ReturnType<typeof setTimeout> | null = null;
+
     const observer = new IntersectionObserver(
       (entries) => {
-        let best: IntersectionObserverEntry | null = null;
         for (const entry of entries) {
           if (entry.isIntersecting) {
-            if (!best || entry.intersectionRatio > best.intersectionRatio) {
-              best = entry;
-            }
+            visibleSet.set(entry.target, entry);
+          } else {
+            visibleSet.delete(entry.target);
           }
         }
-        if (best) {
-          setActiveSection(best.target.getAttribute("data-topic-section"));
-        }
+
+        // Pick the section whose top edge is closest to (but below) the
+        // viewport's observation area — i.e. the topmost visible section.
+        if (debounceTimer) clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+          let best: Element | null = null;
+          let bestTop = Infinity;
+          for (const [el] of visibleSet) {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < bestTop) {
+              bestTop = rect.top;
+              best = el;
+            }
+          }
+          if (best) {
+            setActiveSection(best.getAttribute("data-topic-section"));
+          }
+        }, 80);
       },
-      { rootMargin: "-20% 0px -60% 0px", threshold: [0, 0.25, 0.5] }
+      { rootMargin: "-20% 0px -60% 0px", threshold: [0, 0.1] }
     );
 
     sections.forEach((s) => observer.observe(s));
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      if (debounceTimer) clearTimeout(debounceTimer);
+    };
   }, [displayGroups.length]);
 
-  // Auto-scroll nav to show active button
+  // Auto-scroll nav to show active button (debounced to avoid jitter)
   useEffect(() => {
     if (!activeSection || !topicNavRef.current) return;
-    const btn = topicNavRef.current.querySelector(`[data-nav-topic="${activeSection}"]`) as HTMLElement | null;
-    if (btn) {
-      btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-    }
+    const timer = setTimeout(() => {
+      const nav = topicNavRef.current;
+      if (!nav) return;
+      const btn = nav.querySelector(`[data-nav-topic="${activeSection}"]`) as HTMLElement | null;
+      if (!btn) return;
+      // Manually scroll the nav container instead of scrollIntoView to avoid
+      // interfering with the page scroll.
+      const navRect = nav.getBoundingClientRect();
+      const btnRect = btn.getBoundingClientRect();
+      const btnCenter = btnRect.left + btnRect.width / 2;
+      const navCenter = navRect.left + navRect.width / 2;
+      const offset = btnCenter - navCenter;
+      nav.scrollBy({ left: offset, behavior: "smooth" });
+    }, 150);
+    return () => clearTimeout(timer);
   }, [activeSection]);
 
   const sortedChannelVideos = sortByDateDesc(channelVideos);
