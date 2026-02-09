@@ -12,6 +12,9 @@ import {
   Loader2,
   RefreshCw,
   LayoutGrid,
+  Facebook,
+  Youtube,
+  Linkedin,
 } from "lucide-react";
 import TopicPill from "@/components/TopicPill";
 import NewsCard from "@/components/NewsCard";
@@ -179,30 +182,27 @@ function FeedContent() {
     .filter(Boolean);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0a0a]">
       {/* Daily news bar */}
       <DailyNewsBar latestVideo={channelVideos[0] || null} />
 
       {/* Header */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-30">
-        <div className="max-w-7xl mx-auto px-4 py-3">
+      <header className="bg-[#0a0a0a] border-b border-[#2a2a2a] sticky top-0 z-30">
+        <div className="max-w-[1800px] mx-auto px-[4vw] py-3">
           <div className="flex items-center justify-between gap-4 flex-wrap">
             {/* Back + Brand */}
             <div className="flex items-center gap-3">
               <button
                 onClick={() => router.push("/")}
-                className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
+                className="p-2 hover:bg-[#1a1a1a] transition-colors"
               >
-                <ArrowLeft size={18} className="text-gray-600" />
+                <ArrowLeft size={18} className="text-gray-400" />
               </button>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">AI</span>
-                </div>
-                <span className="font-bold text-lg text-gray-900 hidden sm:block">
-                  The Day After AI
-                </span>
-              </div>
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/6676cf95ee3c1d15365d2d18/3827502e-87dd-4bf1-808a-7b732caf1d18/TheDayAfterAI+New+Logo.png?format=200w"
+                alt="TheDayAfterAI News"
+                className="h-8 hidden sm:block"
+              />
             </div>
 
             {/* Search bar */}
@@ -210,14 +210,14 @@ function FeedContent() {
               <div className="relative">
                 <Search
                   size={16}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"
                 />
                 <input
                   type="text"
                   value={debouncedQuery}
                   onChange={(e) => setDebouncedQuery(e.target.value)}
                   placeholder="Search AI news..."
-                  className="w-full bg-gray-100 border border-gray-200 rounded-lg pl-10 pr-4 py-2 text-sm text-gray-900 placeholder:text-gray-400 outline-none focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-100 transition-colors"
+                  className="w-full bg-[#141414] border border-[#2a2a2a] rounded-none pl-10 pr-4 py-2 text-sm text-white placeholder:text-gray-600 outline-none focus:border-white/30 transition-colors"
                 />
               </div>
             </div>
@@ -227,7 +227,7 @@ function FeedContent() {
               <button
                 onClick={loadData}
                 title="Refresh"
-                className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
+                className="p-2 hover:bg-[#1a1a1a] transition-colors"
               >
                 <RefreshCw
                   size={16}
@@ -239,38 +239,51 @@ function FeedContent() {
 
               <button
                 onClick={() => setShowFilters(!showFilters)}
-                className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
+                className={`flex items-center gap-2 px-3 py-2 text-sm font-medium transition-all ${
                   showFilters || selectedTopics.length > 0
-                    ? "bg-blue-50 border border-blue-200 text-blue-700"
-                    : "bg-gray-100 border border-gray-200 text-gray-600 hover:bg-gray-200"
+                    ? "bg-white text-black"
+                    : "bg-[#141414] border border-[#2a2a2a] text-gray-400 hover:text-white"
                 }`}
               >
                 <SlidersHorizontal size={16} />
                 <span className="hidden sm:block">Topics</span>
                 {selectedTopics.length > 0 && (
-                  <span className="w-5 h-5 rounded-full bg-blue-600 text-white text-xs flex items-center justify-center">
+                  <span className="w-5 h-5 rounded-full bg-[#e63946] text-white text-xs flex items-center justify-center">
                     {selectedTopics.length}
                   </span>
                 )}
               </button>
+
+              {/* Social links */}
+              <div className="hidden md:flex items-center gap-2 ml-2 pl-2 border-l border-[#2a2a2a]">
+                <a href="https://www.facebook.com/thedayafterai" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-white transition-colors">
+                  <Facebook size={16} />
+                </a>
+                <a href="https://www.youtube.com/@thedayafterai" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-white transition-colors">
+                  <Youtube size={16} />
+                </a>
+                <a href="https://www.linkedin.com/company/thedayafterai/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-white transition-colors">
+                  <Linkedin size={16} />
+                </a>
+              </div>
             </div>
           </div>
 
           {/* Active filters */}
           {selectedTopicLabels.length > 0 && (
             <div className="flex items-center gap-2 mt-3 flex-wrap">
-              <span className="text-xs text-gray-500">Filtered by:</span>
+              <span className="text-xs text-gray-600 uppercase tracking-wider">Filtered by:</span>
               {selectedTopicLabels.map((label) => (
                 <span
                   key={label}
-                  className="text-xs px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200"
+                  className="text-xs px-2.5 py-1 bg-[#1a1a1a] text-gray-300 border border-[#2a2a2a]"
                 >
                   {label}
                 </span>
               ))}
               <button
                 onClick={clearFilters}
-                className="text-xs text-gray-500 hover:text-gray-700 flex items-center gap-1 transition-colors"
+                className="text-xs text-gray-600 hover:text-white flex items-center gap-1 transition-colors"
               >
                 <X size={12} />
                 Clear all
@@ -281,8 +294,8 @@ function FeedContent() {
 
         {/* Expandable topic filter panel */}
         {showFilters && (
-          <div className="border-t border-gray-200">
-            <div className="max-w-7xl mx-auto px-4 py-4">
+          <div className="border-t border-[#2a2a2a]">
+            <div className="max-w-[1800px] mx-auto px-[4vw] py-4">
               <div className="flex flex-wrap gap-2">
                 {TOPICS.map((topic) => (
                   <TopicPill
@@ -299,8 +312,8 @@ function FeedContent() {
       </header>
 
       {/* Content tabs */}
-      <div className="max-w-7xl mx-auto px-4 pt-6">
-        <div className="flex items-center gap-1 mb-6 bg-white rounded-lg p-1 w-fit border border-gray-200 shadow-sm">
+      <div className="max-w-[1800px] mx-auto px-[4vw] pt-6">
+        <div className="flex items-center gap-1 mb-6 bg-[#141414] p-1 w-fit border border-[#2a2a2a]">
           {[
             { id: "all" as const, label: "All", icon: LayoutGrid },
             { id: "articles" as const, label: "Articles", icon: Newspaper },
@@ -309,10 +322,10 @@ function FeedContent() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-all ${
+              className={`flex items-center gap-2 px-4 py-2 text-sm font-medium transition-all ${
                 activeTab === tab.id
-                  ? "bg-blue-600 text-white"
-                  : "text-gray-500 hover:text-gray-700 hover:bg-gray-50"
+                  ? "bg-[#e63946] text-white"
+                  : "text-gray-500 hover:text-white"
               }`}
             >
               <tab.icon size={14} />
@@ -323,19 +336,19 @@ function FeedContent() {
       </div>
 
       {/* Main content */}
-      <main className="max-w-7xl mx-auto px-4 pb-16">
+      <main className="max-w-[1800px] mx-auto px-[4vw] pb-16">
         {(activeTab === "all" || activeTab === "articles") && (
           <>
             <div className="flex items-center justify-between mb-6">
               <div>
-                <h2 className="text-2xl font-bold text-gray-900">
+                <h2 className="font-display text-2xl text-white">
                   {searchQuery
                     ? `Results for "${searchQuery}"`
                     : selectedTopics.length > 0
                     ? "Your Curated News"
                     : "Latest AI News"}
                 </h2>
-                <p className="text-sm text-gray-500 mt-1">
+                <p className="text-sm text-gray-600 mt-1">
                   {loadingNews
                     ? "Searching..."
                     : `${articles.length} article${articles.length !== 1 ? "s" : ""} found`}
@@ -345,31 +358,31 @@ function FeedContent() {
 
             {loadingNews ? (
               <div className="flex items-center justify-center py-16 mb-12">
-                <Loader2 size={24} className="text-blue-600 animate-spin" />
+                <Loader2 size={24} className="text-[#e63946] animate-spin" />
                 <span className="ml-3 text-gray-500">
                   Fetching latest news...
                 </span>
               </div>
             ) : articles.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
                 {articles.map((article, i) => (
                   <NewsCard key={article.id} article={article} index={i} />
                 ))}
               </div>
             ) : (
               <div className="text-center py-16 mb-12">
-                <div className="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center mx-auto mb-4">
-                  <Search size={22} className="text-gray-400" />
+                <div className="w-14 h-14 bg-[#141414] flex items-center justify-center mx-auto mb-4">
+                  <Search size={22} className="text-gray-600" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-700 mb-2">
+                <h3 className="text-lg font-bold text-gray-300 mb-2">
                   No articles found
                 </h3>
-                <p className="text-gray-500 text-sm">
+                <p className="text-gray-600 text-sm">
                   Try adjusting your search or topics to find more news.
                 </p>
                 <button
                   onClick={clearFilters}
-                  className="mt-4 text-sm text-blue-600 hover:text-blue-700 transition-colors"
+                  className="mt-4 text-sm text-[#e63946] hover:text-[#d62839] transition-colors"
                 >
                   Clear all filters
                 </button>
@@ -381,15 +394,15 @@ function FeedContent() {
         {/* Topic videos */}
         {(activeTab === "all" || activeTab === "videos") && (
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+            <h2 className="font-display text-2xl text-white mb-2">
               Related AI Videos
             </h2>
-            <p className="text-sm text-gray-500 mb-6">
+            <p className="text-sm text-gray-600 mb-6">
               Watch the latest AI coverage on YouTube
             </p>
             {loadingVideos ? (
               <div className="flex items-center justify-center py-12">
-                <Loader2 size={24} className="text-blue-600 animate-spin" />
+                <Loader2 size={24} className="text-[#e63946] animate-spin" />
                 <span className="ml-3 text-gray-500">
                   Searching YouTube...
                 </span>
@@ -401,7 +414,7 @@ function FeedContent() {
                 ))}
               </div>
             ) : (
-              <p className="text-gray-500 text-sm text-center py-8">
+              <p className="text-gray-600 text-sm text-center py-8">
                 No related videos found.
               </p>
             )}
@@ -415,19 +428,22 @@ function FeedContent() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-gray-200 bg-white py-8">
-        <div className="max-w-7xl mx-auto px-4 flex items-center justify-between flex-wrap gap-4">
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-md bg-blue-600 flex items-center justify-center">
-              <span className="text-white font-bold text-[10px]">AI</span>
-            </div>
-            <span className="text-sm text-gray-500">
-              The Day After AI &copy; {new Date().getFullYear()}
-            </span>
+      <footer className="border-t border-[#2a2a2a] py-6">
+        <div className="max-w-[1800px] mx-auto px-[4vw] flex items-center justify-between flex-wrap gap-4">
+          <span className="text-sm text-gray-600">
+            &copy; {new Date().getFullYear()} TheDayAfterAI News. All rights reserved.
+          </span>
+          <div className="flex items-center gap-4">
+            <a href="https://www.facebook.com/thedayafterai" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-white transition-colors">
+              <Facebook size={16} />
+            </a>
+            <a href="https://www.youtube.com/@thedayafterai" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-white transition-colors">
+              <Youtube size={16} />
+            </a>
+            <a href="https://www.linkedin.com/company/thedayafterai/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-white transition-colors">
+              <Linkedin size={16} />
+            </a>
           </div>
-          <p className="text-xs text-gray-400">
-            Powered by AI. Curated for humans.
-          </p>
         </div>
       </footer>
     </div>
@@ -438,8 +454,8 @@ export default function FeedPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-          <Loader2 size={24} className="text-blue-600 animate-spin" />
+        <div className="min-h-screen bg-[#0a0a0a] flex items-center justify-center">
+          <Loader2 size={24} className="text-[#e63946] animate-spin" />
         </div>
       }
     >

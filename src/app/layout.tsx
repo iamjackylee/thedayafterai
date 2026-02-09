@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "The Day After AI - Your AI News Hub",
+  title: "TheDayAfterAI News: Your Premier Source for AI News and Insights",
   description:
-    "Discover the latest AI news tailored to your interests. From science breakthroughs to creative AI, stay informed about the future.",
+    "The leading news channel for AI trends, insights and developments, keeping you informed on AI's impact on technology, society and the future.",
 };
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased bg-white text-gray-900">{children}</body>
+      <body className="antialiased bg-[#0a0a0a] text-gray-100">{children}</body>
     </html>
   );
 }
