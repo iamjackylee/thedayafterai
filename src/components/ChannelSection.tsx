@@ -11,15 +11,15 @@ interface ChannelSectionProps {
 
 export default function ChannelSection({ videos, loading }: ChannelSectionProps) {
   return (
-    <section className="bg-white rounded-lg border border-gray-200 p-6 md:p-8">
+    <section className="bg-[#141414] border border-[#2a2a2a] p-6 md:p-8">
       {/* Header */}
       <div className="flex items-center justify-between mb-6 flex-wrap gap-4">
         <div className="flex items-center gap-3">
-          <div className="w-11 h-11 rounded-full bg-red-600 flex items-center justify-center">
+          <div className="w-11 h-11 rounded-full bg-[#e63946] flex items-center justify-center">
             <Youtube size={22} className="text-white" />
           </div>
           <div>
-            <h2 className="text-lg font-bold text-gray-900">{CHANNEL_NAME}</h2>
+            <h2 className="text-lg font-bold text-white">{CHANNEL_NAME}</h2>
             <p className="text-sm text-gray-500">
               Daily AI News &amp; Analysis
             </p>
@@ -30,7 +30,7 @@ export default function ChannelSection({ videos, loading }: ChannelSectionProps)
             href={CHANNEL_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-red-600 hover:bg-red-700 text-white text-sm font-medium transition-colors"
+            className="flex items-center gap-2 px-4 py-2 bg-[#e63946] hover:bg-[#d62839] text-white text-sm font-bold uppercase tracking-wider transition-colors"
           >
             <Bell size={14} />
             Subscribe
@@ -39,7 +39,7 @@ export default function ChannelSection({ videos, loading }: ChannelSectionProps)
             href={CHANNEL_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-50 text-gray-700 text-sm font-medium transition-colors"
+            className="flex items-center gap-2 px-4 py-2 border border-[#2a2a2a] hover:border-gray-500 text-gray-400 hover:text-white text-sm font-medium transition-all"
           >
             Visit Channel
             <ExternalLink size={14} />
@@ -50,7 +50,7 @@ export default function ChannelSection({ videos, loading }: ChannelSectionProps)
       {/* Videos grid */}
       {loading ? (
         <div className="flex items-center justify-center py-12">
-          <Loader2 size={24} className="text-blue-600 animate-spin" />
+          <Loader2 size={24} className="text-[#e63946] animate-spin" />
           <span className="ml-3 text-gray-500 text-sm">
             Loading latest videos...
           </span>
@@ -75,7 +75,7 @@ export default function ChannelSection({ videos, loading }: ChannelSectionProps)
             href={CHANNEL_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-blue-600 hover:text-blue-700 transition-colors"
+            className="text-sm text-[#e63946] hover:text-[#d62839] transition-colors"
           >
             Visit the channel on YouTube &rarr;
           </a>
