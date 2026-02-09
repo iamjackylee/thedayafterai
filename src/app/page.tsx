@@ -262,9 +262,9 @@ export default function Home() {
               <span className="ml-3 text-[var(--muted)] text-lg">Loading videos...</span>
             </div>
           ) : sortedChannelVideos.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
-              {/* Featured first video - large */}
-              <div className="md:col-span-2 lg:col-span-2 lg:row-span-2">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+              {/* Featured first video - large left */}
+              <div>
                 <a
                   href={`https://www.youtube.com/watch?v=${sortedChannelVideos[0].videoId}`}
                   target="_blank"
@@ -299,10 +299,12 @@ export default function Home() {
                   </div>
                 </a>
               </div>
-              {/* Remaining videos */}
-              {sortedChannelVideos.slice(1, 7).map((video, i) => (
-                <VideoCard key={video.id} video={video} index={i} />
-              ))}
+              {/* 4 small videos - 2x2 grid on right */}
+              <div className="grid grid-cols-2 gap-3">
+                {sortedChannelVideos.slice(1, 5).map((video, i) => (
+                  <VideoCard key={video.id} video={video} index={i} />
+                ))}
+              </div>
             </div>
           ) : (
             <div className="text-center py-12 bg-[var(--surface)] border border-[var(--border)]">
