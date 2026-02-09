@@ -1,0 +1,51 @@
+{
+  "sections": [
+    {
+      "id": "ai-market-insight",
+      "title": "AI Market Insight",
+      "color": "#f5a623",
+      "articles": [
+        {
+          "id": "ami-1",
+          "title": "Amazon Stock Forecast: 6 AI Chatbots Analyze the $200B \"Capex Shock\"",
+          "date": "2026-02-07",
+          "imageUrl": "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=480&h=320&fit=crop",
+          "url": "",
+          "source": "TheDayAfterAI"
+        },
+        {
+          "id": "ami-2",
+          "title": "6 AI Chatbots Predict Alphabet (GOOGL) Price Following 2026 Capex Shock",
+          "date": "2026-02-06",
+          "imageUrl": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=480&h=320&fit=crop",
+          "url": "",
+          "source": "TheDayAfterAI"
+        },
+        {
+          "id": "ami-3",
+          "title": "Battle of the AIs: 6 Chatbots Predict AMD Stock Price",
+          "date": "2026-02-05",
+          "imageUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=480&h=320&fit=crop",
+          "url": "",
+          "source": "TheDayAfterAI"
+        },
+        {
+          "id": "ami-4",
+          "title": "Battle of the AI Chatbots: Palantir (PLTR) Stock Forecast Feb 2026",
+          "date": "2026-02-04",
+          "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=480&h=320&fit=crop",
+          "url": "",
+          "source": "TheDayAfterAI"
+        },
+        {
+          "id": "ami-5",
+          "title": "TSLA Forecast: 6 AI Chatbots Predict Feb 2-6 Price (5 Bears vs 1 Bull)",
+          "date": "2026-02-03",
+          "imageUrl": "https://images.unsplash.com/photo-1617704548623-340376564e68?w=480&h=320&fit=crop",
+          "url": "",
+          "source": "TheDayAfterAI"
+        }
+      ]
+    }
+  ]
+}

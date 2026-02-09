@@ -19,10 +19,12 @@ import { TOPICS } from "@/lib/topics";
 import {
   fetchNews,
   fetchChannelVideos,
+  fetchCustomSections,
   sortByDateDesc,
   PLAYLIST_URL,
   type NewsArticle,
   type YouTubeVideo,
+  type CustomSection,
 } from "@/lib/api";
 import {
   getNewsByTopics as getFallbackNews,
@@ -43,6 +45,109 @@ function adaptFallbackVideos(vids: any[]): YouTubeVideo[] {
     description: v.description,
     channelTitle: "TheDayAfterAI",
   }));
+}
+
+function CustomSectionRow({ section }: { section: CustomSection }) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+
+  const checkScroll = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 0);
+    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 10);
+  }, []);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    checkScroll();
+    el.addEventListener("scroll", checkScroll, { passive: true });
+    return () => el.removeEventListener("scroll", checkScroll);
+  }, [checkScroll, section.articles]);
+
+  const scroll = (dir: "left" | "right") => {
+    scrollRef.current?.scrollBy({
+      left: dir === "left" ? -600 : 600,
+      behavior: "smooth",
+    });
+  };
+
+  if (section.articles.length === 0) return null;
+
+  return (
+    <div className="category-section">
+      <div className="flex items-center justify-between mb-4">
+        <div
+          className="category-header"
+          style={{ borderLeftColor: section.color } as React.CSSProperties}
+        >
+          <div className="flex items-center gap-3">
+            <h3 className="text-lg font-black text-white uppercase tracking-wide">
+              {section.title}
+            </h3>
+            <span
+              className="text-[10px] font-bold px-2 py-0.5 rounded-sm"
+              style={{ backgroundColor: section.color + "20", color: section.color }}
+            >
+              TheDayAfterAI
+            </span>
+          </div>
+        </div>
+        <div className="flex items-center gap-1">
+          <button
+            onClick={() => scroll("left")}
+            disabled={!canScrollLeft}
+            className="p-2 rounded-sm transition-colors disabled:opacity-20"
+            style={{ color: canScrollLeft ? section.color : undefined }}
+          >
+            <ChevronLeft size={20} />
+          </button>
+          <button
+            onClick={() => scroll("right")}
+            disabled={!canScrollRight}
+            className="p-2 rounded-sm transition-colors disabled:opacity-20"
+            style={{ color: canScrollRight ? section.color : undefined }}
+          >
+            <ChevronRight size={20} />
+          </button>
+        </div>
+      </div>
+      <div
+        ref={scrollRef}
+        className="category-scroll flex gap-4 overflow-x-auto pb-4 scroll-smooth"
+        style={{ scrollbarWidth: "none" }}
+      >
+        {section.articles.map((article) => (
+          <a
+            key={article.id}
+            href={article.url || "#"}
+            target={article.url ? "_blank" : undefined}
+            rel={article.url ? "noopener noreferrer" : undefined}
+            className="shrink-0 w-[280px] group block bg-[var(--surface)] overflow-hidden border border-[var(--border)] hover:border-[var(--border-light)] transition-all card-hover"
+          >
+            <div className="relative aspect-video overflow-hidden">
+              <div
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                style={{ backgroundImage: `url(${article.imageUrl})` }}
+              />
+            </div>
+            <div className="p-3">
+              <h4 className="text-xs font-bold text-white group-hover:text-[var(--accent)] transition-colors line-clamp-2 leading-snug">
+                {article.title}
+              </h4>
+              <div className="flex items-center gap-2 mt-2">
+                <span className="text-[var(--text-secondary)] text-[10px] font-medium">
+                  {new Date(article.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
+                </span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 function CategoryRow({ topic, articles }: { topic: typeof TOPICS[number]; articles: NewsArticle[] }) {
@@ -135,6 +240,7 @@ export default function Home() {
 
   const [articles, setArticles] = useState<NewsArticle[]>([]);
   const [channelVideos, setChannelVideos] = useState<YouTubeVideo[]>([]);
+  const [customSections, setCustomSections] = useState<CustomSection[]>([]);
   const [loadingNews, setLoadingNews] = useState(true);
   const [loadingChannel, setLoadingChannel] = useState(true);
 
@@ -179,7 +285,11 @@ export default function Home() {
       })
       .finally(() => setLoadingChannel(false));
 
-    await Promise.allSettled([newsPromise, channelPromise]);
+    const customPromise = fetchCustomSections()
+      .then((sections) => setCustomSections(sections))
+      .catch(() => {});
+
+    await Promise.allSettled([newsPromise, channelPromise, customPromise]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedTopics.join(","), searchQuery]);
 
@@ -411,6 +521,11 @@ export default function Home() {
 
         {/* Divider */}
         <div className="h-px bg-[var(--border-light)] mb-10" />
+
+        {/* Custom editorial sections (e.g. AI Market Insight) */}
+        {customSections.map((section) => (
+          <CustomSectionRow key={section.id} section={section} />
+        ))}
 
         {/* News heading */}
         <div className="mb-8">

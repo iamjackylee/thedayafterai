@@ -116,29 +116,65 @@ async function fetchWithRetry(url, retries = 3) {
 // ── Fetch news ─────────────────────────────────────────────────────
 
 async function fetchAllNews() {
-  // One or more queries per category to ensure each gets ~30 articles
-  const queries = [
+  // Per-category queries to ensure each gets ~30 articles
+  const categoryQueries = {
+    "ai-academy": [
+      "AI education university research",
+      "AI academic learning school curriculum",
+    ],
+    "business-economy": [
+      "AI business economy startup funding",
+      "AI company market invest stock finance",
+    ],
+    "chatbot-development": [
+      "AI chatbot GPT LLM OpenAI",
+      "AI Claude Gemini language model conversational",
+    ],
+    "digital-security": [
+      "AI cybersecurity privacy digital security",
+      "AI hack breach malware encryption",
+    ],
+    "environment-science": [
+      "AI climate environment science quantum",
+      "AI sustainable energy physics biology discovery",
+    ],
+    "governance-politics": [
+      "AI regulation governance politics policy",
+      "AI government legislation compliance framework",
+    ],
+    "health-style": [
+      "AI health medical diagnosis treatment",
+      "AI fashion style design trend luxury",
+    ],
+    "musical-art": [
+      "AI music audio song compose Spotify",
+      "AI album artist melody sound",
+    ],
+    "technology-innovation": [
+      "AI technology innovation breakthrough",
+      "AI chip semiconductor hardware computing software",
+      "AI agent autonomous robot",
+    ],
+    "unmanned-aircraft": [
+      "AI drone unmanned aircraft UAV aerial",
+      "AI quadcopter flying delivery drone",
+    ],
+    "visual-art-photography": [
+      "AI photography visual art camera image",
+      "AI painting creative artwork gallery museum",
+    ],
+  };
+
+  // Also add broad queries
+  const broadQueries = [
     "artificial intelligence",
-    "AI chatbot GPT LLM OpenAI",
-    "AI technology innovation breakthrough",
-    "AI health medical diagnosis",
-    "AI business economy startup funding",
-    "AI education university academy research",
-    "AI cybersecurity privacy digital security",
-    "AI climate environment science quantum",
-    "AI regulation governance politics policy",
-    "AI music audio art creative",
-    "AI drone unmanned aircraft UAV",
-    "AI photography visual art camera",
-    "AI fashion style design trend",
-    "AI chip semiconductor hardware computing",
-    "AI agent autonomous robot",
+    "artificial intelligence news today",
   ];
 
   const allArticles = [];
   const seenTitles = new Set();
 
-  for (const q of queries) {
+  async function fetchQuery(q) {
     try {
       const rssUrl = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en&num=40`;
       const xml = await fetchWithRetry(rssUrl);
@@ -171,10 +207,32 @@ async function fetchAllNews() {
     }
   }
 
+  // Fetch per-category queries
+  for (const [category, queries] of Object.entries(categoryQueries)) {
+    for (const q of queries) {
+      await fetchQuery(q);
+    }
+    // Count how many we have for this category
+    const count = allArticles.filter((a) => a.topic === category).length;
+    console.log(`  ${category}: ${count} articles`);
+  }
+
+  // Fetch broad queries for additional coverage
+  for (const q of broadQueries) {
+    await fetchQuery(q);
+  }
+
   // Sort newest first
   allArticles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-  console.log(`Fetched ${allArticles.length} news articles`);
+  // Log per-category counts
+  const counts = {};
+  for (const a of allArticles) {
+    counts[a.topic] = (counts[a.topic] || 0) + 1;
+  }
+  console.log(`Fetched ${allArticles.length} total news articles`);
+  console.log("Per-category counts:", JSON.stringify(counts, null, 2));
+
   return allArticles;
 }
 
