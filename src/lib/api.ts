@@ -194,7 +194,15 @@ export async function fetchNews(
       const pubDate = getTextContent(item, "pubDate");
       const source = getTextContent(item, "source");
       const description = getTextContent(item, "description");
-      const summary = description.replace(/<[^>]*>/g, "").trim();
+      const summary = description
+        .replace(/&lt;/g, "<")
+        .replace(/&gt;/g, ">")
+        .replace(/&amp;/g, "&")
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/<[^>]*>/g, "")
+        .replace(/\s+/g, " ")
+        .trim();
 
       const rawTopic = matchTopic(
         title + " " + summary,
@@ -208,7 +216,7 @@ export async function fetchNews(
         topic: TOPIC_GROUP_MAP[rawTopic] || rawTopic,
         source: source || "Google News",
         date: pubDate,
-        imageUrl: placeholderImage(i),
+        imageUrl: generateImageUrl(title),
         url: link,
       });
     }
@@ -388,16 +396,9 @@ export const topicToSearchQuery: Record<string, string> = {
   "visual-art-photography": "art photography creative",
 };
 
-function placeholderImage(index: number): string {
-  const images = [
-    "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
-  ];
-  return images[index % images.length];
+function generateImageUrl(title: string): string {
+  const prompt = `professional news article cover image about: ${title}, clean modern design, photorealistic`;
+  return `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=600&height=400&nologo=true`;
 }
 
 export function sortByDateDesc<T extends { date?: string; publishedAt?: string }>(
