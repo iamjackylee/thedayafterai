@@ -9,36 +9,36 @@ interface DailyNewsBarProps {
 
 export default function DailyNewsBar({ latestVideo }: DailyNewsBarProps) {
   return (
-    <div className="w-full bg-[var(--accent)]">
-      <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-2 flex items-center justify-between gap-4 flex-wrap">
+    <div className="w-full bg-[var(--surface)]  border-b border-[var(--border)]">
+      <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-2.5 flex items-center justify-between gap-4 flex-wrap">
         {/* Channel branding */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 shrink-0">
           <div className="flex items-center gap-2">
-            <Radio size={14} className="text-white/80" />
-            <span className="text-sm font-bold text-white uppercase tracking-wider">
+            <Radio size={14} className="text-[var(--accent)]" />
+            <span className="text-xs font-black text-white uppercase tracking-widest">
               {CHANNEL_NAME}
             </span>
           </div>
-          <span className="hidden sm:block text-white/50">|</span>
-          <span className="hidden sm:block text-sm text-white/80">
+          <span className="hidden sm:block text-[var(--border-light)]">|</span>
+          <span className="hidden sm:block text-xs text-[var(--text-secondary)] font-medium">
             Daily AI News
           </span>
         </div>
 
         {/* Latest video */}
         <div className="flex items-center gap-2 flex-1 min-w-0 justify-center">
-          <Play size={12} className="text-white/80 shrink-0" fill="currentColor" />
+          <Play size={10} className="text-[#ff0050] shrink-0" fill="currentColor" />
           {latestVideo ? (
             <a
               href={`https://www.youtube.com/watch?v=${latestVideo.videoId}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-white/90 truncate hover:text-white transition-colors"
+              className="text-xs text-[var(--foreground)] truncate hover:text-[var(--accent)] transition-colors font-medium"
             >
               {latestVideo.title}
             </a>
           ) : (
-            <span className="text-sm text-white/60 truncate">
+            <span className="text-xs text-[var(--muted)] truncate">
               Loading latest video...
             </span>
           )}
@@ -49,10 +49,10 @@ export default function DailyNewsBar({ latestVideo }: DailyNewsBarProps) {
           href={PLAYLIST_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-1.5 text-xs font-bold text-white/80 hover:text-white transition-colors shrink-0 uppercase tracking-wider"
+          className="flex items-center gap-1.5 text-[10px] font-bold text-[var(--accent)] hover:text-white transition-colors shrink-0 uppercase tracking-widest"
         >
-          Watch on YouTube
-          <ExternalLink size={12} />
+          Watch
+          <ExternalLink size={10} />
         </a>
       </div>
     </div>

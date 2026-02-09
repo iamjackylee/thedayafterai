@@ -2,7 +2,7 @@
 
 import { ExternalLink, Clock } from "lucide-react";
 import type { NewsArticle } from "@/lib/api";
-import { getTopicLabel } from "@/lib/topics";
+import { getTopicLabel, getTopicColor } from "@/lib/topics";
 
 interface NewsCardProps {
   article: NewsArticle;
@@ -23,23 +23,27 @@ function formatDate(dateStr: string): string {
 
 export default function NewsCard({ article }: NewsCardProps) {
   const topicLabel = getTopicLabel(article.topic);
+  const topicColor = getTopicColor(article.topic);
 
   return (
     <a
       href={article.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group bg-[var(--surface)] overflow-hidden border border-[var(--border)] hover:border-[var(--border-light)] transition-all block"
+      className="group bg-[var(--surface)] overflow-hidden border border-[var(--border)] hover:border-[var(--border-light)] transition-all block card-hover"
     >
       {/* Image */}
-      <div className="relative aspect-[3/2] overflow-hidden">
+      <div className="relative aspect-[16/10] overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
           style={{ backgroundImage: `url(${article.imageUrl})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
         {topicLabel && (
-          <div className="absolute top-3 left-3 px-2 py-0.5 text-[10px] font-bold text-white bg-[var(--accent)] uppercase tracking-wider">
+          <div
+            className="absolute top-0 left-0 px-2.5 py-1 text-[10px] font-black uppercase tracking-widest"
+            style={{ backgroundColor: topicColor, color: "#000" }}
+          >
             {topicLabel}
           </div>
         )}
