@@ -6,7 +6,7 @@ export interface YouTubeVideo {
   description: string;
 }
 
-// The Day After AI YouTube channel videos
+// TheDayAfterAI YouTube channel videos
 export const DAILY_CHANNEL_VIDEOS: YouTubeVideo[] = [
   {
     id: "daily-1",
@@ -101,6 +101,6 @@ export function getVideosForTopics(topicIds: string[]): YouTubeVideo[] {
   return topicIds.flatMap((id) => TOPIC_VIDEOS[id] || []);
 }
 
-// The Day After AI YouTube channel URL
+// TheDayAfterAI YouTube channel URL
 export const CHANNEL_URL = "https://www.youtube.com/@thedayafterai";
-export const CHANNEL_NAME = "The Day After AI";
+export const CHANNEL_NAME = "TheDayAfterAI";

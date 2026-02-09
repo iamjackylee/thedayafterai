@@ -41,8 +41,90 @@ function adaptFallbackVideos(vids: any[]): YouTubeVideo[] {
     thumbnail: v.thumbnail,
     publishedAt: v.publishedAt,
     description: v.description,
-    channelTitle: "The Day After AI",
+    channelTitle: "TheDayAfterAI",
   }));
+}
+
+function CategoryRow({ topic, articles }: { topic: typeof TOPICS[number]; articles: NewsArticle[] }) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+
+  const checkScroll = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 0);
+    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 10);
+  }, []);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    checkScroll();
+    el.addEventListener("scroll", checkScroll, { passive: true });
+    return () => el.removeEventListener("scroll", checkScroll);
+  }, [checkScroll, articles]);
+
+  const scroll = (dir: "left" | "right") => {
+    scrollRef.current?.scrollBy({
+      left: dir === "left" ? -600 : 600,
+      behavior: "smooth",
+    });
+  };
+
+  return (
+    <div className="category-section">
+      {/* Category header with colored border and arrows */}
+      <div className="flex items-center justify-between mb-4">
+        <div
+          className="category-header"
+          style={{ borderLeftColor: topic.color } as React.CSSProperties}
+        >
+          <div className="flex items-center gap-3">
+            <h3 className="text-lg font-black text-white uppercase tracking-wide">
+              {topic.label}
+            </h3>
+            <span
+              className="text-xs font-bold px-2 py-0.5 rounded-sm"
+              style={{ backgroundColor: topic.color + "20", color: topic.color }}
+            >
+              {articles.length}
+            </span>
+          </div>
+        </div>
+        <div className="flex items-center gap-1">
+          <button
+            onClick={() => scroll("left")}
+            disabled={!canScrollLeft}
+            className="p-2 rounded-sm transition-colors disabled:opacity-20"
+            style={{ color: canScrollLeft ? topic.color : undefined }}
+          >
+            <ChevronLeft size={20} />
+          </button>
+          <button
+            onClick={() => scroll("right")}
+            disabled={!canScrollRight}
+            className="p-2 rounded-sm transition-colors disabled:opacity-20"
+            style={{ color: canScrollRight ? topic.color : undefined }}
+          >
+            <ChevronRight size={20} />
+          </button>
+        </div>
+      </div>
+      {/* Horizontal scroll row */}
+      <div
+        ref={scrollRef}
+        className="category-scroll flex gap-4 overflow-x-auto pb-4 scroll-smooth"
+        style={{ scrollbarWidth: "none" }}
+      >
+        {articles.map((article, i) => (
+          <div key={article.id} className="shrink-0 w-[280px]">
+            <NewsCard article={article} index={i} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default function Home() {
@@ -243,7 +325,7 @@ export default function Home() {
           <div className="flex items-center justify-between mb-6">
             <div className="category-header" style={{ borderLeftColor: "#ff0050" } as React.CSSProperties}>
               <h2 className="font-display text-2xl md:text-3xl text-white">Daily AI News</h2>
-              <p className="text-sm text-[var(--text-secondary)] mt-1">The Day After AI YouTube Channel</p>
+              <p className="text-sm text-[var(--text-secondary)] mt-1">TheDayAfterAI YouTube Channel</p>
             </div>
             <a
               href={PLAYLIST_URL}
@@ -301,7 +383,7 @@ export default function Home() {
                       {new Date(sortedChannelVideos[0].publishedAt).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
                     </span>
                     <span className="text-[var(--border-light)]">|</span>
-                    <span className="text-xs text-[var(--muted)]">The Day After AI</span>
+                    <span className="text-xs text-[var(--muted)]">TheDayAfterAI</span>
                   </div>
                 </div>
               </a>
@@ -344,7 +426,7 @@ export default function Home() {
           </p>
         </div>
 
-        {/* News Articles grouped by category */}
+        {/* News Articles grouped by category - horizontal scroll rows */}
         {loadingNews ? (
           <div className="flex items-center justify-center py-24">
             <Loader2 size={32} className="text-[var(--accent)] animate-spin" />
@@ -353,33 +435,7 @@ export default function Home() {
         ) : displayGroups.length > 0 ? (
           <div>
             {displayGroups.map(({ topic, articles: groupArticles }) => (
-              <div key={topic.id} className="category-section">
-                {/* Category header with colored border */}
-                <div
-                  className="category-header mb-5"
-                  style={{ borderLeftColor: topic.color } as React.CSSProperties}
-                >
-                  <div className="flex items-center gap-3">
-                    <h3
-                      className="text-lg font-black text-white uppercase tracking-wide"
-                    >
-                      {topic.label}
-                    </h3>
-                    <span
-                      className="text-xs font-bold px-2 py-0.5 rounded-sm"
-                      style={{ backgroundColor: topic.color + "20", color: topic.color }}
-                    >
-                      {groupArticles.length}
-                    </span>
-                  </div>
-                </div>
-                {/* Cards grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                  {groupArticles.map((article, i) => (
-                    <NewsCard key={article.id} article={article} index={i} />
-                  ))}
-                </div>
-              </div>
+              <CategoryRow key={topic.id} topic={topic} articles={groupArticles.slice(0, 30)} />
             ))}
           </div>
         ) : (

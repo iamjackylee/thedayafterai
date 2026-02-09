@@ -116,12 +116,23 @@ async function fetchWithRetry(url, retries = 3) {
 // ── Fetch news ─────────────────────────────────────────────────────
 
 async function fetchAllNews() {
+  // One or more queries per category to ensure each gets ~30 articles
   const queries = [
     "artificial intelligence",
-    "AI chatbot GPT",
-    "AI technology innovation",
-    "AI health science",
-    "AI business economy",
+    "AI chatbot GPT LLM OpenAI",
+    "AI technology innovation breakthrough",
+    "AI health medical diagnosis",
+    "AI business economy startup funding",
+    "AI education university academy research",
+    "AI cybersecurity privacy digital security",
+    "AI climate environment science quantum",
+    "AI regulation governance politics policy",
+    "AI music audio art creative",
+    "AI drone unmanned aircraft UAV",
+    "AI photography visual art camera",
+    "AI fashion style design trend",
+    "AI chip semiconductor hardware computing",
+    "AI agent autonomous robot",
   ];
 
   const allArticles = [];
@@ -129,7 +140,7 @@ async function fetchAllNews() {
 
   for (const q of queries) {
     try {
-      const rssUrl = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en&tbs=qdr:w`;
+      const rssUrl = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en&num=40`;
       const xml = await fetchWithRetry(rssUrl);
       const items = extractItems(xml);
 
@@ -188,7 +199,7 @@ function parseVideoEntries(xml) {
       thumbnail,
       publishedAt: published,
       description,
-      channelTitle: "The Day After AI",
+      channelTitle: "TheDayAfterAI",
     });
   }
 
