@@ -2,7 +2,6 @@
 
 import { ExternalLink, Clock } from "lucide-react";
 import type { NewsArticle } from "@/lib/api";
-import { getTopicLabel, getTopicColor } from "@/lib/topics";
 
 interface NewsCardProps {
   article: NewsArticle;
@@ -22,9 +21,6 @@ function formatDate(dateStr: string): string {
 }
 
 export default function NewsCard({ article }: NewsCardProps) {
-  const topicLabel = getTopicLabel(article.topic);
-  const topicColor = getTopicColor(article.topic);
-
   return (
     <a
       href={article.url}
@@ -39,14 +35,6 @@ export default function NewsCard({ article }: NewsCardProps) {
           style={{ backgroundImage: `url(${article.imageUrl})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-        {topicLabel && (
-          <div
-            className="absolute top-0 left-0 px-2.5 py-1 text-[10px] font-black uppercase tracking-widest"
-            style={{ backgroundColor: topicColor, color: "#000" }}
-          >
-            {topicLabel}
-          </div>
-        )}
       </div>
 
       {/* Content */}

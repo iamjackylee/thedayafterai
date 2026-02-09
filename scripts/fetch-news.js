@@ -57,7 +57,22 @@ function extractEntries(xml) {
 }
 
 function stripHtml(html) {
-  return html.replace(/<[^>]*>/g, "").trim();
+  // Decode HTML entities, then strip tags
+  return html
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/<[^>]*>/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function generateImageUrl(title) {
+  // Use Pollinations.ai to generate a unique AI image for each article
+  const prompt = `professional news article cover image about: ${title}, clean modern design, photorealistic`;
+  return `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=600&height=400&nologo=true`;
 }
 
 // ── Placeholder images ─────────────────────────────────────────────
@@ -198,7 +213,7 @@ async function fetchAllNews() {
           topic: matchTopic(title + " " + description),
           source,
           date: pubDate,
-          imageUrl: PLACEHOLDER_IMAGES[allArticles.length % PLACEHOLDER_IMAGES.length],
+          imageUrl: generateImageUrl(title),
           url: link,
         });
       }
