@@ -271,7 +271,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="group block relative h-full bg-[var(--surface)] overflow-hidden card-hover"
                 >
-                  <div className="relative aspect-video lg:aspect-auto lg:h-full min-h-[320px] overflow-hidden">
+                  <div className="relative aspect-video overflow-hidden">
                     <div
                       className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
                       style={{ backgroundImage: `url(${sortedChannelVideos[0].thumbnail})` }}
