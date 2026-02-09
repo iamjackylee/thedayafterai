@@ -29,6 +29,20 @@ export const DAILY_CHANNEL_VIDEOS: YouTubeVideo[] = [
     publishedAt: "2026-02-06",
     description: "Discover the most powerful AI tools that are reshaping how we work and create.",
   },
+  {
+    id: "daily-4",
+    title: "AI in Healthcare: Revolutionary Diagnostics and Drug Discovery",
+    thumbnail: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=480&h=270&fit=crop",
+    publishedAt: "2026-02-05",
+    description: "How AI-powered diagnostics and drug discovery are transforming the healthcare industry.",
+  },
+  {
+    id: "daily-5",
+    title: "The Rise of AI Agents: What You Need to Know",
+    thumbnail: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=480&h=270&fit=crop",
+    publishedAt: "2026-02-04",
+    description: "AI agents are becoming more autonomous and capable. Here is what that means for the future.",
+  },
 ];
 
 // AI news videos from YouTube for different topics (using new grouped IDs)

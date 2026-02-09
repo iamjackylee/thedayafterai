@@ -6,9 +6,11 @@ const fs = require("fs");
 const path = require("path");
 
 const GOOGLE_NEWS_RSS = "https://news.google.com/rss/search";
+const PLAYLIST_ID = "PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe";
 const CHANNEL_ID = "UCwHJaEBaaSQPFHLUiMjHTtg";
-const YOUTUBE_RSS = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
-const PLAYLIST_URL = "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe";
+const YOUTUBE_PLAYLIST_RSS = `https://www.youtube.com/feeds/videos.xml?playlist_id=${PLAYLIST_ID}`;
+const YOUTUBE_CHANNEL_RSS = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
+const PLAYLIST_URL = `https://www.youtube.com/playlist?list=${PLAYLIST_ID}`;
 
 const OUTPUT_DIR = path.join(__dirname, "..", "public", "data");
 
@@ -167,35 +169,55 @@ async function fetchAllNews() {
 
 // ── Fetch channel videos ───────────────────────────────────────────
 
+function parseVideoEntries(xml) {
+  const entries = extractEntries(xml);
+  const videos = [];
+
+  for (const entry of entries) {
+    const videoId = getTagContent(entry, "yt:videoId")[0] || "";
+    const title = getTagContent(entry, "title")[0] || "";
+    const published = getTagContent(entry, "published")[0] || "";
+    const description = getTagContent(entry, "media:description")[0] || "";
+    const thumbnails = getTagAttr(entry, "media:thumbnail", "url");
+    const thumbnail = thumbnails[0] || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+
+    videos.push({
+      id: videoId,
+      videoId,
+      title,
+      thumbnail,
+      publishedAt: published,
+      description,
+      channelTitle: "The Day After AI",
+    });
+  }
+
+  return videos;
+}
+
 async function fetchChannelVideos() {
+  // Try playlist RSS first (user's specific AI news playlist)
   try {
-    const xml = await fetchWithRetry(YOUTUBE_RSS);
-    const entries = extractEntries(xml);
-    const videos = [];
-
-    for (const entry of entries) {
-      const videoId = getTagContent(entry, "yt:videoId")[0] || "";
-      const title = getTagContent(entry, "title")[0] || "";
-      const published = getTagContent(entry, "published")[0] || "";
-      const description = getTagContent(entry, "media:description")[0] || "";
-      const thumbnails = getTagAttr(entry, "media:thumbnail", "url");
-      const thumbnail = thumbnails[0] || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
-
-      videos.push({
-        id: videoId,
-        videoId,
-        title,
-        thumbnail,
-        publishedAt: published,
-        description,
-        channelTitle: "The Day After AI",
-      });
+    console.log("Trying playlist RSS feed...");
+    const xml = await fetchWithRetry(YOUTUBE_PLAYLIST_RSS);
+    const videos = parseVideoEntries(xml);
+    if (videos.length > 0) {
+      console.log(`Fetched ${videos.length} videos from playlist RSS`);
+      return videos;
     }
+  } catch (err) {
+    console.warn("Playlist RSS fetch failed:", err.message);
+  }
 
-    console.log(`Fetched ${videos.length} channel videos`);
+  // Fall back to channel RSS
+  try {
+    console.log("Trying channel RSS feed...");
+    const xml = await fetchWithRetry(YOUTUBE_CHANNEL_RSS);
+    const videos = parseVideoEntries(xml);
+    console.log(`Fetched ${videos.length} videos from channel RSS`);
     return videos;
   } catch (err) {
-    console.warn("Failed to fetch channel videos:", err.message);
+    console.warn("Channel RSS fetch also failed:", err.message);
     return [];
   }
 }

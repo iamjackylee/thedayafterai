@@ -190,8 +190,50 @@ export async function fetchNews(
 
 // ─── YouTube RSS (100% free, no key) ──────────────────────────────
 
+const PLAYLIST_ID = "PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe";
 const CHANNEL_ID = "UCwHJaEBaaSQPFHLUiMjHTtg";
-const YOUTUBE_RSS = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
+const YOUTUBE_PLAYLIST_RSS = `https://www.youtube.com/feeds/videos.xml?playlist_id=${PLAYLIST_ID}`;
+const YOUTUBE_CHANNEL_RSS = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
+
+function parseYouTubeEntries(xml: string, maxResults: number): YouTubeVideo[] {
+  const doc = parseXML(xml);
+  const entries = doc.getElementsByTagName("entry");
+  const channelTitle =
+    doc.getElementsByTagName("title")[0]?.textContent || "The Day After AI";
+
+  const videos: YouTubeVideo[] = [];
+  const len = Math.min(entries.length, maxResults);
+
+  for (let i = 0; i < len; i++) {
+    const entry = entries[i];
+    const videoId =
+      entry.getElementsByTagName("yt:videoId")[0]?.textContent || "";
+    const title = getTextContent(entry, "title");
+    const published = getTextContent(entry, "published");
+    const mediaGroup = entry.getElementsByTagName("media:group")[0];
+    const description = mediaGroup
+      ? mediaGroup.getElementsByTagName("media:description")[0]
+          ?.textContent || ""
+      : "";
+    const thumbnail = mediaGroup
+      ? mediaGroup
+          .getElementsByTagName("media:thumbnail")[0]
+          ?.getAttribute("url") || ""
+      : "";
+
+    videos.push({
+      id: videoId,
+      videoId,
+      title,
+      thumbnail: thumbnail || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
+      publishedAt: published,
+      description,
+      channelTitle,
+    });
+  }
+
+  return videos;
+}
 
 export async function fetchChannelVideos(
   maxResults = 15
@@ -202,46 +244,19 @@ export async function fetchChannelVideos(
     return prefetched.channelVideos.slice(0, maxResults);
   }
 
-  // Fall back to live RSS
+  // Try playlist RSS first (user's specific AI news playlist)
   try {
-    const xml = await fetchWithProxy(YOUTUBE_RSS);
-    const doc = parseXML(xml);
-    const entries = doc.getElementsByTagName("entry");
-    const channelTitle =
-      doc.getElementsByTagName("title")[0]?.textContent || "The Day After AI";
+    const xml = await fetchWithProxy(YOUTUBE_PLAYLIST_RSS);
+    const videos = parseYouTubeEntries(xml, maxResults);
+    if (videos.length > 0) return videos;
+  } catch {
+    console.warn("Playlist RSS fetch failed, trying channel RSS...");
+  }
 
-    const videos: YouTubeVideo[] = [];
-    const len = Math.min(entries.length, maxResults);
-
-    for (let i = 0; i < len; i++) {
-      const entry = entries[i];
-      const videoId =
-        entry.getElementsByTagName("yt:videoId")[0]?.textContent || "";
-      const title = getTextContent(entry, "title");
-      const published = getTextContent(entry, "published");
-      const mediaGroup = entry.getElementsByTagName("media:group")[0];
-      const description = mediaGroup
-        ? mediaGroup.getElementsByTagName("media:description")[0]
-            ?.textContent || ""
-        : "";
-      const thumbnail = mediaGroup
-        ? mediaGroup
-            .getElementsByTagName("media:thumbnail")[0]
-            ?.getAttribute("url") || ""
-        : "";
-
-      videos.push({
-        id: videoId,
-        videoId,
-        title,
-        thumbnail: thumbnail || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
-        publishedAt: published,
-        description,
-        channelTitle,
-      });
-    }
-
-    return videos;
+  // Fall back to channel RSS
+  try {
+    const xml = await fetchWithProxy(YOUTUBE_CHANNEL_RSS);
+    return parseYouTubeEntries(xml, maxResults);
   } catch (err) {
     console.error("YouTube RSS fetch failed:", err);
     return [];
