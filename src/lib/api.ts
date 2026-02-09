@@ -1,5 +1,7 @@
 // Data service: loads pre-fetched JSON first, falls back to live RSS feeds
 
+import { TOPIC_GROUP_MAP } from "@/lib/topics";
+
 export interface NewsArticle {
   id: string;
   title: string;
@@ -48,7 +50,6 @@ async function loadPrefetched(): Promise<PrefetchedData | null> {
     const age = Date.now() - fetchedAt;
     if (age > 2 * 60 * 60 * 1000) {
       console.log("Pre-fetched data is stale, will try live feed");
-      // Still return it as fallback, but don't cache
       return data;
     }
 
@@ -112,6 +113,11 @@ export async function fetchNews(
   const prefetched = await loadPrefetched();
   if (prefetched && prefetched.news.length > 0) {
     let articles = prefetched.news;
+    // Normalize topics to group IDs
+    articles = articles.map((a) => ({
+      ...a,
+      topic: TOPIC_GROUP_MAP[a.topic] || a.topic,
+    }));
     // Filter by topics/query if specified
     if (freeTextQuery.trim()) {
       const q = freeTextQuery.toLowerCase();
@@ -158,14 +164,16 @@ export async function fetchNews(
       const description = getTextContent(item, "description");
       const summary = description.replace(/<[^>]*>/g, "").trim();
 
+      const rawTopic = matchTopic(
+        title + " " + summary,
+        topicKeywords.map((k) => k.toLowerCase())
+      );
+
       articles.push({
         id: `gn-${i}-${Date.now()}`,
         title,
         summary: summary || title,
-        topic: matchTopic(
-          title + " " + summary,
-          topicKeywords.map((k) => k.toLowerCase())
-        ),
+        topic: TOPIC_GROUP_MAP[rawTopic] || rawTopic,
         source: source || "Google News",
         date: pubDate,
         imageUrl: placeholderImage(i),
@@ -186,7 +194,7 @@ const CHANNEL_ID = "UCwHJaEBaaSQPFHLUiMjHTtg";
 const YOUTUBE_RSS = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
 
 export async function fetchChannelVideos(
-  maxResults = 6
+  maxResults = 15
 ): Promise<YouTubeVideo[]> {
   // Try pre-fetched data first
   const prefetched = await loadPrefetched();
@@ -301,49 +309,36 @@ function matchTopic(text: string, selectedTopics: string[]): string {
       return topic;
     }
   }
-  return "technology";
+  return "technology-innovation";
 }
 
+// Merged topic search terms for the 11 grouped categories
 const topicSearchTerms: Record<string, string[]> = {
-  academy: ["university", "education", "student", "academic", "research", "school", "learning", "curriculum"],
-  business: ["business", "company", "startup", "enterprise", "market", "invest", "funding", "revenue"],
-  economy: ["economy", "economic", "gdp", "trade", "finance", "stock", "inflation", "banking"],
-  "chatbot-development": ["chatbot", "chat bot", "conversational", "gpt", "llm", "language model", "claude", "gemini"],
-  "digital-security": ["security", "cyber", "hack", "privacy", "encryption", "malware", "threat", "breach"],
-  environment: ["environment", "climate", "carbon", "green", "sustainable", "emission", "pollution", "renewable"],
-  science: ["science", "scientific", "discovery", "physics", "biology", "chemistry", "experiment", "quantum"],
-  governance: ["governance", "regulation", "policy", "compliance", "framework", "standard", "guideline", "law"],
-  politics: ["politic", "government", "election", "congress", "senate", "legislation", "democrat", "republican"],
-  health: ["health", "medical", "hospital", "patient", "disease", "drug", "diagnos", "treatment", "clinical"],
-  style: ["fashion", "style", "design", "trend", "luxury", "brand", "wear", "clothing"],
-  music: ["music", "song", "album", "artist", "concert", "spotify", "audio", "sound", "compose"],
-  art: ["art", "painting", "gallery", "museum", "creative", "artwork", "exhibition", "visual"],
-  photography: ["photo", "camera", "image", "portrait", "landscape", "shoot", "lens", "exposure"],
-  cameras: ["camera", "lens", "sensor", "megapixel", "video record", "dslr", "mirrorless", "surveillance"],
-  technology: ["tech", "software", "hardware", "chip", "processor", "computing", "digital", "device"],
-  innovation: ["innovation", "breakthrough", "frontier", "novel", "pioneer", "revolutio", "transform", "disrupt"],
-  drone: ["drone", "uav", "unmanned", "aerial", "quadcopter", "flying", "flight"],
+  "ai-academy": ["university", "education", "student", "academic", "research", "school", "learning", "curriculum", "professor", "degree"],
+  "business-economy": ["business", "company", "startup", "enterprise", "market", "invest", "funding", "revenue", "economy", "economic", "gdp", "trade", "finance", "stock", "inflation", "banking"],
+  "chatbot-development": ["chatbot", "chat bot", "conversational", "gpt", "llm", "language model", "claude", "gemini", "openai"],
+  "digital-security": ["security", "cyber", "hack", "privacy", "encryption", "malware", "threat", "breach", "firewall"],
+  "environment-science": ["environment", "climate", "carbon", "green", "sustainable", "emission", "pollution", "renewable", "science", "scientific", "discovery", "physics", "biology", "chemistry", "experiment", "quantum"],
+  "governance-politics": ["governance", "regulation", "policy", "compliance", "framework", "standard", "guideline", "law", "politic", "government", "election", "congress", "senate", "legislation", "democrat", "republican"],
+  "health-style": ["health", "medical", "hospital", "patient", "disease", "drug", "diagnos", "treatment", "clinical", "fashion", "style", "design", "trend", "luxury", "brand", "wear", "clothing"],
+  "musical-art": ["music", "song", "album", "artist", "concert", "spotify", "audio", "sound", "compose", "melody", "symphony"],
+  "technology-innovation": ["tech", "software", "hardware", "chip", "processor", "computing", "digital", "device", "innovation", "breakthrough", "frontier", "novel", "pioneer", "revolutio", "transform", "disrupt"],
+  "unmanned-aircraft": ["drone", "uav", "unmanned", "aerial", "quadcopter", "flying", "flight"],
+  "visual-art-photography": ["art", "painting", "gallery", "museum", "creative", "artwork", "exhibition", "visual", "photo", "camera", "image", "portrait", "landscape", "shoot", "lens", "exposure", "sensor", "megapixel", "dslr", "mirrorless"],
 };
 
 export const topicToSearchQuery: Record<string, string> = {
-  academy: "education university",
-  business: "business startup",
-  economy: "economy finance",
-  "chatbot-development": "chatbot LLM",
-  "digital-security": "cybersecurity",
-  environment: "climate environment",
-  science: "science research",
-  governance: "AI regulation governance",
-  politics: "politics government",
-  health: "health medical",
-  style: "fashion style",
-  music: "music",
-  art: "art creative",
-  photography: "photography",
-  cameras: "camera",
-  technology: "technology",
-  innovation: "innovation breakthrough",
-  drone: "drone UAV",
+  "ai-academy": "education university learning",
+  "business-economy": "business economy finance startup",
+  "chatbot-development": "chatbot LLM GPT",
+  "digital-security": "cybersecurity privacy",
+  "environment-science": "climate environment science research",
+  "governance-politics": "AI regulation governance politics",
+  "health-style": "health medical fashion",
+  "musical-art": "music audio",
+  "technology-innovation": "technology innovation breakthrough",
+  "unmanned-aircraft": "drone UAV",
+  "visual-art-photography": "art photography creative",
 };
 
 function placeholderImage(index: number): string {

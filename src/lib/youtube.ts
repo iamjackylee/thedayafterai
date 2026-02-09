@@ -7,7 +7,6 @@ export interface YouTubeVideo {
 }
 
 // The Day After AI YouTube channel videos
-// In production, these would be fetched via YouTube Data API
 export const DAILY_CHANNEL_VIDEOS: YouTubeVideo[] = [
   {
     id: "daily-1",
@@ -32,9 +31,9 @@ export const DAILY_CHANNEL_VIDEOS: YouTubeVideo[] = [
   },
 ];
 
-// AI news videos from YouTube for different topics
+// AI news videos from YouTube for different topics (using new grouped IDs)
 export const TOPIC_VIDEOS: Record<string, YouTubeVideo[]> = {
-  science: [
+  "environment-science": [
     {
       id: "sci-1",
       title: "AI Discovers New Physics: What It Means",
@@ -43,7 +42,7 @@ export const TOPIC_VIDEOS: Record<string, YouTubeVideo[]> = {
       description: "How AI is uncovering fundamental physics principles that eluded human researchers.",
     },
   ],
-  technology: [
+  "technology-innovation": [
     {
       id: "tech-1",
       title: "Inside the Next Generation of AI Chips",
@@ -52,7 +51,7 @@ export const TOPIC_VIDEOS: Record<string, YouTubeVideo[]> = {
       description: "A deep dive into the hardware powering the AI revolution.",
     },
   ],
-  health: [
+  "health-style": [
     {
       id: "health-1",
       title: "AI in Medicine: Saving Lives with Algorithms",
@@ -61,7 +60,7 @@ export const TOPIC_VIDEOS: Record<string, YouTubeVideo[]> = {
       description: "Exploring how AI diagnostic tools are transforming patient care.",
     },
   ],
-  business: [
+  "business-economy": [
     {
       id: "biz-1",
       title: "The AI Economy: Winners and Losers",
@@ -77,15 +76,6 @@ export const TOPIC_VIDEOS: Record<string, YouTubeVideo[]> = {
       thumbnail: "https://images.unsplash.com/photo-1531746790095-e5a3e0d43543?w=480&h=270&fit=crop",
       publishedAt: "2026-02-03",
       description: "Technical deep dive into modern chatbot architectures and capabilities.",
-    },
-  ],
-  innovation: [
-    {
-      id: "innov-1",
-      title: "10 AI Innovations That Will Define the Future",
-      thumbnail: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=480&h=270&fit=crop",
-      publishedAt: "2026-02-02",
-      description: "From brain-computer interfaces to autonomous systems, the innovations shaping tomorrow.",
     },
   ],
 };

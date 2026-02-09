@@ -2,7 +2,7 @@
 
 import { ExternalLink, Clock } from "lucide-react";
 import type { NewsArticle } from "@/lib/api";
-import { TOPICS } from "@/lib/topics";
+import { getTopicLabel } from "@/lib/topics";
 
 interface NewsCardProps {
   article: NewsArticle;
@@ -22,45 +22,45 @@ function formatDate(dateStr: string): string {
 }
 
 export default function NewsCard({ article }: NewsCardProps) {
-  const topic = TOPICS.find((t) => t.id === article.topic);
+  const topicLabel = getTopicLabel(article.topic);
 
   return (
     <a
       href={article.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group bg-[#141414] overflow-hidden border border-[#2a2a2a] hover:border-[#444] transition-all block"
+      className="group bg-[var(--surface)] overflow-hidden border border-[var(--border)] hover:border-[var(--border-light)] transition-all block"
     >
-      {/* Image — 3:2 aspect ratio */}
+      {/* Image */}
       <div className="relative aspect-[3/2] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
           style={{ backgroundImage: `url(${article.imageUrl})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-        {topic && (
-          <div className="absolute top-3 left-3 px-2.5 py-1 text-xs font-bold text-white bg-[#1d4ed8] uppercase tracking-wider">
-            {topic.label}
+        {topicLabel && (
+          <div className="absolute top-3 left-3 px-2 py-0.5 text-[10px] font-bold text-white bg-[var(--accent)] uppercase tracking-wider">
+            {topicLabel}
           </div>
         )}
       </div>
 
       {/* Content */}
-      <div className="p-5">
-        <h3 className="text-base font-bold text-white leading-snug mb-2 group-hover:text-[#1d4ed8] transition-colors line-clamp-2">
+      <div className="p-4">
+        <h3 className="text-sm font-bold text-white leading-snug mb-2 group-hover:text-[var(--accent)] transition-colors line-clamp-2">
           {article.title}
         </h3>
-        <p className="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-3">
+        <p className="text-[var(--muted)] text-xs leading-relaxed mb-3 line-clamp-3">
           {article.summary}
         </p>
-        <div className="flex items-center justify-between text-xs text-gray-600">
+        <div className="flex items-center justify-between text-[10px] text-[var(--text-secondary)]">
           <div className="flex items-center gap-1.5">
-            <Clock size={12} />
+            <Clock size={10} />
             <span>{formatDate(article.date)}</span>
           </div>
-          <div className="flex items-center gap-1.5 text-gray-500">
-            <span>{article.source}</span>
-            <ExternalLink size={12} />
+          <div className="flex items-center gap-1.5">
+            <span className="truncate max-w-[100px]">{article.source}</span>
+            <ExternalLink size={10} />
           </div>
         </div>
       </div>

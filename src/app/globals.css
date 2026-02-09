@@ -2,13 +2,16 @@
 
 :root {
   --background: #0a0a0a;
-  --foreground: #f5f5f5;
-  --accent: #1d4ed8;
-  --accent-hover: #1e40af;
-  --surface: #141414;
-  --surface-light: #1a1a1a;
-  --border: #2a2a2a;
-  --muted: #888888;
+  --foreground: #e8e8e8;
+  --accent: #c8102e;
+  --accent-hover: #a00d24;
+  --accent-soft: rgba(200, 16, 46, 0.15);
+  --surface: #111111;
+  --surface-light: #181818;
+  --border: #1e1e1e;
+  --border-light: #2a2a2a;
+  --muted: #777777;
+  --text-secondary: #999999;
 }
 
 @theme inline {
@@ -24,7 +27,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
@@ -46,25 +48,25 @@ html {
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
   background: #333;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
-/* Heading font - mimic Anton bold display style */
+/* Heading font */
 .font-display {
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
@@ -72,4 +74,45 @@ html {
 /* Topic nav scrollbar */
 .topic-nav::-webkit-scrollbar {
   height: 0;
+}
+
+/* Category section styling */
+.category-section {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.category-section:last-child {
+  border-bottom: none;
+}
+
+/* Red accent line for section headers */
+.section-accent {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.section-accent::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--accent);
+}
+
+/* Breaking news ticker */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-scroll {
+  animation: ticker 30s linear infinite;
+}
+
+.ticker-scroll:hover {
+  animation-play-state: paused;
 }

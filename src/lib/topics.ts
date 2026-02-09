@@ -3,25 +3,40 @@ export interface Topic {
   label: string;
   icon: string;
   color: string;
+  subtopics: string[];
 }
 
+// Category order: AI-related first to show breadth of AI applications
 export const TOPICS: Topic[] = [
-  { id: "academy", label: "Academy", icon: "🎓", color: "#6366f1" },
-  { id: "business", label: "Business", icon: "💼", color: "#8b5cf6" },
-  { id: "economy", label: "Economy", icon: "📊", color: "#a78bfa" },
-  { id: "chatbot-development", label: "Chatbot Development", icon: "🤖", color: "#7c3aed" },
-  { id: "digital-security", label: "Digital Security", icon: "🔒", color: "#06b6d4" },
-  { id: "environment", label: "Environment", icon: "🌍", color: "#10b981" },
-  { id: "science", label: "Science", icon: "🔬", color: "#14b8a6" },
-  { id: "governance", label: "Governance", icon: "🏛️", color: "#f59e0b" },
-  { id: "politics", label: "Politics", icon: "⚖️", color: "#ef4444" },
-  { id: "health", label: "Health", icon: "🏥", color: "#ec4899" },
-  { id: "style", label: "Style", icon: "✨", color: "#f472b6" },
-  { id: "music", label: "Music", icon: "🎵", color: "#a855f7" },
-  { id: "art", label: "Art", icon: "🎨", color: "#e879f9" },
-  { id: "photography", label: "Photography", icon: "📸", color: "#fb923c" },
-  { id: "cameras", label: "Cameras", icon: "📷", color: "#f97316" },
-  { id: "technology", label: "Technology", icon: "💻", color: "#3b82f6" },
-  { id: "innovation", label: "Innovation", icon: "💡", color: "#eab308" },
-  { id: "drone", label: "Drone", icon: "🚁", color: "#22d3ee" },
+  { id: "ai-academy", label: "AI Academy", icon: "🎓", color: "#6366f1", subtopics: ["academy"] },
+  { id: "business-economy", label: "Business & Economy", icon: "💼", color: "#8b5cf6", subtopics: ["business", "economy"] },
+  { id: "chatbot-development", label: "Chatbot Development", icon: "🤖", color: "#7c3aed", subtopics: ["chatbot-development"] },
+  { id: "digital-security", label: "Digital Security", icon: "🔒", color: "#06b6d4", subtopics: ["digital-security"] },
+  { id: "environment-science", label: "Environment & Science", icon: "🌍", color: "#10b981", subtopics: ["environment", "science"] },
+  { id: "governance-politics", label: "Governance & Politics", icon: "🏛️", color: "#f59e0b", subtopics: ["governance", "politics"] },
+  { id: "health-style", label: "Health & Style", icon: "🏥", color: "#ec4899", subtopics: ["health", "style"] },
+  { id: "musical-art", label: "Musical Art", icon: "🎵", color: "#a855f7", subtopics: ["music"] },
+  { id: "technology-innovation", label: "Technology & Innovation", icon: "💻", color: "#3b82f6", subtopics: ["technology", "innovation"] },
+  { id: "unmanned-aircraft", label: "Unmanned Aircraft", icon: "🚁", color: "#22d3ee", subtopics: ["drone"] },
+  { id: "visual-art-photography", label: "Visual Art & Photography", icon: "📸", color: "#fb923c", subtopics: ["art", "photography", "cameras"] },
 ];
+
+// Map from old individual topic IDs to new group IDs
+export const TOPIC_GROUP_MAP: Record<string, string> = {};
+for (const topic of TOPICS) {
+  TOPIC_GROUP_MAP[topic.id] = topic.id;
+  for (const sub of topic.subtopics) {
+    TOPIC_GROUP_MAP[sub] = topic.id;
+  }
+}
+
+export function getTopicLabel(topicId: string): string {
+  const topic = TOPICS.find((t) => t.id === topicId);
+  if (topic) return topic.label;
+  const groupId = TOPIC_GROUP_MAP[topicId];
+  if (groupId) {
+    const group = TOPICS.find((t) => t.id === groupId);
+    if (group) return group.label;
+  }
+  return topicId;
+}
