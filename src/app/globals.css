@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #e8e8e8;
-  --accent: #c8102e;
-  --accent-hover: #a00d24;
-  --accent-soft: rgba(200, 16, 46, 0.15);
-  --surface: #111111;
-  --surface-light: #181818;
-  --border: #1e1e1e;
-  --border-light: #2a2a2a;
-  --muted: #777777;
-  --text-secondary: #999999;
+  --background: #000000;
+  --foreground: #e0e0e0;
+  --accent: #3cffd0;
+  --accent-hover: #2be0b8;
+  --surface: #0f0f0f;
+  --surface-light: #161616;
+  --surface-hover: #1c1c1c;
+  --border: #1a1a1a;
+  --border-light: #282828;
+  --muted: #6b6b6b;
+  --text-secondary: #8a8a8a;
 }
 
 @theme inline {
@@ -46,6 +46,13 @@ html {
   overflow: hidden;
 }
 
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
@@ -64,11 +71,12 @@ html {
   background: #555;
 }
 
-/* Heading font */
+/* Bold display heading - Verge style */
 .font-display {
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  font-weight: 900;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
+  line-height: 1.1;
 }
 
 /* Topic nav scrollbar */
@@ -78,41 +86,26 @@ html {
 
 /* Category section styling */
 .category-section {
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .category-section:last-child {
-  border-bottom: none;
+  margin-bottom: 0;
 }
 
-/* Red accent line for section headers */
-.section-accent {
+/* Category header with colored left border */
+.category-header {
   position: relative;
   padding-left: 1rem;
+  border-left: 4px solid var(--cat-color, var(--accent));
 }
 
-.section-accent::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: var(--accent);
+/* Card hover effect - Verge style lift */
+.card-hover {
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-/* Breaking news ticker */
-@keyframes ticker {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-.ticker-scroll {
-  animation: ticker 30s linear infinite;
-}
-
-.ticker-scroll:hover {
-  animation-play-state: paused;
+.card-hover:hover {
+  transform: translateY(-2px);
 }
