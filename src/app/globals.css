@@ -109,8 +109,32 @@ html {
 /* Card hover effect - Verge style lift */
 .card-hover {
   transition: transform 0.2s ease, border-color 0.2s ease;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .card-hover:hover {
   transform: translateY(-2px);
+}
+
+/* Topic pill hover — pure CSS to avoid JS flicker on scroll */
+.topic-pill {
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.topic-pill:hover {
+  color: var(--pill-color) !important;
+  border-color: var(--pill-border) !important;
+}
+
+/* Selected pill (user explicitly toggled) */
+.topic-pill.selected:hover {
+  color: #000 !important;
+  border-color: var(--pill-color) !important;
+}
+
+/* Viewing pill (scroll-spy highlighted) — keep its color on hover */
+.topic-pill.viewing:hover {
+  color: var(--pill-color) !important;
+  border-color: var(--pill-color) !important;
 }

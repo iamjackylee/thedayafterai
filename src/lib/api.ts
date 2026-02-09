@@ -23,11 +23,22 @@ export interface YouTubeVideo {
   channelTitle: string;
 }
 
+export interface TdaaiArticle {
+  id: string;
+  title: string;
+  summary: string;
+  date: string;
+  imageUrl: string;
+  url: string;
+  source: string;
+}
+
 interface PrefetchedData {
   fetchedAt: string;
   playlistUrl: string;
   news: NewsArticle[];
   channelVideos: YouTubeVideo[];
+  tdaaiArticles?: TdaaiArticle[];
 }
 
 // ─── Pre-fetched data loader ──────────────────────────────────────
@@ -401,6 +412,48 @@ function generateImageUrl(title: string): string {
   return `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=600&height=400&nologo=true`;
 }
 
+/** Try to extract og:image from an article URL via CORS proxy */
+async function fetchOgImage(url: string): Promise<string> {
+  if (!url) return "";
+  try {
+    const html = await fetchWithProxy(url);
+    // og:image
+    const ogMatch = html.match(
+      /<meta[^>]*property=["']og:image["'][^>]*content=["']([^"']+)["']/i
+    ) || html.match(
+      /<meta[^>]*content=["']([^"']+)["'][^>]*property=["']og:image["']/i
+    );
+    if (ogMatch?.[1]) return ogMatch[1];
+    // twitter:image
+    const twMatch = html.match(
+      /<meta[^>]*name=["']twitter:image["'][^>]*content=["']([^"']+)["']/i
+    ) || html.match(
+      /<meta[^>]*content=["']([^"']+)["'][^>]*name=["']twitter:image["']/i
+    );
+    if (twMatch?.[1]) return twMatch[1];
+  } catch {
+    // ignore — OG image fetch is best-effort
+  }
+  return "";
+}
+
+/** Enhance articles: replace Pollinations placeholder with real OG images */
+export async function enhanceArticleImages(
+  articles: NewsArticle[],
+  maxConcurrent = 5
+): Promise<void> {
+  const toFix = articles.filter((a) => a.imageUrl.includes("pollinations.ai") && a.url);
+  for (let i = 0; i < toFix.length; i += maxConcurrent) {
+    const batch = toFix.slice(i, i + maxConcurrent);
+    await Promise.allSettled(
+      batch.map(async (article) => {
+        const og = await fetchOgImage(article.url);
+        if (og) article.imageUrl = og;
+      })
+    );
+  }
+}
+
 export function sortByDateDesc<T extends { date?: string; publishedAt?: string }>(
   items: T[]
 ): T[] {
@@ -409,6 +462,71 @@ export function sortByDateDesc<T extends { date?: string; publishedAt?: string }
     const db = new Date(b.date || b.publishedAt || 0).getTime();
     return db - da;
   });
+}
+
+// ─── TheDayAfterAI.com articles ──────────────────────────────────
+
+export async function fetchTdaaiArticles(): Promise<TdaaiArticle[]> {
+  // Try pre-fetched data first
+  const prefetched = await loadPrefetched();
+  if (prefetched && prefetched.tdaaiArticles && prefetched.tdaaiArticles.length > 0) {
+    return prefetched.tdaaiArticles;
+  }
+
+  // Fallback: try live RSS from thedayafterai.com (through CORS proxy)
+  const rssUrls = [
+    "https://www.thedayafterai.com/blog?format=rss",
+    "https://thedayafterai.com/blog?format=rss",
+    "https://www.thedayafterai.com/?format=rss",
+  ];
+
+  for (const rssUrl of rssUrls) {
+    try {
+      const xml = await fetchWithProxy(rssUrl);
+      if (!xml.includes("<item>")) continue;
+
+      const doc = parseXML(xml);
+      const items = doc.getElementsByTagName("item");
+      const articles: TdaaiArticle[] = [];
+
+      for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+        const title = getTextContent(item, "title");
+        if (!title) continue;
+        const link = getTextContent(item, "link");
+        const pubDate = getTextContent(item, "pubDate");
+        const description = getTextContent(item, "description")
+          .replace(/<[^>]*>/g, "")
+          .replace(/\s+/g, " ")
+          .trim();
+
+        // Extract image from enclosure or media:content
+        let imageUrl = "";
+        const enclosure = item.getElementsByTagName("enclosure")[0];
+        if (enclosure) imageUrl = enclosure.getAttribute("url") || "";
+        if (!imageUrl) {
+          const media = item.getElementsByTagName("media:content")[0];
+          if (media) imageUrl = media.getAttribute("url") || "";
+        }
+
+        articles.push({
+          id: `tdaai-${i}`,
+          title,
+          summary: description || title,
+          date: pubDate,
+          imageUrl,
+          url: link,
+          source: "TheDayAfterAI",
+        });
+      }
+
+      if (articles.length > 0) return articles;
+    } catch {
+      // try next URL
+    }
+  }
+
+  return [];
 }
 
 // ─── Channel constants ────────────────────────────────────────────

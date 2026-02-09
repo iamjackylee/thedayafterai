@@ -306,22 +306,248 @@ async function fetchChannelVideos() {
   }
 }
 
+// ── Fetch OG image from article URL ──────────────────────────────
+
+async function fetchOgImage(url) {
+  if (!url) return "";
+  try {
+    const res = await fetch(url, {
+      headers: { "User-Agent": "TheDayAfterAI-NewsBot/1.0" },
+      redirect: "follow",
+      signal: AbortSignal.timeout(8000),
+    });
+    if (!res.ok) return "";
+    const html = await res.text();
+    // Look for og:image meta tag
+    const ogMatch = html.match(
+      /<meta[^>]*property=["']og:image["'][^>]*content=["']([^"']+)["']/i
+    ) || html.match(
+      /<meta[^>]*content=["']([^"']+)["'][^>]*property=["']og:image["']/i
+    );
+    if (ogMatch && ogMatch[1]) return ogMatch[1];
+    // Fallback: twitter:image
+    const twMatch = html.match(
+      /<meta[^>]*name=["']twitter:image["'][^>]*content=["']([^"']+)["']/i
+    ) || html.match(
+      /<meta[^>]*content=["']([^"']+)["'][^>]*name=["']twitter:image["']/i
+    );
+    if (twMatch && twMatch[1]) return twMatch[1];
+    return "";
+  } catch {
+    return "";
+  }
+}
+
+// ── Fetch TheDayAfterAI.com blog articles ────────────────────────
+
+const TDAAI_RSS_URLS = [
+  "https://www.thedayafterai.com/blog?format=rss",
+  "https://thedayafterai.com/blog?format=rss",
+  "https://www.thedayafterai.com/?format=rss",
+  "https://thedayafterai.com/?format=rss",
+];
+
+async function fetchTdaaiArticles() {
+  console.log("Fetching TheDayAfterAI.com blog articles...");
+  let xml = "";
+
+  for (const rssUrl of TDAAI_RSS_URLS) {
+    try {
+      xml = await fetchWithRetry(rssUrl, 2);
+      if (xml && xml.includes("<item>")) {
+        console.log(`  Found RSS feed at: ${rssUrl}`);
+        break;
+      }
+    } catch {
+      // try next URL
+    }
+  }
+
+  if (!xml || !xml.includes("<item>")) {
+    // Fallback: try scraping the main page for blog posts
+    console.log("  RSS not available, trying HTML scrape...");
+    try {
+      return await scrapeTdaaiHtml();
+    } catch (err) {
+      console.warn("  TheDayAfterAI.com scraping failed:", err.message);
+      return [];
+    }
+  }
+
+  const items = extractItems(xml);
+  const articles = [];
+
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i];
+    const title = getTagContent(item, "title")[0] || "";
+    if (!title) continue;
+
+    const link = getTagContent(item, "link")[0] || "";
+    const pubDate = getTagContent(item, "pubDate")[0] || "";
+    const description = stripHtml(getTagContent(item, "description")[0] || "");
+
+    // Extract image from enclosure, media:content, or description HTML
+    let imageUrl = "";
+    const enclosureUrl = getTagAttr(item, "enclosure", "url");
+    if (enclosureUrl.length > 0) {
+      imageUrl = enclosureUrl[0];
+    }
+    if (!imageUrl) {
+      const mediaUrl = getTagAttr(item, "media:content", "url");
+      if (mediaUrl.length > 0) imageUrl = mediaUrl[0];
+    }
+    if (!imageUrl) {
+      // Try to find image in raw description HTML
+      const rawDesc = getTagContent(item, "description")[0] || "";
+      const imgMatch = rawDesc.match(/src=["']([^"']+\.(?:jpg|jpeg|png|webp|gif)[^"']*)/i);
+      if (imgMatch) imageUrl = imgMatch[1].replace(/&amp;/g, "&");
+    }
+
+    articles.push({
+      id: `tdaai-${i}`,
+      title,
+      summary: description || title,
+      date: pubDate,
+      imageUrl,
+      url: link,
+      source: "TheDayAfterAI",
+    });
+  }
+
+  console.log(`  Fetched ${articles.length} articles from TheDayAfterAI.com`);
+  return articles;
+}
+
+async function scrapeTdaaiHtml() {
+  const urls = [
+    "https://www.thedayafterai.com/blog",
+    "https://thedayafterai.com/blog",
+    "https://www.thedayafterai.com",
+    "https://thedayafterai.com",
+  ];
+
+  let html = "";
+  for (const url of urls) {
+    try {
+      html = await fetchWithRetry(url, 2);
+      if (html && html.length > 1000) break;
+    } catch {
+      // try next
+    }
+  }
+
+  if (!html) return [];
+
+  // Squarespace blog posts typically have structured data or summary blocks
+  const articles = [];
+
+  // Try JSON-LD structured data
+  const jsonLdMatch = html.match(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi);
+  if (jsonLdMatch) {
+    for (const block of jsonLdMatch) {
+      try {
+        const jsonStr = block.replace(/<\/?script[^>]*>/gi, "");
+        const data = JSON.parse(jsonStr);
+        const items = Array.isArray(data) ? data : data.itemListElement || [data];
+        for (const item of items) {
+          if (item["@type"] === "BlogPosting" || item["@type"] === "Article" || item["@type"] === "NewsArticle") {
+            articles.push({
+              id: `tdaai-html-${articles.length}`,
+              title: item.headline || item.name || "",
+              summary: item.description || "",
+              date: item.datePublished || item.dateCreated || "",
+              imageUrl: (typeof item.image === "string" ? item.image : item.image?.url) || "",
+              url: item.url || item.mainEntityOfPage || "",
+              source: "TheDayAfterAI",
+            });
+          }
+        }
+      } catch {
+        // invalid JSON, skip
+      }
+    }
+  }
+
+  if (articles.length > 0) {
+    console.log(`  Scraped ${articles.length} articles from HTML structured data`);
+    return articles;
+  }
+
+  // Fallback: parse Squarespace summary blocks
+  const blogItemRegex = /<article[^>]*class="[^"]*summary-item[^"]*"[^>]*>([\s\S]*?)<\/article>/gi;
+  let match;
+  while ((match = blogItemRegex.exec(html)) !== null) {
+    const block = match[1];
+    const titleMatch = block.match(/<a[^>]*class="[^"]*summary-title[^"]*"[^>]*>([\s\S]*?)<\/a>/i);
+    const linkMatch = block.match(/<a[^>]*href=["']([^"']+)["']/i);
+    const imgMatch = block.match(/data-src=["']([^"']+)["']/i) || block.match(/src=["']([^"']+\.(?:jpg|jpeg|png|webp)[^"']*)/i);
+
+    if (titleMatch) {
+      const title = stripHtml(titleMatch[1]);
+      articles.push({
+        id: `tdaai-html-${articles.length}`,
+        title,
+        summary: "",
+        date: "",
+        imageUrl: imgMatch ? imgMatch[1].replace(/&amp;/g, "&") : "",
+        url: linkMatch ? (linkMatch[1].startsWith("http") ? linkMatch[1] : `https://www.thedayafterai.com${linkMatch[1]}`) : "",
+        source: "TheDayAfterAI",
+      });
+    }
+  }
+
+  console.log(`  Scraped ${articles.length} articles from HTML`);
+  return articles;
+}
+
 // ── Main ───────────────────────────────────────────────────────────
 
 async function main() {
   console.log("Starting news pre-fetch...");
   console.log(`Time: ${new Date().toISOString()}`);
 
-  const [news, channelVideos] = await Promise.all([
+  const [news, channelVideos, tdaaiArticles] = await Promise.all([
     fetchAllNews(),
     fetchChannelVideos(),
+    fetchTdaaiArticles(),
   ]);
+
+  // Fetch OG images for news articles that use AI-generated placeholders
+  console.log("Fetching OG images for news articles...");
+  const ogImageBatchSize = 10;
+  for (let i = 0; i < news.length; i += ogImageBatchSize) {
+    const batch = news.slice(i, i + ogImageBatchSize);
+    const results = await Promise.allSettled(
+      batch.map(async (article) => {
+        if (article.url && article.imageUrl.includes("pollinations.ai")) {
+          const ogImg = await fetchOgImage(article.url);
+          if (ogImg) article.imageUrl = ogImg;
+        }
+      })
+    );
+  }
+  const ogCount = news.filter((a) => !a.imageUrl.includes("pollinations.ai")).length;
+  console.log(`  Replaced ${ogCount} article images with OG images`);
+
+  // Also fetch OG images for TDAAI articles missing images
+  for (let i = 0; i < tdaaiArticles.length; i += ogImageBatchSize) {
+    const batch = tdaaiArticles.slice(i, i + ogImageBatchSize);
+    await Promise.allSettled(
+      batch.map(async (article) => {
+        if (!article.imageUrl && article.url) {
+          const ogImg = await fetchOgImage(article.url);
+          if (ogImg) article.imageUrl = ogImg;
+        }
+      })
+    );
+  }
 
   const data = {
     fetchedAt: new Date().toISOString(),
     playlistUrl: PLAYLIST_URL,
     news,
     channelVideos,
+    tdaaiArticles,
   };
 
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
@@ -330,7 +556,7 @@ async function main() {
     JSON.stringify(data, null, 2)
   );
 
-  console.log(`Saved to public/data/prefetched.json (${news.length} articles, ${channelVideos.length} videos)`);
+  console.log(`Saved to public/data/prefetched.json (${news.length} articles, ${channelVideos.length} videos, ${tdaaiArticles.length} TDAAI articles)`);
 }
 
 main().catch((err) => {
