@@ -101,6 +101,11 @@ html {
   border-left: 4px solid var(--cat-color, var(--accent));
 }
 
+/* Hide horizontal scrollbar on category rows */
+.category-scroll::-webkit-scrollbar {
+  display: none;
+}
+
 /* Card hover effect - Verge style lift */
 .card-hover {
   transition: transform 0.2s ease, border-color 0.2s ease;

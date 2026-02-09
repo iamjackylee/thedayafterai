@@ -107,7 +107,7 @@ const GOOGLE_NEWS_RSS = "https://news.google.com/rss/search";
 export async function fetchNews(
   topicKeywords: string[] = [],
   freeTextQuery = "",
-  maxResults = 30
+  maxResults = 500
 ): Promise<NewsArticle[]> {
   // Try pre-fetched data first
   const prefetched = await loadPrefetched();
@@ -199,7 +199,7 @@ function parseYouTubeEntries(xml: string, maxResults: number): YouTubeVideo[] {
   const doc = parseXML(xml);
   const entries = doc.getElementsByTagName("entry");
   const channelTitle =
-    doc.getElementsByTagName("title")[0]?.textContent || "The Day After AI";
+    doc.getElementsByTagName("title")[0]?.textContent || "TheDayAfterAI";
 
   const videos: YouTubeVideo[] = [];
   const len = Math.min(entries.length, maxResults);
@@ -382,4 +382,4 @@ export function sortByDateDesc<T extends { date?: string; publishedAt?: string }
 
 export const CHANNEL_URL = "https://www.youtube.com/@thedayafterai";
 export const PLAYLIST_URL = "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe";
-export const CHANNEL_NAME = "The Day After AI";
+export const CHANNEL_NAME = "TheDayAfterAI";
