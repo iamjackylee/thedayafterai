@@ -3,8 +3,8 @@
 :root {
   --background: #0a0a0a;
   --foreground: #f5f5f5;
-  --accent: #e63946;
-  --accent-hover: #d62839;
+  --accent: #1d4ed8;
+  --accent-hover: #1e40af;
   --surface: #141414;
   --surface-light: #1a1a1a;
   --border: #2a2a2a;
@@ -67,4 +67,9 @@ html {
   font-weight: 900;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+}
+
+/* Topic nav scrollbar */
+.topic-nav::-webkit-scrollbar {
+  height: 0;
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import { Youtube, ExternalLink, Bell, Loader2 } from "lucide-react";
-import { CHANNEL_URL, CHANNEL_NAME, type YouTubeVideo } from "@/lib/api";
+import { PLAYLIST_URL, CHANNEL_NAME, type YouTubeVideo } from "@/lib/api";
 import VideoCard from "./VideoCard";
 
 interface ChannelSectionProps {
@@ -15,7 +15,7 @@ export default function ChannelSection({ videos, loading }: ChannelSectionProps)
       {/* Header */}
       <div className="flex items-center justify-between mb-6 flex-wrap gap-4">
         <div className="flex items-center gap-3">
-          <div className="w-11 h-11 rounded-full bg-[#e63946] flex items-center justify-center">
+          <div className="w-11 h-11 rounded-full bg-[#1d4ed8] flex items-center justify-center">
             <Youtube size={22} className="text-white" />
           </div>
           <div>
@@ -27,16 +27,16 @@ export default function ChannelSection({ videos, loading }: ChannelSectionProps)
         </div>
         <div className="flex gap-2">
           <a
-            href={CHANNEL_URL}
+            href={PLAYLIST_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 bg-[#e63946] hover:bg-[#d62839] text-white text-sm font-bold uppercase tracking-wider transition-colors"
+            className="flex items-center gap-2 px-4 py-2 bg-[#1d4ed8] hover:bg-[#1e40af] text-white text-sm font-bold uppercase tracking-wider transition-colors"
           >
             <Bell size={14} />
             Subscribe
           </a>
           <a
-            href={CHANNEL_URL}
+            href={PLAYLIST_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 border border-[#2a2a2a] hover:border-gray-500 text-gray-400 hover:text-white text-sm font-medium transition-all"
@@ -50,7 +50,7 @@ export default function ChannelSection({ videos, loading }: ChannelSectionProps)
       {/* Videos grid */}
       {loading ? (
         <div className="flex items-center justify-center py-12">
-          <Loader2 size={24} className="text-[#e63946] animate-spin" />
+          <Loader2 size={24} className="text-[#1d4ed8] animate-spin" />
           <span className="ml-3 text-gray-500 text-sm">
             Loading latest videos...
           </span>
@@ -72,10 +72,10 @@ export default function ChannelSection({ videos, loading }: ChannelSectionProps)
             No videos loaded yet.
           </p>
           <a
-            href={CHANNEL_URL}
+            href={PLAYLIST_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-[#e63946] hover:text-[#d62839] transition-colors"
+            className="text-sm text-[#1d4ed8] hover:text-[#1e40af] transition-colors"
           >
             Visit the channel on YouTube &rarr;
           </a>

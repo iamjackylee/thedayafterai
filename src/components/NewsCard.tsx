@@ -39,7 +39,7 @@ export default function NewsCard({ article }: NewsCardProps) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         {topic && (
-          <div className="absolute top-3 left-3 px-2.5 py-1 text-xs font-bold text-white bg-[#e63946] uppercase tracking-wider">
+          <div className="absolute top-3 left-3 px-2.5 py-1 text-xs font-bold text-white bg-[#1d4ed8] uppercase tracking-wider">
             {topic.label}
           </div>
         )}
@@ -47,7 +47,7 @@ export default function NewsCard({ article }: NewsCardProps) {
 
       {/* Content */}
       <div className="p-5">
-        <h3 className="text-base font-bold text-white leading-snug mb-2 group-hover:text-[#e63946] transition-colors line-clamp-2">
+        <h3 className="text-base font-bold text-white leading-snug mb-2 group-hover:text-[#1d4ed8] transition-colors line-clamp-2">
           {article.title}
         </h3>
         <p className="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-3">

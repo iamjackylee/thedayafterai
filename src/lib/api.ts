@@ -1,5 +1,4 @@
-// Real-time data service using FREE RSS feeds (no API keys needed)
-// Google News RSS + YouTube RSS — all fetched client-side via CORS proxy
+// Data service: loads pre-fetched JSON first, falls back to live RSS feeds
 
 export interface NewsArticle {
   id: string;
@@ -22,8 +21,45 @@ export interface YouTubeVideo {
   channelTitle: string;
 }
 
-// ─── CORS Proxy ────────────────────────────────────────────────────
-// Needed because RSS feeds don't set CORS headers for browsers
+interface PrefetchedData {
+  fetchedAt: string;
+  playlistUrl: string;
+  news: NewsArticle[];
+  channelVideos: YouTubeVideo[];
+}
+
+// ─── Pre-fetched data loader ──────────────────────────────────────
+
+let _prefetchedCache: PrefetchedData | null = null;
+
+async function loadPrefetched(): Promise<PrefetchedData | null> {
+  if (_prefetchedCache) return _prefetchedCache;
+
+  try {
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+    const res = await fetch(`${basePath}/data/prefetched.json`, {
+      cache: "no-store",
+    });
+    if (!res.ok) return null;
+    const data = await res.json();
+
+    // Check if data is fresh (less than 2 hours old)
+    const fetchedAt = new Date(data.fetchedAt).getTime();
+    const age = Date.now() - fetchedAt;
+    if (age > 2 * 60 * 60 * 1000) {
+      console.log("Pre-fetched data is stale, will try live feed");
+      // Still return it as fallback, but don't cache
+      return data;
+    }
+
+    _prefetchedCache = data;
+    return data;
+  } catch {
+    return null;
+  }
+}
+
+// ─── CORS Proxy (fallback for live fetching) ──────────────────────
 
 const CORS_PROXIES = [
   (url: string) => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
@@ -53,7 +89,7 @@ async function fetchWithProxy(url: string): Promise<string> {
   throw new Error(`All proxies failed for: ${url}`);
 }
 
-// ─── XML Parser Helper ─────────────────────────────────────────────
+// ─── XML Parser Helper ────────────────────────────────────────────
 
 function parseXML(text: string): Document {
   return new DOMParser().parseFromString(text, "text/xml");
@@ -63,7 +99,7 @@ function getTextContent(el: Element, tag: string): string {
   return el.getElementsByTagName(tag)[0]?.textContent?.trim() || "";
 }
 
-// ─── Google News RSS (100% free, no key) ───────────────────────────
+// ─── Google News RSS (100% free, no key) ──────────────────────────
 
 const GOOGLE_NEWS_RSS = "https://news.google.com/rss/search";
 
@@ -72,6 +108,31 @@ export async function fetchNews(
   freeTextQuery = "",
   maxResults = 30
 ): Promise<NewsArticle[]> {
+  // Try pre-fetched data first
+  const prefetched = await loadPrefetched();
+  if (prefetched && prefetched.news.length > 0) {
+    let articles = prefetched.news;
+    // Filter by topics/query if specified
+    if (freeTextQuery.trim()) {
+      const q = freeTextQuery.toLowerCase();
+      articles = articles.filter(
+        (a) =>
+          a.title.toLowerCase().includes(q) ||
+          a.summary.toLowerCase().includes(q)
+      );
+    }
+    if (topicKeywords.length > 0) {
+      const topicIds = topicKeywords.map((k) => k.toLowerCase());
+      const filtered = articles.filter((a) => {
+        const text = (a.title + " " + a.summary).toLowerCase();
+        return topicIds.some((t) => text.includes(t));
+      });
+      if (filtered.length > 0) articles = filtered;
+    }
+    return articles.slice(0, maxResults);
+  }
+
+  // Fall back to live RSS fetch
   try {
     let q = "artificial intelligence";
     if (freeTextQuery.trim()) {
@@ -95,8 +156,6 @@ export async function fetchNews(
       const pubDate = getTextContent(item, "pubDate");
       const source = getTextContent(item, "source");
       const description = getTextContent(item, "description");
-
-      // Strip HTML tags from description
       const summary = description.replace(/<[^>]*>/g, "").trim();
 
       articles.push({
@@ -121,15 +180,21 @@ export async function fetchNews(
   }
 }
 
-// ─── YouTube RSS (100% free, no key) ───────────────────────────────
+// ─── YouTube RSS (100% free, no key) ──────────────────────────────
 
-// The Day After AI channel ID (resolved from @thedayafterai)
 const CHANNEL_ID = "UCwHJaEBaaSQPFHLUiMjHTtg";
 const YOUTUBE_RSS = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
 
 export async function fetchChannelVideos(
   maxResults = 6
 ): Promise<YouTubeVideo[]> {
+  // Try pre-fetched data first
+  const prefetched = await loadPrefetched();
+  if (prefetched && prefetched.channelVideos.length > 0) {
+    return prefetched.channelVideos.slice(0, maxResults);
+  }
+
+  // Fall back to live RSS
   try {
     const xml = await fetchWithProxy(YOUTUBE_RSS);
     const doc = parseXML(xml);
@@ -181,9 +246,6 @@ export async function searchYouTubeVideos(
   maxResults = 9
 ): Promise<YouTubeVideo[]> {
   try {
-    // YouTube doesn't have an official search RSS, so we use Google's
-    // YouTube-specific search via Google News video results or a
-    // site-restricted search
     const q = `AI ${query} site:youtube.com`;
     const rssUrl = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en`;
     const xml = await fetchWithProxy(rssUrl);
@@ -200,7 +262,6 @@ export async function searchYouTubeVideos(
       const pubDate = getTextContent(item, "pubDate");
       const source = getTextContent(item, "source");
 
-      // Extract video ID from YouTube URLs
       const videoIdMatch = link.match(
         /(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/
       );
@@ -225,7 +286,7 @@ export async function searchYouTubeVideos(
   }
 }
 
-// ─── Helpers ───────────────────────────────────────────────────────
+// ─── Helpers ──────────────────────────────────────────────────────
 
 function matchTopic(text: string, selectedTopics: string[]): string {
   const lower = text.toLowerCase();
@@ -307,7 +368,8 @@ export function sortByDateDesc<T extends { date?: string; publishedAt?: string }
   });
 }
 
-// ─── Channel constants ─────────────────────────────────────────────
+// ─── Channel constants ────────────────────────────────────────────
 
 export const CHANNEL_URL = "https://www.youtube.com/@thedayafterai";
+export const PLAYLIST_URL = "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe";
 export const CHANNEL_NAME = "The Day After AI";

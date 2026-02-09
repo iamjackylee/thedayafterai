@@ -1,7 +1,7 @@
 "use client";
 
 import { Play, Radio, ExternalLink } from "lucide-react";
-import { CHANNEL_URL, CHANNEL_NAME, type YouTubeVideo } from "@/lib/api";
+import { PLAYLIST_URL, CHANNEL_NAME, type YouTubeVideo } from "@/lib/api";
 
 interface DailyNewsBarProps {
   latestVideo: YouTubeVideo | null;
@@ -9,7 +9,7 @@ interface DailyNewsBarProps {
 
 export default function DailyNewsBar({ latestVideo }: DailyNewsBarProps) {
   return (
-    <div className="w-full bg-[#e63946]">
+    <div className="w-full bg-[#1d4ed8]">
       <div className="max-w-[1800px] mx-auto px-[4vw] py-2 flex items-center justify-between gap-4 flex-wrap">
         {/* Channel branding */}
         <div className="flex items-center gap-3">
@@ -46,7 +46,7 @@ export default function DailyNewsBar({ latestVideo }: DailyNewsBarProps) {
 
         {/* Watch link */}
         <a
-          href={CHANNEL_URL}
+          href={PLAYLIST_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-1.5 text-xs font-bold text-white/80 hover:text-white transition-colors shrink-0 uppercase tracking-wider"
