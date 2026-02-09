@@ -150,7 +150,7 @@ function CustomSectionRow({ section }: { section: CustomSection }) {
   );
 }
 
-function CategoryRow({ topic, articles }: { topic: typeof TOPICS[number]; articles: NewsArticle[] }) {
+function CategoryRow({ topic, articles, id }: { topic: typeof TOPICS[number]; articles: NewsArticle[]; id?: string }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
@@ -178,7 +178,7 @@ function CategoryRow({ topic, articles }: { topic: typeof TOPICS[number]; articl
   };
 
   return (
-    <div className="category-section">
+    <div className="category-section" id={id} data-topic-section={topic.id}>
       {/* Category header with colored border and arrows */}
       <div className="flex items-center justify-between mb-4">
         <div
@@ -236,6 +236,7 @@ export default function Home() {
   const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [debouncedQuery, setDebouncedQuery] = useState("");
+  const [activeSection, setActiveSection] = useState<string | null>(null);
   const topicNavRef = useRef<HTMLDivElement>(null);
 
   const [articles, setArticles] = useState<NewsArticle[]>([]);
@@ -320,6 +321,42 @@ export default function Home() {
     ? groupedArticles.filter((g) => selectedTopics.includes(g.topic.id))
     : groupedArticles;
 
+  // Scroll-spy: highlight nav button for visible category section
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    const sections = document.querySelectorAll("[data-topic-section]");
+    if (sections.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        let best: IntersectionObserverEntry | null = null;
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            if (!best || entry.intersectionRatio > best.intersectionRatio) {
+              best = entry;
+            }
+          }
+        }
+        if (best) {
+          setActiveSection(best.target.getAttribute("data-topic-section"));
+        }
+      },
+      { rootMargin: "-20% 0px -60% 0px", threshold: [0, 0.25, 0.5] }
+    );
+
+    sections.forEach((s) => observer.observe(s));
+    return () => observer.disconnect();
+  }, [displayGroups.length]);
+
+  // Auto-scroll nav to show active button
+  useEffect(() => {
+    if (!activeSection || !topicNavRef.current) return;
+    const btn = topicNavRef.current.querySelector(`[data-nav-topic="${activeSection}"]`) as HTMLElement | null;
+    if (btn) {
+      btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    }
+  }, [activeSection]);
+
   const sortedChannelVideos = sortByDateDesc(channelVideos);
 
   return (
@@ -391,32 +428,42 @@ export default function Home() {
               >
                 All
               </button>
-              {TOPICS.map((topic) => (
-                <button
-                  key={topic.id}
-                  onClick={() => toggleTopic(topic.id)}
-                  className="shrink-0 px-4 py-1.5 text-xs font-bold uppercase tracking-wider transition-all border"
-                  style={
-                    selectedTopics.includes(topic.id)
-                      ? { backgroundColor: topic.color, color: "#000", borderColor: topic.color }
-                      : { color: "var(--muted)", borderColor: "transparent" }
-                  }
-                  onMouseEnter={(e) => {
-                    if (!selectedTopics.includes(topic.id)) {
-                      (e.target as HTMLElement).style.color = topic.color;
-                      (e.target as HTMLElement).style.borderColor = topic.color + "40";
+              {TOPICS.map((topic) => {
+                const isSelected = selectedTopics.includes(topic.id);
+                const isActive = !isSelected && activeSection === topic.id;
+                return (
+                  <button
+                    key={topic.id}
+                    data-nav-topic={topic.id}
+                    onClick={() => toggleTopic(topic.id)}
+                    className="shrink-0 px-4 py-1.5 text-xs font-bold uppercase tracking-wider transition-all border"
+                    style={
+                      isSelected
+                        ? { backgroundColor: topic.color, color: "#000", borderColor: topic.color }
+                        : isActive
+                        ? { color: topic.color, borderColor: topic.color, borderBottomWidth: "2px" }
+                        : { color: "var(--muted)", borderColor: "transparent" }
                     }
-                  }}
-                  onMouseLeave={(e) => {
-                    if (!selectedTopics.includes(topic.id)) {
-                      (e.target as HTMLElement).style.color = "var(--muted)";
-                      (e.target as HTMLElement).style.borderColor = "transparent";
-                    }
-                  }}
-                >
-                  {topic.label}
-                </button>
-              ))}
+                    onMouseEnter={(e) => {
+                      if (!isSelected) {
+                        (e.target as HTMLElement).style.color = topic.color;
+                        (e.target as HTMLElement).style.borderColor = topic.color + "40";
+                      }
+                    }}
+                    onMouseLeave={(e) => {
+                      if (!isSelected && !isActive) {
+                        (e.target as HTMLElement).style.color = "var(--muted)";
+                        (e.target as HTMLElement).style.borderColor = "transparent";
+                      } else if (isActive) {
+                        (e.target as HTMLElement).style.color = topic.color;
+                        (e.target as HTMLElement).style.borderColor = topic.color;
+                      }
+                    }}
+                  >
+                    {topic.label}
+                  </button>
+                );
+              })}
             </div>
             <button
               onClick={() => scrollTopics("right")}
