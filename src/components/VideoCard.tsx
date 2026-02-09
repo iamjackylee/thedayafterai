@@ -45,10 +45,6 @@ export default function VideoCard({ video }: VideoCardProps) {
           </div>
         </div>
 
-        {/* YouTube badge */}
-        <div className="absolute top-0 right-0 px-2 py-1 bg-[#ff0050] text-white text-[9px] font-black uppercase tracking-widest">
-          YT
-        </div>
       </div>
 
       {/* Info */}
