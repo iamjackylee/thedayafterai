@@ -89,7 +89,7 @@ async function main() {
           try {
             const linkPath = new URL(href).pathname;
             // Must contain the slug AND be a sub-page (not just the collection index)
-            // e.g. /ai-market-insight/some-article-slug (not just /ai-market-insight/ or /ai-market-insight)
+            // e.g. /business-economy/some-article-slug (not just /business-economy/ or /business-economy)
             if (!linkPath.includes(filterSlug)) continue;
             // Ensure there's content after the slug (it's an actual article, not the index)
             const afterSlug = linkPath.split(filterSlug)[1];
@@ -100,24 +100,36 @@ async function main() {
 
           seen.add(href);
 
+          // Find the parent summary/article container for this link
+          const container = el.closest("article, .summary-item, .blog-item, .sqs-block") || el.parentElement;
+
           // Extract title from the link or nearby heading
           let title =
             el.querySelector("h1, h2, h3, h4")?.textContent?.trim() ||
-            el.closest("article, .summary-item, .blog-item, .sqs-block")?.querySelector("h1, h2, h3, h4")?.textContent?.trim() ||
+            container?.querySelector("h1, h2, h3, h4")?.textContent?.trim() ||
             el.textContent?.trim().substring(0, 200) ||
             "";
           title = title.replace(/\s+/g, " ").trim();
 
           // Extract image from the link or its parent article container
           let imageUrl = "";
-          const container = el.closest("article, .summary-item, .blog-item, .sqs-block") || el.parentElement;
           const img = el.querySelector("img") || container?.querySelector("img");
           if (img) {
             imageUrl = img.dataset?.src || img.src || "";
           }
 
+          // Extract date from the listing page (Squarespace shows dates in summary items)
+          let date = "";
+          const timeEl =
+            container?.querySelector("time[datetime]") ||
+            container?.querySelector(".summary-metadata-item--date") ||
+            container?.querySelector(".blog-date");
+          if (timeEl) {
+            date = timeEl.getAttribute("datetime") || "";
+          }
+
           if (title) {
-            results.push({ url: href, title, imageUrl });
+            results.push({ url: href, title, imageUrl, date });
           }
         }
 
@@ -140,7 +152,7 @@ async function main() {
 
       if (uniqueArticles.length > 0) {
         // Fetch OG images and dates from individual article pages
-        console.log("  Fetching OG images from article pages...");
+        console.log("  Fetching OG images and dates from article pages...");
         for (const article of uniqueArticles) {
           try {
             const articlePage = await context.newPage();
@@ -152,22 +164,32 @@ async function main() {
             const meta = await articlePage.evaluate(() => {
               const ogImg = document.querySelector('meta[property="og:image"]')?.getAttribute("content") || "";
               const twImg = document.querySelector('meta[name="twitter:image"]')?.getAttribute("content") || "";
+
+              // Try multiple date sources (Squarespace uses various patterns)
               const pubDate =
                 document.querySelector('meta[property="article:published_time"]')?.getAttribute("content") ||
+                document.querySelector('time.blog-date[datetime]')?.getAttribute("datetime") ||
                 document.querySelector('time[datetime]')?.getAttribute("datetime") ||
+                document.querySelector('.entry-dateline time')?.getAttribute("datetime") ||
+                document.querySelector('.blog-item-date time')?.getAttribute("datetime") ||
+                document.querySelector('.dt-published')?.getAttribute("datetime") ||
                 "";
+
               return { ogImg, twImg, pubDate };
             });
 
             if (meta.ogImg) article.imageUrl = meta.ogImg;
             else if (meta.twImg) article.imageUrl = meta.twImg;
+
+            // Use article page date if found; falls back to listing page date
             if (meta.pubDate) {
               try {
                 article.date = new Date(meta.pubDate).toISOString().split("T")[0];
               } catch { /* ignore invalid dates */ }
             }
 
-            console.log(`    ${article.title.slice(0, 50)}... => ${article.imageUrl ? "got image" : "no image"}`);
+            const dateDisplay = article.date || "no date";
+            console.log(`    ${article.title.slice(0, 50)}... => ${article.imageUrl ? "img" : "no-img"}, ${dateDisplay}`);
             await articlePage.close();
           } catch (err) {
             console.log(`    Failed for "${article.title.slice(0, 40)}": ${err.message.split("\n")[0]}`);
@@ -175,14 +197,23 @@ async function main() {
         }
 
         // Update the section's articles
-        section.articles = uniqueArticles.map((a, i) => ({
-          id: `${section.id}-${i + 1}`,
-          title: a.title,
-          date: a.date || "",
-          imageUrl: a.imageUrl || "",
-          url: a.url,
-          source: "TheDayAfterAI",
-        }));
+        section.articles = uniqueArticles.map((a, i) => {
+          // Normalize date from either article page or listing page
+          let normalizedDate = "";
+          if (a.date) {
+            try {
+              normalizedDate = new Date(a.date).toISOString().split("T")[0];
+            } catch { /* keep empty */ }
+          }
+          return {
+            id: `${section.id}-${i + 1}`,
+            title: a.title,
+            date: normalizedDate,
+            imageUrl: a.imageUrl || "",
+            url: a.url,
+            source: "TheDayAfterAI",
+          };
+        });
         updated = true;
         console.log(`  Updated "${section.title}" with ${uniqueArticles.length} articles`);
       } else {
