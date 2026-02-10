@@ -148,7 +148,9 @@ function CustomSectionRow({ section }: { section: CustomSection }) {
               </h4>
               <div className="flex items-center gap-2 mt-2">
                 <span className="text-[var(--text-secondary)] text-[10px] font-medium">
-                  {new Date(article.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
+                  {article.date && !isNaN(new Date(article.date).getTime())
+                    ? new Date(article.date).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })
+                    : article.source || "TheDayAfterAI"}
                 </span>
               </div>
             </div>
