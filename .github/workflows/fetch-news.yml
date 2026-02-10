@@ -26,11 +26,8 @@ jobs:
       - name: Fetch custom article URLs (browser)
         run: node scripts/fetch-custom-urls.js
 
-      - name: Fetch news data
+      - name: Fetch news data (with Playwright URL + image resolution)
         run: node scripts/fetch-news.js
-
-      - name: Resolve Google News URLs to actual article links
-        run: node scripts/resolve-google-urls.js
 
       - name: Commit and push if changed
         run: |

@@ -1,6 +1,10 @@
 #!/usr/bin/env node
 // Pre-fetch news and YouTube data, save as static JSON for fast page loads.
-// Runs in GitHub Actions on a schedule (no browser, no CORS issues).
+// Uses Google News RSS to discover articles, then Playwright to resolve
+// each Google redirect URL to the actual publisher URL and fetch the real
+// OG image — so every article link and thumbnail is real, not a Google proxy.
+//
+// Runs in GitHub Actions on a schedule (hourly) and on deploy.
 
 const fs = require("fs");
 const path = require("path");
@@ -13,6 +17,11 @@ const YOUTUBE_CHANNEL_RSS = `https://www.youtube.com/feeds/videos.xml?channel_id
 const PLAYLIST_URL = `https://www.youtube.com/playlist?list=${PLAYLIST_ID}`;
 
 const OUTPUT_DIR = path.join(__dirname, "..", "public", "data");
+const URL_CACHE_PATH = path.join(OUTPUT_DIR, "url-cache.json");
+
+const ARTICLES_PER_CATEGORY = 30;
+const PLAYWRIGHT_CONCURRENCY = 5;
+const PLAYWRIGHT_TIMEOUT = 15000;
 
 // ── Simple XML helpers (no external deps) ──────────────────────────
 
@@ -57,7 +66,6 @@ function extractEntries(xml) {
 }
 
 function stripHtml(html) {
-  // Decode HTML entities, then strip tags
   return html
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
@@ -69,7 +77,8 @@ function stripHtml(html) {
     .trim();
 }
 
-// Topic-specific fallback images from Unsplash CDN (reliable, no rate limits)
+// ── Fallback images ────────────────────────────────────────────────
+
 const TOPIC_FALLBACK_IMAGES = {
   "ai-academy": [
     "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&auto=format",
@@ -130,12 +139,11 @@ const TOPIC_FALLBACK_IMAGES = {
 
 function generateImageUrl(title, topic) {
   const images = TOPIC_FALLBACK_IMAGES[topic || "technology-innovation"] || TOPIC_FALLBACK_IMAGES["technology-innovation"];
-  // Deterministic pick based on title hash
   const hash = title.split("").reduce((acc, ch) => acc + ch.charCodeAt(0), 0);
   return images[hash % images.length];
 }
 
-// ── Topic matching (11 grouped categories) ────────────────────────
+// ── Topic matching ─────────────────────────────────────────────────
 
 const topicSearchTerms = {
   "ai-academy": ["university", "education", "student", "academic", "research", "school", "learning", "curriculum"],
@@ -159,6 +167,30 @@ function matchTopic(text) {
   return "technology-innovation";
 }
 
+// ── Helpers ────────────────────────────────────────────────────────
+
+function isGenericImage(url) {
+  if (!url) return true;
+  if (/lh\d\.googleusercontent\.com/i.test(url)) return false;
+  if (/(?:width|w|size)=(?:1\d{0,2}|[1-9]\d?)(?:\D|$)/i.test(url)) return true;
+  return [/news\.google\.com/i, /googlenews/i, /gstatic\.com.*\/news/i, /\/logo/i, /\/favicon/i, /icon[-_]?\d+/i, /default[-_]?image/i, /placeholder/i, /\/avatar/i].some((re) => re.test(url));
+}
+
+function extractArticleId(url) {
+  if (!url) return null;
+  const match = url.match(/\/articles\/([^?]+)/);
+  return match ? match[1] : null;
+}
+
+function loadUrlCache() {
+  try { return JSON.parse(fs.readFileSync(URL_CACHE_PATH, "utf-8")); } catch { return {}; }
+}
+
+function saveUrlCache(cache) {
+  fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+  fs.writeFileSync(URL_CACHE_PATH, JSON.stringify(cache, null, 2) + "\n");
+}
+
 // ── Fetch with retry ───────────────────────────────────────────────
 
 async function fetchWithRetry(url, retries = 3) {
@@ -177,160 +209,234 @@ async function fetchWithRetry(url, retries = 3) {
   throw new Error(`Failed to fetch ${url} after ${retries} retries`);
 }
 
-// ── Fetch news ─────────────────────────────────────────────────────
+// ── Fetch news from Google News RSS ────────────────────────────────
 
 async function fetchAllNews() {
-  // Per-category queries to ensure each gets ~30 articles
   const categoryQueries = {
-    "ai-academy": [
-      "AI education university research",
-      "AI academic learning school curriculum",
-    ],
-    "business-economy": [
-      "AI business economy startup funding",
-      "AI company market invest stock finance",
-    ],
-    "chatbot-development": [
-      "AI chatbot GPT LLM OpenAI",
-      "AI Claude Gemini language model conversational",
-    ],
-    "digital-security": [
-      "AI cybersecurity privacy digital security",
-      "AI hack breach malware encryption",
-    ],
-    "environment-science": [
-      "AI climate environment science quantum",
-      "AI sustainable energy physics biology discovery",
-    ],
-    "governance-politics": [
-      "AI regulation governance politics policy",
-      "AI government legislation compliance framework",
-    ],
-    "health-style": [
-      "AI health medical diagnosis treatment",
-      "AI fashion style design trend luxury",
-    ],
-    "musical-art": [
-      "AI music audio song compose Spotify",
-      "AI album artist melody sound",
-    ],
-    "technology-innovation": [
-      "AI technology innovation breakthrough",
-      "AI chip semiconductor hardware computing software",
-      "AI agent autonomous robot",
-    ],
-    "unmanned-aircraft": [
-      "AI drone unmanned aircraft UAV aerial",
-      "AI quadcopter flying delivery drone",
-    ],
-    "visual-art-photography": [
-      "AI photography visual art camera image",
-      "AI painting creative artwork gallery museum",
-    ],
+    "ai-academy": ["AI education university research", "AI academic learning school curriculum"],
+    "business-economy": ["AI business economy startup funding", "AI company market invest stock finance"],
+    "chatbot-development": ["AI chatbot GPT LLM OpenAI", "AI Claude Gemini language model conversational"],
+    "digital-security": ["AI cybersecurity privacy digital security", "AI hack breach malware encryption"],
+    "environment-science": ["AI climate environment science quantum", "AI sustainable energy physics biology discovery"],
+    "governance-politics": ["AI regulation governance politics policy", "AI government legislation compliance framework"],
+    "health-style": ["AI health medical diagnosis treatment", "AI fashion style design trend luxury"],
+    "musical-art": ["AI music audio song compose Spotify", "AI album artist melody sound"],
+    "technology-innovation": ["AI technology innovation breakthrough", "AI chip semiconductor hardware computing software", "AI agent autonomous robot"],
+    "unmanned-aircraft": ["AI drone unmanned aircraft UAV aerial", "AI quadcopter flying delivery drone"],
+    "visual-art-photography": ["AI photography visual art camera image", "AI painting creative artwork gallery museum"],
   };
 
-  // Also add broad queries
-  const broadQueries = [
-    "artificial intelligence",
-    "artificial intelligence news today",
-  ];
-
-  const allArticles = [];
+  // Collect articles per category, capped at ARTICLES_PER_CATEGORY
+  const perCategory = {};
   const seenTitles = new Set();
 
-  async function fetchQuery(q) {
-    try {
-      const rssUrl = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en&num=40`;
-      const xml = await fetchWithRetry(rssUrl);
-      const items = extractItems(xml);
-
-      for (let i = 0; i < items.length; i++) {
-        const item = items[i];
-        const title = getTagContent(item, "title")[0] || "";
-        if (!title || seenTitles.has(title)) continue;
-        seenTitles.add(title);
-
-        const link = getTagContent(item, "link")[0] || "";
-        const pubDate = getTagContent(item, "pubDate")[0] || "";
-        const source = getTagContent(item, "source")[0] || "Google News";
-        const rawDescription = getTagContent(item, "description")[0] || "";
-        const description = stripHtml(rawDescription);
-
-        // Extract image from RSS item: try media:content, enclosure, then description <img>
-        let imageUrl = "";
-        const mediaUrls = getTagAttr(item, "media:content", "url");
-        if (mediaUrls.length > 0 && !isGenericImage(mediaUrls[0])) {
-          imageUrl = mediaUrls[0];
-        }
-        if (!imageUrl) {
-          const enclosureUrls = getTagAttr(item, "enclosure", "url");
-          if (enclosureUrls.length > 0 && !isGenericImage(enclosureUrls[0])) {
-            imageUrl = enclosureUrls[0];
-          }
-        }
-        if (!imageUrl) {
-          // Google News puts publisher images in description HTML as <img src="...">
-          const decodedDesc = rawDescription
-            .replace(/&lt;/g, "<").replace(/&gt;/g, ">")
-            .replace(/&amp;/g, "&").replace(/&quot;/g, '"');
-          const imgMatch = decodedDesc.match(/<img[^>]+src=["']([^"']+)["']/i);
-          if (imgMatch && imgMatch[1] && !isGenericImage(imgMatch[1])) {
-            imageUrl = imgMatch[1];
-          }
-        }
-
-        const topic = matchTopic(title + " " + description);
-        allArticles.push({
-          id: `gn-${allArticles.length}`,
-          title,
-          summary: description || title,
-          topic,
-          source,
-          date: pubDate,
-          imageUrl: imageUrl || generateImageUrl(title, topic),
-          url: link,
-        });
-      }
-    } catch (err) {
-      console.warn(`Failed to fetch query "${q}":`, err.message);
-    }
-  }
-
-  // Fetch per-category queries
   for (const [category, queries] of Object.entries(categoryQueries)) {
+    perCategory[category] = [];
+
     for (const q of queries) {
-      await fetchQuery(q);
+      if (perCategory[category].length >= ARTICLES_PER_CATEGORY) break;
+
+      try {
+        const rssUrl = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en&num=40`;
+        const xml = await fetchWithRetry(rssUrl);
+        const items = extractItems(xml);
+
+        for (const item of items) {
+          if (perCategory[category].length >= ARTICLES_PER_CATEGORY) break;
+
+          const title = getTagContent(item, "title")[0] || "";
+          if (!title || seenTitles.has(title)) continue;
+          seenTitles.add(title);
+
+          const link = getTagContent(item, "link")[0] || "";
+          const pubDate = getTagContent(item, "pubDate")[0] || "";
+          const source = getTagContent(item, "source")[0] || "Google News";
+          const rawDescription = getTagContent(item, "description")[0] || "";
+          const description = stripHtml(rawDescription);
+
+          // Extract RSS image
+          let imageUrl = "";
+          const mediaUrls = getTagAttr(item, "media:content", "url");
+          if (mediaUrls.length > 0 && !isGenericImage(mediaUrls[0])) imageUrl = mediaUrls[0];
+          if (!imageUrl) {
+            const enclosureUrls = getTagAttr(item, "enclosure", "url");
+            if (enclosureUrls.length > 0 && !isGenericImage(enclosureUrls[0])) imageUrl = enclosureUrls[0];
+          }
+          if (!imageUrl) {
+            const decodedDesc = rawDescription.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&").replace(/&quot;/g, '"');
+            const imgMatch = decodedDesc.match(/<img[^>]+src=["']([^"']+)["']/i);
+            if (imgMatch && imgMatch[1] && !isGenericImage(imgMatch[1])) imageUrl = imgMatch[1];
+          }
+
+          perCategory[category].push({
+            id: `gn-${category}-${perCategory[category].length}`,
+            title,
+            summary: description || title,
+            topic: category,
+            source,
+            date: pubDate,
+            imageUrl: imageUrl || "",
+            url: link,
+          });
+        }
+      } catch (err) {
+        console.warn(`  Failed query "${q}": ${err.message}`);
+      }
     }
-    // Count how many we have for this category
-    const count = allArticles.filter((a) => a.topic === category).length;
-    console.log(`  ${category}: ${count} articles`);
+
+    console.log(`  ${category}: ${perCategory[category].length} articles`);
   }
 
-  // Fetch broad queries for additional coverage
-  for (const q of broadQueries) {
-    await fetchQuery(q);
-  }
-
-  // Sort newest first
+  // Flatten and sort by date
+  const allArticles = Object.values(perCategory).flat();
   allArticles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-
-  // Log per-category counts
-  const counts = {};
-  for (const a of allArticles) {
-    counts[a.topic] = (counts[a.topic] || 0) + 1;
-  }
-  console.log(`Fetched ${allArticles.length} total news articles`);
-  console.log("Per-category counts:", JSON.stringify(counts, null, 2));
+  console.log(`Total: ${allArticles.length} articles (${ARTICLES_PER_CATEGORY} per category)`);
 
   return allArticles;
 }
 
-// ── Fetch channel videos ───────────────────────────────────────────
+// ── Resolve Google URLs + fetch OG images via Playwright ───────────
+
+async function resolveArticles(articles) {
+  const cache = loadUrlCache();
+  const cacheSize = Object.keys(cache).length;
+  console.log(`URL cache: ${cacheSize} entries`);
+
+  // Apply cached resolutions first
+  let cacheHits = 0;
+  for (const article of articles) {
+    const id = extractArticleId(article.url);
+    if (id && cache[id]) {
+      article.url = cache[id].url || article.url;
+      if (cache[id].imageUrl && !article.imageUrl) article.imageUrl = cache[id].imageUrl;
+      cacheHits++;
+    }
+  }
+  console.log(`Applied ${cacheHits} cached resolutions`);
+
+  // Find articles still needing resolution (Google News URLs)
+  const toResolve = articles.filter((a) => a.url && a.url.includes("news.google.com"));
+  if (toResolve.length === 0) {
+    console.log("All URLs resolved from cache!");
+    saveUrlCache(cache);
+    return;
+  }
+
+  console.log(`Resolving ${toResolve.length} URLs via Playwright...`);
+
+  // Load Playwright
+  let chromium;
+  try {
+    ({ chromium } = require("playwright"));
+  } catch {
+    try {
+      ({ chromium } = require("/opt/node22/lib/node_modules/playwright"));
+    } catch {
+      console.warn("Playwright not available — keeping Google News URLs for now.");
+      return;
+    }
+  }
+
+  const browser = await chromium.launch({
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+  });
+  const context = await browser.newContext({
+    userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  });
+
+  let resolved = 0;
+  let failed = 0;
+
+  for (let i = 0; i < toResolve.length; i += PLAYWRIGHT_CONCURRENCY) {
+    const batch = toResolve.slice(i, i + PLAYWRIGHT_CONCURRENCY);
+    const promises = batch.map(async (article) => {
+      const gnUrl = article.url;
+      const articleId = extractArticleId(gnUrl);
+      const page = await context.newPage();
+
+      try {
+        // Navigate to Google News URL — follows redirect to actual article
+        await page.goto(gnUrl, { waitUntil: "domcontentloaded", timeout: PLAYWRIGHT_TIMEOUT });
+        await page.waitForTimeout(2000);
+
+        let finalUrl = page.url();
+
+        // If still on Google, try extracting from page content
+        if (finalUrl.includes("news.google.com") || finalUrl.includes("consent.google")) {
+          const extracted = await page.evaluate(() => {
+            const c = document.querySelector('link[rel="canonical"]');
+            if (c?.href && !c.href.includes("news.google.com")) return c.href;
+            const o = document.querySelector('meta[property="og:url"]');
+            if (o?.content && !o.content.includes("news.google.com")) return o.content;
+            const d = document.querySelector("a[data-n-au]");
+            if (d) return d.getAttribute("data-n-au");
+            return null;
+          });
+          if (extracted) finalUrl = extracted;
+        }
+
+        const isResolved =
+          finalUrl &&
+          !finalUrl.includes("news.google.com") &&
+          !finalUrl.includes("consent.google") &&
+          !finalUrl.includes("accounts.google");
+
+        if (isResolved) {
+          article.url = finalUrl;
+
+          // Now extract OG image from the real article page
+          const meta = await page.evaluate(() => {
+            const ogImg = document.querySelector('meta[property="og:image"]')?.getAttribute("content") || "";
+            const twImg = document.querySelector('meta[name="twitter:image"]')?.getAttribute("content") || "";
+            return ogImg || twImg || "";
+          });
+          if (meta && !isGenericImage(meta)) {
+            article.imageUrl = meta;
+          }
+
+          // Cache the result
+          if (articleId) {
+            cache[articleId] = { url: finalUrl, imageUrl: article.imageUrl };
+          }
+          resolved++;
+        } else {
+          failed++;
+        }
+      } catch {
+        failed++;
+      } finally {
+        await page.close();
+      }
+    });
+
+    await Promise.allSettled(promises);
+
+    const processed = Math.min(i + PLAYWRIGHT_CONCURRENCY, toResolve.length);
+    if (processed % 25 < PLAYWRIGHT_CONCURRENCY || processed >= toResolve.length) {
+      console.log(`  ${processed}/${toResolve.length} (resolved: ${resolved}, failed: ${failed})`);
+    }
+  }
+
+  await browser.close();
+  saveUrlCache(cache);
+
+  console.log(`Resolution done: ${resolved} resolved, ${failed} failed`);
+  console.log(`Total with real URLs: ${articles.filter((a) => !a.url.includes("news.google.com")).length}/${articles.length}`);
+
+  // For any articles still missing images, use fallback
+  for (const article of articles) {
+    if (!article.imageUrl) {
+      article.imageUrl = generateImageUrl(article.title, article.topic);
+    }
+  }
+}
+
+// ── YouTube ────────────────────────────────────────────────────────
 
 function parseVideoEntries(xml) {
   const entries = extractEntries(xml);
   const videos = [];
-
   for (const entry of entries) {
     const videoId = getTagContent(entry, "yt:videoId")[0] || "";
     const title = getTagContent(entry, "title")[0] || "";
@@ -338,106 +444,29 @@ function parseVideoEntries(xml) {
     const description = getTagContent(entry, "media:description")[0] || "";
     const thumbnails = getTagAttr(entry, "media:thumbnail", "url");
     const thumbnail = thumbnails[0] || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
-
-    videos.push({
-      id: videoId,
-      videoId,
-      title,
-      thumbnail,
-      publishedAt: published,
-      description,
-      channelTitle: "TheDayAfterAI",
-    });
+    videos.push({ id: videoId, videoId, title, thumbnail, publishedAt: published, description, channelTitle: "TheDayAfterAI" });
   }
-
   return videos;
 }
 
 async function fetchChannelVideos() {
-  // Try playlist RSS first (user's specific AI news playlist)
   try {
     console.log("Trying playlist RSS feed...");
     const xml = await fetchWithRetry(YOUTUBE_PLAYLIST_RSS);
     const videos = parseVideoEntries(xml);
-    if (videos.length > 0) {
-      console.log(`Fetched ${videos.length} videos from playlist RSS`);
-      return videos;
-    }
-  } catch (err) {
-    console.warn("Playlist RSS fetch failed:", err.message);
-  }
+    if (videos.length > 0) { console.log(`Fetched ${videos.length} videos from playlist RSS`); return videos; }
+  } catch (err) { console.warn("Playlist RSS fetch failed:", err.message); }
 
-  // Fall back to channel RSS
   try {
     console.log("Trying channel RSS feed...");
     const xml = await fetchWithRetry(YOUTUBE_CHANNEL_RSS);
     const videos = parseVideoEntries(xml);
     console.log(`Fetched ${videos.length} videos from channel RSS`);
     return videos;
-  } catch (err) {
-    console.warn("Channel RSS fetch also failed:", err.message);
-    return [];
-  }
+  } catch (err) { console.warn("Channel RSS also failed:", err.message); return []; }
 }
 
-
-// ── Fetch OG image from article URL ──────────────────────────────
-
-// Reject images that are clearly generic logos, not article-specific thumbnails
-const REJECTED_IMAGE_PATTERNS = [
-  /news\.google\.com/i,
-  /googlenews/i,
-  /gstatic\.com.*\/news/i,
-  /\/logo/i,
-  /\/favicon/i,
-  /icon[-_]?\d+/i,
-  /default[-_]?image/i,
-  /placeholder/i,
-  /\/avatar/i,
-];
-
-function isGenericImage(url) {
-  if (!url) return true;
-  // Google's image proxy (lh3.googleusercontent.com) serves real article images — allow it
-  if (/lh\d\.googleusercontent\.com/i.test(url)) return false;
-  // Very small images are likely icons/logos
-  if (/(?:width|w|size)=(?:1\d{0,2}|[1-9]\d?)(?:\D|$)/i.test(url)) return true;
-  return REJECTED_IMAGE_PATTERNS.some((re) => re.test(url));
-}
-
-async function fetchOgImage(url) {
-  if (!url) return "";
-  // Don't try to get OG image from Google News URLs directly — resolve first
-  if (url.includes("news.google.com")) return "";
-  try {
-    const res = await fetch(url, {
-      headers: { "User-Agent": "TheDayAfterAI-NewsBot/1.0" },
-      redirect: "follow",
-      signal: AbortSignal.timeout(8000),
-    });
-    if (!res.ok) return "";
-    const html = await res.text();
-    // Look for og:image meta tag
-    const ogMatch = html.match(
-      /<meta[^>]*property=["']og:image["'][^>]*content=["']([^"']+)["']/i
-    ) || html.match(
-      /<meta[^>]*content=["']([^"']+)["'][^>]*property=["']og:image["']/i
-    );
-    if (ogMatch && ogMatch[1] && !isGenericImage(ogMatch[1])) return ogMatch[1];
-    // Fallback: twitter:image
-    const twMatch = html.match(
-      /<meta[^>]*name=["']twitter:image["'][^>]*content=["']([^"']+)["']/i
-    ) || html.match(
-      /<meta[^>]*content=["']([^"']+)["'][^>]*name=["']twitter:image["']/i
-    );
-    if (twMatch && twMatch[1] && !isGenericImage(twMatch[1])) return twMatch[1];
-    return "";
-  } catch {
-    return "";
-  }
-}
-
-// ── Fetch TheDayAfterAI.com blog articles ────────────────────────
+// ── TheDayAfterAI.com blog articles ───────────────────────────────
 
 const TDAAI_RSS_URLS = [
   "https://www.thedayafterai.com/blog?format=rss",
@@ -449,195 +478,46 @@ const TDAAI_RSS_URLS = [
 async function fetchTdaaiArticles() {
   console.log("Fetching TheDayAfterAI.com blog articles...");
   let xml = "";
-
   for (const rssUrl of TDAAI_RSS_URLS) {
     try {
       xml = await fetchWithRetry(rssUrl, 2);
-      if (xml && xml.includes("<item>")) {
-        console.log(`  Found RSS feed at: ${rssUrl}`);
-        break;
-      }
-    } catch {
-      // try next URL
-    }
+      if (xml && xml.includes("<item>")) { console.log(`  Found RSS at: ${rssUrl}`); break; }
+    } catch { /* try next */ }
   }
 
   if (!xml || !xml.includes("<item>")) {
-    // Fallback: try scraping the main page for blog posts
-    console.log("  RSS not available, trying HTML scrape...");
-    try {
-      return await scrapeTdaaiHtml();
-    } catch (err) {
-      console.warn("  TheDayAfterAI.com scraping failed:", err.message);
-      return [];
-    }
+    console.log("  RSS not available");
+    return [];
   }
 
   const items = extractItems(xml);
   const articles = [];
-
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
     const title = getTagContent(item, "title")[0] || "";
     if (!title) continue;
-
     const link = getTagContent(item, "link")[0] || "";
     const pubDate = getTagContent(item, "pubDate")[0] || "";
     const description = stripHtml(getTagContent(item, "description")[0] || "");
-
-    // Extract image from enclosure, media:content, or description HTML
     let imageUrl = "";
     const enclosureUrl = getTagAttr(item, "enclosure", "url");
-    if (enclosureUrl.length > 0) {
-      imageUrl = enclosureUrl[0];
-    }
-    if (!imageUrl) {
-      const mediaUrl = getTagAttr(item, "media:content", "url");
-      if (mediaUrl.length > 0) imageUrl = mediaUrl[0];
-    }
-    if (!imageUrl) {
-      // Try to find image in raw description HTML
-      const rawDesc = getTagContent(item, "description")[0] || "";
-      const imgMatch = rawDesc.match(/src=["']([^"']+\.(?:jpg|jpeg|png|webp|gif)[^"']*)/i);
-      if (imgMatch) imageUrl = imgMatch[1].replace(/&amp;/g, "&");
-    }
-
-    articles.push({
-      id: `tdaai-${i}`,
-      title,
-      summary: description || title,
-      date: pubDate,
-      imageUrl,
-      url: link,
-      source: "TheDayAfterAI",
-    });
+    if (enclosureUrl.length > 0) imageUrl = enclosureUrl[0];
+    if (!imageUrl) { const mediaUrl = getTagAttr(item, "media:content", "url"); if (mediaUrl.length > 0) imageUrl = mediaUrl[0]; }
+    if (!imageUrl) { const rawDesc = getTagContent(item, "description")[0] || ""; const imgMatch = rawDesc.match(/src=["']([^"']+\.(?:jpg|jpeg|png|webp|gif)[^"']*)/i); if (imgMatch) imageUrl = imgMatch[1].replace(/&amp;/g, "&"); }
+    articles.push({ id: `tdaai-${i}`, title, summary: description || title, date: pubDate, imageUrl, url: link, source: "TheDayAfterAI" });
   }
-
   console.log(`  Fetched ${articles.length} articles from TheDayAfterAI.com`);
   return articles;
 }
 
-async function scrapeTdaaiHtml() {
-  const urls = [
-    "https://www.thedayafterai.com/blog",
-    "https://thedayafterai.com/blog",
-    "https://www.thedayafterai.com",
-    "https://thedayafterai.com",
-  ];
-
-  let html = "";
-  for (const url of urls) {
-    try {
-      html = await fetchWithRetry(url, 2);
-      if (html && html.length > 1000) break;
-    } catch {
-      // try next
-    }
-  }
-
-  if (!html) return [];
-
-  // Squarespace blog posts typically have structured data or summary blocks
-  const articles = [];
-
-  // Try JSON-LD structured data
-  const jsonLdMatch = html.match(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi);
-  if (jsonLdMatch) {
-    for (const block of jsonLdMatch) {
-      try {
-        const jsonStr = block.replace(/<\/?script[^>]*>/gi, "");
-        const data = JSON.parse(jsonStr);
-        const items = Array.isArray(data) ? data : data.itemListElement || [data];
-        for (const item of items) {
-          if (item["@type"] === "BlogPosting" || item["@type"] === "Article" || item["@type"] === "NewsArticle") {
-            articles.push({
-              id: `tdaai-html-${articles.length}`,
-              title: item.headline || item.name || "",
-              summary: item.description || "",
-              date: item.datePublished || item.dateCreated || "",
-              imageUrl: (typeof item.image === "string" ? item.image : item.image?.url) || "",
-              url: item.url || item.mainEntityOfPage || "",
-              source: "TheDayAfterAI",
-            });
-          }
-        }
-      } catch {
-        // invalid JSON, skip
-      }
-    }
-  }
-
-  if (articles.length > 0) {
-    console.log(`  Scraped ${articles.length} articles from HTML structured data`);
-    return articles;
-  }
-
-  // Fallback: parse Squarespace summary blocks
-  const blogItemRegex = /<article[^>]*class="[^"]*summary-item[^"]*"[^>]*>([\s\S]*?)<\/article>/gi;
-  let match;
-  while ((match = blogItemRegex.exec(html)) !== null) {
-    const block = match[1];
-    const titleMatch = block.match(/<a[^>]*class="[^"]*summary-title[^"]*"[^>]*>([\s\S]*?)<\/a>/i);
-    const linkMatch = block.match(/<a[^>]*href=["']([^"']+)["']/i);
-    const imgMatch = block.match(/data-src=["']([^"']+)["']/i) || block.match(/src=["']([^"']+\.(?:jpg|jpeg|png|webp)[^"']*)/i);
-
-    if (titleMatch) {
-      const title = stripHtml(titleMatch[1]);
-      articles.push({
-        id: `tdaai-html-${articles.length}`,
-        title,
-        summary: "",
-        date: "",
-        imageUrl: imgMatch ? imgMatch[1].replace(/&amp;/g, "&") : "",
-        url: linkMatch ? (linkMatch[1].startsWith("http") ? linkMatch[1] : `https://www.thedayafterai.com${linkMatch[1]}`) : "",
-        source: "TheDayAfterAI",
-      });
-    }
-  }
-
-  console.log(`  Scraped ${articles.length} articles from HTML`);
-  return articles;
-}
-
-// ── Enhance custom-articles.json with live data ─────────────────
+// ── Enhance custom-articles.json ──────────────────────────────────
 
 async function enhanceCustomArticles() {
   const customPath = path.join(OUTPUT_DIR, "custom-articles.json");
   let customData;
-  try {
-    customData = JSON.parse(fs.readFileSync(customPath, "utf-8"));
-  } catch {
-    console.log("No custom-articles.json found, skipping");
-    return;
-  }
-
+  try { customData = JSON.parse(fs.readFileSync(customPath, "utf-8")); } catch { return; }
   if (!customData.sections || customData.sections.length === 0) return;
-
-  let updated = false;
-
-  for (const section of customData.sections) {
-    // Fetch OG images for articles that have URLs but missing/placeholder images
-    // (The browser-based fetch-custom-urls.js handles article discovery;
-    //  this is a fallback for OG images it may have missed)
-    for (const article of section.articles) {
-      if (article.url && (!article.imageUrl || article.imageUrl.includes("unsplash.com"))) {
-        try {
-          const ogImg = await fetchOgImage(article.url);
-          if (ogImg) {
-            article.imageUrl = ogImg;
-            updated = true;
-          }
-        } catch {
-          // ignore
-        }
-      }
-    }
-  }
-
-  if (updated) {
-    fs.writeFileSync(customPath, JSON.stringify(customData, null, 2) + "\n");
-    console.log("Updated custom-articles.json with live data");
-  }
+  // OG image enhancement handled by fetch-custom-urls.js (Playwright)
 }
 
 // ── Main ───────────────────────────────────────────────────────────
@@ -652,42 +532,9 @@ async function main() {
     fetchTdaaiArticles(),
   ]);
 
-  // Enhance custom-articles.json with live RSS data and OG images
-  await enhanceCustomArticles();
-
-  // Note: Google News URL resolution is handled by resolve-google-urls.js (Playwright)
-  // which runs as a separate CI step after this script.
-
-  // Fetch OG images from article URLs (works best after URL resolution, but will
-  // attempt for any non-Google-News URLs that are already resolved)
-  console.log("Fetching OG images for news articles...");
-  const ogImageBatchSize = 10;
-  for (let i = 0; i < news.length; i += ogImageBatchSize) {
-    const batch = news.slice(i, i + ogImageBatchSize);
-    await Promise.allSettled(
-      batch.map(async (article) => {
-        if (article.url && (article.imageUrl.includes("unsplash.com") || article.imageUrl.includes("pollinations.ai"))) {
-          const ogImg = await fetchOgImage(article.url);
-          if (ogImg) article.imageUrl = ogImg;
-        }
-      })
-    );
-  }
-  const ogCount = news.filter((a) => !a.imageUrl.includes("unsplash.com") && !a.imageUrl.includes("pollinations.ai")).length;
-  console.log(`  Replaced ${ogCount} article images with real OG images`);
-
-  // Also fetch OG images for TDAAI articles missing images
-  for (let i = 0; i < tdaaiArticles.length; i += ogImageBatchSize) {
-    const batch = tdaaiArticles.slice(i, i + ogImageBatchSize);
-    await Promise.allSettled(
-      batch.map(async (article) => {
-        if (!article.imageUrl && article.url) {
-          const ogImg = await fetchOgImage(article.url);
-          if (ogImg) article.imageUrl = ogImg;
-        }
-      })
-    );
-  }
+  // Resolve Google News URLs to actual publisher URLs + fetch OG images
+  console.log("\n=== Resolving Google News URLs to publisher URLs ===");
+  await resolveArticles(news);
 
   const data = {
     fetchedAt: new Date().toISOString(),
@@ -698,12 +545,11 @@ async function main() {
   };
 
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
-  fs.writeFileSync(
-    path.join(OUTPUT_DIR, "prefetched.json"),
-    JSON.stringify(data, null, 2)
-  );
+  fs.writeFileSync(path.join(OUTPUT_DIR, "prefetched.json"), JSON.stringify(data, null, 2));
 
-  console.log(`Saved to public/data/prefetched.json (${news.length} articles, ${channelVideos.length} videos, ${tdaaiArticles.length} TDAAI articles)`);
+  const realUrlCount = news.filter((a) => !a.url.includes("news.google.com")).length;
+  const realImgCount = news.filter((a) => a.imageUrl && !a.imageUrl.includes("unsplash.com")).length;
+  console.log(`\nSaved: ${news.length} articles (${realUrlCount} real URLs, ${realImgCount} real images), ${channelVideos.length} videos, ${tdaaiArticles.length} TDAAI articles`);
 }
 
 main().catch((err) => {
