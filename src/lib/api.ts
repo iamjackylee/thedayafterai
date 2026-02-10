@@ -412,9 +412,18 @@ function generateImageUrl(title: string): string {
   return `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=600&height=400&nologo=true`;
 }
 
+/** Check if an image URL looks like a generic logo rather than article content */
+function isGenericImage(url: string): boolean {
+  if (!url) return true;
+  return /google\.com|googlenews|gstatic\.com.*\/news|\/logo|\/favicon|default[-_]?image|placeholder|\/avatar/i.test(url);
+}
+
 /** Try to extract og:image from an article URL via CORS proxy */
 async function fetchOgImage(url: string): Promise<string> {
   if (!url) return "";
+  // Skip Google News redirect URLs — CORS proxies can't follow the redirect
+  // chain properly and we'd just get Google's own og:image (the G logo)
+  if (url.includes("news.google.com")) return "";
   try {
     const html = await fetchWithProxy(url);
     // og:image
@@ -423,26 +432,29 @@ async function fetchOgImage(url: string): Promise<string> {
     ) || html.match(
       /<meta[^>]*content=["']([^"']+)["'][^>]*property=["']og:image["']/i
     );
-    if (ogMatch?.[1]) return ogMatch[1];
+    if (ogMatch?.[1] && !isGenericImage(ogMatch[1])) return ogMatch[1];
     // twitter:image
     const twMatch = html.match(
       /<meta[^>]*name=["']twitter:image["'][^>]*content=["']([^"']+)["']/i
     ) || html.match(
       /<meta[^>]*content=["']([^"']+)["'][^>]*name=["']twitter:image["']/i
     );
-    if (twMatch?.[1]) return twMatch[1];
+    if (twMatch?.[1] && !isGenericImage(twMatch[1])) return twMatch[1];
   } catch {
     // ignore — OG image fetch is best-effort
   }
   return "";
 }
 
-/** Enhance articles: replace Pollinations placeholder with real OG images */
+/** Enhance articles: replace Pollinations placeholder with real OG images.
+ *  Only works for articles with direct publisher URLs (not Google News redirects). */
 export async function enhanceArticleImages(
   articles: NewsArticle[],
   maxConcurrent = 5
 ): Promise<void> {
-  const toFix = articles.filter((a) => a.imageUrl.includes("pollinations.ai") && a.url);
+  const toFix = articles.filter(
+    (a) => a.imageUrl.includes("pollinations.ai") && a.url && !a.url.includes("news.google.com")
+  );
   for (let i = 0; i < toFix.length; i += maxConcurrent) {
     const batch = toFix.slice(i, i + maxConcurrent);
     await Promise.allSettled(

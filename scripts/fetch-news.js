@@ -306,10 +306,61 @@ async function fetchChannelVideos() {
   }
 }
 
+// ── Resolve Google News redirect URLs ─────────────────────────────
+
+async function resolveGoogleNewsUrl(gnUrl) {
+  if (!gnUrl || !gnUrl.includes("news.google.com")) return gnUrl;
+  try {
+    const res = await fetch(gnUrl, {
+      headers: { "User-Agent": "TheDayAfterAI-NewsBot/1.0" },
+      redirect: "manual",
+      signal: AbortSignal.timeout(8000),
+    });
+    // Google News typically 302-redirects to the real article
+    const location = res.headers.get("location");
+    if (location && !location.includes("news.google.com")) return location;
+    // Sometimes it's a JS redirect — try to parse the page for the real URL
+    if (res.ok || res.status === 200) {
+      const html = await res.text();
+      // Look for data-redirect or canonical link
+      const canonMatch = html.match(/<link[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["']/i);
+      if (canonMatch && !canonMatch[1].includes("news.google.com")) return canonMatch[1];
+      // Look for the article redirect URL in a JS data blob
+      const jsRedirect = html.match(/href="(https?:\/\/(?!news\.google\.com)[^"]+)"/i);
+      if (jsRedirect) return jsRedirect[1];
+    }
+  } catch {
+    // ignore — keep original URL
+  }
+  return gnUrl;
+}
+
 // ── Fetch OG image from article URL ──────────────────────────────
+
+// Reject images that are clearly generic logos, not article-specific thumbnails
+const REJECTED_IMAGE_PATTERNS = [
+  /google\.com/i,
+  /googlenews/i,
+  /gstatic\.com.*\/news/i,
+  /logo/i,
+  /favicon/i,
+  /icon[-_]?\d+/i,
+  /default[-_]?image/i,
+  /placeholder/i,
+  /avatar/i,
+];
+
+function isGenericImage(url) {
+  if (!url) return true;
+  // Very small images are likely icons/logos
+  if (/(?:width|w|size)=(?:1\d{0,2}|[1-9]\d?)(?:\D|$)/i.test(url)) return true;
+  return REJECTED_IMAGE_PATTERNS.some((re) => re.test(url));
+}
 
 async function fetchOgImage(url) {
   if (!url) return "";
+  // Don't try to get OG image from Google News URLs directly — resolve first
+  if (url.includes("news.google.com")) return "";
   try {
     const res = await fetch(url, {
       headers: { "User-Agent": "TheDayAfterAI-NewsBot/1.0" },
@@ -324,14 +375,14 @@ async function fetchOgImage(url) {
     ) || html.match(
       /<meta[^>]*content=["']([^"']+)["'][^>]*property=["']og:image["']/i
     );
-    if (ogMatch && ogMatch[1]) return ogMatch[1];
+    if (ogMatch && ogMatch[1] && !isGenericImage(ogMatch[1])) return ogMatch[1];
     // Fallback: twitter:image
     const twMatch = html.match(
       /<meta[^>]*name=["']twitter:image["'][^>]*content=["']([^"']+)["']/i
     ) || html.match(
       /<meta[^>]*content=["']([^"']+)["'][^>]*name=["']twitter:image["']/i
     );
-    if (twMatch && twMatch[1]) return twMatch[1];
+    if (twMatch && twMatch[1] && !isGenericImage(twMatch[1])) return twMatch[1];
     return "";
   } catch {
     return "";
@@ -512,12 +563,32 @@ async function main() {
     fetchTdaaiArticles(),
   ]);
 
-  // Fetch OG images for news articles that use AI-generated placeholders
+  // Step 1: Resolve Google News redirect URLs to actual publisher URLs
+  console.log("Resolving Google News redirect URLs...");
+  const resolveBatchSize = 10;
+  let resolvedCount = 0;
+  for (let i = 0; i < news.length; i += resolveBatchSize) {
+    const batch = news.slice(i, i + resolveBatchSize);
+    await Promise.allSettled(
+      batch.map(async (article) => {
+        if (article.url && article.url.includes("news.google.com")) {
+          const resolved = await resolveGoogleNewsUrl(article.url);
+          if (resolved !== article.url) {
+            article.url = resolved;
+            resolvedCount++;
+          }
+        }
+      })
+    );
+  }
+  console.log(`  Resolved ${resolvedCount}/${news.length} Google News URLs to publisher URLs`);
+
+  // Step 2: Fetch OG images from the resolved publisher URLs
   console.log("Fetching OG images for news articles...");
   const ogImageBatchSize = 10;
   for (let i = 0; i < news.length; i += ogImageBatchSize) {
     const batch = news.slice(i, i + ogImageBatchSize);
-    const results = await Promise.allSettled(
+    await Promise.allSettled(
       batch.map(async (article) => {
         if (article.url && article.imageUrl.includes("pollinations.ai")) {
           const ogImg = await fetchOgImage(article.url);
@@ -527,7 +598,7 @@ async function main() {
     );
   }
   const ogCount = news.filter((a) => !a.imageUrl.includes("pollinations.ai")).length;
-  console.log(`  Replaced ${ogCount} article images with OG images`);
+  console.log(`  Replaced ${ogCount} article images with real OG images`);
 
   // Also fetch OG images for TDAAI articles missing images
   for (let i = 0; i < tdaaiArticles.length; i += ogImageBatchSize) {
