@@ -117,6 +117,12 @@ html {
   transform: translateY(-2px);
 }
 
+/* Card title hover uses section-specific color via --card-accent custom property */
+.card-hover:hover h3,
+.card-hover:hover h4 {
+  color: var(--card-accent, var(--accent)) !important;
+}
+
 /* Topic pill hover — pure CSS to avoid JS flicker on scroll */
 .topic-pill {
   transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;

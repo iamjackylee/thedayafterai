@@ -6,6 +6,7 @@ import type { NewsArticle } from "@/lib/api";
 interface NewsCardProps {
   article: NewsArticle;
   index: number;
+  topicColor?: string;
 }
 
 function formatDate(dateStr: string): string {
@@ -20,13 +21,14 @@ function formatDate(dateStr: string): string {
   }
 }
 
-export default function NewsCard({ article }: NewsCardProps) {
+export default function NewsCard({ article, topicColor }: NewsCardProps) {
   return (
     <a
       href={article.url}
       target="_blank"
       rel="noopener noreferrer"
       className="group bg-[var(--surface)] overflow-hidden border border-[var(--border)] hover:border-[var(--border-light)] transition-all block card-hover"
+      style={{ ["--card-accent" as string]: topicColor || "var(--accent)" }}
     >
       {/* Image with gradient fallback for broken/missing images */}
       <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460]">
@@ -44,7 +46,7 @@ export default function NewsCard({ article }: NewsCardProps) {
 
       {/* Content */}
       <div className="p-4">
-        <h3 className="text-sm font-bold text-white leading-snug mb-2 group-hover:text-[var(--accent)] transition-colors line-clamp-2">
+        <h3 className="text-sm font-bold text-white leading-snug mb-2 transition-colors line-clamp-2">
           {article.title}
         </h3>
         <p className="text-[var(--muted)] text-xs leading-relaxed mb-3 line-clamp-3">
