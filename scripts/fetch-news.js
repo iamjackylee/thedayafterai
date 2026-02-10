@@ -253,7 +253,31 @@ async function fetchAllNews() {
         const link = getTagContent(item, "link")[0] || "";
         const pubDate = getTagContent(item, "pubDate")[0] || "";
         const source = getTagContent(item, "source")[0] || "Google News";
-        const description = stripHtml(getTagContent(item, "description")[0] || "");
+        const rawDescription = getTagContent(item, "description")[0] || "";
+        const description = stripHtml(rawDescription);
+
+        // Extract image from RSS item: try media:content, enclosure, then description <img>
+        let imageUrl = "";
+        const mediaUrls = getTagAttr(item, "media:content", "url");
+        if (mediaUrls.length > 0 && !isGenericImage(mediaUrls[0])) {
+          imageUrl = mediaUrls[0];
+        }
+        if (!imageUrl) {
+          const enclosureUrls = getTagAttr(item, "enclosure", "url");
+          if (enclosureUrls.length > 0 && !isGenericImage(enclosureUrls[0])) {
+            imageUrl = enclosureUrls[0];
+          }
+        }
+        if (!imageUrl) {
+          // Google News puts publisher images in description HTML as <img src="...">
+          const decodedDesc = rawDescription
+            .replace(/&lt;/g, "<").replace(/&gt;/g, ">")
+            .replace(/&amp;/g, "&").replace(/&quot;/g, '"');
+          const imgMatch = decodedDesc.match(/<img[^>]+src=["']([^"']+)["']/i);
+          if (imgMatch && imgMatch[1] && !isGenericImage(imgMatch[1])) {
+            imageUrl = imgMatch[1];
+          }
+        }
 
         const topic = matchTopic(title + " " + description);
         allArticles.push({
@@ -263,7 +287,7 @@ async function fetchAllNews() {
           topic,
           source,
           date: pubDate,
-          imageUrl: generateImageUrl(title, topic),
+          imageUrl: imageUrl || generateImageUrl(title, topic),
           url: link,
         });
       }
@@ -361,24 +385,33 @@ async function fetchChannelVideos() {
 async function resolveGoogleNewsUrl(gnUrl) {
   if (!gnUrl || !gnUrl.includes("news.google.com")) return gnUrl;
   try {
+    // Method 1: Follow all redirects and check final URL
     const res = await fetch(gnUrl, {
-      headers: { "User-Agent": "TheDayAfterAI-NewsBot/1.0" },
-      redirect: "manual",
-      signal: AbortSignal.timeout(8000),
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml",
+      },
+      redirect: "follow",
+      signal: AbortSignal.timeout(10000),
     });
-    // Google News typically 302-redirects to the real article
-    const location = res.headers.get("location");
-    if (location && !location.includes("news.google.com")) return location;
-    // Sometimes it's a JS redirect — try to parse the page for the real URL
-    if (res.ok || res.status === 200) {
-      const html = await res.text();
-      // Look for data-redirect or canonical link
-      const canonMatch = html.match(/<link[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["']/i);
-      if (canonMatch && !canonMatch[1].includes("news.google.com")) return canonMatch[1];
-      // Look for the article redirect URL in a JS data blob
-      const jsRedirect = html.match(/href="(https?:\/\/(?!news\.google\.com)[^"]+)"/i);
-      if (jsRedirect) return jsRedirect[1];
+    // Check if we were redirected to the real article
+    if (res.url && !res.url.includes("news.google.com") && !res.url.includes("consent.google")) {
+      return res.url;
     }
+    // Method 2: Parse the response HTML for redirect clues
+    const html = await res.text();
+    // Look for canonical link
+    const canonMatch = html.match(/<link[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["']/i);
+    if (canonMatch && !canonMatch[1].includes("news.google.com") && !canonMatch[1].includes("consent.google")) return canonMatch[1];
+    // Look for data-redirect or data-url attributes
+    const dataUrl = html.match(/data-(?:redirect|url)=["'](https?:\/\/(?!news\.google\.com)[^"']+)["']/i);
+    if (dataUrl) return dataUrl[1];
+    // Look for JS redirect: window.location or location.href
+    const jsRedirect = html.match(/(?:window\.location|location\.href)\s*=\s*["'](https?:\/\/(?!news\.google\.com)[^"']+)["']/i);
+    if (jsRedirect) return jsRedirect[1];
+    // Look for any non-Google href as last resort
+    const hrefMatch = html.match(/href=["'](https?:\/\/(?!news\.google\.com|consent\.google|accounts\.google)[^"']+)["']/i);
+    if (hrefMatch) return hrefMatch[1];
   } catch {
     // ignore — keep original URL
   }
@@ -389,19 +422,21 @@ async function resolveGoogleNewsUrl(gnUrl) {
 
 // Reject images that are clearly generic logos, not article-specific thumbnails
 const REJECTED_IMAGE_PATTERNS = [
-  /google\.com/i,
+  /news\.google\.com/i,
   /googlenews/i,
   /gstatic\.com.*\/news/i,
-  /logo/i,
-  /favicon/i,
+  /\/logo/i,
+  /\/favicon/i,
   /icon[-_]?\d+/i,
   /default[-_]?image/i,
   /placeholder/i,
-  /avatar/i,
+  /\/avatar/i,
 ];
 
 function isGenericImage(url) {
   if (!url) return true;
+  // Google's image proxy (lh3.googleusercontent.com) serves real article images — allow it
+  if (/lh\d\.googleusercontent\.com/i.test(url)) return false;
   // Very small images are likely icons/logos
   if (/(?:width|w|size)=(?:1\d{0,2}|[1-9]\d?)(?:\D|$)/i.test(url)) return true;
   return REJECTED_IMAGE_PATTERNS.some((re) => re.test(url));

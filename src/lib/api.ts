@@ -205,15 +205,37 @@ export async function fetchNews(
       const pubDate = getTextContent(item, "pubDate");
       const source = getTextContent(item, "source");
       const description = getTextContent(item, "description");
-      const summary = description
+      // Decode HTML entities to get raw HTML for image extraction
+      const decodedDesc = description
         .replace(/&lt;/g, "<")
         .replace(/&gt;/g, ">")
         .replace(/&amp;/g, "&")
         .replace(/&quot;/g, '"')
-        .replace(/&#39;/g, "'")
+        .replace(/&#39;/g, "'");
+      const summary = decodedDesc
         .replace(/<[^>]*>/g, "")
         .replace(/\s+/g, " ")
         .trim();
+
+      // Extract image from RSS item: media:content, enclosure, or description <img>
+      let imageUrl = "";
+      const mediaContent = item.getElementsByTagName("media:content")[0];
+      if (mediaContent) {
+        const mediaUrl = mediaContent.getAttribute("url");
+        if (mediaUrl && !isGenericImage(mediaUrl)) imageUrl = mediaUrl;
+      }
+      if (!imageUrl) {
+        const enclosure = item.getElementsByTagName("enclosure")[0];
+        if (enclosure) {
+          const encUrl = enclosure.getAttribute("url");
+          if (encUrl && !isGenericImage(encUrl)) imageUrl = encUrl;
+        }
+      }
+      if (!imageUrl) {
+        // Google News includes publisher images in description HTML
+        const imgMatch = decodedDesc.match(/<img[^>]+src=["']([^"']+)["']/i);
+        if (imgMatch?.[1] && !isGenericImage(imgMatch[1])) imageUrl = imgMatch[1];
+      }
 
       const rawTopic = matchTopic(
         title + " " + summary,
@@ -228,7 +250,7 @@ export async function fetchNews(
         topic: groupedTopic,
         source: source || "Google News",
         date: pubDate,
-        imageUrl: generateImageUrl(title, groupedTopic),
+        imageUrl: imageUrl || generateImageUrl(title, groupedTopic),
         url: link,
       });
     }
@@ -477,7 +499,9 @@ function generateImageUrl(title: string, topic?: string): string {
 /** Check if an image URL looks like a generic logo rather than article content */
 function isGenericImage(url: string): boolean {
   if (!url) return true;
-  return /google\.com|googlenews|gstatic\.com.*\/news|\/logo|\/favicon|default[-_]?image|placeholder|\/avatar/i.test(url);
+  // Google's image proxy (lh3.googleusercontent.com) serves real article images — allow it
+  if (/lh\d\.googleusercontent\.com/i.test(url)) return false;
+  return /news\.google\.com|googlenews|gstatic\.com.*\/news|\/logo|\/favicon|default[-_]?image|placeholder|\/avatar/i.test(url);
 }
 
 /** Try to extract og:image from an article URL via CORS proxy */
