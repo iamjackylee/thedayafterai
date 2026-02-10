@@ -28,12 +28,17 @@ export default function NewsCard({ article }: NewsCardProps) {
       rel="noopener noreferrer"
       className="group bg-[var(--surface)] overflow-hidden border border-[var(--border)] hover:border-[var(--border-light)] transition-all block card-hover"
     >
-      {/* Image */}
-      <div className="relative aspect-[16/10] overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-          style={{ backgroundImage: `url(${article.imageUrl})` }}
-        />
+      {/* Image with gradient fallback for broken/missing images */}
+      <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460]">
+        {article.imageUrl && (
+          <img
+            src={article.imageUrl}
+            alt=""
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+          />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
       </div>
 
