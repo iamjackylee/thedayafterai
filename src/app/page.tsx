@@ -132,15 +132,17 @@ function CustomSectionRow({ section }: { section: CustomSection }) {
             style={{ ["--card-accent" as string]: section.color }}
           >
             <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460]">
-              {article.imageUrl && (
-                <img
-                  src={article.imageUrl}
-                  alt=""
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
-                />
-              )}
+              <img
+                src={article.imageUrl || "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&auto=format"}
+                alt=""
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onError={(e) => {
+                  const img = e.target as HTMLImageElement;
+                  const fb = "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&auto=format";
+                  if (img.src !== fb) { img.src = fb; } else { img.style.display = "none"; }
+                }}
+              />
             </div>
             <div className="p-3">
               <h4 className="text-xs font-bold text-white transition-colors line-clamp-2 leading-snug">
@@ -244,15 +246,17 @@ function TdaaiSectionRow({ articles }: { articles: TdaaiArticle[] }) {
             style={{ ["--card-accent" as string]: sectionColor }}
           >
             <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364]">
-              {article.imageUrl ? (
-                <img
-                  src={article.imageUrl}
-                  alt=""
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
-                />
-              ) : null}
+              <img
+                src={article.imageUrl || "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&auto=format"}
+                alt=""
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onError={(e) => {
+                  const img = e.target as HTMLImageElement;
+                  const fb = "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&auto=format";
+                  if (img.src !== fb) { img.src = fb; } else { img.style.display = "none"; }
+                }}
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
               <div className="absolute top-0 left-0 px-2 py-0.5 bg-[#3cffd0] text-black text-[9px] font-black uppercase tracking-widest">
                 TheDayAfterAI

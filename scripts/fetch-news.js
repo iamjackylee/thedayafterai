@@ -357,8 +357,8 @@ async function resolveArticles(articles) {
 
       try {
         // Navigate to Google News URL — follows redirect to actual article
-        await page.goto(gnUrl, { waitUntil: "domcontentloaded", timeout: PLAYWRIGHT_TIMEOUT });
-        await page.waitForTimeout(2000);
+        await page.goto(gnUrl, { waitUntil: "load", timeout: PLAYWRIGHT_TIMEOUT });
+        await page.waitForTimeout(1500);
 
         let finalUrl = page.url();
 
@@ -385,14 +385,33 @@ async function resolveArticles(articles) {
         if (isResolved) {
           article.url = finalUrl;
 
-          // Now extract OG image from the real article page
-          const meta = await page.evaluate(() => {
-            const ogImg = document.querySelector('meta[property="og:image"]')?.getAttribute("content") || "";
-            const twImg = document.querySelector('meta[name="twitter:image"]')?.getAttribute("content") || "";
-            return ogImg || twImg || "";
+          // Extract OG image from the real article page — try multiple selectors
+          const imgUrl = await page.evaluate(() => {
+            const selectors = [
+              'meta[property="og:image"]',
+              'meta[property="og:image:secure_url"]',
+              'meta[property="og:image:url"]',
+              'meta[name="twitter:image"]',
+              'meta[name="twitter:image:src"]',
+              'meta[name="image"]',
+              'meta[itemprop="image"]',
+              'link[rel="image_src"]',
+            ];
+            for (const sel of selectors) {
+              const el = document.querySelector(sel);
+              const val = el?.getAttribute("content") || el?.getAttribute("href") || "";
+              if (val && val.startsWith("http")) return val;
+            }
+            // Fallback: find the largest image in article body
+            const imgs = Array.from(document.querySelectorAll("article img[src], .post-content img[src], .article-body img[src], main img[src]"));
+            for (const img of imgs) {
+              const src = img.getAttribute("src") || "";
+              if (src.startsWith("http") && !src.includes("avatar") && !src.includes("logo") && !src.includes("icon")) return src;
+            }
+            return "";
           });
-          if (meta && !isGenericImage(meta)) {
-            article.imageUrl = meta;
+          if (imgUrl && !isGenericImage(imgUrl)) {
+            article.imageUrl = imgUrl;
           }
 
           // Cache the result
