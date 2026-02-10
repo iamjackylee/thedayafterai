@@ -380,43 +380,6 @@ async function fetchChannelVideos() {
   }
 }
 
-// ── Resolve Google News redirect URLs ─────────────────────────────
-
-async function resolveGoogleNewsUrl(gnUrl) {
-  if (!gnUrl || !gnUrl.includes("news.google.com")) return gnUrl;
-  try {
-    // Method 1: Follow all redirects and check final URL
-    const res = await fetch(gnUrl, {
-      headers: {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml",
-      },
-      redirect: "follow",
-      signal: AbortSignal.timeout(10000),
-    });
-    // Check if we were redirected to the real article
-    if (res.url && !res.url.includes("news.google.com") && !res.url.includes("consent.google")) {
-      return res.url;
-    }
-    // Method 2: Parse the response HTML for redirect clues
-    const html = await res.text();
-    // Look for canonical link
-    const canonMatch = html.match(/<link[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)["']/i);
-    if (canonMatch && !canonMatch[1].includes("news.google.com") && !canonMatch[1].includes("consent.google")) return canonMatch[1];
-    // Look for data-redirect or data-url attributes
-    const dataUrl = html.match(/data-(?:redirect|url)=["'](https?:\/\/(?!news\.google\.com)[^"']+)["']/i);
-    if (dataUrl) return dataUrl[1];
-    // Look for JS redirect: window.location or location.href
-    const jsRedirect = html.match(/(?:window\.location|location\.href)\s*=\s*["'](https?:\/\/(?!news\.google\.com)[^"']+)["']/i);
-    if (jsRedirect) return jsRedirect[1];
-    // Look for any non-Google href as last resort
-    const hrefMatch = html.match(/href=["'](https?:\/\/(?!news\.google\.com|consent\.google|accounts\.google)[^"']+)["']/i);
-    if (hrefMatch) return hrefMatch[1];
-  } catch {
-    // ignore — keep original URL
-  }
-  return gnUrl;
-}
 
 // ── Fetch OG image from article URL ──────────────────────────────
 
