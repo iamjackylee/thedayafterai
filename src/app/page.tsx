@@ -835,7 +835,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row gap-8 mb-8">
             {/* Brand column — wider, takes ~38% */}
             <div className="lg:w-[38%] lg:pr-8 lg:border-r lg:border-[var(--border)]">
-              <h2 className="text-2xl font-black text-white italic mb-4">TheDayAfterAI News</h2>
+              <h2 className="text-3xl font-extrabold text-white tracking-tight mb-4" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>TheDayAfterAI News</h2>
               <div className="flex items-center gap-4 mb-5">
                 <a href="https://www.facebook.com/thedayafterai" target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Facebook size={20} /></a>
                 <a href={PLAYLIST_URL} target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Youtube size={20} /></a>
@@ -891,10 +891,10 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Acknowledgment of Country */}
+          {/* Acknowledgment of Country — full width, aligned with columns above */}
           <div className="border-t border-[var(--border)] pt-6">
             <h4 className="text-sm font-bold text-white mb-2">Acknowledgment of Country</h4>
-            <p className="text-xs text-[var(--text-secondary)] leading-relaxed max-w-[1000px]">
+            <p className="text-xs text-[var(--text-secondary)] leading-relaxed">
               TheDayAfterAI respectfully acknowledges the Ngunnawal people of the Australian Capital Territory as the Traditional Custodians of the land on which we operate. We pay our respects to their Elders past, present, and emerging, and extend that respect to all Aboriginal and Torres Strait Islander peoples. This acknowledgment honours the enduring connection of Indigenous Australians to their land and culture.{" "}
               <a href="https://www.reconciliation.org.au/" target="_blank" rel="noopener noreferrer" className="underline hover:text-[var(--accent)] transition-colors">Learn more</a>.
             </p>
