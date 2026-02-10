@@ -4,7 +4,8 @@
       "id": "ai-market-insight",
       "title": "AI Market Insight",
       "color": "#f5a623",
-      "rssUrl": "https://www.thedayafterai.com/ai-market-insight?format=rss",
+      "pageUrl": "https://www.thedayafterai.com",
+      "collectionSlug": "/ai-market-insight/",
       "articles": [
         {
           "id": "ami-1",

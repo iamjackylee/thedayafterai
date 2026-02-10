@@ -653,58 +653,9 @@ async function enhanceCustomArticles() {
   let updated = false;
 
   for (const section of customData.sections) {
-    // Try to fetch articles from the section's RSS feed
-    if (section.rssUrl) {
-      console.log(`Fetching RSS for custom section "${section.title}"...`);
-      try {
-        const xml = await fetchWithRetry(section.rssUrl, 2);
-        if (xml && xml.includes("<item>")) {
-          const items = extractItems(xml);
-          const rssArticles = [];
-
-          for (let i = 0; i < items.length; i++) {
-            const item = items[i];
-            const title = getTagContent(item, "title")[0] || "";
-            if (!title) continue;
-
-            const link = getTagContent(item, "link")[0] || "";
-            const pubDate = getTagContent(item, "pubDate")[0] || "";
-
-            let imageUrl = "";
-            const enclosureUrl = getTagAttr(item, "enclosure", "url");
-            if (enclosureUrl.length > 0) imageUrl = enclosureUrl[0];
-            if (!imageUrl) {
-              const mediaUrl = getTagAttr(item, "media:content", "url");
-              if (mediaUrl.length > 0) imageUrl = mediaUrl[0];
-            }
-            if (!imageUrl) {
-              const rawDesc = getTagContent(item, "description")[0] || "";
-              const imgMatch = rawDesc.match(/src=["']([^"']+\.(?:jpg|jpeg|png|webp|gif)[^"']*)/i);
-              if (imgMatch) imageUrl = imgMatch[1].replace(/&amp;/g, "&");
-            }
-
-            rssArticles.push({
-              id: `${section.id}-rss-${i}`,
-              title,
-              date: pubDate ? new Date(pubDate).toISOString().split("T")[0] : "",
-              imageUrl,
-              url: link,
-              source: "TheDayAfterAI",
-            });
-          }
-
-          if (rssArticles.length > 0) {
-            console.log(`  Found ${rssArticles.length} articles from RSS, replacing manual entries`);
-            section.articles = rssArticles;
-            updated = true;
-          }
-        }
-      } catch (err) {
-        console.log(`  RSS fetch failed for "${section.title}": ${err.message}`);
-      }
-    }
-
     // Fetch OG images for articles that have URLs but missing/placeholder images
+    // (The browser-based fetch-custom-urls.js handles article discovery;
+    //  this is a fallback for OG images it may have missed)
     for (const article of section.articles) {
       if (article.url && (!article.imageUrl || article.imageUrl.includes("unsplash.com"))) {
         try {
