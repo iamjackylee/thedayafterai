@@ -348,7 +348,7 @@ function CategoryRow({ topic, articles, id }: { topic: typeof TOPICS[number]; ar
       >
         {articles.map((article, i) => (
           <div key={article.id} className="shrink-0 w-[280px]">
-            <NewsCard article={article} index={i} />
+            <NewsCard article={article} index={i} topicColor={topic.color} />
           </div>
         ))}
       </div>
@@ -483,14 +483,29 @@ export default function Home() {
           }
         }
 
-        // Otherwise pick the topmost visible section
+        // Pick the last section whose header has scrolled past (or is near)
+        // the upper 35% of the viewport. This naturally highlights the section
+        // the user is currently reading.
+        const threshold = window.innerHeight * 0.35;
         let best: Element | null = null;
-        let bestTop = Infinity;
+        let bestTop = -Infinity;
         for (const [el] of visibleSet) {
           const rect = el.getBoundingClientRect();
-          if (rect.top < bestTop) {
+          if (rect.top <= threshold && rect.top > bestTop) {
             bestTop = rect.top;
             best = el;
+          }
+        }
+        // Fallback: if no section header is above the threshold, pick the
+        // one closest to the top of viewport (first visible section)
+        if (!best) {
+          let closestTop = Infinity;
+          for (const [el] of visibleSet) {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < closestTop) {
+              closestTop = rect.top;
+              best = el;
+            }
           }
         }
         if (best) {
@@ -510,7 +525,8 @@ export default function Home() {
         }
         pickBestSection();
       },
-      { rootMargin: "-20% 0px -60% 0px", threshold: [0, 0.1] }
+      // Wide observation zone: from top of viewport to 75% down
+      { rootMargin: "0px 0px -25% 0px", threshold: [0, 0.1] }
     );
 
     // Detect when user reaches the bottom of the page
