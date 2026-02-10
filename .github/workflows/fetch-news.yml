@@ -20,8 +20,8 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Install Playwright Chromium
-        run: npx playwright install chromium
+      - name: Install Playwright
+        run: npm install playwright && npx playwright install --with-deps chromium
 
       - name: Fetch custom article URLs (browser)
         run: node scripts/fetch-custom-urls.js
