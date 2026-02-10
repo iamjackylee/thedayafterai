@@ -9,6 +9,24 @@ interface NewsCardProps {
   topicColor?: string;
 }
 
+const TOPIC_FALLBACK_IMAGES: Record<string, string> = {
+  "ai-academy": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&auto=format",
+  "business-economy": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop&auto=format",
+  "chatbot-development": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop&auto=format",
+  "digital-security": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop&auto=format",
+  "environment-science": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop&auto=format",
+  "governance-politics": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=600&h=400&fit=crop&auto=format",
+  "health-style": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop&auto=format",
+  "musical-art": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&h=400&fit=crop&auto=format",
+  "technology-innovation": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&auto=format",
+  "unmanned-aircraft": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=400&fit=crop&auto=format",
+  "visual-art-photography": "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=600&h=400&fit=crop&auto=format",
+};
+
+function getFallbackImage(topic: string): string {
+  return TOPIC_FALLBACK_IMAGES[topic] || TOPIC_FALLBACK_IMAGES["technology-innovation"];
+}
+
 function formatDate(dateStr: string): string {
   try {
     return new Date(dateStr).toLocaleDateString("en-US", {
@@ -22,6 +40,8 @@ function formatDate(dateStr: string): string {
 }
 
 export default function NewsCard({ article, topicColor }: NewsCardProps) {
+  const fallbackImg = getFallbackImage(article.topic);
+
   return (
     <a
       href={article.url}
@@ -30,17 +50,19 @@ export default function NewsCard({ article, topicColor }: NewsCardProps) {
       className="group bg-[var(--surface)] overflow-hidden border border-[var(--border)] hover:border-[var(--border-light)] transition-all block card-hover"
       style={{ ["--card-accent" as string]: topicColor || "var(--accent)" }}
     >
-      {/* Image with gradient fallback for broken/missing images */}
+      {/* Image with topic-appropriate fallback for broken/missing images */}
       <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460]">
-        {article.imageUrl && (
-          <img
-            src={article.imageUrl}
-            alt=""
-            loading="lazy"
-            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-            onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
-          />
-        )}
+        <img
+          src={article.imageUrl || fallbackImg}
+          alt=""
+          loading="lazy"
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          onError={(e) => {
+            const img = e.target as HTMLImageElement;
+            if (img.src !== fallbackImg) { img.src = fallbackImg; }
+            else { img.style.display = "none"; }
+          }}
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
       </div>
 
