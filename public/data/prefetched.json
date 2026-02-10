@@ -1,9 +1,9 @@
 {
-  "fetchedAt": "2026-02-10T19:07:59.038Z",
+  "fetchedAt": "2026-02-10T20:44:42.538Z",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe",
   "news": [
     {
-      "id": "gn-technology-innovation-1",
+      "id": "gn-technology-innovation-0",
       "title": "Cisco Launches Breakthrough Innovations for the AI Era - IT Voice Media",
       "summary": "Cisco Launches Breakthrough Innovations for the AI Era&nbsp;&nbsp;IT Voice Media",
       "topic": "technology-innovation",
@@ -11,16 +11,6 @@
       "date": "Tue, 10 Feb 2026 11:08:44 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&auto=format",
       "url": "https://www.itvoice.in/cisco-launches-breakthrough-innovations-for-the-ai-era"
-    },
-    {
-      "id": "gn-technology-innovation-0",
-      "title": "Cisco Launches Breakthrough Innovations for the AI Era - Cisco Newsroom",
-      "summary": "Cisco Launches Breakthrough Innovations for the AI Era&nbsp;&nbsp;Cisco Newsroom",
-      "topic": "technology-innovation",
-      "source": "Cisco Newsroom",
-      "date": "Tue, 10 Feb 2026 08:34:22 GMT",
-      "imageUrl": "https://newsroom.cisco.com/c/dam/r/newsroom/en/us/assets/a/y2026/m02/Umbrella-release_1200x675_midnight-blue.jpg",
-      "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m02/cisco-launches-breakthrough-innovations-for-the-ai-era.html"
     },
     {
       "id": "gn-environment-science-0",
@@ -73,6 +63,16 @@
       "url": "https://www.govtech.com/education/higher-ed/suny-schools-partner-with-local-universities-for-ai-research"
     },
     {
+      "id": "gn-environment-science-2",
+      "title": "Google has just crossed the quantum threshold: thus begins the era of error-free computers - ECOticias.com",
+      "summary": "Google has just crossed the quantum threshold: thus begins the era of error-free computers&nbsp;&nbsp;ECOticias.com",
+      "topic": "environment-science",
+      "source": "ECOticias.com",
+      "date": "Mon, 09 Feb 2026 15:15:00 GMT",
+      "imageUrl": "https://www.ecoticias.com/en/wp-content/uploads/2026/02/google-quantum-error-correction-threshold-logical-qubit-1-1688x1013.jpg",
+      "url": "https://www.ecoticias.com/en/google-has-just-crossed-the-quantum-threshold-thus-begins-the-era-of-error-free-computers/26877/"
+    },
+    {
       "id": "gn-digital-security-0",
       "title": "Viral AI caricature trend raises privacy concerns, cyber security expert explains - KWTX",
       "summary": "Viral AI caricature trend raises privacy concerns, cyber security expert explains&nbsp;&nbsp;KWTX",
@@ -103,7 +103,17 @@
       "url": "chrome-error://chromewebdata/"
     },
     {
-      "id": "gn-ai-academy-4",
+      "id": "gn-health-style-12",
+      "title": "25 Healthcare AI Use Cases with Examples - AIMultiple",
+      "summary": "25 Healthcare AI Use Cases with Examples&nbsp;&nbsp;AIMultiple",
+      "topic": "health-style",
+      "source": "AIMultiple",
+      "date": "Wed, 04 Feb 2026 08:00:00 GMT",
+      "imageUrl": "https://aimultiple.com/images/default-og-image.jpeg",
+      "url": "https://research.aimultiple.com/healthcare-ai-use-cases/"
+    },
+    {
+      "id": "gn-ai-academy-5",
       "title": "AI research at Carolina - The University of North Carolina at Chapel Hill",
       "summary": "AI research at Carolina&nbsp;&nbsp;The University of North Carolina at Chapel Hill",
       "topic": "ai-academy",
@@ -111,6 +121,16 @@
       "date": "Tue, 03 Feb 2026 08:00:00 GMT",
       "imageUrl": "https://www.unc.edu/wp-content/uploads/2024/06/AI_ChatBot_1600x900.png",
       "url": "https://www.unc.edu/story/ai-research-at-carolina/"
+    },
+    {
+      "id": "gn-ai-academy-4",
+      "title": "SUNY Binghamton to partner with six schools in AI education program - Press &amp; Sun-Bulletin",
+      "summary": "SUNY Binghamton to partner with six schools in AI education program&nbsp;&nbsp;Press & Sun-Bulletin",
+      "topic": "ai-academy",
+      "source": "Press &amp; Sun-Bulletin",
+      "date": "Sat, 31 Jan 2026 10:05:00 GMT",
+      "imageUrl": "https://www.pressconnects.com/gcdn/authoring/authoring-images/2025/05/18/PBIN/83710037007-img-7139.jpg?crop=4582,2578,x0,y305&width=3200&height=1801&format=pjpg&auto=webp",
+      "url": "https://www.pressconnects.com/story/news/local/2026/01/31/binghamton-university-ai-for-public-good-initiative-courses/88437890007/"
     },
     {
       "id": "gn-health-style-0",
@@ -133,7 +153,7 @@
       "url": "https://uavcoach.com/search-and-rescue-drones/"
     },
     {
-      "id": "gn-business-economy-25",
+      "id": "gn-business-economy-20",
       "title": "H2 2025 Innovation Economy Update - J.P. Morgan",
       "summary": "H2 2025 Innovation Economy Update&nbsp;&nbsp;J.P. Morgan",
       "topic": "business-economy",
@@ -143,7 +163,7 @@
       "url": "https://www.jpmorgan.com/insights/markets-and-economy/economy/innovation-economy-outlook"
     },
     {
-      "id": "gn-unmanned-aircraft-15",
+      "id": "gn-unmanned-aircraft-14",
       "title": "Indian Army ties up with US drone company that made its name in the Ukraine conflict - ThePrint",
       "summary": "Indian Army ties up with US drone company that made its name in the Ukraine conflict&nbsp;&nbsp;ThePrint",
       "topic": "unmanned-aircraft",
@@ -153,7 +173,17 @@
       "url": "https://theprint.in/defence/indian-army-ties-up-with-us-drone-company-that-made-its-name-in-the-ukraine-conflict/2838782/"
     },
     {
-      "id": "gn-ai-academy-5",
+      "id": "gn-musical-art-16",
+      "title": "An AI Liza Minnelli is the star of the 'Eleven Album' - Mashable",
+      "summary": "An AI Liza Minnelli is the star of the 'Eleven Album'&nbsp;&nbsp;Mashable",
+      "topic": "musical-art",
+      "source": "Mashable",
+      "date": "Thu, 22 Jan 2026 02:54:28 GMT",
+      "imageUrl": "https://helios-i.mashable.com/imagery/articles/07qwxQN5RhtewGJp5AgPPRZ/hero-image.fill.size_1200x675.v1769026995.jpg",
+      "url": "https://mashable.com/article/elevenlabs-launches-eleven-album-liza-minnelli-listen-spotify"
+    },
+    {
+      "id": "gn-ai-academy-6",
       "title": "Reps. Foushee, Nunn Introduce Bipartisan Legislation to Expand Participation in AI Education, Research, and Workforce - Congresswoman Valerie Foushee (.gov)",
       "summary": "Reps. Foushee, Nunn Introduce Bipartisan Legislation to Expand Participation in AI Education, Research, and Workforce&nbsp;&nbsp;Congresswoman Valerie Foushee (.gov)",
       "topic": "ai-academy",
@@ -163,7 +193,7 @@
       "url": "https://foushee.house.gov/media/press-releases/reps-foushee-nunn-introduce-bipartisan-legislation-to-expand-participation-in-ai-education-research-and-workforce"
     },
     {
-      "id": "gn-ai-academy-12",
+      "id": "gn-ai-academy-13",
       "title": "Introducing OpenAI’s Education for Countries - openai.com",
       "summary": "Introducing OpenAI’s Education for Countries&nbsp;&nbsp;openai.com",
       "topic": "ai-academy",
@@ -173,7 +203,7 @@
       "url": "https://openai.com/index/edu-for-countries/"
     },
     {
-      "id": "gn-environment-science-13",
+      "id": "gn-environment-science-16",
       "title": "From quantum computing to mRNA therapeutics: seven technologies to watch in 2026 - Nature",
       "summary": "From quantum computing to mRNA therapeutics: seven technologies to watch in 2026&nbsp;&nbsp;Nature",
       "topic": "environment-science",
@@ -181,16 +211,6 @@
       "date": "Wed, 21 Jan 2026 08:00:00 GMT",
       "imageUrl": "https://media.nature.com/lw1200/magazine-assets/d41586-026-00188-6/d41586-026-00188-6_51944098.jpg",
       "url": "https://www.nature.com/articles/d41586-026-00188-6"
-    },
-    {
-      "id": "gn-musical-art-16",
-      "title": "An AI Liza Minnelli is the star of the 'Eleven Album' - Mashable",
-      "summary": "An AI Liza Minnelli is the star of the 'Eleven Album'&nbsp;&nbsp;Mashable",
-      "topic": "musical-art",
-      "source": "Mashable",
-      "date": "Wed, 21 Jan 2026 08:00:00 GMT",
-      "imageUrl": "https://helios-i.mashable.com/imagery/articles/07qwxQN5RhtewGJp5AgPPRZ/hero-image.fill.size_1200x675.v1769026995.jpg",
-      "url": "https://mashable.com/article/elevenlabs-launches-eleven-album-liza-minnelli-listen-spotify"
     },
     {
       "id": "gn-digital-security-1",
@@ -203,7 +223,7 @@
       "url": "https://www.cybersecurity-insiders.com/the-role-ai-plays-in-data-privacy/"
     },
     {
-      "id": "gn-visual-art-photography-10",
+      "id": "gn-visual-art-photography-7",
       "title": "Opinion | AI photo art raises question: What comes after ‘seeing is believing’? - The Washington Post",
       "summary": "Opinion | AI photo art raises question: What comes after ‘seeing is believing’?&nbsp;&nbsp;The Washington Post",
       "topic": "visual-art-photography",
@@ -213,7 +233,17 @@
       "url": "chrome-error://chromewebdata/"
     },
     {
-      "id": "gn-musical-art-26",
+      "id": "gn-ai-academy-22",
+      "title": "Purdue and Google launch AI partnership to boost education - Journal &amp; Courier",
+      "summary": "Purdue and Google launch AI partnership to boost education&nbsp;&nbsp;Journal & Courier",
+      "topic": "ai-academy",
+      "source": "Journal &amp; Courier",
+      "date": "Fri, 16 Jan 2026 08:00:00 GMT",
+      "imageUrl": "https://www.jconline.com/gcdn/authoring/authoring-images/2026/01/16/PMAN/88212682007-google-purdue-ai-summit-2025.jpg?crop=875,492,x0,y0&width=875&height=492&format=pjpg&auto=webp",
+      "url": "https://www.jconline.com/story/news/education/2026/01/16/purdue-and-google-public-sector-announce-ai-education-alliance-partnership-research-workforce/88212393007/"
+    },
+    {
+      "id": "gn-musical-art-3",
       "title": "Partly AI-generated folk-pop hit barred from Sweden’s official charts - The Guardian",
       "summary": "Partly AI-generated folk-pop hit barred from Sweden’s official charts&nbsp;&nbsp;The Guardian",
       "topic": "musical-art",
@@ -253,7 +283,7 @@
       "url": "https://www.defensenews.com/unmanned/2026/01/13/pentagon-task-force-to-deploy-ai-powered-uas-systems-to-capture-drones/"
     },
     {
-      "id": "gn-ai-academy-15",
+      "id": "gn-ai-academy-16",
       "title": "Purdue, Google team up to expand AI education and research - purdueexponent.org",
       "summary": "Purdue, Google team up to expand AI education and research&nbsp;&nbsp;purdueexponent.org",
       "topic": "ai-academy",
@@ -263,7 +293,17 @@
       "url": "https://www.purdueexponent.org/campus/general_news/purdue-google-team-up-to-expand-ai-education-and-research/article_1ad50475-9940-45da-a556-6de5852b4ef6.html"
     },
     {
-      "id": "gn-ai-academy-14",
+      "id": "gn-technology-innovation-4",
+      "title": "MIT Technology Review Announces the 2026 list of 10 Breakthrough Technologies - PR Newswire",
+      "summary": "MIT Technology Review Announces the 2026 list of 10 Breakthrough Technologies&nbsp;&nbsp;PR Newswire",
+      "topic": "technology-innovation",
+      "source": "PR Newswire",
+      "date": "Mon, 12 Jan 2026 08:00:00 GMT",
+      "imageUrl": "https://mma.prnewswire.com/media/2859558/January_February_Innovation_issue.jpg?p=facebook",
+      "url": "https://www.prnewswire.com/news-releases/mit-technology-review-announces-the-2026-list-of-10-breakthrough-technologies-302658798.html"
+    },
+    {
+      "id": "gn-ai-academy-15",
       "title": "Empire AI, a Columbia University Collaboration, Gets Google Gift for AI Education - Columbia University",
       "summary": "Empire AI, a Columbia University Collaboration, Gets Google Gift for AI Education&nbsp;&nbsp;Columbia University",
       "topic": "ai-academy",
@@ -293,7 +333,7 @@
       "url": "https://www.chinadaily.com.cn/a/202601/07/WS695e42f2a310d6866eb32854.html"
     },
     {
-      "id": "gn-environment-science-9",
+      "id": "gn-environment-science-12",
       "title": "AI, quantum computing and interdisciplinary research to reshape science: Heng Swee Keat - The Straits Times",
       "summary": "AI, quantum computing and interdisciplinary research to reshape science: Heng Swee Keat&nbsp;&nbsp;The Straits Times",
       "topic": "environment-science",
@@ -303,7 +343,7 @@
       "url": "https://www.straitstimes.com/singapore/ai-quantum-computing-and-interdisciplinary-research-to-reshape-science-says-heng-swee-keat"
     },
     {
-      "id": "gn-unmanned-aircraft-17",
+      "id": "gn-unmanned-aircraft-16",
       "title": "In Ukraine, an Arsenal of Killer A.I. Drones Is Being Born in War Against Russia - The New York Times",
       "summary": "In Ukraine, an Arsenal of Killer A.I. Drones Is Being Born in War Against Russia&nbsp;&nbsp;The New York Times",
       "topic": "unmanned-aircraft",
@@ -313,7 +353,7 @@
       "url": "https://www.nytimes.com/2025/12/31/magazine/ukraine-ai-drones-war-russia.html"
     },
     {
-      "id": "gn-business-economy-6",
+      "id": "gn-business-economy-5",
       "title": "3 creator economy trends that helped startups pull in millions from investors heading into 2026 - Business Insider",
       "summary": "3 creator economy trends that helped startups pull in millions from investors heading into 2026&nbsp;&nbsp;Business Insider",
       "topic": "business-economy",
@@ -333,7 +373,7 @@
       "url": "https://www.businessinsider.com/creator-economy-investments-ai-social-commerce-whatnnot-synthesia-shopmy-suno-2025-12"
     },
     {
-      "id": "gn-business-economy-18",
+      "id": "gn-business-economy-17",
       "title": "Read 46 pitch decks that creator-economy startups used to raise millions of dollars - Business Insider",
       "summary": "Read 46 pitch decks that creator-economy startups used to raise millions of dollars&nbsp;&nbsp;Business Insider",
       "topic": "business-economy",
@@ -363,17 +403,17 @@
       "url": "https://health.clevelandclinic.org/ai-in-healthcare"
     },
     {
-      "id": "gn-technology-innovation-25",
-      "title": "Breakthroughs and trends: The science and tech innovations that defined 2025 - Firstpost",
-      "summary": "Breakthroughs and trends: The science and tech innovations that defined 2025&nbsp;&nbsp;Firstpost",
+      "id": "gn-technology-innovation-21",
+      "title": "YouCam Apps Celebrate a Breakthrough Year of AI Creativity, AR Exploration, and Agentic Innovation This Holiday Season - Business Wire",
+      "summary": "YouCam Apps Celebrate a Breakthrough Year of AI Creativity, AR Exploration, and Agentic Innovation This Holiday Season&nbsp;&nbsp;Business Wire",
       "topic": "technology-innovation",
-      "source": "Firstpost",
-      "date": "Sun, 21 Dec 2025 08:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.firstpost.com/tech/breakthroughs-and-trends-the-science-and-tech-innovations-that-defined-2025-13957215.html"
+      "source": "Business Wire",
+      "date": "Mon, 22 Dec 2025 08:00:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop&auto=format",
+      "url": "chrome-error://chromewebdata/"
     },
     {
-      "id": "gn-musical-art-4",
+      "id": "gn-musical-art-13",
       "title": "‘Music needs a human component to be of any value’: Guardian readers on the growing use of AI in music - The Guardian",
       "summary": "‘Music needs a human component to be of any value’: Guardian readers on the growing use of AI in music&nbsp;&nbsp;The Guardian",
       "topic": "musical-art",
@@ -393,17 +433,7 @@
       "url": "https://statescoop.com/new-jersey-20m-fund-ai-startups/"
     },
     {
-      "id": "gn-business-economy-8",
-      "title": "This S.F. exec has launched and funded startups, and now he sees an AI bubble that could lead to 'a real and big economic recession' down the road - The Business Journals",
-      "summary": "This S.F. exec has launched and funded startups, and now he sees an AI bubble that could lead to 'a real and big economic recession' down the road&nbsp;&nbsp;The Business Journals",
-      "topic": "business-economy",
-      "source": "The Business Journals",
-      "date": "Tue, 16 Dec 2025 08:00:00 GMT",
-      "imageUrl": "https://media.bizj.us/view/img/12490508/immadakhund-4*1200xx6336-3564-0-0.jpg",
-      "url": "https://www.bizjournals.com/sanfrancisco/news/2025/12/16/ai-bubble-startups-data-centers-mercury-ceo.html"
-    },
-    {
-      "id": "gn-ai-academy-9",
+      "id": "gn-ai-academy-10",
       "title": "Tuskegee University to host the 2026 Amazon Web Services–Machine Learning University Research &amp; Teaching Symposium - Tuskegee University",
       "summary": "Tuskegee University to host the 2026 Amazon Web Services–Machine Learning University Research & Teaching Symposium&nbsp;&nbsp;Tuskegee University",
       "topic": "ai-academy",
@@ -413,7 +443,17 @@
       "url": "https://www.tuskegee.edu/news/2025/12/Tuskegee-University-to-host-the-2026-Amazon-AWSMLU-Research-Teaching-Symposium.html?image"
     },
     {
-      "id": "gn-chatbot-development-24",
+      "id": "gn-ai-academy-19",
+      "title": "The ‘one chatbot per child’ model for AI in classrooms conflicts with what research shows: Learning is a social process - The Conversation",
+      "summary": "The ‘one chatbot per child’ model for AI in classrooms conflicts with what research shows: Learning is a social process&nbsp;&nbsp;The Conversation",
+      "topic": "ai-academy",
+      "source": "The Conversation",
+      "date": "Mon, 15 Dec 2025 08:00:00 GMT",
+      "imageUrl": "https://images.theconversation.com/files/707838/original/file-20251210-64-6j2fp8.jpg?ixlib=rb-4.1.0&rect=0%2C475%2C5700%2C2850&q=45&auto=format&w=1356&h=668&fit=crop",
+      "url": "https://theconversation.com/the-one-chatbot-per-child-model-for-ai-in-classrooms-conflicts-with-what-research-shows-learning-is-a-social-process-269885"
+    },
+    {
+      "id": "gn-chatbot-development-25",
       "title": "OpenAI's GPT-5.2 is here: what enterprises need to know - VentureBeat",
       "summary": "OpenAI's GPT-5.2 is here: what enterprises need to know&nbsp;&nbsp;VentureBeat",
       "topic": "chatbot-development",
@@ -433,7 +473,27 @@
       "url": "https://www.nortonrosefulbright.com/en-us/knowledge/publications/41cf855b/the-federal-government-weighs-in-on-artificial-intelligence-governance"
     },
     {
-      "id": "gn-ai-academy-21",
+      "id": "gn-governance-politics-28",
+      "title": "Trump signs AI order to shut down state laws - Politico",
+      "summary": "Trump signs AI order to shut down state laws&nbsp;&nbsp;Politico",
+      "topic": "governance-politics",
+      "source": "Politico",
+      "date": "Thu, 11 Dec 2025 08:00:00 GMT",
+      "imageUrl": "https://www.politico.com/dims4/default/resize/1200/quality/90/format/jpg?url=https%3A%2F%2Fstatic.politico.com%2Fda%2Fac%2F9311930941079fc86db94f83dabc%2F121025-cnpisp-us-roundtable-003-5926043.jpg",
+      "url": "https://www.politico.com/news/2025/12/11/trump-orders-government-to-fight-state-ai-laws-00687948"
+    },
+    {
+      "id": "gn-technology-innovation-18",
+      "title": "Datasea Announces Breakthrough in Acoustic-Driven Brain-Computer Interface Technology - PR Newswire",
+      "summary": "Datasea Announces Breakthrough in Acoustic-Driven Brain-Computer Interface Technology&nbsp;&nbsp;PR Newswire",
+      "topic": "technology-innovation",
+      "source": "PR Newswire",
+      "date": "Thu, 11 Dec 2025 08:00:00 GMT",
+      "imageUrl": "https://mma.prnewswire.com/media/2163747/image_5029097_24577115_Logo.jpg?p=facebook",
+      "url": "https://www.prnewswire.com/news-releases/datasea-announces-breakthrough-in-acoustic-driven-braincomputer-interface-technology-302638934.html"
+    },
+    {
+      "id": "gn-ai-academy-26",
       "title": "What would an AI university look like and how might it change education? - Nature",
       "summary": "What would an AI university look like and how might it change education?&nbsp;&nbsp;Nature",
       "topic": "ai-academy",
@@ -443,7 +503,7 @@
       "url": "https://www.nature.com/articles/d41586-025-03950-4"
     },
     {
-      "id": "gn-governance-politics-21",
+      "id": "gn-governance-politics-22",
       "title": "China is leading the world on AI governance: other countries must engage - Nature",
       "summary": "China is leading the world on AI governance: other countries must engage&nbsp;&nbsp;Nature",
       "topic": "governance-politics",
@@ -453,7 +513,7 @@
       "url": "https://www.nature.com/articles/d41586-025-03972-y"
     },
     {
-      "id": "gn-technology-innovation-10",
+      "id": "gn-technology-innovation-17",
       "title": "SIMPLE CHARM Leads AI Beauty Revolution: China's Technological Breakthrough in Manufacturing - GlobeNewswire",
       "summary": "SIMPLE CHARM Leads AI Beauty Revolution: China's Technological Breakthrough in Manufacturing&nbsp;&nbsp;GlobeNewswire",
       "topic": "technology-innovation",
@@ -471,16 +531,6 @@
       "date": "Tue, 09 Dec 2025 08:00:00 GMT",
       "imageUrl": "http://img2.chinadaily.com.cn/images/202512/09/693780c1a310d68600f3c8e0.png",
       "url": "https://global.chinadaily.com.cn/a/202512/09/WS693780c1a310d6866eb2d9df.html"
-    },
-    {
-      "id": "gn-environment-science-22",
-      "title": "Inside NVIDIA NVQLink : Faster AI with a Quantum Assist for Real-Time Fixes - Geeky Gadgets",
-      "summary": "Inside NVIDIA NVQLink : Faster AI with a Quantum Assist for Real-Time Fixes&nbsp;&nbsp;Geeky Gadgets",
-      "topic": "environment-science",
-      "source": "Geeky Gadgets",
-      "date": "Mon, 08 Dec 2025 08:00:00 GMT",
-      "imageUrl": "https://www.geeky-gadgets.com/wp-content/uploads/2025/12/gpu-qubit-real-time-error-correction_optimized.jpg",
-      "url": "https://www.geeky-gadgets.com/gpu-qubit-error-correction-nvidia-nvqlink/"
     },
     {
       "id": "gn-digital-security-5",
@@ -503,7 +553,7 @@
       "url": "https://www.sciencedaily.com/releases/2025/12/251205054736.htm"
     },
     {
-      "id": "gn-visual-art-photography-19",
+      "id": "gn-visual-art-photography-17",
       "title": "Why Abstract Photography Might Be a Safe Haven in the Age of AI - Fstoppers",
       "summary": "Why Abstract Photography Might Be a Safe Haven in the Age of AI&nbsp;&nbsp;Fstoppers",
       "topic": "visual-art-photography",
@@ -511,6 +561,16 @@
       "date": "Sat, 06 Dec 2025 02:40:55 GMT",
       "imageUrl": "https://cdn.fstoppers.com/styles/medium/s3/lead/2025/10/abstract_1.jpg?itok=MiCmngPR",
       "url": "https://fstoppers.com/artificial-intelligence/why-abstract-photography-might-be-safe-haven-age-ai-715493"
+    },
+    {
+      "id": "gn-visual-art-photography-22",
+      "title": "Best AI Image Generator Apps &amp; AI Photo Generator Apps in 2025 - perfectcorp.com",
+      "summary": "Best AI Image Generator Apps & AI Photo Generator Apps in 2025&nbsp;&nbsp;perfectcorp.com",
+      "topic": "visual-art-photography",
+      "source": "perfectcorp.com",
+      "date": "Fri, 05 Dec 2025 08:00:00 GMT",
+      "imageUrl": "https://plugins-media.makeupar.com/smb/blog/post/2024-01-05/69c36e06-ed3e-4c0c-8ebe-e0a53ece7755.jpg",
+      "url": "https://www.perfectcorp.com/consumer/blog/generative-AI/best-ai-image-generator-apps"
     },
     {
       "id": "gn-chatbot-development-8",
@@ -533,6 +593,26 @@
       "url": "https://www.digitaljournal.com/tech-science/ten-technology-breakthroughs-to-watch-out-for-in-2026/article"
     },
     {
+      "id": "gn-governance-politics-13",
+      "title": "Government drops AI 'mandatory guardrails', reveals road map on data centres - Australian Broadcasting Corporation",
+      "summary": "Government drops AI 'mandatory guardrails', reveals road map on data centres&nbsp;&nbsp;Australian Broadcasting Corporation",
+      "topic": "governance-politics",
+      "source": "Australian Broadcasting Corporation",
+      "date": "Mon, 01 Dec 2025 08:00:00 GMT",
+      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/5bd9af8f4a64030f7ff7526c854fd4d4?impolicy=wcms_watermark_news&cropH=1687&cropW=3000&xPos=0&yPos=157&width=862&height=485&imformat=generic",
+      "url": "https://www.abc.net.au/news/2025-12-02/national-artificial-intelligence-plan-growth-existing-laws/106086474"
+    },
+    {
+      "id": "gn-technology-innovation-22",
+      "title": "TDK Ventures Invests in Mixx Technologies to Accelerate Deployment of Breakthrough AI Optical Interconnect Platform - Business Wire",
+      "summary": "TDK Ventures Invests in Mixx Technologies to Accelerate Deployment of Breakthrough AI Optical Interconnect Platform&nbsp;&nbsp;Business Wire",
+      "topic": "technology-innovation",
+      "source": "Business Wire",
+      "date": "Mon, 01 Dec 2025 08:00:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&auto=format",
+      "url": "chrome-error://chromewebdata/"
+    },
+    {
       "id": "gn-unmanned-aircraft-9",
       "title": "VTOL Drone | VTOL UAV Manufacturers | Vertical Take-Off &amp; Landing UAS - Unmanned Systems Technology",
       "summary": "VTOL Drone | VTOL UAV Manufacturers | Vertical Take-Off & Landing UAS&nbsp;&nbsp;Unmanned Systems Technology",
@@ -553,7 +633,7 @@
       "url": "https://www.dw.com/en/artificial-intelligence-ai-music-artists-charts-digital-billboard-streaming-spotify/a-74841513"
     },
     {
-      "id": "gn-visual-art-photography-26",
+      "id": "gn-visual-art-photography-23",
       "title": "Fred Ritchin On AI: “We Can Now Easily Remake the World in Our Own Image” - Blind Magazine",
       "summary": "Fred Ritchin On AI: “We Can Now Easily Remake the World in Our Own Image”&nbsp;&nbsp;Blind Magazine",
       "topic": "visual-art-photography",
@@ -561,16 +641,6 @@
       "date": "Fri, 28 Nov 2025 08:00:00 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=600&h=400&fit=crop&auto=format",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQVNIRFZxc291ejZsN2xyTGZLczdLVGpnTVFPRS1zalgzR1R0TW8yU29GaEE4QUkzSVBpLVNnU0QxZndnRTBQck82X1c3RmlWNmJnOW9vM0hlbks1eW9kQ0I0NTZDX2w0MU1lbDItSThvd3p2NkN1QXcyU21ldndoaFM2R2h5WTJleEFLa0d3OFU2dDlQc1p4clZNXzFOUGl1UnNCSzhrdFFhVl9ONWVj?oc=5"
-    },
-    {
-      "id": "gn-technology-innovation-26",
-      "title": "Are we living through an era of extraordinary technological progress, or a drought of genuine breakthroughs? - RMIT University",
-      "summary": "Are we living through an era of extraordinary technological progress, or a drought of genuine breakthroughs?&nbsp;&nbsp;RMIT University",
-      "topic": "technology-innovation",
-      "source": "RMIT University",
-      "date": "Thu, 27 Nov 2025 08:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.rmit.edu.au/news/acumen/technological_progress"
     },
     {
       "id": "gn-unmanned-aircraft-6",
@@ -583,16 +653,6 @@
       "url": "https://www.cnn.com/2025/11/27/world/history-future-of-drones-intl-hnk-ml-dst"
     },
     {
-      "id": "gn-business-economy-15",
-      "title": "First G20 Summit On African Soil Delivers USD 100 M Startup Fund &amp; New AI Push - WeeTracker",
-      "summary": "First G20 Summit On African Soil Delivers USD 100 M Startup Fund & New AI Push&nbsp;&nbsp;WeeTracker",
-      "topic": "business-economy",
-      "source": "WeeTracker",
-      "date": "Wed, 26 Nov 2025 08:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNY0tIZUdtcXdRQ1R1ZXYtS2gxWlkyTklUOU14Ykh0WS1HTmVsS1R3Z2VuS1VRNHRkS1NKYnZYWWRJQVRqdGlZZDZtbGRZalJ6RldEMUxmbW9yR2diSjE5S3ZnalhoTU9oQWxCZndZWVhoWEx4aEwzNVZlV2Q3enhyZ1NKN3hMT2tOMm9WaTZaaFB3RUFabUE?oc=5"
-    },
-    {
       "id": "gn-chatbot-development-7",
       "title": "ChatGPT and Copilot are being booted out of WhatsApp - theverge.com",
       "summary": "ChatGPT and Copilot are being booted out of WhatsApp&nbsp;&nbsp;theverge.com",
@@ -603,7 +663,7 @@
       "url": "https://www.theverge.com/news/829808/chatgpt-copilot-ai-llm-leaving-whatsapp-meta"
     },
     {
-      "id": "gn-visual-art-photography-25",
+      "id": "gn-visual-art-photography-21",
       "title": "How to Creatively Use AI in Photography - Blind Magazine",
       "summary": "How to Creatively Use AI in Photography&nbsp;&nbsp;Blind Magazine",
       "topic": "visual-art-photography",
@@ -613,7 +673,7 @@
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZFRmUnZkb0dydE5pc190UTFfdkdWUFBiNFpmLTJoYnZsY2x3cG42R3FvZEY0cGc4YVlFN1c0eWh5OG5VODNWQmVfQ0VMNnNtX05uWEp2R3dRVFlDdjZUYlg3Rk1tQy1FdWI0WlllWG9VRWQxZGdfMDUtLUk2ZGRnR1V3?oc=5"
     },
     {
-      "id": "gn-ai-academy-11",
+      "id": "gn-ai-academy-12",
       "title": "​Tsinghua University releases comprehensive guiding principles for AI use in education - tsinghua.edu.cn",
       "summary": "​Tsinghua University releases comprehensive guiding principles for AI use in education&nbsp;&nbsp;tsinghua.edu.cn",
       "topic": "ai-academy",
@@ -623,7 +683,7 @@
       "url": "https://www.tsinghua.edu.cn/en/info/1244/14599.htm"
     },
     {
-      "id": "gn-governance-politics-20",
+      "id": "gn-governance-politics-21",
       "title": "AI Watch: Global regulatory tracker - United Kingdom - White &amp; Case LLP",
       "summary": "AI Watch: Global regulatory tracker - United Kingdom&nbsp;&nbsp;White & Case LLP",
       "topic": "governance-politics",
@@ -633,7 +693,7 @@
       "url": "https://www.whitecase.com/insight-our-thinking/ai-watch-global-regulatory-tracker-united-kingdom"
     },
     {
-      "id": "gn-visual-art-photography-6",
+      "id": "gn-visual-art-photography-5",
       "title": "Images Under Influence: How AI Has Slipped Into Our Everyday Photography - Blind Magazine",
       "summary": "Images Under Influence: How AI Has Slipped Into Our Everyday Photography&nbsp;&nbsp;Blind Magazine",
       "topic": "visual-art-photography",
@@ -653,7 +713,17 @@
       "url": "https://www.biometricupdate.com/202511/fbi-issues-rfi-on-drones-with-real-time-facial-recognition-license-plate-readers"
     },
     {
-      "id": "gn-ai-academy-20",
+      "id": "gn-unmanned-aircraft-28",
+      "title": "FBI Seeks AI-Powered Surveillance Drones With Facial Recognition As Police Departments Rapidly Expand Warrantless Aerial Monitoring - DroneXL.co",
+      "summary": "FBI Seeks AI-Powered Surveillance Drones With Facial Recognition As Police Departments Rapidly Expand Warrantless Aerial Monitoring&nbsp;&nbsp;DroneXL.co",
+      "topic": "unmanned-aircraft",
+      "source": "DroneXL.co",
+      "date": "Sun, 23 Nov 2025 08:00:00 GMT",
+      "imageUrl": "https://dronexl.co/wp-content/uploads/2025/11/img_0198.jpg",
+      "url": "https://dronexl.co/2025/11/23/fbi-ai-surveillance-drones-facial-recognition/"
+    },
+    {
+      "id": "gn-ai-academy-25",
       "title": "Engineering faculty drive AI innovation as Ohio University earns top quantum research honor - ohio.edu",
       "summary": "Engineering faculty drive AI innovation as Ohio University earns top quantum research honor&nbsp;&nbsp;ohio.edu",
       "topic": "ai-academy",
@@ -683,17 +753,17 @@
       "url": "https://theintercept.com/2025/11/21/fbi-ai-surveillance-drones-facial-recognition/"
     },
     {
-      "id": "gn-musical-art-15",
-      "title": "Your new favorite band may be AI: Artists protest AI-generated music, navigate AI in the music industry - ohio.edu",
-      "summary": "Your new favorite band may be AI: Artists protest AI-generated music, navigate AI in the music industry&nbsp;&nbsp;ohio.edu",
-      "topic": "musical-art",
-      "source": "ohio.edu",
-      "date": "Tue, 18 Nov 2025 08:00:00 GMT",
-      "imageUrl": "https://news.ohio.edu/sites/ohio.edu.news/files/2025-07/AI%20Bands%20Header.jpg",
-      "url": "https://www.ohio.edu/news/2025/07/your-new-favorite-band-may-be-ai-artists-protest-ai-generated-music-navigate-ai-music"
+      "id": "gn-environment-science-8",
+      "title": "IBM’s Quantum Push: From Labs to Life-Saving Breakthroughs in Health and Climate - WebProNews",
+      "summary": "IBM’s Quantum Push: From Labs to Life-Saving Breakthroughs in Health and Climate&nbsp;&nbsp;WebProNews",
+      "topic": "environment-science",
+      "source": "WebProNews",
+      "date": "Wed, 19 Nov 2025 08:00:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOODY4TUNEeDNPSUpWOUNENlQwTURweTBCY0wwSTVEUXBDUnBOOGRSb04tNk1nTklVcElqWG9mVUdBSFIzek1ZeVJpTmJWWDB4VEFLZ3JaNUU2RlZhTG56d1F1YXRRVmdxdFBjQ0ZKRmFnZmZIdjZScFlZdkVMbTJRcWpEVHdabW5BYVZMaVNyUVBjNzdmYjFtSGdNVHAybFNyenpSdTlXTlZ3QQ?oc=5"
     },
     {
-      "id": "gn-business-economy-5",
+      "id": "gn-business-economy-4",
       "title": "Funding the AI economy: Strengthening Europe’s investment capacity - EU-Startups",
       "summary": "Funding the AI economy: Strengthening Europe’s investment capacity&nbsp;&nbsp;EU-Startups",
       "topic": "business-economy",
@@ -703,7 +773,7 @@
       "url": "https://www.eu-startups.com/2025/11/funding-the-ai-economy-strengthening-europes-investment-capacity/"
     },
     {
-      "id": "gn-environment-science-16",
+      "id": "gn-environment-science-22",
       "title": "NVIDIA and RIKEN Advance Japan’s Scientific Frontiers With New Supercomputers for AI and Quantum Computing - NVIDIA Newsroom",
       "summary": "NVIDIA and RIKEN Advance Japan’s Scientific Frontiers With New Supercomputers for AI and Quantum Computing&nbsp;&nbsp;NVIDIA Newsroom",
       "topic": "environment-science",
@@ -711,6 +781,16 @@
       "date": "Mon, 17 Nov 2025 08:00:00 GMT",
       "imageUrl": "https://s3.amazonaws.com/cms.ipressroom.com/219/files/202511/691aae373d63323d40513539_NVIDIA%20and%20RIKEN/NVIDIA%20and%20RIKEN_ffc6e024-40a4-43d3-9584-cac1620d9fe0-prv.jpg",
       "url": "https://nvidianews.nvidia.com/news/nvidia-and-riken-advance-japans-scientific-frontiers-with-new-supercomputers-for-ai-and-quantum-computing"
+    },
+    {
+      "id": "gn-business-economy-27",
+      "title": "Vibe Coding: A Guide for Startups and Founders - J.P. Morgan",
+      "summary": "Vibe Coding: A Guide for Startups and Founders&nbsp;&nbsp;J.P. Morgan",
+      "topic": "business-economy",
+      "source": "J.P. Morgan",
+      "date": "Wed, 12 Nov 2025 08:00:00 GMT",
+      "imageUrl": "/content/dam/jpmorgan/images/cb/insights/technology/cb-ie-insights-vibe-coding-header-1440x810px-horizontal.jpg",
+      "url": "https://www.jpmorgan.com/insights/technology/artificial-intelligence/vibe-coding-a-guide-for-startups-and-founders"
     },
     {
       "id": "gn-musical-art-6",
@@ -723,17 +803,7 @@
       "url": "https://futurism.com/artificial-intelligence/billboard-top-country-song-ai-slop"
     },
     {
-      "id": "gn-business-economy-13",
-      "title": "Beside funding nets $32M to build an AI for the real economy - StartupHub.ai",
-      "summary": "Beside funding nets $32M to build an AI for the real economy&nbsp;&nbsp;StartupHub.ai",
-      "topic": "business-economy",
-      "source": "StartupHub.ai",
-      "date": "Tue, 11 Nov 2025 08:00:00 GMT",
-      "imageUrl": "https://bsmromhjxdnndenlrpgx.supabase.co/storage/v1/object/public/entity-images/posts/1052302.webp",
-      "url": "https://www.startuphub.ai/ai-news/funding-round/2025/beside-funding-nets-32m-to-build-an-ai-for-the-real-economy"
-    },
-    {
-      "id": "gn-business-economy-16",
+      "id": "gn-business-economy-14",
       "title": "Visa is diving deeper into the creator economy with new AI-powered financial tools - Business Insider",
       "summary": "Visa is diving deeper into the creator economy with new AI-powered financial tools&nbsp;&nbsp;Business Insider",
       "topic": "business-economy",
@@ -753,6 +823,16 @@
       "url": "https://pennstatehealthnews.org/2025/11/college-of-medicine-faculty-secure-major-research-awards-to-advance-diagnosis-treatment-and-prevention-across-key-health-conditions/"
     },
     {
+      "id": "gn-unmanned-aircraft-26",
+      "title": "Thales Advances AI Drones, Quantum Sensing for Defense - 조선일보",
+      "summary": "Thales Advances AI Drones, Quantum Sensing for Defense&nbsp;&nbsp;조선일보",
+      "topic": "unmanned-aircraft",
+      "source": "조선일보",
+      "date": "Thu, 06 Nov 2025 08:00:00 GMT",
+      "imageUrl": "https://www.chosun.com/resizer/v2/MEMVXOUKQVAR7PXZ6UXAADZB4Y.jpg?auth=7c5ea18aef68d0e7059fe6a2e20e58311ad6b81d1b0a38a3967049ceec3c2409&width=1200&height=630&smart=true",
+      "url": "https://www.chosun.com/english/market-money-en/2025/11/06/AH73KRI35BACLNZHMFP2YEA3W4/"
+    },
+    {
       "id": "gn-chatbot-development-1",
       "title": "Researchers Find ChatGPT Vulnerabilities That Let Attackers Trick AI Into Leaking Data - The Hacker News",
       "summary": "Researchers Find ChatGPT Vulnerabilities That Let Attackers Trick AI Into Leaking Data&nbsp;&nbsp;The Hacker News",
@@ -761,16 +841,6 @@
       "date": "Wed, 05 Nov 2025 08:00:00 GMT",
       "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjc9u8ifBTtqcucAGtnB5BSuB4Zu2PTcSopIDhD1mxnUeFmAtb1KWyJuU3Yb8JAnJ-nQ4jltxhO5YCFzfd-VhbghvU9B8DewcX9kDZ4Wv65q-3Sqnj-tyAtaL2BNI_poMHKzeJMr93cjTv7U9lqZFSpLOgs0mYOjIA0QqYydcxGmxxqZGS-YS8hJUi8sdsJ/s2600/chatgpt-hack.jpg",
       "url": "https://thehackernews.com/2025/11/researchers-find-chatgpt.html"
-    },
-    {
-      "id": "gn-governance-politics-22",
-      "title": "Global AI Governance Law and Policy: Australia - IAPP",
-      "summary": "Global AI Governance Law and Policy: Australia&nbsp;&nbsp;IAPP",
-      "topic": "governance-politics",
-      "source": "IAPP",
-      "date": "Wed, 05 Nov 2025 08:00:00 GMT",
-      "imageUrl": "https://images.contentstack.io/v3/assets/bltd4dd5b2d705252bc/bltb6372129ea2d55aa/68f7c5b917cde44dcaf50d99/global_ai_governance_law_policy_2025_series_social.jpg",
-      "url": "https://iapp.org/resources/article/global-ai-governance-australia"
     },
     {
       "id": "gn-technology-innovation-9",
@@ -783,7 +853,17 @@
       "url": "https://www.bruegel.org/policy-brief/what-can-europe-learn-chinas-critical-tech-innovation-push"
     },
     {
-      "id": "gn-environment-science-21",
+      "id": "gn-technology-innovation-11",
+      "title": "Report identifies 10 emerging tech solutions to enhance planetary health - news - Mongabay",
+      "summary": "Report identifies 10 emerging tech solutions to enhance planetary health&nbsp;&nbsp;news - Mongabay",
+      "topic": "technology-innovation",
+      "source": "news - Mongabay",
+      "date": "Tue, 04 Nov 2025 08:00:00 GMT",
+      "imageUrl": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2025/11/03121034/0-Banner-image.jpg",
+      "url": "https://news.mongabay.com/2025/11/report-identifies-ten-emerging-tech-solutions-to-enhance-planetary-health/"
+    },
+    {
+      "id": "gn-environment-science-26",
       "title": "A quantum-driven multi-stage framework integrating variational entanglement, reinforcement learning, and federated explainability for climate-resilient farming - Nature",
       "summary": "A quantum-driven multi-stage framework integrating variational entanglement, reinforcement learning, and federated explainability for climate-resilient farming&nbsp;&nbsp;Nature",
       "topic": "environment-science",
@@ -803,7 +883,7 @@
       "url": "https://emerj.com/ai-in-healthcare-devices-and-the-challenge-of-data-privacy-dr-ankur-sharma-bayer/"
     },
     {
-      "id": "gn-technology-innovation-17",
+      "id": "gn-technology-innovation-26",
       "title": "Focus on breakthrough AI innovations as Intel Experience Store opens doors in New York City - Retail Technology Innovation Hub",
       "summary": "Focus on breakthrough AI innovations as Intel Experience Store opens doors in New York City&nbsp;&nbsp;Retail Technology Innovation Hub",
       "topic": "technology-innovation",
@@ -813,17 +893,7 @@
       "url": "https://retailtechinnovationhub.com/home/2025/11/3/focus-on-breakthrough-ai-innovations-as-intel-experience-store-opens-doors-in-new-york-city"
     },
     {
-      "id": "gn-visual-art-photography-24",
-      "title": "Extending the Reach of Your Photography With AI - California Diver Magazine",
-      "summary": "Extending the Reach of Your Photography With AI&nbsp;&nbsp;California Diver Magazine",
-      "topic": "visual-art-photography",
-      "source": "California Diver Magazine",
-      "date": "Mon, 03 Nov 2025 08:00:00 GMT",
-      "imageUrl": "https://californiadiver.com/wp-content/uploads/2025/11/Superhero-Diver-in-Underwater-Canyon-EPECT_sm.jpg",
-      "url": "https://californiadiver.com/extending-the-reach-of-your-photography-with-ai/"
-    },
-    {
-      "id": "gn-business-economy-23",
+      "id": "gn-business-economy-13",
       "title": "Opportunities for Indonesian Startups Amid the Tech Winter - Kompas.id",
       "summary": "Opportunities for Indonesian Startups Amid the Tech Winter&nbsp;&nbsp;Kompas.id",
       "topic": "business-economy",
@@ -833,7 +903,7 @@
       "url": "https://www.kompas.id/artikel/en-peluang-start-up-indonesia-di-tengah-tech-winter"
     },
     {
-      "id": "gn-ai-academy-13",
+      "id": "gn-ai-academy-14",
       "title": "Faculty Experts on AI in the Classroom - American University",
       "summary": "Faculty Experts on AI in the Classroom&nbsp;&nbsp;American University",
       "topic": "ai-academy",
@@ -843,7 +913,7 @@
       "url": "https://www.american.edu/soe/graduate/articles/faculty-experts-on-ai-in-the-classroom.cfm"
     },
     {
-      "id": "gn-ai-academy-18",
+      "id": "gn-ai-academy-20",
       "title": "UA Advances Research Across Disciplines through AI Infrastructure Investments - UA News Center",
       "summary": "UA Advances Research Across Disciplines through AI Infrastructure Investments&nbsp;&nbsp;UA News Center",
       "topic": "ai-academy",
@@ -853,7 +923,7 @@
       "url": "https://news.ua.edu/2025/10/ai-exchange-highlights-role-of-hpc-in-alabama/"
     },
     {
-      "id": "gn-musical-art-21",
+      "id": "gn-musical-art-22",
       "title": "Unauthorized AI Uploads Problem Persists on Spotify - Digital Music News",
       "summary": "Unauthorized AI Uploads Problem Persists on Spotify&nbsp;&nbsp;Digital Music News",
       "topic": "musical-art",
@@ -863,7 +933,7 @@
       "url": "https://www.digitalmusicnews.com/2025/10/29/ai-uploads-spotify/"
     },
     {
-      "id": "gn-ai-academy-6",
+      "id": "gn-ai-academy-7",
       "title": "CUES funds groundbreaking research in teaching and learning - The University of Arizona",
       "summary": "CUES funds groundbreaking research in teaching and learning&nbsp;&nbsp;The University of Arizona",
       "topic": "ai-academy",
@@ -873,7 +943,7 @@
       "url": "https://research.arizona.edu/news/cues-funds-groundbreaking-research-teaching-and-learning"
     },
     {
-      "id": "gn-ai-academy-17",
+      "id": "gn-ai-academy-18",
       "title": "Capital One and UVA Engineering Announce Major Partnership to Advance AI Research and Education - The University of Virginia",
       "summary": "Capital One and UVA Engineering Announce Major Partnership to Advance AI Research and Education&nbsp;&nbsp;The University of Virginia",
       "topic": "ai-academy",
@@ -883,7 +953,7 @@
       "url": "https://engineering.virginia.edu/news-events/news/capital-one-and-uva-engineering-announce-major-partnership-advance-ai-research-and-education"
     },
     {
-      "id": "gn-technology-innovation-13",
+      "id": "gn-technology-innovation-14",
       "title": "8 Breakthrough Technology Trends That Will Transform Healthcare In 2026 - Forbes",
       "summary": "8 Breakthrough Technology Trends That Will Transform Healthcare In 2026&nbsp;&nbsp;Forbes",
       "topic": "technology-innovation",
@@ -893,14 +963,14 @@
       "url": "https://www.forbes.com/sites/bernardmarr/2025/10/27/the-8-biggest-healthcare-technology-trends-to-watch-in-2026/"
     },
     {
-      "id": "gn-environment-science-7",
-      "title": "Google’s AI Research Tackles Healthcare, Quantum, and Climate Challenges - WebProNews",
-      "summary": "Google’s AI Research Tackles Healthcare, Quantum, and Climate Challenges&nbsp;&nbsp;WebProNews",
-      "topic": "environment-science",
-      "source": "WebProNews",
+      "id": "gn-ai-academy-28",
+      "title": "Howard University Announces Forthcoming AI Certificate Program, Research Funding Proposal Partnership with OpenAI, and more at AI Initiative Town Hall - The Dig at Howard University",
+      "summary": "Howard University Announces Forthcoming AI Certificate Program, Research Funding Proposal Partnership with OpenAI, and more at AI Initiative Town Hall&nbsp;&nbsp;The Dig at Howard University",
+      "topic": "ai-academy",
+      "source": "The Dig at Howard University",
       "date": "Fri, 24 Oct 2025 07:00:00 GMT",
-      "imageUrl": "https://www.webpronews.com/wp-content/uploads/2025/10/xai-tmp-imgen-a10a48b7-2b48-43c0-9f88-cd844f1382d2.jpeg",
-      "url": "https://www.webpronews.com/googles-ai-research-tackles-healthcare-quantum-and-climate-challenges/"
+      "imageUrl": "https://thedig.howard.edu/sites/thedig.howard.edu/files/styles/optimized/public/2025-08/Howard%20Sign_0.jpg?itok=Da8tE0O7",
+      "url": "https://thedig.howard.edu/all-stories/howard-university-announces-forthcoming-ai-certificate-program-research-funding-proposal-partnership"
     },
     {
       "id": "gn-unmanned-aircraft-5",
@@ -913,7 +983,7 @@
       "url": "https://inkstickmedia.com/deep-dive-how-drones-have-redefined-surveillance-in-the-ai-era/"
     },
     {
-      "id": "gn-unmanned-aircraft-25",
+      "id": "gn-unmanned-aircraft-23",
       "title": "Military Drone Types Explained: UAVs, FPV &amp; Drone Warfare (2025) - UNITED24 Media",
       "summary": "Military Drone Types Explained: UAVs, FPV & Drone Warfare (2025)&nbsp;&nbsp;UNITED24 Media",
       "topic": "unmanned-aircraft",
@@ -933,7 +1003,7 @@
       "url": "https://techxplore.com/news/2025-10-ai-drones-3d-hard.html"
     },
     {
-      "id": "gn-business-economy-10",
+      "id": "gn-business-economy-8",
       "title": "Artificial intelligence startups captured over 50% of venture funding in 2025 - WION",
       "summary": "Artificial intelligence startups captured over 50% of venture funding in 2025&nbsp;&nbsp;WION",
       "topic": "business-economy",
@@ -941,16 +1011,6 @@
       "date": "Wed, 22 Oct 2025 07:00:00 GMT",
       "imageUrl": "https://cdn1.wionews.com/prod/wion/images/2025/20251022/image-1761137721725.jpg?imwidth=1200&imheight=900",
       "url": "https://www.wionews.com/business-economy/artificial-intelligence-startups-captured-over-50-of-venture-funding-in-2025-1761137491423"
-    },
-    {
-      "id": "gn-business-economy-27",
-      "title": "Should we worry about AI's circular deals? - by Noah Smith - Noahpinion | Noah Smith",
-      "summary": "Should we worry about AI's circular deals? - by Noah Smith&nbsp;&nbsp;Noahpinion | Noah Smith",
-      "topic": "business-economy",
-      "source": "Noahpinion | Noah Smith",
-      "date": "Wed, 22 Oct 2025 07:00:00 GMT",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!Yzu5!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2d5d9782-42ab-4bad-9bfc-b7c092115b76_922x614.jpeg",
-      "url": "https://www.noahpinion.blog/p/should-we-worry-about-ais-circular"
     },
     {
       "id": "gn-chatbot-development-5",
@@ -973,7 +1033,7 @@
       "url": "https://defensescoop.com/2025/10/22/shield-ai-vtol-autonomous-fighter-jet-x-bat/"
     },
     {
-      "id": "gn-governance-politics-9",
+      "id": "gn-governance-politics-10",
       "title": "New blueprint for AI regulation could speed up planning approvals, slash NHS waiting times, and drive growth and public trust - GOV.UK",
       "summary": "New blueprint for AI regulation could speed up planning approvals, slash NHS waiting times, and drive growth and public trust&nbsp;&nbsp;GOV.UK",
       "topic": "governance-politics",
@@ -983,7 +1043,7 @@
       "url": "https://www.gov.uk/government/news/new-blueprint-for-ai-regulation-could-speed-up-planning-approvals-slash-nhs-waiting-times-and-drive-growth-and-public-trust"
     },
     {
-      "id": "gn-ai-academy-7",
+      "id": "gn-ai-academy-8",
       "title": "How AI is transforming academic research - University of Miami",
       "summary": "How AI is transforming academic research&nbsp;&nbsp;University of Miami",
       "topic": "ai-academy",
@@ -993,7 +1053,7 @@
       "url": "https://news.miami.edu/stories/2025/10/how-artificial-intelligence-is-transforming-academic-research.html"
     },
     {
-      "id": "gn-musical-art-23",
+      "id": "gn-musical-art-24",
       "title": "Spotify working on AI music tools with major record labels - BBC",
       "summary": "Spotify working on AI music tools with major record labels&nbsp;&nbsp;BBC",
       "topic": "musical-art",
@@ -1003,17 +1063,7 @@
       "url": "https://www.bbc.com/news/articles/cn7emv83edjo"
     },
     {
-      "id": "gn-ai-academy-29",
-      "title": "Pupils fear AI is eroding their ability to study, research finds - The Guardian",
-      "summary": "Pupils fear AI is eroding their ability to study, research finds&nbsp;&nbsp;The Guardian",
-      "topic": "ai-academy",
-      "source": "The Guardian",
-      "date": "Wed, 15 Oct 2025 07:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.theguardian.com/technology/2025/oct/15/pupils-fear-ai-eroding-study-ability-research"
-    },
-    {
-      "id": "gn-chatbot-development-29",
+      "id": "gn-chatbot-development-22",
       "title": "Mark Cuban warns that OpenAI’s new plan to allow adults-only erotica in ChatGPT could ‘backfire. Hard’ - Fortune",
       "summary": "Mark Cuban warns that OpenAI’s new plan to allow adults-only erotica in ChatGPT could ‘backfire. Hard’&nbsp;&nbsp;Fortune",
       "topic": "chatbot-development",
@@ -1023,7 +1073,7 @@
       "url": "https://fortune.com/2025/10/15/mark-cuban-openai-erotica-plan-backfire-sam-altman-chat-gpt/"
     },
     {
-      "id": "gn-ai-academy-8",
+      "id": "gn-ai-academy-9",
       "title": "Determinants of student adoption of artificial intelligence applications in higher education - Nature",
       "summary": "Determinants of student adoption of artificial intelligence applications in higher education&nbsp;&nbsp;Nature",
       "topic": "ai-academy",
@@ -1043,7 +1093,7 @@
       "url": "https://www.intelligentliving.co/ai-music-generators-prompts-tips/"
     },
     {
-      "id": "gn-ai-academy-22",
+      "id": "gn-ai-academy-27",
       "title": "Research and Instruction Services at Criss Library Partners with Faculty and Students to Navigate the Research Process with AI - University of Nebraska Omaha",
       "summary": "Research and Instruction Services at Criss Library Partners with Faculty and Students to Navigate the Research Process with AI&nbsp;&nbsp;University of Nebraska Omaha",
       "topic": "ai-academy",
@@ -1063,7 +1113,7 @@
       "url": "https://medicalxpress.com/news/2025-10-ai-diagnosis-treatment-mental-disorders.html"
     },
     {
-      "id": "gn-musical-art-3",
+      "id": "gn-musical-art-4",
       "title": "Why industry-standard labels for AI in music could change how we listen - The Conversation",
       "summary": "Why industry-standard labels for AI in music could change how we listen&nbsp;&nbsp;The Conversation",
       "topic": "musical-art",
@@ -1093,13 +1143,23 @@
       "url": "https://www.businessinsider.com/chatgpt-users-growth-openai-growth-sam-altman-ai-llm-2025-10"
     },
     {
-      "id": "gn-business-economy-14",
-      "title": "OpenAI, Nvidia Fuel $1 Trillion AI Market With Web of Circular Deals - Bloomberg",
-      "summary": "OpenAI, Nvidia Fuel $1 Trillion AI Market With Web of Circular Deals&nbsp;&nbsp;Bloomberg",
+      "id": "gn-technology-innovation-15",
+      "title": "Starkey Unveils Omega AI: A Breakthrough in Hearing Technology \"So Intelligent, It's Superhuman\" - PR Newswire",
+      "summary": "Starkey Unveils Omega AI: A Breakthrough in Hearing Technology \"So Intelligent, It's Superhuman\"&nbsp;&nbsp;PR Newswire",
+      "topic": "technology-innovation",
+      "source": "PR Newswire",
+      "date": "Thu, 09 Oct 2025 07:00:00 GMT",
+      "imageUrl": "https://mma.prnewswire.com/media/2791747/Starkey_Omega_AI_Technology_So_Intelligent_Its_Superhuman.jpg?p=facebook",
+      "url": "https://www.prnewswire.com/news-releases/starkey-unveils-omega-ai-a-breakthrough-in-hearing-technology-so-intelligent-its-superhuman-302579949.html"
+    },
+    {
+      "id": "gn-business-economy-11",
+      "title": "OpenAI, Nvidia Fuel $1 Trillion AI Market With Web of Circular Deals - Bloomberg.com",
+      "summary": "OpenAI, Nvidia Fuel $1 Trillion AI Market With Web of Circular Deals&nbsp;&nbsp;Bloomberg.com",
       "topic": "business-economy",
-      "source": "Bloomberg",
+      "source": "Bloomberg.com",
       "date": "Wed, 08 Oct 2025 07:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&h=400&fit=crop&auto=format",
+      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&auto=format",
       "url": "https://www.bloomberg.com/news/features/2025-10-07/openai-s-nvidia-amd-deals-boost-1-trillion-ai-boom-with-circular-deals"
     },
     {
@@ -1113,17 +1173,7 @@
       "url": "https://www.businessinsider.com/chatgpt-users-openai-sam-altman-devday-llm-artificial-intelligence-2025-10"
     },
     {
-      "id": "gn-unmanned-aircraft-14",
-      "title": "Ukraine’s Raybird UAV Gains French AI Upgrade for Next-Gen Missions - The Defense Post",
-      "summary": "Ukraine’s Raybird UAV Gains French AI Upgrade for Next-Gen Missions&nbsp;&nbsp;The Defense Post",
-      "topic": "unmanned-aircraft",
-      "source": "The Defense Post",
-      "date": "Wed, 08 Oct 2025 07:00:00 GMT",
-      "imageUrl": "https://i.thedefensepost.com/wp-content/uploads/2025/10/RAY.jpg",
-      "url": "https://thedefensepost.com/2025/10/08/ukraine-uav-french-ai/"
-    },
-    {
-      "id": "gn-chatbot-development-27",
+      "id": "gn-chatbot-development-28",
       "title": "OpenAI is putting apps in ChatGPT. Why that's a bigger deal than you might think. - Fortune",
       "summary": "OpenAI is putting apps in ChatGPT. Why that's a bigger deal than you might think.&nbsp;&nbsp;Fortune",
       "topic": "chatbot-development",
@@ -1163,7 +1213,7 @@
       "url": "https://www.infosecurity-magazine.com/news/ai-cybersecurity-investment-pwc/"
     },
     {
-      "id": "gn-environment-science-17",
+      "id": "gn-environment-science-21",
       "title": "As Chicago Quantum Campus Breaks Ground, Residents Call for Community Benefits - Inside Climate News",
       "summary": "As Chicago Quantum Campus Breaks Ground, Residents Call for Community Benefits&nbsp;&nbsp;Inside Climate News",
       "topic": "environment-science",
@@ -1173,17 +1223,17 @@
       "url": "https://insideclimatenews.org/news/01102025/chicago-quantum-campus-community-concerns/"
     },
     {
-      "id": "gn-visual-art-photography-8",
-      "title": "Joe Nalven on Keeping Art Human in an AI World - Minding The Campus",
-      "summary": "Joe Nalven on Keeping Art Human in an AI World&nbsp;&nbsp;Minding The Campus",
-      "topic": "visual-art-photography",
-      "source": "Minding The Campus",
-      "date": "Tue, 30 Sep 2025 07:00:00 GMT",
-      "imageUrl": "https://mindingthecampus.org/wp-content/uploads/2025/12/Joe-Nalven-on-Keeping-Art-Human-in-an-AI-World-902x675.png",
-      "url": "https://mindingthecampus.org/2025/09/30/joe-nalven-on-keeping-art-human-in-an-ai-world/"
+      "id": "gn-technology-innovation-24",
+      "title": "Samsung’s Breakthrough Wearable Technologies Driven by Innovation and Collaboration - samsung.com",
+      "summary": "Samsung’s Breakthrough Wearable Technologies Driven by Innovation and Collaboration&nbsp;&nbsp;samsung.com",
+      "topic": "technology-innovation",
+      "source": "samsung.com",
+      "date": "Wed, 01 Oct 2025 07:00:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.samsung.com/global/samsungs-breakthrough-wearable-technologies-driven-by-innovation-and-collaboration"
     },
     {
-      "id": "gn-business-economy-11",
+      "id": "gn-business-economy-9",
       "title": "Fintech and AI dominate MENA startup funding - Arab News",
       "summary": "Fintech and AI dominate MENA startup funding&nbsp;&nbsp;Arab News",
       "topic": "business-economy",
@@ -1193,7 +1243,7 @@
       "url": "https://www.arabnews.com/node/2616991/business-economy"
     },
     {
-      "id": "gn-environment-science-6",
+      "id": "gn-environment-science-7",
       "title": "Energy and climate - ibm.com",
       "summary": "Energy and climate&nbsp;&nbsp;ibm.com",
       "topic": "environment-science",
@@ -1213,7 +1263,7 @@
       "url": "https://news.microsoft.com/source/features/innovation/microfluidics-liquid-cooling-ai-chips/"
     },
     {
-      "id": "gn-environment-science-4",
+      "id": "gn-environment-science-5",
       "title": "Environmental physics should be on a par with quantum physics or optics - Physics World",
       "summary": "Environmental physics should be on a par with quantum physics or optics&nbsp;&nbsp;Physics World",
       "topic": "environment-science",
@@ -1233,7 +1283,7 @@
       "url": "https://www.whitecase.com/insight-our-thinking/ai-watch-global-regulatory-tracker-united-states"
     },
     {
-      "id": "gn-visual-art-photography-1",
+      "id": "gn-visual-art-photography-8",
       "title": "In Edward Burtynsky and Alkan Avcıoğlu’s ‘Hypertopographics,’ Photography Meets A.I. - observer.com",
       "summary": "In Edward Burtynsky and Alkan Avcıoğlu’s ‘Hypertopographics,’ Photography Meets A.I.&nbsp;&nbsp;observer.com",
       "topic": "visual-art-photography",
@@ -1243,7 +1293,7 @@
       "url": "https://observer.com/2025/09/ai-art-edward-burtynsky-alkan-avcioglu-ai-exhibition-photography-heft-gallery/"
     },
     {
-      "id": "gn-ai-academy-24",
+      "id": "gn-ai-academy-29",
       "title": "AI is changing how students learn — or avoid learning - USC Today",
       "summary": "AI is changing how students learn — or avoid learning&nbsp;&nbsp;USC Today",
       "topic": "ai-academy",
@@ -1253,37 +1303,17 @@
       "url": "https://today.usc.edu/ai-is-changing-how-students-learn-or-avoid-learning/"
     },
     {
-      "id": "gn-unmanned-aircraft-24",
-      "title": "Kim Jong Un Says Advancing AI for Drones Top Military Priority - Bloomberg",
-      "summary": "Kim Jong Un Says Advancing AI for Drones Top Military Priority&nbsp;&nbsp;Bloomberg",
-      "topic": "unmanned-aircraft",
-      "source": "Bloomberg",
-      "date": "Thu, 18 Sep 2025 07:00:00 GMT",
-      "imageUrl": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGECV3TdPdzw/v0/1200x800.jpg",
-      "url": "https://www.bloomberg.com/news/articles/2025-09-19/kim-jong-un-says-advancing-ai-for-drones-top-military-priority"
+      "id": "gn-environment-science-10",
+      "title": "Green AI Technologies: Patent Analysis of 63,000 Innovations Drives Climate Change Mitigation - Quantum Zeitgeist",
+      "summary": "Green AI Technologies: Patent Analysis of 63,000 Innovations Drives Climate Change Mitigation&nbsp;&nbsp;Quantum Zeitgeist",
+      "topic": "environment-science",
+      "source": "Quantum Zeitgeist",
+      "date": "Mon, 15 Sep 2025 07:00:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&h=400&fit=crop&auto=format",
+      "url": "https://quantumzeitgeist.com/ai-analysis-green-technologies-patent-innovations-drives-climate-change-mitigation/"
     },
     {
-      "id": "gn-health-style-11",
-      "title": "AI in healthcare: legal and ethical considerations at the new frontier - A&amp;O Shearman",
-      "summary": "AI in healthcare: legal and ethical considerations at the new frontier&nbsp;&nbsp;A&O Shearman",
-      "topic": "health-style",
-      "source": "A&amp;O Shearman",
-      "date": "Tue, 16 Sep 2025 07:00:00 GMT",
-      "imageUrl": "https://edge.sitecorecloud.io/allenoveryllp1-aoshearmanwe0db-production-ecf3/media/project/aoshearman/aoshearman/insights/technology/robot-and-human-hands-reaching-out-gettyimages-1500238079.jpg?h=1063&iar=0&w=1600",
-      "url": "https://www.aoshearman.com/en/insights/ao-shearman-on-life-sciences/ai-in-healthcare-legal-and-ethical-considerations-at-the-new-frontier"
-    },
-    {
-      "id": "gn-business-economy-17",
-      "title": "Startup Wrap — Saudi Arabia leads MENA startup funding in August - Arab News",
-      "summary": "Startup Wrap — Saudi Arabia leads MENA startup funding in August&nbsp;&nbsp;Arab News",
-      "topic": "business-economy",
-      "source": "Arab News",
-      "date": "Sat, 13 Sep 2025 07:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.arabnews.com/node/2615189/business-economy"
-    },
-    {
-      "id": "gn-ai-academy-16",
+      "id": "gn-ai-academy-17",
       "title": "Fairfield Leads NSF-Funded AI Ethics Collaborative Research Project - fairfield.edu",
       "summary": "Fairfield Leads NSF-Funded AI Ethics Collaborative Research Project&nbsp;&nbsp;fairfield.edu",
       "topic": "ai-academy",
@@ -1333,7 +1363,7 @@
       "url": "https://www.economist.com/by-invitation/2025/09/09/ai-agents-are-coming-for-your-privacy-warns-meredith-whittaker"
     },
     {
-      "id": "gn-technology-innovation-3",
+      "id": "gn-technology-innovation-2",
       "title": "Artificial intelligence. Economic and financial stakes in a technological breakthrough - fondapol.org",
       "summary": "Artificial intelligence. Economic and financial stakes in a technological breakthrough&nbsp;&nbsp;fondapol.org",
       "topic": "technology-innovation",
@@ -1341,6 +1371,16 @@
       "date": "Mon, 08 Sep 2025 04:49:49 GMT",
       "imageUrl": "https://www.fondapol.org/app/uploads/2025/09/268_i.a._fr_couv_fond-1070x815.jpg",
       "url": "https://www.fondapol.org/en/study/artificial-intelligence-economic-and-financial-stakes-in-a-technological-breakthrough/"
+    },
+    {
+      "id": "gn-business-economy-15",
+      "title": "MENA startups heat up with fresh capital across fintech, AI, and gaming - Arab News",
+      "summary": "MENA startups heat up with fresh capital across fintech, AI, and gaming&nbsp;&nbsp;Arab News",
+      "topic": "business-economy",
+      "source": "Arab News",
+      "date": "Sat, 06 Sep 2025 07:00:00 GMT",
+      "imageUrl": "https://www.arabnews.com/sites/default/files/styles/660x371_watermarksaudi/public/main-image/2025/09/06/4637260-308693256.jpg?itok=zgv5by-K",
+      "url": "https://www.arabnews.com/node/2614367/business-economy"
     },
     {
       "id": "gn-chatbot-development-3",
@@ -1363,7 +1403,7 @@
       "url": "https://rightasrain.uwmedicine.org/well/health/ai-chatbot-health-advice"
     },
     {
-      "id": "gn-unmanned-aircraft-22",
+      "id": "gn-unmanned-aircraft-21",
       "title": "How drones and AI are changing the way we fight wildfires - grist.org",
       "summary": "How drones and AI are changing the way we fight wildfires&nbsp;&nbsp;grist.org",
       "topic": "unmanned-aircraft",
@@ -1373,7 +1413,7 @@
       "url": "https://grist.org/wildfires/how-drones-and-ai-are-changing-the-way-we-fight-wildfires/"
     },
     {
-      "id": "gn-unmanned-aircraft-27",
+      "id": "gn-unmanned-aircraft-25",
       "title": "Ukraine Just Changed Warfare Forever With AI-Guided Attack Drone Swarms, WSJ Reports - UNITED24 Media",
       "summary": "Ukraine Just Changed Warfare Forever With AI-Guided Attack Drone Swarms, WSJ Reports&nbsp;&nbsp;UNITED24 Media",
       "topic": "unmanned-aircraft",
@@ -1383,27 +1423,27 @@
       "url": "https://united24media.com/latest-news/ukraine-just-changed-warfare-forever-with-ai-guided-attack-drone-swarms-11324"
     },
     {
-      "id": "gn-unmanned-aircraft-29",
-      "title": "Shield AI Pitches Hivemind-Powered Drone Autonomy to Indian Military - The Defense Post",
-      "summary": "Shield AI Pitches Hivemind-Powered Drone Autonomy to Indian Military&nbsp;&nbsp;The Defense Post",
-      "topic": "unmanned-aircraft",
-      "source": "The Defense Post",
-      "date": "Tue, 02 Sep 2025 07:00:00 GMT",
-      "imageUrl": "https://i.thedefensepost.com/wp-content/uploads/2025/09/India-PR.jpg",
-      "url": "https://thedefensepost.com/2025/09/02/shield-ai-hivemind-indian/"
-    },
-    {
-      "id": "gn-ai-academy-28",
-      "title": "Editorial: AI's impact on higher education: transforming research, teaching, and learning - Frontiers",
-      "summary": "Editorial: AI's impact on higher education: transforming research, teaching, and learning&nbsp;&nbsp;Frontiers",
+      "id": "gn-ai-academy-21",
+      "title": "Talking AI and the future of education with the University of Minnesota - University of Minnesota Twin Cities",
+      "summary": "Talking AI and the future of education with the University of Minnesota&nbsp;&nbsp;University of Minnesota Twin Cities",
       "topic": "ai-academy",
-      "source": "Frontiers",
-      "date": "Mon, 01 Sep 2025 18:36:33 GMT",
-      "imageUrl": "https://d2csxpduxe849s.cloudfront.net/media/E32629C6-9347-4F84-81FEAEF7BFA342B3/AB9B707F-75CF-4EDE-BD4C3423508B6E96/7E7950EB-A6B2-472E-968CE75A375A19E6/WebsiteWebP_XL-FEDUC_Main Visual_Cyan_Website.webp",
-      "url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1682901/full"
+      "source": "University of Minnesota Twin Cities",
+      "date": "Wed, 27 Aug 2025 07:00:00 GMT",
+      "imageUrl": "https://twin-cities.umn.edu/sites/twin-cities.umn.edu/files/Unews%20Image%20Templates%203_2%20%283%29_0.jpg",
+      "url": "https://twin-cities.umn.edu/news-events/talking-ai-and-future-education-university-minnesota"
     },
     {
-      "id": "gn-governance-politics-14",
+      "id": "gn-digital-security-18",
+      "title": "Privacy + Cyber - Troutman Pepper Locke",
+      "summary": "Privacy + Cyber&nbsp;&nbsp;Troutman Pepper Locke",
+      "topic": "digital-security",
+      "source": "Troutman Pepper Locke",
+      "date": "Tue, 26 Aug 2025 11:29:45 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9GMy03SUs4cVFoTWd5eXR0YlZ1cDI5Q01PYjV2YWlzN083ZVJkenAzOGxLQ0h1VVdIZ1RCbG0xQ09vTjlDeXVJQzlWancxdU9RN2pDMTN3YWplb0pSc2g2SklOSmFWN3dORkFKMDBCU1MyQ0hpQ0c5bC13?oc=5"
+    },
+    {
+      "id": "gn-governance-politics-15",
       "title": "The Case for Private AI Governance - The Regulatory Review",
       "summary": "The Case for Private AI Governance&nbsp;&nbsp;The Regulatory Review",
       "topic": "governance-politics",
@@ -1411,6 +1451,16 @@
       "date": "Tue, 26 Aug 2025 07:00:00 GMT",
       "imageUrl": "https://www.theregreview.org/wp-content/uploads/2025/08/Frazier8.26.2025-537619318.jpg",
       "url": "https://www.theregreview.org/2025/08/26/frazier-the-case-for-private-ai-governance/"
+    },
+    {
+      "id": "gn-musical-art-9",
+      "title": "The Spotify AI features that make the platform addictive - Android Police",
+      "summary": "The Spotify AI features that make the platform addictive&nbsp;&nbsp;Android Police",
+      "topic": "musical-art",
+      "source": "Android Police",
+      "date": "Sun, 24 Aug 2025 07:00:00 GMT",
+      "imageUrl": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2025/08/a-robotic-hand-holding-multiple-spotify-logo-icons-with-a-pair-of-headphones-beside-it-and-the-letters-ai-in-the-background.png?w=1600&h=900&fit=crop",
+      "url": "https://www.androidpolice.com/spotify-ai-features/"
     },
     {
       "id": "gn-unmanned-aircraft-12",
@@ -1423,7 +1473,7 @@
       "url": "https://www.police1.com/drones/the-rise-of-assistant-patrol-drones-in-law-enforcement"
     },
     {
-      "id": "gn-environment-science-2",
+      "id": "gn-environment-science-3",
       "title": "How Quantum Computing Could Help Address Climate Change - Impakter",
       "summary": "How Quantum Computing Could Help Address Climate Change&nbsp;&nbsp;Impakter",
       "topic": "environment-science",
@@ -1453,7 +1503,17 @@
       "url": "https://indianexpress.com/article/technology/artificial-intelligence/openai-gpt-5-free-for-everyone-how-to-access-it-10180638/"
     },
     {
-      "id": "gn-musical-art-20",
+      "id": "gn-governance-politics-23",
+      "title": "5 points of bipartisan agreement on how to regulate AI - Brookings",
+      "summary": "5 points of bipartisan agreement on how to regulate AI&nbsp;&nbsp;Brookings",
+      "topic": "governance-politics",
+      "source": "Brookings",
+      "date": "Fri, 15 Aug 2025 07:00:00 GMT",
+      "imageUrl": "https://www.brookings.edu/wp-content/uploads/2025/07/2024-11-13T161241Z_22678573_RC2G4BA299AK_RTRMADP_3_USA-TRUMP-BIDEN-1.jpg?quality=75",
+      "url": "https://www.brookings.edu/articles/five-points-of-bipartisan-agreement-on-how-to-regulate-ai/"
+    },
+    {
+      "id": "gn-musical-art-21",
       "title": "How AI is changing the music business | On Point with Meghna Chakrabarti - WBUR",
       "summary": "How AI is changing the music business | On Point with Meghna Chakrabarti&nbsp;&nbsp;WBUR",
       "topic": "musical-art",
@@ -1463,7 +1523,7 @@
       "url": "https://www.wbur.org/onpoint/2025/08/15/ai-is-changing-music-business"
     },
     {
-      "id": "gn-business-economy-19",
+      "id": "gn-business-economy-18",
       "title": "Meet 16 VC firms investing in innovative creator economy startups like Substack, Whatnot, and Agentio - Business Insider",
       "summary": "Meet 16 VC firms investing in innovative creator economy startups like Substack, Whatnot, and Agentio&nbsp;&nbsp;Business Insider",
       "topic": "business-economy",
@@ -1471,16 +1531,6 @@
       "date": "Thu, 14 Aug 2025 07:00:00 GMT",
       "imageUrl": "https://i.insider.com/689b989fa17a8c5b4052be53?width=1200&format=jpeg",
       "url": "https://www.businessinsider.com/vcs-investing-in-innovative-creator-economy-startups-2025-8"
-    },
-    {
-      "id": "gn-digital-security-17",
-      "title": "DSIT's latest findings on AI, other emerging technologies and cyber security - Crowell &amp; Moring LLP",
-      "summary": "DSIT's latest findings on AI, other emerging technologies and cyber security&nbsp;&nbsp;Crowell & Moring LLP",
-      "topic": "digital-security",
-      "source": "Crowell &amp; Moring LLP",
-      "date": "Thu, 14 Aug 2025 07:00:00 GMT",
-      "imageUrl": "https://www.crowell.com/a/web/m7AnbCyEpSt9kByiSdoJgt/aAfWrV/20250814_pcg_dsits-latest-findings-on-ai_li.jpg",
-      "url": "https://www.crowell.com/en/insights/client-alerts/dsits-latest-findings-on-ai-other-emerging-technologies-and-cyber-security"
     },
     {
       "id": "gn-health-style-1",
@@ -1493,7 +1543,7 @@
       "url": "https://www.weforum.org/stories/2025/08/ai-transforming-global-health/"
     },
     {
-      "id": "gn-technology-innovation-22",
+      "id": "gn-technology-innovation-29",
       "title": "2025 Tech Breakthroughs: AI, Quantum, and Green Innovations - WebProNews",
       "summary": "2025 Tech Breakthroughs: AI, Quantum, and Green Innovations&nbsp;&nbsp;WebProNews",
       "topic": "technology-innovation",
@@ -1573,7 +1623,7 @@
       "url": "https://openai.com/index/introducing-gpt-5/"
     },
     {
-      "id": "gn-chatbot-development-26",
+      "id": "gn-chatbot-development-27",
       "title": "Announcing OpenAI GPT-5 on Snowflake Cortex AI - Snowflake",
       "summary": "Announcing OpenAI GPT-5 on Snowflake Cortex AI&nbsp;&nbsp;Snowflake",
       "topic": "chatbot-development",
@@ -1581,16 +1631,6 @@
       "date": "Thu, 07 Aug 2025 07:00:00 GMT",
       "imageUrl": "https://www.snowflake.com/content/dam/snowflake-site/blog/2025/07/sf_Snowflake-Cortex.jpg",
       "url": "https://www.snowflake.com/en/blog/category/product-and-technology/announcing-openai-gpt-5-on-snowflake-cortex-ai/"
-    },
-    {
-      "id": "gn-ai-academy-25",
-      "title": "KU researchers publish guidelines to help responsibly implement AI in education from preschool through college - KU News",
-      "summary": "KU researchers publish guidelines to help responsibly implement AI in education from preschool through college&nbsp;&nbsp;KU News",
-      "topic": "ai-academy",
-      "source": "KU News",
-      "date": "Wed, 06 Aug 2025 07:00:00 GMT",
-      "imageUrl": "https://news-archive-assets.ku.edu/data/a6/e6/01k1kg5cjztfj938yq6d8r9r96.jpeg",
-      "url": "https://news.ku.edu/news/article/ku-researchers-publish-guidelines-to-help-responsibly-implement-ai-in-education-from-preschool-through-college"
     },
     {
       "id": "gn-chatbot-development-2",
@@ -1603,7 +1643,7 @@
       "url": "https://www.nature.com/articles/d41586-025-02495-w"
     },
     {
-      "id": "gn-unmanned-aircraft-18",
+      "id": "gn-unmanned-aircraft-20",
       "title": "UAV Giant Destinus Acquires Swiss AI Firm to Advance AI-Powered Rocket Drones in Ukraine - UNITED24 Media",
       "summary": "UAV Giant Destinus Acquires Swiss AI Firm to Advance AI-Powered Rocket Drones in Ukraine&nbsp;&nbsp;UNITED24 Media",
       "topic": "unmanned-aircraft",
@@ -1613,7 +1653,7 @@
       "url": "https://united24media.com/latest-news/uav-giant-destinus-acquires-swiss-ai-firm-to-advance-ai-powered-rocket-drones-in-ukraine-10503"
     },
     {
-      "id": "gn-ai-academy-19",
+      "id": "gn-ai-academy-24",
       "title": "Miller School of Medicine Launches Office of AI in Medical Education - University of Miami",
       "summary": "Miller School of Medicine Launches Office of AI in Medical Education&nbsp;&nbsp;University of Miami",
       "topic": "ai-academy",
@@ -1633,7 +1673,7 @@
       "url": "https://futurism.com/openai-chatgpt-mental-distress"
     },
     {
-      "id": "gn-musical-art-14",
+      "id": "gn-musical-art-15",
       "title": "ElevenLabs Launches AI Music Service: Why the Next Spotify Won't Stream Music—It'll Generate It - fourweekmba.com",
       "summary": "ElevenLabs Launches AI Music Service: Why the Next Spotify Won't Stream Music—It'll Generate It&nbsp;&nbsp;fourweekmba.com",
       "topic": "musical-art",
@@ -1653,17 +1693,7 @@
       "url": "https://apnews.com/article/suno-udio-ai-music-spotify-deezer-528899c4864ad536de23be0a8dec0cbc"
     },
     {
-      "id": "gn-ai-academy-26",
-      "title": "Artificial Intelligence - National Science Foundation (.gov)",
-      "summary": "Artificial Intelligence&nbsp;&nbsp;National Science Foundation (.gov)",
-      "topic": "ai-academy",
-      "source": "National Science Foundation (.gov)",
-      "date": "Tue, 29 Jul 2025 15:16:47 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.nsf.gov/focus-areas/ai"
-    },
-    {
-      "id": "gn-technology-innovation-21",
+      "id": "gn-technology-innovation-28",
       "title": "Agriculture Technological Innovation: 7 2025 Breakthroughs - Farmonaut",
       "summary": "Agriculture Technological Innovation: 7 2025 Breakthroughs&nbsp;&nbsp;Farmonaut",
       "topic": "technology-innovation",
@@ -1673,27 +1703,7 @@
       "url": "https://farmonaut.com/blogs/agriculture-technological-innovation-7-2025-breakthroughs"
     },
     {
-      "id": "gn-ai-academy-27",
-      "title": "How is ChatGPT impacting schools, really? Stanford researchers aim to find out - Stanford Report",
-      "summary": "How is ChatGPT impacting schools, really? Stanford researchers aim to find out&nbsp;&nbsp;Stanford Report",
-      "topic": "ai-academy",
-      "source": "Stanford Report",
-      "date": "Tue, 29 Jul 2025 07:00:00 GMT",
-      "imageUrl": "https://news.stanford.edu/__data/assets/image/0020/174251/HannaBarakat-CambridgeDiversity-FundDataLab-Dialogue-1500x1000.png",
-      "url": "https://news.stanford.edu/stories/2025/07/chatgpt-open-ai-impact-schools-education-learning-data-research"
-    },
-    {
-      "id": "gn-governance-politics-28",
-      "title": "Will Trump's AI Policies Kill Federal Support in Your State? - GovTech",
-      "summary": "Will Trump's AI Policies Kill Federal Support in Your State?&nbsp;&nbsp;GovTech",
-      "topic": "governance-politics",
-      "source": "GovTech",
-      "date": "Tue, 29 Jul 2025 07:00:00 GMT",
-      "imageUrl": "https://erepublic.brightspotcdn.com/dims4/default/dcdc706/2147483647/strip/true/crop/5000x2431+0+1285/resize/1440x700!/quality/90/?url=http%3A%2F%2Ferepublic-brightspot.s3.us-west-2.amazonaws.com%2F93%2F68%2F2a30a0d68914d4970ad15e3188da%2Fred-tape-cutting.jpg",
-      "url": "https://www.govtech.com/artificial-intelligence/will-trumps-ai-policies-kill-federal-support-in-your-state"
-    },
-    {
-      "id": "gn-technology-innovation-4",
+      "id": "gn-technology-innovation-3",
       "title": "UT Expands Research on AI Accuracy and Reliability to Support Breakthroughs in Science, Technology and the Workforce - The University of Texas at Austin",
       "summary": "UT Expands Research on AI Accuracy and Reliability to Support Breakthroughs in Science, Technology and the Workforce&nbsp;&nbsp;The University of Texas at Austin",
       "topic": "technology-innovation",
@@ -1713,7 +1723,7 @@
       "url": "https://impakter.com/what-is-the-environmental-cost-of-generative-ai/"
     },
     {
-      "id": "gn-health-style-12",
+      "id": "gn-health-style-11",
       "title": "How AI is revolutionizing the patient experience - JLL",
       "summary": "How AI is revolutionizing the patient experience&nbsp;&nbsp;JLL",
       "topic": "health-style",
@@ -1733,7 +1743,7 @@
       "url": "https://www.insidegovernmentcontracts.com/2025/07/trump-administration-issues-ai-action-plan-and-series-of-ai-executive-orders/"
     },
     {
-      "id": "gn-environment-science-8",
+      "id": "gn-environment-science-11",
       "title": "Concrete that lasts centuries and captures carbon? AI just made it possible - ScienceDaily",
       "summary": "Concrete that lasts centuries and captures carbon? AI just made it possible&nbsp;&nbsp;ScienceDaily",
       "topic": "environment-science",
@@ -1743,7 +1753,7 @@
       "url": "https://www.sciencedaily.com/releases/2025/07/250723045707.htm"
     },
     {
-      "id": "gn-environment-science-3",
+      "id": "gn-environment-science-4",
       "title": "Opportunities and challenges of quantum computing for climate modeling - Cambridge University Press &amp; Assessment",
       "summary": "Opportunities and challenges of quantum computing for climate modeling&nbsp;&nbsp;Cambridge University Press & Assessment",
       "topic": "environment-science",
@@ -1763,7 +1773,7 @@
       "url": "https://ischool.syracuse.edu/ai-in-cybersecurity/"
     },
     {
-      "id": "gn-business-economy-9",
+      "id": "gn-business-economy-7",
       "title": "From poker chips to computer chips: High-tech startups signal change to Nevada economy - Las Vegas Review-Journal",
       "summary": "From poker chips to computer chips: High-tech startups signal change to Nevada economy&nbsp;&nbsp;Las Vegas Review-Journal",
       "topic": "business-economy",
@@ -1783,7 +1793,7 @@
       "url": "https://www.techpolicy.press/texas-just-created-a-new-model-for-state-ai-regulation/"
     },
     {
-      "id": "gn-governance-politics-6",
+      "id": "gn-governance-politics-7",
       "title": "China’s AI Policy at the Crossroads: Balancing Development and Control in the DeepSeek Era - Carnegie Endowment for International Peace",
       "summary": "China’s AI Policy at the Crossroads: Balancing Development and Control in the DeepSeek Era&nbsp;&nbsp;Carnegie Endowment for International Peace",
       "topic": "governance-politics",
@@ -1793,7 +1803,7 @@
       "url": "https://carnegieendowment.org/research/2025/07/chinas-ai-policy-in-the-deepseek-era"
     },
     {
-      "id": "gn-musical-art-18",
+      "id": "gn-musical-art-20",
       "title": "AI-generated music is going viral. Should the music industry be worried? - CNBC",
       "summary": "AI-generated music is going viral. Should the music industry be worried?&nbsp;&nbsp;CNBC",
       "topic": "musical-art",
@@ -1813,7 +1823,7 @@
       "url": "https://www.brookings.edu/articles/mapping-the-ai-economy-which-regions-are-ready-for-the-next-technology-leap/"
     },
     {
-      "id": "gn-technology-innovation-14",
+      "id": "gn-technology-innovation-19",
       "title": "Governor Newsom advances government effectiveness and efficiency with new executive order, launches task force with tech industry leaders - California State Portal | CA.gov",
       "summary": "Governor Newsom advances government effectiveness and efficiency with new executive order, launches task force with tech industry leaders&nbsp;&nbsp;California State Portal | CA.gov",
       "topic": "technology-innovation",
@@ -1823,7 +1833,7 @@
       "url": "https://www.gov.ca.gov/2025/07/15/governor-newsom-advances-government-effectiveness-and-efficiency-with-new-executive-order-launches-task-force-with-tech-industry-leaders/"
     },
     {
-      "id": "gn-musical-art-12",
+      "id": "gn-musical-art-18",
       "title": "An AI-generated band got 1m plays on Spotify. Now music insiders say listeners should be warned - The Guardian",
       "summary": "An AI-generated band got 1m plays on Spotify. Now music insiders say listeners should be warned&nbsp;&nbsp;The Guardian",
       "topic": "musical-art",
@@ -1833,17 +1843,17 @@
       "url": "https://www.theguardian.com/technology/2025/jul/14/an-ai-generated-band-got-1m-plays-on-spotify-now-music-insiders-say-listeners-should-be-warned"
     },
     {
-      "id": "gn-technology-innovation-23",
-      "title": "3 things to know about breakthrough AI model, TD AI Prism - TD Stories",
-      "summary": "3 things to know about breakthrough AI model, TD AI Prism&nbsp;&nbsp;TD Stories",
-      "topic": "technology-innovation",
-      "source": "TD Stories",
+      "id": "gn-governance-politics-5",
+      "title": "Idaho preps to roll out artificial intelligence in state government - Idaho Capital Sun",
+      "summary": "Idaho preps to roll out artificial intelligence in state government&nbsp;&nbsp;Idaho Capital Sun",
+      "topic": "governance-politics",
+      "source": "Idaho Capital Sun",
       "date": "Thu, 10 Jul 2025 07:00:00 GMT",
-      "imageUrl": "https://stories.td.com/volumes/default/article/_1200x630_crop_center-center_none/header-3-things-to-know-about-TD-AI-Prism-the-breakthrough-AI-model-at-TD.jpg",
-      "url": "https://stories.td.com/ca/en/article/foundation-ai-model"
+      "imageUrl": "https://idahocapitalsun.com/wp-content/uploads/2024/09/GettyImages-1492420635-2048x1365-1.jpg",
+      "url": "https://idahocapitalsun.com/2025/07/10/idaho-preps-to-roll-out-artificial-intelligence-in-state-government/"
     },
     {
-      "id": "gn-unmanned-aircraft-19",
+      "id": "gn-unmanned-aircraft-18",
       "title": "Hegseth directive on ‘unleashing U.S. military drone dominance’ includes deadlines for major overhauls - DefenseScoop",
       "summary": "Hegseth directive on ‘unleashing U.S. military drone dominance’ includes deadlines for major overhauls&nbsp;&nbsp;DefenseScoop",
       "topic": "unmanned-aircraft",
@@ -1853,7 +1863,7 @@
       "url": "https://defensescoop.com/2025/07/10/hegseth-memo-unleashing-us-military-drone-dominance-deadlines/"
     },
     {
-      "id": "gn-unmanned-aircraft-23",
+      "id": "gn-unmanned-aircraft-22",
       "title": "Converging Revolutions: How Drones and AI Drive the Future of Warfare - Geopolitical Monitor",
       "summary": "Converging Revolutions: How Drones and AI Drive the Future of Warfare&nbsp;&nbsp;Geopolitical Monitor",
       "topic": "unmanned-aircraft",
@@ -1863,7 +1873,7 @@
       "url": "https://www.geopoliticalmonitor.com/converging-revolutions-how-drones-and-ai-drive-the-future-of-warfare/"
     },
     {
-      "id": "gn-governance-politics-16",
+      "id": "gn-governance-politics-17",
       "title": "The Politics of Fragmentation and Capture in AI Regulation - promarket.org",
       "summary": "The Politics of Fragmentation and Capture in AI Regulation&nbsp;&nbsp;promarket.org",
       "topic": "governance-politics",
@@ -1871,6 +1881,16 @@
       "date": "Mon, 07 Jul 2025 07:00:00 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&h=400&fit=crop&auto=format",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQd21TWGZOemFiT3Z0MGJBX0hxTG5HTXJ4bWJYemxIRkxIRnZUQnRqVl85WlJyd3QyRTNDbXNsLTMtdEw3RU1qOXc3bHZiSUZGbl9yM2xkdWUtOFNmS1NydlBvZVFIeDFwVUY1R2ZKVE0tN3NPVlQ3N2J5SW5XZURxZTVBZHRoWDVzR1ZuV3JPTHcxMk9LZy1NRzhvOVo?oc=5"
+    },
+    {
+      "id": "gn-visual-art-photography-29",
+      "title": "New Meta AI Feature Raises Photo Privacy Concerns - Hyperallergic",
+      "summary": "New Meta AI Feature Raises Photo Privacy Concerns&nbsp;&nbsp;Hyperallergic",
+      "topic": "visual-art-photography",
+      "source": "Hyperallergic",
+      "date": "Sun, 06 Jul 2025 07:00:00 GMT",
+      "imageUrl": "https://hyperallergic.com/content/images/size/w1200/hyperallergic-newspack-s3-amazonaws-com/uploads/2025/07/isa.jpg",
+      "url": "https://hyperallergic.com/new-meta-ai-feature-raises-photo-privacy-concerns/"
     },
     {
       "id": "gn-musical-art-7",
@@ -1883,7 +1903,7 @@
       "url": "https://www.rollingstone.com/music/music-features/ai-band-the-velvet-sundown-confirm-ai-1235379354/"
     },
     {
-      "id": "gn-musical-art-10",
+      "id": "gn-musical-art-11",
       "title": "Like this new band on Spotify? It could turn you into an AI groupie - Cybernews",
       "summary": "Like this new band on Spotify? It could turn you into an AI groupie&nbsp;&nbsp;Cybernews",
       "topic": "musical-art",
@@ -1893,17 +1913,17 @@
       "url": "https://cybernews.com/tech/ai-generated-music-spotify/"
     },
     {
-      "id": "gn-business-economy-3",
-      "title": "Why Tech Startups &amp; Businesses Are Rushing to Apply for These Grants! - GrantWatch",
-      "summary": "Why Tech Startups & Businesses Are Rushing to Apply for These Grants!&nbsp;&nbsp;GrantWatch",
-      "topic": "business-economy",
-      "source": "GrantWatch",
-      "date": "Wed, 02 Jul 2025 07:00:00 GMT",
-      "imageUrl": "https://www.grantwatch.com/grantnews/wp-content/uploads/2025/07/11_img-950x650_T.webp",
-      "url": "https://www.grantwatch.com/grantnews/why-tech-startups-businesses-are-rushing-to-apply-for-these-grants/"
+      "id": "gn-technology-innovation-13",
+      "title": "Nestlé and IBM leverage AI and deep tech to unlock new packaging innovations - Nestlé Global",
+      "summary": "Nestlé and IBM leverage AI and deep tech to unlock new packaging innovations&nbsp;&nbsp;Nestlé Global",
+      "topic": "technology-innovation",
+      "source": "Nestlé Global",
+      "date": "Thu, 03 Jul 2025 07:00:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop&auto=format",
+      "url": "https://www.nestle.com/about/research-development/news/ibm-ai-powered-sustainable-packaging"
     },
     {
-      "id": "gn-musical-art-11",
+      "id": "gn-musical-art-12",
       "title": "AI-Generated Music Is Exploding in 2025 – Inside the Revolution Shaking the Music Industry - TechStock²",
       "summary": "AI-Generated Music Is Exploding in 2025 – Inside the Revolution Shaking the Music Industry&nbsp;&nbsp;TechStock²",
       "topic": "musical-art",
@@ -1911,16 +1931,6 @@
       "date": "Wed, 02 Jul 2025 07:00:00 GMT",
       "imageUrl": "https://ts2.tech/wp-content/uploads/2025/07/ai-music-scaled.jpg",
       "url": "https://ts2.tech/en/ai-generated-music-is-exploding-in-2025-inside-the-revolution-shaking-the-music-industry/"
-    },
-    {
-      "id": "gn-technology-innovation-28",
-      "title": "The State of Artificial Intelligence in 2025: Breakthroughs, Challenges, and the Road Ahead - TechStock²",
-      "summary": "The State of Artificial Intelligence in 2025: Breakthroughs, Challenges, and the Road Ahead&nbsp;&nbsp;TechStock²",
-      "topic": "technology-innovation",
-      "source": "TechStock²",
-      "date": "Wed, 02 Jul 2025 07:00:00 GMT",
-      "imageUrl": "https://ts2.tech/wp-content/uploads/2025/07/scaled_6865042208c6e.jpg",
-      "url": "https://ts2.tech/en/the-state-of-artificial-intelligence-in-2025-breakthroughs-challenges-and-the-road-ahead-updated-2025-july-2nd-1203-cet/"
     },
     {
       "id": "gn-unmanned-aircraft-7",
@@ -1933,7 +1943,7 @@
       "url": "https://www.armyupress.army.mil/Journals/Military-Review/English-Edition-Archives/July-August-2025/Unmanned-Aircraft-Revolution/"
     },
     {
-      "id": "gn-unmanned-aircraft-16",
+      "id": "gn-unmanned-aircraft-15",
       "title": "AI in Drones (UAV) Market | Industry Trends, Forecast to 2030 - MarketsandMarkets",
       "summary": "AI in Drones (UAV) Market | Industry Trends, Forecast to 2030&nbsp;&nbsp;MarketsandMarkets",
       "topic": "unmanned-aircraft",
@@ -1943,7 +1953,7 @@
       "url": "https://www.marketsandmarkets.com/Market-Reports/artificial-intelligence-drones-market-43722301.html"
     },
     {
-      "id": "gn-unmanned-aircraft-20",
+      "id": "gn-unmanned-aircraft-19",
       "title": "AI in Drones Market Impact Analysis - MarketsandMarkets",
       "summary": "AI in Drones Market Impact Analysis&nbsp;&nbsp;MarketsandMarkets",
       "topic": "unmanned-aircraft",
@@ -1953,7 +1963,7 @@
       "url": "https://www.marketsandmarkets.com/ResearchInsight/ai-impact-analysis-uav-drone-industry.asp"
     },
     {
-      "id": "gn-chatbot-development-28",
+      "id": "gn-chatbot-development-29",
       "title": "What Is ChatGPT, and How Does It Make Money? - Investopedia",
       "summary": "What Is ChatGPT, and How Does It Make Money?&nbsp;&nbsp;Investopedia",
       "topic": "chatbot-development",
@@ -1983,7 +1993,7 @@
       "url": "https://www.techtarget.com/searchenterpriseai/feature/Claude-AI-vs-ChatGPT-How-do-they-compare"
     },
     {
-      "id": "gn-technology-innovation-2",
+      "id": "gn-technology-innovation-1",
       "title": "How AI-powered innovation can democratize breakthrough science - weforum.org",
       "summary": "How AI-powered innovation can democratize breakthrough science&nbsp;&nbsp;weforum.org",
       "topic": "technology-innovation",
@@ -1994,16 +2004,16 @@
     },
     {
       "id": "gn-technology-innovation-8",
-      "title": "Eighth Annual AI Breakthrough Awards Program Honors \"Breakthrough\" Artificial Intelligence Technologies Around the World - Yahoo Finance",
-      "summary": "Eighth Annual AI Breakthrough Awards Program Honors \"Breakthrough\" Artificial Intelligence Technologies Around the World&nbsp;&nbsp;Yahoo Finance",
+      "title": "Eighth Annual AI Breakthrough Awards Program Honors - GlobeNewswire",
+      "summary": "Eighth Annual AI Breakthrough Awards Program Honors&nbsp;&nbsp;GlobeNewswire",
       "topic": "technology-innovation",
-      "source": "Yahoo Finance",
+      "source": "GlobeNewswire",
       "date": "Wed, 25 Jun 2025 07:00:00 GMT",
-      "imageUrl": "https://s.yimg.com/ny/api/res/1.2/XruwQyjpFc_GBdYqHrSw9A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD0xMTAxO2NmPXdlYnA-/https://media.zenfs.com/en/globenewswire.com/84f35f77a35ec5630fa64f36bff73a1e",
-      "url": "https://finance.yahoo.com/news/eighth-annual-ai-breakthrough-awards-140000327.html"
+      "imageUrl": "https://ml.globenewswire.com/Resource/Download/6311cb22-3c70-4b7a-989b-82ff4bd2cd37",
+      "url": "https://www.globenewswire.com/news-release/2025/06/25/3105219/0/en/Eighth-Annual-AI-Breakthrough-Awards-Program-Honors-Breakthrough-Artificial-Intelligence-Technologies-Around-the-World.html"
     },
     {
-      "id": "gn-technology-innovation-19",
+      "id": "gn-technology-innovation-25",
       "title": "Upwave Wins “Generative AI Innovation Award” at 8th Annual AI Breakthrough Awards - Yahoo Finance",
       "summary": "Upwave Wins “Generative AI Innovation Award” at 8th Annual AI Breakthrough Awards&nbsp;&nbsp;Yahoo Finance",
       "topic": "technology-innovation",
@@ -2013,7 +2023,7 @@
       "url": "https://finance.yahoo.com/news/upwave-wins-generative-ai-innovation-155600931.html"
     },
     {
-      "id": "gn-technology-innovation-18",
+      "id": "gn-technology-innovation-16",
       "title": "Why China’s AI breakthroughs should come as no surprise - weforum.org",
       "summary": "Why China’s AI breakthroughs should come as no surprise&nbsp;&nbsp;weforum.org",
       "topic": "technology-innovation",
@@ -2023,7 +2033,7 @@
       "url": "https://www.weforum.org/stories/2025/06/china-ai-breakthroughs-no-surprise/"
     },
     {
-      "id": "gn-ai-academy-10",
+      "id": "gn-ai-academy-11",
       "title": "Is AI education a priority for the U.S.? - UGA Today",
       "summary": "Is AI education a priority for the U.S.?&nbsp;&nbsp;UGA Today",
       "topic": "ai-academy",
@@ -2033,27 +2043,27 @@
       "url": "https://news.uga.edu/planning-for-ai-in-workforce/"
     },
     {
-      "id": "gn-technology-innovation-15",
-      "title": "Early-Stage Innovation Fund awards advance breakthrough technologies in healthcare, education and security - University of South Florida",
-      "summary": "Early-Stage Innovation Fund awards advance breakthrough technologies in healthcare, education and security&nbsp;&nbsp;University of South Florida",
+      "id": "gn-technology-innovation-20",
+      "title": "Early-Stage Innovation Fund awards advance breakthrough technologies in healthcare, education and security - the University of South Florida",
+      "summary": "Early-Stage Innovation Fund awards advance breakthrough technologies in healthcare, education and security&nbsp;&nbsp;the University of South Florida",
       "topic": "technology-innovation",
-      "source": "University of South Florida",
+      "source": "the University of South Florida",
       "date": "Fri, 20 Jun 2025 07:00:00 GMT",
       "imageUrl": "https://www.usf.edu/research-innovation/images/news/2025/innovation-award-winners-hero.jpg",
       "url": "https://www.usf.edu/research-innovation/news/2025/usf-fht-announce-early-stage-innovation-fund-awards.aspx"
     },
     {
-      "id": "gn-unmanned-aircraft-28",
-      "title": "AI-Enhanced Long-Range ‘FPV’ Drones Signal Escalation in Russia’s Aerial War on Ukraine - Kyiv Post",
-      "summary": "AI-Enhanced Long-Range ‘FPV’ Drones Signal Escalation in Russia’s Aerial War on Ukraine&nbsp;&nbsp;Kyiv Post",
-      "topic": "unmanned-aircraft",
-      "source": "Kyiv Post",
+      "id": "gn-environment-science-9",
+      "title": "Could This Tech Finally Solve AI's Planet-Polluting Problem? - SlashGear",
+      "summary": "Could This Tech Finally Solve AI's Planet-Polluting Problem?&nbsp;&nbsp;SlashGear",
+      "topic": "environment-science",
+      "source": "SlashGear",
       "date": "Thu, 19 Jun 2025 07:00:00 GMT",
-      "imageUrl": "https://static.kyivpost.com/storage/2025/06/19/8740fe49e95515a29ad0d237d0e194d5.png?w=1200&q=90&f=jpg",
-      "url": "https://www.kyivpost.com/post/54779"
+      "imageUrl": "https://www.slashgear.com/img/gallery/could-this-tech-finally-solve-ais-planet-polluting-problem/l-intro-1750270456.jpg",
+      "url": "https://www.slashgear.com/1889950/ai-pollution-problem-solution-quantum-system/"
     },
     {
-      "id": "gn-technology-innovation-11",
+      "id": "gn-technology-innovation-10",
       "title": "Armenia achieves AI breakthrough in efforts to establish innovation hub - Eurasianet",
       "summary": "Armenia achieves AI breakthrough in efforts to establish innovation hub&nbsp;&nbsp;Eurasianet",
       "topic": "technology-innovation",
@@ -2063,17 +2073,7 @@
       "url": "https://eurasianet.org/armenia-achieves-ai-breakthrough-in-efforts-to-establish-innovation-hub"
     },
     {
-      "id": "gn-digital-security-15",
-      "title": "Privacy &amp; Cybersecurity Law Firm | Lawyers and Attorneys - Fasken",
-      "summary": "Privacy & Cybersecurity Law Firm | Lawyers and Attorneys&nbsp;&nbsp;Fasken",
-      "topic": "digital-security",
-      "source": "Fasken",
-      "date": "Wed, 11 Jun 2025 05:15:53 GMT",
-      "imageUrl": "https://www.fasken.com/-/media/d9e6705c0b2a43d7b0b71a3b6ae6a283.jpg?mh=630&mw=1200&modified=20241212232325&hash=DF3FA0D7F42F2F6C28A94AAE5060A3EC",
-      "url": "https://www.fasken.com/en/services/practices/privacy-and-cybersecurity"
-    },
-    {
-      "id": "gn-visual-art-photography-2",
+      "id": "gn-visual-art-photography-1",
       "title": "How the invention of photography transformed art without exploiting its creators as AI does today - Milwaukee Independent",
       "summary": "How the invention of photography transformed art without exploiting its creators as AI does today&nbsp;&nbsp;Milwaukee Independent",
       "topic": "visual-art-photography",
@@ -2083,7 +2083,7 @@
       "url": "https://www.milwaukeeindependent.com/explainers/invention-photography-transformed-art-without-exploiting-creators-ai-today/"
     },
     {
-      "id": "gn-business-economy-29",
+      "id": "gn-business-economy-23",
       "title": "Corporates back 25% fewer startups in May as US economic turmoil hits - Global Venturing",
       "summary": "Corporates back 25% fewer startups in May as US economic turmoil hits&nbsp;&nbsp;Global Venturing",
       "topic": "business-economy",
@@ -2103,7 +2103,7 @@
       "url": "https://oncodaily.com/oncolibrary/artificial-intelligence-ai"
     },
     {
-      "id": "gn-business-economy-12",
+      "id": "gn-business-economy-10",
       "title": "Venture capital investment is rising in Los Angeles — and not just for AI startups - latimes.com",
       "summary": "Venture capital investment is rising in Los Angeles — and not just for AI startups&nbsp;&nbsp;latimes.com",
       "topic": "business-economy",
@@ -2113,7 +2113,7 @@
       "url": "https://www.latimes.com/business/story/2025-06-06/venture-capital-funding-pours-into-ai-startups"
     },
     {
-      "id": "gn-musical-art-9",
+      "id": "gn-musical-art-10",
       "title": "AI can write a hit song, but it can’t lift your soul or break your heart - TechRadar",
       "summary": "AI can write a hit song, but it can’t lift your soul or break your heart&nbsp;&nbsp;TechRadar",
       "topic": "musical-art",
@@ -2133,7 +2133,7 @@
       "url": "chrome-error://chromewebdata/"
     },
     {
-      "id": "gn-business-economy-7",
+      "id": "gn-business-economy-6",
       "title": "The Economy Is Rocky and AI Is Taking Over — Here’s Why That’s Good News - Built In",
       "summary": "The Economy Is Rocky and AI Is Taking Over — Here’s Why That’s Good News&nbsp;&nbsp;Built In",
       "topic": "business-economy",
@@ -2153,7 +2153,17 @@
       "url": "https://www.nature.com/articles/s41746-025-01746-4"
     },
     {
-      "id": "gn-governance-politics-7",
+      "id": "gn-unmanned-aircraft-27",
+      "title": "As AI evolves, pressure mounts to regulate ‘killer robots’ - news.un.org",
+      "summary": "As AI evolves, pressure mounts to regulate ‘killer robots’&nbsp;&nbsp;news.un.org",
+      "topic": "unmanned-aircraft",
+      "source": "news.un.org",
+      "date": "Sun, 01 Jun 2025 07:00:00 GMT",
+      "imageUrl": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/08-04-2020_Unsplash_drone.jpg/image770x420cropped.jpg",
+      "url": "https://news.un.org/en/story/2025/06/1163891"
+    },
+    {
+      "id": "gn-governance-politics-8",
       "title": "9 Approaches for Artificial Intelligence Government Regulations - ICTworks",
       "summary": "9 Approaches for Artificial Intelligence Government Regulations&nbsp;&nbsp;ICTworks",
       "topic": "governance-politics",
@@ -2163,7 +2173,7 @@
       "url": "https://www.ictworks.org/artificial-intelligence-government-regulations/"
     },
     {
-      "id": "gn-governance-politics-11",
+      "id": "gn-governance-politics-12",
       "title": "The coming AI backlash will shape future regulation - Brookings",
       "summary": "The coming AI backlash will shape future regulation&nbsp;&nbsp;Brookings",
       "topic": "governance-politics",
@@ -2173,7 +2183,7 @@
       "url": "https://www.brookings.edu/articles/the-coming-ai-backlash-will-shape-future-regulation/"
     },
     {
-      "id": "gn-technology-innovation-16",
+      "id": "gn-technology-innovation-23",
       "title": "A data-driven look at AI's transformative impact on the future of science - Nature",
       "summary": "A data-driven look at AI's transformative impact on the future of science&nbsp;&nbsp;Nature",
       "topic": "technology-innovation",
@@ -2183,7 +2193,7 @@
       "url": "https://www.nature.com/articles/d42473-025-00164-0"
     },
     {
-      "id": "gn-governance-politics-5",
+      "id": "gn-governance-politics-6",
       "title": "Texas bill seeks to regulate AI’s use in the state - The Texas Tribune",
       "summary": "Texas bill seeks to regulate AI’s use in the state&nbsp;&nbsp;The Texas Tribune",
       "topic": "governance-politics",
@@ -2193,7 +2203,7 @@
       "url": "https://www.texastribune.org/2025/05/23/texas-ai-bill-legislation-regulation/"
     },
     {
-      "id": "gn-unmanned-aircraft-21",
+      "id": "gn-unmanned-aircraft-17",
       "title": "UF/IFAS study: Drones, AI help farmers save money, protect the environment - University of Florida",
       "summary": "UF/IFAS study: Drones, AI help farmers save money, protect the environment&nbsp;&nbsp;University of Florida",
       "topic": "unmanned-aircraft",
@@ -2213,7 +2223,7 @@
       "url": "https://www.cybersecuritydive.com/news/ai-security-risks-executives-survey/748664/"
     },
     {
-      "id": "gn-business-economy-26",
+      "id": "gn-business-economy-21",
       "title": "New report shows the staggering AI cash surge — and the rise of the 'zombiecorn' - CNBC",
       "summary": "New report shows the staggering AI cash surge — and the rise of the 'zombiecorn'&nbsp;&nbsp;CNBC",
       "topic": "business-economy",
@@ -2223,7 +2233,7 @@
       "url": "https://www.cnbc.com/2025/05/20/ai-startups-unicorns-zombiecorns.html"
     },
     {
-      "id": "gn-environment-science-14",
+      "id": "gn-environment-science-15",
       "title": "We did the math on AI’s energy footprint. Here’s the story you haven’t heard. - MIT Technology Review",
       "summary": "We did the math on AI’s energy footprint. Here’s the story you haven’t heard.&nbsp;&nbsp;MIT Technology Review",
       "topic": "environment-science",
@@ -2231,6 +2241,26 @@
       "date": "Tue, 20 May 2025 07:00:00 GMT",
       "imageUrl": "https://wp.technologyreview.com/wp-content/uploads/2025/05/cooling-tower-blue-grid.png?resize=1200,600",
       "url": "https://www.technologyreview.com/2025/05/20/1116327/ai-energy-usage-climate-footprint-big-tech/"
+    },
+    {
+      "id": "gn-business-economy-26",
+      "title": "Google launches AI startup fund offering access to new models and tools - CNBC",
+      "summary": "Google launches AI startup fund offering access to new models and tools&nbsp;&nbsp;CNBC",
+      "topic": "business-economy",
+      "source": "CNBC",
+      "date": "Mon, 12 May 2025 07:00:00 GMT",
+      "imageUrl": "https://image.cnbcfm.com/api/v1/image/108071553-1733348556760-gettyimages-2188268161-mms16626_ljqmcmx5.jpeg?v=1747086159&w=1920&h=1080",
+      "url": "https://www.cnbc.com/2025/05/12/google-launches-ai-startup-fund-offering-access-to-new-models.html"
+    },
+    {
+      "id": "gn-environment-science-14",
+      "title": "THE WEEK OF MAY 12, 2025 - aip.org",
+      "summary": "THE WEEK OF MAY 12, 2025&nbsp;&nbsp;aip.org",
+      "topic": "environment-science",
+      "source": "aip.org",
+      "date": "Mon, 12 May 2025 07:00:00 GMT",
+      "imageUrl": "https://aip.brightspotcdn.com/dims4/default/117ebf2/2147483647/strip/true/crop/800x450+0+0/resize/1440x810!/quality/90/?url=https%3A%2F%2Fk1-prod-aip.s3.us-east-2.amazonaws.com%2Fbrightspot%2Fd8%2F7c%2Ff26f55e74868beb5b2e5389446e7%2Fdownload-3.png",
+      "url": "https://www.aip.org/fyi/the-week-of-may-12-2025"
     },
     {
       "id": "gn-health-style-14",
@@ -2253,7 +2283,7 @@
       "url": "https://www.deloitte.com/lu/en/our-thinking/future-of-advice/ai-in-health-redefining-patient-care.html"
     },
     {
-      "id": "gn-unmanned-aircraft-26",
+      "id": "gn-unmanned-aircraft-24",
       "title": "US tests AI combat drones as it competes with China to develop ‘loyal wingmen’ - South China Morning Post",
       "summary": "US tests AI combat drones as it competes with China to develop ‘loyal wingmen’&nbsp;&nbsp;South China Morning Post",
       "topic": "unmanned-aircraft",
@@ -2263,17 +2293,7 @@
       "url": "https://www.scmp.com/news/china/military/article/3309244/us-tests-ai-driven-combat-drones-it-competes-china-develop-loyal-wingmen"
     },
     {
-      "id": "gn-technology-innovation-24",
-      "title": "Math + AI = Tomorrow’s breakthroughs - darpa.mil",
-      "summary": "Math + AI = Tomorrow’s breakthroughs&nbsp;&nbsp;darpa.mil",
-      "topic": "technology-innovation",
-      "source": "darpa.mil",
-      "date": "Mon, 05 May 2025 07:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.darpa.mil/news/2025/math-ai-tomorrows-breakthroughs"
-    },
-    {
-      "id": "gn-environment-science-5",
+      "id": "gn-environment-science-6",
       "title": "4 Emerging Technologies That Are Helping Us in the Fight Against Climate Change - Earth.Org",
       "summary": "4 Emerging Technologies That Are Helping Us in the Fight Against Climate Change&nbsp;&nbsp;Earth.Org",
       "topic": "environment-science",
@@ -2283,7 +2303,7 @@
       "url": "https://earth.org/4-emerging-technologies-that-are-helping-us-in-the-fight-against-climate-change/"
     },
     {
-      "id": "gn-chatbot-development-25",
+      "id": "gn-chatbot-development-26",
       "title": "Sycophancy in GPT-4o: What happened and what we’re doing about it - openai.com",
       "summary": "Sycophancy in GPT-4o: What happened and what we’re doing about it&nbsp;&nbsp;openai.com",
       "topic": "chatbot-development",
@@ -2313,7 +2333,17 @@
       "url": "https://www.jpost.com/health-and-wellness/article-851586"
     },
     {
-      "id": "gn-business-economy-21",
+      "id": "gn-digital-security-16",
+      "title": "Data Diaries - April 2025 - Addleshaw Goddard LLP",
+      "summary": "Data Diaries - April 2025&nbsp;&nbsp;Addleshaw Goddard LLP",
+      "topic": "digital-security",
+      "source": "Addleshaw Goddard LLP",
+      "date": "Tue, 22 Apr 2025 07:00:00 GMT",
+      "imageUrl": "https://www.addleshawgoddard.com/globalassets/insights/data-protection/data-diaries---april-2025/1911471178---infographic-for-data-diaries-april-2025-teaser.jpg",
+      "url": "https://www.addleshawgoddard.com/en/insights/insights-briefings/2025/data-protection/data-diaries-april-2025/"
+    },
+    {
+      "id": "gn-business-economy-12",
       "title": "NEA partner Ann Bordetsky is on a mission to fund AI-first products and startups creating economic empowerment - Fortune",
       "summary": "NEA partner Ann Bordetsky is on a mission to fund AI-first products and startups creating economic empowerment&nbsp;&nbsp;Fortune",
       "topic": "business-economy",
@@ -2333,7 +2363,7 @@
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-spends-millions-to-process-polite-phrases-such-as-thank-you-and-please-with-chatgpt"
     },
     {
-      "id": "gn-technology-innovation-20",
+      "id": "gn-technology-innovation-27",
       "title": "Tech pioneers predict future breakthroughs in AI and quantum computing - University of Cincinnati",
       "summary": "Tech pioneers predict future breakthroughs in AI and quantum computing&nbsp;&nbsp;University of Cincinnati",
       "topic": "technology-innovation",
@@ -2393,7 +2423,7 @@
       "url": "https://vocal.media/bookclub/from-diagnosis-to-treatment-how-ai-is-transforming-patient-care-in-2025"
     },
     {
-      "id": "gn-business-economy-4",
+      "id": "gn-business-economy-3",
       "title": "How founders are shaping the future of startups with AI - weforum.org",
       "summary": "How founders are shaping the future of startups with AI&nbsp;&nbsp;weforum.org",
       "topic": "business-economy",
@@ -2403,7 +2433,7 @@
       "url": "https://www.weforum.org/stories/2025/04/how-founders-are-shaping-the-future-of-entrepreneurship-with-ai/"
     },
     {
-      "id": "gn-governance-politics-17",
+      "id": "gn-governance-politics-18",
       "title": "What the public thinks about AI and the implications for governance - Brookings",
       "summary": "What the public thinks about AI and the implications for governance&nbsp;&nbsp;Brookings",
       "topic": "governance-politics",
@@ -2443,6 +2473,16 @@
       "url": "https://www.techtarget.com/healthtechanalytics/feature/Benefits-of-AI-in-healthcare"
     },
     {
+      "id": "gn-business-economy-25",
+      "title": "Most of U.S. venture capital went to AI-focused startups. Is that a problem? - marketplace.org",
+      "summary": "Most of U.S. venture capital went to AI-focused startups. Is that a problem?&nbsp;&nbsp;marketplace.org",
+      "topic": "business-economy",
+      "source": "marketplace.org",
+      "date": "Fri, 04 Apr 2025 07:00:00 GMT",
+      "imageUrl": "https://img.apmcdn.org/6df21e176550cbc4c3e4afdcfa35cc8ccdca8696/uncropped/ad92fb-2025-04-gettyimages-2197366745-e1743681240171-2000.jpg",
+      "url": "https://www.marketplace.org/story/2025/04/04/most-of-u-s-venture-capital-went-to-ai-focused-startups-is-that-a-problem"
+    },
+    {
       "id": "gn-health-style-24",
       "title": "Generative AI Investing: Tracking the Transformation of Health Care - Lord, Abbett &amp; Co LLC",
       "summary": "Generative AI Investing: Tracking the Transformation of Health Care&nbsp;&nbsp;Lord, Abbett & Co LLC",
@@ -2463,7 +2503,17 @@
       "url": "https://www.cnn.com/2025/03/27/health/artificial-intelligence-diagnosis-technology-wellness"
     },
     {
-      "id": "gn-business-economy-22",
+      "id": "gn-unmanned-aircraft-29",
+      "title": "North Korea’s Kim Jong Un oversees tests of new AI-equipped suicide drones - Al Jazeera",
+      "summary": "North Korea’s Kim Jong Un oversees tests of new AI-equipped suicide drones&nbsp;&nbsp;Al Jazeera",
+      "topic": "unmanned-aircraft",
+      "source": "Al Jazeera",
+      "date": "Thu, 27 Mar 2025 07:00:00 GMT",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2025/03/2025-03-27T021812Z_1218255461_RC29LDAFOEZR_RTRMADP_3_NORTHKOREA-DRONES-1743042134.jpg?resize=1920%2C1440",
+      "url": "https://www.aljazeera.com/news/2025/3/27/north-koreas-kim-jong-un-oversees-tests-of-new-ai-equipped-suicide-drones"
+    },
+    {
+      "id": "gn-business-economy-16",
       "title": "Paid raises €10 million to transform AI Agent economy and launch beta programme - EU-Startups",
       "summary": "Paid raises €10 million to transform AI Agent economy and launch beta programme&nbsp;&nbsp;EU-Startups",
       "topic": "business-economy",
@@ -2471,16 +2521,6 @@
       "date": "Tue, 25 Mar 2025 07:00:00 GMT",
       "imageUrl": "https://www.eu-startups.com/wp-content/uploads/2025/03/Paid-1.png",
       "url": "https://www.eu-startups.com/2025/03/paid-raises-e10-million-to-transform-ai-agent-economy-and-launch-beta-programme/"
-    },
-    {
-      "id": "gn-governance-politics-12",
-      "title": "Emboldened by Trump, A.I. Companies Lobby for Fewer Rules - The New York Times",
-      "summary": "Emboldened by Trump, A.I. Companies Lobby for Fewer Rules&nbsp;&nbsp;The New York Times",
-      "topic": "governance-politics",
-      "source": "The New York Times",
-      "date": "Mon, 24 Mar 2025 07:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1555848962-6e79363ec58f?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.nytimes.com/2025/03/24/technology/trump-ai-regulation.html"
     },
     {
       "id": "gn-chatbot-development-21",
@@ -2493,17 +2533,7 @@
       "url": "https://www.abc.net.au/news/science/2025-03-20/openai-generative-ai-hallucinations-chatbot-gpt45-test/105041122"
     },
     {
-      "id": "gn-business-economy-20",
-      "title": "Viewpoint: Why you should found your AI startup in Mass. - The Business Journals",
-      "summary": "Viewpoint: Why you should found your AI startup in Mass.&nbsp;&nbsp;The Business Journals",
-      "topic": "business-economy",
-      "source": "The Business Journals",
-      "date": "Fri, 14 Mar 2025 07:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.bizjournals.com/boston/news/2025/03/14/viewpoint-why-you-should-found-your-ai-startup-in.html"
-    },
-    {
-      "id": "gn-visual-art-photography-3",
+      "id": "gn-visual-art-photography-2",
       "title": "The art of blind photography and finding your own style - Disability Horizons",
       "summary": "The art of blind photography and finding your own style&nbsp;&nbsp;Disability Horizons",
       "topic": "visual-art-photography",
@@ -2513,7 +2543,7 @@
       "url": "https://disabilityhorizons.com/2025/03/the-art-of-blind-photography-and-finding-your-own-style/"
     },
     {
-      "id": "gn-governance-politics-10",
+      "id": "gn-governance-politics-11",
       "title": "Beyond AI regulation: How government and industry can team up to make the technology safer without hindering innovation - The Conversation",
       "summary": "Beyond AI regulation: How government and industry can team up to make the technology safer without hindering innovation&nbsp;&nbsp;The Conversation",
       "topic": "governance-politics",
@@ -2543,16 +2573,6 @@
       "url": "https://www.brookings.edu/articles/efficient-government-and-safe-innovation-a-collaborative-approach-to-artificial-intelligence-policy/"
     },
     {
-      "id": "gn-technology-innovation-29",
-      "title": "DeepSeek's Breakthrough is a Win for Innovation and Accessibility - ibm.com",
-      "summary": "DeepSeek's Breakthrough is a Win for Innovation and Accessibility&nbsp;&nbsp;ibm.com",
-      "topic": "technology-innovation",
-      "source": "ibm.com",
-      "date": "Tue, 04 Mar 2025 14:45:23 GMT",
-      "imageUrl": "https://www.ibm.com/content/dam/connectedassets-adobe-cms/worldwide-content/stock-assets/getty/image/photography/6f/f7/coil-20220930-16.jpg/_jcr_content/renditions/cq5dam.thumbnail.1280.1280.png",
-      "url": "https://www.ibm.com/think/insights/deepseek-breakthrough-is-a-win-for-innovation-and-accessibility"
-    },
-    {
       "id": "gn-health-style-21",
       "title": "Can AI Outperform Doctors in Diagnosing Infectious Diseases? - News-Medical",
       "summary": "Can AI Outperform Doctors in Diagnosing Infectious Diseases?&nbsp;&nbsp;News-Medical",
@@ -2573,6 +2593,16 @@
       "url": "https://www.techtarget.com/searchenterpriseai/tip/Gemini-vs-ChatGPT-Whats-the-difference?Offer=ab_MeteredFormCopyEoc_var1"
     },
     {
+      "id": "gn-visual-art-photography-27",
+      "title": "Recreating the Aura: Professor Naeem Mohaiemen Explores Artificial Intelligence and Art in the Classroom - Columbia University",
+      "summary": "Recreating the Aura: Professor Naeem Mohaiemen Explores Artificial Intelligence and Art in the Classroom&nbsp;&nbsp;Columbia University",
+      "topic": "visual-art-photography",
+      "source": "Columbia University",
+      "date": "Fri, 28 Feb 2025 08:00:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=400&fit=crop&auto=format",
+      "url": "https://arts.columbia.edu/news/recreating-aura-professor-naeem-mohaiemen-explores-artificial-intelligence-and-art-classroom"
+    },
+    {
       "id": "gn-chatbot-development-20",
       "title": "Introducing GPT-4.5 - openai.com",
       "summary": "Introducing GPT-4.5&nbsp;&nbsp;openai.com",
@@ -2583,7 +2613,7 @@
       "url": "https://openai.com/index/introducing-gpt-4-5/"
     },
     {
-      "id": "gn-governance-politics-8",
+      "id": "gn-governance-politics-9",
       "title": "New Government Policy Shows Japan Favors a Light Touch for AI Regulation - CSIS | Center for Strategic and International Studies",
       "summary": "New Government Policy Shows Japan Favors a Light Touch for AI Regulation&nbsp;&nbsp;CSIS | Center for Strategic and International Studies",
       "topic": "governance-politics",
@@ -2593,7 +2623,7 @@
       "url": "https://www.csis.org/analysis/new-government-policy-shows-japan-favors-light-touch-ai-regulation"
     },
     {
-      "id": "gn-business-economy-28",
+      "id": "gn-business-economy-22",
       "title": "MENA startups secure new investments, acquisitions across fintech, AI and e-commerce - Arab News",
       "summary": "MENA startups secure new investments, acquisitions across fintech, AI and e-commerce&nbsp;&nbsp;Arab News",
       "topic": "business-economy",
@@ -2601,16 +2631,6 @@
       "date": "Sun, 23 Feb 2025 08:00:00 GMT",
       "imageUrl": "https://www.arabnews.com/sites/default/files/styles/660x371_watermarksaudi/public/main-image/2025/02/23/4576837-30911930.jpg?itok=6kkqNehe",
       "url": "https://www.arabnews.com/node/2591324/business-economy"
-    },
-    {
-      "id": "gn-technology-innovation-27",
-      "title": "China’s AI Breakthrough Signals a New Era of Tech Innovation - The Diplomat – Asia-Pacific Current Affairs Magazine",
-      "summary": "China’s AI Breakthrough Signals a New Era of Tech Innovation&nbsp;&nbsp;The Diplomat – Asia-Pacific Current Affairs Magazine",
-      "topic": "technology-innovation",
-      "source": "The Diplomat – Asia-Pacific Current Affairs Magazine",
-      "date": "Sat, 22 Feb 2025 08:00:00 GMT",
-      "imageUrl": "https://thediplomat.com/wp-content/uploads/2025/01/sizes/td-story-s-2/thediplomat_2025-01-28-155029.jpg",
-      "url": "https://thediplomat.com/2025/02/chinas-ai-breakthrough-signals-a-new-era-of-tech-innovation/"
     },
     {
       "id": "gn-musical-art-28",
@@ -2633,7 +2653,7 @@
       "url": "https://www.nortonrosefulbright.com/en/knowledge/publications/3c1a5c2f/federal-government-announces-latest-national-cyber-security-strategy"
     },
     {
-      "id": "gn-environment-science-15",
+      "id": "gn-environment-science-18",
       "title": "NSF invests $63 million in STEM research traineeships - National Science Foundation (.gov)",
       "summary": "NSF invests $63 million in STEM research traineeships&nbsp;&nbsp;National Science Foundation (.gov)",
       "topic": "environment-science",
@@ -2643,7 +2663,7 @@
       "url": "https://www.nsf.gov/funding/initiatives/nrt/nsf-invests-63-million-stem-research-traineeships"
     },
     {
-      "id": "gn-chatbot-development-23",
+      "id": "gn-chatbot-development-24",
       "title": "AI Models and Tools: OpenAI’s Debuts ‘Cost-Efficient’ Model as Mistral Upgrades - PYMNTS.com",
       "summary": "AI Models and Tools: OpenAI’s Debuts ‘Cost-Efficient’ Model as Mistral Upgrades&nbsp;&nbsp;PYMNTS.com",
       "topic": "chatbot-development",
@@ -2663,7 +2683,7 @@
       "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/uk-publishes-ai-cyber-security-code-of-practice-and-implementation-guide"
     },
     {
-      "id": "gn-governance-politics-18",
+      "id": "gn-governance-politics-20",
       "title": "Risks of State-Led AI Governance in a Federal Policy Vacuum - Tech Policy Press",
       "summary": "Risks of State-Led AI Governance in a Federal Policy Vacuum&nbsp;&nbsp;Tech Policy Press",
       "topic": "governance-politics",
@@ -2673,7 +2693,7 @@
       "url": "https://www.techpolicy.press/risks-of-state-led-ai-governance-in-a-federal-policy-vacuum/"
     },
     {
-      "id": "gn-governance-politics-24",
+      "id": "gn-governance-politics-25",
       "title": "AI Regulation in 2025 - Has the UK Government’s Wait-and-See Gamble Played Off? - JD Supra",
       "summary": "AI Regulation in 2025 - Has the UK Government’s Wait-and-See Gamble Played Off?&nbsp;&nbsp;JD Supra",
       "topic": "governance-politics",
@@ -2693,7 +2713,7 @@
       "url": "https://www.nature.com/articles/s41746-025-01460-1"
     },
     {
-      "id": "gn-environment-science-18",
+      "id": "gn-environment-science-17",
       "title": "How AI and science-led design are transforming the built environment - weforum.org",
       "summary": "How AI and science-led design are transforming the built environment&nbsp;&nbsp;weforum.org",
       "topic": "environment-science",
@@ -2703,24 +2723,14 @@
       "url": "https://www.weforum.org/stories/2025/01/ai-science-design-transforming-built-environment/"
     },
     {
-      "id": "gn-environment-science-10",
-      "title": "Explained: Generative AI’s environmental impact - MIT News",
-      "summary": "Explained: Generative AI’s environmental impact&nbsp;&nbsp;MIT News",
+      "id": "gn-environment-science-27",
+      "title": "AI: how are researchers tackling environmental challenges? - Inria",
+      "summary": "AI: how are researchers tackling environmental challenges?&nbsp;&nbsp;Inria",
       "topic": "environment-science",
-      "source": "MIT News",
-      "date": "Fri, 17 Jan 2025 08:00:00 GMT",
-      "imageUrl": "https://news.mit.edu/sites/default/files/images/202501/MIT-AI-Climate-01.jpg",
-      "url": "https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117"
-    },
-    {
-      "id": "gn-environment-science-12",
-      "title": "What is AI's role in the climate transition and how can it drive growth? - weforum.org",
-      "summary": "What is AI's role in the climate transition and how can it drive growth?&nbsp;&nbsp;weforum.org",
-      "topic": "environment-science",
-      "source": "weforum.org",
-      "date": "Thu, 16 Jan 2025 08:00:00 GMT",
-      "imageUrl": "https://assets.weforum.org/article/image/responsive_large_aqfVc8pUQmKCvaK77i7a78vtNrHT0TdQ1USLmL3XjZk.jpg",
-      "url": "https://www.weforum.org/stories/2025/01/artificial-intelligence-climate-transition-drive-growth/"
+      "source": "Inria",
+      "date": "Tue, 21 Jan 2025 08:00:00 GMT",
+      "imageUrl": "https://www.inria.fr/sites/default/files/styles/image_social/public/2025-01/A-Inria-plantnet-1826.jpg?itok=VmE4jJVn",
+      "url": "https://www.inria.fr/en/AI-how-researchers-environmental-challenges"
     },
     {
       "id": "gn-digital-security-25",
@@ -2733,7 +2743,7 @@
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSnBBYUtMVWFrV3hXQmc4bjlaWVpfT3NwZVg3OWg0ZjJUX3FRQVZtXzRqbHItYUlwZWF5czVNeXFCZ2VJQm42OVZzMDItdmRxVFRmZFpFb1U4Um9xelNzc2k4V1FSZUZZRW93VkI5ejNvTjlXc2h3VHdyRDF6dVFtRmw0b1E1OW85SmptNDU5OA?oc=5"
     },
     {
-      "id": "gn-digital-security-16",
+      "id": "gn-digital-security-15",
       "title": "AI trends for 2025: Data privacy and cybersecurity - Dentons",
       "summary": "AI trends for 2025: Data privacy and cybersecurity&nbsp;&nbsp;Dentons",
       "topic": "digital-security",
@@ -2741,16 +2751,6 @@
       "date": "Fri, 10 Jan 2025 08:00:00 GMT",
       "imageUrl": "https://www.dentons.com/-/media/images/website/background-images/other/global-ai/adobestock_371042741-1900x1500.ashx",
       "url": "https://www.dentons.com/en/insights/articles/2025/january/10/ai-trends-for-2025-data-privacy-and-cybersecurity"
-    },
-    {
-      "id": "gn-governance-politics-29",
-      "title": "AI trends for 2025: AI regulation, governance and ethics - Dentons",
-      "summary": "AI trends for 2025: AI regulation, governance and ethics&nbsp;&nbsp;Dentons",
-      "topic": "governance-politics",
-      "source": "Dentons",
-      "date": "Fri, 10 Jan 2025 08:00:00 GMT",
-      "imageUrl": "https://www.dentons.com/-/media/images/website/background-images/other/global-ai/adobestock_254848510-1900x1500.ashx",
-      "url": "https://www.dentons.com/en/insights/articles/2025/january/10/ai-trends-for-2025-ai-regulation-governance-and-ethics"
     },
     {
       "id": "gn-digital-security-19",
@@ -2763,7 +2763,7 @@
       "url": "https://www.scworld.com/feature/how-will-rules-and-regulations-affect-cybersecurity-and-ai-in-2025"
     },
     {
-      "id": "gn-governance-politics-23",
+      "id": "gn-governance-politics-24",
       "title": "Even Under Trump, AI Governance Is Here to Stay - Fair Observer",
       "summary": "Even Under Trump, AI Governance Is Here to Stay&nbsp;&nbsp;Fair Observer",
       "topic": "governance-politics",
@@ -2771,6 +2771,16 @@
       "date": "Thu, 02 Jan 2025 08:00:00 GMT",
       "imageUrl": "https://www.fairobserver.com/wp-content/uploads/2025/01/AI.webp",
       "url": "https://www.fairobserver.com/politics/even-under-trump-ai-governance-is-here-to-stay/"
+    },
+    {
+      "id": "gn-business-economy-28",
+      "title": "Boston’s startup economy is poised for growth in 2025 - The Boston Globe",
+      "summary": "Boston’s startup economy is poised for growth in 2025&nbsp;&nbsp;The Boston Globe",
+      "topic": "business-economy",
+      "source": "The Boston Globe",
+      "date": "Tue, 31 Dec 2024 08:00:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&auto=format",
+      "url": "https://www.bostonglobe.com/2024/12/31/business/boston-startup-economy-growth-2025-investors/"
     },
     {
       "id": "gn-digital-security-28",
@@ -2783,17 +2793,7 @@
       "url": "https://www.ibm.com/think/topics/cybersecurity"
     },
     {
-      "id": "gn-visual-art-photography-14",
-      "title": "Opinion: From Awe to Oct. 7, a San Diego Digital Artist Explores the Meaning of Israel in Imagery - Times of San Diego",
-      "summary": "Opinion: From Awe to Oct. 7, a San Diego Digital Artist Explores the Meaning of Israel in Imagery&nbsp;&nbsp;Times of San Diego",
-      "topic": "visual-art-photography",
-      "source": "Times of San Diego",
-      "date": "Sun, 22 Dec 2024 08:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=600&h=400&fit=crop&auto=format",
-      "url": "https://timesofsandiego.com/opinion/2024/12/22/from-awe-to-oct-7-a-san-diego-digital-artist-explores-the-meaning-of-israel-in-imagery/"
-    },
-    {
-      "id": "gn-musical-art-22",
+      "id": "gn-musical-art-23",
       "title": "The Ghosts in the Machine, by Liz Pelly - Harper's Magazine",
       "summary": "The Ghosts in the Machine, by Liz Pelly&nbsp;&nbsp;Harper's Magazine",
       "topic": "musical-art",
@@ -2803,7 +2803,7 @@
       "url": "https://harpers.org/archive/2025/01/the-ghosts-in-the-machine-liz-pelly-spotify-musicians/"
     },
     {
-      "id": "gn-business-economy-24",
+      "id": "gn-business-economy-19",
       "title": "These creator-economy startups raised millions this year in areas ranging from AI to newsletters - Business Insider",
       "summary": "These creator-economy startups raised millions this year in areas ranging from AI to newsletters&nbsp;&nbsp;Business Insider",
       "topic": "business-economy",
@@ -2833,7 +2833,27 @@
       "url": "https://aibusiness.com/automation/agentic-ai-set-to-rise-with-new-cybersecurity-risks-gartner"
     },
     {
-      "id": "gn-governance-politics-25",
+      "id": "gn-visual-art-photography-13",
+      "title": "Do You Believe That AI Will Ruin Photography? Do You See It Already Happening? - Fstoppers",
+      "summary": "Do You Believe That AI Will Ruin Photography? Do You See It Already Happening?&nbsp;&nbsp;Fstoppers",
+      "topic": "visual-art-photography",
+      "source": "Fstoppers",
+      "date": "Sat, 23 Nov 2024 08:00:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPekJSdndRRE1nY3djZ05reXY5Q2p4bFlZMkhrcURKR0ItbGNVSWliY25BTlZCVmVIQ3pIY0F0M0ltbUY3N0xuOW9jT0hiZ0lJU1Y2Z3MxZUtGN29TbVVUUUF4S2lWMWhYRE5JVmY0eVI4QmNDdFhDU2xFRkJoRmRKSFZ1OTV5WmgwLWVzcjliWDVGcUp3d1NKVWJwN2lPTERqbEZHS05VQ2JyNjlLaG9B?oc=5"
+    },
+    {
+      "id": "gn-digital-security-29",
+      "title": "We asked 6 tech strategy leaders how they're promoting security and reliability. Here's what they said - weforum.org",
+      "summary": "We asked 6 tech strategy leaders how they're promoting security and reliability. Here's what they said&nbsp;&nbsp;weforum.org",
+      "topic": "digital-security",
+      "source": "weforum.org",
+      "date": "Tue, 19 Nov 2024 08:00:00 GMT",
+      "imageUrl": "https://assets.weforum.org/article/image/responsive_large_cj6SyHLO841jAGPUA-Yz3dq-bsVsLlNXgMtPAp3oHS0.jpg",
+      "url": "https://www.weforum.org/stories/2024/11/tech-strategy-leaders-security-reliability/"
+    },
+    {
+      "id": "gn-governance-politics-26",
       "title": "AI policy directions in the new Trump administration - Brookings",
       "summary": "AI policy directions in the new Trump administration&nbsp;&nbsp;Brookings",
       "topic": "governance-politics",
@@ -2843,7 +2863,7 @@
       "url": "https://www.brookings.edu/articles/ai-policy-directions-in-the-new-trump-administration/"
     },
     {
-      "id": "gn-musical-art-13",
+      "id": "gn-musical-art-14",
       "title": "How Spotify Will Handle — And Harness — Generative AI - Medium",
       "summary": "How Spotify Will Handle — And Harness — Generative AI&nbsp;&nbsp;Medium",
       "topic": "musical-art",
@@ -2851,26 +2871,6 @@
       "date": "Thu, 14 Nov 2024 08:00:00 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&h=400&fit=crop&auto=format",
       "url": "https://kantrowitz.medium.com/how-spotify-will-handle-and-harness-generative-ai-ccd9ec89043d"
-    },
-    {
-      "id": "gn-environment-science-29",
-      "title": "The Role of Quantum Technology in Sustainable Development - AZoQuantum",
-      "summary": "The Role of Quantum Technology in Sustainable Development&nbsp;&nbsp;AZoQuantum",
-      "topic": "environment-science",
-      "source": "AZoQuantum",
-      "date": "Wed, 13 Nov 2024 08:00:00 GMT",
-      "imageUrl": "https://www.azoquantum.com/images/Article_Images/ImageForArticle_556_17315131307619090.jpg",
-      "url": "https://www.azoquantum.com/Article.aspx?ArticleID=556"
-    },
-    {
-      "id": "gn-environment-science-27",
-      "title": "Quantum Computing In Climate Modeling And Environmental Science - Quantum Zeitgeist",
-      "summary": "Quantum Computing In Climate Modeling And Environmental Science&nbsp;&nbsp;Quantum Zeitgeist",
-      "topic": "environment-science",
-      "source": "Quantum Zeitgeist",
-      "date": "Mon, 11 Nov 2024 08:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=600&h=400&fit=crop&auto=format",
-      "url": "https://quantumzeitgeist.com/quantum-computing-in-climate-modeling-and-environmental-science/"
     },
     {
       "id": "gn-digital-security-22",
@@ -2883,7 +2883,7 @@
       "url": "https://blog.checkpoint.com/security/2025-cyber-security-predictions-the-rise-of-ai-driven-attacks-quantum-threats-and-social-media-exploitation/"
     },
     {
-      "id": "gn-visual-art-photography-27",
+      "id": "gn-visual-art-photography-24",
       "title": "As A.I. Becomes Harder to Detect, Photography Is Having a Renaissance (Published 2024) - The New York Times",
       "summary": "As A.I. Becomes Harder to Detect, Photography Is Having a Renaissance (Published 2024)&nbsp;&nbsp;The New York Times",
       "topic": "visual-art-photography",
@@ -2893,7 +2893,17 @@
       "url": "https://www.nytimes.com/2024/10/25/arts/artificial-intelligence-photography-museums.html"
     },
     {
-      "id": "gn-visual-art-photography-22",
+      "id": "gn-business-economy-24",
+      "title": "U.S. Creator Startup Funding Drops, Ending Two Quarter Rebound - The Information",
+      "summary": "U.S. Creator Startup Funding Drops, Ending Two Quarter Rebound&nbsp;&nbsp;The Information",
+      "topic": "business-economy",
+      "source": "The Information",
+      "date": "Thu, 17 Oct 2024 07:00:00 GMT",
+      "imageUrl": "https://tii.imgix.net/production/articles/13808/161e7f5e-4942-46f9-abed-ddc764b18d91-PtCjXD.png?fm=jpg&auto=compress&w=1200&frame=0",
+      "url": "https://www.theinformation.com/newsletters/creator-economy/u-s-creator-startup-funding-drops-ending-two-quarter-rebound"
+    },
+    {
+      "id": "gn-visual-art-photography-20",
       "title": "How I Fell Back in Love with iPhone Photography - The New Yorker",
       "summary": "How I Fell Back in Love with iPhone Photography&nbsp;&nbsp;The New Yorker",
       "topic": "visual-art-photography",
@@ -2903,7 +2913,7 @@
       "url": "https://www.newyorker.com/culture/infinite-scroll/how-i-fell-back-in-love-with-iphone-photography"
     },
     {
-      "id": "gn-visual-art-photography-17",
+      "id": "gn-visual-art-photography-15",
       "title": "The Great AI Debate: Will Artificial Intelligence Revolutionize or Ruin Photography? - Fstoppers",
       "summary": "The Great AI Debate: Will Artificial Intelligence Revolutionize or Ruin Photography?&nbsp;&nbsp;Fstoppers",
       "topic": "visual-art-photography",
@@ -2913,7 +2923,7 @@
       "url": "https://fstoppers.com/artificial-intelligence/great-ai-debate-will-artificial-intelligence-revolutionize-or-ruin-photography-679773"
     },
     {
-      "id": "gn-environment-science-23",
+      "id": "gn-environment-science-24",
       "title": "European Scientists’ Quantum Space Sensor Could Help Monitor Climate - The Quantum Insider",
       "summary": "European Scientists’ Quantum Space Sensor Could Help Monitor Climate&nbsp;&nbsp;The Quantum Insider",
       "topic": "environment-science",
@@ -2923,7 +2933,7 @@
       "url": "https://thequantuminsider.com/2024/09/26/european-scientists-quantum-space-sensor-could-help-monitor-climate/"
     },
     {
-      "id": "gn-governance-politics-13",
+      "id": "gn-governance-politics-14",
       "title": "Regulating Under Uncertainty: Governance Options for Generative AI - Stanford Cyber Policy Center",
       "summary": "Regulating Under Uncertainty: Governance Options for Generative AI&nbsp;&nbsp;Stanford Cyber Policy Center",
       "topic": "governance-politics",
@@ -2943,7 +2953,7 @@
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWEVFMk9XbTkzZUUxdmlHcDNrM0l0aEhZVmtINnV4bHc2YVkyMHZQMWNmZ0NyTE1XMG1RMmJUeXo0SHBRQnd0eDlkalFTdmdvWl9xQzNfQldEbHo5MzBMZld1X1BPX2YySHpHWUc5cEVrLTBpMkJhY3M5d1g5V25nck8zS3RXbkRKMklqSmJUUkxhTVBwQ1UxM3FrcjEtYlo3Z1h6a2M2SVRMZW8?oc=5"
     },
     {
-      "id": "gn-governance-politics-15",
+      "id": "gn-governance-politics-16",
       "title": "AI Governance in a Complex and Rapidly Changing Regulatory Landscape: A Global Perspective - Nature",
       "summary": "AI Governance in a Complex and Rapidly Changing Regulatory Landscape: A Global Perspective&nbsp;&nbsp;Nature",
       "topic": "governance-politics",
@@ -2951,6 +2961,16 @@
       "date": "Sun, 01 Sep 2024 07:00:00 GMT",
       "imageUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1057%2Fs41599-024-03560-x/MediaObjects/41599_2024_3560_Fig1_HTML.png",
       "url": "https://www.nature.com/articles/s41599-024-03560-x"
+    },
+    {
+      "id": "gn-business-economy-29",
+      "title": "How A.I. Can Help Start Small Businesses (Published 2024) - The New York Times",
+      "summary": "How A.I. Can Help Start Small Businesses (Published 2024)&nbsp;&nbsp;The New York Times",
+      "topic": "business-economy",
+      "source": "The New York Times",
+      "date": "Sun, 18 Aug 2024 07:00:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&h=400&fit=crop&auto=format",
+      "url": "https://www.nytimes.com/2024/08/18/business/economy/ai-business-startups.html"
     },
     {
       "id": "gn-musical-art-27",
@@ -2973,7 +2993,7 @@
       "url": "https://www.vox.com/the-highlight/358201/how-does-ai-music-work-benefits-creativity-production-spotify"
     },
     {
-      "id": "gn-musical-art-25",
+      "id": "gn-musical-art-26",
       "title": "Udio, Suno: AI-generated music is already competing for low added value orders - Orange.com",
       "summary": "Udio, Suno: AI-generated music is already competing for low added value orders&nbsp;&nbsp;Orange.com",
       "topic": "musical-art",
@@ -2983,17 +3003,7 @@
       "url": "https://hellofuture.orange.com/en/udio-suno-ai-generated-music-is-already-competing-for-low-added-value-orders/"
     },
     {
-      "id": "gn-digital-security-29",
-      "title": "What Is AI Security? - ibm.com",
-      "summary": "What Is AI Security?&nbsp;&nbsp;ibm.com",
-      "topic": "digital-security",
-      "source": "ibm.com",
-      "date": "Thu, 13 Jun 2024 20:15:14 GMT",
-      "imageUrl": "https://www.ibm.com/content/dam/worldwide-content/stock-assets/adb-stk/ul/g/53/e1/adobestock_548085652.jpeg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg",
-      "url": "https://www.ibm.com/think/topics/ai-security"
-    },
-    {
-      "id": "gn-digital-security-18",
+      "id": "gn-digital-security-17",
       "title": "Cyber security risks to artificial intelligence - GOV.UK",
       "summary": "Cyber security risks to artificial intelligence&nbsp;&nbsp;GOV.UK",
       "topic": "digital-security",
@@ -3003,7 +3013,7 @@
       "url": "https://www.gov.uk/government/publications/research-on-the-cyber-security-of-ai/cyber-security-risks-to-artificial-intelligence"
     },
     {
-      "id": "gn-chatbot-development-22",
+      "id": "gn-chatbot-development-23",
       "title": "Hello GPT-4o - openai.com",
       "summary": "Hello GPT-4o&nbsp;&nbsp;openai.com",
       "topic": "chatbot-development",
@@ -3023,7 +3033,7 @@
       "url": "https://www.paloaltonetworks.com/cyberpedia/role-of-artificial-intelligence-ai-in-security-automation"
     },
     {
-      "id": "gn-environment-science-11",
+      "id": "gn-environment-science-13",
       "title": "Study Spotlights 7 Ways Quantum Computers Could Help Solve Climate Change - The Quantum Insider",
       "summary": "Study Spotlights 7 Ways Quantum Computers Could Help Solve Climate Change&nbsp;&nbsp;The Quantum Insider",
       "topic": "environment-science",
@@ -3031,16 +3041,6 @@
       "date": "Tue, 07 May 2024 07:00:00 GMT",
       "imageUrl": "https://thequantuminsider.com/wp-content/uploads/2024/05/sun-melting-glacier-ice-cap-due-to-global-warming-and-climate-change-causing-environmental-impact-at.jpg",
       "url": "https://thequantuminsider.com/2024/05/07/study-spotlights-7-ways-quantum-computers-could-help-solve-climate-change/"
-    },
-    {
-      "id": "gn-environment-science-28",
-      "title": "The Future Of Climate Could Be In Quantum Computing - Forbes",
-      "summary": "The Future Of Climate Could Be In Quantum Computing&nbsp;&nbsp;Forbes",
-      "topic": "environment-science",
-      "source": "Forbes",
-      "date": "Tue, 07 May 2024 07:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.forbes.com/sites/jenniferturliuk/2024/05/07/the-future-of-climate-could-be-in-quantum-computing/"
     },
     {
       "id": "gn-digital-security-23",
@@ -3053,16 +3053,6 @@
       "url": "https://www.paloaltonetworks.com/cyberpedia/what-are-barriers-to-ai-adoption-in-cybersecurity"
     },
     {
-      "id": "gn-visual-art-photography-5",
-      "title": "OK, you made an AI-image. What the heck am I supposed to be looking at? - DIYPhotography",
-      "summary": "OK, you made an AI-image. What the heck am I supposed to be looking at?&nbsp;&nbsp;DIYPhotography",
-      "topic": "visual-art-photography",
-      "source": "DIYPhotography",
-      "date": "Mon, 25 Mar 2024 07:00:00 GMT",
-      "imageUrl": "https://www.diyphotography.net/wp-content/uploads/2024/03/don1.jpg",
-      "url": "https://www.diyphotography.net/ok-you-made-an-ai-image-what-the-heck-am-i-supposed-to-be-looking-at/"
-    },
-    {
       "id": "gn-digital-security-13",
       "title": "AI and cyber security: what you need to know - National Cyber Security Centre - NCSC.GOV.UK",
       "summary": "AI and cyber security: what you need to know&nbsp;&nbsp;National Cyber Security Centre - NCSC.GOV.UK",
@@ -3073,7 +3063,7 @@
       "url": "https://www.ncsc.gov.uk/guidance/ai-and-cyber-security-what-you-need-to-know"
     },
     {
-      "id": "gn-environment-science-24",
+      "id": "gn-environment-science-25",
       "title": "9 ways AI is helping tackle climate change - weforum.org",
       "summary": "9 ways AI is helping tackle climate change&nbsp;&nbsp;weforum.org",
       "topic": "environment-science",
@@ -3083,7 +3073,7 @@
       "url": "https://www.weforum.org/stories/2024/02/ai-combat-climate-change/"
     },
     {
-      "id": "gn-environment-science-25",
+      "id": "gn-environment-science-28",
       "title": "6 technologies to help the world adapt to climate change - weforum.org",
       "summary": "6 technologies to help the world adapt to climate change&nbsp;&nbsp;weforum.org",
       "topic": "environment-science",
@@ -3093,7 +3083,7 @@
       "url": "https://www.weforum.org/stories/2024/02/ai-climate-adaptation-technologies/"
     },
     {
-      "id": "gn-visual-art-photography-11",
+      "id": "gn-visual-art-photography-9",
       "title": "Opinion | A.I. Is the Future of Photography. Does That Mean Photography Is Dead? (Published 2023) - The New York Times",
       "summary": "Opinion | A.I. Is the Future of Photography. Does That Mean Photography Is Dead? (Published 2023)&nbsp;&nbsp;The New York Times",
       "topic": "visual-art-photography",
@@ -3103,7 +3093,7 @@
       "url": "https://www.nytimes.com/2023/12/26/opinion/ai-future-photography.html"
     },
     {
-      "id": "gn-visual-art-photography-28",
+      "id": "gn-visual-art-photography-25",
       "title": "UCR Arts exhibition explores where AI meets art - University of California, Riverside",
       "summary": "UCR Arts exhibition explores where AI meets art&nbsp;&nbsp;University of California, Riverside",
       "topic": "visual-art-photography",
@@ -3113,7 +3103,7 @@
       "url": "https://news.ucr.edu/articles/2023/12/19/ucr-arts-exhibition-explores-where-ai-meets-art"
     },
     {
-      "id": "gn-governance-politics-27",
+      "id": "gn-governance-politics-29",
       "title": "The AI regulations that aren’t being talked about - Deloitte",
       "summary": "The AI regulations that aren’t being talked about&nbsp;&nbsp;Deloitte",
       "topic": "governance-politics",
@@ -3133,7 +3123,7 @@
       "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/"
     },
     {
-      "id": "gn-visual-art-photography-15",
+      "id": "gn-visual-art-photography-14",
       "title": "AI Image Creators Will Replace Some Photographers Sooner Than You Think - Fstoppers",
       "summary": "AI Image Creators Will Replace Some Photographers Sooner Than You Think&nbsp;&nbsp;Fstoppers",
       "topic": "visual-art-photography",
@@ -3153,7 +3143,7 @@
       "url": "https://www.pewresearch.org/internet/2023/08/17/what-americans-know-about-ai-cybersecurity-and-big-tech/"
     },
     {
-      "id": "gn-visual-art-photography-4",
+      "id": "gn-visual-art-photography-3",
       "title": "In AI Photography, Where is the Line Between a Photograph and Digital Art? - The Phoblographer",
       "summary": "In AI Photography, Where is the Line Between a Photograph and Digital Art?&nbsp;&nbsp;The Phoblographer",
       "topic": "visual-art-photography",
@@ -3163,7 +3153,7 @@
       "url": "https://www.thephoblographer.com/2023/08/17/ai-photography-where-is-the-line/"
     },
     {
-      "id": "gn-musical-art-24",
+      "id": "gn-musical-art-25",
       "title": "3 ways AI is transforming music - The Conversation",
       "summary": "3 ways AI is transforming music&nbsp;&nbsp;The Conversation",
       "topic": "musical-art",
@@ -3173,17 +3163,7 @@
       "url": "https://theconversation.com/3-ways-ai-is-transforming-music-210598"
     },
     {
-      "id": "gn-visual-art-photography-16",
-      "title": "This is why AI will never really replace photography - DIYPhotography",
-      "summary": "This is why AI will never really replace photography&nbsp;&nbsp;DIYPhotography",
-      "topic": "visual-art-photography",
-      "source": "DIYPhotography",
-      "date": "Fri, 11 Aug 2023 07:00:00 GMT",
-      "imageUrl": "https://www.diyphotography.net/wp-content/uploads/2023/08/AI-cant-replace-real-photos-11-scaled.jpg",
-      "url": "https://www.diyphotography.net/this-is-why-ai-will-never-really-replace-photography/"
-    },
-    {
-      "id": "gn-visual-art-photography-13",
+      "id": "gn-visual-art-photography-11",
       "title": "[Animations Now Working] Photography vs Synthography: AI Image Generation is Here - Redheaded Blackbelt",
       "summary": "[Animations Now Working] Photography vs Synthography: AI Image Generation is Here&nbsp;&nbsp;Redheaded Blackbelt",
       "topic": "visual-art-photography",
@@ -3193,7 +3173,7 @@
       "url": "https://kymkemp.com/2023/07/18/photography/"
     },
     {
-      "id": "gn-governance-politics-26",
+      "id": "gn-governance-politics-27",
       "title": "The three challenges of AI regulation - Brookings",
       "summary": "The three challenges of AI regulation&nbsp;&nbsp;Brookings",
       "topic": "governance-politics",
@@ -3203,17 +3183,17 @@
       "url": "https://www.brookings.edu/articles/the-three-challenges-of-ai-regulation/"
     },
     {
-      "id": "gn-visual-art-photography-18",
+      "id": "gn-visual-art-photography-16",
       "title": "AI Photography: A Fed-up Tim Tadder Sets the Record Straight - Fstoppers",
       "summary": "AI Photography: A Fed-up Tim Tadder Sets the Record Straight&nbsp;&nbsp;Fstoppers",
       "topic": "visual-art-photography",
       "source": "Fstoppers",
       "date": "Mon, 24 Apr 2023 07:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQM2hEbXNIUE53TWo2ZlR0RzVEWFF5NHhnWDZvekxrSk54eEhuWEtkVGVOelhwcXlRUGl2MnFwYlZTeDNaYUFtUDF6TmNJWWVNS2N2c0pQemZOS29qRHdKZzFIWnMwSDY1TEVUdndJMDBfUVNFMUlybG1NdE56dDMybWFCd0p6NGlTZzFOTzRMb1B1dWxSdTFMc1RPN19rZ01lZGhrRFZB?oc=5"
+      "imageUrl": "https://cdn.fstoppers.com/styles/medium/s3/lead/2023/04/tim-tadder-interview-ai-fstoppers-michelle-vantine-photography.jpg?itok=-SCHyOiS",
+      "url": "https://fstoppers.com/artificial-intelligence/ai-photography-fed-tim-tadder-sets-record-straight-630796"
     },
     {
-      "id": "gn-visual-art-photography-12",
+      "id": "gn-visual-art-photography-10",
       "title": "The camera never lies? Creator of AI image rejects prestigious photo award - The Art Newspaper",
       "summary": "The camera never lies? Creator of AI image rejects prestigious photo award&nbsp;&nbsp;The Art Newspaper",
       "topic": "visual-art-photography",
@@ -3233,7 +3213,7 @@
       "url": "https://www.musicbusinessworldwide.com/this-drake-ai-rip-off-already-has-250000-plays-on-spotify-is-it-a-ticking-time-bomb-for-music-rightsholders/"
     },
     {
-      "id": "gn-visual-art-photography-20",
+      "id": "gn-visual-art-photography-18",
       "title": "How Can Photographers Leverage AI and What Are the Dangers Ahead? - Fstoppers",
       "summary": "How Can Photographers Leverage AI and What Are the Dangers Ahead?&nbsp;&nbsp;Fstoppers",
       "topic": "visual-art-photography",
@@ -3243,7 +3223,7 @@
       "url": "https://fstoppers.com/opinion/how-can-photographers-leverage-ai-and-what-are-dangers-ahead-630110"
     },
     {
-      "id": "gn-visual-art-photography-7",
+      "id": "gn-visual-art-photography-4",
       "title": "What Is Art? - Fstoppers",
       "summary": "What Is Art?&nbsp;&nbsp;Fstoppers",
       "topic": "visual-art-photography",
@@ -3253,7 +3233,7 @@
       "url": "https://fstoppers.com/business/what-art-630039"
     },
     {
-      "id": "gn-visual-art-photography-9",
+      "id": "gn-visual-art-photography-6",
       "title": "What Is AI Doing To Art? - Noema Magazine",
       "summary": "What Is AI Doing To Art?&nbsp;&nbsp;Noema Magazine",
       "topic": "visual-art-photography",
@@ -3263,7 +3243,7 @@
       "url": "https://www.noemamag.com/what-is-ai-doing-to-art/"
     },
     {
-      "id": "gn-visual-art-photography-29",
+      "id": "gn-visual-art-photography-26",
       "title": "No, AI Will Not Kill Professional Photography: Here Is Why - Fstoppers",
       "summary": "No, AI Will Not Kill Professional Photography: Here Is Why&nbsp;&nbsp;Fstoppers",
       "topic": "visual-art-photography",
@@ -3273,7 +3253,7 @@
       "url": "https://fstoppers.com/opinion/no-ai-will-not-kill-professional-photography-here-why-624554"
     },
     {
-      "id": "gn-visual-art-photography-21",
+      "id": "gn-visual-art-photography-12",
       "title": "AI or No, It’s Always Too Soon to Sound the Death Knell of Art - WIRED",
       "summary": "AI or No, It’s Always Too Soon to Sound the Death Knell of Art&nbsp;&nbsp;WIRED",
       "topic": "visual-art-photography",
@@ -3283,7 +3263,17 @@
       "url": "https://www.wired.com/story/art-history-photography-painting-dalle-ai/"
     },
     {
-      "id": "gn-visual-art-photography-23",
+      "id": "gn-visual-art-photography-28",
+      "title": "AI image generation is advancing at astronomical speeds. Can we still tell if a picture is fake? - The Conversation",
+      "summary": "AI image generation is advancing at astronomical speeds. Can we still tell if a picture is fake?&nbsp;&nbsp;The Conversation",
+      "topic": "visual-art-photography",
+      "source": "The Conversation",
+      "date": "Wed, 12 Oct 2022 07:00:00 GMT",
+      "imageUrl": "https://images.theconversation.com/files/488438/original/file-20221006-14-objv4e.png?ixlib=rb-4.1.0&rect=65%2C0%2C2042%2C1019&q=45&auto=format&w=1356&h=668&fit=crop",
+      "url": "https://theconversation.com/ai-image-generation-is-advancing-at-astronomical-speeds-can-we-still-tell-if-a-picture-is-fake-191674"
+    },
+    {
+      "id": "gn-visual-art-photography-19",
       "title": "Is It Time To Sell Your Camera and Improve Your Adjectives? The Camera Is Dead, Long Live AI - Fstoppers",
       "summary": "Is It Time To Sell Your Camera and Improve Your Adjectives? The Camera Is Dead, Long Live AI&nbsp;&nbsp;Fstoppers",
       "topic": "visual-art-photography",
@@ -3293,7 +3283,17 @@
       "url": "https://fstoppers.com/software/it-time-sell-your-camera-and-improve-your-adjectives-camera-dead-long-live-ai-615563"
     },
     {
-      "id": "gn-environment-science-26",
+      "id": "gn-environment-science-29",
+      "title": "Quantum computing just might save the planet - McKinsey &amp; Company",
+      "summary": "Quantum computing just might save the planet&nbsp;&nbsp;McKinsey & Company",
+      "topic": "environment-science",
+      "source": "McKinsey &amp; Company",
+      "date": "Thu, 19 May 2022 07:00:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop&auto=format",
+      "url": "chrome-error://chromewebdata/"
+    },
+    {
+      "id": "gn-environment-science-23",
       "title": "Accelerating discovery of methods to confront climate change - IBM Research",
       "summary": "Accelerating discovery of methods to confront climate change&nbsp;&nbsp;IBM Research",
       "topic": "environment-science",
