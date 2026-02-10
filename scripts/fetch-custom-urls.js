@@ -1,9 +1,13 @@
 #!/usr/bin/env node
 // Fetch real article URLs and OG images from custom sections using a headless browser.
-// Reads rssUrl from each section in custom-articles.json, navigates with Playwright,
-// and updates the file with real URLs, titles, dates, and images.
+// Each section in custom-articles.json can have:
+//   - pageUrl: the page to navigate to (e.g. landing page where articles are listed)
+//   - collectionSlug: URL path fragment to filter article links (e.g. "/ai-market-insight/")
 //
-// Usage: npx playwright install chromium && node scripts/fetch-custom-urls.js
+// The script navigates to pageUrl with Playwright, finds links containing collectionSlug,
+// visits each article to grab the OG image and publish date, then updates custom-articles.json.
+//
+// Usage: npm install playwright && npx playwright install chromium && node scripts/fetch-custom-urls.js
 
 const fs = require("fs");
 const path = require("path");
@@ -24,20 +28,19 @@ async function main() {
     return;
   }
 
-  // Only process sections that have an rssUrl (i.e. are sourced from a website)
-  const sectionsToFetch = customData.sections.filter((s) => s.rssUrl);
+  // Only process sections that have a pageUrl (i.e. are sourced from a website)
+  const sectionsToFetch = customData.sections.filter((s) => s.pageUrl);
   if (sectionsToFetch.length === 0) {
-    console.log("No sections with rssUrl, skipping browser fetch.");
+    console.log("No sections with pageUrl, skipping browser fetch.");
     return;
   }
 
-  // Dynamically require playwright (installed via npx in CI)
+  // Dynamically require playwright (installed via npm in CI)
   let chromium;
   try {
     ({ chromium } = require("playwright"));
   } catch {
     try {
-      // Fallback: global install path
       ({ chromium } = require("/opt/node22/lib/node_modules/playwright"));
     } catch {
       console.warn("Playwright not available, skipping browser-based fetch.");
@@ -61,77 +64,84 @@ async function main() {
   for (const section of sectionsToFetch) {
     console.log(`\nFetching articles for "${section.title}" ...`);
 
-    // Derive the collection page URL from the rssUrl (strip ?format=rss)
-    const pageUrl = section.rssUrl.replace(/\?format=rss$/, "");
+    const pageUrl = section.pageUrl;
+    const slug = section.collectionSlug || `/${section.id}/`;
 
     try {
       const page = await context.newPage();
       await page.goto(pageUrl, { waitUntil: "networkidle", timeout: 30000 });
       console.log(`  Page loaded: ${pageUrl}`);
 
-      // Extract article links from the Squarespace collection page
-      const articles = await page.evaluate((sectionPageUrl) => {
+      // Extract article links from the landing page, filtered by collectionSlug
+      const articles = await page.evaluate((filterSlug) => {
         const results = [];
         const seen = new Set();
 
-        // Squarespace uses various selectors for blog list items
-        const selectors = [
-          "article a[href]",
-          ".summary-item a[href]",
-          ".blog-item a[href]",
-          ".collection-item a[href]",
-          ".sqs-block a[href]",
-        ];
+        // Find ALL links on the page that contain the collection slug
+        const allLinks = document.querySelectorAll("a[href]");
 
-        // Also match links containing the collection slug
-        const urlPath = new URL(sectionPageUrl).pathname;
-        if (urlPath && urlPath !== "/") {
-          selectors.push(`a[href*="${urlPath}/"]`);
-        }
+        for (const el of allLinks) {
+          const href = el.href;
+          if (!href || seen.has(href)) continue;
+          if (!href.includes("thedayafterai.com")) continue;
 
-        for (const sel of selectors) {
-          for (const el of document.querySelectorAll(sel)) {
-            const href = el.href;
-            if (!href || seen.has(href)) continue;
-            if (!href.includes("thedayafterai.com")) continue;
-            if (href === sectionPageUrl || href === sectionPageUrl + "/") continue;
-            // Must be a sub-page (article), not just the collection page
-            const hrefPath = new URL(href).pathname;
-            if (hrefPath === urlPath || hrefPath === urlPath + "/") continue;
-            seen.add(href);
+          // Filter: only links whose path contains the collection slug
+          try {
+            const linkPath = new URL(href).pathname;
+            // Must contain the slug AND be a sub-page (not just the collection index)
+            // e.g. /ai-market-insight/some-article-slug (not just /ai-market-insight/ or /ai-market-insight)
+            if (!linkPath.includes(filterSlug)) continue;
+            // Ensure there's content after the slug (it's an actual article, not the index)
+            const afterSlug = linkPath.split(filterSlug)[1];
+            if (!afterSlug || afterSlug === "/" || afterSlug === "") continue;
+          } catch {
+            continue;
+          }
 
-            let title =
-              el.querySelector("h1, h2, h3, h4")?.textContent?.trim() ||
-              el.textContent?.trim().substring(0, 200) ||
-              "";
-            // Clean up whitespace
-            title = title.replace(/\s+/g, " ").trim();
+          seen.add(href);
 
-            let imageUrl = "";
-            const img =
-              el.querySelector("img") ||
-              el.closest("article, .summary-item")?.querySelector("img");
-            if (img) {
-              imageUrl = img.dataset?.src || img.src || "";
-            }
+          // Extract title from the link or nearby heading
+          let title =
+            el.querySelector("h1, h2, h3, h4")?.textContent?.trim() ||
+            el.closest("article, .summary-item, .blog-item, .sqs-block")?.querySelector("h1, h2, h3, h4")?.textContent?.trim() ||
+            el.textContent?.trim().substring(0, 200) ||
+            "";
+          title = title.replace(/\s+/g, " ").trim();
 
-            if (title) {
-              results.push({ url: href, title, imageUrl });
-            }
+          // Extract image from the link or its parent article container
+          let imageUrl = "";
+          const container = el.closest("article, .summary-item, .blog-item, .sqs-block") || el.parentElement;
+          const img = el.querySelector("img") || container?.querySelector("img");
+          if (img) {
+            imageUrl = img.dataset?.src || img.src || "";
+          }
+
+          if (title) {
+            results.push({ url: href, title, imageUrl });
           }
         }
 
         return results;
-      }, pageUrl);
+      }, slug);
 
       await page.close();
 
-      console.log(`  Found ${articles.length} article links`);
+      // Deduplicate by URL (some links may appear multiple times in different selectors)
+      const uniqueArticles = [];
+      const seenUrls = new Set();
+      for (const a of articles) {
+        if (!seenUrls.has(a.url)) {
+          seenUrls.add(a.url);
+          uniqueArticles.push(a);
+        }
+      }
 
-      if (articles.length > 0) {
-        // Fetch OG images from individual article pages
-        console.log("  Fetching OG images...");
-        for (const article of articles) {
+      console.log(`  Found ${uniqueArticles.length} article links matching "${slug}"`);
+
+      if (uniqueArticles.length > 0) {
+        // Fetch OG images and dates from individual article pages
+        console.log("  Fetching OG images from article pages...");
+        for (const article of uniqueArticles) {
           try {
             const articlePage = await context.newPage();
             await articlePage.goto(article.url, {
@@ -142,8 +152,10 @@ async function main() {
             const meta = await articlePage.evaluate(() => {
               const ogImg = document.querySelector('meta[property="og:image"]')?.getAttribute("content") || "";
               const twImg = document.querySelector('meta[name="twitter:image"]')?.getAttribute("content") || "";
-              const pubDate = document.querySelector('meta[property="article:published_time"]')?.getAttribute("content") ||
-                document.querySelector('time[datetime]')?.getAttribute("datetime") || "";
+              const pubDate =
+                document.querySelector('meta[property="article:published_time"]')?.getAttribute("content") ||
+                document.querySelector('time[datetime]')?.getAttribute("datetime") ||
+                "";
               return { ogImg, twImg, pubDate };
             });
 
@@ -163,7 +175,7 @@ async function main() {
         }
 
         // Update the section's articles
-        section.articles = articles.map((a, i) => ({
+        section.articles = uniqueArticles.map((a, i) => ({
           id: `${section.id}-${i + 1}`,
           title: a.title,
           date: a.date || "",
@@ -172,9 +184,9 @@ async function main() {
           source: "TheDayAfterAI",
         }));
         updated = true;
-        console.log(`  Updated "${section.title}" with ${articles.length} articles`);
+        console.log(`  Updated "${section.title}" with ${uniqueArticles.length} articles`);
       } else {
-        console.log(`  No articles found on page, keeping existing entries.`);
+        console.log(`  No articles found matching "${slug}", keeping existing entries.`);
       }
     } catch (err) {
       console.log(`  Failed to load "${section.title}": ${err.message.split("\n")[0]}`);
