@@ -829,15 +829,72 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-[var(--border)] py-8 mt-8">
-        <div className="max-w-[1400px] mx-auto px-4 md:px-8 flex items-center justify-between flex-wrap gap-4">
-          <span className="text-sm text-[var(--muted)]">
-            &copy; {new Date().getFullYear()} TheDayAfterAI News
-          </span>
-          <div className="flex items-center gap-5">
-            <a href="https://www.facebook.com/thedayafterai" target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Facebook size={18} /></a>
-            <a href={PLAYLIST_URL} target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Youtube size={18} /></a>
-            <a href="https://www.linkedin.com/company/thedayafterai/" target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Linkedin size={18} /></a>
+      <footer className="border-t border-[var(--border)] mt-12">
+        <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-10">
+          {/* Top section: Brand + Category columns */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            {/* Brand column */}
+            <div>
+              <h2 className="text-2xl font-black text-white italic mb-4">TheDayAfterAI News</h2>
+              <div className="flex items-center gap-4 mb-5">
+                <a href="https://www.facebook.com/thedayafterai" target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Facebook size={20} /></a>
+                <a href={PLAYLIST_URL} target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Youtube size={20} /></a>
+                <a href="https://www.linkedin.com/company/thedayafterai/" target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Linkedin size={20} /></a>
+              </div>
+              <div className="flex flex-wrap gap-x-2 gap-y-1 text-xs text-[var(--muted)] mb-4">
+                <a href="https://www.thedayafterai.com/info" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">About Us</a><span>|</span>
+                <a href="https://www.thedayafterai.com/terms" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">Terms of Service</a><span>|</span>
+                <a href="https://www.thedayafterai.com/disclaimer" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">Disclaimer</a><span>|</span>
+                <a href="https://www.thedayafterai.com/ethics-policy" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">Ethics Policy</a><span>|</span>
+                <a href="https://www.thedayafterai.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">Privacy Policy</a><span>|</span>
+                <a href="https://www.thedayafterai.com/licensing" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">Licensing Terms</a><span>|</span>
+                <a href="https://www.thedayafterai.com/advertise" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">Advertise with Us</a>
+              </div>
+              <p className="text-xs text-[var(--text-secondary)] italic">
+                Copyright &copy; 2024-{new Date().getFullYear()} TheDayAfterAI News. All Rights Reserved.
+              </p>
+            </div>
+
+            {/* Tech Frontiers */}
+            <div>
+              <h3 className="text-sm font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-3">Tech Frontiers</h3>
+              <ul className="space-y-2 text-sm">
+                <li><button onClick={() => scrollToSection("ai-academy")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">AI Academy</button></li>
+                <li><button onClick={() => scrollToSection("chatbot-development")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Chatbot Development</button></li>
+                <li><button onClick={() => scrollToSection("technology-innovation")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Technology &amp; Innovation</button></li>
+                <li><button onClick={() => scrollToSection("unmanned-aircraft")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Unmanned Aircraft</button></li>
+              </ul>
+            </div>
+
+            {/* Global Dynamics */}
+            <div>
+              <h3 className="text-sm font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-3">Global Dynamics</h3>
+              <ul className="space-y-2 text-sm">
+                <li><button onClick={() => scrollToSection("business-economy")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Business &amp; Economy</button></li>
+                <li><button onClick={() => scrollToSection("digital-security")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Digital Security</button></li>
+                <li><button onClick={() => scrollToSection("environment-science")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Environment &amp; Science</button></li>
+                <li><button onClick={() => scrollToSection("governance-politics")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Governance &amp; Politics</button></li>
+              </ul>
+            </div>
+
+            {/* Arts & Culture */}
+            <div>
+              <h3 className="text-sm font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-3">Arts &amp; Culture</h3>
+              <ul className="space-y-2 text-sm">
+                <li><button onClick={() => scrollToSection("health-style")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Health &amp; Style</button></li>
+                <li><button onClick={() => scrollToSection("musical-art")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Musical Art</button></li>
+                <li><button onClick={() => scrollToSection("visual-art-photography")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Visual Art &amp; Photography</button></li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Acknowledgment of Country */}
+          <div className="border-t border-[var(--border)] pt-6">
+            <h4 className="text-sm font-bold text-white mb-2">Acknowledgment of Country</h4>
+            <p className="text-xs text-[var(--text-secondary)] leading-relaxed max-w-[1000px]">
+              TheDayAfterAI respectfully acknowledges the Ngunnawal people of the Australian Capital Territory as the Traditional Custodians of the land on which we operate. We pay our respects to their Elders past, present, and emerging, and extend that respect to all Aboriginal and Torres Strait Islander peoples. This acknowledgment honours the enduring connection of Indigenous Australians to their land and culture.{" "}
+              <a href="https://www.reconciliation.org.au/" target="_blank" rel="noopener noreferrer" className="underline hover:text-[var(--accent)] transition-colors">Learn more</a>.
+            </p>
           </div>
         </div>
       </footer>
