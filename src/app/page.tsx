@@ -857,8 +857,8 @@ export default function Home() {
 
             {/* Tech Frontiers */}
             <div>
-              <h3 className="text-sm font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-3">Tech Frontiers</h3>
-              <ul className="space-y-2 text-sm">
+              <h3 className="text-xs font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-2">Tech Frontiers</h3>
+              <ul className="space-y-1 text-[13px]">
                 <li><button onClick={() => scrollToSection("ai-academy")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">AI Academy</button></li>
                 <li><button onClick={() => scrollToSection("chatbot-development")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Chatbot Development</button></li>
                 <li><button onClick={() => scrollToSection("technology-innovation")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Technology &amp; Innovation</button></li>
@@ -868,8 +868,8 @@ export default function Home() {
 
             {/* Global Dynamics */}
             <div>
-              <h3 className="text-sm font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-3">Global Dynamics</h3>
-              <ul className="space-y-2 text-sm">
+              <h3 className="text-xs font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-2">Global Dynamics</h3>
+              <ul className="space-y-1 text-[13px]">
                 <li><button onClick={() => scrollToSection("business-economy")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Business &amp; Economy</button></li>
                 <li><button onClick={() => scrollToSection("digital-security")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Digital Security</button></li>
                 <li><button onClick={() => scrollToSection("environment-science")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Environment &amp; Science</button></li>
@@ -879,8 +879,8 @@ export default function Home() {
 
             {/* Arts & Culture */}
             <div>
-              <h3 className="text-sm font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-3">Arts &amp; Culture</h3>
-              <ul className="space-y-2 text-sm">
+              <h3 className="text-xs font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-2">Arts &amp; Culture</h3>
+              <ul className="space-y-1 text-[13px]">
                 <li><button onClick={() => scrollToSection("health-style")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Health &amp; Style</button></li>
                 <li><button onClick={() => scrollToSection("musical-art")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Musical Art</button></li>
                 <li><button onClick={() => scrollToSection("visual-art-photography")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Visual Art &amp; Photography</button></li>
