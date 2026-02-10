@@ -832,9 +832,9 @@ export default function Home() {
       <footer className="border-t border-[var(--border)] mt-12">
         <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-10">
           {/* Top section: Brand + Category columns */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-            {/* Brand column */}
-            <div>
+          <div className="flex flex-col lg:flex-row gap-8 mb-8">
+            {/* Brand column — wider, takes ~38% */}
+            <div className="lg:w-[38%] lg:pr-8 lg:border-r lg:border-[var(--border)]">
               <h2 className="text-2xl font-black text-white italic mb-4">TheDayAfterAI News</h2>
               <div className="flex items-center gap-4 mb-5">
                 <a href="https://www.facebook.com/thedayafterai" target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Facebook size={20} /></a>
@@ -855,36 +855,39 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Tech Frontiers */}
-            <div>
-              <h3 className="text-xs font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-2">Tech Frontiers</h3>
-              <ul className="space-y-1 text-[13px]">
-                <li><button onClick={() => scrollToSection("ai-academy")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">AI Academy</button></li>
-                <li><button onClick={() => scrollToSection("chatbot-development")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Chatbot Development</button></li>
-                <li><button onClick={() => scrollToSection("technology-innovation")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Technology &amp; Innovation</button></li>
-                <li><button onClick={() => scrollToSection("unmanned-aircraft")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Unmanned Aircraft</button></li>
-              </ul>
-            </div>
+            {/* Category columns — grouped with tighter gaps */}
+            <div className="lg:flex-1 grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-6">
+              {/* Tech Frontiers */}
+              <div>
+                <h3 className="text-xs font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-2">Tech Frontiers</h3>
+                <ul className="space-y-1 text-[13px]">
+                  <li><button onClick={() => scrollToSection("ai-academy")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">AI Academy</button></li>
+                  <li><button onClick={() => scrollToSection("chatbot-development")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Chatbot Development</button></li>
+                  <li><button onClick={() => scrollToSection("technology-innovation")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Technology &amp; Innovation</button></li>
+                  <li><button onClick={() => scrollToSection("unmanned-aircraft")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Unmanned Aircraft</button></li>
+                </ul>
+              </div>
 
-            {/* Global Dynamics */}
-            <div>
-              <h3 className="text-xs font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-2">Global Dynamics</h3>
-              <ul className="space-y-1 text-[13px]">
-                <li><button onClick={() => scrollToSection("business-economy")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Business &amp; Economy</button></li>
-                <li><button onClick={() => scrollToSection("digital-security")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Digital Security</button></li>
-                <li><button onClick={() => scrollToSection("environment-science")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Environment &amp; Science</button></li>
-                <li><button onClick={() => scrollToSection("governance-politics")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Governance &amp; Politics</button></li>
-              </ul>
-            </div>
+              {/* Global Dynamics */}
+              <div>
+                <h3 className="text-xs font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-2">Global Dynamics</h3>
+                <ul className="space-y-1 text-[13px]">
+                  <li><button onClick={() => scrollToSection("business-economy")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Business &amp; Economy</button></li>
+                  <li><button onClick={() => scrollToSection("digital-security")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Digital Security</button></li>
+                  <li><button onClick={() => scrollToSection("environment-science")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Environment &amp; Science</button></li>
+                  <li><button onClick={() => scrollToSection("governance-politics")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Governance &amp; Politics</button></li>
+                </ul>
+              </div>
 
-            {/* Arts & Culture */}
-            <div>
-              <h3 className="text-xs font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-2">Arts &amp; Culture</h3>
-              <ul className="space-y-1 text-[13px]">
-                <li><button onClick={() => scrollToSection("health-style")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Health &amp; Style</button></li>
-                <li><button onClick={() => scrollToSection("musical-art")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Musical Art</button></li>
-                <li><button onClick={() => scrollToSection("visual-art-photography")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Visual Art &amp; Photography</button></li>
-              </ul>
+              {/* Arts & Culture */}
+              <div>
+                <h3 className="text-xs font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-2">Arts &amp; Culture</h3>
+                <ul className="space-y-1 text-[13px]">
+                  <li><button onClick={() => scrollToSection("health-style")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Health &amp; Style</button></li>
+                  <li><button onClick={() => scrollToSection("musical-art")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Musical Art</button></li>
+                  <li><button onClick={() => scrollToSection("visual-art-photography")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Visual Art &amp; Photography</button></li>
+                </ul>
+              </div>
             </div>
           </div>
 
