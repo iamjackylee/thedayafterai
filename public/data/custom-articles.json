@@ -4,13 +4,14 @@
       "id": "ai-market-insight",
       "title": "AI Market Insight",
       "color": "#f5a623",
+      "rssUrl": "https://www.thedayafterai.com/ai-market-insight?format=rss",
       "articles": [
         {
           "id": "ami-1",
           "title": "Amazon Stock Forecast: 6 AI Chatbots Analyze the $200B \"Capex Shock\"",
           "date": "2026-02-07",
           "imageUrl": "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=480&h=320&fit=crop",
-          "url": "",
+          "url": "https://www.thedayafterai.com/ai-market-insight/amazon-stock-forecast-6-ai-chatbots-analyze-the-200b-capex-shock",
           "source": "TheDayAfterAI"
         },
         {
@@ -18,7 +19,7 @@
           "title": "6 AI Chatbots Predict Alphabet (GOOGL) Price Following 2026 Capex Shock",
           "date": "2026-02-06",
           "imageUrl": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=480&h=320&fit=crop",
-          "url": "",
+          "url": "https://www.thedayafterai.com/ai-market-insight/6-ai-chatbots-predict-alphabet-googl-price-following-2026-capex-shock",
           "source": "TheDayAfterAI"
         },
         {
@@ -26,7 +27,7 @@
           "title": "Battle of the AIs: 6 Chatbots Predict AMD Stock Price",
           "date": "2026-02-05",
           "imageUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=480&h=320&fit=crop",
-          "url": "",
+          "url": "https://www.thedayafterai.com/ai-market-insight/battle-of-the-ais-6-chatbots-predict-amd-stock-price",
           "source": "TheDayAfterAI"
         },
         {
@@ -34,7 +35,7 @@
           "title": "Battle of the AI Chatbots: Palantir (PLTR) Stock Forecast Feb 2026",
           "date": "2026-02-04",
           "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=480&h=320&fit=crop",
-          "url": "",
+          "url": "https://www.thedayafterai.com/ai-market-insight/battle-of-the-ai-chatbots-palantir-pltr-stock-forecast-feb-2026",
           "source": "TheDayAfterAI"
         },
         {
@@ -42,7 +43,7 @@
           "title": "TSLA Forecast: 6 AI Chatbots Predict Feb 2-6 Price (5 Bears vs 1 Bull)",
           "date": "2026-02-03",
           "imageUrl": "https://images.unsplash.com/photo-1617704548623-340376564e68?w=480&h=320&fit=crop",
-          "url": "",
+          "url": "https://www.thedayafterai.com/ai-market-insight/tsla-forecast-6-ai-chatbots-predict-feb-2-6-price-5-bears-vs-1-bull",
           "source": "TheDayAfterAI"
         }
       ]

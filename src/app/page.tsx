@@ -787,15 +787,17 @@ export default function Home() {
           <CustomSectionRow key={section.id} section={section} />
         ))}
 
-        {/* News heading */}
-        <div className="mb-8">
-          <h2 className="font-display text-3xl md:text-4xl text-white mb-2">
-            {searchQuery ? `"${searchQuery}"` : "AI News"}
-          </h2>
-          <p className="text-sm text-[var(--text-secondary)]">
-            {loadingNews ? "Searching..." : `${articles.length} articles across ${groupedArticles.length} categories`}
-          </p>
-        </div>
+        {/* Search results heading (only when searching) */}
+        {searchQuery && (
+          <div className="mb-8">
+            <h2 className="font-display text-3xl md:text-4xl text-white mb-2">
+              &ldquo;{searchQuery}&rdquo;
+            </h2>
+            <p className="text-sm text-[var(--text-secondary)]">
+              {loadingNews ? "Searching..." : `${articles.length} results`}
+            </p>
+          </div>
+        )}
 
         {/* News Articles grouped by category - horizontal scroll rows */}
         {loadingNews ? (
