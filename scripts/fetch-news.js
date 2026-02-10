@@ -69,22 +69,71 @@ function stripHtml(html) {
     .trim();
 }
 
-function generateImageUrl(title) {
-  // Use Pollinations.ai to generate a unique AI image for each article
-  const prompt = `professional news article cover image about: ${title}, clean modern design, photorealistic`;
-  return `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=600&height=400&nologo=true`;
+// Topic-specific fallback images from Unsplash CDN (reliable, no rate limits)
+const TOPIC_FALLBACK_IMAGES = {
+  "ai-academy": [
+    "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop&auto=format",
+  ],
+  "business-economy": [
+    "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&h=400&fit=crop&auto=format",
+  ],
+  "chatbot-development": [
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=600&h=400&fit=crop&auto=format",
+  ],
+  "digital-security": [
+    "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600&h=400&fit=crop&auto=format",
+  ],
+  "environment-science": [
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&h=400&fit=crop&auto=format",
+  ],
+  "governance-politics": [
+    "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1555848962-6e79363ec58f?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&h=400&fit=crop&auto=format",
+  ],
+  "health-style": [
+    "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600&h=400&fit=crop&auto=format",
+  ],
+  "musical-art": [
+    "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=600&h=400&fit=crop&auto=format",
+  ],
+  "technology-innovation": [
+    "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop&auto=format",
+  ],
+  "unmanned-aircraft": [
+    "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1508444845599-5c89863b1c44?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=600&h=400&fit=crop&auto=format",
+  ],
+  "visual-art-photography": [
+    "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=600&h=400&fit=crop&auto=format",
+  ],
+};
+
+function generateImageUrl(title, topic) {
+  const images = TOPIC_FALLBACK_IMAGES[topic || "technology-innovation"] || TOPIC_FALLBACK_IMAGES["technology-innovation"];
+  // Deterministic pick based on title hash
+  const hash = title.split("").reduce((acc, ch) => acc + ch.charCodeAt(0), 0);
+  return images[hash % images.length];
 }
-
-// ── Placeholder images ─────────────────────────────────────────────
-
-const PLACEHOLDER_IMAGES = [
-  "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
-];
 
 // ── Topic matching (11 grouped categories) ────────────────────────
 
@@ -206,14 +255,15 @@ async function fetchAllNews() {
         const source = getTagContent(item, "source")[0] || "Google News";
         const description = stripHtml(getTagContent(item, "description")[0] || "");
 
+        const topic = matchTopic(title + " " + description);
         allArticles.push({
           id: `gn-${allArticles.length}`,
           title,
           summary: description || title,
-          topic: matchTopic(title + " " + description),
+          topic,
           source,
           date: pubDate,
-          imageUrl: generateImageUrl(title),
+          imageUrl: generateImageUrl(title, topic),
           url: link,
         });
       }
@@ -590,14 +640,14 @@ async function main() {
     const batch = news.slice(i, i + ogImageBatchSize);
     await Promise.allSettled(
       batch.map(async (article) => {
-        if (article.url && article.imageUrl.includes("pollinations.ai")) {
+        if (article.url && (article.imageUrl.includes("unsplash.com") || article.imageUrl.includes("pollinations.ai"))) {
           const ogImg = await fetchOgImage(article.url);
           if (ogImg) article.imageUrl = ogImg;
         }
       })
     );
   }
-  const ogCount = news.filter((a) => !a.imageUrl.includes("pollinations.ai")).length;
+  const ogCount = news.filter((a) => !a.imageUrl.includes("unsplash.com") && !a.imageUrl.includes("pollinations.ai")).length;
   console.log(`  Replaced ${ogCount} article images with real OG images`);
 
   // Also fetch OG images for TDAAI articles missing images
