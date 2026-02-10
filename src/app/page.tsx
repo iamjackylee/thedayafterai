@@ -80,7 +80,7 @@ function CustomSectionRow({ section }: { section: CustomSection }) {
   if (section.articles.length === 0) return null;
 
   return (
-    <div className="category-section">
+    <div className="category-section" data-topic-section={`custom-${section.id}`}>
       <div className="flex items-center justify-between mb-4">
         <div
           className="category-header"
@@ -129,15 +129,21 @@ function CustomSectionRow({ section }: { section: CustomSection }) {
             target={article.url ? "_blank" : undefined}
             rel={article.url ? "noopener noreferrer" : undefined}
             className="shrink-0 w-[280px] group block bg-[var(--surface)] overflow-hidden border border-[var(--border)] hover:border-[var(--border-light)] transition-all card-hover"
+            style={{ ["--card-accent" as string]: section.color }}
           >
-            <div className="relative aspect-video overflow-hidden">
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                style={{ backgroundImage: `url(${article.imageUrl})` }}
-              />
+            <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460]">
+              {article.imageUrl && (
+                <img
+                  src={article.imageUrl}
+                  alt=""
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+                />
+              )}
             </div>
             <div className="p-3">
-              <h4 className="text-xs font-bold text-white group-hover:text-[var(--accent)] transition-colors line-clamp-2 leading-snug">
+              <h4 className="text-xs font-bold text-white transition-colors line-clamp-2 leading-snug">
                 {article.title}
               </h4>
               <div className="flex items-center gap-2 mt-2">
@@ -184,7 +190,7 @@ function TdaaiSectionRow({ articles }: { articles: TdaaiArticle[] }) {
   if (articles.length === 0) return null;
 
   return (
-    <div className="category-section">
+    <div className="category-section" data-topic-section="tdaai">
       <div className="flex items-center justify-between mb-4">
         <div
           className="category-header"
@@ -233,25 +239,25 @@ function TdaaiSectionRow({ articles }: { articles: TdaaiArticle[] }) {
             target="_blank"
             rel="noopener noreferrer"
             className="shrink-0 w-[280px] group block bg-[var(--surface)] overflow-hidden border border-[var(--border)] hover:border-[var(--border-light)] transition-all card-hover"
+            style={{ ["--card-accent" as string]: sectionColor }}
           >
-            <div className="relative aspect-[16/10] overflow-hidden">
+            <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364]">
               {article.imageUrl ? (
-                <div
-                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                  style={{ backgroundImage: `url(${article.imageUrl})` }}
+                <img
+                  src={article.imageUrl}
+                  alt=""
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
                 />
-              ) : (
-                <div className="absolute inset-0 bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364] flex items-center justify-center">
-                  <span className="text-3xl opacity-40">📰</span>
-                </div>
-              )}
+              ) : null}
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
               <div className="absolute top-0 left-0 px-2 py-0.5 bg-[#3cffd0] text-black text-[9px] font-black uppercase tracking-widest">
                 TheDayAfterAI
               </div>
             </div>
             <div className="p-3">
-              <h4 className="text-xs font-bold text-white group-hover:text-[var(--accent)] transition-colors line-clamp-2 leading-snug">
+              <h4 className="text-xs font-bold text-white transition-colors line-clamp-2 leading-snug">
                 {article.title}
               </h4>
               {article.summary && article.summary !== article.title && (
@@ -357,7 +363,6 @@ function CategoryRow({ topic, articles, id }: { topic: typeof TOPICS[number]; ar
 }
 
 export default function Home() {
-  const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [debouncedQuery, setDebouncedQuery] = useState("");
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -376,31 +381,26 @@ export default function Home() {
   }, [debouncedQuery]);
 
   const loadData = useCallback(async () => {
-    const topicKeywords = selectedTopics.map(
-      (id) => TOPICS.find((t) => t.id === id)?.label || id
-    );
-
     setLoadingNews(true);
     setLoadingChannel(true);
 
-    const newsPromise = fetchNews(topicKeywords, searchQuery)
+    const newsPromise = fetchNews([], searchQuery)
       .then(async (data) => {
         if (data.length > 0) {
           const sorted = sortByDateDesc(data);
           setArticles(sorted);
-          // Enhance images in background (don't block render)
           enhanceArticleImages(sorted, 5).then(() => setArticles([...sorted]));
         } else {
           const fallback = searchQuery.trim()
             ? searchFallbackNews(searchQuery)
-            : getFallbackNews(selectedTopics);
+            : getFallbackNews([]);
           setArticles(sortByDateDesc(fallback));
         }
       })
       .catch(() => {
         const fallback = searchQuery.trim()
           ? searchFallbackNews(searchQuery)
-          : getFallbackNews(selectedTopics);
+          : getFallbackNews([]);
         setArticles(sortByDateDesc(fallback));
       })
       .finally(() => setLoadingNews(false));
@@ -423,17 +423,20 @@ export default function Home() {
       .catch(() => {});
 
     await Promise.allSettled([newsPromise, channelPromise, customPromise, tdaaiPromise]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedTopics.join(","), searchQuery]);
+  }, [searchQuery]);
 
   useEffect(() => {
     loadData();
   }, [loadData]);
 
-  const toggleTopic = (id: string) => {
-    setSelectedTopics((prev) =>
-      prev.includes(id) ? prev.filter((t) => t !== id) : [...prev, id]
-    );
+  // Scroll to a section when a nav button is clicked
+  const scrollToSection = (sectionId: string) => {
+    const el = document.querySelector(`[data-topic-section="${sectionId}"]`);
+    if (el) {
+      const headerHeight = 120; // sticky header height
+      const top = el.getBoundingClientRect().top + window.scrollY - headerHeight;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
   };
 
   const scrollTopics = (dir: "left" | "right") => {
@@ -449,9 +452,19 @@ export default function Home() {
     articles: articles.filter((a) => a.topic === topic.id),
   })).filter((g) => g.articles.length > 0);
 
-  const displayGroups = selectedTopics.length > 0
-    ? groupedArticles.filter((g) => selectedTopics.includes(g.topic.id))
-    : groupedArticles;
+  // Build unified nav items: TDAAI blog + custom sections + topic categories
+  const navItems: { id: string; label: string; color: string }[] = [];
+  if (tdaaiArticles.length > 0) {
+    navItems.push({ id: "tdaai", label: "TheDayAfterAI.com", color: "#3cffd0" });
+  }
+  for (const section of customSections) {
+    if (section.articles.length > 0) {
+      navItems.push({ id: `custom-${section.id}`, label: section.title, color: section.color });
+    }
+  }
+  for (const g of groupedArticles) {
+    navItems.push({ id: g.topic.id, label: g.topic.label, color: g.topic.color });
+  }
 
   // Scroll-spy: highlight nav button for the topmost visible category section.
   // We track all intersecting sections and pick the one closest to the top of
@@ -547,7 +560,7 @@ export default function Home() {
       window.removeEventListener("scroll", handleScroll);
       if (debounceTimer) clearTimeout(debounceTimer);
     };
-  }, [displayGroups.length]);
+  }, [navItems.length]);
 
   // Auto-scroll nav to show active button (debounced to avoid jitter)
   useEffect(() => {
@@ -617,7 +630,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Topic navigation - color-coded pills */}
+        {/* Section navigation - color-coded pills that scroll to sections */}
         <div className="border-t border-[var(--border)]">
           <div className="max-w-[1400px] mx-auto px-4 md:px-8 relative">
             <button
@@ -630,51 +643,32 @@ export default function Home() {
               ref={topicNavRef}
               className="topic-nav flex items-center gap-1.5 overflow-x-auto py-3"
             >
-              <button
-                onClick={() => setSelectedTopics([])}
-                className={`shrink-0 px-4 py-1.5 text-xs font-bold uppercase tracking-wider transition-all border ${
-                  selectedTopics.length === 0
-                    ? "bg-white text-black border-white"
-                    : "text-[var(--muted)] border-transparent hover:text-white hover:border-[var(--border-light)]"
-                }`}
-              >
-                All
-              </button>
-              {TOPICS.map((topic) => {
-                const isSelected = selectedTopics.includes(topic.id);
-                const isViewing = !isSelected && activeSection === topic.id;
+              {navItems.map((item) => {
+                const isActive = activeSection === item.id;
                 return (
                   <button
-                    key={topic.id}
-                    data-nav-topic={topic.id}
-                    onClick={() => toggleTopic(topic.id)}
-                    className={`shrink-0 px-4 py-1.5 text-xs font-bold uppercase tracking-wider border topic-pill ${isSelected ? "selected" : ""} ${isViewing ? "viewing" : ""}`}
+                    key={item.id}
+                    data-nav-topic={item.id}
+                    onClick={() => scrollToSection(item.id)}
+                    className={`shrink-0 px-4 py-1.5 text-xs font-bold uppercase tracking-wider border topic-pill ${isActive ? "viewing" : ""}`}
                     style={
-                      isSelected
+                      isActive
                         ? {
-                            backgroundColor: topic.color,
-                            color: "#000",
-                            borderColor: topic.color,
-                            ["--pill-color" as string]: topic.color,
-                            ["--pill-border" as string]: topic.color,
-                          }
-                        : isViewing
-                        ? {
-                            color: topic.color,
-                            borderColor: topic.color,
+                            color: item.color,
+                            borderColor: item.color,
                             borderBottomWidth: "2px",
-                            ["--pill-color" as string]: topic.color,
-                            ["--pill-border" as string]: topic.color + "40",
+                            ["--pill-color" as string]: item.color,
+                            ["--pill-border" as string]: item.color + "40",
                           }
                         : {
                             color: "var(--muted)",
                             borderColor: "transparent",
-                            ["--pill-color" as string]: topic.color,
-                            ["--pill-border" as string]: topic.color + "40",
+                            ["--pill-color" as string]: item.color,
+                            ["--pill-border" as string]: item.color + "40",
                           }
                     }
                   >
-                    {topic.label}
+                    {item.label}
                   </button>
                 );
               })}
@@ -796,14 +790,10 @@ export default function Home() {
         {/* News heading */}
         <div className="mb-8">
           <h2 className="font-display text-3xl md:text-4xl text-white mb-2">
-            {searchQuery
-              ? `"${searchQuery}"`
-              : selectedTopics.length > 0
-              ? "Filtered News"
-              : "AI News"}
+            {searchQuery ? `"${searchQuery}"` : "AI News"}
           </h2>
           <p className="text-sm text-[var(--text-secondary)]">
-            {loadingNews ? "Searching..." : `${articles.length} articles across ${displayGroups.length} categories`}
+            {loadingNews ? "Searching..." : `${articles.length} articles across ${groupedArticles.length} categories`}
           </p>
         </div>
 
@@ -813,9 +803,9 @@ export default function Home() {
             <Loader2 size={32} className="text-[var(--accent)] animate-spin" />
             <span className="ml-4 text-[var(--muted)] text-lg">Fetching latest news...</span>
           </div>
-        ) : displayGroups.length > 0 ? (
+        ) : groupedArticles.length > 0 ? (
           <div>
-            {displayGroups.map(({ topic, articles: groupArticles }) => (
+            {groupedArticles.map(({ topic, articles: groupArticles }) => (
               <CategoryRow key={topic.id} topic={topic} articles={groupArticles.slice(0, 30)} />
             ))}
           </div>
@@ -823,12 +813,12 @@ export default function Home() {
           <div className="text-center py-20">
             <Search size={28} className="text-[var(--muted)] mx-auto mb-4" />
             <h3 className="text-xl font-bold text-gray-300 mb-2">No articles found</h3>
-            <p className="text-[var(--muted)] text-sm mb-4">Try adjusting your search or topics.</p>
+            <p className="text-[var(--muted)] text-sm mb-4">Try adjusting your search.</p>
             <button
-              onClick={() => { setSelectedTopics([]); setDebouncedQuery(""); setSearchQuery(""); }}
+              onClick={() => { setDebouncedQuery(""); setSearchQuery(""); }}
               className="text-sm text-[var(--accent)] hover:underline font-medium"
             >
-              Clear all filters
+              Clear search
             </button>
           </div>
         )}
