@@ -1,191 +1,199 @@
 #!/usr/bin/env node
-// Use Playwright headless browser to fetch real article URLs from thedayafterai.com
-// This bypasses bot protection by running a real Chromium browser.
+// Fetch real article URLs and OG images from custom sections using a headless browser.
+// Reads rssUrl from each section in custom-articles.json, navigates with Playwright,
+// and updates the file with real URLs, titles, dates, and images.
+//
+// Usage: npx playwright install chromium && node scripts/fetch-custom-urls.js
 
-const { chromium } = require("/opt/node22/lib/node_modules/playwright");
 const fs = require("fs");
 const path = require("path");
 
-const TARGET_URL = "https://www.thedayafterai.com/ai-market-insight";
 const CUSTOM_JSON = path.join(__dirname, "..", "public", "data", "custom-articles.json");
 
 async function main() {
-  console.log("Launching headless Chromium...");
+  let customData;
+  try {
+    customData = JSON.parse(fs.readFileSync(CUSTOM_JSON, "utf-8"));
+  } catch {
+    console.log("No custom-articles.json found, skipping browser fetch.");
+    return;
+  }
+
+  if (!customData.sections || customData.sections.length === 0) {
+    console.log("No custom sections defined, skipping.");
+    return;
+  }
+
+  // Only process sections that have an rssUrl (i.e. are sourced from a website)
+  const sectionsToFetch = customData.sections.filter((s) => s.rssUrl);
+  if (sectionsToFetch.length === 0) {
+    console.log("No sections with rssUrl, skipping browser fetch.");
+    return;
+  }
+
+  // Dynamically require playwright (installed via npx in CI)
+  let chromium;
+  try {
+    ({ chromium } = require("playwright"));
+  } catch {
+    try {
+      // Fallback: global install path
+      ({ chromium } = require("/opt/node22/lib/node_modules/playwright"));
+    } catch {
+      console.warn("Playwright not available, skipping browser-based fetch.");
+      return;
+    }
+  }
+
+  console.log("Launching headless Chromium for custom article discovery...");
   const browser = await chromium.launch({
     headless: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox", "--no-proxy-server"],
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
 
   const context = await browser.newContext({
     userAgent:
       "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
   });
-  const page = await context.newPage();
 
-  try {
-    // 1. Navigate to the AI Market Insight page
-    console.log(`Navigating to ${TARGET_URL} ...`);
-    await page.goto(TARGET_URL, { waitUntil: "networkidle", timeout: 30000 });
-    console.log("Page loaded. Extracting article data...");
+  let updated = false;
 
-    // 2. Extract all article links from the page
-    const articles = await page.evaluate(() => {
-      const results = [];
+  for (const section of sectionsToFetch) {
+    console.log(`\nFetching articles for "${section.title}" ...`);
 
-      // Squarespace blog list items — try multiple selectors
-      const selectors = [
-        "article a[href]",
-        ".summary-item a[href]",
-        ".blog-item a[href]",
-        ".collection-item a[href]",
-        'a[href*="/ai-market-insight/"]',
-        ".sqs-block a[href]",
-      ];
+    // Derive the collection page URL from the rssUrl (strip ?format=rss)
+    const pageUrl = section.rssUrl.replace(/\?format=rss$/, "");
 
-      const seen = new Set();
-      for (const sel of selectors) {
-        for (const el of document.querySelectorAll(sel)) {
-          const href = el.href;
-          if (!href || seen.has(href)) continue;
-          // Only include links to articles on this site
-          if (
-            !href.includes("thedayafterai.com") ||
-            href === window.location.href
-          )
-            continue;
-          seen.add(href);
+    try {
+      const page = await context.newPage();
+      await page.goto(pageUrl, { waitUntil: "networkidle", timeout: 30000 });
+      console.log(`  Page loaded: ${pageUrl}`);
 
-          // Try to get the title from the link or nearby heading
-          let title =
-            el.querySelector("h1, h2, h3, h4")?.textContent?.trim() ||
-            el.textContent?.trim() ||
-            "";
-          // Get image if available
-          let imageUrl = "";
-          const img =
-            el.querySelector("img") ||
-            el.closest("article")?.querySelector("img");
-          if (img) {
-            imageUrl = img.dataset?.src || img.src || "";
+      // Extract article links from the Squarespace collection page
+      const articles = await page.evaluate((sectionPageUrl) => {
+        const results = [];
+        const seen = new Set();
+
+        // Squarespace uses various selectors for blog list items
+        const selectors = [
+          "article a[href]",
+          ".summary-item a[href]",
+          ".blog-item a[href]",
+          ".collection-item a[href]",
+          ".sqs-block a[href]",
+        ];
+
+        // Also match links containing the collection slug
+        const urlPath = new URL(sectionPageUrl).pathname;
+        if (urlPath && urlPath !== "/") {
+          selectors.push(`a[href*="${urlPath}/"]`);
+        }
+
+        for (const sel of selectors) {
+          for (const el of document.querySelectorAll(sel)) {
+            const href = el.href;
+            if (!href || seen.has(href)) continue;
+            if (!href.includes("thedayafterai.com")) continue;
+            if (href === sectionPageUrl || href === sectionPageUrl + "/") continue;
+            // Must be a sub-page (article), not just the collection page
+            const hrefPath = new URL(href).pathname;
+            if (hrefPath === urlPath || hrefPath === urlPath + "/") continue;
+            seen.add(href);
+
+            let title =
+              el.querySelector("h1, h2, h3, h4")?.textContent?.trim() ||
+              el.textContent?.trim().substring(0, 200) ||
+              "";
+            // Clean up whitespace
+            title = title.replace(/\s+/g, " ").trim();
+
+            let imageUrl = "";
+            const img =
+              el.querySelector("img") ||
+              el.closest("article, .summary-item")?.querySelector("img");
+            if (img) {
+              imageUrl = img.dataset?.src || img.src || "";
+            }
+
+            if (title) {
+              results.push({ url: href, title, imageUrl });
+            }
           }
-
-          results.push({ url: href, title, imageUrl });
         }
+
+        return results;
+      }, pageUrl);
+
+      await page.close();
+
+      console.log(`  Found ${articles.length} article links`);
+
+      if (articles.length > 0) {
+        // Fetch OG images from individual article pages
+        console.log("  Fetching OG images...");
+        for (const article of articles) {
+          try {
+            const articlePage = await context.newPage();
+            await articlePage.goto(article.url, {
+              waitUntil: "domcontentloaded",
+              timeout: 15000,
+            });
+
+            const meta = await articlePage.evaluate(() => {
+              const ogImg = document.querySelector('meta[property="og:image"]')?.getAttribute("content") || "";
+              const twImg = document.querySelector('meta[name="twitter:image"]')?.getAttribute("content") || "";
+              const pubDate = document.querySelector('meta[property="article:published_time"]')?.getAttribute("content") ||
+                document.querySelector('time[datetime]')?.getAttribute("datetime") || "";
+              return { ogImg, twImg, pubDate };
+            });
+
+            if (meta.ogImg) article.imageUrl = meta.ogImg;
+            else if (meta.twImg) article.imageUrl = meta.twImg;
+            if (meta.pubDate) {
+              try {
+                article.date = new Date(meta.pubDate).toISOString().split("T")[0];
+              } catch { /* ignore invalid dates */ }
+            }
+
+            console.log(`    ${article.title.slice(0, 50)}... => ${article.imageUrl ? "got image" : "no image"}`);
+            await articlePage.close();
+          } catch (err) {
+            console.log(`    Failed for "${article.title.slice(0, 40)}": ${err.message.split("\n")[0]}`);
+          }
+        }
+
+        // Update the section's articles
+        section.articles = articles.map((a, i) => ({
+          id: `${section.id}-${i + 1}`,
+          title: a.title,
+          date: a.date || "",
+          imageUrl: a.imageUrl || "",
+          url: a.url,
+          source: "TheDayAfterAI",
+        }));
+        updated = true;
+        console.log(`  Updated "${section.title}" with ${articles.length} articles`);
+      } else {
+        console.log(`  No articles found on page, keeping existing entries.`);
       }
-
-      return results;
-    });
-
-    console.log(`\nFound ${articles.length} article links:\n`);
-    for (const a of articles) {
-      console.log(`  Title: ${a.title}`);
-      console.log(`  URL:   ${a.url}`);
-      console.log(`  Image: ${a.imageUrl || "(none)"}`);
-      console.log("");
-    }
-
-    // 3. Also dump the full HTML source for inspection
-    const html = await page.content();
-    const htmlPath = path.join(__dirname, "..", "debug-ai-market-insight.html");
-    fs.writeFileSync(htmlPath, html);
-    console.log(`Full HTML saved to: ${htmlPath}`);
-
-    // 4. Also try to fetch the RSS version
-    console.log("\nTrying RSS feed...");
-    const rssPage = await context.newPage();
-    try {
-      await rssPage.goto(TARGET_URL + "?format=rss", {
-        waitUntil: "networkidle",
-        timeout: 15000,
-      });
-      const rssContent = await rssPage.content();
-      const rssPath = path.join(
-        __dirname,
-        "..",
-        "debug-ai-market-insight-rss.xml"
-      );
-      fs.writeFileSync(rssPath, rssContent);
-      console.log(`RSS saved to: ${rssPath}`);
     } catch (err) {
-      console.log(`RSS fetch failed: ${err.message}`);
+      console.log(`  Failed to load "${section.title}": ${err.message.split("\n")[0]}`);
+      console.log("  Keeping existing entries.");
     }
-    await rssPage.close();
+  }
 
-    // 5. Navigate to each article to get OG images
-    if (articles.length > 0) {
-      console.log("\nFetching OG images from individual articles...");
-      for (const article of articles) {
-        if (!article.url) continue;
-        try {
-          const articlePage = await context.newPage();
-          await articlePage.goto(article.url, {
-            waitUntil: "domcontentloaded",
-            timeout: 15000,
-          });
-          const ogImage = await articlePage.evaluate(() => {
-            const meta =
-              document.querySelector('meta[property="og:image"]') ||
-              document.querySelector('meta[name="twitter:image"]');
-            return meta?.getAttribute("content") || "";
-          });
-          if (ogImage) article.imageUrl = ogImage;
-          console.log(
-            `  ${article.title.slice(0, 50)}... => ${ogImage || "(no og:image)"}`
-          );
-          await articlePage.close();
-        } catch (err) {
-          console.log(
-            `  Failed to get OG image for "${article.title.slice(0, 40)}": ${err.message}`
-          );
-        }
-      }
-    }
+  await browser.close();
 
-    // 6. Update custom-articles.json if we found articles
-    if (articles.length > 0) {
-      try {
-        const customData = JSON.parse(fs.readFileSync(CUSTOM_JSON, "utf-8"));
-        const section = customData.sections.find(
-          (s) => s.id === "ai-market-insight"
-        );
-        if (section) {
-          section.articles = articles.map((a, i) => ({
-            id: `ami-${i + 1}`,
-            title: a.title,
-            date: "",
-            imageUrl: a.imageUrl || "",
-            url: a.url,
-            source: "TheDayAfterAI",
-          }));
-          fs.writeFileSync(
-            CUSTOM_JSON,
-            JSON.stringify(customData, null, 2) + "\n"
-          );
-          console.log(
-            `\nUpdated custom-articles.json with ${articles.length} real articles!`
-          );
-        }
-      } catch (err) {
-        console.error("Failed to update custom-articles.json:", err.message);
-      }
-    }
-  } catch (err) {
-    console.error("Error:", err.message);
-
-    // Save whatever we got for debugging
-    try {
-      const html = await page.content();
-      const htmlPath = path.join(
-        __dirname,
-        "..",
-        "debug-ai-market-insight.html"
-      );
-      fs.writeFileSync(htmlPath, html);
-      console.log(`Debug HTML saved to: ${htmlPath}`);
-    } catch {}
-  } finally {
-    await browser.close();
+  if (updated) {
+    fs.writeFileSync(CUSTOM_JSON, JSON.stringify(customData, null, 2) + "\n");
+    console.log("\nUpdated custom-articles.json with live data from browser!");
+  } else {
+    console.log("\nNo changes made to custom-articles.json");
   }
 }
 
-main().catch(console.error);
+main().catch((err) => {
+  console.error("Browser fetch failed:", err.message);
+  console.log("Continuing with existing custom-articles.json data.");
+  process.exit(0); // Don't fail the CI build
+});

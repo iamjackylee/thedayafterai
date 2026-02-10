@@ -20,6 +20,12 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium
+
+      - name: Fetch custom article URLs (browser)
+        run: node scripts/fetch-custom-urls.js
+
       - name: Fetch news data
         run: node scripts/fetch-news.js
 
@@ -27,7 +33,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/prefetched.json
+          git add public/data/prefetched.json public/data/custom-articles.json
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
