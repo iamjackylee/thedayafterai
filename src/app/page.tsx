@@ -457,6 +457,8 @@ export default function Home() {
   // We track all intersecting sections and pick the one closest to the top of
   // the viewport, debouncing the state update to prevent rapid toggling when
   // scrolling across section boundaries.
+  // When the user scrolls to the bottom of the page, the observer's narrow
+  // rootMargin may miss the last section, so we detect that case separately.
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const sections = document.querySelectorAll("[data-topic-section]");
@@ -464,6 +466,38 @@ export default function Home() {
 
     const visibleSet = new Map<Element, IntersectionObserverEntry>();
     let debounceTimer: ReturnType<typeof setTimeout> | null = null;
+    let atPageBottom = false;
+
+    function pickBestSection() {
+      if (debounceTimer) clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => {
+        // When at the bottom of the page, highlight the last section
+        if (atPageBottom) {
+          const allSections = document.querySelectorAll("[data-topic-section]");
+          if (allSections.length > 0) {
+            const lastTopic = allSections[allSections.length - 1].getAttribute("data-topic-section");
+            if (lastTopic) {
+              setActiveSection(lastTopic);
+              return;
+            }
+          }
+        }
+
+        // Otherwise pick the topmost visible section
+        let best: Element | null = null;
+        let bestTop = Infinity;
+        for (const [el] of visibleSet) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < bestTop) {
+            bestTop = rect.top;
+            best = el;
+          }
+        }
+        if (best) {
+          setActiveSection(best.getAttribute("data-topic-section"));
+        }
+      }, 80);
+    }
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -474,31 +508,27 @@ export default function Home() {
             visibleSet.delete(entry.target);
           }
         }
-
-        // Pick the section whose top edge is closest to (but below) the
-        // viewport's observation area — i.e. the topmost visible section.
-        if (debounceTimer) clearTimeout(debounceTimer);
-        debounceTimer = setTimeout(() => {
-          let best: Element | null = null;
-          let bestTop = Infinity;
-          for (const [el] of visibleSet) {
-            const rect = el.getBoundingClientRect();
-            if (rect.top < bestTop) {
-              bestTop = rect.top;
-              best = el;
-            }
-          }
-          if (best) {
-            setActiveSection(best.getAttribute("data-topic-section"));
-          }
-        }, 80);
+        pickBestSection();
       },
       { rootMargin: "-20% 0px -60% 0px", threshold: [0, 0.1] }
     );
 
+    // Detect when user reaches the bottom of the page
+    const handleScroll = () => {
+      const wasAtBottom = atPageBottom;
+      atPageBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 150;
+      if (atPageBottom !== wasAtBottom) {
+        pickBestSection();
+      }
+    };
+
     sections.forEach((s) => observer.observe(s));
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // check initial state
+
     return () => {
       observer.disconnect();
+      window.removeEventListener("scroll", handleScroll);
       if (debounceTimer) clearTimeout(debounceTimer);
     };
   }, [displayGroups.length]);

@@ -219,15 +219,16 @@ export async function fetchNews(
         title + " " + summary,
         topicKeywords.map((k) => k.toLowerCase())
       );
+      const groupedTopic = TOPIC_GROUP_MAP[rawTopic] || rawTopic;
 
       articles.push({
         id: `gn-${i}-${Date.now()}`,
         title,
         summary: summary || title,
-        topic: TOPIC_GROUP_MAP[rawTopic] || rawTopic,
+        topic: groupedTopic,
         source: source || "Google News",
         date: pubDate,
-        imageUrl: generateImageUrl(title),
+        imageUrl: generateImageUrl(title, groupedTopic),
         url: link,
       });
     }
@@ -407,9 +408,70 @@ export const topicToSearchQuery: Record<string, string> = {
   "visual-art-photography": "art photography creative",
 };
 
-function generateImageUrl(title: string): string {
-  const prompt = `professional news article cover image about: ${title}, clean modern design, photorealistic`;
-  return `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=600&height=400&nologo=true`;
+// Topic-specific fallback images from Unsplash CDN (reliable, no rate limits)
+const TOPIC_FALLBACK_IMAGES: Record<string, string[]> = {
+  "ai-academy": [
+    "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop&auto=format",
+  ],
+  "business-economy": [
+    "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&h=400&fit=crop&auto=format",
+  ],
+  "chatbot-development": [
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=600&h=400&fit=crop&auto=format",
+  ],
+  "digital-security": [
+    "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600&h=400&fit=crop&auto=format",
+  ],
+  "environment-science": [
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&h=400&fit=crop&auto=format",
+  ],
+  "governance-politics": [
+    "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1555848962-6e79363ec58f?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&h=400&fit=crop&auto=format",
+  ],
+  "health-style": [
+    "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600&h=400&fit=crop&auto=format",
+  ],
+  "musical-art": [
+    "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=600&h=400&fit=crop&auto=format",
+  ],
+  "technology-innovation": [
+    "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop&auto=format",
+  ],
+  "unmanned-aircraft": [
+    "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1508444845599-5c89863b1c44?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=600&h=400&fit=crop&auto=format",
+  ],
+  "visual-art-photography": [
+    "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=400&fit=crop&auto=format",
+    "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=600&h=400&fit=crop&auto=format",
+  ],
+};
+
+function generateImageUrl(title: string, topic?: string): string {
+  const images = TOPIC_FALLBACK_IMAGES[topic || "technology-innovation"] || TOPIC_FALLBACK_IMAGES["technology-innovation"];
+  // Deterministic pick based on title hash
+  const hash = title.split("").reduce((acc, ch) => acc + ch.charCodeAt(0), 0);
+  return images[hash % images.length];
 }
 
 /** Check if an image URL looks like a generic logo rather than article content */
@@ -446,14 +508,14 @@ async function fetchOgImage(url: string): Promise<string> {
   return "";
 }
 
-/** Enhance articles: replace Pollinations placeholder with real OG images.
+/** Enhance articles: replace fallback placeholder images with real OG images.
  *  Only works for articles with direct publisher URLs (not Google News redirects). */
 export async function enhanceArticleImages(
   articles: NewsArticle[],
   maxConcurrent = 5
 ): Promise<void> {
   const toFix = articles.filter(
-    (a) => a.imageUrl.includes("pollinations.ai") && a.url && !a.url.includes("news.google.com")
+    (a) => (a.imageUrl.includes("unsplash.com") || a.imageUrl.includes("pollinations.ai")) && a.url && !a.url.includes("news.google.com")
   );
   for (let i = 0; i < toFix.length; i += maxConcurrent) {
     const batch = toFix.slice(i, i + maxConcurrent);
