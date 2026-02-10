@@ -692,27 +692,11 @@ async function main() {
   // Enhance custom-articles.json with live RSS data and OG images
   await enhanceCustomArticles();
 
-  // Step 1: Resolve Google News redirect URLs to actual publisher URLs
-  console.log("Resolving Google News redirect URLs...");
-  const resolveBatchSize = 10;
-  let resolvedCount = 0;
-  for (let i = 0; i < news.length; i += resolveBatchSize) {
-    const batch = news.slice(i, i + resolveBatchSize);
-    await Promise.allSettled(
-      batch.map(async (article) => {
-        if (article.url && article.url.includes("news.google.com")) {
-          const resolved = await resolveGoogleNewsUrl(article.url);
-          if (resolved !== article.url) {
-            article.url = resolved;
-            resolvedCount++;
-          }
-        }
-      })
-    );
-  }
-  console.log(`  Resolved ${resolvedCount}/${news.length} Google News URLs to publisher URLs`);
+  // Note: Google News URL resolution is handled by resolve-google-urls.js (Playwright)
+  // which runs as a separate CI step after this script.
 
-  // Step 2: Fetch OG images from the resolved publisher URLs
+  // Fetch OG images from article URLs (works best after URL resolution, but will
+  // attempt for any non-Google-News URLs that are already resolved)
   console.log("Fetching OG images for news articles...");
   const ogImageBatchSize = 10;
   for (let i = 0; i < news.length; i += ogImageBatchSize) {

@@ -39,6 +39,9 @@ jobs:
       - name: Pre-fetch news data
         run: node scripts/fetch-news.js
 
+      - name: Resolve Google News URLs to actual article links
+        run: node scripts/resolve-google-urls.js
+
       - name: Build
         env:
           NEXT_PUBLIC_BASE_PATH: /thedayafterai
