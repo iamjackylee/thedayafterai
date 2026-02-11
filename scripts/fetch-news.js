@@ -139,7 +139,24 @@ const CATEGORY_QUERIES = {
     "AI public trust transparency societal impact",
     "AI human rights civil liberties discrimination",
   ],
-  "health-style": ["AI health medical diagnosis treatment", "AI fashion style design trend luxury"],
+  "health-style": [
+    // Lifestyle Technology — AI in fitness, wearables, fashion, food, daily wellness
+    "AI fitness wearable health tracker lifestyle",
+    "AI fashion style recommendation personalisation",
+    "AI food nutrition diet wellness technology",
+    // Medical AI — AI diagnosis, treatment, drug discovery, hospital, clinical
+    "AI medical diagnosis treatment clinical hospital",
+    "AI drug discovery pharmaceutical genomics precision",
+    "AI radiology pathology surgery robotic healthcare",
+    // AI Relationships With Human — AI companions, dating, social bonds, emotional AI
+    "AI human relationship companion emotional bond",
+    "AI dating app social connection virtual friend",
+    "AI empathy interaction trust human machine",
+    // Mental Health — AI therapy, counselling, wellbeing, stress, addiction
+    "AI mental health therapy counselling wellbeing",
+    "AI stress anxiety depression support chatbot",
+    "AI addiction recovery mindfulness brain health",
+  ],
   "musical-art": ["AI music audio song compose Spotify", "AI album artist melody sound"],
   "technology-innovation": ["AI technology innovation breakthrough", "AI chip semiconductor hardware computing software", "AI agent autonomous robot"],
   "unmanned-aircraft": ["AI drone unmanned aircraft UAV aerial", "AI quadcopter flying delivery drone"],
@@ -171,6 +188,10 @@ const CATEGORY_GEO = {
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
   "governance-politics": [
+    { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
+    { hl: "en", gl: "", ceid: "" },               // Then truly international
+  ],
+  "health-style": [
     { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
