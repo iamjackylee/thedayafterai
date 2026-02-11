@@ -3,12 +3,10 @@
 //
 // Modes:
 //   --all     Full fetch of all categories + YouTube + custom articles (used by deploy)
-//   (none)    Rotating fetch: one slot every 10 min, cycling through all content
+//   (none)    Rotating fetch: one category every 10 min + YouTube/custom every 15 min
 //
-// Rotation slots (13 total, ~130 min full cycle):
-//   Slots 0-10:  News categories (one per slot, 50 articles each, Playwright URL+image)
-//   Slot 11:     YouTube + TheDayAfterAI RSS (fast, no Playwright)
-//   Slot 12:     AI Market Insight custom articles from thedayafterai.com (Playwright)
+// Rotation: 11 category slots (one per 10-min cron run, ~110 min full cycle)
+// YouTube + AI Market Insight refresh every 15 min alongside the current category
 
 const fs = require("fs");
 const path = require("path");
@@ -283,13 +281,19 @@ const CATEGORY_GEO = {
 const DEFAULT_GEO = [{ hl: "en", gl: "", ceid: "" }]; // International English
 
 const CATEGORY_KEYS = Object.keys(CATEGORY_QUERIES);
-const SLOT_YOUTUBE = CATEGORY_KEYS.length;       // 11
-const SLOT_CUSTOM = CATEGORY_KEYS.length + 1;    // 12
-const TOTAL_SLOTS = SLOT_CUSTOM + 1;             // 13
+const TOTAL_SLOTS = CATEGORY_KEYS.length;        // 11 (categories only)
 
 function getCurrentSlot() {
-  const slotMinutes = 10;
-  return Math.floor(Date.now() / (slotMinutes * 60 * 1000)) % TOTAL_SLOTS;
+  return Math.floor(Date.now() / (10 * 60 * 1000)) % TOTAL_SLOTS;
+}
+
+// YouTube + AI Market Insight refresh on a separate 15-min cycle.
+// Returns true when the current 10-min tick crosses a 15-min boundary.
+function shouldRefreshExtras() {
+  const now = Date.now();
+  const current15 = Math.floor(now / (15 * 60 * 1000));
+  const prev15 = Math.floor((now - 10 * 60 * 1000) / (15 * 60 * 1000));
+  return current15 !== prev15;
 }
 
 // ── Simple XML helpers (no external deps) ──────────────────────────
@@ -980,8 +984,8 @@ async function main() {
     console.log("\n=== Fetching AI Market Insight ===");
     await fetchCustomArticles();
 
-  } else if (slot >= 0 && slot < CATEGORY_KEYS.length) {
-    // ── Single news category ──
+  } else {
+    // ── Rotation mode: one category + optional 15-min extras ──
     const category = CATEGORY_KEYS[slot];
     console.log(`\n=== Fetching category: ${category} ===`);
     const articles = await fetchCategoryNews(category);
@@ -993,20 +997,21 @@ async function main() {
     data.news = (data.news || []).filter((a) => a.topic !== category).concat(articles);
     data.news.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-  } else if (slot === SLOT_YOUTUBE) {
-    // ── YouTube + TDAAI RSS ──
-    console.log("\n=== Fetching YouTube + TDAAI RSS ===");
-    const [channelVideos, tdaaiArticles] = await Promise.all([
-      fetchChannelVideos(),
-      fetchTdaaiArticles(),
-    ]);
-    data.channelVideos = channelVideos;
-    data.tdaaiArticles = tdaaiArticles;
+    // YouTube + AI Market Insight: refresh every 15 min (independent of category rotation)
+    if (shouldRefreshExtras()) {
+      console.log("\n=== Refreshing YouTube + TDAAI RSS (15-min cycle) ===");
+      const [channelVideos, tdaaiArticles] = await Promise.all([
+        fetchChannelVideos(),
+        fetchTdaaiArticles(),
+      ]);
+      data.channelVideos = channelVideos;
+      data.tdaaiArticles = tdaaiArticles;
 
-  } else if (slot === SLOT_CUSTOM) {
-    // ── AI Market Insight custom articles ──
-    console.log("\n=== Fetching AI Market Insight ===");
-    await fetchCustomArticles();
+      console.log("\n=== Refreshing AI Market Insight (15-min cycle) ===");
+      await fetchCustomArticles();
+    } else {
+      console.log("\nYouTube + AI Market Insight: skipped (next refresh at 15-min boundary)");
+    }
   }
 
   // Save updated prefetched.json
