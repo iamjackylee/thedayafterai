@@ -1,7 +1,17 @@
 {
-  "fetchedAt": "2026-02-11T09:31:14.286Z",
+  "fetchedAt": "2026-02-11T10:28:47.549Z",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe",
   "news": [
+    {
+      "id": "gn-unmanned-aircraft-19",
+      "title": "Defence startup testing AI drones with Ukraine raises £2.6m - UKTN",
+      "summary": "Defence startup testing AI drones with Ukraine raises £2.6m&nbsp;&nbsp;UKTN",
+      "topic": "unmanned-aircraft",
+      "source": "UKTN",
+      "date": "Wed, 11 Feb 2026 10:01:10 GMT",
+      "imageUrl": "https://www.uktech.news/wp-content/uploads/2026/02/Brave1_Field-Tests_05.jpg",
+      "url": "https://www.uktech.news/defence-tech/occam-ai-drone-ukraine-funding-20260211"
+    },
     {
       "id": "gn-digital-security-42",
       "title": "Genesys Launches Industry’s First Agentic Virtual Agent Powered by LAMs for Enterprise CX - IT Voice Media",
@@ -13,7 +23,7 @@
       "url": "https://www.itvoice.in/genesys-launches-industrys-first-agentic-virtual-agent-powered-by-lams-for-enterprise-cx"
     },
     {
-      "id": "gn-unmanned-aircraft-31",
+      "id": "gn-unmanned-aircraft-28",
       "title": "Disciplined Autonomy: How AI and sUAS Will Redefine Security, Safety, Emergency Response, and Military Operations - Small Wars Journal",
       "summary": "Disciplined Autonomy: How AI and sUAS Will Redefine Security, Safety, Emergency Response, and Military Operations&nbsp;&nbsp;Small Wars Journal",
       "topic": "unmanned-aircraft",
@@ -33,7 +43,7 @@
       "url": "https://securitybrief.asia/story/ai-turns-romance-scams-into-industrial-scale-fraud"
     },
     {
-      "id": "gn-unmanned-aircraft-28",
+      "id": "gn-unmanned-aircraft-25",
       "title": "Daily Editorial Analysis 11 February 2026 - Vajiram &amp; Ravi",
       "summary": "Daily Editorial Analysis 11 February 2026&nbsp;&nbsp;Vajiram & Ravi",
       "topic": "unmanned-aircraft",
@@ -53,7 +63,7 @@
       "url": "https://breakingac.com/news/2026/feb/10/personal-style-meets-personalization-ai-and-the-future-of-menswear/"
     },
     {
-      "id": "gn-unmanned-aircraft-23",
+      "id": "gn-unmanned-aircraft-20",
       "title": "Marine Corps brings General Atomics into CCA program for autonomy development - DefenseScoop",
       "summary": "Marine Corps brings General Atomics into CCA program for autonomy development&nbsp;&nbsp;DefenseScoop",
       "topic": "unmanned-aircraft",
@@ -233,7 +243,7 @@
       "url": "https://www.tradingview.com/news/financewire:96d3e1c32094b:0-zenatech-s-drone-as-a-service-expands-builder-services-capability-delivering-drone-driven-speed-and-precision-to-surveying-for-homebuilders/"
     },
     {
-      "id": "gn-unmanned-aircraft-42",
+      "id": "gn-unmanned-aircraft-39",
       "title": "Armenia buys V-BAT drones proven in Ukraine - Defence Blog",
       "summary": "Armenia buys V-BAT drones proven in Ukraine&nbsp;&nbsp;Defence Blog",
       "topic": "unmanned-aircraft",
@@ -263,7 +273,7 @@
       "url": "https://www.psychiatrictimes.com/view/can-ai-cure-medicine-s-ills"
     },
     {
-      "id": "gn-unmanned-aircraft-45",
+      "id": "gn-unmanned-aircraft-42",
       "title": "GuRu Wireless, Uniquest and Arion Advance Persistent sUAS Capability for Korean Defense and National Security Applications - Morningstar",
       "summary": "GuRu Wireless, Uniquest and Arion Advance Persistent sUAS Capability for Korean Defense and National Security Applications&nbsp;&nbsp;Morningstar",
       "topic": "unmanned-aircraft",
@@ -273,7 +283,7 @@
       "url": "https://www.morningstar.com/news/pr-newswire/20260210la84314/guru-wireless-uniquest-and-arion-advance-persistent-suas-capability-for-korean-defense-and-national-security-applications"
     },
     {
-      "id": "gn-unmanned-aircraft-14",
+      "id": "gn-unmanned-aircraft-11",
       "title": "Ghana deploys AI and drones to shift mining regulation from reactive to preventive — Minerals Commission - MyJoyOnline",
       "summary": "Ghana deploys AI and drones to shift mining regulation from reactive to preventive — Minerals Commission&nbsp;&nbsp;MyJoyOnline",
       "topic": "unmanned-aircraft",
@@ -293,7 +303,7 @@
       "url": "https://www.manilatimes.net/2026/02/10/tmt-newswire/globenewswire/sustainability-magazines-latest-issue-features-global-brands-redefining-fashions-impact/2275379"
     },
     {
-      "id": "gn-unmanned-aircraft-12",
+      "id": "gn-unmanned-aircraft-10",
       "title": "IT Ministry mandates label for AI-generated content, reduces takedown timeline to 2–3 hours - The Hindu",
       "summary": "IT Ministry mandates label for AI-generated content, reduces takedown timeline to 2–3 hours&nbsp;&nbsp;The Hindu",
       "topic": "unmanned-aircraft",
@@ -301,16 +311,6 @@
       "date": "Tue, 10 Feb 2026 14:02:00 GMT",
       "imageUrl": "https://th-i.thgim.com/public/incoming/71xddn/article70615997.ece/alternates/LANDSCAPE_1200/2026-01-31T042528Z_1071183313_RC2QCIA9XHEB_RTRMADP_3_INDIA-SOCIALMEDIA.JPG",
       "url": "https://www.thehindu.com/news/national/govt-tightens-rules-on-ai-generated-deepfake-content-mandates-faster-takedown-of-flagged-material/article70615674.ece"
-    },
-    {
-      "id": "gn-unmanned-aircraft-15",
-      "title": "Centre amends IT rules, mandates AI labels, cuts deepfake takedown time to 2 hours - MSN",
-      "summary": "Centre amends IT rules, mandates AI labels, cuts deepfake takedown time to 2 hours&nbsp;&nbsp;MSN",
-      "topic": "unmanned-aircraft",
-      "source": "MSN",
-      "date": "Tue, 10 Feb 2026 13:57:32 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.msn.com/en-in/money/news/centre-amends-it-rules-mandates-ai-labels-cuts-deepfake-takedown-time-to-2-hours/ar-AA1W3uB9?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
     },
     {
       "id": "gn-environment-science-7",
@@ -373,16 +373,6 @@
       "url": "https://rankiapro.com/en/insights/electrification-trends-reshaping-global-energy-systems/"
     },
     {
-      "id": "gn-unmanned-aircraft-47",
-      "title": "Lockheed Rolls Out Undersea Drone That Hitches to Vessels to Reach Contested Zones - The Defense Post",
-      "summary": "Lockheed Rolls Out Undersea Drone That Hitches to Vessels to Reach Contested Zones&nbsp;&nbsp;The Defense Post",
-      "topic": "unmanned-aircraft",
-      "source": "The Defense Post",
-      "date": "Tue, 10 Feb 2026 12:19:53 GMT",
-      "imageUrl": "https://thedefensepost.com/wp-content/uploads/2026/02/1.jpg.pc-adaptive.1280.medium.jpg",
-      "url": "https://thedefensepost.com/2026/02/10/lockheed-undersea-drone-vessels/"
-    },
-    {
       "id": "gn-environment-science-34",
       "title": "Drilling Bits, Oil And Gas Drilling Rig: 7 Innovations - Farmonaut",
       "summary": "Drilling Bits, Oil And Gas Drilling Rig: 7 Innovations&nbsp;&nbsp;Farmonaut",
@@ -413,7 +403,7 @@
       "url": "https://www.dazeddigital.com/fashion/article/69590/1/rise-of-ai-fashion-stylist-chatgpt-openai-ralph-lauren-ask-ralph-asos"
     },
     {
-      "id": "gn-unmanned-aircraft-22",
+      "id": "gn-unmanned-aircraft-18",
       "title": "India Develops ‘World’s Most Compact’ AI-Driven Laser Sniper Mounted on UGV - The Defense Post",
       "summary": "India Develops ‘World’s Most Compact’ AI-Driven Laser Sniper Mounted on UGV&nbsp;&nbsp;The Defense Post",
       "topic": "unmanned-aircraft",
@@ -423,7 +413,7 @@
       "url": "https://thedefensepost.com/2026/02/10/india-laser-sniper-ugv/"
     },
     {
-      "id": "gn-unmanned-aircraft-37",
+      "id": "gn-unmanned-aircraft-34",
       "title": "Armenia Boosts Military With US V-BAT Drones - The Defense Post",
       "summary": "Armenia Boosts Military With US V-BAT Drones&nbsp;&nbsp;The Defense Post",
       "topic": "unmanned-aircraft",
@@ -463,7 +453,17 @@
       "url": "https://www.itvoice.in/5-common-cybersecurity-blind-spots-in-mid-to-large-enterprises"
     },
     {
-      "id": "gn-unmanned-aircraft-24",
+      "id": "gn-unmanned-aircraft-47",
+      "title": "More Targets to Hit: The Advantage of the \"Gerbera\" Mother Drone with AI Named - Первый технический",
+      "summary": "More Targets to Hit: The Advantage of the \"Gerbera\" Mother Drone with AI Named&nbsp;&nbsp;Первый технический",
+      "topic": "unmanned-aircraft",
+      "source": "Первый технический",
+      "date": "Tue, 10 Feb 2026 07:05:13 GMT",
+      "imageUrl": "https://media.www1.ru/1600x900/smart/ixbt-data/1117129/01KH2YXKN3ETFKZW2N37HQMG0J.jpg",
+      "url": "https://www1.ru/en/news/2026/02/10/bolse-celei-dlia-porazeniia-nazvano-preimushhestvo-drona-matki-gerbera-s-ii.html"
+    },
+    {
+      "id": "gn-unmanned-aircraft-21",
       "title": "Modern Weapons Shaping the Ukraine-Russia War - mezha.net",
       "summary": "Modern Weapons Shaping the Ukraine-Russia War&nbsp;&nbsp;mezha.net",
       "topic": "unmanned-aircraft",
@@ -493,14 +493,14 @@
       "url": "https://www.ciol.com/news/ai-powered-cybercrime-deepfake-fraud-ransomware-check-point-report-11090502"
     },
     {
-      "id": "gn-unmanned-aircraft-26",
+      "id": "gn-unmanned-aircraft-23",
       "title": "6 facts about V-BAT drones Armenia has acquired from the U.S. - Mediamax.am",
       "summary": "6 facts about V-BAT drones Armenia has acquired from the U.S.&nbsp;&nbsp;Mediamax.am",
       "topic": "unmanned-aircraft",
       "source": "Mediamax.am",
       "date": "Tue, 10 Feb 2026 05:18:11 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0zY1Ytc2s0UVdvOTBGZVIyaUNyRDMtNmV2UndTR3ZXZUFvMDl2ZmpaTk9NZURFb3FuVkltV0MzckZmOVk2M2NoVG94WEZQeDJoaXVwRTdUS0g?oc=5"
+      "imageUrl": "https://mediamax.am/datas/znews/big_/2026/02/1770699235_1294807.jpg",
+      "url": "https://mediamax.am/en/news/parzabanum/59929/"
     },
     {
       "id": "gn-health-style-41",
@@ -583,7 +583,7 @@
       "url": "https://beincrypto.com/binance-cz-yi-he-ai-deepfake-videos-crypto-twitter/"
     },
     {
-      "id": "gn-unmanned-aircraft-35",
+      "id": "gn-unmanned-aircraft-32",
       "title": "Saudi Arabia in talks with US company for AI-powered drones, sources say - Middle East Eye",
       "summary": "Saudi Arabia in talks with US company for AI-powered drones, sources say&nbsp;&nbsp;Middle East Eye",
       "topic": "unmanned-aircraft",
@@ -603,7 +603,7 @@
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZE9UVzBwSnMtdmJyVHlKb2cwbzMwdE1EUGJRTElldmhFN2VmNnFlMnNETkpxR0NvY2VLUWN3T2duVm9EX3o4NURKZFFHMjJsazY5SWt5Qkx1VHd6czlFRktlZUtLUFA2YXM5cHBlSUc3MUhvNXNrM0xOVElpeGFPaGZLSkpieTg?oc=5"
     },
     {
-      "id": "gn-unmanned-aircraft-20",
+      "id": "gn-unmanned-aircraft-16",
       "title": "Taiwan Plans to Produce 210,000 Drones and 1,000 Unmanned Surface Vehicles - Vision Times",
       "summary": "Taiwan Plans to Produce 210,000 Drones and 1,000 Unmanned Surface Vehicles&nbsp;&nbsp;Vision Times",
       "topic": "unmanned-aircraft",
@@ -633,7 +633,7 @@
       "url": "https://newsroom.clevelandclinic.org/2026/02/09/uaes-first-robotic-seeg-procedure-performed-at-cleveland-clinic-abu-dhabi"
     },
     {
-      "id": "gn-unmanned-aircraft-49",
+      "id": "gn-unmanned-aircraft-45",
       "title": "Vance announces first-ever major U.S. military technology sale to Armenia worth $11 mn - CivilNet",
       "summary": "Vance announces first-ever major U.S. military technology sale to Armenia worth $11 mn&nbsp;&nbsp;CivilNet",
       "topic": "unmanned-aircraft",
@@ -723,7 +723,7 @@
       "url": "https://farmonaut.com/mining/ore-sorting-boosting-mining-efficiency-sustainability"
     },
     {
-      "id": "gn-unmanned-aircraft-38",
+      "id": "gn-unmanned-aircraft-35",
       "title": "Which Engineering Innovations Are Redefining Next-Gen Military Drones? - Design and Development Today",
       "summary": "Which Engineering Innovations Are Redefining Next-Gen Military Drones?&nbsp;&nbsp;Design and Development Today",
       "topic": "unmanned-aircraft",
@@ -733,7 +733,7 @@
       "url": "https://www.designdevelopmenttoday.com/industries/aerospace/article/22960266/which-engineering-innovations-are-redefining-nextgen-military-drones"
     },
     {
-      "id": "gn-unmanned-aircraft-19",
+      "id": "gn-unmanned-aircraft-15",
       "title": "US special ops forces want in on AI to lighten the operator's 'cognitive load' and make their job easier - MSN",
       "summary": "US special ops forces want in on AI to lighten the operator's 'cognitive load' and make their job easier&nbsp;&nbsp;MSN",
       "topic": "unmanned-aircraft",
@@ -743,7 +743,7 @@
       "url": "https://www.msn.com/en-us/money/other/us-special-ops-forces-want-in-on-ai-to-cut-cognitive-load-and-make-operator-jobs-easier/ar-AA1F51du?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
     },
     {
-      "id": "gn-unmanned-aircraft-29",
+      "id": "gn-unmanned-aircraft-26",
       "title": "MQ-20 Avenger shown with nose-mounted laser in autonomous combat drone concept - MSN",
       "summary": "MQ-20 Avenger shown with nose-mounted laser in autonomous combat drone concept&nbsp;&nbsp;MSN",
       "topic": "unmanned-aircraft",
@@ -863,7 +863,7 @@
       "url": "https://www.moneycontrol.com/health-and-fitness/who-backs-wearables-from-smart-rings-to-cgms-here-s-how-wearables-are-boosting-preventive-healthcare-article-13818763.html"
     },
     {
-      "id": "gn-unmanned-aircraft-21",
+      "id": "gn-unmanned-aircraft-17",
       "title": "Unknown: Killer Robots (2023) - India’s World Magazine",
       "summary": "Unknown: Killer Robots (2023)&nbsp;&nbsp;India’s World Magazine",
       "topic": "unmanned-aircraft",
@@ -903,7 +903,7 @@
       "url": "https://www.moneymag.com.au/ai-romance-scams-valentines-day"
     },
     {
-      "id": "gn-unmanned-aircraft-34",
+      "id": "gn-unmanned-aircraft-31",
       "title": "Drones: The latest weapon used by al-Qaeda and Islamic State-linked jihadists in West Africa - BBC",
       "summary": "Drones: The latest weapon used by al-Qaeda and Islamic State-linked jihadists in West Africa&nbsp;&nbsp;BBC",
       "topic": "unmanned-aircraft",
@@ -943,7 +943,7 @@
       "url": "https://techmitra.in/20-best-chatgpt-prompts-for-health-and-fitness/"
     },
     {
-      "id": "gn-unmanned-aircraft-30",
+      "id": "gn-unmanned-aircraft-27",
       "title": "Russia Tests AI-Enabled Drones Capable of Autonomous Strikes on Civilian Infrastructure - 112.ua",
       "summary": "Russia Tests AI-Enabled Drones Capable of Autonomous Strikes on Civilian Infrastructure&nbsp;&nbsp;112.ua",
       "topic": "unmanned-aircraft",
@@ -989,7 +989,7 @@
       "topic": "unmanned-aircraft",
       "source": "Global Market Insights Inc.",
       "date": "Sun, 08 Feb 2026 08:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1508444845599-5c89863b1c44?w=600&h=400&fit=crop&auto=format",
+      "imageUrl": "https://cdn.gminsights.com/image/rd/semiconductors-and-electronics/lidar-in-mapping-market-research-report.webp",
       "url": "https://www.gminsights.com/industry-analysis/lidar-in-mapping-market"
     },
     {
@@ -1063,6 +1063,16 @@
       "url": "https://farmonaut.com/mining/bulk-copper-key-to-sustainable-agriculture-2026"
     },
     {
+      "id": "gn-unmanned-aircraft-49",
+      "title": "US drone makers target Asian buyers amid China security fears - Big News Network.com",
+      "summary": "US drone makers target Asian buyers amid China security fears&nbsp;&nbsp;Big News Network.com",
+      "topic": "unmanned-aircraft",
+      "source": "Big News Network.com",
+      "date": "Sat, 07 Feb 2026 09:47:00 GMT",
+      "imageUrl": "https://image.chitra.live/api/v1/wps/ef27ea7/68b76384-d4a3-4a1d-8921-557020ae13d6/1/Shield-AI-600x315.jpg",
+      "url": "https://www.bignewsnetwork.com/news/278851902/us-drone-makers-target-asian-buyers-amid-china-security-fears"
+    },
+    {
       "id": "gn-environment-science-14",
       "title": "Agriculture Research: Sensor Advancements Boost Field Crops - Farmonaut",
       "summary": "Agriculture Research: Sensor Advancements Boost Field Crops&nbsp;&nbsp;Farmonaut",
@@ -1103,7 +1113,7 @@
       "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/fugitive-crypto-scam-kingpin-20-years-73-million-pig-butchering-scam"
     },
     {
-      "id": "gn-unmanned-aircraft-18",
+      "id": "gn-unmanned-aircraft-14",
       "title": "US drone firms court Asia as China’s military rise alarms region - malaysiasun.com",
       "summary": "US drone firms court Asia as China’s military rise alarms region&nbsp;&nbsp;malaysiasun.com",
       "topic": "unmanned-aircraft",
@@ -1111,6 +1121,16 @@
       "date": "Sat, 07 Feb 2026 05:17:00 GMT",
       "imageUrl": "https://image.chitra.live/api/v1/wps/ef27ea7/68b76384-d4a3-4a1d-8921-557020ae13d6/1/Shield-AI-600x315.jpg",
       "url": "https://www.malaysiasun.com/news/278851902/us-drone-firms-court-asia-as-china-s-military-rise-alarms-region"
+    },
+    {
+      "id": "gn-unmanned-aircraft-48",
+      "title": "India Unveils AI-Powered VLM_X VTOL Kamikaze Drone with Precision Strike Capability - Indian Masterminds",
+      "summary": "India Unveils AI-Powered VLM_X VTOL Kamikaze Drone with Precision Strike Capability&nbsp;&nbsp;Indian Masterminds",
+      "topic": "unmanned-aircraft",
+      "source": "Indian Masterminds",
+      "date": "Sat, 07 Feb 2026 05:14:42 GMT",
+      "imageUrl": "https://indianmasterminds.com/wp-content/uploads/2026/02/Screenshot_2026-02-07-10-43-06-1.jpg",
+      "url": "https://indianmasterminds.com/news/vtol-aviation-vlm-x-kamikaze-drone-india-indigenous-uav-183443/"
     },
     {
       "id": "gn-digital-security-13",
@@ -1163,7 +1183,7 @@
       "url": "https://farmonaut.com/mining/puregold-mining-2026-innovations-for-sustainability"
     },
     {
-      "id": "gn-unmanned-aircraft-16",
+      "id": "gn-unmanned-aircraft-12",
       "title": "FAA steps up drone restriction enforcement ahead of Super Bowl - Big News Network.com",
       "summary": "FAA steps up drone restriction enforcement ahead of Super Bowl&nbsp;&nbsp;Big News Network.com",
       "topic": "unmanned-aircraft",
@@ -1183,7 +1203,7 @@
       "url": "https://www.trendhunter.com/trends/nutrition-tracker"
     },
     {
-      "id": "gn-unmanned-aircraft-40",
+      "id": "gn-unmanned-aircraft-37",
       "title": "Frost &amp; Sullivan: Human-Machine Integration and Manned-Unmanned Teaming to Reshape Global Military Operations Through 2027 - The Manila Times",
       "summary": "Frost & Sullivan: Human-Machine Integration and Manned-Unmanned Teaming to Reshape Global Military Operations Through 2027&nbsp;&nbsp;The Manila Times",
       "topic": "unmanned-aircraft",
@@ -1231,16 +1251,6 @@
       "date": "Fri, 06 Feb 2026 18:45:07 GMT",
       "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/07/Blog-Policy-Pricing-1.png",
       "url": "https://farmonaut.com/mining/fimiston-gold-mine-7-innovations-transforming-mining"
-    },
-    {
-      "id": "gn-unmanned-aircraft-10",
-      "title": "FAA Signals Tougher Stance on Unauthorized Drone Operations - Dronelife",
-      "summary": "FAA Signals Tougher Stance on Unauthorized Drone Operations&nbsp;&nbsp;Dronelife",
-      "topic": "unmanned-aircraft",
-      "source": "Dronelife",
-      "date": "Fri, 06 Feb 2026 17:48:45 GMT",
-      "imageUrl": "https://dronelife.com/wp-content/uploads/2026/02/20907201086_894600419f_c.jpg",
-      "url": "https://dronelife.com/2026/02/06/faa-tougher-stance-unauthorized-drone-operations/"
     },
     {
       "id": "gn-ai-academy-2",
@@ -1313,7 +1323,7 @@
       "url": "https://farmonaut.com/precision-farming/high-technology-farming-latest-farming-technology-2026"
     },
     {
-      "id": "gn-unmanned-aircraft-48",
+      "id": "gn-unmanned-aircraft-44",
       "title": "Collaborative Combat Aircraft Market Projected to Reach USD - GlobeNewswire",
       "summary": "Collaborative Combat Aircraft Market Projected to Reach USD&nbsp;&nbsp;GlobeNewswire",
       "topic": "unmanned-aircraft",
@@ -1433,16 +1443,6 @@
       "url": "https://gizmodo.com/download/chatgpt"
     },
     {
-      "id": "gn-unmanned-aircraft-13",
-      "title": "How Canada’s drone rules affect you - Best Buy Blog",
-      "summary": "How Canada’s drone rules affect you&nbsp;&nbsp;Best Buy Blog",
-      "topic": "unmanned-aircraft",
-      "source": "Best Buy Blog",
-      "date": "Fri, 06 Feb 2026 08:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1508444845599-5c89863b1c44?w=600&h=400&fit=crop&auto=format",
-      "url": "chrome-error://chromewebdata/"
-    },
-    {
       "id": "gn-health-style-15",
       "title": "Top AI Outfit Generator Tools in 2026 - autogpt.net",
       "summary": "Top AI Outfit Generator Tools in 2026&nbsp;&nbsp;autogpt.net",
@@ -1483,7 +1483,7 @@
       "url": "https://biznakenya.com/eset-threat-report-deepfake-scams-and-ai-co-generated-malware-among-key-cyber-risks-for-kenya/"
     },
     {
-      "id": "gn-unmanned-aircraft-36",
+      "id": "gn-unmanned-aircraft-33",
       "title": "Digital Pharaohs: Egypt’s AI sovereignty drive - opinion - The Jerusalem Post",
       "summary": "Digital Pharaohs: Egypt’s AI sovereignty drive - opinion&nbsp;&nbsp;The Jerusalem Post",
       "topic": "unmanned-aircraft",
@@ -1511,16 +1511,6 @@
       "date": "Thu, 05 Feb 2026 23:23:28 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop&auto=format",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZEl2OEMxeFVZRlgwVFNnTXpMa3lqZFJ3eWw1dUlnb0psQ19hbFppWXdNNmRvVHF0b2ZHOWJSS2h2elJQc0xOeUJycWdJMm5USDdpN2tLRl9KSUxDYkNEOFlvT2NZZ0h6djhUREliZWdQY04zdDhDdnpqRUw1aDJpV1V4ZkZZVmRPSU9yZ29CMDV0MmNR?oc=5"
-    },
-    {
-      "id": "gn-unmanned-aircraft-11",
-      "title": "February 5: Gus Lamont Case Spurs Demand for Police AI and Drones - Meyka",
-      "summary": "February 5: Gus Lamont Case Spurs Demand for Police AI and Drones&nbsp;&nbsp;Meyka",
-      "topic": "unmanned-aircraft",
-      "source": "Meyka",
-      "date": "Thu, 05 Feb 2026 23:09:02 GMT",
-      "imageUrl": "https://blog-meyka-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2026/02/featured_image-2611.png",
-      "url": "https://meyka.com/blog/february-5-gus-lamont-case-spurs-demand-for-police-ai-and-drones-0502/"
     },
     {
       "id": "gn-environment-science-37",
@@ -1573,7 +1563,7 @@
       "url": "https://debuglies.com/2026/02/05/geopolitical-osint-threat-assessment-report-gotar-ai-driven-cyber-threats-and-risks-in-2026-agentic-ai-ransomware-apt-convergence-and-geopolitical-escalation-vectors/"
     },
     {
-      "id": "gn-unmanned-aircraft-17",
+      "id": "gn-unmanned-aircraft-13",
       "title": "7 Best Drone Stocks to Buy for 2026 - US News Money",
       "summary": "7 Best Drone Stocks to Buy for 2026&nbsp;&nbsp;US News Money",
       "topic": "unmanned-aircraft",
@@ -1593,7 +1583,7 @@
       "url": "https://www.lawfaremedia.org/article/latest-ndaa-supports-ai-safety--innovation--and-china-decoupling"
     },
     {
-      "id": "gn-unmanned-aircraft-39",
+      "id": "gn-unmanned-aircraft-36",
       "title": "Military Drone Market Poised to Surpass US$ 20.3 Billion by - GlobeNewswire",
       "summary": "Military Drone Market Poised to Surpass US$ 20.3 Billion by&nbsp;&nbsp;GlobeNewswire",
       "topic": "unmanned-aircraft",
@@ -1633,7 +1623,7 @@
       "url": "https://www.goodhousekeeping.com/uk/product-reviews/tech/g684175/best-activity-tracker/"
     },
     {
-      "id": "gn-unmanned-aircraft-32",
+      "id": "gn-unmanned-aircraft-29",
       "title": "US Drone Makers Target Asia Amid Rising China Threat - Modern Diplomacy",
       "summary": "US Drone Makers Target Asia Amid Rising China Threat&nbsp;&nbsp;Modern Diplomacy",
       "topic": "unmanned-aircraft",
@@ -1653,6 +1643,16 @@
       "url": "https://cioafrica.co/deepfake-scams-ai-malware-raise-cyber-risks-in-kenya/"
     },
     {
+      "id": "gn-unmanned-aircraft-46",
+      "title": "Military Robotics Market to Reach $34.82B by 2032 | CAGR 7.88% | - openPR.com",
+      "summary": "Military Robotics Market to Reach $34.82B by 2032 | CAGR 7.88% |&nbsp;&nbsp;openPR.com",
+      "topic": "unmanned-aircraft",
+      "source": "openPR.com",
+      "date": "Thu, 05 Feb 2026 11:37:29 GMT",
+      "imageUrl": "https://cdn.open-pr.com/L/2/L205980039_g.jpg",
+      "url": "https://www.openpr.com/news/4378739/military-robotics-market-to-reach-34-82b-by-2032-cagr-7-88"
+    },
+    {
       "id": "gn-health-style-18",
       "title": "The Top 7 Online Shopping Categories by Revenue (2026) - Shopify",
       "summary": "The Top 7 Online Shopping Categories by Revenue (2026)&nbsp;&nbsp;Shopify",
@@ -1663,7 +1663,7 @@
       "url": "https://www.shopify.com/blog/top-online-shopping-categories"
     },
     {
-      "id": "gn-unmanned-aircraft-27",
+      "id": "gn-unmanned-aircraft-24",
       "title": "US drone makers seek Asia sales as China threat rises - WTVB",
       "summary": "US drone makers seek Asia sales as China threat rises&nbsp;&nbsp;WTVB",
       "topic": "unmanned-aircraft",
@@ -1723,7 +1723,7 @@
       "url": "https://www.bitget.com/es-ES/academy/12560603850246"
     },
     {
-      "id": "gn-unmanned-aircraft-46",
+      "id": "gn-unmanned-aircraft-43",
       "title": "Drone Warfare Market to Reach USD 39.5 Billion by 2032, says Stratview Research - openPR.com",
       "summary": "Drone Warfare Market to Reach USD 39.5 Billion by 2032, says Stratview Research&nbsp;&nbsp;openPR.com",
       "topic": "unmanned-aircraft",
@@ -1743,7 +1743,7 @@
       "url": "https://www.chinadaily.com.cn/a/202602/05/WS698468aea310d6866eb37b32.html"
     },
     {
-      "id": "gn-unmanned-aircraft-33",
+      "id": "gn-unmanned-aircraft-30",
       "title": "U.S. drone-makers debut at Singapore Airshow eyeing Asia sales amid China threat - The Japan Times",
       "summary": "U.S. drone-makers debut at Singapore Airshow eyeing Asia sales amid China threat&nbsp;&nbsp;The Japan Times",
       "topic": "unmanned-aircraft",
@@ -1763,7 +1763,7 @@
       "url": "https://xpert.digital/en/energy-transition-in-south-korea/"
     },
     {
-      "id": "gn-unmanned-aircraft-44",
+      "id": "gn-unmanned-aircraft-41",
       "title": "Saudi Arabia Airborne ISR Market Defense Modernization, Surveillance Capabilities &amp; Growth Outlook - vocal.media",
       "summary": "Saudi Arabia Airborne ISR Market Defense Modernization, Surveillance Capabilities & Growth Outlook&nbsp;&nbsp;vocal.media",
       "topic": "unmanned-aircraft",
@@ -1923,7 +1923,7 @@
       "url": "https://www.metoffice.gov.uk/blog/2026/how-does-the-met-office-use-ai"
     },
     {
-      "id": "gn-unmanned-aircraft-43",
+      "id": "gn-unmanned-aircraft-40",
       "title": "Drone Payload Market to Reach US$ 39.7 Billion by 2033 as - GlobeNewswire",
       "summary": "Drone Payload Market to Reach US$ 39.7 Billion by 2033 as&nbsp;&nbsp;GlobeNewswire",
       "topic": "unmanned-aircraft",
@@ -1963,7 +1963,7 @@
       "url": "https://htxt.co.za/2026/02/the-most-popular-cyberattack-in-south-africa/"
     },
     {
-      "id": "gn-unmanned-aircraft-25",
+      "id": "gn-unmanned-aircraft-22",
       "title": "France delivers 1,000 infantry reconnaissance drones to Army - Defence Blog",
       "summary": "France delivers 1,000 infantry reconnaissance drones to Army&nbsp;&nbsp;Defence Blog",
       "topic": "unmanned-aircraft",
@@ -1973,7 +1973,7 @@
       "url": "https://defence-blog.com/france-delivers-1000-infantry-reconnaissance-drones-to-army/"
     },
     {
-      "id": "gn-unmanned-aircraft-41",
+      "id": "gn-unmanned-aircraft-38",
       "title": "Overland AI scales ULTRA UGV production for U.S. military - Defence Blog",
       "summary": "Overland AI scales ULTRA UGV production for U.S. military&nbsp;&nbsp;Defence Blog",
       "topic": "unmanned-aircraft",
