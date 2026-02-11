@@ -538,7 +538,8 @@ export default function Home() {
   const scrollToSection = (sectionId: string) => {
     const el = document.querySelector(`[data-topic-section="${sectionId}"]`);
     if (el) {
-      const headerHeight = 120; // sticky header height
+      const header = document.querySelector("header");
+      const headerHeight = header ? header.getBoundingClientRect().height + 16 : 140;
       const top = el.getBoundingClientRect().top + window.scrollY - headerHeight;
       window.scrollTo({ top, behavior: "smooth" });
     }
