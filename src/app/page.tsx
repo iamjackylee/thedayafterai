@@ -11,10 +11,10 @@ import {
   ChevronLeft,
   ChevronRight,
   Play,
+  ExternalLink,
 } from "lucide-react";
 import NewsCard from "@/components/NewsCard";
 import VideoCard from "@/components/VideoCard";
-import DailyNewsBar from "@/components/DailyNewsBar";
 import { TOPICS } from "@/lib/topics";
 import {
   fetchNews,
@@ -584,9 +584,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-black">
-      {/* Daily news bar */}
-      <DailyNewsBar latestVideo={channelVideos[0] || null} />
-
       {/* Header */}
       <header className="bg-black border-b border-[var(--border)] sticky top-0 z-30">
         <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-4">
@@ -597,6 +594,11 @@ export default function Home() {
                 src="https://images.squarespace-cdn.com/content/v1/6676cf95ee3c1d15365d2d18/3827502e-87dd-4bf1-808a-7b732caf1d18/TheDayAfterAI+New+Logo.png?format=300w"
                 alt="TheDayAfterAI News"
                 className="h-10"
+              />
+              <img
+                src="/tdai-letter-logo.png"
+                alt="TDAI"
+                className="h-8"
               />
             </div>
 
@@ -628,55 +630,86 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Section navigation - color-coded pills that scroll to sections */}
+        {/* Section navigation - color-coded pills + latest video */}
         <div className="border-t border-[var(--border)]">
-          <div className="max-w-[1400px] mx-auto px-4 md:px-8 relative">
-            <button
-              onClick={() => scrollTopics("left")}
-              className="absolute left-0 top-0 bottom-0 z-10 px-2 bg-gradient-to-r from-black to-transparent hidden md:flex items-center"
-            >
-              <ChevronLeft size={16} className="text-[var(--muted)]" />
-            </button>
-            <div
-              ref={topicNavRef}
-              className="topic-nav flex items-center gap-1.5 overflow-x-auto py-3"
-            >
-              {navItems.map((item) => {
-                const isActive = activeSection === item.id;
-                return (
-                  <button
-                    key={item.id}
-                    data-nav-topic={item.id}
-                    onClick={() => scrollToSection(item.id)}
-                    className={`shrink-0 px-4 py-1.5 text-xs font-bold uppercase tracking-wider border topic-pill ${isActive ? "viewing" : ""}`}
-                    style={
-                      isActive
-                        ? {
-                            color: item.color,
-                            borderColor: item.color,
-                            borderBottomWidth: "2px",
-                            ["--pill-color" as string]: item.color,
-                            ["--pill-border" as string]: item.color + "40",
-                          }
-                        : {
-                            color: "var(--muted)",
-                            borderColor: "transparent",
-                            ["--pill-color" as string]: item.color,
-                            ["--pill-border" as string]: item.color + "40",
-                          }
-                    }
-                  >
-                    {item.label}
-                  </button>
-                );
-              })}
+          <div className="max-w-[1400px] mx-auto px-4 md:px-8 flex items-center gap-3">
+            {/* Topic pills (scrollable) */}
+            <div className="relative flex-1 min-w-0">
+              <button
+                onClick={() => scrollTopics("left")}
+                className="absolute left-0 top-0 bottom-0 z-10 px-2 bg-gradient-to-r from-black to-transparent hidden md:flex items-center"
+              >
+                <ChevronLeft size={16} className="text-[var(--muted)]" />
+              </button>
+              <div
+                ref={topicNavRef}
+                className="topic-nav flex items-center gap-1.5 overflow-x-auto py-3"
+              >
+                {navItems.map((item) => {
+                  const isActive = activeSection === item.id;
+                  return (
+                    <button
+                      key={item.id}
+                      data-nav-topic={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`shrink-0 px-4 py-1.5 text-xs font-bold uppercase tracking-wider border topic-pill ${isActive ? "viewing" : ""}`}
+                      style={
+                        isActive
+                          ? {
+                              color: item.color,
+                              borderColor: item.color,
+                              borderBottomWidth: "2px",
+                              ["--pill-color" as string]: item.color,
+                              ["--pill-border" as string]: item.color + "40",
+                            }
+                          : {
+                              color: "var(--muted)",
+                              borderColor: "transparent",
+                              ["--pill-color" as string]: item.color,
+                              ["--pill-border" as string]: item.color + "40",
+                            }
+                      }
+                    >
+                      {item.label}
+                    </button>
+                  );
+                })}
+              </div>
+              <button
+                onClick={() => scrollTopics("right")}
+                className="absolute right-0 top-0 bottom-0 z-10 px-2 bg-gradient-to-l from-black to-transparent hidden md:flex items-center"
+              >
+                <ChevronRight size={16} className="text-[var(--muted)]" />
+              </button>
             </div>
-            <button
-              onClick={() => scrollTopics("right")}
-              className="absolute right-0 top-0 bottom-0 z-10 px-2 bg-gradient-to-l from-black to-transparent hidden md:flex items-center"
-            >
-              <ChevronRight size={16} className="text-[var(--muted)]" />
-            </button>
+
+            {/* Latest video + Watch */}
+            <div className="hidden md:flex items-center gap-3 shrink-0 pl-3 border-l border-[var(--border-light)]">
+              <Play size={10} className="text-[#ff0050] shrink-0" fill="currentColor" />
+              {channelVideos[0] ? (
+                <a
+                  href={`https://www.youtube.com/watch?v=${channelVideos[0].videoId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-[var(--foreground)] truncate max-w-[200px] hover:text-[var(--accent)] transition-colors font-medium"
+                >
+                  {channelVideos[0].title}
+                </a>
+              ) : (
+                <span className="text-xs text-[var(--muted)] truncate">
+                  Loading...
+                </span>
+              )}
+              <a
+                href={PLAYLIST_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-[10px] font-bold text-[var(--accent)] hover:text-white transition-colors shrink-0 uppercase tracking-widest"
+              >
+                Watch
+                <ExternalLink size={10} />
+              </a>
+            </div>
           </div>
         </div>
       </header>
@@ -839,7 +872,10 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row gap-8 mb-8">
             {/* Brand column — wider, takes ~38% */}
             <div className="lg:w-[38%] lg:pr-8 lg:border-r lg:border-[var(--border)]">
-              <h2 className="text-3xl font-extrabold text-white tracking-tight mb-4" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>TheDayAfterAI News</h2>
+              <div className="flex items-center gap-3 mb-4">
+                <h2 className="text-3xl font-extrabold text-white tracking-tight" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>TheDayAfterAI News</h2>
+                <img src="/tdai-letter-logo.png" alt="TDAI" className="h-8" />
+              </div>
               <div className="flex items-center gap-4 mb-5">
                 <a href="https://www.facebook.com/thedayafterai" target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Facebook size={20} /></a>
                 <a href={PLAYLIST_URL} target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Youtube size={20} /></a>
