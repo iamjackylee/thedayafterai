@@ -111,12 +111,6 @@ function CustomSectionRow({ section, showCount }: { section: CustomSection; show
             >
               Exclusive
             </span>
-            <span
-              className="text-[10px] font-bold px-2 py-0.5 rounded-sm"
-              style={{ backgroundColor: section.color + "20", color: section.color }}
-            >
-              TheDayAfterAI
-            </span>
           </div>
         </div>
         <div className="flex items-center gap-0.5">
