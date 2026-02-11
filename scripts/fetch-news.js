@@ -852,6 +852,13 @@ async function fetchCustomArticles() {
       await page.goto(pageUrl, { waitUntil: "networkidle", timeout: 30000 });
       console.log(`  Loaded: ${pageUrl}`);
 
+      // Scroll down to trigger lazy-loaded content (Squarespace often uses infinite scroll)
+      for (let i = 0; i < 5; i++) {
+        await page.evaluate(() => window.scrollBy(0, window.innerHeight));
+        await page.waitForTimeout(800);
+      }
+      await page.waitForTimeout(1000);
+
       const articles = await page.evaluate((filterSlug) => {
         const results = [];
         const seen = new Set();
