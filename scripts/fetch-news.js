@@ -407,9 +407,14 @@ function generateImageUrl(title, topic) {
 
 function isGenericImage(url) {
   if (!url) return true;
-  if (/lh\d\.googleusercontent\.com/i.test(url)) return false;
-  if (/(?:width|w|size)=(?:1\d{0,2}|[1-9]\d?)(?:\D|$)/i.test(url)) return true;
-  return [/news\.google\.com/i, /googlenews/i, /gstatic\.com.*\/news/i, /\/logo/i, /\/favicon/i, /icon[-_]?\d+/i, /default[-_]?image/i, /placeholder/i, /\/avatar/i].some((re) => re.test(url));
+  // Small images in URL params (width/w/size < 150) are likely icons/logos
+  if (/(?:width|w|size)=(?:1[0-4]?\d|[1-9]\d?)(?:\D|$)/i.test(url)) return true;
+  return [
+    /news\.google\.com/i, /googlenews/i, /gstatic\.com.*\/news/i,
+    /\/logo/i, /\/favicon/i, /icon[-_]?\d+/i, /default[-_]?image/i,
+    /placeholder/i, /\/avatar/i, /site[-_]?logo/i, /brand[-_]?logo/i,
+    /masthead/i, /header[-_]?logo/i, /nav[-_]?logo/i, /\.ico(?:\?|$)/i,
+  ].some((re) => re.test(url));
 }
 
 function extractArticleId(url) {
@@ -577,7 +582,18 @@ function parseRssItems(items, articles, seenTitles, category) {
     if (!imageUrl) {
       const decodedDesc = rawDescription.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&").replace(/&quot;/g, '"');
       const imgMatch = decodedDesc.match(/<img[^>]+src=["']([^"']+)["']/i);
-      if (imgMatch && imgMatch[1] && !isGenericImage(imgMatch[1])) imageUrl = imgMatch[1];
+      if (imgMatch && imgMatch[1] && !isGenericImage(imgMatch[1])) {
+        // Google News RSS descriptions embed small publisher logos (typically 80x80).
+        // Check width/height attributes — reject images ≤ 150px (logos).
+        const fullTag = decodedDesc.match(/<img[^>]*src=["'][^"']*["'][^>]*>/i)?.[0] || "";
+        const wMatch = fullTag.match(/width=["']?(\d+)/i);
+        const hMatch = fullTag.match(/height=["']?(\d+)/i);
+        const w = wMatch ? parseInt(wMatch[1], 10) : 999;
+        const h = hMatch ? parseInt(hMatch[1], 10) : 999;
+        if (w > 150 && h > 150) {
+          imageUrl = imgMatch[1];
+        }
+      }
     }
 
     articles.push({
@@ -598,16 +614,28 @@ async function resolveArticles(articles) {
   for (const article of articles) {
     const id = extractArticleId(article.url);
     if (id && cache[id]) {
-      article.url = cache[id].url || article.url;
-      if (cache[id].imageUrl && !article.imageUrl) article.imageUrl = cache[id].imageUrl;
+      // Handle both old format (plain URL string) and new format ({ url, imageUrl })
+      const entry = typeof cache[id] === "string"
+        ? { url: cache[id], imageUrl: "" }
+        : cache[id];
+      article.url = entry.url || article.url;
+      // Always prefer cached Playwright-extracted image over RSS image
+      // (RSS images from Google News are usually publisher logos)
+      if (entry.imageUrl) article.imageUrl = entry.imageUrl;
       cacheHits++;
     }
   }
   console.log(`Applied ${cacheHits} cached resolutions`);
 
+  // Articles still pointing at Google News (need full resolution)
   const toResolve = articles.filter((a) => a.url && a.url.includes("news.google.com"));
-  if (toResolve.length === 0) {
-    console.log("All URLs resolved from cache!");
+  // Articles with resolved URLs but no image (need image re-extraction)
+  const needsImage = articles.filter((a) => {
+    if (a.url.includes("news.google.com")) return false; // handled above
+    return !a.imageUrl || a.imageUrl.includes("unsplash.com");
+  });
+  if (toResolve.length === 0 && needsImage.length === 0) {
+    console.log("All URLs resolved from cache and all have images!");
     saveUrlCache(cache);
     applyFallbackImages(articles);
     return;
@@ -671,25 +699,31 @@ async function resolveArticles(articles) {
           article.url = finalUrl;
           // Extract the best article image using multiple strategies:
           // 1. JSON-LD structured data (most accurate — publisher's chosen article image)
-          // 2. Article hero/featured image (first prominent image in content)
-          // 3. og:image / twitter:image (social sharing — sometimes generic)
+          // 2. og:image / twitter:image (universal — nearly all news sites set these)
+          // 3. Article hero/featured image (CMS-specific selectors)
           // 4. First large image in article body
           const imgUrl = await page.evaluate(() => {
-            const isGoodUrl = (u) => u && u.startsWith("http") &&
-              !u.includes("avatar") && !u.includes("/logo") && !u.includes("favicon") &&
-              !u.includes("icon") && !u.includes("pixel") && !u.includes("tracking") &&
-              !u.includes("1x1") && !u.includes("spacer");
+            const isGoodUrl = (u) => {
+              if (!u || !u.startsWith("http")) return false;
+              const lower = u.toLowerCase();
+              return ![
+                "avatar", "/logo", "favicon", "icon", "pixel", "tracking",
+                "1x1", "spacer", "badge", "brand", "masthead", "site-logo",
+                "site_logo", "header-logo", "header_logo", "nav-logo", "nav_logo",
+                ".ico", ".svg", "widget", "button", "banner-ad", "advertisement",
+              ].some((pat) => lower.includes(pat));
+            };
 
-            // 1. JSON-LD structured data — often the most accurate article image
+            // 1. JSON-LD structured data — most accurate article image
             try {
               const ldScripts = document.querySelectorAll('script[type="application/ld+json"]');
               for (const script of ldScripts) {
                 const data = JSON.parse(script.textContent || "");
-                // Handle array of objects or single object
-                const items = Array.isArray(data) ? data : [data];
+                const items = Array.isArray(data) ? data : data["@graph"] || [data];
                 for (const item of items) {
-                  if (item["@type"] === "NewsArticle" || item["@type"] === "Article" ||
-                      item["@type"] === "BlogPosting" || item["@type"] === "WebPage") {
+                  const t = item["@type"];
+                  if (t === "NewsArticle" || t === "Article" || t === "BlogPosting" ||
+                      t === "WebPage" || t === "ReportageNewsArticle") {
                     const img = item.image;
                     if (typeof img === "string" && isGoodUrl(img)) return img;
                     if (Array.isArray(img) && img.length > 0) {
@@ -697,14 +731,26 @@ async function resolveArticles(articles) {
                       if (isGoodUrl(first)) return first;
                     }
                     if (img?.url && isGoodUrl(img.url)) return img.url;
-                    // Also check thumbnailUrl
                     if (item.thumbnailUrl && isGoodUrl(item.thumbnailUrl)) return item.thumbnailUrl;
                   }
                 }
               }
             } catch {}
 
-            // 2. Article hero/featured image (common CMS patterns)
+            // 2. og:image / meta tags — universal, nearly all news sites implement these
+            const metaSelectors = [
+              'meta[property="og:image"]', 'meta[property="og:image:secure_url"]',
+              'meta[property="og:image:url"]', 'meta[name="twitter:image"]',
+              'meta[name="twitter:image:src"]', 'meta[name="image"]',
+              'meta[itemprop="image"]', 'link[rel="image_src"]',
+            ];
+            for (const sel of metaSelectors) {
+              const el = document.querySelector(sel);
+              const val = el?.getAttribute("content") || el?.getAttribute("href") || "";
+              if (isGoodUrl(val)) return val;
+            }
+
+            // 3. Article hero/featured image (common CMS patterns)
             const heroSelectors = [
               ".post-hero img", ".article-hero img", ".hero-image img",
               "[data-hero] img", ".featured-image img", ".post-thumbnail img",
@@ -722,39 +768,27 @@ async function resolveArticles(articles) {
               if (isGoodUrl(src)) return src;
             }
 
-            // 3. og:image / meta tags (standard social sharing image)
-            const metaSelectors = [
-              'meta[property="og:image"]', 'meta[property="og:image:secure_url"]',
-              'meta[property="og:image:url"]', 'meta[name="twitter:image"]',
-              'meta[name="twitter:image:src"]', 'meta[name="image"]',
-              'meta[itemprop="image"]', 'link[rel="image_src"]',
-            ];
-            for (const sel of metaSelectors) {
-              const el = document.querySelector(sel);
-              const val = el?.getAttribute("content") || el?.getAttribute("href") || "";
-              if (isGoodUrl(val)) return val;
-            }
-
             // 4. First large image in article body (prefer images > 200px wide)
             const bodySelectors = [
               "article img[src]", ".post-content img[src]", ".article-body img[src]",
               ".entry-content img[src]", ".article-content img[src]", "main img[src]",
             ];
             const imgs = Array.from(document.querySelectorAll(bodySelectors.join(", ")));
-            // First pass: prefer large images
             for (const img of imgs) {
               const src = img.getAttribute("src") || "";
               if (isGoodUrl(src) && img.naturalWidth > 200) return src;
             }
-            // Second pass: any valid image
             for (const img of imgs) {
               const src = img.getAttribute("src") || "";
               if (isGoodUrl(src)) return src;
             }
             return "";
           });
-          if (imgUrl && !isGenericImage(imgUrl)) article.imageUrl = imgUrl;
-          if (articleId) cache[articleId] = { url: finalUrl, imageUrl: article.imageUrl };
+          // Only store Playwright-extracted images in cache (not RSS logos).
+          // If Playwright found nothing, store "" so future runs re-try extraction.
+          const extractedImg = (imgUrl && !isGenericImage(imgUrl)) ? imgUrl : "";
+          if (extractedImg) article.imageUrl = extractedImg;
+          if (articleId) cache[articleId] = { url: finalUrl, imageUrl: extractedImg };
           resolved++;
         } else { failed++; }
       } catch { failed++; }
@@ -766,6 +800,76 @@ async function resolveArticles(articles) {
     if (processed % 25 < PLAYWRIGHT_CONCURRENCY || processed >= toResolve.length) {
       console.log(`  ${processed}/${toResolve.length} (resolved: ${resolved}, failed: ${failed})`);
     }
+  }
+
+  // Re-extract images for cached articles that have resolved URLs but no/bad images
+  if (needsImage.length > 0 && context) {
+    console.log(`Re-extracting images for ${needsImage.length} cached articles...`);
+    let imgFixed = 0;
+    for (let i = 0; i < needsImage.length; i += PLAYWRIGHT_CONCURRENCY) {
+      const batch = needsImage.slice(i, i + PLAYWRIGHT_CONCURRENCY);
+      const promises = batch.map(async (article) => {
+        const page = await context.newPage();
+        try {
+          await page.goto(article.url, { waitUntil: "load", timeout: PLAYWRIGHT_TIMEOUT });
+          await page.waitForTimeout(1500);
+          const imgUrl = await page.evaluate(() => {
+            const isGoodUrl = (u) => {
+              if (!u || !u.startsWith("http")) return false;
+              const lower = u.toLowerCase();
+              return ![
+                "avatar", "/logo", "favicon", "icon", "pixel", "tracking",
+                "1x1", "spacer", "badge", "brand", "masthead", "site-logo",
+                "site_logo", "header-logo", "header_logo", "nav-logo", "nav_logo",
+                ".ico", ".svg", "widget", "button", "banner-ad", "advertisement",
+              ].some((pat) => lower.includes(pat));
+            };
+            // JSON-LD
+            try {
+              const ldScripts = document.querySelectorAll('script[type="application/ld+json"]');
+              for (const script of ldScripts) {
+                const data = JSON.parse(script.textContent || "");
+                const items = Array.isArray(data) ? data : data["@graph"] || [data];
+                for (const item of items) {
+                  const t = item["@type"];
+                  if (["NewsArticle","Article","BlogPosting","WebPage","ReportageNewsArticle"].includes(t)) {
+                    const img = item.image;
+                    if (typeof img === "string" && isGoodUrl(img)) return img;
+                    if (Array.isArray(img) && img.length > 0) {
+                      const first = typeof img[0] === "string" ? img[0] : img[0]?.url;
+                      if (isGoodUrl(first)) return first;
+                    }
+                    if (img?.url && isGoodUrl(img.url)) return img.url;
+                    if (item.thumbnailUrl && isGoodUrl(item.thumbnailUrl)) return item.thumbnailUrl;
+                  }
+                }
+              }
+            } catch {}
+            // OG / Twitter meta
+            for (const sel of ['meta[property="og:image"]','meta[property="og:image:secure_url"]','meta[name="twitter:image"]','meta[name="twitter:image:src"]']) {
+              const val = document.querySelector(sel)?.getAttribute("content") || "";
+              if (isGoodUrl(val)) return val;
+            }
+            // Body images
+            const imgs = Array.from(document.querySelectorAll("article img[src], main img[src], .post-content img[src], .article-body img[src]"));
+            for (const img of imgs) {
+              const src = img.getAttribute("src") || "";
+              if (isGoodUrl(src) && img.naturalWidth > 200) return src;
+            }
+            return "";
+          });
+          if (imgUrl && !isGenericImage(imgUrl)) {
+            article.imageUrl = imgUrl;
+            const articleId = extractArticleId(article.url) || article.url;
+            if (cache[articleId]) cache[articleId].imageUrl = imgUrl;
+            imgFixed++;
+          }
+        } catch { /* page load failed */ }
+        finally { await page.close(); }
+      });
+      await Promise.allSettled(promises);
+    }
+    console.log(`  Image re-extraction: ${imgFixed}/${needsImage.length} fixed`);
   }
 
   saveUrlCache(cache);
