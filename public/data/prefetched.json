@@ -1,7 +1,17 @@
 {
-  "fetchedAt": "2026-02-11T21:03:26.984Z",
+  "fetchedAt": "2026-02-11T21:48:01.460Z",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe",
   "news": [
+    {
+      "id": "gn-ai-academy-19",
+      "title": "Can AI Truly Discover New Science? - HackerNoon",
+      "summary": "Can AI Truly Discover New Science?&nbsp;&nbsp;HackerNoon",
+      "topic": "ai-academy",
+      "source": "HackerNoon",
+      "date": "Wed, 11 Feb 2026 20:07:39 GMT",
+      "imageUrl": "https://hackernoon.imgix.net/images/a-futuristic-ai-researcher-exploring-raw-scientific-data-in-a-virtual-laboratory-f748bv4x04uyj7ewpm459fy0.png",
+      "url": "https://hackernoon.com/can-ai-truly-discover-new-science"
+    },
     {
       "id": "gn-musical-art-10",
       "title": "YouTube’s New AI Playlist Tool Is Fast, but Is It Smarter Than Spotify? - Lifewire",
@@ -43,6 +53,26 @@
       "url": "https://raillynews.com/2026/02/germany-launches-536-million-euro-attack-drone/"
     },
     {
+      "id": "gn-ai-academy-14",
+      "title": "Gemini Deep Think: Redefining the Future of Scientific Research - Google DeepMind",
+      "summary": "Gemini Deep Think: Redefining the Future of Scientific Research&nbsp;&nbsp;Google DeepMind",
+      "topic": "ai-academy",
+      "source": "Google DeepMind",
+      "date": "Wed, 11 Feb 2026 17:00:28 GMT",
+      "imageUrl": "https://lh3.googleusercontent.com/bbLVCxqhbnzzj_eIy29oKJigrlL6m4ewSwfCK-sNKVI0l1StFklsEADVPHXtTw9YorgOeIiQmM8vzmM3LBRyKu0pQeMHK4pzA_r4oIVjB_5dj8DU=w2000-h2000-n-nu",
+      "url": "https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/"
+    },
+    {
+      "id": "gn-ai-academy-13",
+      "title": "Rahul Vadisetty Wins Best Paper Award at ICICC-2026 for Breakthrough in Responsible Generative AI - TechBullion",
+      "summary": "Rahul Vadisetty Wins Best Paper Award at ICICC-2026 for Breakthrough in Responsible Generative AI&nbsp;&nbsp;TechBullion",
+      "topic": "ai-academy",
+      "source": "TechBullion",
+      "date": "Wed, 11 Feb 2026 17:00:26 GMT",
+      "imageUrl": "https://techbullion.com/wp-content/uploads/2026/02/Rahul-Vadisetty.png",
+      "url": "https://techbullion.com/rahul-vadisetty-wins-best-paper-award-at-icicc-2026-for-breakthrough-in-responsible-generative-ai/"
+    },
+    {
       "id": "gn-musical-art-46",
       "title": "‘Human made’: Irish music industry pitches AI fightback - Business Post",
       "summary": "‘Human made’: Irish music industry pitches AI fightback&nbsp;&nbsp;Business Post",
@@ -61,6 +91,16 @@
       "date": "Wed, 11 Feb 2026 16:06:35 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop&auto=format",
       "url": "https://techxplore.com/news/2026-02-romance-scams-internet-stay-safe.html"
+    },
+    {
+      "id": "gn-ai-academy-17",
+      "title": "Data Is a Robotics Problem, Medra CEO Says Physical AI Will Transform Biology - GEN - Genetic Engineering and Biotechnology News",
+      "summary": "Data Is a Robotics Problem, Medra CEO Says Physical AI Will Transform Biology&nbsp;&nbsp;GEN - Genetic Engineering and Biotechnology News",
+      "topic": "ai-academy",
+      "source": "GEN - Genetic Engineering and Biotechnology News",
+      "date": "Wed, 11 Feb 2026 16:00:06 GMT",
+      "imageUrl": "https://www.genengnews.com/wp-content/uploads/2026/02/Michelle-Lee-2025-8-1-2.jpg",
+      "url": "https://www.genengnews.com/topics/artificial-intelligence/data-is-a-robotics-problem-medra-ceo-says-physical-ai-will-transform-biology/"
     },
     {
       "id": "gn-unmanned-aircraft-4",
@@ -101,6 +141,16 @@
       "date": "Wed, 11 Feb 2026 15:21:32 GMT",
       "imageUrl": "https://dronelife.com/wp-content/uploads/2025/11/P1-in-flight-California-2100x1181-a9218294-3567-4f7f-921c-44b3e47910da-e1769003857899.jpg",
       "url": "https://dronelife.com/2026/02/11/gao-drone-delivery-oversight-bvlos-safety/"
+    },
+    {
+      "id": "gn-ai-academy-24",
+      "title": "The Seven Qualification Tests for an AI Scientist - HackerNoon",
+      "summary": "The Seven Qualification Tests for an AI Scientist&nbsp;&nbsp;HackerNoon",
+      "topic": "ai-academy",
+      "source": "HackerNoon",
+      "date": "Wed, 11 Feb 2026 15:07:44 GMT",
+      "imageUrl": "https://hackernoon.imgix.net/images/5wpKgV75aONqkTJlafw2yQmK9yd2-z483cok.png",
+      "url": "https://hackernoon.com/the-seven-qualification-tests-for-an-ai-scientist"
     },
     {
       "id": "gn-visual-art-photography-36",
@@ -161,6 +211,16 @@
       "date": "Wed, 11 Feb 2026 13:20:31 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&h=400&fit=crop&auto=format",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaGtnRnZ1SkdJRGtmNGVVeHVWWkVQYUkzT1dFYnNHbHM4RmtUS0JicVU2dEVVYk1wNVFrZFJPLVUzY2NFaTd1OUtGU2JVdTBDTHhMc094MF90WHFzOTRjWi1GYWJhTUdwOUNkOWVfQzU4YTAzLUVqazh0TlBuUHltNE9XZ1pmQjAtcWVz?oc=5"
+    },
+    {
+      "id": "gn-ai-academy-16",
+      "title": "Researchers Propose a Turing Test to Measure Whether AI Can Make Scientific Discoveries - HackerNoon",
+      "summary": "Researchers Propose a Turing Test to Measure Whether AI Can Make Scientific Discoveries&nbsp;&nbsp;HackerNoon",
+      "topic": "ai-academy",
+      "source": "HackerNoon",
+      "date": "Wed, 11 Feb 2026 13:07:44 GMT",
+      "imageUrl": "https://hackernoon.imgix.net/images/a-futuristic-ai-system-observing-stars-qbvxtdomyhbzb3niq6yzfhr3.png",
+      "url": "https://hackernoon.com/researchers-propose-a-turing-test-to-measure-whether-ai-can-make-scientific-discoveries"
     },
     {
       "id": "gn-digital-security-5",
@@ -363,6 +423,16 @@
       "url": "https://www.retailnews.asia/unleash-your-mood-with-youtube-musics-new-ai-powered-playlist-feature/"
     },
     {
+      "id": "gn-ai-academy-34",
+      "title": "AI in Higher Education: Redefining the Learning Ecosystem - APAC Media",
+      "summary": "AI in Higher Education: Redefining the Learning Ecosystem&nbsp;&nbsp;APAC Media",
+      "topic": "ai-academy",
+      "source": "APAC Media",
+      "date": "Wed, 11 Feb 2026 06:47:44 GMT",
+      "imageUrl": "https://apacnewsnetwork.com/wp-content/uploads/2026/02/News-2026-02-11T120056.764.webp",
+      "url": "https://apacnewsnetwork.com/2026/02/ai-in-higher-education-redefining-the-learning-ecosystem/"
+    },
+    {
       "id": "gn-digital-security-39",
       "title": "Ismeet Kohli demanded this from Gursimran Khamba for Valentine’s, and it’s not roses! - IT Voice Media",
       "summary": "Ismeet Kohli demanded this from Gursimran Khamba for Valentine’s, and it’s not roses!&nbsp;&nbsp;IT Voice Media",
@@ -431,6 +501,16 @@
       "date": "Wed, 11 Feb 2026 05:13:43 GMT",
       "imageUrl": "https://d35xcwcl37xo08.cloudfront.net/current-affairs-wp-uploads/2026/02/Daily-Editorial-Analysis-3.webp",
       "url": "https://vajiramandravi.com/current-affairs/daily-editorial-analysis-11-february-2026/"
+    },
+    {
+      "id": "gn-ai-academy-39",
+      "title": "Why Business Analytics &amp; AI Is Becoming the New-Age BBA - Shoolini University",
+      "summary": "Why Business Analytics & AI Is Becoming the New-Age BBA&nbsp;&nbsp;Shoolini University",
+      "topic": "ai-academy",
+      "source": "Shoolini University",
+      "date": "Wed, 11 Feb 2026 04:19:13 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNby0zQkhGQVlNY19hZ2llUG1mWUNLQk12NnVfcFc5aHhaVl9BR0NNNVQzanh1OE5rQ3N3aWs0cDFWQ3FGMXFMR1psM0JpMlhJY3ZoNXdUbGhDNlhDalVKbDhVMVdHbXI0cXd3Y1g0UVZaTHMxcFVIN0tnVGhiVk9PRTVGdWM4XzVqWXFVb1hCTTVfQmt2dWVfcWpWbUXSAZwBQVVfeXFMTW8tM0JIRkFZTWNfYWdpZVBtZllDS0JNdjZ1X3BXOWh4WlZfQUdDTTVUM2p4dThOa0Nzd2lrNHAxVkNxRjFxTEdabDNCaTJYSWN2aDV3VGxoQzZYQ2pVSmw4VTFXR21yNHF3d2NYNFFWWkxzMXBVSDdLZ1RoYlZPT0U1RnVjOF81allxVW9YQk01X0JrdnVlX3FqVm1F?oc=5"
     },
     {
       "id": "gn-health-style-9",
@@ -523,6 +603,16 @@
       "url": "https://www.trendhunter.com/amp/trends/muse-deep-sleep-boost"
     },
     {
+      "id": "gn-ai-academy-11",
+      "title": "AI Decoding Chemical Principles to Speed Up Innovation in Drug and Material Development - BIOENGINEER.ORG",
+      "summary": "AI Decoding Chemical Principles to Speed Up Innovation in Drug and Material Development&nbsp;&nbsp;BIOENGINEER.ORG",
+      "topic": "ai-academy",
+      "source": "BIOENGINEER.ORG",
+      "date": "Tue, 10 Feb 2026 22:47:20 GMT",
+      "imageUrl": "https://bioengineer.org/wp-content/uploads/2026/02/AI-Decoding-Chemical-Principles-to-Speed-Up-Innovation-in-Drug.jpeg",
+      "url": "https://bioengineer.org/ai-decoding-chemical-principles-to-speed-up-innovation-in-drug-and-material-development/"
+    },
+    {
       "id": "gn-chatbot-development-24",
       "title": "OpenAI's ChatGPT, whose growth slowed amid the offensive of competitive services such as Gemini and - 매일경제",
       "summary": "OpenAI's ChatGPT, whose growth slowed amid the offensive of competitive services such as Gemini and&nbsp;&nbsp;매일경제",
@@ -613,6 +703,16 @@
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMEIxcnhMRzltakxyS2o3TFhVZ3lnbVQ0eDAxdkNQRHFIWThzQzUzdk5qZU9naDBjaHZMa0dnSEI2QncxUGM5ZjZwXzVscnZRVExsTlNBWGdvQUVBcnU4MlB2cnVoZGhrV1pJNFB6N2V4aVhOYktxcFJFM1RSZmJ6SzNsOGRGV3p1QndRTkhzdXRjcEhEMGprcC1ocEVmZTRocE1MYkdzU0VMQUtjd0E?oc=5"
     },
     {
+      "id": "gn-ai-academy-49",
+      "title": "Isomorphic claims major advance with new AI drug design engine, in 'step change' versus AlphaFold 3 - Endpoints News",
+      "summary": "Isomorphic claims major advance with new AI drug design engine, in 'step change' versus AlphaFold 3&nbsp;&nbsp;Endpoints News",
+      "topic": "ai-academy",
+      "source": "Endpoints News",
+      "date": "Tue, 10 Feb 2026 20:33:00 GMT",
+      "imageUrl": "https://endpoints.news/wp-content/uploads/2026/02/Max-Jaderberg-Isomorphic-Labs-tile.jpg",
+      "url": "https://endpoints.news/isomorphic-claims-major-advance-with-new-ai-drug-design-engine/"
+    },
+    {
       "id": "gn-musical-art-19",
       "title": "YouTube Music joins Spotify with mood-based AI playlists - MakeUseOf",
       "summary": "YouTube Music joins Spotify with mood-based AI playlists&nbsp;&nbsp;MakeUseOf",
@@ -631,6 +731,16 @@
       "date": "Tue, 10 Feb 2026 19:35:20 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600&h=400&fit=crop&auto=format",
       "url": "https://medicalxpress.com/news/2026-02-artificial-intelligence-tool-personalize-ovarian.html"
+    },
+    {
+      "id": "gn-ai-academy-10",
+      "title": "Lem Next Gen Science Forum 2026 - Politechnika Wrocławska",
+      "summary": "Lem Next Gen Science Forum 2026&nbsp;&nbsp;Politechnika Wrocławska",
+      "topic": "ai-academy",
+      "source": "Politechnika Wrocławska",
+      "date": "Tue, 10 Feb 2026 19:32:31 GMT",
+      "imageUrl": "https://pwr.edu.pl/thumb/eUmgfJTsLe2g5VRk_DQ1uDl0cXSI8Cg,1/en/news/24/10805/1/0DVRXPBwBfwctBkRo,lemgen_min.jpg",
+      "url": "https://pwr.edu.pl/en/university/news/lem-next-gen-science-forum-2026-10805.html"
     },
     {
       "id": "gn-musical-art-30",
@@ -833,6 +943,16 @@
       "url": "https://www.dealntech.com/samsung-may-bring-back-variable-aperture-to-galaxy-cameras/"
     },
     {
+      "id": "gn-ai-academy-40",
+      "title": "Kaushal Rath flagged off with “Yuva AI for All” for Democratising AI Literacy Across India - PIB",
+      "summary": "Kaushal Rath flagged off with “Yuva AI for All” for Democratising AI Literacy Across India&nbsp;&nbsp;PIB",
+      "topic": "ai-academy",
+      "source": "PIB",
+      "date": "Tue, 10 Feb 2026 16:24:00 GMT",
+      "imageUrl": "https:/pib.gov.in/images/indian-emblem.png",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2226130"
+    },
+    {
       "id": "gn-unmanned-aircraft-0",
       "title": "ZenaTech’s Drone as a Service Expands Builder Services Capability Delivering Drone-Driven Speed and Precision to Surveying for Homebuilders - TradingView",
       "summary": "ZenaTech’s Drone as a Service Expands Builder Services Capability Delivering Drone-Driven Speed and Precision to Surveying for Homebuilders&nbsp;&nbsp;TradingView",
@@ -851,6 +971,16 @@
       "date": "Tue, 10 Feb 2026 16:09:22 GMT",
       "imageUrl": "https://www.findarticles.com/wp-content/uploads/2026/02/youtube_music_edited_1770739676.png",
       "url": "https://www.findarticles.com/youtube-adds-ai-prompt-playlists-for-premium-users/?amp=1"
+    },
+    {
+      "id": "gn-ai-academy-26",
+      "title": "Google's Drug Discovery Arm Isomorphic Labs Doubles Accuracy In Designing Medicines Through A Computer In New Breakthrough - OfficeChai",
+      "summary": "Google's Drug Discovery Arm Isomorphic Labs Doubles Accuracy In Designing Medicines Through A Computer In New Breakthrough&nbsp;&nbsp;OfficeChai",
+      "topic": "ai-academy",
+      "source": "OfficeChai",
+      "date": "Tue, 10 Feb 2026 15:54:02 GMT",
+      "imageUrl": "https://i0.wp.com/officechai.com/wp-content/uploads/2025/07/MixCollage-08-Jul-2025-01-19-PM-2344.jpg?fit=1200%2C630&ssl=1",
+      "url": "https://officechai.com/ai/googles-drug-discovery-arm-isomorphic-labs-doubles-accuracy-in-designing-medicines-through-a-computer-in-new-breakthrough/"
     },
     {
       "id": "gn-unmanned-aircraft-43",
@@ -1001,6 +1131,16 @@
       "date": "Tue, 10 Feb 2026 13:57:32 GMT",
       "imageUrl": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1W3ea2.img?w=768&h=432&m=4&q=79",
       "url": "https://www.msn.com/en-in/money/news/centre-amends-it-rules-mandates-ai-labels-cuts-deepfake-takedown-time-to-2-hours/ar-AA1W3uB9?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
+    },
+    {
+      "id": "gn-ai-academy-12",
+      "title": "On Site: \"2026 China Forum on Source Innovation in New Drug Discovery\" Concludes Successfully - Kosmo Digital",
+      "summary": "On Site: \"2026 China Forum on Source Innovation in New Drug Discovery\" Concludes Successfully&nbsp;&nbsp;Kosmo Digital",
+      "topic": "ai-academy",
+      "source": "Kosmo Digital",
+      "date": "Tue, 10 Feb 2026 13:37:16 GMT",
+      "imageUrl": "https://www.kosmo.com.my/wp-content/uploads/prnewswire/prnewswire.png",
+      "url": "https://www.kosmo.com.my/2026/02/10/on-site-2026-china-forum-on-source-innovation-in-new-drug-discovery-concludes-successfully/"
     },
     {
       "id": "gn-visual-art-photography-49",
@@ -1173,6 +1313,26 @@
       "url": "https://market.us/report/event-camera-market/"
     },
     {
+      "id": "gn-ai-academy-22",
+      "title": "AWS‑Backed AI Lab Fundamental Emerges from Stealth with $255M to Rewrite Enterprise Data Analytics - Bayelsa Watch",
+      "summary": "AWS‑Backed AI Lab Fundamental Emerges from Stealth with $255M to Rewrite Enterprise Data Analytics&nbsp;&nbsp;Bayelsa Watch",
+      "topic": "ai-academy",
+      "source": "Bayelsa Watch",
+      "date": "Tue, 10 Feb 2026 11:33:24 GMT",
+      "imageUrl": "https://bayelsawatch.com/wp-content/uploads/2026/02/AI-Lab-Fundamental-Emerges.jpg",
+      "url": "https://bayelsawatch.com/awsbacked-ai-lab-fundamental-emerges/"
+    },
+    {
+      "id": "gn-ai-academy-27",
+      "title": "Immuneel Therapeutics, Manas AI To Explore The Potential Of AI-Driven Frameworks For Next-Gen Biologics - Voice Of HealthCare",
+      "summary": "Immuneel Therapeutics, Manas AI To Explore The Potential Of AI-Driven Frameworks For Next-Gen Biologics&nbsp;&nbsp;Voice Of HealthCare",
+      "topic": "ai-academy",
+      "source": "Voice Of HealthCare",
+      "date": "Tue, 10 Feb 2026 11:22:03 GMT",
+      "imageUrl": "https://media.assettype.com/vohnetwork/2026-02-10/4nqh44tn/VOH?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+      "url": "https://vohnetwork.com/news/healthtech/immuneel-therapeutics-manas-ai-to-explore-the-potential-of-ai-driven-frameworks-for-next-gen-biologics"
+    },
+    {
       "id": "gn-technology-innovation-15",
       "title": "Cisco’s new AI networking chip puts Nvidia and Broadcom back in the AI stocks spotlight - TechStock²",
       "summary": "Cisco’s new AI networking chip puts Nvidia and Broadcom back in the AI stocks spotlight&nbsp;&nbsp;TechStock²",
@@ -1201,6 +1361,16 @@
       "date": "Tue, 10 Feb 2026 11:00:00 GMT",
       "imageUrl": "https://images-prod.dazeddigital.com/1400/azure/dazed-prod/1430/6/1436682.jpg",
       "url": "https://www.dazeddigital.com/fashion/article/69590/1/rise-of-ai-fashion-stylist-chatgpt-openai-ralph-lauren-ask-ralph-asos"
+    },
+    {
+      "id": "gn-ai-academy-42",
+      "title": "Odyssey Math Tuition Reinforces Commitment to Fostering Love for Mathematics with Proprietary Curriculum and E-Learning Enhancements in Singapore Math Tuition Sector With In-house Training of Math Tutors - The Manila Times",
+      "summary": "Odyssey Math Tuition Reinforces Commitment to Fostering Love for Mathematics with Proprietary Curriculum and E-Learning Enhancements in Singapore Math Tuition Sector With In-house Training of Math Tutors&nbsp;&nbsp;The Manila Times",
+      "topic": "ai-academy",
+      "source": "The Manila Times",
+      "date": "Tue, 10 Feb 2026 10:59:36 GMT",
+      "imageUrl": "https://www.manilatimes.net/manilatimes/uploads/images/2026/02/10/931816.jpg",
+      "url": "https://www.manilatimes.net/2026/02/10/tmt-newswire/plentisoft/odyssey-math-tuition-reinforces-commitment-to-fostering-love-for-mathematics-with-proprietary-curriculum-and-e-learning-enhancements-in-singapore-math-tuition-sector-with-in-house-training-of-math-tutors/2275026"
     },
     {
       "id": "gn-unmanned-aircraft-23",
@@ -1273,6 +1443,16 @@
       "url": "https://www.billboard.com/lists/music-related-bills-congress-now-list-legislation/"
     },
     {
+      "id": "gn-ai-academy-44",
+      "title": "Best Programming Languages to Learn in 2026 - Simplilearn.com",
+      "summary": "Best Programming Languages to Learn in 2026&nbsp;&nbsp;Simplilearn.com",
+      "topic": "ai-academy",
+      "source": "Simplilearn.com",
+      "date": "Tue, 10 Feb 2026 08:00:00 GMT",
+      "imageUrl": "https://www.simplilearn.com/ice9/free_resources_article_thumb/Best-Programming-Languages-to-Start-Learning-Today.jpg",
+      "url": "https://www.simplilearn.com/best-programming-languages-start-learning-today-article"
+    },
+    {
       "id": "gn-digital-security-11",
       "title": "Interview with HelpAge on cybercrime and online safety for senior citizens on Safer Internet Day - t2ONLINE",
       "summary": "Interview with HelpAge on cybercrime and online safety for senior citizens on Safer Internet Day&nbsp;&nbsp;t2ONLINE",
@@ -1333,6 +1513,16 @@
       "url": "https://www.ciol.com/news/ai-powered-cybercrime-deepfake-fraud-ransomware-check-point-report-11090502"
     },
     {
+      "id": "gn-ai-academy-15",
+      "title": "AI models at IBM and DeepMind are pushing DNA toward a GPT era - IBM",
+      "summary": "AI models at IBM and DeepMind are pushing DNA toward a GPT era&nbsp;&nbsp;IBM",
+      "topic": "ai-academy",
+      "source": "IBM",
+      "date": "Tue, 10 Feb 2026 05:28:24 GMT",
+      "imageUrl": "https://www.ibm.com/content/dam/worldwide-content/cdp/cf/ul/g/ba/94/ba94276b-579e-4a0b-b838b21d17799592.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg",
+      "url": "https://www.ibm.com/think/news/ibm-deepmind-ai-models-pushing-dna-toward-gpt-era"
+    },
+    {
       "id": "gn-unmanned-aircraft-26",
       "title": "6 facts about V-BAT drones Armenia has acquired from the U.S. - Mediamax.am",
       "summary": "6 facts about V-BAT drones Armenia has acquired from the U.S.&nbsp;&nbsp;Mediamax.am",
@@ -1373,6 +1563,16 @@
       "url": "https://www.trendhunter.com/amp/trends/food-wise-pal"
     },
     {
+      "id": "gn-ai-academy-32",
+      "title": "Google's \"Learn Your Way\" is Set to Redefine Education and Challenge the AI \"Dumbing Down\" Narrative - sify.com",
+      "summary": "Google's \"Learn Your Way\" is Set to Redefine Education and Challenge the AI \"Dumbing Down\" Narrative&nbsp;&nbsp;sify.com",
+      "topic": "ai-academy",
+      "source": "sify.com",
+      "date": "Tue, 10 Feb 2026 02:57:32 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdnBRUkw2dnVPQ0Q0OThJd0FncTNRZ0xpa092NHhJTlpEWHVqZUxqTmxOX1h1ZEoxR21ybXpxcXVkNXVnbU5BelNqQmNONVdRTE1nckI0a3hWUjV1WXJzT09JcXNrb1hxR04yZ1pINURxamw4cURCd2tBZGhMdXFsb0xfM3hHallDRGNIZVBwQTVHUGV3d3U1NWIwZ1J1QXdtemIyenRsZUJpay1MTURsVm9ZQUNfYlExRF9xZUJTZXF6Qm5fRWZUcXpn?oc=5"
+    },
+    {
       "id": "gn-technology-innovation-47",
       "title": "AI pushes dense, decentralised &amp; sustainable data centres - IT Brief Australia",
       "summary": "AI pushes dense, decentralised & sustainable data centres&nbsp;&nbsp;IT Brief Australia",
@@ -1381,6 +1581,16 @@
       "date": "Tue, 10 Feb 2026 02:15:00 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&auto=format",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdWpEdi1nSVR3TWYyYVpxNFlGZmJPbGg3dlMwYkgzc0dKMjgzZHlFcFhMWDkxXzhLVnE5YTVFMENiUGNWLW9QVEt5VmpwVkMtOTFmZEQwNzhpSlQzM21aUlVNQWZFTmJ5d1o1LWlpSGdPc0oyaVk4S0dmcl9kUGxDVU56RS1ka3lEVDRj?oc=5"
+    },
+    {
+      "id": "gn-ai-academy-41",
+      "title": "Columbia Engineering Unveils New Master of Science in Artificial Intelligence Program - BIOENGINEER.ORG",
+      "summary": "Columbia Engineering Unveils New Master of Science in Artificial Intelligence Program&nbsp;&nbsp;BIOENGINEER.ORG",
+      "topic": "ai-academy",
+      "source": "BIOENGINEER.ORG",
+      "date": "Tue, 10 Feb 2026 01:27:39 GMT",
+      "imageUrl": "https://bioengineer.org/wp-content/uploads/2026/02/Columbia-Engineering-Unveils-New-Master-of-Science-in-Artificial-Intelligence.jpg",
+      "url": "https://bioengineer.org/columbia-engineering-unveils-new-master-of-science-in-artificial-intelligence-program/"
     },
     {
       "id": "gn-technology-innovation-33",
@@ -1503,6 +1713,16 @@
       "url": "https://www.middleeasteye.net/news/saudi-arabia-talks-us-company-ai-powered-drones-sources-say"
     },
     {
+      "id": "gn-ai-academy-21",
+      "title": "New National Science Foundation HERD data ranks Texas A&amp;M University No. 1 in Texas and the SEC among the nation`s leading research institutions. - FOX 44",
+      "summary": "New National Science Foundation HERD data ranks Texas A&M University No. 1 in Texas and the SEC among the nation`s leading research institutions.&nbsp;&nbsp;FOX 44",
+      "topic": "ai-academy",
+      "source": "FOX 44",
+      "date": "Mon, 09 Feb 2026 22:09:33 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&auto=format",
+      "url": "https://www.fox44news.com/news/local-news/brazos/new-national-science-foundation-herd-data-ranks-texas-am-university-no-1-in-texas-and-the-sec-among-the-nations-leading-research-institutions/"
+    },
+    {
       "id": "gn-chatbot-development-23",
       "title": "OpenAI CEO says ChatGPT back to over 10% monthly growth, CNBC reports - 104.1 WIKY",
       "summary": "OpenAI CEO says ChatGPT back to over 10% monthly growth, CNBC reports&nbsp;&nbsp;104.1 WIKY",
@@ -1551,16 +1771,6 @@
       "date": "Mon, 09 Feb 2026 21:04:58 GMT",
       "imageUrl": "https://img.visiontimes.com/2026/02/p3712583a152455509-2-768x432.jpg",
       "url": "https://www.visiontimes.com/2026/02/09/taiwan-plans-to-produce-210000-drones-and-1000-unmanned-surface-vehicles.html"
-    },
-    {
-      "id": "gn-ai-academy-4",
-      "title": "From Cornfields to Neural Networks: How the University of Nebraska Is Betting Big on an AI Institute to Reshape Research in the Heartland - WebProNews",
-      "summary": "From Cornfields to Neural Networks: How the University of Nebraska Is Betting Big on an AI Institute to Reshape Research in the Heartland&nbsp;&nbsp;WebProNews",
-      "topic": "ai-academy",
-      "source": "WebProNews",
-      "date": "Mon, 09 Feb 2026 21:01:01 GMT",
-      "imageUrl": "https://www.webpronews.com/wp-content/uploads/2026/02/article-9788-1770670743.jpeg",
-      "url": "https://www.webpronews.com/from-cornfields-to-neural-networks-how-the-university-of-nebraska-is-betting-big-on-an-ai-institute-to-reshape-research-in-the-heartland/"
     },
     {
       "id": "gn-unmanned-aircraft-12",
@@ -1643,16 +1853,6 @@
       "url": "https://petapixel.com/best-waterproof-cameras/"
     },
     {
-      "id": "gn-ai-academy-0",
-      "title": "University of Nebraska launches AI Institute to lead research, education - KOLN | Nebraska Local News, Weather, Sports | Lincoln, NE",
-      "summary": "University of Nebraska launches AI Institute to lead research, education&nbsp;&nbsp;KOLN | Nebraska Local News, Weather, Sports | Lincoln, NE",
-      "topic": "ai-academy",
-      "source": "KOLN | Nebraska Local News, Weather, Sports | Lincoln, NE",
-      "date": "Mon, 09 Feb 2026 18:05:00 GMT",
-      "imageUrl": "https://gray-koln-prod.gtv-cdn.com/resizer/v2/FV7SKQYWQZFPNOQITXQFGMF5PA.jpg?auth=513b64f18437183394b74e6c0e574eeb367aac3e85903fba0f3f99c25c49e2a4&width=1200&height=600&smart=true",
-      "url": "https://www.1011now.com/2026/02/09/university-nebraska-launches-ai-institute-lead-research-education/"
-    },
-    {
       "id": "gn-chatbot-development-9",
       "title": "ChatGPT Growth Surges Past 10% Monthly Amid Rising AI Competition - techi.com",
       "summary": "ChatGPT Growth Surges Past 10% Monthly Amid Rising AI Competition&nbsp;&nbsp;techi.com",
@@ -1673,16 +1873,6 @@
       "url": "https://ventureburn.com/tomorrow-io-raises-175m-for-ai-powered-weather-satellites/"
     },
     {
-      "id": "gn-ai-academy-1",
-      "title": "University of Nebraska launches AI Institute to lead in ethical innovation, research and workforce development - Nebraska Today",
-      "summary": "University of Nebraska launches AI Institute to lead in ethical innovation, research and workforce development&nbsp;&nbsp;Nebraska Today",
-      "topic": "ai-academy",
-      "source": "Nebraska Today",
-      "date": "Mon, 09 Feb 2026 17:09:04 GMT",
-      "imageUrl": "https://news.unl.edu/sites/default/files/styles/lead_image_teaser/public/media/images/220929_Cupola_139_0_1_1_0_0_0.jpg?itok=drJr9JDN",
-      "url": "https://news.unl.edu/article/university-of-nebraska-launches-ai-institute-to-lead-in-ethical-innovation-research-and"
-    },
-    {
       "id": "gn-digital-security-34",
       "title": "Cybersecurity threats in Ghana: A comprehensive analysis - MyJoyOnline",
       "summary": "Cybersecurity threats in Ghana: A comprehensive analysis&nbsp;&nbsp;MyJoyOnline",
@@ -1691,6 +1881,16 @@
       "date": "Mon, 09 Feb 2026 17:02:02 GMT",
       "imageUrl": "https://www.myjoyonline.com/wp-content/uploads/2026/02/cyber.jpeg",
       "url": "https://www.myjoyonline.com/cybersecurity-threats-in-ghana-a-comprehensive-analysis-2/"
+    },
+    {
+      "id": "gn-ai-academy-48",
+      "title": "New Relic transforms productivity with generative AI on AWS - Amazon Web Services",
+      "summary": "New Relic transforms productivity with generative AI on AWS&nbsp;&nbsp;Amazon Web Services",
+      "topic": "ai-academy",
+      "source": "Amazon Web Services",
+      "date": "Mon, 09 Feb 2026 16:45:16 GMT",
+      "imageUrl": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/02/09/ml-19134-1120x630.png",
+      "url": "https://aws.amazon.com/blogs/machine-learning/new-relic-transforms-productivity-with-generative-ai-on-aws/"
     },
     {
       "id": "gn-health-style-27",
@@ -1723,14 +1923,14 @@
       "url": "https://www.technobezz.com/news/nvidias-h200-chip-sale-to-bytedance-faces-delays-over-us-security-terms"
     },
     {
-      "id": "gn-ai-academy-3",
-      "title": "SUNY Schools Partner With Local Universities for AI Research - GovTech",
-      "summary": "SUNY Schools Partner With Local Universities for AI Research&nbsp;&nbsp;GovTech",
+      "id": "gn-ai-academy-43",
+      "title": "Top Generative AI Courses to Learn in 2026 - Analytics Insight",
+      "summary": "Top Generative AI Courses to Learn in 2026&nbsp;&nbsp;Analytics Insight",
       "topic": "ai-academy",
-      "source": "GovTech",
-      "date": "Mon, 09 Feb 2026 16:01:43 GMT",
-      "imageUrl": "https://erepublic.brightspotcdn.com/dims4/default/f7db6eb/2147483647/strip/true/crop/5209x2532+0+470/resize/1440x700!/quality/90/?url=http%3A%2F%2Ferepublic-brightspot.s3.us-west-2.amazonaws.com%2F43%2Fde%2Fb968d9534107814962536bf4e2e7%2Funiversity-at-buffalo.jpg",
-      "url": "https://www.govtech.com/education/higher-ed/suny-schools-partner-with-local-universities-for-ai-research"
+      "source": "Analytics Insight",
+      "date": "Mon, 09 Feb 2026 16:22:05 GMT",
+      "imageUrl": "https://media.assettype.com/analyticsinsight/2026-02-09/w7uqbkfr/Top-Generative-AI-Courses-to-Learn-in-2026.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+      "url": "https://www.analyticsinsight.net/artificial-intelligence/top-generative-ai-courses-to-learn-in-2026"
     },
     {
       "id": "gn-health-style-4",
@@ -1801,6 +2001,16 @@
       "date": "Mon, 09 Feb 2026 14:47:00 GMT",
       "imageUrl": "https://news.finterra.ai/wp-content/uploads/2026/02/a231efde-5b22-4b8c-b38e-8736a153be1c-1024x683.png",
       "url": "https://markets.financialcontent.com/stocks/article/finterra-2026-2-9-the-five-trillion-dollar-titan-nvidias-ai-hegemony-and-the-nokia-connectivity-revolution"
+    },
+    {
+      "id": "gn-ai-academy-20",
+      "title": "Architecting the Intelligent Lab of the Future: Abio Technologies Launches Abio Spark and Blaze at SLAS2026 - The Manila Times",
+      "summary": "Architecting the Intelligent Lab of the Future: Abio Technologies Launches Abio Spark and Blaze at SLAS2026&nbsp;&nbsp;The Manila Times",
+      "topic": "ai-academy",
+      "source": "The Manila Times",
+      "date": "Mon, 09 Feb 2026 14:34:19 GMT",
+      "imageUrl": "https://www.manilatimes.net/theme_manilatimes/images/TMT_1920x1008.jpg",
+      "url": "https://www.manilatimes.net/2026/02/09/tmt-newswire/pr-newswire/architecting-the-intelligent-lab-of-the-future-abio-technologies-launches-abio-spark-and-blaze-at-slas2026/2274528"
     },
     {
       "id": "gn-unmanned-aircraft-19",
@@ -2023,6 +2233,26 @@
       "url": "https://www.silicon.co.uk/e-innovation/artificial-intelligence/anthropic-openai-ads-628627"
     },
     {
+      "id": "gn-ai-academy-36",
+      "title": "How to Become an AI Engineer: Skills, Roles and Career Guide - Simplilearn.com",
+      "summary": "How to Become an AI Engineer: Skills, Roles and Career Guide&nbsp;&nbsp;Simplilearn.com",
+      "topic": "ai-academy",
+      "source": "Simplilearn.com",
+      "date": "Mon, 09 Feb 2026 08:00:00 GMT",
+      "imageUrl": "https://www.simplilearn.com/ice9/team_images/Vivek.jpg",
+      "url": "https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/how-to-become-an-ai-engineer"
+    },
+    {
+      "id": "gn-ai-academy-45",
+      "title": "20 New Technology Trends for 2026 | Emerging Technologies 2026 - Simplilearn.com",
+      "summary": "20 New Technology Trends for 2026 | Emerging Technologies 2026&nbsp;&nbsp;Simplilearn.com",
+      "topic": "ai-academy",
+      "source": "Simplilearn.com",
+      "date": "Mon, 09 Feb 2026 08:00:00 GMT",
+      "imageUrl": "https://www.simplilearn.com/ice9/free_resources_article_thumb/Technology_Trends.jpg",
+      "url": "https://www.simplilearn.com/top-technology-trends-and-jobs-article"
+    },
+    {
       "id": "gn-health-style-12",
       "title": "AI Is Redefining Personalisation in Valentine’s Economy - The Economic Times",
       "summary": "AI Is Redefining Personalisation in Valentine’s Economy&nbsp;&nbsp;The Economic Times",
@@ -2051,6 +2281,26 @@
       "date": "Mon, 09 Feb 2026 06:48:33 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=600&h=400&fit=crop&auto=format",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE56RmEwekVra1JkRlNoeEpQSXkzN01MTmU5bGhQa2ctV3NWYkZWOUVsY0NtYUhPNVdRb1dOdHBOUG9jLUQ5empYVDlfRGJpakotcTgxSmNSWE9KVDNWTE1V?oc=5"
+    },
+    {
+      "id": "gn-ai-academy-0",
+      "title": "Breakthrough in Electrical Switching for Memory Tech - Mirage News",
+      "summary": "Breakthrough in Electrical Switching for Memory Tech&nbsp;&nbsp;Mirage News",
+      "topic": "ai-academy",
+      "source": "Mirage News",
+      "date": "Mon, 09 Feb 2026 06:38:00 GMT",
+      "imageUrl": "https://news.kaist.ac.kr/_prog/download/?editor_image=/images/000121/_images_000120_001_11.png",
+      "url": "https://www.miragenews.com/breakthrough-in-electrical-switching-for-memory-1616121/"
+    },
+    {
+      "id": "gn-ai-academy-4",
+      "title": "When AI meets Physics: Unlocking complex protein structures to accelerate biomedical breakthroughs - NUS - National University of Singapore",
+      "summary": "When AI meets Physics: Unlocking complex protein structures to accelerate biomedical breakthroughs&nbsp;&nbsp;NUS - National University of Singapore",
+      "topic": "ai-academy",
+      "source": "NUS - National University of Singapore",
+      "date": "Mon, 09 Feb 2026 06:11:14 GMT",
+      "imageUrl": "https://content.presspage.com/uploads/2580/68d5506d-e161-4407-9622-a3330a936552/1920_ditasserpredictingcomplexproteinstructuresaccurately1.png?10000",
+      "url": "https://news.nus.edu.sg/ai-unlocks-complex-protein-structures/"
     },
     {
       "id": "gn-chatbot-development-21",
@@ -2093,6 +2343,16 @@
       "url": "https://www.msn.com/en-us/lifestyle/shopping/samsungs-new-isocell-hp5-200mp-camera-sensor-has-the-worlds-smallest-pixels/ar-AA1O1S1J?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
     },
     {
+      "id": "gn-ai-academy-2",
+      "title": "Breakthrough AI Tool Identifies 25 Previously Unknown Magnetic Materials - SciTechDaily",
+      "summary": "Breakthrough AI Tool Identifies 25 Previously Unknown Magnetic Materials&nbsp;&nbsp;SciTechDaily",
+      "topic": "ai-academy",
+      "source": "SciTechDaily",
+      "date": "Mon, 09 Feb 2026 05:33:53 GMT",
+      "imageUrl": "https://scitechdaily.com/images/Futuristic-Cube-Technology.jpg",
+      "url": "https://scitechdaily.com/breakthrough-ai-tool-identifies-25-previously-unknown-magnetic-materials/"
+    },
+    {
       "id": "gn-health-style-42",
       "title": "Roche Diagnostics Korea outlines automation, AI roadmap for laboratories - koreabiomed.com",
       "summary": "Roche Diagnostics Korea outlines automation, AI roadmap for laboratories&nbsp;&nbsp;koreabiomed.com",
@@ -2101,6 +2361,16 @@
       "date": "Mon, 09 Feb 2026 05:27:47 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600&h=400&fit=crop&auto=format",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1uVWxCSXNVNnZHNDRhOEVZZVVQYUh3WDAxYnpnV3VyTHMwdU1tQ0NwOFhJWG83SUFKZXEtUDFHanMzUm1JRjgtSjhGaHdYUlJiaEIwWUhub2JEcWYzaWJmcGZhdEwzNE5iLXhyVk130gFyQVVfeXFMUGlFc25KMHR4aXdTaHFYMTBoaW9SNU9uREgzVDNUV2VPRmNSX3ZMTzctbVF6ZU9TZ1EtNHRPTlNrWWhUeGVmelFhbEdRWDdjcmxIbFZHY2FIZDEwWVUzT3RuZ1hDLVdydFRUbm5hVWdwcnRn?oc=5"
+    },
+    {
+      "id": "gn-ai-academy-46",
+      "title": "Top 10 EdTech AI Tutors In 2026 - inventiva.co.in",
+      "summary": "Top 10 EdTech AI Tutors In 2026&nbsp;&nbsp;inventiva.co.in",
+      "topic": "ai-academy",
+      "source": "inventiva.co.in",
+      "date": "Mon, 09 Feb 2026 05:25:27 GMT",
+      "imageUrl": "https://www.inventiva.co.in/wp-content/uploads/2024/05/Just-Explore-4.jpg",
+      "url": "https://www.inventiva.co.in/trends/top-10-edtech-ai-tutors-in-2026/"
     },
     {
       "id": "gn-technology-innovation-20",
@@ -2171,6 +2441,16 @@
       "date": "Mon, 09 Feb 2026 00:33:41 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=400&fit=crop&auto=format",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBSRGZ3LXk2TDBpUW8yQ1JjUUJQMUJSSlBHM3ZuZG5uTTZlMjdkbXBaWEtELURpSFlhNjZaM1J1OWRXdWlKeHpfbnRESm5iRmlj?oc=5"
+    },
+    {
+      "id": "gn-ai-academy-30",
+      "title": "How to design and supervise GenAI-integrated doctoral research - Times Higher Education",
+      "summary": "How to design and supervise GenAI-integrated doctoral research&nbsp;&nbsp;Times Higher Education",
+      "topic": "ai-academy",
+      "source": "Times Higher Education",
+      "date": "Mon, 09 Feb 2026 00:32:12 GMT",
+      "imageUrl": "https://timeshighereducation.com/campus/sites/default/files/2026-02/iStock-1625306011.jpg",
+      "url": "https://www.timeshighereducation.com/campus/how-design-and-supervise-genaiintegrated-doctoral-research"
     },
     {
       "id": "gn-chatbot-development-33",
@@ -2393,6 +2673,26 @@
       "url": "https://www.gminsights.com/industry-analysis/lidar-in-mapping-market"
     },
     {
+      "id": "gn-ai-academy-6",
+      "title": "Research &amp; Development - Nestlé Global",
+      "summary": "Research & Development&nbsp;&nbsp;Nestlé Global",
+      "topic": "ai-academy",
+      "source": "Nestlé Global",
+      "date": "Sun, 08 Feb 2026 08:00:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop&auto=format",
+      "url": "https://www.nestle.com/jobs/career-area/research-development"
+    },
+    {
+      "id": "gn-ai-academy-35",
+      "title": "10 Business Schools To Watch In 2026 - Poets&amp;Quants",
+      "summary": "10 Business Schools To Watch In 2026&nbsp;&nbsp;Poets&Quants",
+      "topic": "ai-academy",
+      "source": "Poets&amp;Quants",
+      "date": "Sun, 08 Feb 2026 08:00:00 GMT",
+      "imageUrl": "https://poetsandquants.com/wp-content/uploads/sites/5/2026/02/AdobeStock_314867833-1.jpeg",
+      "url": "https://poetsandquants.com/2026/02/08/10-business-schools-to-watch-in-2026/10/"
+    },
+    {
       "id": "gn-environment-science-20",
       "title": "Crowsnest Pass Coal Mine: 7 Sustainability Trends 2026 - Farmonaut",
       "summary": "Crowsnest Pass Coal Mine: 7 Sustainability Trends 2026&nbsp;&nbsp;Farmonaut",
@@ -2503,6 +2803,16 @@
       "url": "https://simplywall.st/stocks/us/tech/nasdaq-aapl/apple/news/apple-opens-carplay-to-multiple-ai-assistants-and-expands-au"
     },
     {
+      "id": "gn-ai-academy-38",
+      "title": "Call for Applications: Africa AI Upskilling Programme - Empowering Africa’s Universities for the Future of AI - Global South Opportunities",
+      "summary": "Call for Applications: Africa AI Upskilling Programme - Empowering Africa’s Universities for the Future of AI&nbsp;&nbsp;Global South Opportunities",
+      "topic": "ai-academy",
+      "source": "Global South Opportunities",
+      "date": "Sat, 07 Feb 2026 14:16:44 GMT",
+      "imageUrl": "https://i0.wp.com/www.globalsouthopportunities.com/wp-content/uploads/2026/02/Fate-Foundation.png?fit=775%2C411&ssl=1",
+      "url": "https://www.globalsouthopportunities.com/2026/02/07/africa-77/"
+    },
+    {
       "id": "gn-technology-innovation-40",
       "title": "India-US Pact Boosts Tech Access, NVIDIA Poised for AI Surge - Whalesbook",
       "summary": "India-US Pact Boosts Tech Access, NVIDIA Poised for AI Surge&nbsp;&nbsp;Whalesbook",
@@ -2583,6 +2893,16 @@
       "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/fugitive-crypto-scam-kingpin-20-years-73-million-pig-butchering-scam"
     },
     {
+      "id": "gn-ai-academy-18",
+      "title": "How AI Is Reshaping Drug Discovery And Healthcare Investing - Seeking Alpha",
+      "summary": "How AI Is Reshaping Drug Discovery And Healthcare Investing&nbsp;&nbsp;Seeking Alpha",
+      "topic": "ai-academy",
+      "source": "Seeking Alpha",
+      "date": "Sat, 07 Feb 2026 06:50:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop&auto=format",
+      "url": "https://seekingalpha.com/article/4867393-ai-reshaping-drug-discovery-healthcare-investing"
+    },
+    {
       "id": "gn-unmanned-aircraft-18",
       "title": "US drone firms court Asia as China’s military rise alarms region - malaysiasun.com",
       "summary": "US drone firms court Asia as China’s military rise alarms region&nbsp;&nbsp;malaysiasun.com",
@@ -2641,6 +2961,16 @@
       "date": "Sat, 07 Feb 2026 02:34:09 GMT",
       "imageUrl": "https://discoveryalert.com.au/wp-content/uploads/2026/02/36bc2983-dfb9-4f5f-a43b-469f78610a19-scaled.jpg",
       "url": "https://discoveryalert.com.au/zinc-ion-battery-renewable-energy-storage-2026/"
+    },
+    {
+      "id": "gn-ai-academy-31",
+      "title": "CALLING ALL PROFESSIONALS, LEARNING ADVOCATES, AND ORGANIZATION LEADERS Rappler launches its AI workshop series, designed to help you make sharper decisions, set guardrails, and turn AI knowledge into action for your work and your org - facebook.com",
+      "summary": "CALLING ALL PROFESSIONALS, LEARNING ADVOCATES, AND ORGANIZATION LEADERS Rappler launches its AI workshop series, designed to help you make sharper decisions, set guardrails, and turn AI knowledge into action for your work and your org&nbsp;&nbsp;facebook.com",
+      "topic": "ai-academy",
+      "source": "facebook.com",
+      "date": "Sat, 07 Feb 2026 02:30:17 GMT",
+      "imageUrl": "https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/630142451_1433079898854074_648186284954201524_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=p600x600&_nc_cat=106&ccb=1-7&_nc_sid=cae128&_nc_ohc=fxNwJUFBpOcQ7kNvwGAvPe5&_nc_oc=Adnf6DGvgv6PXdc_vMhPtsNbUkdIUco_0DAV1XBirTJA_Q7K5usBFyzWv72nwRfs5Hs&_nc_zt=23&_nc_ht=scontent-sin6-3.xx&_nc_gid=pNoyHXLreSLYroGaU7N8Tw&oh=00_Afv9s9C_p0c_UBfaDhJQwiCEk8keR51nBrE_WJGh0Ztiiw&oe=6992B69F",
+      "url": "https://www.facebook.com/rapplerdotcom/posts/calling-all-professionals-learning-advocates-and-organization-leadersrappler-lau/1433080012187396/"
     },
     {
       "id": "gn-visual-art-photography-19",
@@ -2703,6 +3033,16 @@
       "url": "https://www.msn.com/en-ie/lifestyle/shopping/google-pixel-10-series-camera-new-features-specs-and-ai-upgrades-explained/ar-AA1LeObS?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
     },
     {
+      "id": "gn-ai-academy-9",
+      "title": "Texas A&amp;M is the No. 1 research university in Texas, top 25 nationally - Texas A&amp;M Stories",
+      "summary": "Texas A&M is the No. 1 research university in Texas, top 25 nationally&nbsp;&nbsp;Texas A&M Stories",
+      "topic": "ai-academy",
+      "source": "Texas A&amp;M Stories",
+      "date": "Fri, 06 Feb 2026 21:54:20 GMT",
+      "imageUrl": "https://stories.tamu.edu/wp-content/uploads/2026/02/20250710_PSA_RAD_Lab_AT_0267-2400x1350.jpg",
+      "url": "https://stories.tamu.edu/news/2026/02/06/texas-am-is-the-no-1-research-university-in-texas-top-25-nationally/"
+    },
+    {
       "id": "gn-health-style-20",
       "title": "Digital Nutrition Trackers - Trend Hunter",
       "summary": "Digital Nutrition Trackers&nbsp;&nbsp;Trend Hunter",
@@ -2743,6 +3083,16 @@
       "url": "https://www.insideprecisionmedicine.com/topics/precision-medicine/ai-that-reads-brain-mris-in-seconds-could-transform-neurologic-care/"
     },
     {
+      "id": "gn-ai-academy-8",
+      "title": "Dr. Joseph Chang Launches Update to Bestselling Book \"The Aging Myth\" With 15 More Years of Breakthrough Research on Cellular Wellness - The AI Journal",
+      "summary": "Dr. Joseph Chang Launches Update to Bestselling Book \"The Aging Myth\" With 15 More Years of Breakthrough Research on Cellular Wellness&nbsp;&nbsp;The AI Journal",
+      "topic": "ai-academy",
+      "source": "The AI Journal",
+      "date": "Fri, 06 Feb 2026 19:02:23 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWG1wV0M5M2w0VmJYX29veHVOeG5rZG1OMmtqRGFZWktPUDU4dWM5ZWRzWF8zY3FhX005VW1jdldtWmRiQ2pURDBVZV9zMXNIRHlnZmdkbHZWaTcwU09CSWhlV2dBdGFRd0dtdGdPNi02U0ZwWmRXZnE2ckliVHJRQ0RURTdPTzdEMkRJR0p0UkQ3TDBqNWhicTFrdXRCTHNSR2xfTm4xNHdoRHRSX3gxdUE4VWRFVmpqeVVfbkRtWlh0MjRXaXRYdU5vTW1IRW9DRV9QUEFzbHhROGhoZDFZX3IwMHExZVk?oc=5"
+    },
+    {
       "id": "gn-digital-security-44",
       "title": "AI-Generated Fraud Forces Banks to Rethink Identity Verification - ACA International",
       "summary": "AI-Generated Fraud Forces Banks to Rethink Identity Verification&nbsp;&nbsp;ACA International",
@@ -2751,6 +3101,16 @@
       "date": "Fri, 06 Feb 2026 19:01:28 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=400&fit=crop&auto=format",
       "url": "https://www.acainternational.org/news/ai-generated-fraud-forces-banks-to-rethink-identity-verification/"
+    },
+    {
+      "id": "gn-ai-academy-1",
+      "title": "The Real Reason Science Is Broken - persuasion.community",
+      "summary": "The Real Reason Science Is Broken&nbsp;&nbsp;persuasion.community",
+      "topic": "ai-academy",
+      "source": "persuasion.community",
+      "date": "Fri, 06 Feb 2026 18:49:21 GMT",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!wxW0!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe31529d4-86f1-46f5-92dd-78d5cb4d9895_1600x1065.jpeg",
+      "url": "https://www.persuasion.community/p/the-real-reason-science-is-broken"
     },
     {
       "id": "gn-environment-science-18",
@@ -2793,16 +3153,6 @@
       "url": "https://www.digitalmusicnews.com/2026/02/06/spotify-policy-roadmap/"
     },
     {
-      "id": "gn-ai-academy-2",
-      "title": "A new AI commission at UW considers research and learning applications - Wyoming Public Media",
-      "summary": "A new AI commission at UW considers research and learning applications&nbsp;&nbsp;Wyoming Public Media",
-      "topic": "ai-academy",
-      "source": "Wyoming Public Media",
-      "date": "Fri, 06 Feb 2026 16:15:00 GMT",
-      "imageUrl": "https://npr.brightspotcdn.com/dims4/default/34fea35/2147483647/strip/true/crop/4096x2150+0+291/resize/1200x630!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F7a%2F13%2F925c91674e9fbe1fb93b998a2aa6%2F4096px-classroom-building-at-university-of-wyoming-laramie.jpg",
-      "url": "https://www.wyomingpublicmedia.org/education/2026-02-06/a-new-ai-commission-at-uw-considers-research-and-learning-applications"
-    },
-    {
       "id": "gn-unmanned-aircraft-11",
       "title": "FAA Tightens Drone Enforcement - AVweb",
       "summary": "FAA Tightens Drone Enforcement&nbsp;&nbsp;AVweb",
@@ -2811,6 +3161,16 @@
       "date": "Fri, 06 Feb 2026 16:08:14 GMT",
       "imageUrl": "https://avweb.b-cdn.net/wp-content/uploads/sites/3/2026/01/shutterstock_2680909045.jpg?width=1000&height=667",
       "url": "https://avweb.com/aviation-news/drones/faa-tightens-drone-enforcement/"
+    },
+    {
+      "id": "gn-ai-academy-3",
+      "title": "PolyU develops novel AI graph neural network models to unravel interdisciplinary complexities in image recognition and neuroscience - EurekAlert!",
+      "summary": "PolyU develops novel AI graph neural network models to unravel interdisciplinary complexities in image recognition and neuroscience&nbsp;&nbsp;EurekAlert!",
+      "topic": "ai-academy",
+      "source": "EurekAlert!",
+      "date": "Fri, 06 Feb 2026 15:39:24 GMT",
+      "imageUrl": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/3a4a662c-b1c5-48f3-9d86-54bb56fa72bf/Rendition/thumbnail/Content/Public",
+      "url": "https://www.eurekalert.org/news-releases/1115598"
     },
     {
       "id": "gn-environment-science-41",
@@ -2861,6 +3221,16 @@
       "date": "Fri, 06 Feb 2026 14:08:20 GMT",
       "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/07/Blog-Policy-Pricing-1.png",
       "url": "https://farmonaut.com/mining/mineral-containing-iron-key-2026-industry-trends"
+    },
+    {
+      "id": "gn-ai-academy-37",
+      "title": "\"In 2026, I expect AI tutors to evolve into fully capable multimodal learning companions\" - Boye Oshinaga - TechCabal",
+      "summary": "\"In 2026, I expect AI tutors to evolve into fully capable multimodal learning companions\" - Boye Oshinaga&nbsp;&nbsp;TechCabal",
+      "topic": "ai-academy",
+      "source": "TechCabal",
+      "date": "Fri, 06 Feb 2026 13:53:41 GMT",
+      "imageUrl": "https://c76c7bbc41.mjedge.net/wp-content/uploads/tc/2026/02/As-capital-gradually-returns-to-African-tech-regulatory-uncertainty-will-emerge-as-the-primary-constraint-to-growth.-Markets-with-clearer-digital-data-and-fintech-policies-will-attract-dispropo-10.png",
+      "url": "https://techcabal.com/2026/02/06/boye-oshinaga-predictions/"
     },
     {
       "id": "gn-digital-security-4",
@@ -3223,6 +3593,16 @@
       "url": "https://www.thehindu.com/books/death-by-streaming-review-of-liz-pellys-mood-machine/article70582031.ece"
     },
     {
+      "id": "gn-ai-academy-28",
+      "title": "AI Research Lab Goodfire Scores $150 Million - Silicon Valley Daily",
+      "summary": "AI Research Lab Goodfire Scores $150 Million&nbsp;&nbsp;Silicon Valley Daily",
+      "topic": "ai-academy",
+      "source": "Silicon Valley Daily",
+      "date": "Thu, 05 Feb 2026 23:42:02 GMT",
+      "imageUrl": "https://svdaily.com/wp-content/uploads/2026/02/goodfire.jpeg",
+      "url": "https://svdaily.com/2026/02/05/ai-research-lab-goodfire-scores-150-million/"
+    },
+    {
       "id": "gn-environment-science-38",
       "title": "AI’s dual promise for Ireland - KPMG",
       "summary": "AI’s dual promise for Ireland&nbsp;&nbsp;KPMG",
@@ -3321,6 +3701,16 @@
       "date": "Thu, 05 Feb 2026 19:19:19 GMT",
       "imageUrl": "https://lawfare-assets-new.azureedge.net/assets/images/default-source/article-images/ai-drone.jpeg?sfvrsn=e03c953_4",
       "url": "https://www.lawfaremedia.org/article/latest-ndaa-supports-ai-safety--innovation--and-china-decoupling"
+    },
+    {
+      "id": "gn-ai-academy-23",
+      "title": "Hyderabad To Host BioAsia on Feb. 17,18 - Deccan Chronicle",
+      "summary": "Hyderabad To Host BioAsia on Feb. 17,18&nbsp;&nbsp;Deccan Chronicle",
+      "topic": "ai-academy",
+      "source": "Deccan Chronicle",
+      "date": "Thu, 05 Feb 2026 18:55:40 GMT",
+      "imageUrl": "https://www.deccanchronicle.com/h-upload/2026/02/05/2007167-vhkv-9t8400x400.webp",
+      "url": "https://www.deccanchronicle.com/southern-states/telangana/hyderabad-to-host-bioasia-on-feb-1718-1935299"
     },
     {
       "id": "gn-chatbot-development-16",
@@ -3463,6 +3853,16 @@
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB2V0JNNXVjUUdfNDNlVTMwLUhVWFNMczA0X1pXNFU4cTJSNVNhdGpPeGQ3VDktb1UtUDIxWXRYSGxKUHhVT3FFSHFYeDMyUjVnUzNrUW05ZjZCbXJvdVA0Um5IeDBVNmF5YWc?oc=5"
     },
     {
+      "id": "gn-ai-academy-25",
+      "title": "BioAsia 2026 to Convene the World’s Leading Science, AI and Industry Pioneers Driving the TechBio Revolution - Passionate In Marketing",
+      "summary": "BioAsia 2026 to Convene the World’s Leading Science, AI and Industry Pioneers Driving the TechBio Revolution&nbsp;&nbsp;Passionate In Marketing",
+      "topic": "ai-academy",
+      "source": "Passionate In Marketing",
+      "date": "Thu, 05 Feb 2026 14:30:57 GMT",
+      "imageUrl": "https://pimwp.s3-accelerate.amazonaws.com/2026/02/0003EJkM-cu.webp",
+      "url": "https://www.passionateinmarketing.com/bioasia-2026-to-convene-the-worlds-leading-science-ai-and-industry-pioneers-driving-the-techbio-revolution/"
+    },
+    {
       "id": "gn-chatbot-development-36",
       "title": "Musk’s Celestial Gambit: Inside the Race to Build Earth’s First Orbital AI Supercomputer - WebProNews",
       "summary": "Musk’s Celestial Gambit: Inside the Race to Build Earth’s First Orbital AI Supercomputer&nbsp;&nbsp;WebProNews",
@@ -3481,6 +3881,16 @@
       "date": "Thu, 05 Feb 2026 13:40:37 GMT",
       "imageUrl": "https://techtrendske.co.ke/wp-content/uploads/2023/04/cyber-criminals.png",
       "url": "https://techtrendske.co.ke/2026/02/05/eset-report-ai-generated-malware-and-deep-fakes-surges-in-kenya/"
+    },
+    {
+      "id": "gn-ai-academy-7",
+      "title": "Caura.ai Introduces PeerRank: A Breakthrough Framework Where AI Models Evaluate Each Other Without Human Supervision - The Malaysian Reserve",
+      "summary": "Caura.ai Introduces PeerRank: A Breakthrough Framework Where AI Models Evaluate Each Other Without Human Supervision&nbsp;&nbsp;The Malaysian Reserve",
+      "topic": "ai-academy",
+      "source": "The Malaysian Reserve",
+      "date": "Thu, 05 Feb 2026 13:17:53 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&auto=format",
+      "url": "https://themalaysianreserve.com/2026/02/05/caura-ai-introduces-peerrank-a-breakthrough-framework-where-ai-models-evaluate-each-other-without-human-supervision/"
     },
     {
       "id": "gn-technology-innovation-16",
@@ -3571,6 +3981,16 @@
       "date": "Thu, 05 Feb 2026 11:45:00 GMT",
       "imageUrl": "https://charming-card-d91ad3487b.media.strapiapp.com/file_028c7de019.png",
       "url": "https://www.techbuzz.ai/articles/amazon-bets-custom-chips-will-revive-aws-growth-and-stock"
+    },
+    {
+      "id": "gn-ai-academy-33",
+      "title": "LingoAce Launches ACE Academy, Expanding from Chinese to K-12 Math and English Language Arts with AI-enhanced Learning - The Malaysian Reserve",
+      "summary": "LingoAce Launches ACE Academy, Expanding from Chinese to K-12 Math and English Language Arts with AI-enhanced Learning&nbsp;&nbsp;The Malaysian Reserve",
+      "topic": "ai-academy",
+      "source": "The Malaysian Reserve",
+      "date": "Thu, 05 Feb 2026 11:11:14 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&auto=format",
+      "url": "https://themalaysianreserve.com/2026/02/04/lingoace-launches-ace-academy-expanding-from-chinese-to-k-12-math-and-english-language-arts-with-ai-enhanced-learning/"
     },
     {
       "id": "gn-health-style-18",
@@ -3693,6 +4113,16 @@
       "url": "https://www.varindia.com/news/intel-bets-on-gpus-to-take-on-nvidia-in-ai-chip-race"
     },
     {
+      "id": "gn-ai-academy-47",
+      "title": "From India to Global Innovation: How NTU’s MSc Artificial Intelligence Shapes Future-Ready Tech Leaders - Connect Gujarat",
+      "summary": "From India to Global Innovation: How NTU’s MSc Artificial Intelligence Shapes Future-Ready Tech Leaders&nbsp;&nbsp;Connect Gujarat",
+      "topic": "ai-academy",
+      "source": "Connect Gujarat",
+      "date": "Thu, 05 Feb 2026 09:21:17 GMT",
+      "imageUrl": "https://img-cdn.publive.online/fit-in/1200x675/connect-gujarat-english/media/media_files/2026/02/05/anna-audhali-2026-02-05-14-50-55.jpg",
+      "url": "https://connectgujarat.com/india/from-india-to-global-innovation-how-ntus-msc-artificial-intelligence-shapes-future-ready-tech-leaders-11078527"
+    },
+    {
       "id": "gn-unmanned-aircraft-16",
       "title": "U.S. drone-makers debut at Singapore Airshow eyeing Asia sales amid China threat - The Japan Times",
       "summary": "U.S. drone-makers debut at Singapore Airshow eyeing Asia sales amid China threat&nbsp;&nbsp;The Japan Times",
@@ -3721,6 +4151,16 @@
       "date": "Thu, 05 Feb 2026 08:00:00 GMT",
       "imageUrl": "https://sammyguru.com/wp-content/uploads/2026/01/Galaxy-S26-Ultra-hero.png",
       "url": "https://sammyguru.com/samsung-galaxy-s26-ultra/"
+    },
+    {
+      "id": "gn-ai-academy-5",
+      "title": "Caura.ai Introduces PeerRank: A Breakthrough Framework Where AI Models Evaluate Each Other Without Human Supervision - AiThority",
+      "summary": "Caura.ai Introduces PeerRank: A Breakthrough Framework Where AI Models Evaluate Each Other Without Human Supervision&nbsp;&nbsp;AiThority",
+      "topic": "ai-academy",
+      "source": "AiThority",
+      "date": "Thu, 05 Feb 2026 07:57:05 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQjh3a21hdTYxZi1sVXdEOTdoZl85UzMxbHJwc2RUSjh0dEFDNEJsbU5EaXRCMFJnMTQ2YTY2LWJDb3M2dGZJZUR5Rm1Jd1lqT0M3TVJsTk9qMlBkVnA1bmwxRmVOUHBpVFgzM3dKdlg5SE9wOEE0bjVzRDBaYmZhenpFVUVSTy1kNnRhekFMWHFaay1PUG91RW9PbWU2bXZtSFBQRTNkTFBxWVpxX2trMzJfdUxvUDVueElkSlRYWVZHbjl6SHg2SDlRLXl4R3hDSkpObEVqeWI3UHVWMUtwTEdKa2dSSHRmVmsw?oc=5"
     },
     {
       "id": "gn-unmanned-aircraft-46",
@@ -3841,6 +4281,16 @@
       "date": "Thu, 05 Feb 2026 02:10:07 GMT",
       "imageUrl": "https://images.e-flux.com/test/1beb50a8-fb94-4917-8c2e-db8f67d675c6?width=1200&height=630",
       "url": "https://www.e-flux.com/journal/160/6776843/warm-war"
+    },
+    {
+      "id": "gn-ai-academy-29",
+      "title": "Prompted: Intentional AI Literacy for a New Frontier - Punahou",
+      "summary": "Prompted: Intentional AI Literacy for a New Frontier&nbsp;&nbsp;Punahou",
+      "topic": "ai-academy",
+      "source": "Punahou",
+      "date": "Thu, 05 Feb 2026 01:19:33 GMT",
+      "imageUrl": "https://bulletin.punahou.edu/wp-content/uploads/2025/10/GR6_DIGITAL_CITIZENSHIP_5313.jpg",
+      "url": "https://bulletin.punahou.edu/prompted-intentional-ai-literacy-for-a-new-frontier/"
     },
     {
       "id": "gn-visual-art-photography-12",
@@ -4053,26 +4503,6 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNak9MUEJUbWxIUVE4ZUtFelBmUFZhTTJJbWRicEkwNVc4bmhYaUUySmo1d2hWQ0kycEVRM3g2N3FqNVNlR2w1Ynd0c2t0cFN3RXI4N0R1ekJ4dXd2TmRXQTVUYkd1MjB3aUVKdkNLYXdGYmlKTTdudUx6Y1RZRG1uY1ZGYXVld3JCbEo4X09VZVJ1bS1G?oc=5"
     },
     {
-      "id": "gn-ai-academy-6",
-      "title": "AI research at Carolina - The University of North Carolina at Chapel Hill",
-      "summary": "AI research at Carolina&nbsp;&nbsp;The University of North Carolina at Chapel Hill",
-      "topic": "ai-academy",
-      "source": "The University of North Carolina at Chapel Hill",
-      "date": "Tue, 03 Feb 2026 08:00:00 GMT",
-      "imageUrl": "https://www.unc.edu/wp-content/uploads/2024/06/AI_ChatBot_1600x900.png",
-      "url": "https://www.unc.edu/story/ai-research-at-carolina/"
-    },
-    {
-      "id": "gn-ai-academy-5",
-      "title": "SUNY Binghamton to partner with six schools in AI education program - Press &amp; Sun-Bulletin",
-      "summary": "SUNY Binghamton to partner with six schools in AI education program&nbsp;&nbsp;Press & Sun-Bulletin",
-      "topic": "ai-academy",
-      "source": "Press &amp; Sun-Bulletin",
-      "date": "Sat, 31 Jan 2026 10:05:00 GMT",
-      "imageUrl": "https://www.pressconnects.com/gcdn/authoring/authoring-images/2025/05/18/PBIN/83710037007-img-7139.jpg?crop=4582,2578,x0,y305&width=3200&height=1801&format=pjpg&auto=webp",
-      "url": "https://www.pressconnects.com/story/news/local/2026/01/31/binghamton-university-ai-for-public-good-initiative-courses/88437890007/"
-    },
-    {
       "id": "gn-business-economy-12",
       "title": "H2 2025 Innovation Economy Update - J.P. Morgan",
       "summary": "H2 2025 Innovation Economy Update&nbsp;&nbsp;J.P. Morgan",
@@ -4081,26 +4511,6 @@
       "date": "Wed, 28 Jan 2026 08:00:00 GMT",
       "imageUrl": "/content/dam/jpmorgan/images/cb/insights/outlook/economic-outlook/cb-mmbsi-insights-innovation-economy-outlook-h2-2025-banner-1440x810px-horizontal.jpg",
       "url": "https://www.jpmorgan.com/insights/markets-and-economy/economy/innovation-economy-outlook"
-    },
-    {
-      "id": "gn-ai-academy-7",
-      "title": "Reps. Foushee, Nunn Introduce Bipartisan Legislation to Expand Participation in AI Education, Research, and Workforce - Congresswoman Valerie Foushee (.gov)",
-      "summary": "Reps. Foushee, Nunn Introduce Bipartisan Legislation to Expand Participation in AI Education, Research, and Workforce&nbsp;&nbsp;Congresswoman Valerie Foushee (.gov)",
-      "topic": "ai-academy",
-      "source": "Congresswoman Valerie Foushee (.gov)",
-      "date": "Wed, 21 Jan 2026 23:31:59 GMT",
-      "imageUrl": "https://foushee.house.gov/themes/foushee/images/sharelogo.jpg",
-      "url": "https://foushee.house.gov/media/press-releases/reps-foushee-nunn-introduce-bipartisan-legislation-to-expand-participation-in-ai-education-research-and-workforce"
-    },
-    {
-      "id": "gn-ai-academy-14",
-      "title": "Introducing OpenAI’s Education for Countries - OpenAI",
-      "summary": "Introducing OpenAI’s Education for Countries&nbsp;&nbsp;OpenAI",
-      "topic": "ai-academy",
-      "source": "OpenAI",
-      "date": "Wed, 21 Jan 2026 08:00:00 GMT",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/6BiN06SaVBBRF4b5aUv6Q7/29ea79a72b62c68318ae53715bc21c7d/SEO_Image.png?w=1600&h=900&fit=fill",
-      "url": "https://openai.com/index/edu-for-countries/"
     },
     {
       "id": "gn-business-economy-29",
@@ -4113,16 +4523,6 @@
       "url": "https://www.cnbc.com/2026/01/19/alibaba-backed-startup-moonshot-ai-alibabi-backed-startup-chinese-ai-ipo.html"
     },
     {
-      "id": "gn-ai-academy-25",
-      "title": "Purdue and Google launch AI partnership to boost education - Journal &amp; Courier",
-      "summary": "Purdue and Google launch AI partnership to boost education&nbsp;&nbsp;Journal & Courier",
-      "topic": "ai-academy",
-      "source": "Journal &amp; Courier",
-      "date": "Fri, 16 Jan 2026 08:00:00 GMT",
-      "imageUrl": "https://www.jconline.com/gcdn/authoring/authoring-images/2026/01/16/PMAN/88212682007-google-purdue-ai-summit-2025.jpg?crop=875,492,x0,y0&width=875&height=492&format=pjpg&auto=webp",
-      "url": "https://www.jconline.com/story/news/education/2026/01/16/purdue-and-google-public-sector-announce-ai-education-alliance-partnership-research-workforce/88212393007/"
-    },
-    {
       "id": "gn-governance-politics-0",
       "title": "Why AI policy thrives in some states and fades in others - Brookings",
       "summary": "Why AI policy thrives in some states and fades in others&nbsp;&nbsp;Brookings",
@@ -4131,36 +4531,6 @@
       "date": "Wed, 14 Jan 2026 08:00:00 GMT",
       "imageUrl": "https://www.brookings.edu/wp-content/uploads/2025/12/GettyImages-2230194816-1.jpg?quality=75",
       "url": "https://www.brookings.edu/articles/why-ai-policy-thrives-in-some-states-and-fades-in-others/"
-    },
-    {
-      "id": "gn-ai-academy-18",
-      "title": "Purdue, Google team up to expand AI education and research - Purdue Exponent",
-      "summary": "Purdue, Google team up to expand AI education and research&nbsp;&nbsp;Purdue Exponent",
-      "topic": "ai-academy",
-      "source": "Purdue Exponent",
-      "date": "Mon, 12 Jan 2026 08:00:00 GMT",
-      "imageUrl": "https://bloximages.newyork1.vip.townnews.com/purdueexponent.org/content/tncms/assets/v3/editorial/1/ad/1ad50475-9940-45da-a556-6de5852b4ef6/69656a91ba105.preview.jpg?crop=1763%2C926%2C0%2C124&resize=1200%2C630&order=crop%2Cresize",
-      "url": "https://www.purdueexponent.org/campus/general_news/purdue-google-team-up-to-expand-ai-education-and-research/article_1ad50475-9940-45da-a556-6de5852b4ef6.html"
-    },
-    {
-      "id": "gn-ai-academy-19",
-      "title": "Purdue and Google Public Sector partner to scale AI integration and accelerate education and research across the institution - Purdue University",
-      "summary": "Purdue and Google Public Sector partner to scale AI integration and accelerate education and research across the institution&nbsp;&nbsp;Purdue University",
-      "topic": "ai-academy",
-      "source": "Purdue University",
-      "date": "Mon, 12 Jan 2026 08:00:00 GMT",
-      "imageUrl": "https://www.purdue.edu/newsroom/wp-content/uploads/2026/01/2601-google-summit.jpg",
-      "url": "https://www.purdue.edu/newsroom/2026/Q1/purdue-and-google-public-sector-partner-to-scale-ai-integration-and-accelerate-education-and-research-across-the-institution/"
-    },
-    {
-      "id": "gn-ai-academy-16",
-      "title": "Empire AI, a Columbia University Collaboration, Gets Google Gift for AI Education - Columbia University",
-      "summary": "Empire AI, a Columbia University Collaboration, Gets Google Gift for AI Education&nbsp;&nbsp;Columbia University",
-      "topic": "ai-academy",
-      "source": "Columbia University",
-      "date": "Fri, 09 Jan 2026 08:00:00 GMT",
-      "imageUrl": "https://news.columbia.edu/sites/news.columbia.edu/files/content/2026/thinker-columbia-campus.jpeg",
-      "url": "https://news.columbia.edu/news/empire-ai-columbia-university-collaboration-gets-google-gift-ai-education"
     },
     {
       "id": "gn-business-economy-4",
@@ -4203,26 +4573,6 @@
       "url": "https://statescoop.com/new-jersey-20m-fund-ai-startups/"
     },
     {
-      "id": "gn-ai-academy-11",
-      "title": "Tuskegee University to host the 2026 Amazon Web Services–Machine Learning University Research &amp; Teaching Symposium - Tuskegee University",
-      "summary": "Tuskegee University to host the 2026 Amazon Web Services–Machine Learning University Research & Teaching Symposium&nbsp;&nbsp;Tuskegee University",
-      "topic": "ai-academy",
-      "source": "Tuskegee University",
-      "date": "Mon, 15 Dec 2025 08:00:00 GMT",
-      "imageUrl": "${image.site.url}/${image.path}",
-      "url": "https://www.tuskegee.edu/news/2025/12/Tuskegee-University-to-host-the-2026-Amazon-AWSMLU-Research-Teaching-Symposium.html?image"
-    },
-    {
-      "id": "gn-ai-academy-22",
-      "title": "The ‘one chatbot per child’ model for AI in classrooms conflicts with what research shows: Learning is a social process - The Conversation",
-      "summary": "The ‘one chatbot per child’ model for AI in classrooms conflicts with what research shows: Learning is a social process&nbsp;&nbsp;The Conversation",
-      "topic": "ai-academy",
-      "source": "The Conversation",
-      "date": "Mon, 15 Dec 2025 08:00:00 GMT",
-      "imageUrl": "https://images.theconversation.com/files/707838/original/file-20251210-64-6j2fp8.jpg?ixlib=rb-4.1.0&rect=0%2C475%2C5700%2C2850&q=45&auto=format&w=1356&h=668&fit=crop",
-      "url": "https://theconversation.com/the-one-chatbot-per-child-model-for-ai-in-classrooms-conflicts-with-what-research-shows-learning-is-a-social-process-269885"
-    },
-    {
       "id": "gn-governance-politics-1",
       "title": "The federal government weighs in on artificial intelligence governance: What you need to know - Norton Rose Fulbright",
       "summary": "The federal government weighs in on artificial intelligence governance: What you need to know&nbsp;&nbsp;Norton Rose Fulbright",
@@ -4243,16 +4593,6 @@
       "url": "https://www.nature.com/articles/d41586-025-03972-y"
     },
     {
-      "id": "gn-ai-academy-17",
-      "title": "URI’s use of artificial intelligence in research, teaching, and innovation on display at ‘Discovering AI @ URI Day’ - The University of Rhode Island",
-      "summary": "URI’s use of artificial intelligence in research, teaching, and innovation on display at ‘Discovering AI @ URI Day’&nbsp;&nbsp;The University of Rhode Island",
-      "topic": "ai-academy",
-      "source": "The University of Rhode Island",
-      "date": "Mon, 08 Dec 2025 08:00:00 GMT",
-      "imageUrl": "https://www.uri.edu/news/wp-content/uploads/news/sites/16/2025/12/Advanced-Robotics_Robot-Dance.jpg",
-      "url": "https://www.uri.edu/news/2025/12/uris-use-of-artificial-intelligence-in-research-teaching-and-innovation-on-display-at-discovering-ai-uri-day/"
-    },
-    {
       "id": "gn-governance-politics-16",
       "title": "Government drops AI 'mandatory guardrails', reveals road map on data centres - Australian Broadcasting Corporation",
       "summary": "Government drops AI 'mandatory guardrails', reveals road map on data centres&nbsp;&nbsp;Australian Broadcasting Corporation",
@@ -4261,16 +4601,6 @@
       "date": "Mon, 01 Dec 2025 08:00:00 GMT",
       "imageUrl": "https://live-production.wcms.abc-cdn.net.au/5bd9af8f4a64030f7ff7526c854fd4d4?impolicy=wcms_watermark_news&cropH=1687&cropW=3000&xPos=0&yPos=157&width=862&height=485&imformat=generic",
       "url": "https://www.abc.net.au/news/2025-12-02/national-artificial-intelligence-plan-growth-existing-laws/106086474"
-    },
-    {
-      "id": "gn-ai-academy-12",
-      "title": "​Tsinghua University releases comprehensive guiding principles for AI use in education - tsinghua.edu.cn",
-      "summary": "​Tsinghua University releases comprehensive guiding principles for AI use in education&nbsp;&nbsp;tsinghua.edu.cn",
-      "topic": "ai-academy",
-      "source": "tsinghua.edu.cn",
-      "date": "Wed, 26 Nov 2025 04:12:02 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.tsinghua.edu.cn/en/info/1244/14599.htm"
     },
     {
       "id": "gn-governance-politics-25",
@@ -4291,16 +4621,6 @@
       "date": "Mon, 24 Nov 2025 08:00:00 GMT",
       "imageUrl": "https://www.rstreet.org/wp-content/uploads/2018/05/congress-congress.jpg",
       "url": "https://www.rstreet.org/commentary/congress-has-fresh-chance-to-address-ai-governance-and-federal-state-division-of-powers/"
-    },
-    {
-      "id": "gn-ai-academy-27",
-      "title": "Engineering faculty drive AI innovation as Ohio University earns top quantum research honor - Ohio University",
-      "summary": "Engineering faculty drive AI innovation as Ohio University earns top quantum research honor&nbsp;&nbsp;Ohio University",
-      "topic": "ai-academy",
-      "source": "Ohio University",
-      "date": "Fri, 21 Nov 2025 08:00:00 GMT",
-      "imageUrl": "https://news.ohio.edu/sites/ohio.edu.news/files/2025-11/russ-ai-workshop.jpg",
-      "url": "https://www.ohio.edu/news/2025/11/engineering-faculty-drive-ai-innovation-ohio-university-earns-top-quantum-research"
     },
     {
       "id": "gn-business-economy-3",
@@ -4353,46 +4673,6 @@
       "url": "https://www.kompas.id/artikel/en-peluang-start-up-indonesia-di-tengah-tech-winter"
     },
     {
-      "id": "gn-ai-academy-15",
-      "title": "Faculty Experts on AI in the Classroom - American University",
-      "summary": "Faculty Experts on AI in the Classroom&nbsp;&nbsp;American University",
-      "topic": "ai-academy",
-      "source": "American University",
-      "date": "Thu, 30 Oct 2025 22:44:44 GMT",
-      "imageUrl": "https://www.american.edu/customcf/2016-redesign/images/social_graph.jpg",
-      "url": "https://www.american.edu/soe/graduate/articles/faculty-experts-on-ai-in-the-classroom.cfm"
-    },
-    {
-      "id": "gn-ai-academy-23",
-      "title": "UA Advances Research Across Disciplines through AI Infrastructure Investments - UA News Center",
-      "summary": "UA Advances Research Across Disciplines through AI Infrastructure Investments&nbsp;&nbsp;UA News Center",
-      "topic": "ai-academy",
-      "source": "UA News Center",
-      "date": "Thu, 30 Oct 2025 07:00:00 GMT",
-      "imageUrl": "https://news.ua.edu/wp-content/uploads/2025/10/AdobeStock_243813852-scaled-e1761766860505.jpeg",
-      "url": "https://news.ua.edu/2025/10/ai-exchange-highlights-role-of-hpc-in-alabama/"
-    },
-    {
-      "id": "gn-ai-academy-8",
-      "title": "CUES funds groundbreaking research in teaching and learning - The University of Arizona",
-      "summary": "CUES funds groundbreaking research in teaching and learning&nbsp;&nbsp;The University of Arizona",
-      "topic": "ai-academy",
-      "source": "The University of Arizona",
-      "date": "Mon, 27 Oct 2025 07:00:00 GMT",
-      "imageUrl": "https://research.arizona.edu/sites/default/files/2025-10/CUESStockHeroImage.jpeg",
-      "url": "https://research.arizona.edu/news/cues-funds-groundbreaking-research-teaching-and-learning"
-    },
-    {
-      "id": "gn-ai-academy-20",
-      "title": "Capital One and UVA Engineering Announce Major Partnership to Advance AI Research and Education - The University of Virginia",
-      "summary": "Capital One and UVA Engineering Announce Major Partnership to Advance AI Research and Education&nbsp;&nbsp;The University of Virginia",
-      "topic": "ai-academy",
-      "source": "The University of Virginia",
-      "date": "Mon, 27 Oct 2025 07:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop&auto=format",
-      "url": "https://engineering.virginia.edu/news-events/news/capital-one-and-uva-engineering-announce-major-partnership-advance-ai-research-and-education"
-    },
-    {
       "id": "gn-business-economy-7",
       "title": "Artificial intelligence startups captured over 50% of venture funding in 2025 - WION",
       "summary": "Artificial intelligence startups captured over 50% of venture funding in 2025&nbsp;&nbsp;WION",
@@ -4411,36 +4691,6 @@
       "date": "Tue, 21 Oct 2025 07:00:00 GMT",
       "imageUrl": "https://www.gov.uk/assets/frontend/govuk-opengraph-image-4196a4d6333cf92aaf720047f56cfd91b3532d7635fc21ebcf0d5897df6b5f77.png",
       "url": "https://www.gov.uk/government/news/new-blueprint-for-ai-regulation-could-speed-up-planning-approvals-slash-nhs-waiting-times-and-drive-growth-and-public-trust"
-    },
-    {
-      "id": "gn-ai-academy-9",
-      "title": "How AI is transforming academic research - University of Miami",
-      "summary": "How AI is transforming academic research&nbsp;&nbsp;University of Miami",
-      "topic": "ai-academy",
-      "source": "University of Miami",
-      "date": "Mon, 20 Oct 2025 07:00:00 GMT",
-      "imageUrl": "https://news.miami.edu/_assets/images-stories/2025/10/ai-academic-research-natu-940x5291.webp",
-      "url": "https://news.miami.edu/stories/2025/10/how-artificial-intelligence-is-transforming-academic-research.html"
-    },
-    {
-      "id": "gn-ai-academy-10",
-      "title": "Determinants of student adoption of artificial intelligence applications in higher education - Nature",
-      "summary": "Determinants of student adoption of artificial intelligence applications in higher education&nbsp;&nbsp;Nature",
-      "topic": "ai-academy",
-      "source": "Nature",
-      "date": "Tue, 14 Oct 2025 07:00:00 GMT",
-      "imageUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41598-025-19851-5/MediaObjects/41598_2025_19851_Fig1_HTML.png",
-      "url": "https://www.nature.com/articles/s41598-025-19851-5"
-    },
-    {
-      "id": "gn-ai-academy-29",
-      "title": "Research and Instruction Services at Criss Library Partners with Faculty and Students to Navigate the Research Process with AI - University of Nebraska Omaha",
-      "summary": "Research and Instruction Services at Criss Library Partners with Faculty and Students to Navigate the Research Process with AI&nbsp;&nbsp;University of Nebraska Omaha",
-      "topic": "ai-academy",
-      "source": "University of Nebraska Omaha",
-      "date": "Mon, 13 Oct 2025 07:00:00 GMT",
-      "imageUrl": "https://www.unomaha.edu/criss-library/news/2025/10/img/ai-hero.jpg",
-      "url": "https://www.unomaha.edu/criss-library/news/2025/10/navigating-ai-research-process.php"
     },
     {
       "id": "gn-business-economy-8",
@@ -4463,26 +4713,6 @@
       "url": "https://www.whitecase.com/insight-our-thinking/ai-watch-global-regulatory-tracker-united-states"
     },
     {
-      "id": "gn-ai-academy-21",
-      "title": "Fairfield Leads NSF-Funded AI Ethics Collaborative Research Project - Fairfield University",
-      "summary": "Fairfield Leads NSF-Funded AI Ethics Collaborative Research Project&nbsp;&nbsp;Fairfield University",
-      "topic": "ai-academy",
-      "source": "Fairfield University",
-      "date": "Thu, 11 Sep 2025 07:00:00 GMT",
-      "imageUrl": "https://www.fairfield.edu/_files/images/news/individual-article-thumbnail/2025/1744908148_news_2025_september_dolan-sec-nsf-grant_article-thumbnail_687x392_09102025.jpg",
-      "url": "https://www.fairfield.edu/news/2025/september/nsf-grant-for-artificial-intelligence-study.html"
-    },
-    {
-      "id": "gn-ai-academy-26",
-      "title": "BNY and Carnegie Mellon University Join Forces To Advance AI Education and Research - Carnegie Mellon University",
-      "summary": "BNY and Carnegie Mellon University Join Forces To Advance AI Education and Research&nbsp;&nbsp;Carnegie Mellon University",
-      "topic": "ai-academy",
-      "source": "Carnegie Mellon University",
-      "date": "Thu, 11 Sep 2025 07:00:00 GMT",
-      "imageUrl": "https://www.cmu.edu/news/sites/default/files/styles/embedded_max/public/2025-09/Autumn-Campus--105.jpg.webp?itok=omL_oKh4",
-      "url": "https://www.cmu.edu/news/stories/archives/2025/september/bny-and-carnegie-mellon-university-join-forces-to-advance-ai-education-and-research"
-    },
-    {
       "id": "gn-business-economy-15",
       "title": "MENA startups heat up with fresh capital across fintech, AI, and gaming - Arab News",
       "summary": "MENA startups heat up with fresh capital across fintech, AI, and gaming&nbsp;&nbsp;Arab News",
@@ -4491,16 +4721,6 @@
       "date": "Sat, 06 Sep 2025 07:00:00 GMT",
       "imageUrl": "https://www.arabnews.com/sites/default/files/styles/660x371_watermarksaudi/public/main-image/2025/09/06/4637260-308693256.jpg?itok=zgv5by-K",
       "url": "https://www.arabnews.com/node/2614367/business-economy"
-    },
-    {
-      "id": "gn-ai-academy-24",
-      "title": "Talking AI and the future of education with the University of Minnesota - University of Minnesota Twin Cities",
-      "summary": "Talking AI and the future of education with the University of Minnesota&nbsp;&nbsp;University of Minnesota Twin Cities",
-      "topic": "ai-academy",
-      "source": "University of Minnesota Twin Cities",
-      "date": "Wed, 27 Aug 2025 07:00:00 GMT",
-      "imageUrl": "https://twin-cities.umn.edu/sites/twin-cities.umn.edu/files/Unews%20Image%20Templates%203_2%20%283%29_0.jpg",
-      "url": "https://twin-cities.umn.edu/news-events/talking-ai-and-future-education-university-minnesota"
     },
     {
       "id": "gn-governance-politics-20",
@@ -4541,16 +4761,6 @@
       "date": "Thu, 14 Aug 2025 07:00:00 GMT",
       "imageUrl": "https://i.insider.com/689b989fa17a8c5b4052be53?width=1200&format=jpeg",
       "url": "https://www.businessinsider.com/vcs-investing-in-innovative-creator-economy-startups-2025-8"
-    },
-    {
-      "id": "gn-ai-academy-28",
-      "title": "Miller School of Medicine Launches Office of AI in Medical Education - University of Miami",
-      "summary": "Miller School of Medicine Launches Office of AI in Medical Education&nbsp;&nbsp;University of Miami",
-      "topic": "ai-academy",
-      "source": "University of Miami",
-      "date": "Tue, 05 Aug 2025 07:00:00 GMT",
-      "imageUrl": "https://news.med.miami.edu/wp-content/uploads/2025/06/img-AI-course-student-AI-helmet.jpg",
-      "url": "https://news.med.miami.edu/miller-school-of-medicine-launches-office-of-ai-in-medical-education/"
     },
     {
       "id": "gn-governance-politics-4",
@@ -4631,16 +4841,6 @@
       "date": "Mon, 07 Jul 2025 07:00:00 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&h=400&fit=crop&auto=format",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQd21TWGZOemFiT3Z0MGJBX0hxTG5HTXJ4bWJYemxIRkxIRnZUQnRqVl85WlJyd3QyRTNDbXNsLTMtdEw3RU1qOXc3bHZiSUZGbl9yM2xkdWUtOFNmS1NydlBvZVFIeDFwVUY1R2ZKVE0tN3NPVlQ3N2J5SW5XZURxZTVBZHRoWDVzR1ZuV3JPTHcxMk9LZy1NRzhvOVo?oc=5"
-    },
-    {
-      "id": "gn-ai-academy-13",
-      "title": "Is AI education a priority for the U.S.? - UGA Today",
-      "summary": "Is AI education a priority for the U.S.?&nbsp;&nbsp;UGA Today",
-      "topic": "ai-academy",
-      "source": "UGA Today",
-      "date": "Fri, 20 Jun 2025 07:00:00 GMT",
-      "imageUrl": "https://news.uga.edu/wp-content/uploads/2025/06/GettyImages-2197955227.jpg",
-      "url": "https://news.uga.edu/planning-for-ai-in-workforce/"
     },
     {
       "id": "gn-business-economy-9",
