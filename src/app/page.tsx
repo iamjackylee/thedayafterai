@@ -10,6 +10,8 @@ import {
   Linkedin,
   ChevronLeft,
   ChevronRight,
+  ChevronsLeft,
+  ChevronsRight,
   Play,
   ExternalLink,
 } from "lucide-react";
@@ -76,6 +78,12 @@ function CustomSectionRow({ section, showCount }: { section: CustomSection; show
     });
   };
 
+  const scrollToEdge = (edge: "start" | "end") => {
+    const el = scrollRef.current;
+    if (!el) return;
+    el.scrollTo({ left: edge === "start" ? 0 : el.scrollWidth, behavior: "smooth" });
+  };
+
   if (section.articles.length === 0) return null;
 
   return (
@@ -105,11 +113,20 @@ function CustomSectionRow({ section, showCount }: { section: CustomSection; show
             </span>
           </div>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-0.5">
+          <button
+            onClick={() => scrollToEdge("start")}
+            disabled={!canScrollLeft}
+            className="p-1.5 rounded-sm transition-colors disabled:opacity-20"
+            style={{ color: canScrollLeft ? section.color : undefined }}
+            title="Newest"
+          >
+            <ChevronsLeft size={18} />
+          </button>
           <button
             onClick={() => scroll("left")}
             disabled={!canScrollLeft}
-            className="p-2 rounded-sm transition-colors disabled:opacity-20"
+            className="p-1.5 rounded-sm transition-colors disabled:opacity-20"
             style={{ color: canScrollLeft ? section.color : undefined }}
           >
             <ChevronLeft size={20} />
@@ -117,10 +134,19 @@ function CustomSectionRow({ section, showCount }: { section: CustomSection; show
           <button
             onClick={() => scroll("right")}
             disabled={!canScrollRight}
-            className="p-2 rounded-sm transition-colors disabled:opacity-20"
+            className="p-1.5 rounded-sm transition-colors disabled:opacity-20"
             style={{ color: canScrollRight ? section.color : undefined }}
           >
             <ChevronRight size={20} />
+          </button>
+          <button
+            onClick={() => scrollToEdge("end")}
+            disabled={!canScrollRight}
+            className="p-1.5 rounded-sm transition-colors disabled:opacity-20"
+            style={{ color: canScrollRight ? section.color : undefined }}
+            title="Oldest"
+          >
+            <ChevronsRight size={18} />
           </button>
         </div>
       </div>
@@ -198,6 +224,12 @@ function TdaaiSectionRow({ articles }: { articles: TdaaiArticle[] }) {
     });
   };
 
+  const scrollToEdge = (edge: "start" | "end") => {
+    const el = scrollRef.current;
+    if (!el) return;
+    el.scrollTo({ left: edge === "start" ? 0 : el.scrollWidth, behavior: "smooth" });
+  };
+
   if (articles.length === 0) return null;
 
   return (
@@ -211,11 +243,20 @@ function TdaaiSectionRow({ articles }: { articles: TdaaiArticle[] }) {
             From TheDayAfterAI.com
           </h3>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-0.5">
+          <button
+            onClick={() => scrollToEdge("start")}
+            disabled={!canScrollLeft}
+            className="p-1.5 rounded-sm transition-colors disabled:opacity-20"
+            style={{ color: canScrollLeft ? sectionColor : undefined }}
+            title="Newest"
+          >
+            <ChevronsLeft size={18} />
+          </button>
           <button
             onClick={() => scroll("left")}
             disabled={!canScrollLeft}
-            className="p-2 rounded-sm transition-colors disabled:opacity-20"
+            className="p-1.5 rounded-sm transition-colors disabled:opacity-20"
             style={{ color: canScrollLeft ? sectionColor : undefined }}
           >
             <ChevronLeft size={20} />
@@ -223,10 +264,19 @@ function TdaaiSectionRow({ articles }: { articles: TdaaiArticle[] }) {
           <button
             onClick={() => scroll("right")}
             disabled={!canScrollRight}
-            className="p-2 rounded-sm transition-colors disabled:opacity-20"
+            className="p-1.5 rounded-sm transition-colors disabled:opacity-20"
             style={{ color: canScrollRight ? sectionColor : undefined }}
           >
             <ChevronRight size={20} />
+          </button>
+          <button
+            onClick={() => scrollToEdge("end")}
+            disabled={!canScrollRight}
+            className="p-1.5 rounded-sm transition-colors disabled:opacity-20"
+            style={{ color: canScrollRight ? sectionColor : undefined }}
+            title="Oldest"
+          >
+            <ChevronsRight size={18} />
           </button>
         </div>
       </div>
@@ -312,6 +362,12 @@ function CategoryRow({ topic, articles, id, showCount }: { topic: typeof TOPICS[
     });
   };
 
+  const scrollToEdge = (edge: "start" | "end") => {
+    const el = scrollRef.current;
+    if (!el) return;
+    el.scrollTo({ left: edge === "start" ? 0 : el.scrollWidth, behavior: "smooth" });
+  };
+
   return (
     <div className="category-section" id={id} data-topic-section={topic.id}>
       {/* Category header with colored border and arrows */}
@@ -334,11 +390,20 @@ function CategoryRow({ topic, articles, id, showCount }: { topic: typeof TOPICS[
             )}
           </div>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-0.5">
+          <button
+            onClick={() => scrollToEdge("start")}
+            disabled={!canScrollLeft}
+            className="p-1.5 rounded-sm transition-colors disabled:opacity-20"
+            style={{ color: canScrollLeft ? topic.color : undefined }}
+            title="Newest"
+          >
+            <ChevronsLeft size={18} />
+          </button>
           <button
             onClick={() => scroll("left")}
             disabled={!canScrollLeft}
-            className="p-2 rounded-sm transition-colors disabled:opacity-20"
+            className="p-1.5 rounded-sm transition-colors disabled:opacity-20"
             style={{ color: canScrollLeft ? topic.color : undefined }}
           >
             <ChevronLeft size={20} />
@@ -346,10 +411,19 @@ function CategoryRow({ topic, articles, id, showCount }: { topic: typeof TOPICS[
           <button
             onClick={() => scroll("right")}
             disabled={!canScrollRight}
-            className="p-2 rounded-sm transition-colors disabled:opacity-20"
+            className="p-1.5 rounded-sm transition-colors disabled:opacity-20"
             style={{ color: canScrollRight ? topic.color : undefined }}
           >
             <ChevronRight size={20} />
+          </button>
+          <button
+            onClick={() => scrollToEdge("end")}
+            disabled={!canScrollRight}
+            className="p-1.5 rounded-sm transition-colors disabled:opacity-20"
+            style={{ color: canScrollRight ? topic.color : undefined }}
+            title="Oldest"
+          >
+            <ChevronsRight size={18} />
           </button>
         </div>
       </div>
