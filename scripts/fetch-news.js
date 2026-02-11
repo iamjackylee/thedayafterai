@@ -428,22 +428,76 @@ async function resolveArticles(articles) {
 
         if (isResolved) {
           article.url = finalUrl;
+          // Extract the best article image using multiple strategies:
+          // 1. JSON-LD structured data (most accurate — publisher's chosen article image)
+          // 2. Article hero/featured image (first prominent image in content)
+          // 3. og:image / twitter:image (social sharing — sometimes generic)
+          // 4. First large image in article body
           const imgUrl = await page.evaluate(() => {
-            const selectors = [
+            const isGoodUrl = (u) => u && u.startsWith("http") &&
+              !u.includes("avatar") && !u.includes("/logo") && !u.includes("favicon") &&
+              !u.includes("icon") && !u.includes("pixel") && !u.includes("tracking") &&
+              !u.includes("1x1") && !u.includes("spacer");
+
+            // 1. JSON-LD structured data — often the most accurate article image
+            try {
+              const ldScripts = document.querySelectorAll('script[type="application/ld+json"]');
+              for (const script of ldScripts) {
+                const data = JSON.parse(script.textContent || "");
+                // Handle array of objects or single object
+                const items = Array.isArray(data) ? data : [data];
+                for (const item of items) {
+                  if (item["@type"] === "NewsArticle" || item["@type"] === "Article" ||
+                      item["@type"] === "BlogPosting" || item["@type"] === "WebPage") {
+                    const img = item.image;
+                    if (typeof img === "string" && isGoodUrl(img)) return img;
+                    if (Array.isArray(img) && img.length > 0) {
+                      const first = typeof img[0] === "string" ? img[0] : img[0]?.url;
+                      if (isGoodUrl(first)) return first;
+                    }
+                    if (img?.url && isGoodUrl(img.url)) return img.url;
+                    // Also check thumbnailUrl
+                    if (item.thumbnailUrl && isGoodUrl(item.thumbnailUrl)) return item.thumbnailUrl;
+                  }
+                }
+              }
+            } catch {}
+
+            // 2. Article hero/featured image (common CMS patterns)
+            const heroSelectors = [
+              ".post-hero img", ".article-hero img", ".hero-image img",
+              "[data-hero] img", ".featured-image img", ".post-thumbnail img",
+              ".article-featured-image img", "figure.lead img", "figure:first-of-type img",
+              ".entry-content > figure:first-child img", ".article__hero img",
+            ];
+            for (const sel of heroSelectors) {
+              const el = document.querySelector(sel);
+              const src = el?.getAttribute("src") || el?.dataset?.src || "";
+              if (isGoodUrl(src)) return src;
+            }
+
+            // 3. og:image / meta tags (standard social sharing image)
+            const metaSelectors = [
               'meta[property="og:image"]', 'meta[property="og:image:secure_url"]',
               'meta[property="og:image:url"]', 'meta[name="twitter:image"]',
               'meta[name="twitter:image:src"]', 'meta[name="image"]',
               'meta[itemprop="image"]', 'link[rel="image_src"]',
             ];
-            for (const sel of selectors) {
+            for (const sel of metaSelectors) {
               const el = document.querySelector(sel);
               const val = el?.getAttribute("content") || el?.getAttribute("href") || "";
-              if (val && val.startsWith("http")) return val;
+              if (isGoodUrl(val)) return val;
             }
-            const imgs = Array.from(document.querySelectorAll("article img[src], .post-content img[src], .article-body img[src], main img[src]"));
+
+            // 4. First large image in article body
+            const bodySelectors = [
+              "article img[src]", ".post-content img[src]", ".article-body img[src]",
+              ".entry-content img[src]", ".article-content img[src]", "main img[src]",
+            ];
+            const imgs = Array.from(document.querySelectorAll(bodySelectors.join(", ")));
             for (const img of imgs) {
               const src = img.getAttribute("src") || "";
-              if (src.startsWith("http") && !src.includes("avatar") && !src.includes("logo") && !src.includes("icon")) return src;
+              if (isGoodUrl(src)) return src;
             }
             return "";
           });
