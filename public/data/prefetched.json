@@ -1,7 +1,17 @@
 {
-  "fetchedAt": "2026-02-11T14:43:16.652Z",
+  "fetchedAt": "2026-02-11T15:43:09.638Z",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe",
   "news": [
+    {
+      "id": "gn-technology-innovation-4",
+      "title": "Nvidia to Invest Over NT$40 Billion for Taiwan Headquarters - Meyka",
+      "summary": "Nvidia to Invest Over NT$40 Billion for Taiwan Headquarters&nbsp;&nbsp;Meyka",
+      "topic": "technology-innovation",
+      "source": "Meyka",
+      "date": "Wed, 11 Feb 2026 13:41:56 GMT",
+      "imageUrl": "https://blog-meyka-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2026/02/Types-of-Forex-Charts-69.webp",
+      "url": "https://meyka.com/blog/nvidia-to-invest-over-nt40-billion-for-taiwan-headquarters/"
+    },
     {
       "id": "gn-musical-art-31",
       "title": "Top 10 Entertainment Tech Firms In 2026 - inventiva.co.in",
@@ -73,16 +83,6 @@
       "url": "https://www.latimes.com/business/story/2026-02-11/super-bowl-spots-spark-fight-over-whether-were-ready-for-ads-from-our-chatbots"
     },
     {
-      "id": "gn-technology-innovation-47",
-      "title": "OpenAI, Samsung and SK move ahead with Korea data centre build - Tech Wire Asia",
-      "summary": "OpenAI, Samsung and SK move ahead with Korea data centre build&nbsp;&nbsp;Tech Wire Asia",
-      "topic": "technology-innovation",
-      "source": "Tech Wire Asia",
-      "date": "Wed, 11 Feb 2026 10:03:11 GMT",
-      "imageUrl": "https://techwireasia.com/wp-content/uploads/2026/02/OpenAI-Samsung-and-SK-move-ahead-with-Korea-data-centre-build-scaled-e1770795585779.jpg",
-      "url": "https://techwireasia.com/2026/02/openai-samsung-and-sk-move-ahead-with-korea-data-centre-build/"
-    },
-    {
       "id": "gn-unmanned-aircraft-19",
       "title": "Defence startup testing AI drones with Ukraine raises £2.6m - UKTN",
       "summary": "Defence startup testing AI drones with Ukraine raises £2.6m&nbsp;&nbsp;UKTN",
@@ -91,6 +91,16 @@
       "date": "Wed, 11 Feb 2026 10:01:10 GMT",
       "imageUrl": "https://www.uktech.news/wp-content/uploads/2026/02/Brave1_Field-Tests_05.jpg",
       "url": "https://www.uktech.news/defence-tech/occam-ai-drone-ukraine-funding-20260211"
+    },
+    {
+      "id": "gn-technology-innovation-49",
+      "title": "Submer buys Radian Arc to build sovereign telco AI edge - telconews.com.au",
+      "summary": "Submer buys Radian Arc to build sovereign telco AI edge&nbsp;&nbsp;telconews.com.au",
+      "topic": "technology-innovation",
+      "source": "telconews.com.au",
+      "date": "Wed, 11 Feb 2026 09:30:00 GMT",
+      "imageUrl": "https://telconews.com.au/uploads/story/2026/02/11/compatible_telecom_tower_liquid_cooled_gpu_edge_data_center_global_ai.jpg",
+      "url": "https://telconews.com.au/story/submer-buys-radian-arc-to-build-sovereign-telco-ai-edge"
     },
     {
       "id": "gn-musical-art-49",
@@ -111,16 +121,6 @@
       "date": "Wed, 11 Feb 2026 08:01:23 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&h=400&fit=crop&auto=format",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBaamhxMTNsTVpWSl9mS0dzSWxQbGE4Y19zWHBzWl9XeldvcDFCSU5NMGR6a2x3LXM5WU4tS3poWWZwNE9lUFY1UGdObG1TS3dnajkxc0pPV0QwekgwQmEzNzViMjdjSHI0cm1IbnJPWUlrTXBJX19oX2RDa1U?oc=5"
-    },
-    {
-      "id": "gn-technology-innovation-45",
-      "title": "G+T assists AI company Firmus on watershed US$10bn GPU financing facility - Australasian Lawyer",
-      "summary": "G+T assists AI company Firmus on watershed US$10bn GPU financing facility&nbsp;&nbsp;Australasian Lawyer",
-      "topic": "technology-innovation",
-      "source": "Australasian Lawyer",
-      "date": "Wed, 11 Feb 2026 08:00:57 GMT",
-      "imageUrl": "https://cdn-res.keymedia.com/cms/images/us/070/0275_639063934539389520.png",
-      "url": "https://www.thelawyermag.com/au/practice-areas/banking-and-finance/gt-assists-ai-company-firmus-on-watershed-us10bn-gpu-financing-facility/564967"
     },
     {
       "id": "gn-musical-art-44",
@@ -213,7 +213,7 @@
       "url": "https://smallwarsjournal.com/2026/02/11/disciplined-autonomy/"
     },
     {
-      "id": "gn-technology-innovation-40",
+      "id": "gn-technology-innovation-44",
       "title": "ByteDance Advances AI Chip Development With Samsung Manufacturing Talks - EconoTimes",
       "summary": "ByteDance Advances AI Chip Development With Samsung Manufacturing Talks&nbsp;&nbsp;EconoTimes",
       "topic": "technology-innovation",
@@ -253,7 +253,7 @@
       "url": "https://breakingac.com/news/2026/feb/10/personal-style-meets-personalization-ai-and-the-future-of-menswear/"
     },
     {
-      "id": "gn-technology-innovation-42",
+      "id": "gn-technology-innovation-46",
       "title": "OpenAI Snags Nvidia's Chip Guru for AI Silicon Takeover - OpenTools",
       "summary": "OpenAI Snags Nvidia's Chip Guru for AI Silicon Takeover&nbsp;&nbsp;OpenTools",
       "topic": "technology-innovation",
@@ -391,16 +391,6 @@
       "date": "Tue, 10 Feb 2026 20:53:43 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&h=400&fit=crop&auto=format",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMEIxcnhMRzltakxyS2o3TFhVZ3lnbVQ0eDAxdkNQRHFIWThzQzUzdk5qZU9naDBjaHZMa0dnSEI2QncxUGM5ZjZwXzVscnZRVExsTlNBWGdvQUVBcnU4MlB2cnVoZGhrV1pJNFB6N2V4aVhOYktxcFJFM1RSZmJ6SzNsOGRGV3p1QndRTkhzdXRjcEhEMGprcC1ocEVmZTRocE1MYkdzU0VMQUtjd0E?oc=5"
-    },
-    {
-      "id": "gn-technology-innovation-17",
-      "title": "Broadcom stock price dips as Cisco debuts AI networking chip and UBS downgrades tech - TechStock²",
-      "summary": "Broadcom stock price dips as Cisco debuts AI networking chip and UBS downgrades tech&nbsp;&nbsp;TechStock²",
-      "topic": "technology-innovation",
-      "source": "TechStock²",
-      "date": "Tue, 10 Feb 2026 20:51:00 GMT",
-      "imageUrl": "https://ts2.tech/wp-content/uploads/2026/02/broadcom-stock-price-dips-as-cisco-debuts-ai-networking-chip-and-ubs-downgrades-tech-featured-1.jpg",
-      "url": "https://ts2.tech/en/broadcom-stock-price-dips-as-cisco-debuts-ai-networking-chip-and-ubs-downgrades-tech/"
     },
     {
       "id": "gn-musical-art-19",
@@ -633,7 +623,7 @@
       "url": "https://defence-blog.com/armenia-buys-v-bat-drones-proven-in-ukraine/"
     },
     {
-      "id": "gn-technology-innovation-9",
+      "id": "gn-technology-innovation-10",
       "title": "The Architect of Intelligence: A Deep Dive into NVIDIA (NVDA) in 2026 - FinancialContent",
       "summary": "The Architect of Intelligence: A Deep Dive into NVIDIA (NVDA) in 2026&nbsp;&nbsp;FinancialContent",
       "topic": "technology-innovation",
@@ -723,7 +713,17 @@
       "url": "https://www.musicbusinessworldwide.com/udio-seeks-to-dismiss-indie-artists-copyright-lawsuit-over-jurisdiction/"
     },
     {
-      "id": "gn-technology-innovation-41",
+      "id": "gn-technology-innovation-8",
+      "title": "How and When the Memory Chip Shortage Will End - IEEE Spectrum",
+      "summary": "How and When the Memory Chip Shortage Will End&nbsp;&nbsp;IEEE Spectrum",
+      "topic": "technology-innovation",
+      "source": "IEEE Spectrum",
+      "date": "Tue, 10 Feb 2026 14:04:18 GMT",
+      "imageUrl": "https://spectrum.ieee.org/media-library/image.jpg?id=63918178&width=1200&height=600&coordinates=0%2C173%2C0%2C327",
+      "url": "https://spectrum.ieee.org/dram-shortage"
+    },
+    {
+      "id": "gn-technology-innovation-45",
       "title": "Cisco Enters the AI Networking Chip Race, Taking on Broadcom and Nvidia - Techovedas",
       "summary": "Cisco Enters the AI Networking Chip Race, Taking on Broadcom and Nvidia&nbsp;&nbsp;Techovedas",
       "topic": "technology-innovation",
@@ -863,7 +863,7 @@
       "url": "https://ts2.tech/en/ciscos-new-ai-networking-chip-puts-nvidia-and-broadcom-back-in-the-ai-stocks-spotlight/"
     },
     {
-      "id": "gn-technology-innovation-44",
+      "id": "gn-technology-innovation-48",
       "title": "What Role do Data Centres Play in NVIDIA’s US$5tn valuation? - Data Centre Magazine",
       "summary": "What Role do Data Centres Play in NVIDIA’s US$5tn valuation?&nbsp;&nbsp;Data Centre Magazine",
       "topic": "technology-innovation",
@@ -881,16 +881,6 @@
       "date": "Tue, 10 Feb 2026 11:00:00 GMT",
       "imageUrl": "https://images-prod.dazeddigital.com/1400/azure/dazed-prod/1430/6/1436682.jpg",
       "url": "https://www.dazeddigital.com/fashion/article/69590/1/rise-of-ai-fashion-stylist-chatgpt-openai-ralph-lauren-ask-ralph-asos"
-    },
-    {
-      "id": "gn-technology-innovation-46",
-      "title": "Cisco unveils powerful chip to scale up gigawatt AI data centres - capacityglobal.com",
-      "summary": "Cisco unveils powerful chip to scale up gigawatt AI data centres&nbsp;&nbsp;capacityglobal.com",
-      "topic": "technology-innovation",
-      "source": "capacityglobal.com",
-      "date": "Tue, 10 Feb 2026 10:41:47 GMT",
-      "imageUrl": "https://capacityglobal.com/wp-content/uploads/2025/09/urlhttp3A2F2Feuromoney-brightspot.s3.amazonaws.com2Fd82F432F96d6354740f88a91a3d8e1cbfd2f2Fcisco-cm.png",
-      "url": "https://capacityglobal.com/news/cisco-new-chip-to-scale-ai-data-centres-agentic-ai/"
     },
     {
       "id": "gn-unmanned-aircraft-18",
@@ -1053,7 +1043,7 @@
       "url": "https://www.trendhunter.com/amp/trends/food-wise-pal"
     },
     {
-      "id": "gn-technology-innovation-43",
+      "id": "gn-technology-innovation-47",
       "title": "AI pushes dense, decentralised &amp; sustainable data centres - IT Brief Australia",
       "summary": "AI pushes dense, decentralised & sustainable data centres&nbsp;&nbsp;IT Brief Australia",
       "topic": "technology-innovation",
@@ -1063,7 +1053,7 @@
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdWpEdi1nSVR3TWYyYVpxNFlGZmJPbGg3dlMwYkgzc0dKMjgzZHlFcFhMWDkxXzhLVnE5YTVFMENiUGNWLW9QVEt5VmpwVkMtOTFmZEQwNzhpSlQzM21aUlVNQWZFTmJ5d1o1LWlpSGdPc0oyaVk4S0dmcl9kUGxDVU56RS1ka3lEVDRj?oc=5"
     },
     {
-      "id": "gn-technology-innovation-29",
+      "id": "gn-technology-innovation-33",
       "title": "Nvidia Set to Benefit from Surge in AI Hardware Demand - Intellectia AI",
       "summary": "Nvidia Set to Benefit from Surge in AI Hardware Demand&nbsp;&nbsp;Intellectia AI",
       "topic": "technology-innovation",
@@ -1243,7 +1233,7 @@
       "url": "https://newsroom.clevelandclinic.org/2026/02/09/uaes-first-robotic-seeg-procedure-performed-at-cleveland-clinic-abu-dhabi"
     },
     {
-      "id": "gn-technology-innovation-2",
+      "id": "gn-technology-innovation-1",
       "title": "Beyond the Chips: A Better Strategy for AI Dominance - The National Interest",
       "summary": "Beyond the Chips: A Better Strategy for AI Dominance&nbsp;&nbsp;The National Interest",
       "topic": "technology-innovation",
@@ -1333,7 +1323,7 @@
       "url": "https://www.nature.com/articles/s41591-025-04074-y"
     },
     {
-      "id": "gn-technology-innovation-38",
+      "id": "gn-technology-innovation-41",
       "title": "Samsung Stock Jumps 5.4 Percent After Securing Nvidia HBM4 Contract - Technobezz",
       "summary": "Samsung Stock Jumps 5.4 Percent After Securing Nvidia HBM4 Contract&nbsp;&nbsp;Technobezz",
       "topic": "technology-innovation",
@@ -1343,7 +1333,7 @@
       "url": "https://www.technobezz.com/news/samsung-stock-jumps-54-percent-after-securing-nvidia-hbm4-contract"
     },
     {
-      "id": "gn-technology-innovation-39",
+      "id": "gn-technology-innovation-42",
       "title": "Nvidia's H200 Chip Sale to ByteDance Faces Delays Over US Security Terms - Technobezz",
       "summary": "Nvidia's H200 Chip Sale to ByteDance Faces Delays Over US Security Terms&nbsp;&nbsp;Technobezz",
       "topic": "technology-innovation",
@@ -1423,7 +1413,7 @@
       "url": "https://www.aol.com/articles/openai-ceo-says-chatgpt-back-144810971.html?spot_im_comment_id=sp_IjnMf2Jd_a5ef8213-4829-34df-a7da-e81675d08294_c_2u2ZVMrXUoy8JnMxYcGfESCKYEv&spot_im_highlight_immediate=true&utm_medium=Share&utm_content=sp_IjnMf2Jd_a5ef8213-4829-34df-a7da-e81675d08294_c_2u2ZVMrXUoy8JnMxYcGfESCKYEv&spot_im_redirect_source=share&ow_module=conversation"
     },
     {
-      "id": "gn-technology-innovation-30",
+      "id": "gn-technology-innovation-34",
       "title": "The Five-Trillion Dollar Titan: NVIDIA’s AI Hegemony and the Nokia Connectivity Revolution - FinancialContent",
       "summary": "The Five-Trillion Dollar Titan: NVIDIA’s AI Hegemony and the Nokia Connectivity Revolution&nbsp;&nbsp;FinancialContent",
       "topic": "technology-innovation",
@@ -1593,7 +1583,7 @@
       "url": "https://vietbao.vn/en/lua-dao-cong-nghe-gia-tang-dip-tet-nguoi-dung-can-chu-trong-nguyen-tac-3-khong-2-phai-de-de-phong-rui-ro-cho-minh-581542.html"
     },
     {
-      "id": "gn-technology-innovation-16",
+      "id": "gn-technology-innovation-17",
       "title": "Unpopular Opinion: Jensen Huang Is Making Nvidia Its Own Worst Enemy - The Motley Fool",
       "summary": "Unpopular Opinion: Jensen Huang Is Making Nvidia Its Own Worst Enemy&nbsp;&nbsp;The Motley Fool",
       "topic": "technology-innovation",
@@ -1621,16 +1611,6 @@
       "date": "Mon, 09 Feb 2026 08:00:48 GMT",
       "imageUrl": "https://www.silicon.co.uk/wp-content/uploads/2026/02/People-watch-a-US-football-game-in-the-United-States.-Super-Bowl.-Image-credit-Unsplash.jpg",
       "url": "https://www.silicon.co.uk/e-innovation/artificial-intelligence/anthropic-openai-ads-628627"
-    },
-    {
-      "id": "gn-technology-innovation-4",
-      "title": "How and When the Memory Chip Shortage Will End - IEEE Spectrum",
-      "summary": "How and When the Memory Chip Shortage Will End&nbsp;&nbsp;IEEE Spectrum",
-      "topic": "technology-innovation",
-      "source": "IEEE Spectrum",
-      "date": "Mon, 09 Feb 2026 08:00:00 GMT",
-      "imageUrl": "https://spectrum.ieee.org/media-library/image.jpg?id=63918178&width=1200&height=600&coordinates=0%2C173%2C0%2C327",
-      "url": "https://spectrum.ieee.org/dram-shortage"
     },
     {
       "id": "gn-health-style-12",
@@ -1703,7 +1683,7 @@
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1uVWxCSXNVNnZHNDRhOEVZZVVQYUh3WDAxYnpnV3VyTHMwdU1tQ0NwOFhJWG83SUFKZXEtUDFHanMzUm1JRjgtSjhGaHdYUlJiaEIwWUhub2JEcWYzaWJmcGZhdEwzNE5iLXhyVk130gFyQVVfeXFMUGlFc25KMHR4aXdTaHFYMTBoaW9SNU9uREgzVDNUV2VPRmNSX3ZMTzctbVF6ZU9TZ1EtNHRPTlNrWWhUeGVmelFhbEdRWDdjcmxIbFZHY2FIZDEwWVUzT3RuZ1hDLVdydFRUbm5hVWdwcnRn?oc=5"
     },
     {
-      "id": "gn-technology-innovation-19",
+      "id": "gn-technology-innovation-20",
       "title": "The Ultimate AI Stocks to Buy With $10,000 Right Now - The Globe and Mail",
       "summary": "The Ultimate AI Stocks to Buy With $10,000 Right Now&nbsp;&nbsp;The Globe and Mail",
       "topic": "technology-innovation",
@@ -1713,7 +1693,7 @@
       "url": "https://www.theglobeandmail.com/investing/markets/stocks/AMZN/pressreleases/99959/the-ultimate-ai-stocks-to-buy-with-10000-right-now/"
     },
     {
-      "id": "gn-technology-innovation-24",
+      "id": "gn-technology-innovation-29",
       "title": "1 Beaten-Down Artificial Intelligence Stock to Buy With $100 Right Now - AOL.com",
       "summary": "1 Beaten-Down Artificial Intelligence Stock to Buy With $100 Right Now&nbsp;&nbsp;AOL.com",
       "topic": "technology-innovation",
@@ -1751,16 +1731,6 @@
       "date": "Mon, 09 Feb 2026 02:42:00 GMT",
       "imageUrl": "https://media.moneymag.com.au/prod/media/library/Money_Mag/2026/02._February/AI-romance-scams-How-to-stay-safe-this-Valentines-Day-0001.jpg",
       "url": "https://www.moneymag.com.au/ai-romance-scams-valentines-day"
-    },
-    {
-      "id": "gn-technology-innovation-48",
-      "title": "Firmus secures $14bn from Blackstone for AI factories - The Weekly Times",
-      "summary": "Firmus secures $14bn from Blackstone for AI factories&nbsp;&nbsp;The Weekly Times",
-      "topic": "technology-innovation",
-      "source": "The Weekly Times",
-      "date": "Mon, 09 Feb 2026 01:30:00 GMT",
-      "imageUrl": "https://www.weeklytimesnow.com.au/wp-content/themes/newscorpau-news-dna/dist/images/fallback/fallback-weeklytimesnow-169.svg",
-      "url": "https://www.weeklytimesnow.com.au/agribusiness/breaking-news/firmus-gets-us10bn-finance-from-blackstone-to-become-an-ai-infrastructure-hub/news-story/f4ea3aa28cbbd7a849bbe54e71e6cead"
     },
     {
       "id": "gn-chatbot-development-45",
@@ -1803,7 +1773,7 @@
       "url": "https://www.nationaltribune.com.au/nz-uae-partnership-boosts-advanced-tech-capability/"
     },
     {
-      "id": "gn-technology-innovation-10",
+      "id": "gn-technology-innovation-11",
       "title": "Is Micron the New Nvidia? - AOL.com",
       "summary": "Is Micron the New Nvidia?&nbsp;&nbsp;AOL.com",
       "topic": "technology-innovation",
@@ -1893,7 +1863,7 @@
       "url": "https://mlq.ai/news/apple-prepares-to-enable-third-party-ai-voice-assistants-in-carplay/"
     },
     {
-      "id": "gn-technology-innovation-33",
+      "id": "gn-technology-innovation-38",
       "title": "Advanced Micro Devices (AMD) Stock Just Plunged. Buy the Dip, or Run for the Hills? - The Globe and Mail",
       "summary": "Advanced Micro Devices (AMD) Stock Just Plunged. Buy the Dip, or Run for the Hills?&nbsp;&nbsp;The Globe and Mail",
       "topic": "technology-innovation",
@@ -1923,7 +1893,7 @@
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNeE1tQ1F2MWtKUU5JN25xbWtEdjF4WHktdlRjWHZvQ25fSlFmS1FCclh0eVVQN2VLck9RXzBvZFp0RHd4amk2M0ZZMHRlVm4zYU85eTZqVGxrWGlhUE5sYlNTN09PcGlUZEMwdThhYXFuSlQ2WDlpWnVaQzFpeEdoUDRXYmw0ZlZTc3IwSXh5SXBUNlJMcnJn?oc=5"
     },
     {
-      "id": "gn-technology-innovation-22",
+      "id": "gn-technology-innovation-24",
       "title": "Here's How Micron Technology, AMD, and Nvidia Could Help This Magnificent ETF Turn $500 Per Month Into $1 Million - AOL.com",
       "summary": "Here's How Micron Technology, AMD, and Nvidia Could Help This Magnificent ETF Turn $500 Per Month Into $1 Million&nbsp;&nbsp;AOL.com",
       "topic": "technology-innovation",
@@ -1983,6 +1953,16 @@
       "url": "https://farmonaut.com/mining/crowsnest-pass-coal-mine-7-sustainability-trends-2026"
     },
     {
+      "id": "gn-technology-innovation-21",
+      "title": "China’s cash-hungry tech firms rush to tap Hong Kong markets in next phase of Beijing’s AI ambitions - The Business Times",
+      "summary": "China’s cash-hungry tech firms rush to tap Hong Kong markets in next phase of Beijing’s AI ambitions&nbsp;&nbsp;The Business Times",
+      "topic": "technology-innovation",
+      "source": "The Business Times",
+      "date": "Sun, 08 Feb 2026 01:00:00 GMT",
+      "imageUrl": "https://cassette.sphdigital.com.sg/image/businesstimes/5dcb4b13977fb3b179d3d90bba8053529cc9ad34238c4470029344e2c64f50be",
+      "url": "https://www.businesstimes.com.sg/international/global/chinas-cash-hungry-tech-firms-rush-tap-hong-kong-markets-next-phase-beijings-ai-ambitions"
+    },
+    {
       "id": "gn-environment-science-17",
       "title": "The world is increasingly concerned about total AI, and China is aligning itself with Indonesia in a wave of regulations that seek to curb its total replacement - ECOticias.com",
       "summary": "The world is increasingly concerned about total AI, and China is aligning itself with Indonesia in a wave of regulations that seek to curb its total replacement&nbsp;&nbsp;ECOticias.com",
@@ -2013,6 +1993,16 @@
       "url": "https://farmonaut.com/mining/lanigan-potash-mine-key-to-sustainable-agriculture-in-2026"
     },
     {
+      "id": "gn-technology-innovation-32",
+      "title": "Stock Market Today, Feb. 6: Nvidia Leads Rally After AI Hardware Rebounds - AOL.com",
+      "summary": "Stock Market Today, Feb. 6: Nvidia Leads Rally After AI Hardware Rebounds&nbsp;&nbsp;AOL.com",
+      "topic": "technology-innovation",
+      "source": "AOL.com",
+      "date": "Sat, 07 Feb 2026 18:40:39 GMT",
+      "imageUrl": "https://s.yimg.com/cv/apiv2/aolfp/images/og-image.png",
+      "url": "https://www.aol.com/finance/stock-market-today-feb-6-224147473.html"
+    },
+    {
       "id": "gn-chatbot-development-17",
       "title": "Apple Opens CarPlay to ChatGPT, Claude, and Gemini - WinBuzzer",
       "summary": "Apple Opens CarPlay to ChatGPT, Claude, and Gemini&nbsp;&nbsp;WinBuzzer",
@@ -2023,7 +2013,7 @@
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQWjdHaFQzejhCcmtkN1FXeWFqdlRzbHhSSWV6VDdDVFhVanFhcm9oMkM1d1RhdEg5S3RMVDlObFF4Q0Z6a1FPNkFrRWtxblZZbW9SQnN6NDg0Q3d4NUFVbHFBUHJELWdYU2ZacmRBc2N1ejdaZDd6YS1oeHJVZE1zSXhRLUkyZnRBVXc?oc=5"
     },
     {
-      "id": "gn-technology-innovation-32",
+      "id": "gn-technology-innovation-37",
       "title": "India's AI GPU Surge: NVIDIA Dominance &amp; Geopolitical Risks - Whalesbook",
       "summary": "India's AI GPU Surge: NVIDIA Dominance & Geopolitical Risks&nbsp;&nbsp;Whalesbook",
       "topic": "technology-innovation",
@@ -2063,7 +2053,7 @@
       "url": "https://www.thehrdirector.com/business-news/recruitment/recruiters-must-beware-deepfake-scams-amidst-grok-ai-controversy/"
     },
     {
-      "id": "gn-technology-innovation-37",
+      "id": "gn-technology-innovation-40",
       "title": "India-US Pact Boosts Tech Access, NVIDIA Poised for AI Surge - Whalesbook",
       "summary": "India-US Pact Boosts Tech Access, NVIDIA Poised for AI Surge&nbsp;&nbsp;Whalesbook",
       "topic": "technology-innovation",
@@ -2163,7 +2153,7 @@
       "url": "https://indianmasterminds.com/news/vtol-aviation-vlm-x-kamikaze-drone-india-indigenous-uav-183443/"
     },
     {
-      "id": "gn-technology-innovation-1",
+      "id": "gn-technology-innovation-3",
       "title": "Best AI Stocks to Buy in 2026 and How to Invest in Them - The Motley Fool",
       "summary": "Best AI Stocks to Buy in 2026 and How to Invest in Them&nbsp;&nbsp;The Motley Fool",
       "topic": "technology-innovation",
@@ -2243,24 +2233,14 @@
       "url": "https://www.zdnet.com/article/best-ai-chatbot/"
     },
     {
-      "id": "gn-technology-innovation-3",
-      "title": "Big Tech firms are beginning to resemble IBM during the 1960s - Bitget",
-      "summary": "Big Tech firms are beginning to resemble IBM during the 1960s&nbsp;&nbsp;Bitget",
+      "id": "gn-technology-innovation-2",
+      "title": "Big Tech firms are beginning to resemble IBM during the 1960s - bitget.com",
+      "summary": "Big Tech firms are beginning to resemble IBM during the 1960s&nbsp;&nbsp;bitget.com",
       "topic": "technology-innovation",
-      "source": "Bitget",
+      "source": "bitget.com",
       "date": "Fri, 06 Feb 2026 23:03:35 GMT",
       "imageUrl": "https://img.bgstatic.com/multiLang/web/cfe162fef73d2e018d93ed311c178bb6.jpeg",
       "url": "https://www.bitget.com/news/detail/12560605187709"
-    },
-    {
-      "id": "gn-technology-innovation-35",
-      "title": "Stock Market Today, Feb. 6: Nvidia Leads Rally After AI Hardware Rebounds - AOL.com",
-      "summary": "Stock Market Today, Feb. 6: Nvidia Leads Rally After AI Hardware Rebounds&nbsp;&nbsp;AOL.com",
-      "topic": "technology-innovation",
-      "source": "AOL.com",
-      "date": "Fri, 06 Feb 2026 22:41:47 GMT",
-      "imageUrl": "https://s.yimg.com/cv/apiv2/aolfp/images/og-image.png",
-      "url": "https://www.aol.com/finance/stock-market-today-feb-6-224147473.html"
     },
     {
       "id": "gn-unmanned-aircraft-12",
@@ -2341,16 +2321,6 @@
       "date": "Fri, 06 Feb 2026 18:45:07 GMT",
       "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/07/Blog-Policy-Pricing-1.png",
       "url": "https://farmonaut.com/mining/fimiston-gold-mine-7-innovations-transforming-mining"
-    },
-    {
-      "id": "gn-technology-innovation-11",
-      "title": "Nvidia Stock Rises. What Amazon’s Huge Spending Means for the Chip Maker. - Barron's",
-      "summary": "Nvidia Stock Rises. What Amazon’s Huge Spending Means for the Chip Maker.&nbsp;&nbsp;Barron's",
-      "topic": "technology-innovation",
-      "source": "Barron's",
-      "date": "Fri, 06 Feb 2026 16:39:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.barrons.com/articles/nvidia-stock-price-amazon-ai-chips-5c61966d"
     },
     {
       "id": "gn-ai-academy-2",
@@ -2453,6 +2423,16 @@
       "url": "https://www.iotforall.com/iot-ai-energy-management"
     },
     {
+      "id": "gn-technology-innovation-25",
+      "title": "4 Stocks That Could Be Your Ticket to Creating Generational Wealth - The Globe and Mail",
+      "summary": "4 Stocks That Could Be Your Ticket to Creating Generational Wealth&nbsp;&nbsp;The Globe and Mail",
+      "topic": "technology-innovation",
+      "source": "The Globe and Mail",
+      "date": "Fri, 06 Feb 2026 12:55:00 GMT",
+      "imageUrl": "https://www.theglobeandmail.com/pf/resources/assets/meta/twitter-summary-240x240.png?d=839",
+      "url": "https://www.theglobeandmail.com/investing/markets/stocks/TSM/pressreleases/69301/4-stocks-that-could-be-your-ticket-to-creating-generational-wealth/"
+    },
+    {
       "id": "gn-chatbot-development-46",
       "title": "AI Coding Showdown: OpenAI's GPT-5.3 Codex vs. Anthropic's Claude Opus 4.6 - Who Will Win? - OpenTools",
       "summary": "AI Coding Showdown: OpenAI's GPT-5.3 Codex vs. Anthropic's Claude Opus 4.6 - Who Will Win?&nbsp;&nbsp;OpenTools",
@@ -2543,7 +2523,7 @@
       "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPWWktZ3d5dlBlTHNxanVlSDlWRkVrenpoMjl2UndiVG44VmhBMnEyeTY1c1VoaWZOcEpEc2Q3aU9BVnZnVnVTbDB1UjZjQWpIV2NPTFctWDdNZmpBbnpmNk1IaFFOdjBKbDBxUzZsR1ViT2N6VGNyRDZWVU5HRUZyRTczSnlNUEx3ay1fMWozZjU4RGtBRTRMREdSSi0wR1VkeXAzOVJQWnZ4WTFpSTNtdU1fbEVBQmNWS2NRdW9xN2NrUTAyYVZjZjRBcWN3M0lleFNpeGYzdk1zZkgzWG5Ed251LUo1WXY4aXBfeHkzSXUwQURrWG9BeW80T0ZCMjd0VF81Zzh3?oc=5"
     },
     {
-      "id": "gn-technology-innovation-21",
+      "id": "gn-technology-innovation-23",
       "title": "AI Training Chip Market to Reach US$ 132.7 Billion by 2030 at 29.2% - openPR.com",
       "summary": "AI Training Chip Market to Reach US$ 132.7 Billion by 2030 at 29.2%&nbsp;&nbsp;openPR.com",
       "topic": "technology-innovation",
@@ -2683,7 +2663,7 @@
       "url": "https://www.scirp.org/journal/paperinformation?paperid=149431"
     },
     {
-      "id": "gn-technology-innovation-23",
+      "id": "gn-technology-innovation-26",
       "title": "AMD's Strategic Pivot: How Chipmaker's AI Ambitions Are Reshaping the Semiconductor Power Dynamic - WebProNews",
       "summary": "AMD's Strategic Pivot: How Chipmaker's AI Ambitions Are Reshaping the Semiconductor Power Dynamic&nbsp;&nbsp;WebProNews",
       "topic": "technology-innovation",
@@ -2773,6 +2753,16 @@
       "url": "chrome-error://chromewebdata/"
     },
     {
+      "id": "gn-technology-innovation-12",
+      "title": "After NVIDIA, Is SMCI the Smartest AI Stock to Buy Right Now? - TradingView",
+      "summary": "After NVIDIA, Is SMCI the Smartest AI Stock to Buy Right Now?&nbsp;&nbsp;TradingView",
+      "topic": "technology-innovation",
+      "source": "TradingView",
+      "date": "Thu, 05 Feb 2026 20:00:00 GMT",
+      "imageUrl": "https://s.tradingview.com/static/images/illustrations/news-story.jpg",
+      "url": "https://www.tradingview.com/news/zacks:33b7fab5e094b:0-after-nvidia-is-smci-the-smartest-ai-stock-to-buy-right-now/"
+    },
+    {
       "id": "gn-musical-art-33",
       "title": "K-pop industry eyes royalties boost as China’s copyright body signs deals with Tencent Music and NetEase Cloud Music - Music Business Worldwide",
       "summary": "K-pop industry eyes royalties boost as China’s copyright body signs deals with Tencent Music and NetEase Cloud Music&nbsp;&nbsp;Music Business Worldwide",
@@ -2813,6 +2803,16 @@
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE90b09UTmFMU3laaUE4WGQ0ejltUDEtZHdHMjlSY1pDTUhjX1A3VF9qRU56ejhuRkR3eFFvUFB4UV9ZTjMzaklkTkczSEJZWXRNOE1UX3hDd3dHdw?oc=5"
     },
     {
+      "id": "gn-technology-innovation-19",
+      "title": "Can Chinese Chipmakers Really Catch NVIDIA’s Rubin by 2027? - AOL.com",
+      "summary": "Can Chinese Chipmakers Really Catch NVIDIA’s Rubin by 2027?&nbsp;&nbsp;AOL.com",
+      "topic": "technology-innovation",
+      "source": "AOL.com",
+      "date": "Thu, 05 Feb 2026 17:27:03 GMT",
+      "imageUrl": "https://s.yimg.com/ny/api/res/1.2/mr5CL9uqms4Pn7bfFNAtvQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTI0MDA7aD0xNjAw/https://media.zenfs.com/en/24_7_wall_st_aol_articles_169/4f27442252dfb95f0d7c8213d872b69e",
+      "url": "https://www.aol.com/articles/chinese-chipmakers-really-catch-nvidia-172703407.html"
+    },
+    {
       "id": "gn-unmanned-aircraft-36",
       "title": "Military Drone Market Poised to Surpass US$ 20.3 Billion by - GlobeNewswire",
       "summary": "Military Drone Market Poised to Surpass US$ 20.3 Billion by&nbsp;&nbsp;GlobeNewswire",
@@ -2823,7 +2823,7 @@
       "url": "https://www.globenewswire.com/news-release/2026/02/05/3233328/0/en/Military-Drone-Market-Poised-to-Surpass-US-20-3-Billion-by-2032-Driven-by-AI-Integration-Persistent-ISR-Demand-and-Rising-Combat-Deployment-Astute-Analytica.html"
     },
     {
-      "id": "gn-technology-innovation-8",
+      "id": "gn-technology-innovation-9",
       "title": "2026 Global Semiconductor Industry Outlook - Deloitte",
       "summary": "2026 Global Semiconductor Industry Outlook&nbsp;&nbsp;Deloitte",
       "topic": "technology-innovation",
@@ -2853,7 +2853,7 @@
       "url": "https://www.renewableenergymagazine.com/evelyn-long/is-artificial-intelligence-the-secret-to-cutting-20260205"
     },
     {
-      "id": "gn-technology-innovation-12",
+      "id": "gn-technology-innovation-13",
       "title": "Jim Keller's Tenstorrent is downgrading Blackhole p150 cards from 140 to 120 tensor cores via firmware update — will ship cards with 120 tensor cores going forward, company claims existing users should expect 1-2% performance drop - Tom's Hardware",
       "summary": "Jim Keller's Tenstorrent is downgrading Blackhole p150 cards from 140 to 120 tensor cores via firmware update — will ship cards with 120 tensor cores going forward, company claims existing users should expect 1-2% performance drop&nbsp;&nbsp;Tom's Hardware",
       "topic": "technology-innovation",
@@ -2893,7 +2893,7 @@
       "url": "https://techtrendske.co.ke/2026/02/05/eset-report-ai-generated-malware-and-deep-fakes-surges-in-kenya/"
     },
     {
-      "id": "gn-technology-innovation-13",
+      "id": "gn-technology-innovation-16",
       "title": "NVIDIA Trades at a Premium Valuation: Should You Still Buy the Stock? - TradingView",
       "summary": "NVIDIA Trades at a Premium Valuation: Should You Still Buy the Stock?&nbsp;&nbsp;TradingView",
       "topic": "technology-innovation",
@@ -2971,6 +2971,16 @@
       "date": "Thu, 05 Feb 2026 12:01:49 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop&auto=format",
       "url": "https://ppc.land/anthropic-drops-millions-on-super-bowl-ad-savaging-openais-chatgpt-ad-pivot/"
+    },
+    {
+      "id": "gn-technology-innovation-35",
+      "title": "Amazon bets custom chips will revive AWS growth and stock - The Tech Buzz",
+      "summary": "Amazon bets custom chips will revive AWS growth and stock&nbsp;&nbsp;The Tech Buzz",
+      "topic": "technology-innovation",
+      "source": "The Tech Buzz",
+      "date": "Thu, 05 Feb 2026 11:45:00 GMT",
+      "imageUrl": "https://charming-card-d91ad3487b.media.strapiapp.com/file_028c7de019.png",
+      "url": "https://www.techbuzz.ai/articles/amazon-bets-custom-chips-will-revive-aws-growth-and-stock"
     },
     {
       "id": "gn-unmanned-aircraft-46",
@@ -3053,7 +3063,7 @@
       "url": "https://www.bitget.com/es-ES/academy/12560603850246"
     },
     {
-      "id": "gn-technology-innovation-27",
+      "id": "gn-technology-innovation-30",
       "title": "Edge AI Hardware Market Size to Worth $248.08 Billion by 2035 | Research by SNS Insider - GlobeNewswire",
       "summary": "Edge AI Hardware Market Size to Worth $248.08 Billion by 2035 | Research by SNS Insider&nbsp;&nbsp;GlobeNewswire",
       "topic": "technology-innovation",
@@ -3103,7 +3113,7 @@
       "url": "https://www.chinadaily.com.cn/a/202602/05/WS698468aea310d6866eb37b32.html"
     },
     {
-      "id": "gn-technology-innovation-20",
+      "id": "gn-technology-innovation-22",
       "title": "Intel bets on GPUs to take on Nvidia in AI chip race - varindia.com",
       "summary": "Intel bets on GPUs to take on Nvidia in AI chip race&nbsp;&nbsp;varindia.com",
       "topic": "technology-innovation",
@@ -3173,7 +3183,7 @@
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ITDJYWTZBX2d1R0xFS2czV1dJZDJZMnN1bnBLSGFLVkpOMG4zOHJCdnpJQlVHaGhkUUlwdFQ5Y3BkRm0yLXUxZmF0UmVveWNmNlh3?oc=5"
     },
     {
-      "id": "gn-technology-innovation-34",
+      "id": "gn-technology-innovation-39",
       "title": "Alphabet's $185B AI Spend: Dual Boost for Custom Silicon &amp; GPUs - Whalesbook",
       "summary": "Alphabet's $185B AI Spend: Dual Boost for Custom Silicon & GPUs&nbsp;&nbsp;Whalesbook",
       "topic": "technology-innovation",
@@ -3201,16 +3211,6 @@
       "date": "Thu, 05 Feb 2026 02:54:02 GMT",
       "imageUrl": "https://assets.cureus.com/uploads/figure/file/1870175/article_river_0628bf00e90411f09572ef1769b87d33-Applications-AI-1-1-.png",
       "url": "https://www.cureus.com/articles/455293-the-use-of-artificial-intelligence-in-improving-diagnostic-modalities-in-rheumatoid-arthritis-a-narrative-review"
-    },
-    {
-      "id": "gn-technology-innovation-36",
-      "title": "Adaptive Semiconductor Resolves Bottleneck in AI Graph Data Processing - 동아사이언스",
-      "summary": "Adaptive Semiconductor Resolves Bottleneck in AI Graph Data Processing&nbsp;&nbsp;동아사이언스",
-      "topic": "technology-innovation",
-      "source": "동아사이언스",
-      "date": "Thu, 05 Feb 2026 02:17:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE52WkRtN3Z5VEhpeXdhRlhtZS0xYk1EM3E0ZHNobWxGS2ttN3lwWDRaSmlKenJLaTBqR09PQUV2QklCYl9PVzRNb2lnUTdTZ0NaWWQxaQ?oc=5"
     },
     {
       "id": "gn-environment-science-1",
@@ -3253,7 +3253,7 @@
       "url": "https://www.britannica.com/money/NVIDIA-Corporation"
     },
     {
-      "id": "gn-technology-innovation-25",
+      "id": "gn-technology-innovation-27",
       "title": "Google's $185B AI Bet Sends Broadcom, Nvidia Shares Soaring - The Tech Buzz",
       "summary": "Google's $185B AI Bet Sends Broadcom, Nvidia Shares Soaring&nbsp;&nbsp;The Tech Buzz",
       "topic": "technology-innovation",
@@ -3293,7 +3293,7 @@
       "url": "https://www.pcmag.com/reviews/claude?test_uuid=04IpBmWGZleS0I0J3epvMrC&test_variant=A"
     },
     {
-      "id": "gn-technology-innovation-26",
+      "id": "gn-technology-innovation-28",
       "title": "Have silicon chip stocks lost their memory when it comes to the tech cycle? - AJ Bell",
       "summary": "Have silicon chip stocks lost their memory when it comes to the tech cycle?&nbsp;&nbsp;AJ Bell",
       "topic": "technology-innovation",
@@ -3323,7 +3323,7 @@
       "url": "chrome-error://chromewebdata/"
     },
     {
-      "id": "gn-technology-innovation-28",
+      "id": "gn-technology-innovation-31",
       "title": "Cerebras Systems Secures $1 Billion in Funding, Cementing Position as AI Chip Market Challenger - WebProNews",
       "summary": "Cerebras Systems Secures $1 Billion in Funding, Cementing Position as AI Chip Market Challenger&nbsp;&nbsp;WebProNews",
       "topic": "technology-innovation",
@@ -3333,7 +3333,7 @@
       "url": "https://www.webpronews.com/cerebras-systems-secures-1-billion-in-funding-cementing-position-as-ai-chip-market-challenger/"
     },
     {
-      "id": "gn-technology-innovation-31",
+      "id": "gn-technology-innovation-36",
       "title": "PC vendor warns of upcoming price hikes due to SSD and memory volatility — PowerGPU to pass costs to customers once existing inventory depletes - Tom's Hardware",
       "summary": "PC vendor warns of upcoming price hikes due to SSD and memory volatility — PowerGPU to pass costs to customers once existing inventory depletes&nbsp;&nbsp;Tom's Hardware",
       "topic": "technology-innovation",
@@ -3381,6 +3381,16 @@
       "date": "Wed, 04 Feb 2026 17:00:49 GMT",
       "imageUrl": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/8c4e62ee-289a-4881-94db-c2d45302f4e1/Rendition/low-res/Content/Public",
       "url": "https://www.eurekalert.org/news-releases/1115218"
+    },
+    {
+      "id": "gn-technology-innovation-43",
+      "title": "Intel emerges as a strong candidate to break TSMC’s exclusivity in manufacturing Apple chips - Mix Vale",
+      "summary": "Intel emerges as a strong candidate to break TSMC’s exclusivity in manufacturing Apple chips&nbsp;&nbsp;Mix Vale",
+      "topic": "technology-innovation",
+      "source": "Mix Vale",
+      "date": "Wed, 04 Feb 2026 16:35:15 GMT",
+      "imageUrl": "https://www.mixvale.com.br/wp-content/uploads/2026/01/Apple-1.jpg?v=social_fix",
+      "url": "https://www.mixvale.com.br/2026/02/04/intel-emerges-as-a-strong-candidate-to-break-tsmcs-exclusivity-in-manufacturing-apple-chips-en/"
     },
     {
       "id": "gn-health-style-43",
@@ -3481,16 +3491,6 @@
       "date": "Wed, 04 Feb 2026 12:55:54 GMT",
       "imageUrl": "https://htxt.co.za/wp-content/uploads/2021/12/phishing-6573326_960_720.jpg",
       "url": "https://htxt.co.za/2026/02/the-most-popular-cyberattack-in-south-africa/"
-    },
-    {
-      "id": "gn-technology-innovation-49",
-      "title": "The new space race: Why AI giants are betting on orbital data centres - TRT World",
-      "summary": "The new space race: Why AI giants are betting on orbital data centres&nbsp;&nbsp;TRT World",
-      "topic": "technology-innovation",
-      "source": "TRT World",
-      "date": "Wed, 04 Feb 2026 12:18:02 GMT",
-      "imageUrl": "https://d2udx5iz3h7s4h.cloudfront.net/2026/2/4/6748780fd34651dabf0b79ef/image/6db7ea8157e4d61bff56b281045b798a7cd43ae6d8a01b58462032c109ec7647.JPG?width=512&format=jpg&quality=80",
-      "url": "https://www.trtworld.com/article/8c0c8b310f32"
     },
     {
       "id": "gn-unmanned-aircraft-22",
