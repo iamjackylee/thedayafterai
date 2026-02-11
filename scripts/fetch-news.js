@@ -649,6 +649,21 @@ async function resolveArticles(articles) {
           !finalUrl.includes("accounts.google");
 
         if (isResolved) {
+          // If we landed on an AMP page, navigate to the canonical URL for better images
+          const isAmp = finalUrl.includes("/amp/") || finalUrl.includes("/amp?") || finalUrl.endsWith("/amp");
+          if (isAmp) {
+            const canonicalUrl = await page.evaluate(() => {
+              const c = document.querySelector('link[rel="canonical"]');
+              return c?.href || "";
+            });
+            if (canonicalUrl && canonicalUrl !== finalUrl && !canonicalUrl.includes("/amp")) {
+              try {
+                await page.goto(canonicalUrl, { waitUntil: "load", timeout: PLAYWRIGHT_TIMEOUT });
+                await page.waitForTimeout(1500);
+                finalUrl = canonicalUrl;
+              } catch { /* keep AMP page */ }
+            }
+          }
           article.url = finalUrl;
           // Extract the best article image using multiple strategies:
           // 1. JSON-LD structured data (most accurate — publisher's chosen article image)
@@ -691,10 +706,15 @@ async function resolveArticles(articles) {
               "[data-hero] img", ".featured-image img", ".post-thumbnail img",
               ".article-featured-image img", "figure.lead img", "figure:first-of-type img",
               ".entry-content > figure:first-child img", ".article__hero img",
+              ".slideshow img", ".carousel img", ".gallery-image img",
+              ".wp-post-image", "picture source", ".top-image img",
+              "[data-main-image] img", ".lead-media img", ".article-image img",
             ];
             for (const sel of heroSelectors) {
               const el = document.querySelector(sel);
-              const src = el?.getAttribute("src") || el?.dataset?.src || "";
+              if (!el) continue;
+              const src = el.getAttribute("src") || el.dataset?.src ||
+                el.getAttribute("srcset")?.split(",")[0]?.trim()?.split(" ")[0] || "";
               if (isGoodUrl(src)) return src;
             }
 
@@ -711,12 +731,18 @@ async function resolveArticles(articles) {
               if (isGoodUrl(val)) return val;
             }
 
-            // 4. First large image in article body
+            // 4. First large image in article body (prefer images > 200px wide)
             const bodySelectors = [
               "article img[src]", ".post-content img[src]", ".article-body img[src]",
               ".entry-content img[src]", ".article-content img[src]", "main img[src]",
             ];
             const imgs = Array.from(document.querySelectorAll(bodySelectors.join(", ")));
+            // First pass: prefer large images
+            for (const img of imgs) {
+              const src = img.getAttribute("src") || "";
+              if (isGoodUrl(src) && img.naturalWidth > 200) return src;
+            }
+            // Second pass: any valid image
             for (const img of imgs) {
               const src = img.getAttribute("src") || "";
               if (isGoodUrl(src)) return src;
