@@ -125,7 +125,8 @@ html {
   font-size: 0.7rem;
   font-weight: 600;
   opacity: 0.7;
-  animation: ticker-scroll 35s linear infinite;
+  animation: ticker-scroll linear infinite;
+  animation-duration: 35s; /* default, overridden per-row via inline style */
   width: max-content;
 }
 

@@ -106,6 +106,12 @@ function CustomSectionRow({ section, showCount }: { section: CustomSection; show
               </span>
             )}
             <span
+              className="text-[10px] font-black px-2 py-0.5 rounded-sm uppercase tracking-widest"
+              style={{ backgroundColor: "#3cffd0", color: "#000" }}
+            >
+              Exclusive
+            </span>
+            <span
               className="text-[10px] font-bold px-2 py-0.5 rounded-sm"
               style={{ backgroundColor: section.color + "20", color: section.color }}
             >
@@ -381,6 +387,11 @@ function CategoryRow({ topic, articles, id, showCount }: { topic: typeof TOPICS[
     return src.map((a) => a.title).join("  \u2022  ");
   }, [articles]);
 
+  // Scale ticker speed proportional to text length (~0.3s per character)
+  const tickerDuration = useMemo(() => {
+    return Math.max(20, tickerText.length * 0.3);
+  }, [tickerText]);
+
   return (
     <div className="category-section" id={id} data-topic-section={topic.id}>
       {/* Category header with colored border and arrows */}
@@ -405,7 +416,7 @@ function CategoryRow({ topic, articles, id, showCount }: { topic: typeof TOPICS[
         </div>
         {/* Scrolling headline ticker */}
         <div className="headline-ticker mx-3 flex-1 min-w-0 overflow-hidden">
-          <div className="headline-ticker-track" style={{ color: topic.color }}>
+          <div className="headline-ticker-track" style={{ color: topic.color, animationDuration: `${tickerDuration}s` }}>
             <span>{tickerText}</span>
             <span>{tickerText}</span>
           </div>
@@ -701,9 +712,9 @@ export default function Home() {
             {/* Brand */}
             <div className="flex items-center gap-3">
               <img
-                src="https://images.squarespace-cdn.com/content/v1/6676cf95ee3c1d15365d2d18/3827502e-87dd-4bf1-808a-7b732caf1d18/TheDayAfterAI+New+Logo.png?format=300w"
-                alt="TheDayAfterAI News"
-                className="h-10"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/tdai-letter-logo.png`}
+                alt="TDAI"
+                className="h-[2.875rem] tdai-hue"
               />
               <span className="text-xl font-extrabold text-white tracking-tight" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>TheDayAfterAI News</span>
             </div>
@@ -979,8 +990,8 @@ export default function Home() {
             {/* Brand column — wider, takes ~38% */}
             <div className="lg:w-[38%] lg:pr-8 lg:border-r lg:border-[var(--border)]">
               <div className="flex items-center gap-3 mb-4">
-                <h2 className="text-3xl font-extrabold text-white tracking-tight" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>TheDayAfterAI News</h2>
                 <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/tdai-letter-logo.png`} alt="TDAI" className="h-[2.875rem] tdai-hue" />
+                <h2 className="text-3xl font-extrabold text-white tracking-tight" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>TheDayAfterAI News</h2>
               </div>
               <div className="flex items-center gap-4 mb-5">
                 <a href="https://www.facebook.com/thedayafterai" target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Facebook size={20} /></a>
