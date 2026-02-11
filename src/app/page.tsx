@@ -21,7 +21,6 @@ import {
   fetchChannelVideos,
   fetchCustomSections,
   fetchTdaaiArticles,
-  enhanceArticleImages,
   sortByDateDesc,
   PLAYLIST_URL,
   type NewsArticle,
@@ -397,7 +396,6 @@ export default function Home() {
         if (data.length > 0) {
           const sorted = sortByDateDesc(data);
           setArticles(sorted);
-          enhanceArticleImages(sorted, 5).then(() => setArticles([...sorted]));
         } else {
           const fallback = searchQuery.trim()
             ? searchFallbackNews(searchQuery)
