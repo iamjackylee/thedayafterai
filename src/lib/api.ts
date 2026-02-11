@@ -98,30 +98,52 @@ interface CustomSectionConfig {
   articles: CustomArticle[];
 }
 
-/** Fetch articles from a Squarespace collection, filtered by category */
+/** Fetch articles from a Squarespace collection, filtered by category.
+ *  Paginates to collect up to 30 articles (Squarespace returns ~20 per page). */
 async function fetchSquarespaceCollection(
   pageUrl: string,
   categoryFilter: string
 ): Promise<CustomArticle[]> {
-  const jsonUrl = `${pageUrl}?format=json&category=${encodeURIComponent(categoryFilter)}`;
-  const text = await fetchWithProxy(jsonUrl);
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const data = JSON.parse(text) as any;
+  const allArticles: CustomArticle[] = [];
+  let offset = 0;
+  const PAGE_SIZE = 30;
 
-  const items = data.items || data.collection?.items || [];
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  return items.map((item: any, i: number) => ({
-    id: `sqsp-${i}-${item.id || ""}`,
-    title: (item.title || "").replace(/&amp;/g, "&"),
-    date: item.publishOn
-      ? new Date(item.publishOn).toISOString().split("T")[0]
-      : "",
-    imageUrl: item.assetUrl || "",
-    url: item.fullUrl
-      ? `https://www.thedayafterai.com${item.fullUrl}`
-      : "",
-    source: "TheDayAfterAI",
-  }));
+  // Squarespace may paginate — fetch up to 2 pages to collect ~30 articles
+  for (let page = 0; page < 2; page++) {
+    const jsonUrl = `${pageUrl}?format=json&category=${encodeURIComponent(categoryFilter)}&offset=${offset}`;
+    try {
+      const text = await fetchWithProxy(jsonUrl);
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const data = JSON.parse(text) as any;
+
+      const items = data.items || data.collection?.items || [];
+      if (items.length === 0) break;
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      for (const item of items) {
+        allArticles.push({
+          id: `sqsp-${allArticles.length}-${item.id || ""}`,
+          title: (item.title || "").replace(/&amp;/g, "&"),
+          date: item.publishOn
+            ? new Date(item.publishOn).toISOString().split("T")[0]
+            : "",
+          imageUrl: item.assetUrl || item.socialImage || "",
+          url: item.fullUrl
+            ? `https://www.thedayafterai.com${item.fullUrl}`
+            : "",
+          source: "TheDayAfterAI",
+        });
+      }
+
+      offset += items.length;
+      // If we got fewer items than a typical page, we've reached the end
+      if (items.length < 20 || allArticles.length >= PAGE_SIZE) break;
+    } catch {
+      break; // Stop paginating on error
+    }
+  }
+
+  return allArticles.slice(0, PAGE_SIZE);
 }
 
 export async function fetchCustomSections(): Promise<CustomSection[]> {

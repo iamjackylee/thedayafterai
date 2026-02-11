@@ -440,10 +440,14 @@ function savePrefetched(data) {
 
 // ── Fetch with retry ───────────────────────────────────────────────
 
+const BROWSER_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36";
+
 async function fetchWithRetry(url, retries = 3) {
+  // Use browser UA for YouTube to avoid bot-detection blocks
+  const ua = url.includes("youtube.com") ? BROWSER_UA : "TheDayAfterAI-NewsBot/1.0";
   for (let i = 0; i < retries; i++) {
     try {
-      const res = await fetch(url, { headers: { "User-Agent": "TheDayAfterAI-NewsBot/1.0" } });
+      const res = await fetch(url, { headers: { "User-Agent": ua } });
       if (res.ok) return await res.text();
       console.warn(`Fetch ${url} returned ${res.status}, retry ${i + 1}`);
     } catch (err) {
@@ -847,8 +851,9 @@ async function fetchTdaaiArticles() {
   return articles;
 }
 
-// ── AI Market Insight custom articles (Playwright) ─────────────────
+// ── AI Market Insight custom articles ────────────────────────────────
 
+/** Try Squarespace JSON API first (fast, no Playwright needed), fall back to Playwright scraping */
 async function fetchCustomArticles() {
   console.log("Fetching AI Market Insight from thedayafterai.com...");
 
@@ -861,116 +866,146 @@ async function fetchCustomArticles() {
   const sectionsToFetch = (customData.sections || []).filter((s) => s.pageUrl);
   if (sectionsToFetch.length === 0) { console.log("  No sections with pageUrl, skipping."); return; }
 
-  let context;
-  try { context = await getPlaywrightContext(); } catch {
-    console.warn("  Playwright not available, skipping custom articles.");
-    return;
-  }
-
   let updated = false;
 
   for (const section of sectionsToFetch) {
     const pageUrl = section.pageUrl;
+    const categoryFilter = section.categoryFilter || "";
     const slug = section.collectionSlug || `/${section.id}/`;
 
+    // ── Strategy 1: Squarespace JSON API (no Playwright needed) ──
+    let articlesFromApi = [];
     try {
-      const page = await context.newPage();
-      await page.goto(pageUrl, { waitUntil: "networkidle", timeout: 30000 });
-      console.log(`  Loaded: ${pageUrl}`);
+      const categoryParam = categoryFilter ? `&category=${encodeURIComponent(categoryFilter)}` : "";
+      const jsonUrl = `${pageUrl}?format=json${categoryParam}`;
+      console.log(`  Trying Squarespace JSON API: ${jsonUrl}`);
+      const raw = await fetchWithRetry(jsonUrl, 2);
+      const data = JSON.parse(raw);
+      const items = data.items || data.collection?.items || [];
+      articlesFromApi = items.map((item) => {
+        const fullUrl = item.fullUrl ? `https://www.thedayafterai.com${item.fullUrl}` : "";
+        let imageUrl = item.assetUrl || "";
+        // Also check for socialImage or body image
+        if (!imageUrl && item.socialImage) imageUrl = item.socialImage;
+        let dateStr = "";
+        if (item.publishOn) { try { dateStr = new Date(item.publishOn).toISOString().split("T")[0]; } catch {} }
+        return { url: fullUrl, title: (item.title || "").replace(/&amp;/g, "&"), imageUrl, date: dateStr };
+      }).filter((a) => a.url && a.title);
+      console.log(`  Squarespace JSON API returned ${articlesFromApi.length} articles`);
+    } catch (err) {
+      console.log(`  Squarespace JSON API failed: ${err.message.split("\n")[0]}`);
+    }
 
-      // Scroll down to trigger lazy-loaded content (Squarespace often uses infinite scroll)
-      for (let i = 0; i < 5; i++) {
-        await page.evaluate(() => window.scrollBy(0, window.innerHeight));
-        await page.waitForTimeout(800);
+    // ── Strategy 2: Playwright scraping (fallback) ──
+    if (articlesFromApi.length === 0) {
+      let context;
+      try { context = await getPlaywrightContext(); } catch {
+        console.warn("  Playwright not available, skipping.");
+        continue;
       }
-      await page.waitForTimeout(1000);
 
-      const articles = await page.evaluate((filterSlug) => {
-        const results = [];
-        const seen = new Set();
-        for (const el of document.querySelectorAll("a[href]")) {
-          const href = el.href;
-          if (!href || seen.has(href) || !href.includes("thedayafterai.com")) continue;
-          try {
-            const linkPath = new URL(href).pathname;
-            if (!linkPath.includes(filterSlug)) continue;
-            const afterSlug = linkPath.split(filterSlug)[1];
-            if (!afterSlug || afterSlug === "/" || afterSlug === "") continue;
-          } catch { continue; }
-          seen.add(href);
+      try {
+        const page = await context.newPage();
+        await page.goto(pageUrl, { waitUntil: "networkidle", timeout: 30000 });
+        console.log(`  Loaded via Playwright: ${pageUrl}`);
 
-          const container = el.closest("article, .summary-item, .blog-item, .sqs-block") || el.parentElement;
-          let title = el.querySelector("h1, h2, h3, h4")?.textContent?.trim() ||
-            container?.querySelector("h1, h2, h3, h4")?.textContent?.trim() ||
-            el.textContent?.trim().substring(0, 200) || "";
-          title = title.replace(/\s+/g, " ").trim();
-
-          let imageUrl = "";
-          const img = el.querySelector("img") || container?.querySelector("img");
-          if (img) imageUrl = img.dataset?.src || img.src || "";
-
-          let date = "";
-          const timeEl = container?.querySelector("time[datetime]") ||
-            container?.querySelector(".summary-metadata-item--date") ||
-            container?.querySelector(".blog-date");
-          if (timeEl) date = timeEl.getAttribute("datetime") || "";
-
-          if (title) results.push({ url: href, title, imageUrl, date });
+        // Scroll extensively to trigger lazy-loaded content (Squarespace infinite scroll)
+        for (let i = 0; i < 15; i++) {
+          await page.evaluate(() => window.scrollBy(0, window.innerHeight));
+          await page.waitForTimeout(600);
         }
-        return results;
-      }, slug);
-      await page.close();
+        await page.waitForTimeout(1500);
 
-      // Deduplicate
-      const uniqueArticles = [];
-      const seenUrls = new Set();
-      for (const a of articles) {
-        if (!seenUrls.has(a.url)) { seenUrls.add(a.url); uniqueArticles.push(a); }
-      }
-      console.log(`  Found ${uniqueArticles.length} articles matching "${slug}"`);
+        const scraped = await page.evaluate((filterSlug) => {
+          const results = [];
+          const seen = new Set();
+          for (const el of document.querySelectorAll("a[href]")) {
+            const href = el.href;
+            if (!href || seen.has(href) || !href.includes("thedayafterai.com")) continue;
+            try {
+              const linkPath = new URL(href).pathname;
+              if (!linkPath.includes(filterSlug)) continue;
+              const afterSlug = linkPath.split(filterSlug)[1];
+              if (!afterSlug || afterSlug === "/" || afterSlug === "") continue;
+              // Skip category filter pages
+              if (afterSlug.startsWith("category/")) continue;
+            } catch { continue; }
+            seen.add(href);
 
-      if (uniqueArticles.length > 0) {
-        // Fetch OG images and dates from article pages
-        for (const article of uniqueArticles) {
-          try {
-            const articlePage = await context.newPage();
-            await articlePage.goto(article.url, { waitUntil: "domcontentloaded", timeout: 15000 });
-            const meta = await articlePage.evaluate(() => {
-              const ogImg = document.querySelector('meta[property="og:image"]')?.getAttribute("content") || "";
-              const twImg = document.querySelector('meta[name="twitter:image"]')?.getAttribute("content") || "";
-              const pubDate =
-                document.querySelector('meta[property="article:published_time"]')?.getAttribute("content") ||
-                document.querySelector('time.blog-date[datetime]')?.getAttribute("datetime") ||
-                document.querySelector('time[datetime]')?.getAttribute("datetime") ||
-                document.querySelector('.entry-dateline time')?.getAttribute("datetime") ||
-                document.querySelector('.blog-item-date time')?.getAttribute("datetime") ||
-                document.querySelector('.dt-published')?.getAttribute("datetime") || "";
-              return { ogImg, twImg, pubDate };
-            });
-            if (meta.ogImg) article.imageUrl = meta.ogImg;
-            else if (meta.twImg) article.imageUrl = meta.twImg;
-            if (meta.pubDate) {
-              try { article.date = new Date(meta.pubDate).toISOString().split("T")[0]; } catch {}
+            const container = el.closest("article, .summary-item, .blog-item, .sqs-block") || el.parentElement;
+            let title = el.querySelector("h1, h2, h3, h4")?.textContent?.trim() ||
+              container?.querySelector("h1, h2, h3, h4")?.textContent?.trim() ||
+              el.textContent?.trim().substring(0, 200) || "";
+            title = title.replace(/\s+/g, " ").trim();
+
+            let imageUrl = "";
+            const img = el.querySelector("img") || container?.querySelector("img");
+            if (img) imageUrl = img.dataset?.src || img.src || "";
+
+            let date = "";
+            const timeEl = container?.querySelector("time[datetime]") ||
+              container?.querySelector(".summary-metadata-item--date") ||
+              container?.querySelector(".blog-date");
+            if (timeEl) date = timeEl.getAttribute("datetime") || "";
+
+            if (title) results.push({ url: href, title, imageUrl, date });
+          }
+          return results;
+        }, slug);
+        await page.close();
+
+        // Deduplicate
+        const seenUrls = new Set();
+        for (const a of scraped) {
+          if (!seenUrls.has(a.url)) { seenUrls.add(a.url); articlesFromApi.push(a); }
+        }
+        console.log(`  Playwright found ${articlesFromApi.length} articles matching "${slug}"`);
+
+        // Fetch OG images and dates from individual article pages
+        if (articlesFromApi.length > 0) {
+          for (const article of articlesFromApi) {
+            try {
+              const articlePage = await context.newPage();
+              await articlePage.goto(article.url, { waitUntil: "domcontentloaded", timeout: 15000 });
+              const meta = await articlePage.evaluate(() => {
+                const ogImg = document.querySelector('meta[property="og:image"]')?.getAttribute("content") || "";
+                const twImg = document.querySelector('meta[name="twitter:image"]')?.getAttribute("content") || "";
+                const pubDate =
+                  document.querySelector('meta[property="article:published_time"]')?.getAttribute("content") ||
+                  document.querySelector('time.blog-date[datetime]')?.getAttribute("datetime") ||
+                  document.querySelector('time[datetime]')?.getAttribute("datetime") ||
+                  document.querySelector('.entry-dateline time')?.getAttribute("datetime") ||
+                  document.querySelector('.blog-item-date time')?.getAttribute("datetime") ||
+                  document.querySelector('.dt-published')?.getAttribute("datetime") || "";
+                return { ogImg, twImg, pubDate };
+              });
+              if (meta.ogImg) article.imageUrl = meta.ogImg;
+              else if (meta.twImg) article.imageUrl = meta.twImg;
+              if (meta.pubDate) {
+                try { article.date = new Date(meta.pubDate).toISOString().split("T")[0]; } catch {}
+              }
+              console.log(`    ${article.title.slice(0, 50)}... => ${article.imageUrl ? "img" : "no-img"}, ${article.date || "no date"}`);
+              await articlePage.close();
+            } catch (err) {
+              console.log(`    Failed: "${article.title.slice(0, 40)}": ${err.message.split("\n")[0]}`);
             }
-            console.log(`    ${article.title.slice(0, 50)}... => ${article.imageUrl ? "img" : "no-img"}, ${article.date || "no date"}`);
-            await articlePage.close();
-          } catch (err) {
-            console.log(`    Failed: "${article.title.slice(0, 40)}": ${err.message.split("\n")[0]}`);
           }
         }
-
-        section.articles = uniqueArticles.map((a, i) => {
-          let normalizedDate = "";
-          if (a.date) { try { normalizedDate = new Date(a.date).toISOString().split("T")[0]; } catch {} }
-          return { id: `${section.id}-${i + 1}`, title: a.title, date: normalizedDate, imageUrl: a.imageUrl || "", url: a.url, source: "TheDayAfterAI" };
-        });
-        updated = true;
-        console.log(`  Updated "${section.title}" with ${uniqueArticles.length} articles`);
-      } else {
-        console.log(`  No articles found, keeping existing entries.`);
+      } catch (err) {
+        console.log(`  Playwright failed: ${err.message.split("\n")[0]}`);
       }
-    } catch (err) {
-      console.log(`  Failed: ${err.message.split("\n")[0]}`);
+    }
+
+    if (articlesFromApi.length > 0) {
+      section.articles = articlesFromApi.map((a, i) => {
+        let normalizedDate = "";
+        if (a.date) { try { normalizedDate = new Date(a.date).toISOString().split("T")[0]; } catch {} }
+        return { id: `${section.id}-${i + 1}`, title: a.title, date: normalizedDate, imageUrl: a.imageUrl || "", url: a.url, source: "TheDayAfterAI" };
+      });
+      updated = true;
+      console.log(`  Updated "${section.title}" with ${articlesFromApi.length} articles`);
+    } else {
+      console.log(`  No articles found, keeping existing entries.`);
     }
   }
 
@@ -1011,8 +1046,11 @@ async function main() {
       fetchChannelVideos(),
       fetchTdaaiArticles(),
     ]);
-    data.channelVideos = channelVideos;
-    data.tdaaiArticles = tdaaiArticles;
+    // Only overwrite if fetch returned results; preserve existing data on failure
+    if (channelVideos.length > 0) data.channelVideos = channelVideos;
+    else console.warn("  YouTube fetch returned 0 videos, keeping existing data");
+    if (tdaaiArticles.length > 0) data.tdaaiArticles = tdaaiArticles;
+    else console.warn("  TDAAI fetch returned 0 articles, keeping existing data");
 
     console.log("\n=== Fetching AI Market Insight ===");
     await fetchCustomArticles();
@@ -1037,8 +1075,11 @@ async function main() {
         fetchChannelVideos(),
         fetchTdaaiArticles(),
       ]);
-      data.channelVideos = channelVideos;
-      data.tdaaiArticles = tdaaiArticles;
+      // Only overwrite if fetch returned results; preserve existing data on failure
+      if (channelVideos.length > 0) data.channelVideos = channelVideos;
+      else console.warn("  YouTube fetch returned 0 videos, keeping existing data");
+      if (tdaaiArticles.length > 0) data.tdaaiArticles = tdaaiArticles;
+      else console.warn("  TDAAI fetch returned 0 articles, keeping existing data");
 
       console.log("\n=== Refreshing AI Market Insight (15-min cycle) ===");
       await fetchCustomArticles();
