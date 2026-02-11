@@ -85,7 +85,24 @@ const CATEGORY_QUERIES = {
     "AI conversational ethics deepfake manipulation",
     "AI human interaction communication society change",
   ],
-  "digital-security": ["AI cybersecurity privacy digital security", "AI hack breach malware encryption"],
+  "digital-security": [
+    // Scam & Fraud — AI-powered scams, phishing, deepfake fraud, social engineering
+    "AI scam fraud phishing deepfake impersonation",
+    "AI social engineering cyber attack romance scam",
+    "AI generated fake identity financial fraud",
+    // Privacy Concerns — AI surveillance, data collection, tracking, biometrics
+    "AI privacy surveillance data collection tracking",
+    "AI facial recognition biometric data breach",
+    "AI personal data harvesting privacy violation",
+    // Legal & Ethics — AI cybercrime law, liability, regulation, ethical hacking
+    "AI cybercrime law regulation liability prosecution",
+    "AI digital ethics responsible disclosure hacking",
+    "AI security legislation compliance standard",
+    // Security Solutions — AI-powered defence, threat detection, cybersecurity tools
+    "AI cybersecurity threat detection defence protection",
+    "AI security tool malware detection endpoint",
+    "AI zero trust authentication encryption solution",
+  ],
   "environment-science": ["AI climate environment science quantum", "AI sustainable energy physics biology discovery"],
   "governance-politics": ["AI regulation governance politics policy", "AI government legislation compliance framework"],
   "health-style": ["AI health medical diagnosis treatment", "AI fashion style design trend luxury"],
@@ -108,6 +125,10 @@ const CATEGORY_GEO = {
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
   "chatbot-development": [
+    { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
+    { hl: "en", gl: "", ceid: "" },               // Then truly international
+  ],
+  "digital-security": [
     { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
