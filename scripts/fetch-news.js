@@ -1,10 +1,14 @@
 #!/usr/bin/env node
-// Pre-fetch news and YouTube data, save as static JSON for fast page loads.
-// Uses Google News RSS to discover articles, then Playwright to resolve
-// each Google redirect URL to the actual publisher URL and fetch the real
-// OG image — so every article link and thumbnail is real, not a Google proxy.
+// Pre-fetch news, YouTube, and custom articles as static JSON for fast page loads.
 //
-// Runs in GitHub Actions on a schedule (hourly) and on deploy.
+// Modes:
+//   --all     Full fetch of all categories + YouTube + custom articles (used by deploy)
+//   (none)    Rotating fetch: one slot every 10 min, cycling through all content
+//
+// Rotation slots (13 total, ~130 min full cycle):
+//   Slots 0-10:  News categories (one per slot, 50 articles each, Playwright URL+image)
+//   Slot 11:     YouTube + TheDayAfterAI RSS (fast, no Playwright)
+//   Slot 12:     AI Market Insight custom articles from thedayafterai.com (Playwright)
 
 const fs = require("fs");
 const path = require("path");
@@ -17,11 +21,39 @@ const YOUTUBE_CHANNEL_RSS = `https://www.youtube.com/feeds/videos.xml?channel_id
 const PLAYLIST_URL = `https://www.youtube.com/playlist?list=${PLAYLIST_ID}`;
 
 const OUTPUT_DIR = path.join(__dirname, "..", "public", "data");
+const PREFETCHED_PATH = path.join(OUTPUT_DIR, "prefetched.json");
 const URL_CACHE_PATH = path.join(OUTPUT_DIR, "url-cache.json");
+const CUSTOM_JSON_PATH = path.join(OUTPUT_DIR, "custom-articles.json");
 
-const ARTICLES_PER_CATEGORY = 30;
+const ARTICLES_PER_CATEGORY = 50;
 const PLAYWRIGHT_CONCURRENCY = 5;
 const PLAYWRIGHT_TIMEOUT = 15000;
+
+// ── Category search queries ────────────────────────────────────────
+
+const CATEGORY_QUERIES = {
+  "ai-academy": ["AI education university research", "AI academic learning school curriculum"],
+  "business-economy": ["AI business economy startup funding", "AI company market invest stock finance"],
+  "chatbot-development": ["AI chatbot GPT LLM OpenAI", "AI Claude Gemini language model conversational"],
+  "digital-security": ["AI cybersecurity privacy digital security", "AI hack breach malware encryption"],
+  "environment-science": ["AI climate environment science quantum", "AI sustainable energy physics biology discovery"],
+  "governance-politics": ["AI regulation governance politics policy", "AI government legislation compliance framework"],
+  "health-style": ["AI health medical diagnosis treatment", "AI fashion style design trend luxury"],
+  "musical-art": ["AI music audio song compose Spotify", "AI album artist melody sound"],
+  "technology-innovation": ["AI technology innovation breakthrough", "AI chip semiconductor hardware computing software", "AI agent autonomous robot"],
+  "unmanned-aircraft": ["AI drone unmanned aircraft UAV aerial", "AI quadcopter flying delivery drone"],
+  "visual-art-photography": ["AI photography visual art camera image", "AI painting creative artwork gallery museum"],
+};
+
+const CATEGORY_KEYS = Object.keys(CATEGORY_QUERIES);
+const SLOT_YOUTUBE = CATEGORY_KEYS.length;       // 11
+const SLOT_CUSTOM = CATEGORY_KEYS.length + 1;    // 12
+const TOTAL_SLOTS = SLOT_CUSTOM + 1;             // 13
+
+function getCurrentSlot() {
+  const slotMinutes = 10;
+  return Math.floor(Date.now() / (slotMinutes * 60 * 1000)) % TOTAL_SLOTS;
+}
 
 // ── Simple XML helpers (no external deps) ──────────────────────────
 
@@ -29,9 +61,7 @@ function getTagContent(xml, tag) {
   const regex = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, "g");
   const matches = [];
   let m;
-  while ((m = regex.exec(xml)) !== null) {
-    matches.push(m[1].trim());
-  }
+  while ((m = regex.exec(xml)) !== null) matches.push(m[1].trim());
   return matches;
 }
 
@@ -39,42 +69,31 @@ function getTagAttr(xml, tag, attr) {
   const regex = new RegExp(`<${tag}[^>]*${attr}="([^"]*)"`, "g");
   const matches = [];
   let m;
-  while ((m = regex.exec(xml)) !== null) {
-    matches.push(m[1]);
-  }
+  while ((m = regex.exec(xml)) !== null) matches.push(m[1]);
   return matches;
 }
 
 function extractItems(xml) {
   const items = [];
-  const itemRegex = /<item>([\s\S]*?)<\/item>/g;
+  const re = /<item>([\s\S]*?)<\/item>/g;
   let m;
-  while ((m = itemRegex.exec(xml)) !== null) {
-    items.push(m[1]);
-  }
+  while ((m = re.exec(xml)) !== null) items.push(m[1]);
   return items;
 }
 
 function extractEntries(xml) {
   const entries = [];
-  const entryRegex = /<entry>([\s\S]*?)<\/entry>/g;
+  const re = /<entry>([\s\S]*?)<\/entry>/g;
   let m;
-  while ((m = entryRegex.exec(xml)) !== null) {
-    entries.push(m[1]);
-  }
+  while ((m = re.exec(xml)) !== null) entries.push(m[1]);
   return entries;
 }
 
 function stripHtml(html) {
   return html
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/<[^>]*>/g, "")
-    .replace(/\s+/g, " ")
-    .trim();
+    .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"').replace(/&#39;/g, "'")
+    .replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
 }
 
 // ── Fallback images ────────────────────────────────────────────────
@@ -143,30 +162,6 @@ function generateImageUrl(title, topic) {
   return images[hash % images.length];
 }
 
-// ── Topic matching ─────────────────────────────────────────────────
-
-const topicSearchTerms = {
-  "ai-academy": ["university", "education", "student", "academic", "research", "school", "learning", "curriculum"],
-  "business-economy": ["business", "company", "startup", "enterprise", "market", "invest", "funding", "economy", "economic", "gdp", "trade", "finance", "stock", "inflation"],
-  "chatbot-development": ["chatbot", "gpt", "llm", "language model", "claude", "gemini", "openai"],
-  "digital-security": ["security", "cyber", "hack", "privacy", "encryption", "malware", "breach"],
-  "environment-science": ["environment", "climate", "carbon", "green", "sustainable", "emission", "science", "scientific", "discovery", "physics", "biology", "quantum"],
-  "governance-politics": ["governance", "regulation", "policy", "compliance", "framework", "politic", "government", "election", "congress", "legislation"],
-  "health-style": ["health", "medical", "hospital", "patient", "disease", "drug", "diagnos", "fashion", "style", "trend", "luxury"],
-  "musical-art": ["music", "song", "album", "artist", "spotify", "audio", "compose", "melody"],
-  "technology-innovation": ["tech", "software", "hardware", "chip", "processor", "computing", "innovation", "breakthrough", "frontier", "pioneer"],
-  "unmanned-aircraft": ["drone", "uav", "unmanned", "aerial", "quadcopter"],
-  "visual-art-photography": ["art", "painting", "gallery", "museum", "creative", "artwork", "photo", "camera", "image", "portrait", "lens", "sensor", "dslr", "mirrorless"],
-};
-
-function matchTopic(text) {
-  const lower = text.toLowerCase();
-  for (const [topic, keywords] of Object.entries(topicSearchTerms)) {
-    if (keywords.some((kw) => lower.includes(kw))) return topic;
-  }
-  return "technology-innovation";
-}
-
 // ── Helpers ────────────────────────────────────────────────────────
 
 function isGenericImage(url) {
@@ -191,14 +186,23 @@ function saveUrlCache(cache) {
   fs.writeFileSync(URL_CACHE_PATH, JSON.stringify(cache, null, 2) + "\n");
 }
 
+function loadPrefetched() {
+  try { return JSON.parse(fs.readFileSync(PREFETCHED_PATH, "utf-8")); } catch {
+    return { fetchedAt: "", playlistUrl: PLAYLIST_URL, news: [], channelVideos: [], tdaaiArticles: [] };
+  }
+}
+
+function savePrefetched(data) {
+  fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+  fs.writeFileSync(PREFETCHED_PATH, JSON.stringify(data, null, 2));
+}
+
 // ── Fetch with retry ───────────────────────────────────────────────
 
 async function fetchWithRetry(url, retries = 3) {
   for (let i = 0; i < retries; i++) {
     try {
-      const res = await fetch(url, {
-        headers: { "User-Agent": "TheDayAfterAI-NewsBot/1.0" },
-      });
+      const res = await fetch(url, { headers: { "User-Agent": "TheDayAfterAI-NewsBot/1.0" } });
       if (res.ok) return await res.text();
       console.warn(`Fetch ${url} returned ${res.status}, retry ${i + 1}`);
     } catch (err) {
@@ -209,100 +213,93 @@ async function fetchWithRetry(url, retries = 3) {
   throw new Error(`Failed to fetch ${url} after ${retries} retries`);
 }
 
-// ── Fetch news from Google News RSS ────────────────────────────────
+// ── Lazy Playwright loader ─────────────────────────────────────────
 
-async function fetchAllNews() {
-  const categoryQueries = {
-    "ai-academy": ["AI education university research", "AI academic learning school curriculum"],
-    "business-economy": ["AI business economy startup funding", "AI company market invest stock finance"],
-    "chatbot-development": ["AI chatbot GPT LLM OpenAI", "AI Claude Gemini language model conversational"],
-    "digital-security": ["AI cybersecurity privacy digital security", "AI hack breach malware encryption"],
-    "environment-science": ["AI climate environment science quantum", "AI sustainable energy physics biology discovery"],
-    "governance-politics": ["AI regulation governance politics policy", "AI government legislation compliance framework"],
-    "health-style": ["AI health medical diagnosis treatment", "AI fashion style design trend luxury"],
-    "musical-art": ["AI music audio song compose Spotify", "AI album artist melody sound"],
-    "technology-innovation": ["AI technology innovation breakthrough", "AI chip semiconductor hardware computing software", "AI agent autonomous robot"],
-    "unmanned-aircraft": ["AI drone unmanned aircraft UAV aerial", "AI quadcopter flying delivery drone"],
-    "visual-art-photography": ["AI photography visual art camera image", "AI painting creative artwork gallery museum"],
-  };
+let _browser = null;
+let _context = null;
 
-  // Collect articles per category, capped at ARTICLES_PER_CATEGORY
-  const perCategory = {};
+async function getPlaywrightContext() {
+  if (_context) return _context;
+  let chromium;
+  try { ({ chromium } = require("playwright")); } catch {
+    try { ({ chromium } = require("/opt/node22/lib/node_modules/playwright")); } catch {
+      throw new Error("Playwright not available");
+    }
+  }
+  _browser = await chromium.launch({ headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"] });
+  _context = await _browser.newContext({
+    userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+  });
+  return _context;
+}
+
+async function closePlaywright() {
+  if (_browser) { await _browser.close(); _browser = null; _context = null; }
+}
+
+// ── Fetch news for a single category ───────────────────────────────
+
+async function fetchCategoryNews(category) {
+  const queries = CATEGORY_QUERIES[category];
+  if (!queries) { console.warn(`Unknown category: ${category}`); return []; }
+
+  const articles = [];
   const seenTitles = new Set();
 
-  for (const [category, queries] of Object.entries(categoryQueries)) {
-    perCategory[category] = [];
+  for (const q of queries) {
+    if (articles.length >= ARTICLES_PER_CATEGORY) break;
+    try {
+      const rssUrl = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en&num=60`;
+      const xml = await fetchWithRetry(rssUrl);
+      const items = extractItems(xml);
 
-    for (const q of queries) {
-      if (perCategory[category].length >= ARTICLES_PER_CATEGORY) break;
+      for (const item of items) {
+        if (articles.length >= ARTICLES_PER_CATEGORY) break;
 
-      try {
-        const rssUrl = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en&num=40`;
-        const xml = await fetchWithRetry(rssUrl);
-        const items = extractItems(xml);
+        const title = getTagContent(item, "title")[0] || "";
+        if (!title || seenTitles.has(title)) continue;
+        seenTitles.add(title);
 
-        for (const item of items) {
-          if (perCategory[category].length >= ARTICLES_PER_CATEGORY) break;
+        const link = getTagContent(item, "link")[0] || "";
+        const pubDate = getTagContent(item, "pubDate")[0] || "";
+        const source = getTagContent(item, "source")[0] || "Google News";
+        const rawDescription = getTagContent(item, "description")[0] || "";
+        const description = stripHtml(rawDescription);
 
-          const title = getTagContent(item, "title")[0] || "";
-          if (!title || seenTitles.has(title)) continue;
-          seenTitles.add(title);
-
-          const link = getTagContent(item, "link")[0] || "";
-          const pubDate = getTagContent(item, "pubDate")[0] || "";
-          const source = getTagContent(item, "source")[0] || "Google News";
-          const rawDescription = getTagContent(item, "description")[0] || "";
-          const description = stripHtml(rawDescription);
-
-          // Extract RSS image
-          let imageUrl = "";
-          const mediaUrls = getTagAttr(item, "media:content", "url");
-          if (mediaUrls.length > 0 && !isGenericImage(mediaUrls[0])) imageUrl = mediaUrls[0];
-          if (!imageUrl) {
-            const enclosureUrls = getTagAttr(item, "enclosure", "url");
-            if (enclosureUrls.length > 0 && !isGenericImage(enclosureUrls[0])) imageUrl = enclosureUrls[0];
-          }
-          if (!imageUrl) {
-            const decodedDesc = rawDescription.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&").replace(/&quot;/g, '"');
-            const imgMatch = decodedDesc.match(/<img[^>]+src=["']([^"']+)["']/i);
-            if (imgMatch && imgMatch[1] && !isGenericImage(imgMatch[1])) imageUrl = imgMatch[1];
-          }
-
-          perCategory[category].push({
-            id: `gn-${category}-${perCategory[category].length}`,
-            title,
-            summary: description || title,
-            topic: category,
-            source,
-            date: pubDate,
-            imageUrl: imageUrl || "",
-            url: link,
-          });
+        let imageUrl = "";
+        const mediaUrls = getTagAttr(item, "media:content", "url");
+        if (mediaUrls.length > 0 && !isGenericImage(mediaUrls[0])) imageUrl = mediaUrls[0];
+        if (!imageUrl) {
+          const enclosureUrls = getTagAttr(item, "enclosure", "url");
+          if (enclosureUrls.length > 0 && !isGenericImage(enclosureUrls[0])) imageUrl = enclosureUrls[0];
         }
-      } catch (err) {
-        console.warn(`  Failed query "${q}": ${err.message}`);
-      }
-    }
+        if (!imageUrl) {
+          const decodedDesc = rawDescription.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&").replace(/&quot;/g, '"');
+          const imgMatch = decodedDesc.match(/<img[^>]+src=["']([^"']+)["']/i);
+          if (imgMatch && imgMatch[1] && !isGenericImage(imgMatch[1])) imageUrl = imgMatch[1];
+        }
 
-    console.log(`  ${category}: ${perCategory[category].length} articles`);
+        articles.push({
+          id: `gn-${category}-${articles.length}`,
+          title, summary: description || title, topic: category,
+          source, date: pubDate, imageUrl: imageUrl || "", url: link,
+        });
+      }
+    } catch (err) {
+      console.warn(`  Failed query "${q}": ${err.message}`);
+    }
   }
 
-  // Flatten and sort by date
-  const allArticles = Object.values(perCategory).flat();
-  allArticles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-  console.log(`Total: ${allArticles.length} articles (${ARTICLES_PER_CATEGORY} per category)`);
-
-  return allArticles;
+  console.log(`  ${category}: ${articles.length} articles`);
+  return articles;
 }
 
 // ── Resolve Google URLs + fetch OG images via Playwright ───────────
 
 async function resolveArticles(articles) {
   const cache = loadUrlCache();
-  const cacheSize = Object.keys(cache).length;
-  console.log(`URL cache: ${cacheSize} entries`);
+  console.log(`URL cache: ${Object.keys(cache).length} entries`);
 
-  // Apply cached resolutions first
   let cacheHits = 0;
   for (const article of articles) {
     const id = extractArticleId(article.url);
@@ -314,39 +311,23 @@ async function resolveArticles(articles) {
   }
   console.log(`Applied ${cacheHits} cached resolutions`);
 
-  // Find articles still needing resolution (Google News URLs)
   const toResolve = articles.filter((a) => a.url && a.url.includes("news.google.com"));
   if (toResolve.length === 0) {
     console.log("All URLs resolved from cache!");
     saveUrlCache(cache);
+    applyFallbackImages(articles);
     return;
   }
 
   console.log(`Resolving ${toResolve.length} URLs via Playwright...`);
-
-  // Load Playwright
-  let chromium;
-  try {
-    ({ chromium } = require("playwright"));
-  } catch {
-    try {
-      ({ chromium } = require("/opt/node22/lib/node_modules/playwright"));
-    } catch {
-      console.warn("Playwright not available — keeping Google News URLs for now.");
-      return;
-    }
+  let context;
+  try { context = await getPlaywrightContext(); } catch {
+    console.warn("Playwright not available — keeping Google News URLs for now.");
+    applyFallbackImages(articles);
+    return;
   }
 
-  const browser = await chromium.launch({
-    headless: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
-  });
-  const context = await browser.newContext({
-    userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-  });
-
-  let resolved = 0;
-  let failed = 0;
+  let resolved = 0, failed = 0;
 
   for (let i = 0; i < toResolve.length; i += PLAYWRIGHT_CONCURRENCY) {
     const batch = toResolve.slice(i, i + PLAYWRIGHT_CONCURRENCY);
@@ -354,15 +335,11 @@ async function resolveArticles(articles) {
       const gnUrl = article.url;
       const articleId = extractArticleId(gnUrl);
       const page = await context.newPage();
-
       try {
-        // Navigate to Google News URL — follows redirect to actual article
         await page.goto(gnUrl, { waitUntil: "load", timeout: PLAYWRIGHT_TIMEOUT });
         await page.waitForTimeout(1500);
-
         let finalUrl = page.url();
 
-        // If still on Google, try extracting from page content
         if (finalUrl.includes("news.google.com") || finalUrl.includes("consent.google")) {
           const extracted = await page.evaluate(() => {
             const c = document.querySelector('link[rel="canonical"]');
@@ -376,33 +353,25 @@ async function resolveArticles(articles) {
           if (extracted) finalUrl = extracted;
         }
 
-        const isResolved =
-          finalUrl &&
+        const isResolved = finalUrl &&
           !finalUrl.includes("news.google.com") &&
           !finalUrl.includes("consent.google") &&
           !finalUrl.includes("accounts.google");
 
         if (isResolved) {
           article.url = finalUrl;
-
-          // Extract OG image from the real article page — try multiple selectors
           const imgUrl = await page.evaluate(() => {
             const selectors = [
-              'meta[property="og:image"]',
-              'meta[property="og:image:secure_url"]',
-              'meta[property="og:image:url"]',
-              'meta[name="twitter:image"]',
-              'meta[name="twitter:image:src"]',
-              'meta[name="image"]',
-              'meta[itemprop="image"]',
-              'link[rel="image_src"]',
+              'meta[property="og:image"]', 'meta[property="og:image:secure_url"]',
+              'meta[property="og:image:url"]', 'meta[name="twitter:image"]',
+              'meta[name="twitter:image:src"]', 'meta[name="image"]',
+              'meta[itemprop="image"]', 'link[rel="image_src"]',
             ];
             for (const sel of selectors) {
               const el = document.querySelector(sel);
               const val = el?.getAttribute("content") || el?.getAttribute("href") || "";
               if (val && val.startsWith("http")) return val;
             }
-            // Fallback: find the largest image in article body
             const imgs = Array.from(document.querySelectorAll("article img[src], .post-content img[src], .article-body img[src], main img[src]"));
             for (const img of imgs) {
               const src = img.getAttribute("src") || "";
@@ -410,44 +379,29 @@ async function resolveArticles(articles) {
             }
             return "";
           });
-          if (imgUrl && !isGenericImage(imgUrl)) {
-            article.imageUrl = imgUrl;
-          }
-
-          // Cache the result
-          if (articleId) {
-            cache[articleId] = { url: finalUrl, imageUrl: article.imageUrl };
-          }
+          if (imgUrl && !isGenericImage(imgUrl)) article.imageUrl = imgUrl;
+          if (articleId) cache[articleId] = { url: finalUrl, imageUrl: article.imageUrl };
           resolved++;
-        } else {
-          failed++;
-        }
-      } catch {
-        failed++;
-      } finally {
-        await page.close();
-      }
+        } else { failed++; }
+      } catch { failed++; }
+      finally { await page.close(); }
     });
 
     await Promise.allSettled(promises);
-
     const processed = Math.min(i + PLAYWRIGHT_CONCURRENCY, toResolve.length);
     if (processed % 25 < PLAYWRIGHT_CONCURRENCY || processed >= toResolve.length) {
       console.log(`  ${processed}/${toResolve.length} (resolved: ${resolved}, failed: ${failed})`);
     }
   }
 
-  await browser.close();
   saveUrlCache(cache);
-
   console.log(`Resolution done: ${resolved} resolved, ${failed} failed`);
-  console.log(`Total with real URLs: ${articles.filter((a) => !a.url.includes("news.google.com")).length}/${articles.length}`);
+  applyFallbackImages(articles);
+}
 
-  // For any articles still missing images, use fallback
+function applyFallbackImages(articles) {
   for (const article of articles) {
-    if (!article.imageUrl) {
-      article.imageUrl = generateImageUrl(article.title, article.topic);
-    }
+    if (!article.imageUrl) article.imageUrl = generateImageUrl(article.title, article.topic);
   }
 }
 
@@ -455,37 +409,35 @@ async function resolveArticles(articles) {
 
 function parseVideoEntries(xml) {
   const entries = extractEntries(xml);
-  const videos = [];
-  for (const entry of entries) {
+  return entries.map((entry) => {
     const videoId = getTagContent(entry, "yt:videoId")[0] || "";
     const title = getTagContent(entry, "title")[0] || "";
     const published = getTagContent(entry, "published")[0] || "";
     const description = getTagContent(entry, "media:description")[0] || "";
     const thumbnails = getTagAttr(entry, "media:thumbnail", "url");
     const thumbnail = thumbnails[0] || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
-    videos.push({ id: videoId, videoId, title, thumbnail, publishedAt: published, description, channelTitle: "TheDayAfterAI" });
-  }
-  return videos;
+    return { id: videoId, videoId, title, thumbnail, publishedAt: published, description, channelTitle: "TheDayAfterAI" };
+  });
 }
 
 async function fetchChannelVideos() {
   try {
-    console.log("Trying playlist RSS feed...");
+    console.log("Fetching playlist RSS...");
     const xml = await fetchWithRetry(YOUTUBE_PLAYLIST_RSS);
     const videos = parseVideoEntries(xml);
-    if (videos.length > 0) { console.log(`Fetched ${videos.length} videos from playlist RSS`); return videos; }
-  } catch (err) { console.warn("Playlist RSS fetch failed:", err.message); }
+    if (videos.length > 0) { console.log(`  ${videos.length} videos from playlist`); return videos; }
+  } catch (err) { console.warn("Playlist RSS failed:", err.message); }
 
   try {
-    console.log("Trying channel RSS feed...");
+    console.log("Fetching channel RSS...");
     const xml = await fetchWithRetry(YOUTUBE_CHANNEL_RSS);
     const videos = parseVideoEntries(xml);
-    console.log(`Fetched ${videos.length} videos from channel RSS`);
+    console.log(`  ${videos.length} videos from channel`);
     return videos;
   } catch (err) { console.warn("Channel RSS also failed:", err.message); return []; }
 }
 
-// ── TheDayAfterAI.com blog articles ───────────────────────────────
+// ── TheDayAfterAI.com blog articles (RSS) ──────────────────────────
 
 const TDAAI_RSS_URLS = [
   "https://www.thedayafterai.com/blog?format=rss",
@@ -495,7 +447,7 @@ const TDAAI_RSS_URLS = [
 ];
 
 async function fetchTdaaiArticles() {
-  console.log("Fetching TheDayAfterAI.com blog articles...");
+  console.log("Fetching TheDayAfterAI.com RSS...");
   let xml = "";
   for (const rssUrl of TDAAI_RSS_URLS) {
     try {
@@ -503,11 +455,7 @@ async function fetchTdaaiArticles() {
       if (xml && xml.includes("<item>")) { console.log(`  Found RSS at: ${rssUrl}`); break; }
     } catch { /* try next */ }
   }
-
-  if (!xml || !xml.includes("<item>")) {
-    console.log("  RSS not available");
-    return [];
-  }
+  if (!xml || !xml.includes("<item>")) { console.log("  RSS not available"); return []; }
 
   const items = extractItems(xml);
   const articles = [];
@@ -525,50 +473,212 @@ async function fetchTdaaiArticles() {
     if (!imageUrl) { const rawDesc = getTagContent(item, "description")[0] || ""; const imgMatch = rawDesc.match(/src=["']([^"']+\.(?:jpg|jpeg|png|webp|gif)[^"']*)/i); if (imgMatch) imageUrl = imgMatch[1].replace(/&amp;/g, "&"); }
     articles.push({ id: `tdaai-${i}`, title, summary: description || title, date: pubDate, imageUrl, url: link, source: "TheDayAfterAI" });
   }
-  console.log(`  Fetched ${articles.length} articles from TheDayAfterAI.com`);
+  console.log(`  ${articles.length} TDAAI blog articles`);
   return articles;
 }
 
-// ── Enhance custom-articles.json ──────────────────────────────────
+// ── AI Market Insight custom articles (Playwright) ─────────────────
 
-async function enhanceCustomArticles() {
-  const customPath = path.join(OUTPUT_DIR, "custom-articles.json");
+async function fetchCustomArticles() {
+  console.log("Fetching AI Market Insight from thedayafterai.com...");
+
   let customData;
-  try { customData = JSON.parse(fs.readFileSync(customPath, "utf-8")); } catch { return; }
-  if (!customData.sections || customData.sections.length === 0) return;
-  // OG image enhancement handled by fetch-custom-urls.js (Playwright)
+  try { customData = JSON.parse(fs.readFileSync(CUSTOM_JSON_PATH, "utf-8")); } catch {
+    console.log("  No custom-articles.json found, skipping.");
+    return;
+  }
+
+  const sectionsToFetch = (customData.sections || []).filter((s) => s.pageUrl);
+  if (sectionsToFetch.length === 0) { console.log("  No sections with pageUrl, skipping."); return; }
+
+  let context;
+  try { context = await getPlaywrightContext(); } catch {
+    console.warn("  Playwright not available, skipping custom articles.");
+    return;
+  }
+
+  let updated = false;
+
+  for (const section of sectionsToFetch) {
+    const pageUrl = section.pageUrl;
+    const slug = section.collectionSlug || `/${section.id}/`;
+
+    try {
+      const page = await context.newPage();
+      await page.goto(pageUrl, { waitUntil: "networkidle", timeout: 30000 });
+      console.log(`  Loaded: ${pageUrl}`);
+
+      const articles = await page.evaluate((filterSlug) => {
+        const results = [];
+        const seen = new Set();
+        for (const el of document.querySelectorAll("a[href]")) {
+          const href = el.href;
+          if (!href || seen.has(href) || !href.includes("thedayafterai.com")) continue;
+          try {
+            const linkPath = new URL(href).pathname;
+            if (!linkPath.includes(filterSlug)) continue;
+            const afterSlug = linkPath.split(filterSlug)[1];
+            if (!afterSlug || afterSlug === "/" || afterSlug === "") continue;
+          } catch { continue; }
+          seen.add(href);
+
+          const container = el.closest("article, .summary-item, .blog-item, .sqs-block") || el.parentElement;
+          let title = el.querySelector("h1, h2, h3, h4")?.textContent?.trim() ||
+            container?.querySelector("h1, h2, h3, h4")?.textContent?.trim() ||
+            el.textContent?.trim().substring(0, 200) || "";
+          title = title.replace(/\s+/g, " ").trim();
+
+          let imageUrl = "";
+          const img = el.querySelector("img") || container?.querySelector("img");
+          if (img) imageUrl = img.dataset?.src || img.src || "";
+
+          let date = "";
+          const timeEl = container?.querySelector("time[datetime]") ||
+            container?.querySelector(".summary-metadata-item--date") ||
+            container?.querySelector(".blog-date");
+          if (timeEl) date = timeEl.getAttribute("datetime") || "";
+
+          if (title) results.push({ url: href, title, imageUrl, date });
+        }
+        return results;
+      }, slug);
+      await page.close();
+
+      // Deduplicate
+      const uniqueArticles = [];
+      const seenUrls = new Set();
+      for (const a of articles) {
+        if (!seenUrls.has(a.url)) { seenUrls.add(a.url); uniqueArticles.push(a); }
+      }
+      console.log(`  Found ${uniqueArticles.length} articles matching "${slug}"`);
+
+      if (uniqueArticles.length > 0) {
+        // Fetch OG images and dates from article pages
+        for (const article of uniqueArticles) {
+          try {
+            const articlePage = await context.newPage();
+            await articlePage.goto(article.url, { waitUntil: "domcontentloaded", timeout: 15000 });
+            const meta = await articlePage.evaluate(() => {
+              const ogImg = document.querySelector('meta[property="og:image"]')?.getAttribute("content") || "";
+              const twImg = document.querySelector('meta[name="twitter:image"]')?.getAttribute("content") || "";
+              const pubDate =
+                document.querySelector('meta[property="article:published_time"]')?.getAttribute("content") ||
+                document.querySelector('time.blog-date[datetime]')?.getAttribute("datetime") ||
+                document.querySelector('time[datetime]')?.getAttribute("datetime") ||
+                document.querySelector('.entry-dateline time')?.getAttribute("datetime") ||
+                document.querySelector('.blog-item-date time')?.getAttribute("datetime") ||
+                document.querySelector('.dt-published')?.getAttribute("datetime") || "";
+              return { ogImg, twImg, pubDate };
+            });
+            if (meta.ogImg) article.imageUrl = meta.ogImg;
+            else if (meta.twImg) article.imageUrl = meta.twImg;
+            if (meta.pubDate) {
+              try { article.date = new Date(meta.pubDate).toISOString().split("T")[0]; } catch {}
+            }
+            console.log(`    ${article.title.slice(0, 50)}... => ${article.imageUrl ? "img" : "no-img"}, ${article.date || "no date"}`);
+            await articlePage.close();
+          } catch (err) {
+            console.log(`    Failed: "${article.title.slice(0, 40)}": ${err.message.split("\n")[0]}`);
+          }
+        }
+
+        section.articles = uniqueArticles.map((a, i) => {
+          let normalizedDate = "";
+          if (a.date) { try { normalizedDate = new Date(a.date).toISOString().split("T")[0]; } catch {} }
+          return { id: `${section.id}-${i + 1}`, title: a.title, date: normalizedDate, imageUrl: a.imageUrl || "", url: a.url, source: "TheDayAfterAI" };
+        });
+        updated = true;
+        console.log(`  Updated "${section.title}" with ${uniqueArticles.length} articles`);
+      } else {
+        console.log(`  No articles found, keeping existing entries.`);
+      }
+    } catch (err) {
+      console.log(`  Failed: ${err.message.split("\n")[0]}`);
+    }
+  }
+
+  if (updated) {
+    fs.writeFileSync(CUSTOM_JSON_PATH, JSON.stringify(customData, null, 2) + "\n");
+    console.log("  Saved custom-articles.json");
+  }
 }
 
 // ── Main ───────────────────────────────────────────────────────────
 
 async function main() {
-  console.log("Starting news pre-fetch...");
+  const isFullFetch = process.argv.includes("--all");
+  const slot = isFullFetch ? -1 : getCurrentSlot();
+
   console.log(`Time: ${new Date().toISOString()}`);
+  console.log(`Mode: ${isFullFetch ? "FULL (--all)" : `ROTATION slot ${slot}/${TOTAL_SLOTS - 1}`}`);
 
-  const [news, channelVideos, tdaaiArticles] = await Promise.all([
-    fetchAllNews(),
-    fetchChannelVideos(),
-    fetchTdaaiArticles(),
-  ]);
+  const data = loadPrefetched();
 
-  // Resolve Google News URLs to actual publisher URLs + fetch OG images
-  console.log("\n=== Resolving Google News URLs to publisher URLs ===");
-  await resolveArticles(news);
+  if (isFullFetch) {
+    // ── Full fetch: all categories + YouTube + custom ──
+    console.log("\n=== Fetching all 11 news categories ===");
+    const allNews = [];
+    for (const category of CATEGORY_KEYS) {
+      const articles = await fetchCategoryNews(category);
+      allNews.push(...articles);
+    }
+    console.log(`Total: ${allNews.length} articles`);
 
-  const data = {
-    fetchedAt: new Date().toISOString(),
-    playlistUrl: PLAYLIST_URL,
-    news,
-    channelVideos,
-    tdaaiArticles,
-  };
+    console.log("\n=== Resolving Google News URLs ===");
+    await resolveArticles(allNews);
+    data.news = allNews;
 
-  fs.mkdirSync(OUTPUT_DIR, { recursive: true });
-  fs.writeFileSync(path.join(OUTPUT_DIR, "prefetched.json"), JSON.stringify(data, null, 2));
+    console.log("\n=== Fetching YouTube + TDAAI RSS ===");
+    const [channelVideos, tdaaiArticles] = await Promise.all([
+      fetchChannelVideos(),
+      fetchTdaaiArticles(),
+    ]);
+    data.channelVideos = channelVideos;
+    data.tdaaiArticles = tdaaiArticles;
 
-  const realUrlCount = news.filter((a) => !a.url.includes("news.google.com")).length;
-  const realImgCount = news.filter((a) => a.imageUrl && !a.imageUrl.includes("unsplash.com")).length;
-  console.log(`\nSaved: ${news.length} articles (${realUrlCount} real URLs, ${realImgCount} real images), ${channelVideos.length} videos, ${tdaaiArticles.length} TDAAI articles`);
+    console.log("\n=== Fetching AI Market Insight ===");
+    await fetchCustomArticles();
+
+  } else if (slot >= 0 && slot < CATEGORY_KEYS.length) {
+    // ── Single news category ──
+    const category = CATEGORY_KEYS[slot];
+    console.log(`\n=== Fetching category: ${category} ===`);
+    const articles = await fetchCategoryNews(category);
+
+    console.log(`\n=== Resolving ${articles.length} URLs ===`);
+    await resolveArticles(articles);
+
+    // Merge: replace this category's articles in existing data
+    data.news = (data.news || []).filter((a) => a.topic !== category).concat(articles);
+    data.news.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+  } else if (slot === SLOT_YOUTUBE) {
+    // ── YouTube + TDAAI RSS ──
+    console.log("\n=== Fetching YouTube + TDAAI RSS ===");
+    const [channelVideos, tdaaiArticles] = await Promise.all([
+      fetchChannelVideos(),
+      fetchTdaaiArticles(),
+    ]);
+    data.channelVideos = channelVideos;
+    data.tdaaiArticles = tdaaiArticles;
+
+  } else if (slot === SLOT_CUSTOM) {
+    // ── AI Market Insight custom articles ──
+    console.log("\n=== Fetching AI Market Insight ===");
+    await fetchCustomArticles();
+  }
+
+  // Save updated prefetched.json
+  data.fetchedAt = new Date().toISOString();
+  data.playlistUrl = PLAYLIST_URL;
+  savePrefetched(data);
+
+  await closePlaywright();
+
+  const newsCount = (data.news || []).length;
+  const realUrlCount = (data.news || []).filter((a) => !a.url.includes("news.google.com")).length;
+  const realImgCount = (data.news || []).filter((a) => a.imageUrl && !a.imageUrl.includes("unsplash.com")).length;
+  console.log(`\nSaved: ${newsCount} news (${realUrlCount} real URLs, ${realImgCount} real images), ${(data.channelVideos || []).length} videos, ${(data.tdaaiArticles || []).length} TDAAI`);
 }
 
 main().catch((err) => {

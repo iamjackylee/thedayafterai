@@ -2,7 +2,7 @@ name: Fetch News Data
 
 on:
   schedule:
-    - cron: "0 * * * *" # Every hour
+    - cron: "*/10 * * * *" # Every 10 minutes (rotating: 1 category per run, full cycle ~130 min)
   workflow_dispatch: # Allow manual trigger
 
 permissions:
@@ -23,10 +23,7 @@ jobs:
       - name: Install Playwright
         run: npm install playwright && npx playwright install --with-deps chromium
 
-      - name: Fetch custom article URLs (browser)
-        run: node scripts/fetch-custom-urls.js
-
-      - name: Fetch news data (with Playwright URL + image resolution)
+      - name: Fetch news data (rotating slot)
         run: node scripts/fetch-news.js
 
       - name: Commit and push if changed
