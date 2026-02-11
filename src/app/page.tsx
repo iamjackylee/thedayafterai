@@ -704,12 +704,19 @@ export default function Home() {
       <header className="bg-black border-b border-[var(--border)] sticky top-0 z-30">
         <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-4">
           <div className="flex items-center justify-between gap-4 flex-wrap">
-            {/* Brand — text only, editorial identity */}
-            <span className="text-xl font-extrabold text-white tracking-tight" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>TheDayAfterAI News</span>
+            {/* Brand — logo + name */}
+            <div className="flex items-center gap-3">
+              <img
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/tdai-letter-logo.png`}
+                alt="TDAI"
+                className="h-8 tdai-hue opacity-90"
+              />
+              <span className="text-xl font-extrabold text-white tracking-tight" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>TheDayAfterAI News</span>
+            </div>
 
-            {/* Search */}
-            <div className="flex-1 max-w-md">
-              <div className="relative">
+            {/* Search + Refresh */}
+            <div className="flex items-center gap-2 flex-1 max-w-md">
+              <div className="relative flex-1">
                 <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted)]" />
                 <input
                   type="text"
@@ -719,25 +726,9 @@ export default function Home() {
                   className="w-full bg-[var(--surface)] border border-[var(--border-light)] rounded-none pl-10 pr-4 py-2.5 text-sm text-white placeholder:text-[var(--muted)] outline-none focus:border-[var(--accent)] transition-colors"
                 />
               </div>
-            </div>
-
-            {/* Actions + TDAI brand mark */}
-            <div className="flex items-center gap-3">
               <button onClick={loadData} title="Refresh" className="p-2 hover:bg-[var(--surface-light)] transition-colors rounded-sm">
                 <RefreshCw size={16} className={`text-[var(--muted)] ${loadingNews ? "animate-spin" : ""}`} />
               </button>
-              <div className="hidden md:flex items-center gap-4 ml-1 pl-4 border-l border-[var(--border-light)]">
-                <a href="https://www.facebook.com/thedayafterai" target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Facebook size={18} /></a>
-                <a href={PLAYLIST_URL} target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Youtube size={18} /></a>
-                <a href="https://www.linkedin.com/company/thedayafterai/" target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Linkedin size={18} /></a>
-              </div>
-              <div className="hidden md:block pl-4 ml-1 border-l border-[var(--border-light)]">
-                <img
-                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/tdai-letter-logo.png`}
-                  alt="TDAI"
-                  className="h-8 tdai-hue opacity-80"
-                />
-              </div>
             </div>
           </div>
         </div>
