@@ -688,7 +688,7 @@ export default function Home() {
               <img
                 src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/tdai-letter-logo.png`}
                 alt="TDAI"
-                className="h-[5.5rem] tdai-hue"
+                className="h-[2.875rem] tdai-hue"
               />
             </div>
 
@@ -964,7 +964,7 @@ export default function Home() {
             <div className="lg:w-[38%] lg:pr-8 lg:border-r lg:border-[var(--border)]">
               <div className="flex items-center gap-3 mb-4">
                 <h2 className="text-3xl font-extrabold text-white tracking-tight" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>TheDayAfterAI News</h2>
-                <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/tdai-letter-logo.png`} alt="TDAI" className="h-[5.5rem] tdai-hue" />
+                <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/tdai-letter-logo.png`} alt="TDAI" className="h-[2.875rem] tdai-hue" />
               </div>
               <div className="flex items-center gap-4 mb-5">
                 <a href="https://www.facebook.com/thedayafterai" target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Facebook size={20} /></a>
