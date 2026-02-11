@@ -957,6 +957,9 @@ async function fetchTdaaiArticles() {
 
 // ── AI Market Insight custom articles ────────────────────────────────
 
+const MAX_CUSTOM_ARTICLES = 30;
+const SQSP_PAGE_SIZE = 20; // Squarespace default page size
+
 /** Try Squarespace JSON API first (fast, no Playwright needed), fall back to Playwright scraping */
 async function fetchCustomArticles() {
   console.log("Fetching AI Market Insight from thedayafterai.com...");
@@ -977,25 +980,94 @@ async function fetchCustomArticles() {
     const categoryFilter = section.categoryFilter || "";
     const slug = section.collectionSlug || `/${section.id}/`;
 
-    // ── Strategy 1: Squarespace JSON API (no Playwright needed) ──
+    // ── Strategy 1: Squarespace JSON API with pagination ──
     let articlesFromApi = [];
     try {
-      const categoryParam = categoryFilter ? `&category=${encodeURIComponent(categoryFilter)}` : "";
-      const jsonUrl = `${pageUrl}?format=json${categoryParam}`;
-      console.log(`  Trying Squarespace JSON API: ${jsonUrl}`);
-      const raw = await fetchWithRetry(jsonUrl, 2);
-      const data = JSON.parse(raw);
-      const items = data.items || data.collection?.items || [];
-      articlesFromApi = items.map((item) => {
-        const fullUrl = item.fullUrl ? `https://www.thedayafterai.com${item.fullUrl}` : "";
-        let imageUrl = item.assetUrl || "";
-        // Also check for socialImage or body image
-        if (!imageUrl && item.socialImage) imageUrl = item.socialImage;
-        let dateStr = "";
-        if (item.publishOn) { try { dateStr = new Date(item.publishOn).toISOString().split("T")[0]; } catch {} }
-        return { url: fullUrl, title: (item.title || "").replace(/&amp;/g, "&"), imageUrl, date: dateStr };
-      }).filter((a) => a.url && a.title);
-      console.log(`  Squarespace JSON API returned ${articlesFromApi.length} articles`);
+      // First try with category filter, then fallback without if too few results
+      const attempts = categoryFilter
+        ? [
+            { label: `with category "${categoryFilter}"`, param: `&category=${encodeURIComponent(categoryFilter)}` },
+            { label: "without category filter", param: "" },
+          ]
+        : [{ label: "all articles", param: "" }];
+
+      for (const attempt of attempts) {
+        articlesFromApi = [];
+        let offset = 0;
+        let hasMore = true;
+
+        while (hasMore && articlesFromApi.length < MAX_CUSTOM_ARTICLES) {
+          const jsonUrl = `${pageUrl}?format=json${attempt.param}&offset=${offset}`;
+          if (offset === 0) console.log(`  Trying Squarespace JSON API (${attempt.label}): ${jsonUrl}`);
+          const raw = await fetchWithRetry(jsonUrl, 2);
+          const data = JSON.parse(raw);
+          const items = data.items || data.collection?.items || [];
+
+          if (items.length === 0) break;
+
+          for (const item of items) {
+            const fullUrl = item.fullUrl ? `https://www.thedayafterai.com${item.fullUrl}` : "";
+            if (!fullUrl || !item.title) continue;
+
+            // Skip category/tag pages — only keep actual article URLs
+            try {
+              const urlPath = new URL(fullUrl).pathname;
+              if (urlPath.includes("/category/") || urlPath.includes("/tag/")) continue;
+            } catch { continue; }
+
+            let imageUrl = item.assetUrl || "";
+            if (!imageUrl && item.socialImage) imageUrl = item.socialImage;
+
+            // Parse publishOn — Squarespace uses epoch milliseconds
+            let dateStr = "";
+            if (item.publishOn) {
+              try {
+                const ts = typeof item.publishOn === "number" ? item.publishOn : parseInt(item.publishOn, 10);
+                const d = new Date(ts);
+                // Sanity check: year should be 2020-2030
+                if (d.getFullYear() >= 2020 && d.getFullYear() <= 2030) {
+                  dateStr = d.toISOString().split("T")[0];
+                }
+              } catch {}
+            }
+            // Fallback: try updatedOn or addedOn
+            if (!dateStr && (item.updatedOn || item.addedOn)) {
+              try {
+                const ts = item.updatedOn || item.addedOn;
+                const d = new Date(typeof ts === "number" ? ts : parseInt(ts, 10));
+                if (d.getFullYear() >= 2020 && d.getFullYear() <= 2030) {
+                  dateStr = d.toISOString().split("T")[0];
+                }
+              } catch {}
+            }
+
+            const title = (item.title || "").replace(/&amp;/g, "&").trim();
+            articlesFromApi.push({ url: fullUrl, title, imageUrl, date: dateStr });
+          }
+
+          // Check for pagination
+          const pagination = data.pagination;
+          if (pagination?.nextPage && items.length >= SQSP_PAGE_SIZE) {
+            offset += items.length;
+            hasMore = true;
+          } else {
+            hasMore = false;
+          }
+        }
+
+        console.log(`  Squarespace JSON API (${attempt.label}) returned ${articlesFromApi.length} articles`);
+        // If we got enough articles with this attempt, stop trying alternatives
+        if (articlesFromApi.length >= 3) break;
+      }
+
+      // Deduplicate by title (Squarespace sometimes returns duplicate entries)
+      const seenTitles = new Set();
+      articlesFromApi = articlesFromApi.filter((a) => {
+        const key = a.title.toLowerCase();
+        if (seenTitles.has(key)) return false;
+        seenTitles.add(key);
+        return true;
+      });
     } catch (err) {
       console.log(`  Squarespace JSON API failed: ${err.message.split("\n")[0]}`);
     }
