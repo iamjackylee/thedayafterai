@@ -971,7 +971,18 @@ async function fetchTdaaiArticles() {
 const MAX_CUSTOM_ARTICLES = 30;
 const SQSP_PAGE_SIZE = 20; // Squarespace default page size
 
-/** Try Squarespace JSON API first (fast, no Playwright needed), fall back to Playwright scraping */
+/** Fetch a Squarespace JSON API URL with browser UA (avoid bot blocking) */
+async function fetchSquarespace(url) {
+  const res = await fetch(url, {
+    headers: { "User-Agent": BROWSER_UA },
+    redirect: "follow",
+    signal: AbortSignal.timeout(15000),
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return await res.text();
+}
+
+/** Try Squarespace JSON API, RSS feed, and Playwright scraping */
 async function fetchCustomArticles() {
   console.log("Fetching AI Market Insight from thedayafterai.com...");
 
@@ -992,25 +1003,26 @@ async function fetchCustomArticles() {
     const slug = section.collectionSlug || `/${section.id}/`;
 
     // ── Strategy 1: Squarespace JSON API with pagination ──
-    let articlesFromApi = [];
-    try {
-      // First try with category filter, then fallback without if too few results
-      const attempts = categoryFilter
-        ? [
-            { label: `with category "${categoryFilter}"`, param: `&category=${encodeURIComponent(categoryFilter)}` },
-            { label: "without category filter", param: "" },
-          ]
-        : [{ label: "all articles", param: "" }];
+    // Try multiple filter combinations: category, tag, no filter
+    let bestArticles = [];
 
-      for (const attempt of attempts) {
-        articlesFromApi = [];
+    const attempts = [];
+    if (categoryFilter) {
+      attempts.push({ label: `category "${categoryFilter}"`, param: `&category=${encodeURIComponent(categoryFilter)}` });
+      attempts.push({ label: `tag "${categoryFilter}"`, param: `&tag=${encodeURIComponent(categoryFilter)}` });
+    }
+    attempts.push({ label: "no filter (all articles)", param: "" });
+
+    for (const attempt of attempts) {
+      try {
+        const thisAttempt = [];
         let offset = 0;
         let hasMore = true;
 
-        while (hasMore && articlesFromApi.length < MAX_CUSTOM_ARTICLES) {
+        while (hasMore && thisAttempt.length < MAX_CUSTOM_ARTICLES) {
           const jsonUrl = `${pageUrl}?format=json${attempt.param}&offset=${offset}`;
           if (offset === 0) console.log(`  Trying Squarespace JSON API (${attempt.label}): ${jsonUrl}`);
-          const raw = await fetchWithRetry(jsonUrl, 2);
+          const raw = await fetchSquarespace(jsonUrl);
           const data = JSON.parse(raw);
           const items = data.items || data.collection?.items || [];
 
@@ -1029,62 +1041,85 @@ async function fetchCustomArticles() {
             let imageUrl = item.assetUrl || "";
             if (!imageUrl && item.socialImage) imageUrl = item.socialImage;
 
-            // Parse publishOn — Squarespace uses epoch milliseconds
+            // Parse date — Squarespace uses epoch milliseconds
             let dateStr = "";
-            if (item.publishOn) {
+            for (const field of [item.publishOn, item.updatedOn, item.addedOn]) {
+              if (!field) continue;
               try {
-                const ts = typeof item.publishOn === "number" ? item.publishOn : parseInt(item.publishOn, 10);
+                const ts = typeof field === "number" ? field : parseInt(field, 10);
                 const d = new Date(ts);
-                // Sanity check: year should be 2020-2030
                 if (d.getFullYear() >= 2020 && d.getFullYear() <= 2030) {
                   dateStr = d.toISOString().split("T")[0];
-                }
-              } catch {}
-            }
-            // Fallback: try updatedOn or addedOn
-            if (!dateStr && (item.updatedOn || item.addedOn)) {
-              try {
-                const ts = item.updatedOn || item.addedOn;
-                const d = new Date(typeof ts === "number" ? ts : parseInt(ts, 10));
-                if (d.getFullYear() >= 2020 && d.getFullYear() <= 2030) {
-                  dateStr = d.toISOString().split("T")[0];
+                  break;
                 }
               } catch {}
             }
 
             const title = (item.title || "").replace(/&amp;/g, "&").trim();
-            articlesFromApi.push({ url: fullUrl, title, imageUrl, date: dateStr });
+            thisAttempt.push({ url: fullUrl, title, imageUrl, date: dateStr });
           }
 
-          // Check for pagination
           const pagination = data.pagination;
           if (pagination?.nextPage && items.length >= SQSP_PAGE_SIZE) {
             offset += items.length;
-            hasMore = true;
           } else {
             hasMore = false;
           }
         }
 
-        console.log(`  Squarespace JSON API (${attempt.label}) returned ${articlesFromApi.length} articles`);
-        // If we got enough articles with this attempt, stop trying alternatives
-        if (articlesFromApi.length >= 3) break;
+        console.log(`  Squarespace JSON API (${attempt.label}) returned ${thisAttempt.length} articles`);
+        // Keep the best result across all attempts
+        if (thisAttempt.length > bestArticles.length) {
+          bestArticles = thisAttempt;
+        }
+        // If we got enough, stop trying more
+        if (bestArticles.length >= 3) break;
+      } catch (err) {
+        console.log(`  Squarespace JSON API (${attempt.label}) failed: ${err.message.split("\n")[0]}`);
       }
-
-      // Deduplicate by title (Squarespace sometimes returns duplicate entries)
-      const seenTitles = new Set();
-      articlesFromApi = articlesFromApi.filter((a) => {
-        const key = a.title.toLowerCase();
-        if (seenTitles.has(key)) return false;
-        seenTitles.add(key);
-        return true;
-      });
-    } catch (err) {
-      console.log(`  Squarespace JSON API failed: ${err.message.split("\n")[0]}`);
     }
 
-    // ── Strategy 2: Playwright scraping (fallback) ──
-    if (articlesFromApi.length === 0) {
+    let articlesFromApi = bestArticles;
+
+    // ── Strategy 2: Squarespace RSS feed (alternative) ──
+    if (articlesFromApi.length < 3) {
+      console.log("  Trying Squarespace RSS feed...");
+      try {
+        const rssUrl = `${pageUrl}?format=rss`;
+        const xml = await fetchSquarespace(rssUrl);
+        const items = extractItems(xml);
+        const rssArticles = [];
+        for (const item of items) {
+          const title = (getTagContent(item, "title")[0] || "").trim();
+          const link = (getTagContent(item, "link")[0] || "").trim();
+          if (!title || !link) continue;
+          // Skip category/tag pages
+          try {
+            const urlPath = new URL(link).pathname;
+            if (urlPath.includes("/category/") || urlPath.includes("/tag/")) continue;
+          } catch { continue; }
+
+          let imageUrl = "";
+          const enclosureUrl = getTagAttr(item, "enclosure", "url");
+          if (enclosureUrl.length > 0) imageUrl = enclosureUrl[0];
+          if (!imageUrl) { const mediaUrl = getTagAttr(item, "media:content", "url"); if (mediaUrl.length > 0) imageUrl = mediaUrl[0]; }
+          const pubDate = getTagContent(item, "pubDate")[0] || "";
+          let dateStr = "";
+          if (pubDate) { try { dateStr = new Date(pubDate).toISOString().split("T")[0]; } catch {} }
+
+          rssArticles.push({ url: link, title, imageUrl, date: dateStr });
+        }
+        console.log(`  Squarespace RSS returned ${rssArticles.length} articles`);
+        if (rssArticles.length > articlesFromApi.length) {
+          articlesFromApi = rssArticles;
+        }
+      } catch (err) {
+        console.log(`  Squarespace RSS failed: ${err.message.split("\n")[0]}`);
+      }
+    }
+
+    // ── Strategy 3: Playwright scraping (fallback when API + RSS got < 3) ──
+    if (articlesFromApi.length < 3) {
       let context;
       try { context = await getPlaywrightContext(); } catch {
         console.warn("  Playwright not available, skipping.");
@@ -1141,16 +1176,17 @@ async function fetchCustomArticles() {
         }, slug);
         await page.close();
 
-        // Deduplicate
-        const seenUrls = new Set();
+        // Deduplicate against existing API/RSS results
+        const seenUrls = new Set(articlesFromApi.map(a => a.url));
+        const newFromPlaywright = [];
         for (const a of scraped) {
-          if (!seenUrls.has(a.url)) { seenUrls.add(a.url); articlesFromApi.push(a); }
+          if (!seenUrls.has(a.url)) { seenUrls.add(a.url); newFromPlaywright.push(a); articlesFromApi.push(a); }
         }
-        console.log(`  Playwright found ${articlesFromApi.length} articles matching "${slug}"`);
+        console.log(`  Playwright found ${newFromPlaywright.length} new articles (total: ${articlesFromApi.length})`);
 
-        // Fetch OG images and dates from individual article pages
-        if (articlesFromApi.length > 0) {
-          for (const article of articlesFromApi) {
+        // Fetch OG images and dates from Playwright-scraped articles only
+        if (newFromPlaywright.length > 0) {
+          for (const article of newFromPlaywright) {
             try {
               const articlePage = await context.newPage();
               await articlePage.goto(article.url, { waitUntil: "domcontentloaded", timeout: 15000 });
@@ -1182,6 +1218,14 @@ async function fetchCustomArticles() {
         console.log(`  Playwright failed: ${err.message.split("\n")[0]}`);
       }
     }
+
+    // Final deduplication by URL
+    const finalSeen = new Set();
+    articlesFromApi = articlesFromApi.filter(a => {
+      if (finalSeen.has(a.url)) return false;
+      finalSeen.add(a.url);
+      return true;
+    });
 
     if (articlesFromApi.length > 0) {
       section.articles = articlesFromApi.map((a, i) => {
