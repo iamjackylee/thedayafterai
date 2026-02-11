@@ -211,7 +211,24 @@ const CATEGORY_QUERIES = {
     "AI UAV battery range endurance flight system",
     "AI autonomous flying vehicle eVTOL air taxi",
   ],
-  "visual-art-photography": ["AI photography visual art camera image", "AI painting creative artwork gallery museum"],
+  "visual-art-photography": [
+    // Imaging Equipment — AI cameras, lenses, sensors, computational photography hardware
+    "AI camera lens sensor computational photography",
+    "AI imaging equipment mirrorless DSLR hardware",
+    "AI photo capture technology pixel image sensor",
+    // Post-Production Tools — AI editing, retouching, upscaling, colour grading software
+    "AI photo editing retouching software Photoshop",
+    "AI image upscale enhance restore colour grading",
+    "AI video editing post production visual effects",
+    // Mobile Photography — AI smartphone camera, phone photography, mobile editing apps
+    "AI smartphone camera mobile photography feature",
+    "AI phone photo app filter portrait mode",
+    "AI mobile editing Instagram TikTok content creator",
+    // Artistic Innovation — AI-generated art, digital painting, gallery exhibitions, NFT
+    "AI generated art digital painting creative visual",
+    "AI art exhibition gallery museum installation",
+    "AI artwork NFT generative design illustration",
+  ],
 };
 
 // Per-category geo priority: fetch AU news first, then international to fill remaining slots.
@@ -255,6 +272,10 @@ const CATEGORY_GEO = {
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
   "unmanned-aircraft": [
+    { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
+    { hl: "en", gl: "", ceid: "" },               // Then truly international
+  ],
+  "visual-art-photography": [
     { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
