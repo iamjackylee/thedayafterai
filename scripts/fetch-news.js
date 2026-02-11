@@ -175,7 +175,24 @@ const CATEGORY_QUERIES = {
     "AI sound design remix synthesizer beat making",
     "AI vocal clone audio deepfake music production",
   ],
-  "technology-innovation": ["AI technology innovation breakthrough", "AI chip semiconductor hardware computing software", "AI agent autonomous robot"],
+  "technology-innovation": [
+    // Hardware & Connectivity — AI chips, semiconductors, networking, 5G/6G, computing
+    "AI chip semiconductor processor GPU hardware",
+    "AI computing infrastructure data centre networking",
+    "AI connectivity 5G 6G edge computing bandwidth",
+    // Tech Startups & Entrepreneurship — AI startups, founders, accelerators, innovation
+    "AI startup founder entrepreneur innovation launch",
+    "AI accelerator incubator tech venture disrupt",
+    "AI product launch platform scale growth company",
+    // Smart & Wearable Devices — AI in wearables, glasses, headsets, consumer gadgets
+    "AI wearable device smartwatch glasses headset",
+    "AI smart gadget consumer electronics sensor",
+    "AI augmented reality virtual reality XR device",
+    // Robotics, Automation & IoT — AI robots, factory automation, smart sensors, IoT
+    "AI robot robotics humanoid autonomous machine",
+    "AI factory automation manufacturing industrial IoT",
+    "AI smart sensor connected device Internet of Things",
+  ],
   "unmanned-aircraft": ["AI drone unmanned aircraft UAV aerial", "AI quadcopter flying delivery drone"],
   "visual-art-photography": ["AI photography visual art camera image", "AI painting creative artwork gallery museum"],
 };
@@ -213,6 +230,10 @@ const CATEGORY_GEO = {
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
   "musical-art": [
+    { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
+    { hl: "en", gl: "", ceid: "" },               // Then truly international
+  ],
+  "technology-innovation": [
     { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
