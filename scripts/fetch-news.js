@@ -62,15 +62,16 @@ const CATEGORY_QUERIES = {
   "visual-art-photography": ["AI photography visual art camera image", "AI painting creative artwork gallery museum"],
 };
 
-// Per-category geo priority: fetch AU news first, then international to fill remaining slots
-// Categories not listed here default to US-only
+// Per-category geo priority: fetch AU news first, then international to fill remaining slots.
+// "International" passes omit gl/ceid so Google returns globally diverse results.
+// Categories not listed here default to international English.
 const CATEGORY_GEO = {
   "ai-academy": [
     { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
-    { hl: "en-US", gl: "US", ceid: "US:en" },   // Then international
+    { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
 };
-const DEFAULT_GEO = [{ hl: "en-US", gl: "US", ceid: "US:en" }];
+const DEFAULT_GEO = [{ hl: "en", gl: "", ceid: "" }]; // International English
 
 const CATEGORY_KEYS = Object.keys(CATEGORY_QUERIES);
 const SLOT_YOUTUBE = CATEGORY_KEYS.length;       // 11
@@ -275,7 +276,7 @@ async function fetchCategoryNews(category) {
   const seenTitles = new Set();
 
   // For multi-geo categories (e.g. ai-academy): run all queries with AU geo first,
-  // then all queries again with US geo to fill remaining slots. This ensures
+  // then all queries again with international geo to fill remaining slots. This ensures
   // Australian news is prioritised while international news fills the gaps.
   //
   // Within each geo pass, we do TWO time passes:
@@ -283,13 +284,21 @@ async function fetchCategoryNews(category) {
   //   Pass 2: no time filter — older articles to fill remaining slots
   for (const geo of geoList) {
     if (articles.length >= ARTICLES_PER_CATEGORY) break;
-    const geoLabel = geo.gl;
+    const geoLabel = geo.gl || "intl";
+
+    // Build RSS URL, omitting gl/ceid when empty (for international/worldwide results)
+    const buildRssUrl = (query) => {
+      let url = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(query)}&hl=${geo.hl}`;
+      if (geo.gl) url += `&gl=${geo.gl}`;
+      if (geo.ceid) url += `&ceid=${geo.ceid}`;
+      return url;
+    };
 
     // Pass 1: recent articles (past 7 days)
     for (const q of queries) {
       if (articles.length >= ARTICLES_PER_CATEGORY) break;
       try {
-        const rssUrl = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(q + " when:7d")}&hl=${geo.hl}&gl=${geo.gl}&ceid=${geo.ceid}`;
+        const rssUrl = buildRssUrl(q + " when:7d");
         const xml = await fetchWithRetry(rssUrl);
         const items = extractItems(xml);
         parseRssItems(items, articles, seenTitles, category);
@@ -307,7 +316,7 @@ async function fetchCategoryNews(category) {
       for (const q of queries) {
         if (articles.length >= ARTICLES_PER_CATEGORY) break;
         try {
-          const rssUrl = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(q)}&hl=${geo.hl}&gl=${geo.gl}&ceid=${geo.ceid}`;
+          const rssUrl = buildRssUrl(q);
           const xml = await fetchWithRetry(rssUrl);
           const items = extractItems(xml);
           parseRssItems(items, articles, seenTitles, category);
