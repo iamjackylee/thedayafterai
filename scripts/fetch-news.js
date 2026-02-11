@@ -414,6 +414,7 @@ function isGenericImage(url) {
     /\/logo/i, /\/favicon/i, /icon[-_]?\d+/i, /default[-_]?image/i,
     /placeholder/i, /\/avatar/i, /site[-_]?logo/i, /brand[-_]?logo/i,
     /masthead/i, /header[-_]?logo/i, /nav[-_]?logo/i, /\.ico(?:\?|$)/i,
+    /og[-_]img/i, /default[-_]?og/i, /site[-_]?default/i,
   ].some((re) => re.test(url));
 }
 
@@ -724,6 +725,7 @@ async function resolveArticles(articles) {
                 "1x1", "spacer", "badge", "brand", "masthead", "site-logo",
                 "site_logo", "header-logo", "header_logo", "nav-logo", "nav_logo",
                 ".ico", ".svg", "widget", "button", "banner-ad", "advertisement",
+                "og-img", "og_img", "default-og", "site-default",
               ].some((pat) => lower.includes(pat));
             };
 
@@ -936,12 +938,12 @@ async function fetchOgImageHttp(url) {
           const t = item["@type"];
           if (["NewsArticle","Article","BlogPosting","WebPage","ReportageNewsArticle"].includes(t)) {
             const img = item.image;
-            if (typeof img === "string" && img.startsWith("http")) return img;
+            if (typeof img === "string" && img.startsWith("http") && !isGenericImage(img)) return img;
             if (Array.isArray(img) && img.length > 0) {
               const first = typeof img[0] === "string" ? img[0] : img[0]?.url;
-              if (first && first.startsWith("http")) return first;
+              if (first && first.startsWith("http") && !isGenericImage(first)) return first;
             }
-            if (img?.url && img.url.startsWith("http")) return img.url;
+            if (img?.url && img.url.startsWith("http") && !isGenericImage(img.url)) return img.url;
           }
         }
       } catch {}
@@ -950,17 +952,17 @@ async function fetchOgImageHttp(url) {
     // 2. og:image meta tag
     const ogMatch = html.match(/<meta[^>]*property=["']og:image["'][^>]*content=["']([^"']+)["']/i)
       || html.match(/<meta[^>]*content=["']([^"']+)["'][^>]*property=["']og:image["']/i);
-    if (ogMatch?.[1] && ogMatch[1].startsWith("http")) return ogMatch[1];
+    if (ogMatch?.[1] && ogMatch[1].startsWith("http") && !isGenericImage(ogMatch[1])) return ogMatch[1];
 
     // 3. og:image:secure_url
     const ogSecure = html.match(/<meta[^>]*property=["']og:image:secure_url["'][^>]*content=["']([^"']+)["']/i)
       || html.match(/<meta[^>]*content=["']([^"']+)["'][^>]*property=["']og:image:secure_url["']/i);
-    if (ogSecure?.[1] && ogSecure[1].startsWith("http")) return ogSecure[1];
+    if (ogSecure?.[1] && ogSecure[1].startsWith("http") && !isGenericImage(ogSecure[1])) return ogSecure[1];
 
     // 4. twitter:image meta tag
     const twMatch = html.match(/<meta[^>]*name=["']twitter:image["'][^>]*content=["']([^"']+)["']/i)
       || html.match(/<meta[^>]*content=["']([^"']+)["'][^>]*name=["']twitter:image["']/i);
-    if (twMatch?.[1] && twMatch[1].startsWith("http")) return twMatch[1];
+    if (twMatch?.[1] && twMatch[1].startsWith("http") && !isGenericImage(twMatch[1])) return twMatch[1];
 
   } catch { /* timeout or network error — skip */ }
   return "";
