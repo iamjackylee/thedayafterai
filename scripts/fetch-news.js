@@ -50,7 +50,23 @@ const CATEGORY_QUERIES = {
     "AI human relationship societal impact philosophy",
     "AI governance responsibility society future",
   ],
-  "business-economy": ["AI business economy startup funding", "AI company market invest stock finance"],
+  "business-economy": [
+    // Global Economy — AI's macro impact on trade, GDP, markets, global economic shifts
+    "AI global economy trade GDP market impact",
+    "AI economic growth forecast industry disruption",
+    "AI supply chain automation global commerce",
+    // Investments & Strategies — AI funding, VC, IPO, M&A, corporate strategy
+    "AI startup funding venture capital investment",
+    "AI company IPO acquisition merger valuation",
+    "AI corporate strategy digital transformation spending",
+    // Workforce Impact — AI jobs, hiring, displacement, reskilling, future of work
+    "AI workforce jobs hiring displacement automation",
+    "AI reskilling upskilling employment future work",
+    "AI productivity remote work labour market",
+    // Company Applications — specific companies deploying AI solutions
+    "AI enterprise adoption company deploy solution",
+    "AI business application case study revenue",
+  ],
   "chatbot-development": ["AI chatbot GPT LLM OpenAI", "AI Claude Gemini language model conversational"],
   "digital-security": ["AI cybersecurity privacy digital security", "AI hack breach malware encryption"],
   "environment-science": ["AI climate environment science quantum", "AI sustainable energy physics biology discovery"],
@@ -67,6 +83,10 @@ const CATEGORY_QUERIES = {
 // Categories not listed here default to international English.
 const CATEGORY_GEO = {
   "ai-academy": [
+    { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
+    { hl: "en", gl: "", ceid: "" },               // Then truly international
+  ],
+  "business-economy": [
     { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
