@@ -50,7 +50,7 @@ function adaptFallbackVideos(vids: any[]): YouTubeVideo[] {
   }));
 }
 
-function CustomSectionRow({ section }: { section: CustomSection }) {
+function CustomSectionRow({ section, showCount }: { section: CustomSection; showCount?: boolean }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
@@ -90,6 +90,14 @@ function CustomSectionRow({ section }: { section: CustomSection }) {
             <h3 className="text-lg font-black text-white uppercase tracking-wide">
               {section.title}
             </h3>
+            {showCount && (
+              <span
+                className="text-xs font-bold px-2 py-0.5 rounded-sm"
+                style={{ backgroundColor: section.color + "20", color: section.color }}
+              >
+                {section.articles.length}
+              </span>
+            )}
             <span
               className="text-[10px] font-bold px-2 py-0.5 rounded-sm"
               style={{ backgroundColor: section.color + "20", color: section.color }}
@@ -278,7 +286,7 @@ function TdaaiSectionRow({ articles }: { articles: TdaaiArticle[] }) {
   );
 }
 
-function CategoryRow({ topic, articles, id }: { topic: typeof TOPICS[number]; articles: NewsArticle[]; id?: string }) {
+function CategoryRow({ topic, articles, id, showCount }: { topic: typeof TOPICS[number]; articles: NewsArticle[]; id?: string; showCount?: boolean }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
@@ -313,9 +321,19 @@ function CategoryRow({ topic, articles, id }: { topic: typeof TOPICS[number]; ar
           className="category-header"
           style={{ borderLeftColor: topic.color } as React.CSSProperties}
         >
-          <h3 className="text-lg font-black text-white uppercase tracking-wide">
-            {topic.label}
-          </h3>
+          <div className="flex items-center gap-3">
+            <h3 className="text-lg font-black text-white uppercase tracking-wide">
+              {topic.label}
+            </h3>
+            {showCount && (
+              <span
+                className="text-xs font-bold px-2 py-0.5 rounded-sm"
+                style={{ backgroundColor: topic.color + "20", color: topic.color }}
+              >
+                {articles.length}
+              </span>
+            )}
+          </div>
         </div>
         <div className="flex items-center gap-1">
           <button
@@ -808,6 +826,18 @@ export default function Home() {
         {/* Divider */}
         <div className="h-px bg-[var(--border-light)] mb-10" />
 
+        {/* Search results heading (only when searching) — shown above all sections */}
+        {searchQuery && (
+          <div className="mb-8">
+            <h2 className="font-display text-3xl md:text-4xl text-white mb-2">
+              &ldquo;{searchQuery}&rdquo;
+            </h2>
+            <p className="text-sm text-[var(--text-secondary)]">
+              {loadingNews ? "Searching..." : `${articles.length} results`}
+            </p>
+          </div>
+        )}
+
         {/* TheDayAfterAI.com Blog Articles Section — filtered when searching */}
         {(() => {
           const q = searchQuery.trim().toLowerCase();
@@ -823,20 +853,8 @@ export default function Home() {
           const filteredSection = q
             ? { ...section, articles: section.articles.filter((a) => a.title.toLowerCase().includes(q)) }
             : section;
-          return <CustomSectionRow key={section.id} section={filteredSection} />;
+          return <CustomSectionRow key={section.id} section={filteredSection} showCount={!!searchQuery} />;
         })}
-
-        {/* Search results heading (only when searching) */}
-        {searchQuery && (
-          <div className="mb-8">
-            <h2 className="font-display text-3xl md:text-4xl text-white mb-2">
-              &ldquo;{searchQuery}&rdquo;
-            </h2>
-            <p className="text-sm text-[var(--text-secondary)]">
-              {loadingNews ? "Searching..." : `${articles.length} results`}
-            </p>
-          </div>
-        )}
 
         {/* News Articles grouped by category - horizontal scroll rows */}
         {loadingNews ? (
@@ -847,7 +865,7 @@ export default function Home() {
         ) : groupedArticles.length > 0 ? (
           <div>
             {groupedArticles.map(({ topic, articles: groupArticles }) => (
-              <CategoryRow key={topic.id} topic={topic} articles={groupArticles.slice(0, 30)} />
+              <CategoryRow key={topic.id} topic={topic} articles={groupArticles.slice(0, 30)} showCount={!!searchQuery} />
             ))}
           </div>
         ) : (
