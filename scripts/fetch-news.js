@@ -277,61 +277,89 @@ async function fetchCategoryNews(category) {
   // For multi-geo categories (e.g. ai-academy): run all queries with AU geo first,
   // then all queries again with US geo to fill remaining slots. This ensures
   // Australian news is prioritised while international news fills the gaps.
+  //
+  // Within each geo pass, we do TWO time passes:
+  //   Pass 1: "when:7d" — articles from the past week, sorted by recency
+  //   Pass 2: no time filter — older articles to fill remaining slots
   for (const geo of geoList) {
     if (articles.length >= ARTICLES_PER_CATEGORY) break;
     const geoLabel = geo.gl;
 
+    // Pass 1: recent articles (past 7 days)
     for (const q of queries) {
       if (articles.length >= ARTICLES_PER_CATEGORY) break;
       try {
-        const rssUrl = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(q)}&hl=${geo.hl}&gl=${geo.gl}&ceid=${geo.ceid}&num=60`;
+        const rssUrl = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(q + " when:7d")}&hl=${geo.hl}&gl=${geo.gl}&ceid=${geo.ceid}`;
         const xml = await fetchWithRetry(rssUrl);
         const items = extractItems(xml);
-
-        for (const item of items) {
-          if (articles.length >= ARTICLES_PER_CATEGORY) break;
-
-          const title = getTagContent(item, "title")[0] || "";
-          if (!title || seenTitles.has(title)) continue;
-          seenTitles.add(title);
-
-          const link = getTagContent(item, "link")[0] || "";
-          const pubDate = getTagContent(item, "pubDate")[0] || "";
-          const source = getTagContent(item, "source")[0] || "Google News";
-          const rawDescription = getTagContent(item, "description")[0] || "";
-          const description = stripHtml(rawDescription);
-
-          let imageUrl = "";
-          const mediaUrls = getTagAttr(item, "media:content", "url");
-          if (mediaUrls.length > 0 && !isGenericImage(mediaUrls[0])) imageUrl = mediaUrls[0];
-          if (!imageUrl) {
-            const enclosureUrls = getTagAttr(item, "enclosure", "url");
-            if (enclosureUrls.length > 0 && !isGenericImage(enclosureUrls[0])) imageUrl = enclosureUrls[0];
-          }
-          if (!imageUrl) {
-            const decodedDesc = rawDescription.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&").replace(/&quot;/g, '"');
-            const imgMatch = decodedDesc.match(/<img[^>]+src=["']([^"']+)["']/i);
-            if (imgMatch && imgMatch[1] && !isGenericImage(imgMatch[1])) imageUrl = imgMatch[1];
-          }
-
-          articles.push({
-            id: `gn-${category}-${articles.length}`,
-            title, summary: description || title, topic: category,
-            source, date: pubDate, imageUrl: imageUrl || "", url: link,
-          });
-        }
+        parseRssItems(items, articles, seenTitles, category);
       } catch (err) {
-        console.warn(`  Failed query "${q}" [${geoLabel}]: ${err.message}`);
+        console.warn(`  Failed query "${q}" [${geoLabel}, 7d]: ${err.message}`);
       }
     }
 
     if (geoList.length > 1) {
-      console.log(`    ${geoLabel}: ${articles.length} articles so far`);
+      console.log(`    ${geoLabel} (7d): ${articles.length} articles`);
+    }
+
+    // Pass 2: no time restriction — fill remaining slots with older articles
+    if (articles.length < ARTICLES_PER_CATEGORY) {
+      for (const q of queries) {
+        if (articles.length >= ARTICLES_PER_CATEGORY) break;
+        try {
+          const rssUrl = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(q)}&hl=${geo.hl}&gl=${geo.gl}&ceid=${geo.ceid}`;
+          const xml = await fetchWithRetry(rssUrl);
+          const items = extractItems(xml);
+          parseRssItems(items, articles, seenTitles, category);
+        } catch (err) {
+          console.warn(`  Failed query "${q}" [${geoLabel}]: ${err.message}`);
+        }
+      }
+
+      if (geoList.length > 1) {
+        console.log(`    ${geoLabel} (all): ${articles.length} articles`);
+      }
     }
   }
 
   console.log(`  ${category}: ${articles.length} articles`);
   return articles;
+}
+
+// Parse RSS items into articles array (shared by time-filtered and unfiltered passes)
+function parseRssItems(items, articles, seenTitles, category) {
+  for (const item of items) {
+    if (articles.length >= ARTICLES_PER_CATEGORY) break;
+
+    const title = getTagContent(item, "title")[0] || "";
+    if (!title || seenTitles.has(title)) continue;
+    seenTitles.add(title);
+
+    const link = getTagContent(item, "link")[0] || "";
+    const pubDate = getTagContent(item, "pubDate")[0] || "";
+    const source = getTagContent(item, "source")[0] || "Google News";
+    const rawDescription = getTagContent(item, "description")[0] || "";
+    const description = stripHtml(rawDescription);
+
+    let imageUrl = "";
+    const mediaUrls = getTagAttr(item, "media:content", "url");
+    if (mediaUrls.length > 0 && !isGenericImage(mediaUrls[0])) imageUrl = mediaUrls[0];
+    if (!imageUrl) {
+      const enclosureUrls = getTagAttr(item, "enclosure", "url");
+      if (enclosureUrls.length > 0 && !isGenericImage(enclosureUrls[0])) imageUrl = enclosureUrls[0];
+    }
+    if (!imageUrl) {
+      const decodedDesc = rawDescription.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&").replace(/&quot;/g, '"');
+      const imgMatch = decodedDesc.match(/<img[^>]+src=["']([^"']+)["']/i);
+      if (imgMatch && imgMatch[1] && !isGenericImage(imgMatch[1])) imageUrl = imgMatch[1];
+    }
+
+    articles.push({
+      id: `gn-${category}-${articles.length}`,
+      title, summary: description || title, topic: category,
+      source, date: pubDate, imageUrl: imageUrl || "", url: link,
+    });
+  }
 }
 
 // ── Resolve Google URLs + fetch OG images via Playwright ───────────
@@ -666,6 +694,7 @@ async function main() {
 
     console.log("\n=== Resolving Google News URLs ===");
     await resolveArticles(allNews);
+    allNews.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
     data.news = allNews;
 
     console.log("\n=== Fetching YouTube + TDAAI RSS ===");
