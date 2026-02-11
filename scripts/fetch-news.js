@@ -476,9 +476,22 @@ async function getPlaywrightContext() {
       throw new Error("Playwright not available");
     }
   }
-  _browser = await chromium.launch({ headless: true, args: ["--no-sandbox", "--disable-setuid-sandbox"] });
+  _browser = await chromium.launch({
+    headless: true,
+    args: [
+      "--no-sandbox", "--disable-setuid-sandbox",
+      "--disable-blink-features=AutomationControlled",
+    ],
+  });
   _context = await _browser.newContext({
-    userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+    userAgent: BROWSER_UA,
+    viewport: { width: 1920, height: 1080 },
+    screen: { width: 1920, height: 1080 },
+    locale: "en-US",
+  });
+  // Hide navigator.webdriver flag — many bot detectors check this
+  await _context.addInitScript(() => {
+    Object.defineProperty(navigator, "webdriver", { get: () => false });
   });
   return _context;
 }
@@ -802,9 +815,65 @@ async function resolveArticles(articles) {
     }
   }
 
+  // ── Playwright image re-extraction for cached articles missing images ──
+  // Articles with resolved URLs but no image (cache had imageUrl:"") get another
+  // chance with the stealthier Playwright settings.
+  const needsPlaywrightImage = articles.filter((a) =>
+    (!a.imageUrl || a.imageUrl.includes("unsplash.com")) &&
+    !a.url.includes("news.google.com") && a.url.startsWith("http")
+  );
+  if (needsPlaywrightImage.length > 0) {
+    console.log(`Re-trying Playwright image extraction for ${needsPlaywrightImage.length} articles...`);
+    let pwRetryFixed = 0;
+    for (let i = 0; i < needsPlaywrightImage.length; i += PLAYWRIGHT_CONCURRENCY) {
+      const batch = needsPlaywrightImage.slice(i, i + PLAYWRIGHT_CONCURRENCY);
+      await Promise.allSettled(batch.map(async (article) => {
+        const page = await context.newPage();
+        try {
+          await page.goto(article.url, { waitUntil: "load", timeout: PLAYWRIGHT_TIMEOUT });
+          await page.waitForTimeout(1000);
+          const imgUrl = await page.evaluate(() => {
+            const isGood = (u) => u && u.startsWith("http") && ![
+              "avatar","/logo","favicon","icon","pixel","tracking","1x1","spacer",
+              "badge","brand","masthead","site-logo","site_logo",".ico",".svg",
+            ].some((p) => u.toLowerCase().includes(p));
+            // JSON-LD
+            try {
+              for (const s of document.querySelectorAll('script[type="application/ld+json"]')) {
+                const d = JSON.parse(s.textContent || "");
+                for (const item of (Array.isArray(d) ? d : d["@graph"] || [d])) {
+                  if (["NewsArticle","Article","BlogPosting","WebPage","ReportageNewsArticle"].includes(item["@type"])) {
+                    const img = item.image;
+                    if (typeof img === "string" && isGood(img)) return img;
+                    if (Array.isArray(img) && img[0]) { const f = typeof img[0] === "string" ? img[0] : img[0]?.url; if (isGood(f)) return f; }
+                    if (img?.url && isGood(img.url)) return img.url;
+                  }
+                }
+              }
+            } catch {}
+            // og:image / twitter:image
+            for (const sel of ['meta[property="og:image"]','meta[name="twitter:image"]']) {
+              const val = document.querySelector(sel)?.getAttribute("content") || "";
+              if (isGood(val)) return val;
+            }
+            return "";
+          });
+          if (imgUrl && !isGenericImage(imgUrl)) {
+            article.imageUrl = imgUrl;
+            const aid = extractArticleId(article.url) || article.url;
+            if (cache[aid]) cache[aid].imageUrl = imgUrl;
+            else cache[aid] = { url: article.url, imageUrl: imgUrl };
+            pwRetryFixed++;
+          }
+        } catch {}
+        finally { await page.close(); }
+      }));
+    }
+    console.log(`  Playwright re-extraction: ${pwRetryFixed}/${needsPlaywrightImage.length} fixed`);
+  }
+
   // ── Lightweight HTTP og:image extraction for articles still missing images ──
-  // Playwright fails on ~20% of sites (bot detection, timeouts). A simple HTTP
-  // GET + regex parse is much more reliable for extracting og:image / twitter:image
+  // A simple HTTP GET + regex parse for extracting og:image / twitter:image
   // since these meta tags are server-rendered in HTML (no JS needed).
   const stillNeedsImage = articles.filter((a) =>
     !a.imageUrl || a.imageUrl.includes("unsplash.com")
@@ -835,13 +904,22 @@ async function resolveArticles(articles) {
 }
 
 /** Lightweight og:image extraction via HTTP GET (no Playwright needed).
- *  Uses browser User-Agent to avoid bot detection. Extracts og:image,
+ *  Uses realistic browser headers to avoid bot detection. Extracts og:image,
  *  twitter:image, and JSON-LD image from raw HTML using regex. */
 async function fetchOgImageHttp(url) {
   if (!url) return "";
   try {
     const res = await fetch(url, {
-      headers: { "User-Agent": BROWSER_UA },
+      headers: {
+        "User-Agent": BROWSER_UA,
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "none",
+        "Sec-Fetch-User": "?1",
+        "Upgrade-Insecure-Requests": "1",
+      },
       redirect: "follow",
       signal: AbortSignal.timeout(10000),
     });
@@ -974,7 +1052,15 @@ const SQSP_PAGE_SIZE = 20; // Squarespace default page size
 /** Fetch a Squarespace JSON API URL with browser UA (avoid bot blocking) */
 async function fetchSquarespace(url) {
   const res = await fetch(url, {
-    headers: { "User-Agent": BROWSER_UA },
+    headers: {
+      "User-Agent": BROWSER_UA,
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+      "Accept-Language": "en-US,en;q=0.5",
+      "Sec-Fetch-Dest": "document",
+      "Sec-Fetch-Mode": "navigate",
+      "Sec-Fetch-Site": "none",
+      "Upgrade-Insecure-Requests": "1",
+    },
     redirect: "follow",
     signal: AbortSignal.timeout(15000),
   });
