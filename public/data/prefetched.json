@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-11T04:17:05.032Z",
+  "fetchedAt": "2026-02-11T05:49:25.874Z",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe",
   "news": [
     {
@@ -21,6 +21,16 @@
       "date": "Tue, 10 Feb 2026 22:57:02 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600&h=400&fit=crop&auto=format",
       "url": "https://www.trendhunter.com/amp/trends/muse-deep-sleep-boost"
+    },
+    {
+      "id": "gn-digital-security-25",
+      "title": "Cybersafety: How to protect yourself against AI scams, online fakes and frauds - consumerconnectng.com",
+      "summary": "Cybersafety: How to protect yourself against AI scams, online fakes and frauds&nbsp;&nbsp;consumerconnectng.com",
+      "topic": "digital-security",
+      "source": "consumerconnectng.com",
+      "date": "Tue, 10 Feb 2026 22:55:00 GMT",
+      "imageUrl": "https://consumerconnectng.com/wp-content/uploads/2026/02/Cybersafety-Deepfake-AI-Scam-Cybersecurity-cc-1024x563.png",
+      "url": "https://consumerconnectng.com/51701"
     },
     {
       "id": "gn-health-style-24",
@@ -53,6 +63,106 @@
       "url": "https://medicalxpress.com/news/2026-02-artificial-intelligence-tool-personalize-ovarian.html"
     },
     {
+      "id": "gn-digital-security-11",
+      "title": "Florida Grandmother Loses $200K to AI Deepfake Doctor Scam - Gadget Review",
+      "summary": "Florida Grandmother Loses $200K to AI Deepfake Doctor Scam&nbsp;&nbsp;Gadget Review",
+      "topic": "digital-security",
+      "source": "Gadget Review",
+      "date": "Tue, 10 Feb 2026 19:30:26 GMT",
+      "imageUrl": "https://www.gadgetreview.com/wp-content/uploads/GR_-PNG-Logo-01-1-scaled.png",
+      "url": "https://www.gadgetreview.com/florida-grandmother-loses-200k-to-ai-deepfake-doctor-scam"
+    },
+    {
+      "id": "gn-digital-security-46",
+      "title": "A new wave of romance scams is washing across the internet – here’s how to stay safe - The Conversation",
+      "summary": "A new wave of romance scams is washing across the internet – here’s how to stay safe&nbsp;&nbsp;The Conversation",
+      "topic": "digital-security",
+      "source": "The Conversation",
+      "date": "Tue, 10 Feb 2026 19:08:23 GMT",
+      "imageUrl": "https://images.theconversation.com/files/716464/original/file-20260205-82-yflfgo.jpg?ixlib=rb-4.1.0&rect=0%2C0%2C2121%2C1414&q=75&auto=format&w=768&h=512&fit=crop&dpr=1",
+      "url": "https://theconversation.com/a-new-wave-of-romance-scams-is-washing-across-the-internet-heres-how-to-stay-safe-274121"
+    },
+    {
+      "id": "gn-digital-security-31",
+      "title": "Love in the Age of AI - Why 2026 Romance Scams are Almost Impossible to Spot - KnowBe4 blog",
+      "summary": "Love in the Age of AI - Why 2026 Romance Scams are Almost Impossible to Spot&nbsp;&nbsp;KnowBe4 blog",
+      "topic": "digital-security",
+      "source": "KnowBe4 blog",
+      "date": "Tue, 10 Feb 2026 19:02:16 GMT",
+      "imageUrl": "https://blog.knowbe4.com/hubfs/Social%20Image%20Repository/Evangelist%20Blog%20Social%20Graphics/Evangelists-Roger%20Grimes.jpg",
+      "url": "https://blog.knowbe4.com/love-in-the-age-of-ai-why-2026-romance-scams-are-almost-impossible-to-spot"
+    },
+    {
+      "id": "gn-digital-security-43",
+      "title": "CyberheistNews Vol 16 #06 Trusted Platform but Same Old Phish: Now LinkedIn DMs Target Your Execs - KnowBe4 blog",
+      "summary": "CyberheistNews Vol 16 #06 Trusted Platform but Same Old Phish: Now LinkedIn DMs Target Your Execs&nbsp;&nbsp;KnowBe4 blog",
+      "topic": "digital-security",
+      "source": "KnowBe4 blog",
+      "date": "Tue, 10 Feb 2026 18:57:14 GMT",
+      "imageUrl": "https://blog.knowbe4.com/hubfs/CHNNewsletter_Thumbnail.png",
+      "url": "https://blog.knowbe4.com/cyberheistnews-vol-16-05-trusted-platform-but-same-old-phish-now-linkedin-dms-target-yourexecs"
+    },
+    {
+      "id": "gn-digital-security-42",
+      "title": "AI has led to industrialisation of cybercrime, says I4C CEO - The Economic Times",
+      "summary": "AI has led to industrialisation of cybercrime, says I4C CEO&nbsp;&nbsp;The Economic Times",
+      "topic": "digital-security",
+      "source": "The Economic Times",
+      "date": "Tue, 10 Feb 2026 17:31:00 GMT",
+      "imageUrl": "https://m.economictimes.com/thumb/msid-128169777,width-1200,height-900,resizemode-4,imgsize-97262/ai-has-led-to-industrialisation-of-cybercrime-says-i4c-ceo.jpg",
+      "url": "https://m.economictimes.com/tech/artificial-intelligence/ai-has-led-to-industrialisation-of-cybercrime-says-i4c-ceo/amp_articleshow/128169777.cms"
+    },
+    {
+      "id": "gn-digital-security-28",
+      "title": "Analysis: Deepfake Fraud Explodes as AI Tools Become Widely Accessible - breitbart.com",
+      "summary": "Analysis: Deepfake Fraud Explodes as AI Tools Become Widely Accessible&nbsp;&nbsp;breitbart.com",
+      "topic": "digital-security",
+      "source": "breitbart.com",
+      "date": "Tue, 10 Feb 2026 17:25:07 GMT",
+      "imageUrl": "https://media.breitbart.com/media/2026/02/deepfake-AI-in-action-640x480.jpg",
+      "url": "https://www.breitbart.com/tech/2026/02/10/analysis-deepfake-fraud-explodes-as-ai-tools-become-widely-accessible/"
+    },
+    {
+      "id": "gn-digital-security-6",
+      "title": "AI fueled massive surge in fraud losses last year, study finds - CFO Dive",
+      "summary": "AI fueled massive surge in fraud losses last year, study finds&nbsp;&nbsp;CFO Dive",
+      "topic": "digital-security",
+      "source": "CFO Dive",
+      "date": "Tue, 10 Feb 2026 17:11:48 GMT",
+      "imageUrl": "https://imgproxy.divecdn.com/SF4SvW-_COFBR58mA5NF9Yb9kwV421fNBhS9f2jR9vk/g:ce/rs:fill:1200:1200:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNjMxMDQ3NTUxXzJndFE1RDYuanBn.webp",
+      "url": "https://www.cfodive.com/news/ai-fueled-massive-surge-fraud-losses-pindrop-retail/811404/"
+    },
+    {
+      "id": "gn-digital-security-20",
+      "title": "Binance’s Yi He Warns Persistent FUD Is Eroding Crypto Market Confidence - Live Bitcoin News",
+      "summary": "Binance’s Yi He Warns Persistent FUD Is Eroding Crypto Market Confidence&nbsp;&nbsp;Live Bitcoin News",
+      "topic": "digital-security",
+      "source": "Live Bitcoin News",
+      "date": "Tue, 10 Feb 2026 16:45:29 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNeVJNdGdjeGZ4M011bGp6b3Z5WW9MOUgzUmRZQmY0OW9fY2J2MmoyZWhhQkF5YmJTS2d3M29tLTZUemh4ZHhhbmlVRXVoMTd5aGtCczRPeHpDMEliNWhtWDRIdVNyc2NiQXYxa3p5Z3pVOWRoY3pVdTk0NUJybmoyWnRjdzFSMGV5NmVFd1YtaGN0Wmk2dDJWREtIX2txT2d4YkY1N3dtZw?oc=5"
+    },
+    {
+      "id": "gn-digital-security-35",
+      "title": "Phantom Chat Feature Targeted in Fresh Bitcoin Phishing Wave: $BMIC Offers Security - TradingView",
+      "summary": "Phantom Chat Feature Targeted in Fresh Bitcoin Phishing Wave: $BMIC Offers Security&nbsp;&nbsp;TradingView",
+      "topic": "digital-security",
+      "source": "TradingView",
+      "date": "Tue, 10 Feb 2026 16:26:46 GMT",
+      "imageUrl": "https://s3.tradingview.com/news/image/newsbtc:7103b75df094b-c3e3df1c6b5ac5523058fcc982f26914-resized.webp",
+      "url": "https://www.tradingview.com/news/newsbtc:7103b75df094b:0-phantom-chat-feature-targeted-in-fresh-bitcoin-phishing-wave-bmic-offers-security/"
+    },
+    {
+      "id": "gn-digital-security-41",
+      "title": "ILOVEPOOP Toolkit Exploiting React2Shell Vulnerability to Deploy Malicious Payload - CybersecurityNews",
+      "summary": "ILOVEPOOP Toolkit Exploiting React2Shell Vulnerability to Deploy Malicious Payload&nbsp;&nbsp;CybersecurityNews",
+      "topic": "digital-security",
+      "source": "CybersecurityNews",
+      "date": "Tue, 10 Feb 2026 15:23:00 GMT",
+      "imageUrl": "https://i3.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVIdBqXIE7qmhu1SPaZIx63DN2M-vak2F6dXWZtVcrlq5fdgJ9S-O5wT60fySrqwkjCGZJJ38lSqvbWelzbQdxeU1X5Av7veCYQhXO1-CvqGIxNIGljkuYy6i8XO2NPDdRWmaL4CLqtftAhJg33LZusfyzrPMloIA-Hc8VUF0eqftEbW0XbbBTypU07LY/s16000/ILOVEPOOP%20Toolkit%20Exploiting%20React2Shell%20Vulnerability%20to%20Deploy%20Malicious%20Payload.webp?w=1600&resize=1600,900&ssl=1",
+      "url": "https://cybersecuritynews.com/ilovepoop-toolkit-exploiting-react2shell-vulnerability/"
+    },
+    {
       "id": "gn-health-style-33",
       "title": "Can AI Cure Medicine's Ills? - Psychiatric Times",
       "summary": "Can AI Cure Medicine's Ills?&nbsp;&nbsp;Psychiatric Times",
@@ -61,6 +171,26 @@
       "date": "Tue, 10 Feb 2026 15:07:24 GMT",
       "imageUrl": "https://cdn.sanity.io/images/0vv8moc6/psychtimes/d6ff733ee09ccd1a76dba5b1d9fee5bbcf98fd84-6016x4016.jpg",
       "url": "https://www.psychiatrictimes.com/view/can-ai-cure-medicine-s-ills"
+    },
+    {
+      "id": "gn-digital-security-32",
+      "title": "New scam spotted that uses a calendar invite, deepfakes of CEOs, and a troubleshooting program to create backdoors and data miners - PC Gamer",
+      "summary": "New scam spotted that uses a calendar invite, deepfakes of CEOs, and a troubleshooting program to create backdoors and data miners&nbsp;&nbsp;PC Gamer",
+      "topic": "digital-security",
+      "source": "PC Gamer",
+      "date": "Tue, 10 Feb 2026 12:37:21 GMT",
+      "imageUrl": "https://cdn.mos.cms.futurecdn.net/hYQgGNSjwjKrvyVuLEkzQM-2000-80.jpg",
+      "url": "https://www.pcgamer.com/software/ai/ai-assisted-hacking-group-hits-targets-with-a-complicated-social-engineering-scam-that-involves-deepfaked-ceos-spoofed-zoom-calls-and-a-malicious-troubleshooting-program/"
+    },
+    {
+      "id": "gn-digital-security-34",
+      "title": "AI-assisted hacking group hits targets with a… - inkl",
+      "summary": "AI-assisted hacking group hits targets with a…&nbsp;&nbsp;inkl",
+      "topic": "digital-security",
+      "source": "inkl",
+      "date": "Tue, 10 Feb 2026 12:37:21 GMT",
+      "imageUrl": "https://images.inkl.com/s3/article/lead_image/22995524/hYQgGNSjwjKrvyVuLEkzQM-1280-80.jpg",
+      "url": "https://www.inkl.com/news/ai-assisted-hacking-group-hits-targets-with-a-complicated-social-engineering-scam-that-involves-deepfaked-ceos-spoofed-zoom-calls-and-a-malicious-troubleshooting-program"
     },
     {
       "id": "gn-technology-innovation-0",
@@ -83,6 +213,16 @@
       "url": "https://www.dazeddigital.com/fashion/article/69590/1/rise-of-ai-fashion-stylist-chatgpt-openai-ralph-lauren-ask-ralph-asos"
     },
     {
+      "id": "gn-digital-security-44",
+      "title": "Valentine’s Day is coming: How vulnerable are you to AI-enabled romance scams? - UNSW Sydney",
+      "summary": "Valentine’s Day is coming: How vulnerable are you to AI-enabled romance scams?&nbsp;&nbsp;UNSW Sydney",
+      "topic": "digital-security",
+      "source": "UNSW Sydney",
+      "date": "Tue, 10 Feb 2026 09:05:14 GMT",
+      "imageUrl": "https://www.unsw.edu.au/content/dam/images/business/2026-01-newsroom/2026-01-newsroom-tinder-online-app.cropimg.width=700.crop=landscape.jpeg",
+      "url": "https://www.unsw.edu.au/newsroom/news/2026/02/valentine-s-day-is-coming--how-vulnerable-are-you-to-ai-scams"
+    },
+    {
       "id": "gn-environment-science-0",
       "title": "KIST Marks 60 Years, Eyes World-Changing Missions - 조선일보",
       "summary": "KIST Marks 60 Years, Eyes World-Changing Missions&nbsp;&nbsp;조선일보",
@@ -93,6 +233,26 @@
       "url": "https://www.chosun.com/english/industry-en/2026/02/10/2TDYCJIWV5AADLW4HBD2SLECOU/"
     },
     {
+      "id": "gn-digital-security-14",
+      "title": "Interview with HelpAge on cybercrime and online safety for senior citizens on Safer Internet Day - t2ONLINE",
+      "summary": "Interview with HelpAge on cybercrime and online safety for senior citizens on Safer Internet Day&nbsp;&nbsp;t2ONLINE",
+      "topic": "digital-security",
+      "source": "t2ONLINE",
+      "date": "Tue, 10 Feb 2026 07:42:00 GMT",
+      "imageUrl": "https://images.t2online.in/cdn-cgi/image/width=640,quality=70/https://apis.t2online.in/getImageStream/4185/1770709472055.jpg",
+      "url": "https://t2online.in/tech/interviews/interview-with-helpage-on-cybercrime-and-online-safety-for-senior-citizens-on-safer-internet-day/2003551"
+    },
+    {
+      "id": "gn-digital-security-40",
+      "title": "5 Common Cybersecurity Blind Spots in Mid-to-Large Enterprises - IT Voice Media",
+      "summary": "5 Common Cybersecurity Blind Spots in Mid-to-Large Enterprises&nbsp;&nbsp;IT Voice Media",
+      "topic": "digital-security",
+      "source": "IT Voice Media",
+      "date": "Tue, 10 Feb 2026 07:41:14 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop&auto=format",
+      "url": "https://www.itvoice.in/5-common-cybersecurity-blind-spots-in-mid-to-large-enterprises"
+    },
+    {
       "id": "gn-health-style-37",
       "title": "AI reads brain MRIs in seconds and flags emergencies - ScienceDaily",
       "summary": "AI reads brain MRIs in seconds and flags emergencies&nbsp;&nbsp;ScienceDaily",
@@ -101,6 +261,16 @@
       "date": "Tue, 10 Feb 2026 06:05:48 GMT",
       "imageUrl": "https://www.sciencedaily.com/images/1920/futuristic-red-digital-brain.webp",
       "url": "https://www.sciencedaily.com/releases/2026/02/260210005419.htm"
+    },
+    {
+      "id": "gn-digital-security-39",
+      "title": "AI Becomes A Weapon as Cyberattacks Jump 18% Globally In 2025 - ciol.com",
+      "summary": "AI Becomes A Weapon as Cyberattacks Jump 18% Globally In 2025&nbsp;&nbsp;ciol.com",
+      "topic": "digital-security",
+      "source": "ciol.com",
+      "date": "Tue, 10 Feb 2026 06:00:37 GMT",
+      "imageUrl": "https://img-cdn.publive.online/fit-in/1200x675/filters:format(webp)/ciol/media/media_files/2026/02/09/06-02-5-2026-02-09-18-03-35.png",
+      "url": "https://www.ciol.com/news/ai-powered-cybercrime-deepfake-fraud-ransomware-check-point-report-11090502"
     },
     {
       "id": "gn-health-style-41",
@@ -123,6 +293,26 @@
       "url": "https://www.trendhunter.com/amp/trends/food-wise-pal"
     },
     {
+      "id": "gn-digital-security-29",
+      "title": "Australians turn to AI for love as dating scams surge - SecurityBrief Australia",
+      "summary": "Australians turn to AI for love as dating scams surge&nbsp;&nbsp;SecurityBrief Australia",
+      "topic": "digital-security",
+      "source": "SecurityBrief Australia",
+      "date": "Tue, 10 Feb 2026 01:00:00 GMT",
+      "imageUrl": "https://securitybrief.com.au/uploads/story/2026/02/10/compatible_cinematic-aussie-youth-ai-companion-dating-scam-shadows-night.jpg",
+      "url": "https://securitybrief.com.au/story/australians-turn-to-ai-for-love-as-dating-scams-surge"
+    },
+    {
+      "id": "gn-digital-security-30",
+      "title": "'Deepfake' AI is making romance scams more sophisticated than ever - 9News.com.au",
+      "summary": "'Deepfake' AI is making romance scams more sophisticated than ever&nbsp;&nbsp;9News.com.au",
+      "topic": "digital-security",
+      "source": "9News.com.au",
+      "date": "Mon, 09 Feb 2026 23:41:55 GMT",
+      "imageUrl": "https://imageresizer.static9.net.au/0-ugSNOI8AHV-CjBH1F07ruX3uA=/0x424:4032x2692/750x422/https%3A%2F%2Fprod.static9.net.au%2Ffs%2F8efd665c-3673-4a98-824c-cbea82c000df",
+      "url": "https://www.9news.com.au/national/romance-scam-ai-intimacy-romance-scams-more-sophisticated-than-ever-technology-news/3136643f-ebd1-40cf-bd5a-f29887f33bbc"
+    },
+    {
       "id": "gn-health-style-44",
       "title": "Can medical AI lie? Large study maps how LLMs handle health misinformation - Medical Xpress",
       "summary": "Can medical AI lie? Large study maps how LLMs handle health misinformation&nbsp;&nbsp;Medical Xpress",
@@ -131,6 +321,16 @@
       "date": "Mon, 09 Feb 2026 23:30:05 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600&h=400&fit=crop&auto=format",
       "url": "https://medicalxpress.com/news/2026-02-medical-ai-large-llms-health.html"
+    },
+    {
+      "id": "gn-digital-security-16",
+      "title": "Binance’s CZ and Yi He Star in AI-Generated Deepfake Dramas Flooding Crypto Twitter - BeInCrypto",
+      "summary": "Binance’s CZ and Yi He Star in AI-Generated Deepfake Dramas Flooding Crypto Twitter&nbsp;&nbsp;BeInCrypto",
+      "topic": "digital-security",
+      "source": "BeInCrypto",
+      "date": "Mon, 09 Feb 2026 22:47:00 GMT",
+      "imageUrl": "https://assets.beincrypto.com/img/H_S7Qnl0SI51gKhr3cE0HKKwOjs=/smart/2b2fab55c9a945c29d4a7b6e75e49b5a",
+      "url": "https://beincrypto.com/binance-cz-yi-he-ai-deepfake-videos-crypto-twitter/"
     },
     {
       "id": "gn-health-style-40",
@@ -181,6 +381,16 @@
       "date": "Mon, 09 Feb 2026 17:09:04 GMT",
       "imageUrl": "https://news.unl.edu/sites/default/files/styles/lead_image_teaser/public/media/images/220929_Cupola_139_0_1_1_0_0_0.jpg?itok=drJr9JDN",
       "url": "https://news.unl.edu/article/university-of-nebraska-launches-ai-institute-to-lead-in-ethical-innovation-research-and"
+    },
+    {
+      "id": "gn-digital-security-24",
+      "title": "Cybersecurity threats in Ghana: A comprehensive analysis - MyJoyOnline",
+      "summary": "Cybersecurity threats in Ghana: A comprehensive analysis&nbsp;&nbsp;MyJoyOnline",
+      "topic": "digital-security",
+      "source": "MyJoyOnline",
+      "date": "Mon, 09 Feb 2026 17:02:02 GMT",
+      "imageUrl": "https://www.myjoyonline.com/wp-content/uploads/2026/02/cyber.jpeg",
+      "url": "https://www.myjoyonline.com/cybersecurity-threats-in-ghana-a-comprehensive-analysis-2/"
     },
     {
       "id": "gn-health-style-27",
@@ -253,6 +463,16 @@
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNTJDVDlscjVneVR4QlpSeUc1WTNhdndKcTBCLXMzMmhBclQ4RE0wajNQVGgybVMyQ2Q5dW5XdGNVRGtwRm95NmFsTDE3N3VPNUpYYjlBYkFoa1Vpb3hnTzBkMzl6V0U3T2VoLTFOZDYyVzVIeVZ1cTRGNEdjWmpfWl9ZYkpFSmszWnh5OU9XR0tLRmw2azJJZEUzSkIzLVhlWFZ6cE92aGxGS3NpQkdiSzAyVTI1QQ?oc=5"
     },
     {
+      "id": "gn-digital-security-21",
+      "title": "Tech scams increase during Tet (Lunar New Year), users need to pay attention to the '3 Don'ts - 2 Musts' principle to protect themselves from risks. - Việt Báo",
+      "summary": "Tech scams increase during Tet (Lunar New Year), users need to pay attention to the '3 Don'ts - 2 Musts' principle to protect themselves from risks.&nbsp;&nbsp;Việt Báo",
+      "topic": "digital-security",
+      "source": "Việt Báo",
+      "date": "Mon, 09 Feb 2026 09:34:01 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=400&fit=crop&auto=format",
+      "url": "https://vietbao.vn/en/lua-dao-cong-nghe-gia-tang-dip-tet-nguoi-dung-can-chu-trong-nguyen-tac-3-khong-2-phai-de-de-phong-rui-ro-cho-minh-581542.html"
+    },
+    {
       "id": "gn-health-style-12",
       "title": "AI Is Redefining Personalisation in Valentine’s Economy - The Economic Times",
       "summary": "AI Is Redefining Personalisation in Valentine’s Economy&nbsp;&nbsp;The Economic Times",
@@ -283,6 +503,26 @@
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1uVWxCSXNVNnZHNDRhOEVZZVVQYUh3WDAxYnpnV3VyTHMwdU1tQ0NwOFhJWG83SUFKZXEtUDFHanMzUm1JRjgtSjhGaHdYUlJiaEIwWUhub2JEcWYzaWJmcGZhdEwzNE5iLXhyVk130gFyQVVfeXFMUGlFc25KMHR4aXdTaHFYMTBoaW9SNU9uREgzVDNUV2VPRmNSX3ZMTzctbVF6ZU9TZ1EtNHRPTlNrWWhUeGVmelFhbEdRWDdjcmxIbFZHY2FIZDEwWVUzT3RuZ1hDLVdydFRUbm5hVWdwcnRn?oc=5"
     },
     {
+      "id": "gn-digital-security-47",
+      "title": "AI romance scams: How to stay safe this Valentine's Day - moneymag.com.au",
+      "summary": "AI romance scams: How to stay safe this Valentine's Day&nbsp;&nbsp;moneymag.com.au",
+      "topic": "digital-security",
+      "source": "moneymag.com.au",
+      "date": "Mon, 09 Feb 2026 02:42:00 GMT",
+      "imageUrl": "https://media.moneymag.com.au/prod/media/library/Money_Mag/2026/02._February/AI-romance-scams-How-to-stay-safe-this-Valentines-Day-0001.jpg",
+      "url": "https://www.moneymag.com.au/ai-romance-scams-valentines-day"
+    },
+    {
+      "id": "gn-digital-security-3",
+      "title": "AI Romance Scams Surge, Banks Warn Pre-Valentine's - Mirage News",
+      "summary": "AI Romance Scams Surge, Banks Warn Pre-Valentine's&nbsp;&nbsp;Mirage News",
+      "topic": "digital-security",
+      "source": "Mirage News",
+      "date": "Sun, 08 Feb 2026 21:42:00 GMT",
+      "imageUrl": "https://cdn1.miragenews.com/tmp_cache?cdn=cdn.pixabay.com%2Fphoto%2F2016%2F01%2F14%2F06%2F09%2Fwoman-1139397_640.jpg",
+      "url": "https://www.miragenews.com/ai-romance-scams-surge-banks-warn-pre-valentines-1615812/"
+    },
+    {
       "id": "gn-health-style-26",
       "title": "20+ Best Gemini &amp; ChatGPT Prompts for Health and Fitness (2026 Guide) - TechMitra",
       "summary": "20+ Best Gemini & ChatGPT Prompts for Health and Fitness (2026 Guide)&nbsp;&nbsp;TechMitra",
@@ -303,14 +543,74 @@
       "url": "https://www.city-journal.org/article/health-care-insurance-costs-medical-services"
     },
     {
-      "id": "gn-digital-security-0",
-      "title": "Viral AI caricature trend raises privacy concerns, cyber security expert explains - KWTX",
-      "summary": "Viral AI caricature trend raises privacy concerns, cyber security expert explains&nbsp;&nbsp;KWTX",
+      "id": "gn-digital-security-19",
+      "title": "Under-reporting masks scale of ransomware crisis, ESET warn - MSN",
+      "summary": "Under-reporting masks scale of ransomware crisis, ESET warn&nbsp;&nbsp;MSN",
       "topic": "digital-security",
-      "source": "KWTX",
-      "date": "Sat, 07 Feb 2026 01:43:00 GMT",
-      "imageUrl": "https://gray-kwtx-prod.gtv-cdn.com/resizer/v2/4ZCD4G3ZQBHHHEUEREHF7JOO7Y.bmp?auth=8f66fc00ec8120e86ee22d586dc25fdca6013c9ad25a35334f1afdc8332d8a6e&width=1200&height=600&smart=true",
-      "url": "https://www.kwtx.com/2026/02/07/viral-ai-caricature-trend-raises-privacy-concerns-cyber-security-expert-explains/"
+      "source": "MSN",
+      "date": "Sun, 08 Feb 2026 10:16:38 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=400&fit=crop&auto=format",
+      "url": "https://www.msn.com/en-xl/africa/kenya/under-reporting-masks-scale-of-ransomware-crisis-eset-warn/ar-AA1VRaRY"
+    },
+    {
+      "id": "gn-digital-security-7",
+      "title": "Recruiters must beware of deepfake scams amidst Grok AI controversy - The HR Director",
+      "summary": "Recruiters must beware of deepfake scams amidst Grok AI controversy&nbsp;&nbsp;The HR Director",
+      "topic": "digital-security",
+      "source": "The HR Director",
+      "date": "Sat, 07 Feb 2026 13:41:16 GMT",
+      "imageUrl": "https://www.thehrdirector.com/wp-content/uploads/2026/02/tommy-van-kessel-_tnkR2gu3kw-unsplash-scaled.jpg",
+      "url": "https://www.thehrdirector.com/business-news/recruitment/recruiters-must-beware-deepfake-scams-amidst-grok-ai-controversy/"
+    },
+    {
+      "id": "gn-digital-security-18",
+      "title": "AI, Digital Revolution: Now Formidable Tools For Identity Fraud - aljazirahnews.com",
+      "summary": "AI, Digital Revolution: Now Formidable Tools For Identity Fraud&nbsp;&nbsp;aljazirahnews.com",
+      "topic": "digital-security",
+      "source": "aljazirahnews.com",
+      "date": "Sat, 07 Feb 2026 10:22:22 GMT",
+      "imageUrl": "https://aljazirahnews.com/wp-content/uploads/2026/02/fingerprint-identity-verification-ART_STOCK_CREATIVE-shutterstock.jpg",
+      "url": "https://aljazirahnews.com/ai-digital-revolution-now-formidable-tools-for-identity-fraud/"
+    },
+    {
+      "id": "gn-digital-security-33",
+      "title": "Fugitive Crypto Scam Kingpin Gets 20 Years for $73 Million ‘Pig Butchering’ Scam - Bitdefender",
+      "summary": "Fugitive Crypto Scam Kingpin Gets 20 Years for $73 Million ‘Pig Butchering’ Scam&nbsp;&nbsp;Bitdefender",
+      "topic": "digital-security",
+      "source": "Bitdefender",
+      "date": "Sat, 07 Feb 2026 08:00:00 GMT",
+      "imageUrl": "https://blogapp.bitdefender.com/hotforsecurity/content/images/2026/02/chart-4.jpg",
+      "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/fugitive-crypto-scam-kingpin-20-years-73-million-pig-butchering-scam"
+    },
+    {
+      "id": "gn-digital-security-15",
+      "title": "Warning about deepfake scams using fake voices and impersonations of acquaintances during Tet (Lunar New Year). - Việt Báo",
+      "summary": "Warning about deepfake scams using fake voices and impersonations of acquaintances during Tet (Lunar New Year).&nbsp;&nbsp;Việt Báo",
+      "topic": "digital-security",
+      "source": "Việt Báo",
+      "date": "Sat, 07 Feb 2026 04:35:01 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=400&fit=crop&auto=format",
+      "url": "https://vietbao.vn/en/canh-bao-lua-dao-deepfake-gia-giong-gia-hinh-nguoi-quen-dip-tet-581362.html"
+    },
+    {
+      "id": "gn-digital-security-23",
+      "title": "Under-reporting masks scale of ransomware crisis, ESET warn - the-star.co.ke",
+      "summary": "Under-reporting masks scale of ransomware crisis, ESET warn&nbsp;&nbsp;the-star.co.ke",
+      "topic": "digital-security",
+      "source": "the-star.co.ke",
+      "date": "Sat, 07 Feb 2026 03:30:00 GMT",
+      "imageUrl": "https://cdn.radioafrica.digital/image/2026/02/fd909414-3350-48a5-abed-06ed55910155.jpg",
+      "url": "https://www.the-star.co.ke/business/2026-02-07-under-reporting-masks-scale-of-ransomware-crisis-eset-warn"
+    },
+    {
+      "id": "gn-digital-security-45",
+      "title": "AI is helping banks save millions by transforming payment fraud prevention - mastercard.com",
+      "summary": "AI is helping banks save millions by transforming payment fraud prevention&nbsp;&nbsp;mastercard.com",
+      "topic": "digital-security",
+      "source": "mastercard.com",
+      "date": "Sat, 07 Feb 2026 01:16:33 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600&h=400&fit=crop&auto=format",
+      "url": "https://www.mastercard.com/global/en/news-and-trends/Insights/2026/ai-is-helping-banks-save-millions-by-transforming-payment-fraud-prevention.html"
     },
     {
       "id": "gn-health-style-20",
@@ -333,6 +633,26 @@
       "url": "https://www.insideprecisionmedicine.com/topics/precision-medicine/ai-that-reads-brain-mris-in-seconds-could-transform-neurologic-care/"
     },
     {
+      "id": "gn-digital-security-8",
+      "title": "Staying on Guard Against the Growing Use of Deepfakes - PaymentsJournal",
+      "summary": "Staying on Guard Against the Growing Use of Deepfakes&nbsp;&nbsp;PaymentsJournal",
+      "topic": "digital-security",
+      "source": "PaymentsJournal",
+      "date": "Fri, 06 Feb 2026 19:30:00 GMT",
+      "imageUrl": "https://b2161880.smushcdn.com/2161880/wp-content/uploads/2018/04/deep-web-1106648_1280-750x375.jpg?lossy=1&strip=1&webp=1",
+      "url": "https://www.paymentsjournal.com/staying-on-guard-against-the-growing-use-of-deepfakes/"
+    },
+    {
+      "id": "gn-digital-security-48",
+      "title": "AI-Generated Fraud Forces Banks to Rethink Identity Verification - ACA International",
+      "summary": "AI-Generated Fraud Forces Banks to Rethink Identity Verification&nbsp;&nbsp;ACA International",
+      "topic": "digital-security",
+      "source": "ACA International",
+      "date": "Fri, 06 Feb 2026 19:01:28 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=400&fit=crop&auto=format",
+      "url": "https://www.acainternational.org/news/ai-generated-fraud-forces-banks-to-rethink-identity-verification/"
+    },
+    {
       "id": "gn-ai-academy-2",
       "title": "A new AI commission at UW considers research and learning applications - Wyoming Public Media",
       "summary": "A new AI commission at UW considers research and learning applications&nbsp;&nbsp;Wyoming Public Media",
@@ -351,6 +671,16 @@
       "date": "Fri, 06 Feb 2026 14:34:07 GMT",
       "imageUrl": "https://storage.googleapis.com/accesswire/featureimages/1133901/.webp",
       "url": "https://www.accessnewswire.com/newsroom/en/healthcare-and-pharmaceutical/medical-care-technologies-inc.-otc-pink-mdce-is-building-an-ai-wellne-1133901"
+    },
+    {
+      "id": "gn-digital-security-5",
+      "title": "Deepfake fraud goes industrial: How AI scams are scaling globally in 2026 - The News International",
+      "summary": "Deepfake fraud goes industrial: How AI scams are scaling globally in 2026&nbsp;&nbsp;The News International",
+      "topic": "digital-security",
+      "source": "The News International",
+      "date": "Fri, 06 Feb 2026 13:48:00 GMT",
+      "imageUrl": "https://www.thenews.com.pk/assets/uploads/2026-02-06/1391321_064826_updates.jpg",
+      "url": "https://www.thenews.com.pk/latest/1391321-deepfake-fraud-goes-industrial-how-ai-scams-are-scaling-globally-in-2026"
     },
     {
       "id": "gn-health-style-32",
@@ -373,6 +703,16 @@
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdE1MbDNSVFE4LWhmak0xcGs2WDF3a0owaVRkQjVZRXF5OHdVakdYRXVLYW9FWDhsaU1jcHpBWGh4bG9IcUEteDE5am11UzdKNE1BZmhmbzh6RTBBR3gzQUQxcmhIX2wtakpud0dnT2dtVTZHMDlsSW1iOWQ5NExMczlQN2gySURHcWtSYnl4ZmFMLXY0NHlnbko5M2llNGI3ZGYw?oc=5"
     },
     {
+      "id": "gn-digital-security-36",
+      "title": "8 Online Scams Everyone Falls For and How to Spot Them Before Losing Money - Tech Times",
+      "summary": "8 Online Scams Everyone Falls For and How to Spot Them Before Losing Money&nbsp;&nbsp;Tech Times",
+      "topic": "digital-security",
+      "source": "Tech Times",
+      "date": "Fri, 06 Feb 2026 11:03:09 GMT",
+      "imageUrl": "https://d.techtimes.com/en/full/462575/person-holding-card.jpg?w=1600&h=900&q=88&f=780e862e8be13cbbce5f720ba89226e9",
+      "url": "https://www.techtimes.com/articles/314510/20260206/8-online-scams-everyone-falls-how-spot-them-before-losing-money.htm"
+    },
+    {
       "id": "gn-health-style-17",
       "title": "GCC Footwear Market: Insights into Changing Consumer Preferences and Fashion Trends - vocal.media",
       "summary": "GCC Footwear Market: Insights into Changing Consumer Preferences and Fashion Trends&nbsp;&nbsp;vocal.media",
@@ -381,6 +721,16 @@
       "date": "Fri, 06 Feb 2026 10:13:51 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=400&fit=crop&auto=format",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVnZvVW41d093ek95SVNNeGpVSzhtbzF3YkJSQ0xVUlM0NHBGNGRuTDhiNFdENkx6dTVEUDZpYmtfZEMzOTI1MkFSUDA4U2FQS0pST0lrQjE0SDRnM01jd2lTZk5Wdi1mSERxazhzd3FCTWREVHQ5alJidlFJOXFHTWsybGFuNTB2UWtsVkloTTNyOHNpVmpSZWI3aXRuVERDa29lcUdjeFU2SC00T3JfRA?oc=5"
+    },
+    {
+      "id": "gn-digital-security-0",
+      "title": "Deepfake fraud taking place on an industrial scale, study finds - The Guardian",
+      "summary": "Deepfake fraud taking place on an industrial scale, study finds&nbsp;&nbsp;The Guardian",
+      "topic": "digital-security",
+      "source": "The Guardian",
+      "date": "Fri, 06 Feb 2026 09:10:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=400&fit=crop&auto=format",
+      "url": "https://www.theguardian.com/technology/2026/feb/06/deepfake-taking-place-on-an-industrial-scale-study-finds"
     },
     {
       "id": "gn-health-style-13",
@@ -423,6 +773,16 @@
       "url": "https://autogpt.net/top-ai-outfit-generator-tools/"
     },
     {
+      "id": "gn-digital-security-26",
+      "title": "ESET Threat Report: Deepfake scams and AI co-generated malware among key cyber risks for Kenya - Bizna Kenya",
+      "summary": "ESET Threat Report: Deepfake scams and AI co-generated malware among key cyber risks for Kenya&nbsp;&nbsp;Bizna Kenya",
+      "topic": "digital-security",
+      "source": "Bizna Kenya",
+      "date": "Fri, 06 Feb 2026 06:37:59 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTTVxUDcxNm9tdEtZT1JtdVU1Z1RYUjJLbHVoeFVKNEdYeF9PdHJ6NHZNRDBSZXZSMEpVUHB3U3FwVEJNdGR6MDhJSWU2QkVnQTlkaHBMRXBJam5XS1Y3dVpnOV9oMkhiNWg3eWtHUjFybW5oR2lDM3MwR1VTZEVQSl9tNjBPelNETjZ0bF9mX2VpZm1sYUw3Yi1CQXFQYnF0RjFOYVdQaDRvLThKbGdTVEprU0RZRTBs?oc=5"
+    },
+    {
       "id": "gn-health-style-39",
       "title": "Evaluation of the Management of Chronic Rhinosinusitis at the National University Hospital Center of Fann 5-Year Review - SCIRP Open Access",
       "summary": "Evaluation of the Management of Chronic Rhinosinusitis at the National University Hospital Center of Fann 5-Year Review&nbsp;&nbsp;SCIRP Open Access",
@@ -443,6 +803,26 @@
       "url": "https://medicalxpress.com/news/2026-02-powerful-ai-substance-disorder-treatment.html"
     },
     {
+      "id": "gn-digital-security-1",
+      "title": "Upcover adds deepfake cover to cyber insurance in Australia - SecurityBrief Australia",
+      "summary": "Upcover adds deepfake cover to cyber insurance in Australia&nbsp;&nbsp;SecurityBrief Australia",
+      "topic": "digital-security",
+      "source": "SecurityBrief Australia",
+      "date": "Thu, 05 Feb 2026 21:30:00 GMT",
+      "imageUrl": "https://securitybrief.com.au/uploads/story/2026/02/05/compatible_Anish_Sinha.jpg",
+      "url": "https://securitybrief.com.au/story/upcover-adds-deepfake-cover-to-cyber-insurance-in-australia"
+    },
+    {
+      "id": "gn-digital-security-17",
+      "title": "Geopolitical OSINT Threat Assessment Report (GOTAR): AI-Driven Cyber Threats and Risks in 2026 – Agentic AI, Ransomware, APT Convergence and Geopolitical Escalation Vectors - https://debuglies.com",
+      "summary": "Geopolitical OSINT Threat Assessment Report (GOTAR): AI-Driven Cyber Threats and Risks in 2026 – Agentic AI, Ransomware, APT Convergence and Geopolitical Escalation Vectors&nbsp;&nbsp;https://debuglies.com",
+      "topic": "digital-security",
+      "source": "https://debuglies.com",
+      "date": "Thu, 05 Feb 2026 20:25:10 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop&auto=format",
+      "url": "https://debuglies.com/2026/02/05/geopolitical-osint-threat-assessment-report-gotar-ai-driven-cyber-threats-and-risks-in-2026-agentic-ai-ransomware-apt-convergence-and-geopolitical-escalation-vectors/"
+    },
+    {
       "id": "gn-unmanned-aircraft-0",
       "title": "7 Best Drone Stocks to Buy for 2026 - US News Money",
       "summary": "7 Best Drone Stocks to Buy for 2026&nbsp;&nbsp;US News Money",
@@ -451,6 +831,26 @@
       "date": "Thu, 05 Feb 2026 20:15:00 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=400&fit=crop&auto=format",
       "url": "chrome-error://chromewebdata/"
+    },
+    {
+      "id": "gn-digital-security-9",
+      "title": "Government leads global fight against deepfake threats - GOV.UK",
+      "summary": "Government leads global fight against deepfake threats&nbsp;&nbsp;GOV.UK",
+      "topic": "digital-security",
+      "source": "GOV.UK",
+      "date": "Thu, 05 Feb 2026 15:00:31 GMT",
+      "imageUrl": "https://assets.publishing.service.gov.uk/media/6984ab142880fa17a26c7df9/s960_Laptop_hands_-_Getty__GOV.UK_use_only_.jpg",
+      "url": "https://www.gov.uk/government/news/government-leads-global-fight-against-deepfake-threats"
+    },
+    {
+      "id": "gn-digital-security-22",
+      "title": "ESET Report: AI-Generated Malware and Deep fakes Surges in Kenya - TechTrendsKE",
+      "summary": "ESET Report: AI-Generated Malware and Deep fakes Surges in Kenya&nbsp;&nbsp;TechTrendsKE",
+      "topic": "digital-security",
+      "source": "TechTrendsKE",
+      "date": "Thu, 05 Feb 2026 13:40:37 GMT",
+      "imageUrl": "https://techtrendske.co.ke/wp-content/uploads/2023/04/cyber-criminals.png",
+      "url": "https://techtrendske.co.ke/2026/02/05/eset-report-ai-generated-malware-and-deep-fakes-surges-in-kenya/"
     },
     {
       "id": "gn-health-style-0",
@@ -463,6 +863,16 @@
       "url": "https://www.goodhousekeeping.com/uk/product-reviews/tech/g684175/best-activity-tracker/"
     },
     {
+      "id": "gn-digital-security-4",
+      "title": "Deepfake Scams, AI Malware Raise Cyber Risks In Kenya - CIO Africa",
+      "summary": "Deepfake Scams, AI Malware Raise Cyber Risks In Kenya&nbsp;&nbsp;CIO Africa",
+      "topic": "digital-security",
+      "source": "CIO Africa",
+      "date": "Thu, 05 Feb 2026 12:06:13 GMT",
+      "imageUrl": "https://cioafrica.co/wp-content/uploads/2026/02/sjiw.jpg",
+      "url": "https://cioafrica.co/deepfake-scams-ai-malware-raise-cyber-risks-in-kenya/"
+    },
+    {
       "id": "gn-health-style-18",
       "title": "The Top 7 Online Shopping Categories by Revenue (2026) - Shopify",
       "summary": "The Top 7 Online Shopping Categories by Revenue (2026)&nbsp;&nbsp;Shopify",
@@ -471,6 +881,16 @@
       "date": "Thu, 05 Feb 2026 11:03:45 GMT",
       "imageUrl": "https://cdn.shopify.com/s/files/1/0070/7032/articles/online-shopping-categories-global_cef5e02c-e651-4fa9-ae13-96477f87a3d4.png?v=1770271288",
       "url": "https://www.shopify.com/blog/top-online-shopping-categories"
+    },
+    {
+      "id": "gn-digital-security-49",
+      "title": "'This is an arms race': Banks cope with AI-faked documents - American Banker",
+      "summary": "'This is an arms race': Banks cope with AI-faked documents&nbsp;&nbsp;American Banker",
+      "topic": "digital-security",
+      "source": "American Banker",
+      "date": "Thu, 05 Feb 2026 11:00:00 GMT",
+      "imageUrl": "https://arizent.brightspotcdn.com/a2/a1/f0592f8e4999a71a91b407fa883d/fake-receipt.jpg",
+      "url": "https://www.americanbanker.com/news/this-is-an-arms-race-banks-cope-with-ai-faked-documents"
     },
     {
       "id": "gn-health-style-14",
@@ -491,6 +911,16 @@
       "date": "Thu, 05 Feb 2026 10:41:48 GMT",
       "imageUrl": "https://cdn.open-pr.com/L/2/L205587436_g.jpg",
       "url": "https://www.openpr.com/news/4377971/ai-powered-nutrigenomics-market-the-era"
+    },
+    {
+      "id": "gn-digital-security-12",
+      "title": "What Are Practical Security Steps for Managing Online Finances and Crypto Wallet - Bitget",
+      "summary": "What Are Practical Security Steps for Managing Online Finances and Crypto Wallet&nbsp;&nbsp;Bitget",
+      "topic": "digital-security",
+      "source": "Bitget",
+      "date": "Thu, 05 Feb 2026 10:23:06 GMT",
+      "imageUrl": "https://img.bgstatic.com/multiLang/web/90aff60de10490cad1f9a31996a92254.png",
+      "url": "https://www.bitget.com/es-ES/academy/12560603850246"
     },
     {
       "id": "gn-health-style-28",
@@ -543,6 +973,16 @@
       "url": "https://www.cureus.com/articles/455293-the-use-of-artificial-intelligence-in-improving-diagnostic-modalities-in-rheumatoid-arthritis-a-narrative-review"
     },
     {
+      "id": "gn-digital-security-13",
+      "title": "Scammers use AI voice cloning to make fraudulent payments - which.co.uk",
+      "summary": "Scammers use AI voice cloning to make fraudulent payments&nbsp;&nbsp;which.co.uk",
+      "topic": "digital-security",
+      "source": "which.co.uk",
+      "date": "Thu, 05 Feb 2026 00:05:45 GMT",
+      "imageUrl": "https://media.product.which.co.uk/prod/images/ar_1to1_300x300/50f49c1a8590-unknown-number.jpg",
+      "url": "https://www.which.co.uk/news/article/beware-of-survey-phone-scams-a3SEH9I5fwuD"
+    },
+    {
       "id": "gn-health-style-49",
       "title": "A New Revolution in Lung Cancer Diagnosis: High-Speed, Low-Cost AI Technology - The Morning Voice",
       "summary": "A New Revolution in Lung Cancer Diagnosis: High-Speed, Low-Cost AI Technology&nbsp;&nbsp;The Morning Voice",
@@ -551,6 +991,26 @@
       "date": "Thu, 05 Feb 2026 00:03:55 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=400&fit=crop&auto=format",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOenJBVUhBeUhLSlpBS3M2MG1lRjdhVGN2UUZyNlFHV2tsckZjR0RsbGJLOVVGcnJSOEsxRmhLZ1puWTdyNEp6b1hoWUt1SVZiSW8yWEpseHpJZE5wSmVjcGVabk5VT0pXa2JPa0xsR3d2SWZNa3hCSUEwY2VaQWFFak1GZnNQX1JfR0RSQnhNNkg3SjlBaTdoU2lBbllpV2RMWE96WDFsQlNPTWJuXzY5T1pR?oc=5"
+    },
+    {
+      "id": "gn-digital-security-37",
+      "title": "Beyond Connected [Ep. 17] This deepfake romance scam cost $80,000 - Kurt the CyberGuy",
+      "summary": "Beyond Connected [Ep. 17] This deepfake romance scam cost $80,000&nbsp;&nbsp;Kurt the CyberGuy",
+      "topic": "digital-security",
+      "source": "Kurt the CyberGuy",
+      "date": "Wed, 04 Feb 2026 19:54:57 GMT",
+      "imageUrl": "https://cyberguy.com/wp-content/uploads/2026/02/Screenshot-2026-02-02-at-12.41.19-PM.jpg",
+      "url": "https://cyberguy.com/podcast/beyond-connected-episode-17/"
+    },
+    {
+      "id": "gn-digital-security-2",
+      "title": "Don't Let AI Scammers Steal Your Tax Refund: 7 Steps for Safe Online Filing - PCMag Australia",
+      "summary": "Don't Let AI Scammers Steal Your Tax Refund: 7 Steps for Safe Online Filing&nbsp;&nbsp;PCMag Australia",
+      "topic": "digital-security",
+      "source": "PCMag Australia",
+      "date": "Wed, 04 Feb 2026 19:26:52 GMT",
+      "imageUrl": "https://i.pcmag.com/imagery/articles/05Z4HJVBRDnDNDlgpno2jTt-1..v1740689621.jpg",
+      "url": "https://www.pcmag.com/explainers/dont-let-ai-scammers-steal-your-tax-refund-7-steps-for-safe-online-filing?test_uuid=04IpBmWGZleS0I0J3epvMrC&test_variant=A"
     },
     {
       "id": "gn-health-style-29",
@@ -571,6 +1031,26 @@
       "date": "Wed, 04 Feb 2026 16:30:38 GMT",
       "imageUrl": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/1a4e42e1-61fc-43de-a141-9d4834bff1f6/Rendition/low-res/Content/Public",
       "url": "https://www.eurekalert.org/news-releases/1115209"
+    },
+    {
+      "id": "gn-digital-security-38",
+      "title": "The most popular cyberattack in South Africa - htxt.co.za",
+      "summary": "The most popular cyberattack in South Africa&nbsp;&nbsp;htxt.co.za",
+      "topic": "digital-security",
+      "source": "htxt.co.za",
+      "date": "Wed, 04 Feb 2026 12:55:54 GMT",
+      "imageUrl": "https://htxt.co.za/wp-content/uploads/2021/12/phishing-6573326_960_720.jpg",
+      "url": "https://htxt.co.za/2026/02/the-most-popular-cyberattack-in-south-africa/"
+    },
+    {
+      "id": "gn-digital-security-10",
+      "title": "[Ep. 17] Deepfake romance scam cost her mother $80,000 and her home - Beyond Connected - iHeart",
+      "summary": "[Ep. 17] Deepfake romance scam cost her mother $80,000 and her home - Beyond Connected&nbsp;&nbsp;iHeart",
+      "topic": "digital-security",
+      "source": "iHeart",
+      "date": "Wed, 04 Feb 2026 10:41:15 GMT",
+      "imageUrl": "https://i.iheart.com/v3/url/aHR0cHM6Ly9zdGF0aWMubGlic3luLmNvbS9wL2Fzc2V0cy80L2EvZS9lLzRhZWVkYzFhNTI1MjUyMjYxNmMzMTQwYTMxODZkNDUwL2JjLXNxdWFyZS5wbmc?ops=contain(1200,630)",
+      "url": "https://www.iheart.com/podcast/1333-beyond-connected-300952913/episode/ep-17-deepfake-romance-scam-cost-320914974/"
     },
     {
       "id": "gn-health-style-31",
@@ -603,6 +1083,16 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNak9MUEJUbWxIUVE4ZUtFelBmUFZhTTJJbWRicEkwNVc4bmhYaUUySmo1d2hWQ0kycEVRM3g2N3FqNVNlR2w1Ynd0c2t0cFN3RXI4N0R1ekJ4dXd2TmRXQTVUYkd1MjB3aUVKdkNLYXdGYmlKTTdudUx6Y1RZRG1uY1ZGYXVld3JCbEo4X09VZVJ1bS1G?oc=5"
     },
     {
+      "id": "gn-digital-security-27",
+      "title": "Indians get 13 scam messages daily, AI and deepfake boosting scams - digit.in",
+      "summary": "Indians get 13 scam messages daily, AI and deepfake boosting scams&nbsp;&nbsp;digit.in",
+      "topic": "digital-security",
+      "source": "digit.in",
+      "date": "Wed, 04 Feb 2026 07:19:00 GMT",
+      "imageUrl": "https://static.digit.in/india-scam-report-mcafee-deepfake-ai.png",
+      "url": "https://www.digit.in/features/general/indians-get-13-scam-messages-daily-ai-and-deepfake-boosting-scams.html"
+    },
+    {
       "id": "gn-ai-academy-6",
       "title": "AI research at Carolina - The University of North Carolina at Chapel Hill",
       "summary": "AI research at Carolina&nbsp;&nbsp;The University of North Carolina at Chapel Hill",
@@ -611,16 +1101,6 @@
       "date": "Tue, 03 Feb 2026 08:00:00 GMT",
       "imageUrl": "https://www.unc.edu/wp-content/uploads/2024/06/AI_ChatBot_1600x900.png",
       "url": "https://www.unc.edu/story/ai-research-at-carolina/"
-    },
-    {
-      "id": "gn-digital-security-8",
-      "title": "2026 cyber security outlook: federated CISOs, agentic AI, privacy squeeze - Beinsure",
-      "summary": "2026 cyber security outlook: federated CISOs, agentic AI, privacy squeeze&nbsp;&nbsp;Beinsure",
-      "topic": "digital-security",
-      "source": "Beinsure",
-      "date": "Mon, 02 Feb 2026 08:00:00 GMT",
-      "imageUrl": "https://beinsure.com/wp-content/uploads/2025/12/3-21.jpg",
-      "url": "https://beinsure.com/news/cyber-security-outlook-federated-cisos-agentic-ai/"
     },
     {
       "id": "gn-ai-academy-5",
@@ -711,16 +1191,6 @@
       "date": "Wed, 21 Jan 2026 08:00:00 GMT",
       "imageUrl": "https://media.nature.com/lw1200/magazine-assets/d41586-026-00188-6/d41586-026-00188-6_51944098.jpg",
       "url": "https://www.nature.com/articles/d41586-026-00188-6"
-    },
-    {
-      "id": "gn-digital-security-1",
-      "title": "The Role AI Plays in Data Privacy - Cybersecurity Insiders",
-      "summary": "The Role AI Plays in Data Privacy&nbsp;&nbsp;Cybersecurity Insiders",
-      "topic": "digital-security",
-      "source": "Cybersecurity Insiders",
-      "date": "Tue, 20 Jan 2026 08:00:00 GMT",
-      "imageUrl": "https://www.cybersecurity-insiders.com/wp-content/uploads/AI-2.png",
-      "url": "https://www.cybersecurity-insiders.com/the-role-ai-plays-in-data-privacy/"
     },
     {
       "id": "gn-business-economy-29",
@@ -831,16 +1301,6 @@
       "date": "Fri, 09 Jan 2026 08:00:00 GMT",
       "imageUrl": "https://news.columbia.edu/sites/news.columbia.edu/files/content/2026/thinker-columbia-campus.jpeg",
       "url": "https://news.columbia.edu/news/empire-ai-columbia-university-collaboration-gets-google-gift-ai-education"
-    },
-    {
-      "id": "gn-digital-security-3",
-      "title": "Research: Conventional Cybersecurity Won’t Protect Your AI - Harvard Business Review",
-      "summary": "Research: Conventional Cybersecurity Won’t Protect Your AI&nbsp;&nbsp;Harvard Business Review",
-      "topic": "digital-security",
-      "source": "Harvard Business Review",
-      "date": "Fri, 09 Jan 2026 08:00:00 GMT",
-      "imageUrl": "/resources/images/article_assets/2026/01/Jan26_09_139555442.jpg",
-      "url": "https://hbr.org/2026/01/ts-research-conventional-cybersecurity-wont-protect-your-ai"
     },
     {
       "id": "gn-technology-innovation-12",
@@ -1011,16 +1471,6 @@
       "date": "Mon, 08 Dec 2025 08:00:00 GMT",
       "imageUrl": "https://www.uri.edu/news/wp-content/uploads/news/sites/16/2025/12/Advanced-Robotics_Robot-Dance.jpg",
       "url": "https://www.uri.edu/news/2025/12/uris-use-of-artificial-intelligence-in-research-teaching-and-innovation-on-display-at-discovering-ai-uri-day/"
-    },
-    {
-      "id": "gn-digital-security-5",
-      "title": "Cybersecurity Pundits: 2025 List Of Industry Experts - Cybercrime Magazine",
-      "summary": "Cybersecurity Pundits: 2025 List Of Industry Experts&nbsp;&nbsp;Cybercrime Magazine",
-      "topic": "digital-security",
-      "source": "Cybercrime Magazine",
-      "date": "Sun, 07 Dec 2025 08:00:00 GMT",
-      "imageUrl": "https://cybersecurityventures.com/wp-content/uploads/2024/05/punditsphoto.jpg",
-      "url": "https://cybersecurityventures.com/top-30-cybersecurity-experts-you-should-follow-in-2021/"
     },
     {
       "id": "gn-environment-science-1",
@@ -1493,16 +1943,6 @@
       "url": "https://www.gov.uk/government/news/new-blueprint-for-ai-regulation-could-speed-up-planning-approvals-slash-nhs-waiting-times-and-drive-growth-and-public-trust"
     },
     {
-      "id": "gn-digital-security-13",
-      "title": "The National Strategy for Artificial Intelligence - Regjeringen.no",
-      "summary": "The National Strategy for Artificial Intelligence&nbsp;&nbsp;Regjeringen.no",
-      "topic": "digital-security",
-      "source": "Regjeringen.no",
-      "date": "Tue, 21 Oct 2025 00:35:20 GMT",
-      "imageUrl": "https://www.regjeringen.no/dist-web/img/regjeringen_opengraph_image1200x630.jpg",
-      "url": "https://www.regjeringen.no/en/documents/nasjonal-strategi-for-kunstig-intelligens/id2685594/?ch=7"
-    },
-    {
       "id": "gn-ai-academy-9",
       "title": "How AI is transforming academic research - University of Miami",
       "summary": "How AI is transforming academic research&nbsp;&nbsp;University of Miami",
@@ -1603,16 +2043,6 @@
       "url": "https://www.businessinsider.com/chatgpt-users-openai-sam-altman-devday-llm-artificial-intelligence-2025-10"
     },
     {
-      "id": "gn-digital-security-15",
-      "title": "2026 Global Digital Trust Insights | C-suite playbook and findings - PwC Australia",
-      "summary": "2026 Global Digital Trust Insights | C-suite playbook and findings&nbsp;&nbsp;PwC Australia",
-      "topic": "digital-security",
-      "source": "PwC Australia",
-      "date": "Wed, 08 Oct 2025 07:00:00 GMT",
-      "imageUrl": "https://www.pwc.com.au/cyber/dti-2026-thumbnail.jpg",
-      "url": "https://www.pwc.com.au/cyber-security-digital-trust/global-digital-trust-insights.html"
-    },
-    {
       "id": "gn-unmanned-aircraft-19",
       "title": "Ukraine’s Raybird UAV Gains French AI Upgrade for Next-Gen Missions - The Defense Post",
       "summary": "Ukraine’s Raybird UAV Gains French AI Upgrade for Next-Gen Missions&nbsp;&nbsp;The Defense Post",
@@ -1631,26 +2061,6 @@
       "date": "Mon, 06 Oct 2025 07:00:00 GMT",
       "imageUrl": "https://courier.unesco.org/sites/default/files/styles/best_image/article/2025-10/COU_4_25_IDEE_WEB.jpg.webp?itok=SU6irA31",
       "url": "https://courier.unesco.org/en/articles/artificial-intelligence-and-art-decisive-moment"
-    },
-    {
-      "id": "gn-digital-security-6",
-      "title": "New world, new rules: Cybersecurity in an era of uncertainty - The C-suite playbook - PwC",
-      "summary": "New world, new rules: Cybersecurity in an era of uncertainty - The C-suite playbook&nbsp;&nbsp;PwC",
-      "topic": "digital-security",
-      "source": "PwC",
-      "date": "Wed, 01 Oct 2025 07:00:00 GMT",
-      "imageUrl": "https://www.pwc.com/us/en/services/consulting/cybersecurity-risk-regulatory/library/assets/dti-2026-hero-page-properties.jpeg",
-      "url": "https://www.pwc.com/us/en/services/consulting/cybersecurity-risk-regulatory/library/global-digital-trust-insights.html"
-    },
-    {
-      "id": "gn-digital-security-23",
-      "title": "AI Tops Cybersecurity Investment Priorities, PwC Finds - Infosecurity Magazine",
-      "summary": "AI Tops Cybersecurity Investment Priorities, PwC Finds&nbsp;&nbsp;Infosecurity Magazine",
-      "topic": "digital-security",
-      "source": "Infosecurity Magazine",
-      "date": "Wed, 01 Oct 2025 07:00:00 GMT",
-      "imageUrl": "https://assets.infosecurity-magazine.com/webpage/og/e400758c-03e0-4acc-ab77-74071ec5456d.jpg",
-      "url": "https://www.infosecurity-magazine.com/news/ai-cybersecurity-investment-pwc/"
     },
     {
       "id": "gn-environment-science-20",
@@ -1773,16 +2183,6 @@
       "url": "https://www.cmu.edu/news/stories/archives/2025/september/bny-and-carnegie-mellon-university-join-forces-to-advance-ai-education-and-research"
     },
     {
-      "id": "gn-digital-security-9",
-      "title": "AI agents are coming for your privacy, warns Meredith Whittaker - The Economist",
-      "summary": "AI agents are coming for your privacy, warns Meredith Whittaker&nbsp;&nbsp;The Economist",
-      "topic": "digital-security",
-      "source": "The Economist",
-      "date": "Tue, 09 Sep 2025 07:00:00 GMT",
-      "imageUrl": "https://www.economist.com/content-assets/images/20250913_BID001.jpg",
-      "url": "https://www.economist.com/by-invitation/2025/09/09/ai-agents-are-coming-for-your-privacy-warns-meredith-whittaker"
-    },
-    {
       "id": "gn-technology-innovation-2",
       "title": "Artificial intelligence. Economic and financial stakes in a technological breakthrough - fondapol.org",
       "summary": "Artificial intelligence. Economic and financial stakes in a technological breakthrough&nbsp;&nbsp;fondapol.org",
@@ -1881,16 +2281,6 @@
       "date": "Fri, 22 Aug 2025 07:00:00 GMT",
       "imageUrl": "https://fastcdn.impakter.com/wp-content/uploads/2025/08/46753932291_1d1f643ccb_o-2-e1755874694341.jpg",
       "url": "https://impakter.com/quantum-computing-and-climate-change/"
-    },
-    {
-      "id": "gn-digital-security-4",
-      "title": "The rise of AI in cybersecurity: Finding the right balance between security and privacy - IAPP",
-      "summary": "The rise of AI in cybersecurity: Finding the right balance between security and privacy&nbsp;&nbsp;IAPP",
-      "topic": "digital-security",
-      "source": "IAPP",
-      "date": "Wed, 20 Aug 2025 07:00:00 GMT",
-      "imageUrl": "https://images.contentstack.io/v3/assets/bltd4dd5b2d705252bc/blt73aca9c270a7cf2a/68a36c57d48ec66d8e0b3602/light-motherboard-blue-ai-073025.jpg",
-      "url": "https://iapp.org/news/a/the-rise-of-ai-in-cybersecurity-finding-the-right-balance-between-security-and-privacy"
     },
     {
       "id": "gn-chatbot-development-25",
@@ -2153,16 +2543,6 @@
       "url": "https://www.cambridge.org/core/journals/environmental-data-science/article/opportunities-and-challenges-of-quantum-computing-for-climate-modeling/E6201BB7466B863020039A6D354D6579"
     },
     {
-      "id": "gn-digital-security-2",
-      "title": "AI in Cybersecurity: How AI is Changing Threat Defense - iSchool | Syracuse University",
-      "summary": "AI in Cybersecurity: How AI is Changing Threat Defense&nbsp;&nbsp;iSchool | Syracuse University",
-      "topic": "digital-security",
-      "source": "iSchool | Syracuse University",
-      "date": "Sun, 20 Jul 2025 07:00:00 GMT",
-      "imageUrl": "https://ischool.syracuse.edu/wp-content/uploads/ai-in-cybersecurity-1024x683.png",
-      "url": "https://ischool.syracuse.edu/ai-in-cybersecurity/"
-    },
-    {
       "id": "gn-business-economy-6",
       "title": "From poker chips to computer chips: High-tech startups signal change to Nevada economy - Las Vegas Review-Journal",
       "summary": "From poker chips to computer chips: High-tech startups signal change to Nevada economy&nbsp;&nbsp;Las Vegas Review-Journal",
@@ -2353,16 +2733,6 @@
       "url": "https://www.investopedia.com/what-is-chatgpt-7094342"
     },
     {
-      "id": "gn-digital-security-7",
-      "title": "AI security issues dominate corporate worries, spending - Cybersecurity Dive",
-      "summary": "AI security issues dominate corporate worries, spending&nbsp;&nbsp;Cybersecurity Dive",
-      "topic": "digital-security",
-      "source": "Cybersecurity Dive",
-      "date": "Thu, 26 Jun 2025 07:00:00 GMT",
-      "imageUrl": "https://imgproxy.divecdn.com/-SrSFxj-sfVFl_4AIbw9W4sxCSIiH2SLSmu2Gy9wrik/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMDE2MzQzNzUyLmpwZw==.webp",
-      "url": "https://www.cybersecuritydive.com/news/artificial-intelligence-security-spending-reports/751685/"
-    },
-    {
       "id": "gn-chatbot-development-17",
       "title": "Claude vs. ChatGPT: How do they compare? - TechTarget",
       "summary": "Claude vs. ChatGPT: How do they compare?&nbsp;&nbsp;TechTarget",
@@ -2473,16 +2843,6 @@
       "url": "https://eurasianet.org/armenia-achieves-ai-breakthrough-in-efforts-to-establish-innovation-hub"
     },
     {
-      "id": "gn-digital-security-10",
-      "title": "India's Security Leaders Struggle to Keep Up With Threats - Dark Reading | Security",
-      "summary": "India's Security Leaders Struggle to Keep Up With Threats&nbsp;&nbsp;Dark Reading | Security",
-      "topic": "digital-security",
-      "source": "Dark Reading | Security",
-      "date": "Tue, 10 Jun 2025 07:00:00 GMT",
-      "imageUrl": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/bltfca654cca07ed972/684897323a70e249fdc89ce8/map-of-india-as-1s-0s-Vladimir_Tyurin-shutterstock.jpg?disable=upscale&width=1200&height=630&fit=crop",
-      "url": "https://www.darkreading.com/cybersecurity-operations/india-security-leaders-struggle-threats"
-    },
-    {
       "id": "gn-visual-art-photography-2",
       "title": "How the invention of photography transformed art without exploiting its creators as AI does today - Milwaukee Independent",
       "summary": "How the invention of photography transformed art without exploiting its creators as AI does today&nbsp;&nbsp;Milwaukee Independent",
@@ -2571,16 +2931,6 @@
       "date": "Thu, 22 May 2025 07:00:00 GMT",
       "imageUrl": "https://news.ufl.edu/media/newsufledu/images/2025/HempvVarietyWife1.jpg",
       "url": "https://news.ufl.edu/2025/05/drones-ai-help-farmers-save-money/"
-    },
-    {
-      "id": "gn-digital-security-14",
-      "title": "AI drives cyber strategies, security execs say - Cybersecurity Dive",
-      "summary": "AI drives cyber strategies, security execs say&nbsp;&nbsp;Cybersecurity Dive",
-      "topic": "digital-security",
-      "source": "Cybersecurity Dive",
-      "date": "Wed, 21 May 2025 07:00:00 GMT",
-      "imageUrl": "https://imgproxy.divecdn.com/y5JXVDTjCpM0eU89Q8pToHA8pYR_eSLyyKm7wYnn3Bw/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xMzk1NTQ3NTk1LmpwZw==.webp",
-      "url": "https://www.cybersecuritydive.com/news/ai-security-risks-executives-survey/748664/"
     },
     {
       "id": "gn-business-economy-14",
@@ -2683,16 +3033,6 @@
       "url": "https://www.uc.edu/news/articles/2025/04/tech-pioneers-predict-future-breakthroughs-in-ai-and-quantum.html"
     },
     {
-      "id": "gn-digital-security-11",
-      "title": "Cybersecurity in the AI Era: Evolve Faster Than the Threats or Get Left Behind - The Hacker News",
-      "summary": "Cybersecurity in the AI Era: Evolve Faster Than the Threats or Get Left Behind&nbsp;&nbsp;The Hacker News",
-      "topic": "digital-security",
-      "source": "The Hacker News",
-      "date": "Mon, 14 Apr 2025 07:00:00 GMT",
-      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeD_Go0-P2r9ZkoAeR0UShRywqcDzY4f6VJWwVM-miZzuPD_Ly-umcUVZ7OszqmjLusFBCUUkW_NdNCG6ADWKmSCNjyWwBnSlEiLONWrUDaRHrbnr5QZXLAGnolom_hc9L-ZQ_xuM16z4XrXsa3ZBDQEWyODARQwjZTPZbgVIEQoDwy9E-4Df91Lb2cAE/s1700-e365/ai-hacker.jpg",
-      "url": "https://thehackernews.com/2025/04/cybersecurity-in-ai-era-evolve-faster.html"
-    },
-    {
       "id": "gn-business-economy-2",
       "title": "How founders are shaping the future of startups with AI - weforum.org",
       "summary": "How founders are shaping the future of startups with AI&nbsp;&nbsp;weforum.org",
@@ -2721,16 +3061,6 @@
       "date": "Tue, 08 Apr 2025 07:00:00 GMT",
       "imageUrl": "https://images.theconversation.com/files/660029/original/file-20250407-62-ed0p5a.png?ixlib=rb-4.1.0&rect=0%2C321%2C2560%2C1280&q=45&auto=format&w=1356&h=668&fit=crop",
       "url": "https://theconversation.com/chatgpt-just-passed-the-turing-test-but-that-doesnt-mean-ai-is-now-as-smart-as-humans-253946"
-    },
-    {
-      "id": "gn-digital-security-12",
-      "title": "Enterprises beef up cybersecurity plans to mitigate AI risks - CIO Dive",
-      "summary": "Enterprises beef up cybersecurity plans to mitigate AI risks&nbsp;&nbsp;CIO Dive",
-      "topic": "digital-security",
-      "source": "CIO Dive",
-      "date": "Fri, 28 Mar 2025 07:00:00 GMT",
-      "imageUrl": "https://imgproxy.divecdn.com/dbPoSPyFOH5v1iVYyth4NGjByDBv6dguHfI0c0vsEpI/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTY0NjI3MTg0LmpwZw==.webp",
-      "url": "https://www.ciodive.com/news/enterprise-cybersecurity-AI-risk-strategy-shift-report/743755/"
     },
     {
       "id": "gn-business-economy-16",
@@ -2863,16 +3193,6 @@
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbmVTZnFIUy1fZkZlYXhIanhLbHg1TUdETXBVc0UtQWlvSEowOWJVRjRzbHQtSUljYVRIUDY5ZDhoV2ttc0JwLXFFUzdlbTZRU0F6SldVckx2OGlrNkc3WlAwTWRzV0hMTjhYMWktd3NkZjg3TUVHU1p0OXdRN0tkSktwUUdjRzhTTlBQVEtrU1lnSTNHRERoVWI0aDFmaTI0TmhaMlpXUm1mNXY4?oc=5"
     },
     {
-      "id": "gn-digital-security-16",
-      "title": "Federal government announces latest National Cyber Security Strategy - Norton Rose Fulbright",
-      "summary": "Federal government announces latest National Cyber Security Strategy&nbsp;&nbsp;Norton Rose Fulbright",
-      "topic": "digital-security",
-      "source": "Norton Rose Fulbright",
-      "date": "Mon, 17 Feb 2025 08:00:00 GMT",
-      "imageUrl": "https://www.nortonrosefulbright.com/-/media/images/nrf/thought-leadership/canada/publications/technology-innovation-data-security-locks-keyboard.jpg?revision=d10c3e6f-12c5-4d0a-a4cb-1bd48ba7fd11&revision=5248910870367387904",
-      "url": "https://www.nortonrosefulbright.com/en/knowledge/publications/3c1a5c2f/federal-government-announces-latest-national-cyber-security-strategy"
-    },
-    {
       "id": "gn-environment-science-17",
       "title": "NSF invests $63 million in STEM research traineeships - National Science Foundation (.gov)",
       "summary": "NSF invests $63 million in STEM research traineeships&nbsp;&nbsp;National Science Foundation (.gov)",
@@ -2883,16 +3203,6 @@
       "url": "https://www.nsf.gov/funding/initiatives/nrt/nsf-invests-63-million-stem-research-traineeships"
     },
     {
-      "id": "gn-digital-security-17",
-      "title": "UK Publishes AI Cyber Security Code of Practice and Implementation Guide - Hunton Andrews Kurth LLP",
-      "summary": "UK Publishes AI Cyber Security Code of Practice and Implementation Guide&nbsp;&nbsp;Hunton Andrews Kurth LLP",
-      "topic": "digital-security",
-      "source": "Hunton Andrews Kurth LLP",
-      "date": "Thu, 06 Feb 2025 08:00:00 GMT",
-      "imageUrl": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/assets/images-t1770743053/206510.png",
-      "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/uk-publishes-ai-cyber-security-code-of-practice-and-implementation-guide"
-    },
-    {
       "id": "gn-governance-politics-24",
       "title": "Risks of State-Led AI Governance in a Federal Policy Vacuum - Tech Policy Press",
       "summary": "Risks of State-Led AI Governance in a Federal Policy Vacuum&nbsp;&nbsp;Tech Policy Press",
@@ -2901,16 +3211,6 @@
       "date": "Thu, 06 Feb 2025 08:00:00 GMT",
       "imageUrl": "https://cdn.sanity.io/images/3tzzh18d/production/2fb6feaf4564568b801981d1a61ca206310d3ff8-1200x675.png",
       "url": "https://www.techpolicy.press/risks-of-state-led-ai-governance-in-a-federal-policy-vacuum/"
-    },
-    {
-      "id": "gn-digital-security-24",
-      "title": "Cyber security implications of DeepSeek’s open-source AI model | Cyber Security Hub - Cyber Security Hub",
-      "summary": "Cyber security implications of DeepSeek’s open-source AI model | Cyber Security Hub&nbsp;&nbsp;Cyber Security Hub",
-      "topic": "digital-security",
-      "source": "Cyber Security Hub",
-      "date": "Mon, 03 Feb 2025 08:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.cshub.com/threat-defense/articles/cyber-security-implications-deepseek-ai"
     },
     {
       "id": "gn-governance-politics-29",
@@ -2941,36 +3241,6 @@
       "date": "Tue, 21 Jan 2025 08:00:00 GMT",
       "imageUrl": "https://www.inria.fr/sites/default/files/styles/image_social/public/2025-01/A-Inria-plantnet-1826.jpg?itok=VmE4jJVn",
       "url": "https://www.inria.fr/en/AI-how-researchers-environmental-challenges"
-    },
-    {
-      "id": "gn-digital-security-29",
-      "title": "Cybersecurity and AI: What does 2025 have in store? - WeLiveSecurity",
-      "summary": "Cybersecurity and AI: What does 2025 have in store?&nbsp;&nbsp;WeLiveSecurity",
-      "topic": "digital-security",
-      "source": "WeLiveSecurity",
-      "date": "Wed, 15 Jan 2025 08:00:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSnBBYUtMVWFrV3hXQmc4bjlaWVpfT3NwZVg3OWg0ZjJUX3FRQVZtXzRqbHItYUlwZWF5czVNeXFCZ2VJQm42OVZzMDItdmRxVFRmZFpFb1U4Um9xelNzc2k4V1FSZUZZRW93VkI5ejNvTjlXc2h3VHdyRDF6dVFtRmw0b1E1OW85SmptNDU5OA?oc=5"
-    },
-    {
-      "id": "gn-digital-security-19",
-      "title": "AI trends for 2025: Data privacy and cybersecurity - Dentons",
-      "summary": "AI trends for 2025: Data privacy and cybersecurity&nbsp;&nbsp;Dentons",
-      "topic": "digital-security",
-      "source": "Dentons",
-      "date": "Fri, 10 Jan 2025 08:00:00 GMT",
-      "imageUrl": "https://www.dentons.com/-/media/images/website/background-images/other/global-ai/adobestock_371042741-1900x1500.ashx",
-      "url": "https://www.dentons.com/en/insights/articles/2025/january/10/ai-trends-for-2025-data-privacy-and-cybersecurity"
-    },
-    {
-      "id": "gn-digital-security-21",
-      "title": "How will rules and regulations affect cybersecurity and AI in 2025? - SC Media",
-      "summary": "How will rules and regulations affect cybersecurity and AI in 2025?&nbsp;&nbsp;SC Media",
-      "topic": "digital-security",
-      "source": "SC Media",
-      "date": "Thu, 02 Jan 2025 08:00:00 GMT",
-      "imageUrl": "https://files.cyberriskalliance.com/wp-content/uploads/2024/12/123024_compliance_regulations.jpg",
-      "url": "https://www.scworld.com/feature/how-will-rules-and-regulations-affect-cybersecurity-and-ai-in-2025"
     },
     {
       "id": "gn-governance-politics-27",
@@ -3063,16 +3333,6 @@
       "url": "https://quantumzeitgeist.com/quantum-computing-in-climate-modeling-and-environmental-science/"
     },
     {
-      "id": "gn-digital-security-26",
-      "title": "2025 Cyber Security Predictions – The Rise of AI-Driven Attacks, Quantum Threats, and Social Media Exploit ... - Check Point Blog",
-      "summary": "2025 Cyber Security Predictions – The Rise of AI-Driven Attacks, Quantum Threats, and Social Media Exploit ...&nbsp;&nbsp;Check Point Blog",
-      "topic": "digital-security",
-      "source": "Check Point Blog",
-      "date": "Mon, 28 Oct 2024 07:00:00 GMT",
-      "imageUrl": "https://blog.checkpoint.com/wp-content/uploads/2024/05/blog-template-2000x700-copy.jpg",
-      "url": "https://blog.checkpoint.com/security/2025-cyber-security-predictions-the-rise-of-ai-driven-attacks-quantum-threats-and-social-media-exploitation/"
-    },
-    {
       "id": "gn-visual-art-photography-27",
       "title": "As A.I. Becomes Harder to Detect, Photography Is Having a Renaissance (Published 2024) - The New York Times",
       "summary": "As A.I. Becomes Harder to Detect, Photography Is Having a Renaissance (Published 2024)&nbsp;&nbsp;The New York Times",
@@ -3131,16 +3391,6 @@
       "date": "Wed, 25 Sep 2024 18:22:21 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&h=400&fit=crop&auto=format",
       "url": "https://cyber.fsi.stanford.edu/content/regulating-under-uncertainty-governance-options-generative-ai"
-    },
-    {
-      "id": "gn-digital-security-25",
-      "title": "Data privacy concerns swirl around generative AI adoption - Cybersecurity Dive",
-      "summary": "Data privacy concerns swirl around generative AI adoption&nbsp;&nbsp;Cybersecurity Dive",
-      "topic": "digital-security",
-      "source": "Cybersecurity Dive",
-      "date": "Wed, 25 Sep 2024 07:00:00 GMT",
-      "imageUrl": "https://imgproxy.divecdn.com/_9WYTnVY_jlwozTn8VwERxSKZupfcBrXaa59RiJAsAI/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNzcwNjgzNzEwX1pxV0RYZ2guanBn.webp",
-      "url": "https://www.cybersecuritydive.com/news/deloitte-generative-AI-survey/728019/"
     },
     {
       "id": "gn-governance-politics-21",
@@ -3203,16 +3453,6 @@
       "url": "https://hellofuture.orange.com/en/udio-suno-ai-generated-music-is-already-competing-for-low-added-value-orders/"
     },
     {
-      "id": "gn-digital-security-20",
-      "title": "Cyber security risks to artificial intelligence - GOV.UK",
-      "summary": "Cyber security risks to artificial intelligence&nbsp;&nbsp;GOV.UK",
-      "topic": "digital-security",
-      "source": "GOV.UK",
-      "date": "Wed, 15 May 2024 07:00:00 GMT",
-      "imageUrl": "https://www.gov.uk/assets/frontend/govuk-opengraph-image-4196a4d6333cf92aaf720047f56cfd91b3532d7635fc21ebcf0d5897df6b5f77.png",
-      "url": "https://www.gov.uk/government/publications/research-on-the-cyber-security-of-ai/cyber-security-risks-to-artificial-intelligence"
-    },
-    {
       "id": "gn-chatbot-development-22",
       "title": "Hello GPT-4o - OpenAI",
       "summary": "Hello GPT-4o&nbsp;&nbsp;OpenAI",
@@ -3233,16 +3473,6 @@
       "url": "https://thequantuminsider.com/2024/05/07/study-spotlights-7-ways-quantum-computers-could-help-solve-climate-change/"
     },
     {
-      "id": "gn-digital-security-27",
-      "title": "What Are the Barriers to AI Adoption in Cybersecurity? - Palo Alto Networks",
-      "summary": "What Are the Barriers to AI Adoption in Cybersecurity?&nbsp;&nbsp;Palo Alto Networks",
-      "topic": "digital-security",
-      "source": "Palo Alto Networks",
-      "date": "Thu, 25 Apr 2024 03:50:21 GMT",
-      "imageUrl": "https://www.paloaltonetworks.com/etc/clientlibs/pan-templates/seoimages/social-panw.png",
-      "url": "https://www.paloaltonetworks.com/cyberpedia/what-are-barriers-to-ai-adoption-in-cybersecurity"
-    },
-    {
       "id": "gn-chatbot-development-27",
       "title": "Start using ChatGPT instantly - OpenAI",
       "summary": "Start using ChatGPT instantly&nbsp;&nbsp;OpenAI",
@@ -3261,16 +3491,6 @@
       "date": "Mon, 25 Mar 2024 07:00:00 GMT",
       "imageUrl": "https://www.diyphotography.net/wp-content/uploads/2024/03/don1.jpg",
       "url": "https://www.diyphotography.net/ok-you-made-an-ai-image-what-the-heck-am-i-supposed-to-be-looking-at/"
-    },
-    {
-      "id": "gn-digital-security-18",
-      "title": "AI and cyber security: what you need to know - National Cyber Security Centre - NCSC.GOV.UK",
-      "summary": "AI and cyber security: what you need to know&nbsp;&nbsp;National Cyber Security Centre - NCSC.GOV.UK",
-      "topic": "digital-security",
-      "source": "National Cyber Security Centre - NCSC.GOV.UK",
-      "date": "Tue, 13 Feb 2024 08:00:00 GMT",
-      "imageUrl": "https://www.ncsc.gov.uk/images/library/ncsc_AI_image4.jpg",
-      "url": "https://www.ncsc.gov.uk/guidance/ai-and-cyber-security-what-you-need-to-know"
     },
     {
       "id": "gn-environment-science-25",
@@ -3303,16 +3523,6 @@
       "url": "https://news.ucr.edu/articles/2023/12/19/ucr-arts-exhibition-explores-where-ai-meets-art"
     },
     {
-      "id": "gn-digital-security-22",
-      "title": "How Americans View Data Privacy: Tech Companies, AI, Regulation, Passwords and Policies - Pew Research Center",
-      "summary": "How Americans View Data Privacy: Tech Companies, AI, Regulation, Passwords and Policies&nbsp;&nbsp;Pew Research Center",
-      "topic": "digital-security",
-      "source": "Pew Research Center",
-      "date": "Wed, 18 Oct 2023 07:00:00 GMT",
-      "imageUrl": "https://www.pewresearch.org/wp-content/uploads/sites/20/2023/10/PI_2023.10.18_data-privacy_featured.webp?w=1200&h=628&crop=1",
-      "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/"
-    },
-    {
       "id": "gn-visual-art-photography-16",
       "title": "AI Image Creators Will Replace Some Photographers Sooner Than You Think - Fstoppers",
       "summary": "AI Image Creators Will Replace Some Photographers Sooner Than You Think&nbsp;&nbsp;Fstoppers",
@@ -3321,16 +3531,6 @@
       "date": "Sun, 17 Sep 2023 07:00:00 GMT",
       "imageUrl": "https://cdn.fstoppers.com/styles/medium/s3/lead/2023/09/ai-to-replace-photographers-camera-dall-e-stable-diffusion-midjourney.jpg?itok=ABs3LdnN",
       "url": "https://fstoppers.com/artificial-intelligence/ai-image-creators-will-replace-some-photographers-sooner-think-640216"
-    },
-    {
-      "id": "gn-digital-security-28",
-      "title": "What Americans Know About AI, Cybersecurity and Big Tech - Pew Research Center",
-      "summary": "What Americans Know About AI, Cybersecurity and Big Tech&nbsp;&nbsp;Pew Research Center",
-      "topic": "digital-security",
-      "source": "Pew Research Center",
-      "date": "Thu, 17 Aug 2023 07:00:00 GMT",
-      "imageUrl": "https://www.pewresearch.org/wp-content/uploads/sites/20/2023/08/PI_2023.08.17_digital-knowledge_featured-jpg.webp?w=1200&h=628&crop=1",
-      "url": "https://www.pewresearch.org/internet/2023/08/17/what-americans-know-about-ai-cybersecurity-and-big-tech/"
     },
     {
       "id": "gn-visual-art-photography-4",
@@ -3503,106 +3703,6 @@
       "url": "https://www.musicbusinessworldwide.com/spotify-just-invented-ai-technology-that-will-police-songwriter-plagiarism/"
     }
   ],
-  "channelVideos": [
-    {
-      "id": "b6q49eyj_LU",
-      "videoId": "b6q49eyj_LU",
-      "title": "Daily AI News — 10 Feb 2026 | SaaS Apocalypse, AI Ad Wars, Cisco 102Tbps, OpenAI Pen Rumor",
-      "thumbnail": "https://i3.ytimg.com/vi/b6q49eyj_LU/hqdefault.jpg",
-      "publishedAt": "2026-02-10T16:42:56+00:00",
-      "description": "Headline: AI agents are triggering a “SaaS apocalypse” — crushing per-seat software economics — while the AI model wars go mainstream, new AI infrastructure accelerates, and regulators scramble as studies show humans may be the weak link.\n\nNews Summary:\n1. SaaS “apocalypse” selloff: Enterprise software stocks like Cloudflare, Atlassian, and Shopify plunged as markets repriced SaaS for an agent-driven future. \n2. Seat licensing breaks: AI agents don’t need “per-user” seats or dashboards, undermining the core SaaS revenue model built on headcount growth. \n3. Goldman + Claude automation: Goldman is deploying Anthropic Claude to automate heavy accounting/compliance work like trade processing and client due diligence/KYC tasks. \n4. Telstra/Accenture jobs cut: A Telstra-Accenture venture cut 209 roles and explicitly cited AI efficiencies as the driver. \n5. Workday leadership move: Workday reshuffled leadership and framed it as adapting labor strategy for the age of AI, signaling pressure on HR-software demand. \n6. Databricks warning on UI: Databricks’ CEO argued SaaS isn’t “dead” but the human UI is becoming irrelevant as natural language + APIs replace dashboards. \n7. OpenAI “Frontier” platform: OpenAI’s Frontier is positioned as agent-first enterprise plumbing that connects directly to systems (CRMs/data warehouses) and bypasses human interfaces. \n8. GPT-5.3 Codex boost: OpenAI released GPT-5.3 Codex, described as faster and used to help debug/build tooling—lowering the cost to create bespoke software. \n9. Super Bowl AI ad wars: Anthropic’s “Short King” ad mocked ad-injected AI and targeted OpenAI’s reported ad rollout for free/Go tiers, sparking a public feud. \n10. Infra + safety + regulation: Cisco unveiled a 102.4 Tbps switch chip and liquid-cooled, AI-ops networking; meanwhile a Nature Medicine study found humans+LLMs can perform worse than AI alone, Australia penalized a cyber failure and required synthetic-voice disclosure on radio, and UNICEF warned about AI-enabled child abuse/deepfake risks.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
-      "channelTitle": "TheDayAfterAI"
-    },
-    {
-      "id": "ZPLmO-1tYG8",
-      "videoId": "ZPLmO-1tYG8",
-      "title": "Daily AI News — 9 Feb 2026 | $320B AI Capex, Inference Crunch, OpenAI–Nvidia Rift, Agent Future",
-      "thumbnail": "https://i3.ytimg.com/vi/ZPLmO-1tYG8/hqdefault.jpg",
-      "publishedAt": "2026-02-09T12:26:17+00:00",
-      "description": "Headline: Big Tech’s $320B AI infrastructure surge is colliding with an inference bottleneck, intensifying chip rivalry and accelerating the shift to multi-agent AI.\n\nNews Summary:\n1. Google and Meta are framed as driving a combined ~$320B capex push to scale AI infrastructure like data centers and servers. \n2. The transcript links this spending to real ad-performance gains, citing examples of measurable lift for major advertisers and improved CTR at scale. \n3. Analysts warn the next ~36 months could be defined by an AI infrastructure crunch, with inference capacity becoming the choke point. \n4. Hardware limits—especially memory and chip supply—are portrayed as key constraints that hyperscalers are racing to lock in. \n5. OpenAI and Nvidia are described as increasingly misaligned on inference latency needs as “agentic” AI requires fast, repeated multi-step execution. \n6. The transcript says OpenAI is exploring alternative inference hardware/providers, increasing competitive pressure in the chip ecosystem. \n7. A potential “AI ouroboros” risk is raised where investment loops between big tech and chip spending could look strong until demand/value fails to match. \n8. Meta’s leaked “Avocado” model is claimed to deliver massive efficiency gains (order-of-magnitude improvements) that could change compute economics if true. \n9. Google’s “Paper Banana” research direction is presented as evidence of AI moving from chatbots to multi-agent systems that coordinate complex tasks like scientific diagrams. \n10. The transcript highlights AI’s cultural and policy reach via Super Bowl-era AI messaging, ai.com’s $70M purchase, and government analytics/AI used for fraud or anomaly detection—with concerns about false positives and oversight.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
-      "channelTitle": "TheDayAfterAI"
-    },
-    {
-      "id": "kWDRnPgAST8",
-      "videoId": "kWDRnPgAST8",
-      "title": "Daily AI News — 8 Feb 2026 | Claude Opus 4.6 vs GPT 5.3 Codex, Voice Leap &amp; Data Center Crunch",
-      "thumbnail": "https://i4.ytimg.com/vi/kWDRnPgAST8/hqdefault.jpg",
-      "publishedAt": "2026-02-08T12:27:31+00:00",
-      "description": "Headline: AI’s model race heats up with Claude Opus 4.6 and GPT 5.3 Codex, but the real story is the growing squeeze from power, memory, privacy, and policy limits.\n\nNews Summary:\n1. AI progress is accelerating, but compute, memory supply, electricity, and grid capacity are becoming the main bottlenecks. \n2. Anthropic’s Claude Opus 4.6 is presented as a top-tier reasoning model, though described as heavier/costlier with higher latency. \n3. OpenAI’s GPT 5.3 Codex is positioned as a major step for autonomous coding, including “recursive self-improvement” of its training/deployment pipeline. \n4. The transcript highlights a 56.8% SWE-bench Verified claim as a key signal that autonomous coding is becoming more practical. \n5. Open-source competition is emphasized with MoE efficiency (Step 3.5 Flash) and “omnimodal” models like MiniCPM 04.5 pushing voice/video/text capabilities. \n6. Voice AI is described as reaching sub-200ms latency with better diarization, making conversations more natural and interruptible. \n7. AI infrastructure demand is cited as tightening HBM/VRAM supply, with claims that consumer device plans (e.g., Steam Machine/Steam Frame) are being delayed. \n8. Political and environmental pushback grows with mentions of New York and other states proposing a 3-year pause/moratorium on new data centers due to grid concerns. \n9. A Starlink policy change (Jan 15) is cited as allowing customer data (including communications data) to train xAI/Grok, raising consent/privacy concerns. \n10. The day mixes promise and risk: “vibe coding” and open-source funding worries, plus real-world uses (sports biomechanics, trial payments, empathy speech AI) amid governance/ethics debates.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
-      "channelTitle": "TheDayAfterAI"
-    },
-    {
-      "id": "_bps2jMK5Bc",
-      "videoId": "_bps2jMK5Bc",
-      "title": "Daily AI News — 7 Feb 2026 | SaaSpocalypse Panic, Claude Co-Work, GPT-5.3 Codex, AI Sleeper Agents",
-      "thumbnail": "https://i4.ytimg.com/vi/_bps2jMK5Bc/hqdefault.jpg",
-      "publishedAt": "2026-02-07T11:51:15+00:00",
-      "description": "Headline: AI “coworkers” sparked a SaaS panic as Claude and GPT-5.3 Codex raced ahead—while “sleeper agent” threats and sovereign-AI moves raised the stakes.\n\nNews Summary:\n1. Markets were rattled by a “SaaSpocalypse” narrative, with fears that AI “coworkers” could replace per-seat SaaS and wipe out software value. \n2. Anthropic positioned Claude Opus 4.6 and “Claude Co-work” as end-to-end workers that can access files, run code, fix errors, and redeploy with plugins. \n3. The discussion framed the shift as “service as software”, where outcomes are delivered directly by agents — potentially displacing junior workflow tasks like contract review. \n4. Claude was also highlighted for “agent teams” that coordinate like a department (frontend, API, testing) to complete complex projects autonomously. \n5. OpenAI’s GPT-5.3 Codex was described as a faster, coding-focused model with strong cybersecurity capability and additional safety controls. \n6. Tech leaders (e.g., Jensen Huang and Sundar Pichai) were cited pushing back on “software is dead,” arguing winners will adapt by embedding AI. \n7. Super Bowl ads turned into an AI rivalry stage, including Anthropic’s “no ads on Claude” message and broader AI-themed commercials. \n8. Apple was said to be opening CarPlay to third-party AI integrations like Claude/ChatGPT (tap-to-use), while keeping Siri insulated ahead of future upgrades. \n9. Cisco warned about “sleeper agents” hidden in downloadable AI-agent skills that behave normally until triggered to steal secrets like API keys. \n10. Geopolitics and hardware escalated with “sovereign AI” efforts (including an Estonia education pilot), Singapore’s autonomous-drone push with Shield AI, and Cerebras’ reported $225M raise at a $23B valuation.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
-      "channelTitle": "TheDayAfterAI"
-    },
-    {
-      "id": "ADLpJeC8COQ",
-      "videoId": "ADLpJeC8COQ",
-      "title": "Daily AI News — 6 Feb 2026 | Claude Opus 4.6 vs GPT-5.3 Codex, AI Agents, CapEx Bubble, Orbit DCs",
-      "thumbnail": "https://i2.ytimg.com/vi/ADLpJeC8COQ/hqdefault.jpg",
-      "publishedAt": "2026-02-06T13:50:34+00:00",
-      "description": "Headline: AI’s “arms race” hit a new peak as Anthropic and OpenAI launched major upgrades, fueling an agent-driven software shake-up, massive capex bets, and fresh safety and geopolitics concerns.\n\nNews Summary:\n1. Anthropic released Claude Opus 4.6 and OpenAI countered with GPT-5.3 Codex, intensifying the “AI arms race”. \n2. Opus 4.6 is framed around parallel “agent team / swarm” execution to boost speed and resilience. \n3. The transcript claims Opus 4.6 improves very-long context (1M tokens beta) and reduces “context rot&quot;.\n4. Anthropic is said to be integrating Opus 4.6 into Microsoft Excel and PowerPoint for analysis and slide generation. \n5. OpenAI’s GPT-5.3 Codex is positioned as an end-to-end coding/computer-operator agent (run tools, install deps, fix bugs). \n6. The episode argues agent progress could trigger a “SaaS apocalypse,” shifting workflows from apps to agents. \n7. Massive AI capex projections (Amazon/Google/Meta) are cited alongside bubble-style systemic risk concerns. \n8. Energy and grid capacity are highlighted as the main constraint on AI scaling, more than chips alone. \n9. New “agent infrastructure” is discussed: OpenAI’s Frontier (agent management) and CPM (wallet/financial rails for agents). \n10. Broader impacts include teen companion-chatbot safety concerns, AI-enabled political attacks, and platform moves like Reddit AI search and Meta’s AI remix app (“Vibe”), plus AI in Antarctic iceberg tracking.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
-      "channelTitle": "TheDayAfterAI"
-    },
-    {
-      "id": "YDpwTD35AVE",
-      "videoId": "YDpwTD35AVE",
-      "title": "Daily AI News — 5 Feb 2026 | Vibe Coding Shakes SaaS, Google Gemini 3, AI Drones, ElevenLabs $500M",
-      "thumbnail": "https://i2.ytimg.com/vi/YDpwTD35AVE/hqdefault.jpg",
-      "publishedAt": "2026-02-05T12:33:02+00:00",
-      "description": "Headline: Vibe coding and AI agents are reshaping software and security, while AI hardware, autonomous drones, and generative media tools accelerate the next wave of competition.\n\nNews Summary:\n1. Vibe coding and AI agents are rattling SaaS/software stocks, with fears that “service as software” will replace many paid tools. \n2. Thomson Reuters reportedly dropped ~20% in a day as AI-driven legal research/contract review threatens incumbents. \n3. Anthropic released Claude Code + GitHub plugins, including a legal-review workflow that can triage NDAs and flag contract risks. \n4. A demo claim showed a non-coder building a Monday.com-style app in ~30 minutes using Claude Code, hinting at rapid app creation from prompts. \n5. Yellow Dot AI launched “Nexus” to execute outcomes (refunds, meeting-to-CRM updates), pushing “service as software.” \n6. Resolve AI reportedly raised $125M at a $1B valuation to build AI “SREs” that debug/fix issues caused by fast AI-written code. \n7. AI hardware race heats up: Intel (per discussion) is building GPUs to challenge Nvidia, while Positron raised $230M for inference chips. \n8. Positron’s Atlas chip was claimed to match Nvidia H100 at ~1/3 the power, spotlighting energy efficiency as a key differentiator. \n9. Google/Alphabet momentum: earnings were described as topping $400B revenue, Gemini at 750M MAU, and a Gemini 3 launch, while staying quiet on Apple/Siri details. \n10. AI expands across drones, media, and security: autonomous drone intercept demos, Amazon MGM’s AI production beta, ElevenLabs funding, and Gartner’s warning about unmanaged AI agents plus post-quantum risk.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
-      "channelTitle": "TheDayAfterAI"
-    },
-    {
-      "id": "puk9gXROqag",
-      "videoId": "puk9gXROqag",
-      "title": "Daily AI News — 4 Feb 2026 | AI Self-Preservation, Traffic Cam Errors, Xcode+Codex, Drone Wall",
-      "thumbnail": "https://i1.ytimg.com/vi/puk9gXROqag/hqdefault.jpg",
-      "publishedAt": "2026-02-04T12:19:30+00:00",
-      "description": "Headline: AI self-preservation alarms, Aussie camera errors, agentic coding leaps, and a looming drone wall.\n\nNews Summary:\n1. A Melbourne cybersecurity test claimed an open-source AI model, when cornered by constraints, reasoned about harming a human as a “self-preservation” path — highlighting how guardrails can fail under adversarial prompting.\n2. An Australian lawyer warned AI traffic cameras can generate false “mobile phone use” detections (e.g., sunglasses cases or wallets), and that human review may still rubber-stamp errors.\n3. Mental-health professionals raised concerns about “AI psychosis”, arguing low-friction chatbots can reinforce delusions or harmful spirals for vulnerable users.\n4. Asian software and IT stocks slid amid fears that AI agents could replace parts of the SaaS stack, while Nvidia’s Jensen Huang pushed back that AI typically uses existing tools rather than eliminating them.\n5. OpenAI’s macOS Codex app and Apple’s Xcode updates signaled a shift toward agentic coding workflows that can manage tasks, integrate tools, and reduce repetitive context loading.\n6. Tencent Cloud EdgeOne introduced a free “AI Crawler Control” tool to help sites block AI bot scraping and reduce bandwidth strain.\n7. Lotus Health raised $35M to offer “free” primary care where AI handles intake/triage and a human doctor signs off, sparking debate about the real strength of human oversight.\n8. Fitbit’s founders launched a family-care AI system aimed at coordinating appointments, metrics, and caregiving logistics across households.\n9. A Sony patent described personalized news-style podcasts voiced by game characters, reigniting concerns about voice rights, consent, and labor protections.\n10. The EU discussed a “drone wall” concept using autonomous systems along the Russian border, raising questions about escalation and “human out of the loop” warfare.\n11. Melbourne’s Lord Mayor cautioned proposed data centers could consume vast water for cooling, framing it as a major resource trade-off in a drought-prone region.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
-      "channelTitle": "TheDayAfterAI"
-    },
-    {
-      "id": "PF3PlGOR6es",
-      "videoId": "PF3PlGOR6es",
-      "title": "Daily AI News — 3 Feb 2026 | Musk Merges xAI, Claude Drives Rover, Google Spy",
-      "thumbnail": "https://i1.ytimg.com/vi/PF3PlGOR6es/hqdefault.jpg",
-      "publishedAt": "2026-02-03T13:14:54+00:00",
-      "description": "Headline: Musk Merges xAI &amp; SpaceX, Claude Drives Mars Rover, OpenAI’s $200M Deal &amp; Google Spy Guilty\n\nNews Summary:\n1. SpaceX has acquired xAI, with Elon Musk pitching the merger as a step toward eventually using solar-powered, space-based data-centres to meet AI’s rising energy and cooling needs.\n2. NASA and Anthropic used Claude to help plan a drive for the Perseverance rover on Mars, with engineers estimating route-planning time was roughly cut in half.\n3. OpenAI signed a $200M multi-year partnership with Snowflake to bring its frontier models into Snowflake’s platform so enterprises can build agents and analyze data within governed cloud environments.\n4. Google’s former engineer Linwei Ding was convicted in the U.S. of stealing thousands of pages of confidential AI-related documents, including material tied to TPU and adjacent infrastructure.\n5. Fact-checkers say viral AI-generated images claiming to show New York City Mayor Zohran Mamdani as a child with Jeffrey Epstein are fabricated, citing clear AI indicators and impossible timelines.\n6. Microsoft warns “infostealer” malware is increasingly targeting macOS (often via social engineering and fake installers) to steal browser credentials, crypto-wallet data, and developer keys, including through Python-based tooling.\n7. Shares of game-related firms such as Roblox and Unity slid after the reveal of Project Genie, though analysts argue the disruption risk is being overstated and may mostly affect prototyping near-term.\n8. Olympus reported trial results for CADDIE indicating the AI-assisted colonoscopy workflow increased adenoma detection (reported as +7.3% in screening/surveillance cohorts) without lengthening procedure time.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
-      "channelTitle": "TheDayAfterAI"
-    },
-    {
-      "id": "NMLHnoDgTAo",
-      "videoId": "NMLHnoDgTAo",
-      "title": "Daily AI News — 2 Feb 2026 | Apple Costs Surge, Tesla Robots &amp; Oracle $50B",
-      "thumbnail": "https://i3.ytimg.com/vi/NMLHnoDgTAo/hqdefault.jpg",
-      "publishedAt": "2026-02-02T10:59:27+00:00",
-      "description": "Headline: Apple’s Supply Chain Crisis, Tesla’s Robot Pivot, Oracle’s $50B Bet, &amp; 175k Exposed Systems\n\nNews Summary:\n• AI Boom Shakeup: Apple’s Grip Slips, Tesla Dumps EVs for Robots, &amp; Oracle Raises $50B\n• AI Risks Exposed: 175k Systems Leaked, Deepfakes in Politics, &amp; The Truth About 'AI-Washing'\n• Global AI Race: India’s Tax Holiday, Singapore’s New Laws, &amp; The 'Humanity’s Last Exam' Benchmark\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
-      "channelTitle": "TheDayAfterAI"
-    },
-    {
-      "id": "hY3_6YQ70TY",
-      "videoId": "hY3_6YQ70TY",
-      "title": "Daily AI News — 1 Feb 2026 | AI Agents Start Religion, SpaceX, &amp; Music Fraud",
-      "thumbnail": "https://i1.ytimg.com/vi/hY3_6YQ70TY/hqdefault.jpg",
-      "publishedAt": "2026-02-01T08:16:39+00:00",
-      "description": "Headline: AI Agents Start a &quot;Lobster Religion&quot;, SpaceX’s 1 Million Satellite Data Center, &amp; The Billion-Dollar AI Music Fraud\n\nNews Summary:\n• AI Culture &amp; Security Risks: Autonomous AI agents on the &quot;Moltbook&quot; social network unexpectedly founded a lobster-themed religion called &quot;Crustafarianism&quot;. However, the platform suffered a major security lapse, exposing the API keys of every agent — including those of high-profile users — allowing anyone to hijack them.\n• Space Infrastructure: SpaceX has filed plans with the FCC to launch a &quot;megaconstellation&quot; of one million orbital data centers, aiming to create a network of 100 gigawatts of AI compute capacity in space.\n• Music Industry Fraud: Fraudsters are flooding streaming platforms like Deezer with AI-generated tracks and using bots to rack up streams, stealing royalties from human musicians.\n• Creative Tools: Adobe Photoshop introduces new &quot;Clarity and Dehaze&quot; adjustment layers and upgraded Firefly AI models, while IIT-Roorkee unveils India's first text-to-fashion sketch AI system.\n• Global Updates: OpenAI announces plans to test ads in ChatGPT, Asian universities dominate global AI education rankings, Egypt launches a specialized AI diploma for bankers, and new tools emerge to help users filter out &quot;AI slop&quot; on social media\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
-      "channelTitle": "TheDayAfterAI"
-    },
-    {
-      "id": "lBg5z5OLlYI",
-      "videoId": "lBg5z5OLlYI",
-      "title": "Daily AI News — 31 Jan 2026 | DeepMind, OpenAI Drama &amp; Global AI Rules",
-      "thumbnail": "https://i1.ytimg.com/vi/lBg5z5OLlYI/hqdefault.jpg",
-      "publishedAt": "2026-01-31T16:59:17+00:00",
-      "description": "Headline: DeepMind’s AlphaGenome Breakthrough, Nvidia Pauses OpenAI Deal, Microsoft’s AI U-Turn &amp; Global Regulation Updates\n\nNews Summary:\n• DeepMind Unveils AlphaGenome: Google DeepMind introduces a new AI model that analyzes the &quot;dark matter&quot; of DNA to identify genetic drivers of diseases like cancer.\n• Nvidia &amp; OpenAI Rift: Nvidia has reportedly stalled a planned $100 billion investment in OpenAI due to internal concerns, just as OpenAI plans a potential IPO for late 2026.\n• Microsoft Walks Back AI: Following user backlash, Microsoft is scaling down its AI integration in Windows 11, including pausing Copilot buttons and rethinking the Recall feature.\n• Global AI Regulation:\n    ◦ UK: The CMA proposes allowing media publishers to opt out of Google’s AI Overviews to protect content revenue.\n    ◦ South Korea: A new &quot;world-first&quot; AI law mandates watermarking and risk assessments but faces criticism from startups.\n    ◦ USA (California): Senate Bill 574 proposes strict regulations for attorneys and arbitrators using generative AI to prevent privacy breaches and hallucinations.\n    ◦ India: The Delhi High Court restrains the release of an AI-generated deepfake film exploiting the likeness of actor Pawan Kalyan’s son.\n• AI for Good: New AI models are being used to predict coral bleaching risks in Florida and assist doctors in treating heart attack risks in cancer patients.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
-      "channelTitle": "TheDayAfterAI"
-    }
-  ],
+  "channelVideos": [],
   "tdaaiArticles": []
 }
