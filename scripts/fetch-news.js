@@ -157,7 +157,24 @@ const CATEGORY_QUERIES = {
     "AI stress anxiety depression support chatbot",
     "AI addiction recovery mindfulness brain health",
   ],
-  "musical-art": ["AI music audio song compose Spotify", "AI album artist melody sound"],
+  "musical-art": [
+    // Broadcasting & Curation — AI in streaming, playlists, radio, music recommendation
+    "AI music streaming playlist recommendation Spotify",
+    "AI radio broadcasting curation algorithm listener",
+    "AI music discovery personalisation audio platform",
+    // Industry Implications — AI impact on music industry, labels, royalties, copyright
+    "AI music industry label royalty copyright licensing",
+    "AI music business revenue streaming rights dispute",
+    "AI music disruption record label distribution",
+    // Artist Collaborations — artists using AI tools, partnerships, AI-assisted production
+    "AI artist collaboration music technology producer",
+    "AI musician tool partnership creative production",
+    "AI singer songwriter band AI-generated feature",
+    // Music Creation — AI composing, generating, producing, remixing, sound design
+    "AI music creation compose generate produce song",
+    "AI sound design remix synthesizer beat making",
+    "AI vocal clone audio deepfake music production",
+  ],
   "technology-innovation": ["AI technology innovation breakthrough", "AI chip semiconductor hardware computing software", "AI agent autonomous robot"],
   "unmanned-aircraft": ["AI drone unmanned aircraft UAV aerial", "AI quadcopter flying delivery drone"],
   "visual-art-photography": ["AI photography visual art camera image", "AI painting creative artwork gallery museum"],
@@ -192,6 +209,10 @@ const CATEGORY_GEO = {
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
   "health-style": [
+    { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
+    { hl: "en", gl: "", ceid: "" },               // Then truly international
+  ],
+  "musical-art": [
     { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
