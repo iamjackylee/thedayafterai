@@ -89,7 +89,44 @@ export interface CustomSection {
   articles: CustomArticle[];
 }
 
+interface CustomSectionConfig {
+  id: string;
+  title: string;
+  color: string;
+  pageUrl?: string;
+  categoryFilter?: string;
+  articles: CustomArticle[];
+}
+
+/** Fetch articles from a Squarespace collection, filtered by category */
+async function fetchSquarespaceCollection(
+  pageUrl: string,
+  categoryFilter: string
+): Promise<CustomArticle[]> {
+  const jsonUrl = `${pageUrl}?format=json&category=${encodeURIComponent(categoryFilter)}`;
+  const text = await fetchWithProxy(jsonUrl);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const data = JSON.parse(text) as any;
+
+  const items = data.items || data.collection?.items || [];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return items.map((item: any, i: number) => ({
+    id: `sqsp-${i}-${item.id || ""}`,
+    title: (item.title || "").replace(/&amp;/g, "&"),
+    date: item.publishOn
+      ? new Date(item.publishOn).toISOString().split("T")[0]
+      : "",
+    imageUrl: item.assetUrl || "",
+    url: item.fullUrl
+      ? `https://www.thedayafterai.com${item.fullUrl}`
+      : "",
+    source: "TheDayAfterAI",
+  }));
+}
+
 export async function fetchCustomSections(): Promise<CustomSection[]> {
+  // Load config (section metadata + fallback articles) from static JSON
+  let configs: CustomSectionConfig[] = [];
   try {
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
     const res = await fetch(`${basePath}/data/custom-articles.json`, {
@@ -97,10 +134,45 @@ export async function fetchCustomSections(): Promise<CustomSection[]> {
     });
     if (!res.ok) return [];
     const data = await res.json();
-    return data.sections || [];
+    configs = data.sections || [];
   } catch {
     return [];
   }
+
+  const sections: CustomSection[] = [];
+
+  for (const config of configs) {
+    // Try dynamic fetch from Squarespace API via CORS proxy
+    if (config.pageUrl && config.categoryFilter) {
+      try {
+        const articles = await fetchSquarespaceCollection(
+          config.pageUrl,
+          config.categoryFilter
+        );
+        if (articles.length > 0) {
+          sections.push({
+            id: config.id,
+            title: config.title,
+            color: config.color,
+            articles,
+          });
+          continue;
+        }
+      } catch {
+        // Dynamic fetch failed — fall through to static articles
+      }
+    }
+
+    // Fall back to static articles from JSON
+    sections.push({
+      id: config.id,
+      title: config.title,
+      color: config.color,
+      articles: config.articles || [],
+    });
+  }
+
+  return sections;
 }
 
 // ─── CORS Proxy (fallback for live fetching) ──────────────────────
