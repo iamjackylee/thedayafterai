@@ -308,7 +308,7 @@ function TdaaiSectionRow({ articles }: { articles: TdaaiArticle[] }) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
               <div className="absolute top-0 left-0 px-2 py-0.5 bg-[#3cffd0] text-black text-[9px] font-black uppercase tracking-widest">
-                TheDayAfterAI
+                Exclusive
               </div>
             </div>
             <div className="p-3">
