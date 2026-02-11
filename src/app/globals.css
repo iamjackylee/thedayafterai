@@ -111,6 +111,34 @@ html {
   border-left: 4px solid var(--cat-color, var(--accent));
 }
 
+/* Scrolling headline ticker */
+.headline-ticker {
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.headline-ticker-track {
+  display: flex;
+  gap: 3rem;
+  white-space: nowrap;
+  font-size: 0.7rem;
+  font-weight: 600;
+  opacity: 0.7;
+  animation: ticker-scroll 35s linear infinite;
+  width: max-content;
+}
+
+.headline-ticker:hover .headline-ticker-track {
+  animation-play-state: paused;
+  opacity: 1;
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* Hide horizontal scrollbar on category rows */
 .category-scroll::-webkit-scrollbar {
   display: none;
