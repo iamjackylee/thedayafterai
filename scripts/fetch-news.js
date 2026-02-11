@@ -121,7 +121,24 @@ const CATEGORY_QUERIES = {
     "AI chemistry materials science drug molecule",
     "AI space exploration astronomy satellite research",
   ],
-  "governance-politics": ["AI regulation governance politics policy", "AI government legislation compliance framework"],
+  "governance-politics": [
+    // Elections & Democracy — AI in elections, campaigns, voting, political influence
+    "AI election campaign political advertising deepfake",
+    "AI democracy voting disinformation manipulation",
+    "AI political influence social media propaganda",
+    // Regulation & Legislation — AI laws, bills, regulatory frameworks, compliance
+    "AI regulation legislation bill law framework",
+    "AI policy compliance government regulatory agency",
+    "AI executive order act parliament policy reform",
+    // National Security — AI in defence, intelligence, military, geopolitics
+    "AI national security defence military intelligence",
+    "AI geopolitics arms race surveillance warfare",
+    "AI border security homeland threat assessment",
+    // Ethics & Societal Impact — AI governance, accountability, bias, public trust
+    "AI governance accountability bias fairness",
+    "AI public trust transparency societal impact",
+    "AI human rights civil liberties discrimination",
+  ],
   "health-style": ["AI health medical diagnosis treatment", "AI fashion style design trend luxury"],
   "musical-art": ["AI music audio song compose Spotify", "AI album artist melody sound"],
   "technology-innovation": ["AI technology innovation breakthrough", "AI chip semiconductor hardware computing software", "AI agent autonomous robot"],
@@ -150,6 +167,10 @@ const CATEGORY_GEO = {
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
   "environment-science": [
+    { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
+    { hl: "en", gl: "", ceid: "" },               // Then truly international
+  ],
+  "governance-politics": [
     { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
