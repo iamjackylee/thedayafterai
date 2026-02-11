@@ -576,14 +576,17 @@ function isGenericImage(url: string): boolean {
   return /news\.google\.com|googlenews|gstatic\.com.*\/news|\/logo|\/favicon|default[-_]?image|placeholder|\/avatar/i.test(url);
 }
 
-/** Try to extract og:image from an article URL via CORS proxy */
+/** Try to extract og:image from an article URL via CORS proxy.
+ *  For Google News redirect URLs, the CORS proxy may follow the redirect
+ *  and return the actual article page — we filter out Google's own og:image. */
 async function fetchOgImage(url: string): Promise<string> {
   if (!url) return "";
-  // Skip Google News redirect URLs — CORS proxies can't follow the redirect
-  // chain properly and we'd just get Google's own og:image (the G logo)
-  if (url.includes("news.google.com")) return "";
   try {
     const html = await fetchWithProxy(url);
+    // If the proxy returned Google's own page (not the article), bail out
+    if (url.includes("news.google.com") && !html.includes("<article") && html.includes("google.com/news")) {
+      return "";
+    }
     // og:image
     const ogMatch = html.match(
       /<meta[^>]*property=["']og:image["'][^>]*content=["']([^"']+)["']/i
@@ -598,6 +601,18 @@ async function fetchOgImage(url: string): Promise<string> {
       /<meta[^>]*content=["']([^"']+)["'][^>]*name=["']twitter:image["']/i
     );
     if (twMatch?.[1] && !isGenericImage(twMatch[1])) return twMatch[1];
+    // Fallback: first content image in the page (for sites without OG tags)
+    const imgMatches = html.matchAll(/<img[^>]+src=["']([^"']+)["'][^>]*>/gi);
+    for (const m of imgMatches) {
+      const src = m[1];
+      if (!src || isGenericImage(src)) continue;
+      // Skip tiny icons, tracking pixels, data URIs, and SVGs
+      if (/\.svg|data:|1x1|pixel|spacer|blank|badge|icon|widget/i.test(src)) continue;
+      // Prefer images that look like content (with reasonable path depth or CDN)
+      if (/\.(jpg|jpeg|png|webp)/i.test(src) || /cdn|images|media|uploads|wp-content/i.test(src)) {
+        return src;
+      }
+    }
   } catch {
     // ignore — OG image fetch is best-effort
   }
@@ -605,13 +620,13 @@ async function fetchOgImage(url: string): Promise<string> {
 }
 
 /** Enhance articles: replace fallback placeholder images with real OG images.
- *  Only works for articles with direct publisher URLs (not Google News redirects). */
+ *  Tries all articles (including Google News redirects — some CORS proxies follow them). */
 export async function enhanceArticleImages(
   articles: NewsArticle[],
   maxConcurrent = 5
 ): Promise<void> {
   const toFix = articles.filter(
-    (a) => (a.imageUrl.includes("unsplash.com") || a.imageUrl.includes("pollinations.ai")) && a.url && !a.url.includes("news.google.com")
+    (a) => (a.imageUrl.includes("unsplash.com") || a.imageUrl.includes("pollinations.ai")) && a.url
   );
   for (let i = 0; i < toFix.length; i += maxConcurrent) {
     const batch = toFix.slice(i, i + maxConcurrent);
