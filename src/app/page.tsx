@@ -705,11 +705,7 @@ export default function Home() {
                 alt="TheDayAfterAI News"
                 className="h-10"
               />
-              <img
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/tdai-letter-logo.png`}
-                alt="TDAI"
-                className="h-[2.875rem] tdai-hue"
-              />
+              <span className="text-xl font-extrabold text-white tracking-tight" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>TheDayAfterAI News</span>
             </div>
 
             {/* Search */}
