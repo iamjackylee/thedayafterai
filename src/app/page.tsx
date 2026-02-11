@@ -709,15 +709,8 @@ export default function Home() {
       <header className="bg-black border-b border-[var(--border)] sticky top-0 z-30">
         <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-4">
           <div className="flex items-center justify-between gap-4 flex-wrap">
-            {/* Brand */}
-            <div className="flex items-center gap-3">
-              <img
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/tdai-letter-logo.png`}
-                alt="TDAI"
-                className="h-[2.875rem] tdai-hue"
-              />
-              <span className="text-xl font-extrabold text-white tracking-tight" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>TheDayAfterAI News</span>
-            </div>
+            {/* Brand — text only, editorial identity */}
+            <span className="text-xl font-extrabold text-white tracking-tight" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>TheDayAfterAI News</span>
 
             {/* Search */}
             <div className="flex-1 max-w-md">
@@ -733,7 +726,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Actions */}
+            {/* Actions + TDAI brand mark */}
             <div className="flex items-center gap-3">
               <button onClick={loadData} title="Refresh" className="p-2 hover:bg-[var(--surface-light)] transition-colors rounded-sm">
                 <RefreshCw size={16} className={`text-[var(--muted)] ${loadingNews ? "animate-spin" : ""}`} />
@@ -742,6 +735,13 @@ export default function Home() {
                 <a href="https://www.facebook.com/thedayafterai" target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Facebook size={18} /></a>
                 <a href={PLAYLIST_URL} target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Youtube size={18} /></a>
                 <a href="https://www.linkedin.com/company/thedayafterai/" target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Linkedin size={18} /></a>
+              </div>
+              <div className="hidden md:block pl-4 ml-1 border-l border-[var(--border-light)]">
+                <img
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/tdai-letter-logo.png`}
+                  alt="TDAI"
+                  className="h-8 tdai-hue opacity-80"
+                />
               </div>
             </div>
           </div>
@@ -989,10 +989,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row gap-8 mb-8">
             {/* Brand column — wider, takes ~38% */}
             <div className="lg:w-[38%] lg:pr-8 lg:border-r lg:border-[var(--border)]">
-              <div className="flex items-center gap-3 mb-4">
-                <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/tdai-letter-logo.png`} alt="TDAI" className="h-[2.875rem] tdai-hue" />
-                <h2 className="text-3xl font-extrabold text-white tracking-tight" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>TheDayAfterAI News</h2>
-              </div>
+              <h2 className="text-lg font-extrabold text-white tracking-tight mb-4" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>TheDayAfterAI News</h2>
               <div className="flex items-center gap-4 mb-5">
                 <a href="https://www.facebook.com/thedayafterai" target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Facebook size={20} /></a>
                 <a href={PLAYLIST_URL} target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Youtube size={20} /></a>
