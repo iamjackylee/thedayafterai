@@ -103,7 +103,24 @@ const CATEGORY_QUERIES = {
     "AI security tool malware detection endpoint",
     "AI zero trust authentication encryption solution",
   ],
-  "environment-science": ["AI climate environment science quantum", "AI sustainable energy physics biology discovery"],
+  "environment-science": [
+    // Earth Applications — AI for climate, weather, natural disasters, environmental monitoring
+    "AI climate change weather prediction environmental monitoring",
+    "AI natural disaster detection wildfire flood forecast",
+    "AI carbon emissions sustainability earth observation",
+    // Smart Infrastructure — AI for energy grids, smart cities, water, waste management
+    "AI smart grid energy efficiency renewable power",
+    "AI smart city infrastructure urban planning transport",
+    "AI water management waste recycling circular economy",
+    // Living Systems — AI in biology, ecology, conservation, agriculture, biodiversity
+    "AI biology ecology conservation biodiversity wildlife",
+    "AI agriculture precision farming crop livestock",
+    "AI marine ocean ecosystem species discovery",
+    // Scientific Breakthroughs — AI in physics, quantum, chemistry, space, materials science
+    "AI scientific discovery physics quantum computing",
+    "AI chemistry materials science drug molecule",
+    "AI space exploration astronomy satellite research",
+  ],
   "governance-politics": ["AI regulation governance politics policy", "AI government legislation compliance framework"],
   "health-style": ["AI health medical diagnosis treatment", "AI fashion style design trend luxury"],
   "musical-art": ["AI music audio song compose Spotify", "AI album artist melody sound"],
@@ -129,6 +146,10 @@ const CATEGORY_GEO = {
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
   "digital-security": [
+    { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
+    { hl: "en", gl: "", ceid: "" },               // Then truly international
+  ],
+  "environment-science": [
     { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
