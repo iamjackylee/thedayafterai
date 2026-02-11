@@ -200,17 +200,9 @@ function TdaaiSectionRow({ articles }: { articles: TdaaiArticle[] }) {
           className="category-header"
           style={{ borderLeftColor: sectionColor } as React.CSSProperties}
         >
-          <div className="flex items-center gap-3">
-            <h3 className="text-lg font-black text-white uppercase tracking-wide">
-              From TheDayAfterAI.com
-            </h3>
-            <span
-              className="text-[10px] font-bold px-2 py-0.5 rounded-sm"
-              style={{ backgroundColor: sectionColor + "20", color: sectionColor }}
-            >
-              {articles.length} articles
-            </span>
-          </div>
+          <h3 className="text-lg font-black text-white uppercase tracking-wide">
+            From TheDayAfterAI.com
+          </h3>
         </div>
         <div className="flex items-center gap-1">
           <button
@@ -321,17 +313,9 @@ function CategoryRow({ topic, articles, id }: { topic: typeof TOPICS[number]; ar
           className="category-header"
           style={{ borderLeftColor: topic.color } as React.CSSProperties}
         >
-          <div className="flex items-center gap-3">
-            <h3 className="text-lg font-black text-white uppercase tracking-wide">
-              {topic.label}
-            </h3>
-            <span
-              className="text-xs font-bold px-2 py-0.5 rounded-sm"
-              style={{ backgroundColor: topic.color + "20", color: topic.color }}
-            >
-              {articles.length}
-            </span>
-          </div>
+          <h3 className="text-lg font-black text-white uppercase tracking-wide">
+            {topic.label}
+          </h3>
         </div>
         <div className="flex items-center gap-1">
           <button
@@ -459,13 +443,21 @@ export default function Home() {
   })).filter((g) => g.articles.length > 0);
 
   // Build unified nav items: TDAAI blog + custom sections + topic categories
+  // When searching, only include TDAAI/custom sections if they have matching articles
+  const sq = searchQuery.trim().toLowerCase();
   const navItems: { id: string; label: string; color: string }[] = [];
   if (tdaaiArticles.length > 0) {
-    navItems.push({ id: "tdaai", label: "TheDayAfterAI.com", color: "#3cffd0" });
+    const hasTdaaiMatch = !sq || tdaaiArticles.some((a) => a.title.toLowerCase().includes(sq) || (a.summary && a.summary.toLowerCase().includes(sq)));
+    if (hasTdaaiMatch) {
+      navItems.push({ id: "tdaai", label: "TheDayAfterAI.com", color: "#3cffd0" });
+    }
   }
   for (const section of customSections) {
     if (section.articles.length > 0) {
-      navItems.push({ id: `custom-${section.id}`, label: section.title, color: section.color });
+      const hasMatch = !sq || section.articles.some((a) => a.title.toLowerCase().includes(sq));
+      if (hasMatch) {
+        navItems.push({ id: `custom-${section.id}`, label: section.title, color: section.color });
+      }
     }
   }
   for (const g of groupedArticles) {
@@ -783,15 +775,23 @@ export default function Home() {
         {/* Divider */}
         <div className="h-px bg-[var(--border-light)] mb-10" />
 
-        {/* TheDayAfterAI.com Blog Articles Section */}
-        {tdaaiArticles.length > 0 && (
-          <TdaaiSectionRow articles={tdaaiArticles} />
-        )}
+        {/* TheDayAfterAI.com Blog Articles Section — filtered when searching */}
+        {(() => {
+          const q = searchQuery.trim().toLowerCase();
+          const filteredTdaai = q
+            ? tdaaiArticles.filter((a) => a.title.toLowerCase().includes(q) || (a.summary && a.summary.toLowerCase().includes(q)))
+            : tdaaiArticles;
+          return filteredTdaai.length > 0 ? <TdaaiSectionRow articles={filteredTdaai} /> : null;
+        })()}
 
-        {/* Custom editorial sections (e.g. AI Market Insight) */}
-        {customSections.map((section) => (
-          <CustomSectionRow key={section.id} section={section} />
-        ))}
+        {/* Custom editorial sections (e.g. AI Market Insight) — filtered when searching */}
+        {customSections.map((section) => {
+          const q = searchQuery.trim().toLowerCase();
+          const filteredSection = q
+            ? { ...section, articles: section.articles.filter((a) => a.title.toLowerCase().includes(q)) }
+            : section;
+          return <CustomSectionRow key={section.id} section={filteredSection} />;
+        })}
 
         {/* Search results heading (only when searching) */}
         {searchQuery && (
