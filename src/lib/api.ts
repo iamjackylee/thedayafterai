@@ -98,57 +98,11 @@ interface CustomSectionConfig {
   articles: CustomArticle[];
 }
 
-/** Fetch articles from a Squarespace collection, filtered by category.
- *  Paginates to collect up to 30 articles (Squarespace returns ~20 per page). */
-async function fetchSquarespaceCollection(
-  pageUrl: string,
-  categoryFilter: string
-): Promise<CustomArticle[]> {
-  const allArticles: CustomArticle[] = [];
-  let offset = 0;
-  const PAGE_SIZE = 30;
-
-  // Squarespace may paginate — fetch up to 2 pages to collect ~30 articles
-  for (let page = 0; page < 2; page++) {
-    const jsonUrl = `${pageUrl}?format=json&category=${encodeURIComponent(categoryFilter)}&offset=${offset}`;
-    try {
-      const text = await fetchWithProxy(jsonUrl);
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const data = JSON.parse(text) as any;
-
-      const items = data.items || data.collection?.items || [];
-      if (items.length === 0) break;
-
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      for (const item of items) {
-        allArticles.push({
-          id: `sqsp-${allArticles.length}-${item.id || ""}`,
-          title: (item.title || "").replace(/&amp;/g, "&"),
-          date: item.publishOn
-            ? new Date(item.publishOn).toISOString().split("T")[0]
-            : "",
-          imageUrl: item.assetUrl || item.socialImage || "",
-          url: item.fullUrl
-            ? `https://www.thedayafterai.com${item.fullUrl}`
-            : "",
-          source: "TheDayAfterAI",
-        });
-      }
-
-      offset += items.length;
-      // If we got fewer items than a typical page, we've reached the end
-      if (items.length < 20 || allArticles.length >= PAGE_SIZE) break;
-    } catch {
-      break; // Stop paginating on error
-    }
-  }
-
-  return allArticles.slice(0, PAGE_SIZE);
-}
-
+/** Load custom sections (e.g. AI Market Insight) from pre-fetched static JSON.
+ *  The prefetch script (fetch-news.js) refreshes custom-articles.json every
+ *  15 minutes via the Squarespace JSON API, so the frontend just reads the
+ *  already-fetched data for instant loading — no live CORS proxy calls needed. */
 export async function fetchCustomSections(): Promise<CustomSection[]> {
-  // Load config (section metadata + fallback articles) from static JSON
-  let configs: CustomSectionConfig[] = [];
   try {
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
     const res = await fetch(`${basePath}/data/custom-articles.json`, {
@@ -156,45 +110,17 @@ export async function fetchCustomSections(): Promise<CustomSection[]> {
     });
     if (!res.ok) return [];
     const data = await res.json();
-    configs = data.sections || [];
-  } catch {
-    return [];
-  }
+    const configs: CustomSectionConfig[] = data.sections || [];
 
-  const sections: CustomSection[] = [];
-
-  for (const config of configs) {
-    // Try dynamic fetch from Squarespace API via CORS proxy
-    if (config.pageUrl && config.categoryFilter) {
-      try {
-        const articles = await fetchSquarespaceCollection(
-          config.pageUrl,
-          config.categoryFilter
-        );
-        if (articles.length > 0) {
-          sections.push({
-            id: config.id,
-            title: config.title,
-            color: config.color,
-            articles,
-          });
-          continue;
-        }
-      } catch {
-        // Dynamic fetch failed — fall through to static articles
-      }
-    }
-
-    // Fall back to static articles from JSON
-    sections.push({
+    return configs.map((config) => ({
       id: config.id,
       title: config.title,
       color: config.color,
       articles: config.articles || [],
-    });
+    }));
+  } catch {
+    return [];
   }
-
-  return sections;
 }
 
 // ─── CORS Proxy (fallback for live fetching) ──────────────────────
