@@ -67,7 +67,24 @@ const CATEGORY_QUERIES = {
     "AI enterprise adoption company deploy solution",
     "AI business application case study revenue",
   ],
-  "chatbot-development": ["AI chatbot GPT LLM OpenAI", "AI Claude Gemini language model conversational"],
+  "chatbot-development": [
+    // Market Competition — rivalry between AI chatbot providers, benchmarks, market share
+    "AI chatbot competition GPT Claude Gemini market",
+    "AI language model benchmark comparison performance",
+    "AI chatbot market share rivalry OpenAI Google Anthropic",
+    // Company Applications — businesses deploying chatbots, enterprise use cases
+    "AI chatbot enterprise deployment customer service",
+    "AI conversational agent business automation workflow",
+    "AI virtual assistant company integration platform",
+    // Personal Assistance — consumer chatbots, daily life, productivity, companions
+    "AI personal assistant daily life productivity",
+    "AI chatbot companion consumer health wellness",
+    "AI voice assistant smart home personal use",
+    // Social Implications — impact on society, communication, misinformation, trust
+    "AI chatbot social impact misinformation trust",
+    "AI conversational ethics deepfake manipulation",
+    "AI human interaction communication society change",
+  ],
   "digital-security": ["AI cybersecurity privacy digital security", "AI hack breach malware encryption"],
   "environment-science": ["AI climate environment science quantum", "AI sustainable energy physics biology discovery"],
   "governance-politics": ["AI regulation governance politics policy", "AI government legislation compliance framework"],
@@ -87,6 +104,10 @@ const CATEGORY_GEO = {
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
   "business-economy": [
+    { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
+    { hl: "en", gl: "", ceid: "" },               // Then truly international
+  ],
+  "chatbot-development": [
     { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
