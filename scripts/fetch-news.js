@@ -32,7 +32,24 @@ const PLAYWRIGHT_TIMEOUT = 15000;
 // ── Category search queries ────────────────────────────────────────
 
 const CATEGORY_QUERIES = {
-  "ai-academy": ["AI education university research", "AI academic learning school curriculum"],
+  "ai-academy": [
+    // AI Foundations — fundamental research, core concepts, academic breakthroughs
+    "AI fundamental research university breakthrough",
+    "AI foundational model academic research discovery",
+    "AI education core learning concepts curriculum",
+    // AI Evolution — model advancements, new architectures, benchmarks, milestones
+    "AI model advancement new architecture upgrade",
+    "AI benchmark milestone training methods performance",
+    "AI capabilities breakthrough frontier development",
+    // AI Integrations — AI in education, tools, workflows, collaborations
+    "AI education platform integration tools",
+    "AI learning teaching workflow knowledge delivery",
+    "AI academic industry collaboration real-world",
+    // AI Philosophy — ethics, alignment, safety, societal impact
+    "AI ethics debate alignment safety",
+    "AI human relationship societal impact philosophy",
+    "AI governance responsibility society future",
+  ],
   "business-economy": ["AI business economy startup funding", "AI company market invest stock finance"],
   "chatbot-development": ["AI chatbot GPT LLM OpenAI", "AI Claude Gemini language model conversational"],
   "digital-security": ["AI cybersecurity privacy digital security", "AI hack breach malware encryption"],
@@ -44,6 +61,16 @@ const CATEGORY_QUERIES = {
   "unmanned-aircraft": ["AI drone unmanned aircraft UAV aerial", "AI quadcopter flying delivery drone"],
   "visual-art-photography": ["AI photography visual art camera image", "AI painting creative artwork gallery museum"],
 };
+
+// Per-category geo priority: fetch AU news first, then international to fill remaining slots
+// Categories not listed here default to US-only
+const CATEGORY_GEO = {
+  "ai-academy": [
+    { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
+    { hl: "en-US", gl: "US", ceid: "US:en" },   // Then international
+  ],
+};
+const DEFAULT_GEO = [{ hl: "en-US", gl: "US", ceid: "US:en" }];
 
 const CATEGORY_KEYS = Object.keys(CATEGORY_QUERIES);
 const SLOT_YOUTUBE = CATEGORY_KEYS.length;       // 11
@@ -243,50 +270,63 @@ async function fetchCategoryNews(category) {
   const queries = CATEGORY_QUERIES[category];
   if (!queries) { console.warn(`Unknown category: ${category}`); return []; }
 
+  const geoList = CATEGORY_GEO[category] || DEFAULT_GEO;
   const articles = [];
   const seenTitles = new Set();
 
-  for (const q of queries) {
+  // For multi-geo categories (e.g. ai-academy): run all queries with AU geo first,
+  // then all queries again with US geo to fill remaining slots. This ensures
+  // Australian news is prioritised while international news fills the gaps.
+  for (const geo of geoList) {
     if (articles.length >= ARTICLES_PER_CATEGORY) break;
-    try {
-      const rssUrl = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en&num=60`;
-      const xml = await fetchWithRetry(rssUrl);
-      const items = extractItems(xml);
+    const geoLabel = geo.gl;
 
-      for (const item of items) {
-        if (articles.length >= ARTICLES_PER_CATEGORY) break;
+    for (const q of queries) {
+      if (articles.length >= ARTICLES_PER_CATEGORY) break;
+      try {
+        const rssUrl = `${GOOGLE_NEWS_RSS}?q=${encodeURIComponent(q)}&hl=${geo.hl}&gl=${geo.gl}&ceid=${geo.ceid}&num=60`;
+        const xml = await fetchWithRetry(rssUrl);
+        const items = extractItems(xml);
 
-        const title = getTagContent(item, "title")[0] || "";
-        if (!title || seenTitles.has(title)) continue;
-        seenTitles.add(title);
+        for (const item of items) {
+          if (articles.length >= ARTICLES_PER_CATEGORY) break;
 
-        const link = getTagContent(item, "link")[0] || "";
-        const pubDate = getTagContent(item, "pubDate")[0] || "";
-        const source = getTagContent(item, "source")[0] || "Google News";
-        const rawDescription = getTagContent(item, "description")[0] || "";
-        const description = stripHtml(rawDescription);
+          const title = getTagContent(item, "title")[0] || "";
+          if (!title || seenTitles.has(title)) continue;
+          seenTitles.add(title);
 
-        let imageUrl = "";
-        const mediaUrls = getTagAttr(item, "media:content", "url");
-        if (mediaUrls.length > 0 && !isGenericImage(mediaUrls[0])) imageUrl = mediaUrls[0];
-        if (!imageUrl) {
-          const enclosureUrls = getTagAttr(item, "enclosure", "url");
-          if (enclosureUrls.length > 0 && !isGenericImage(enclosureUrls[0])) imageUrl = enclosureUrls[0];
+          const link = getTagContent(item, "link")[0] || "";
+          const pubDate = getTagContent(item, "pubDate")[0] || "";
+          const source = getTagContent(item, "source")[0] || "Google News";
+          const rawDescription = getTagContent(item, "description")[0] || "";
+          const description = stripHtml(rawDescription);
+
+          let imageUrl = "";
+          const mediaUrls = getTagAttr(item, "media:content", "url");
+          if (mediaUrls.length > 0 && !isGenericImage(mediaUrls[0])) imageUrl = mediaUrls[0];
+          if (!imageUrl) {
+            const enclosureUrls = getTagAttr(item, "enclosure", "url");
+            if (enclosureUrls.length > 0 && !isGenericImage(enclosureUrls[0])) imageUrl = enclosureUrls[0];
+          }
+          if (!imageUrl) {
+            const decodedDesc = rawDescription.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&").replace(/&quot;/g, '"');
+            const imgMatch = decodedDesc.match(/<img[^>]+src=["']([^"']+)["']/i);
+            if (imgMatch && imgMatch[1] && !isGenericImage(imgMatch[1])) imageUrl = imgMatch[1];
+          }
+
+          articles.push({
+            id: `gn-${category}-${articles.length}`,
+            title, summary: description || title, topic: category,
+            source, date: pubDate, imageUrl: imageUrl || "", url: link,
+          });
         }
-        if (!imageUrl) {
-          const decodedDesc = rawDescription.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&").replace(/&quot;/g, '"');
-          const imgMatch = decodedDesc.match(/<img[^>]+src=["']([^"']+)["']/i);
-          if (imgMatch && imgMatch[1] && !isGenericImage(imgMatch[1])) imageUrl = imgMatch[1];
-        }
-
-        articles.push({
-          id: `gn-${category}-${articles.length}`,
-          title, summary: description || title, topic: category,
-          source, date: pubDate, imageUrl: imageUrl || "", url: link,
-        });
+      } catch (err) {
+        console.warn(`  Failed query "${q}" [${geoLabel}]: ${err.message}`);
       }
-    } catch (err) {
-      console.warn(`  Failed query "${q}": ${err.message}`);
+    }
+
+    if (geoList.length > 1) {
+      console.log(`    ${geoLabel}: ${articles.length} articles so far`);
     }
   }
 
