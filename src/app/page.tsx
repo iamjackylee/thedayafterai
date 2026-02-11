@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import {
   Search,
   Loader2,
@@ -368,16 +368,29 @@ function CategoryRow({ topic, articles, id, showCount }: { topic: typeof TOPICS[
     el.scrollTo({ left: edge === "start" ? 0 : el.scrollWidth, behavior: "smooth" });
   };
 
+  // Build ticker from articles within the last 24 hours
+  const tickerText = useMemo(() => {
+    const now = Date.now();
+    const day = 24 * 60 * 60 * 1000;
+    const recent = articles.filter((a) => {
+      if (!a.date) return false;
+      const d = new Date(a.date).getTime();
+      return !isNaN(d) && now - d <= day;
+    });
+    const src = recent.length > 0 ? recent : articles.slice(0, 5);
+    return src.map((a) => a.title).join("  \u2022  ");
+  }, [articles]);
+
   return (
     <div className="category-section" id={id} data-topic-section={topic.id}>
       {/* Category header with colored border and arrows */}
       <div className="flex items-center justify-between mb-4">
         <div
-          className="category-header"
+          className="category-header shrink-0"
           style={{ borderLeftColor: topic.color } as React.CSSProperties}
         >
           <div className="flex items-center gap-3">
-            <h3 className="text-lg font-black text-white uppercase tracking-wide">
+            <h3 className="text-lg font-black text-white uppercase tracking-wide whitespace-nowrap">
               {topic.label}
             </h3>
             {showCount && (
@@ -390,7 +403,14 @@ function CategoryRow({ topic, articles, id, showCount }: { topic: typeof TOPICS[
             )}
           </div>
         </div>
-        <div className="flex items-center gap-0.5">
+        {/* Scrolling headline ticker */}
+        <div className="headline-ticker mx-3 flex-1 min-w-0 overflow-hidden">
+          <div className="headline-ticker-track" style={{ color: topic.color }}>
+            <span>{tickerText}</span>
+            <span>{tickerText}</span>
+          </div>
+        </div>
+        <div className="flex items-center gap-0.5 shrink-0">
           <button
             onClick={() => scrollToEdge("start")}
             disabled={!canScrollLeft}
