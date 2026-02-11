@@ -193,7 +193,24 @@ const CATEGORY_QUERIES = {
     "AI factory automation manufacturing industrial IoT",
     "AI smart sensor connected device Internet of Things",
   ],
-  "unmanned-aircraft": ["AI drone unmanned aircraft UAV aerial", "AI quadcopter flying delivery drone"],
+  "unmanned-aircraft": [
+    // Civilian Uses — AI drones for delivery, agriculture, photography, inspection, search & rescue
+    "AI drone delivery logistics commercial civilian",
+    "AI drone agriculture surveying inspection mapping",
+    "AI drone search rescue emergency disaster response",
+    // Regulatory Challenges — drone airspace rules, FAA/CASA regulations, licensing, safety
+    "AI drone regulation airspace FAA CASA licensing",
+    "AI unmanned aircraft policy safety compliance rule",
+    "AI drone privacy law restriction no-fly zone",
+    // Military Drones — AI in combat UAVs, defence surveillance, autonomous weapons
+    "AI military drone combat UAV autonomous weapon",
+    "AI defence surveillance reconnaissance unmanned",
+    "AI drone warfare strike swarm tactical operation",
+    // Technological Breakthroughs — AI drone hardware, battery, navigation, AI flight systems
+    "AI drone technology breakthrough navigation sensor",
+    "AI UAV battery range endurance flight system",
+    "AI autonomous flying vehicle eVTOL air taxi",
+  ],
   "visual-art-photography": ["AI photography visual art camera image", "AI painting creative artwork gallery museum"],
 };
 
@@ -234,6 +251,10 @@ const CATEGORY_GEO = {
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
   "technology-innovation": [
+    { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
+    { hl: "en", gl: "", ceid: "" },               // Then truly international
+  ],
+  "unmanned-aircraft": [
     { hl: "en-AU", gl: "AU", ceid: "AU:en" },   // Australian news first
     { hl: "en", gl: "", ceid: "" },               // Then truly international
   ],
