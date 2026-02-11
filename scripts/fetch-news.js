@@ -1041,13 +1041,20 @@ async function fetchCustomArticles() {
             let imageUrl = item.assetUrl || "";
             if (!imageUrl && item.socialImage) imageUrl = item.socialImage;
 
-            // Parse date — Squarespace uses epoch milliseconds
+            // Parse date — Squarespace uses epoch ms OR ISO strings
             let dateStr = "";
             for (const field of [item.publishOn, item.updatedOn, item.addedOn]) {
               if (!field) continue;
               try {
-                const ts = typeof field === "number" ? field : parseInt(field, 10);
-                const d = new Date(ts);
+                // Try epoch milliseconds first, then ISO string
+                let d;
+                if (typeof field === "number") {
+                  d = new Date(field);
+                } else if (/^\d{10,}$/.test(String(field))) {
+                  d = new Date(parseInt(field, 10));
+                } else {
+                  d = new Date(field); // ISO string like "2026-02-07T12:00:00-0800"
+                }
                 if (d.getFullYear() >= 2020 && d.getFullYear() <= 2030) {
                   dateStr = d.toISOString().split("T")[0];
                   break;
@@ -1122,11 +1129,11 @@ async function fetchCustomArticles() {
     if (articlesFromApi.length < 3) {
       let context;
       try { context = await getPlaywrightContext(); } catch {
-        console.warn("  Playwright not available, skipping.");
-        continue;
+        console.warn("  Playwright not available, skipping scraping.");
+        context = null;
       }
 
-      try {
+      if (context) try {
         const page = await context.newPage();
         await page.goto(pageUrl, { waitUntil: "networkidle", timeout: 30000 });
         console.log(`  Loaded via Playwright: ${pageUrl}`);
