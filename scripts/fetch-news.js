@@ -802,79 +802,90 @@ async function resolveArticles(articles) {
     }
   }
 
-  // Re-extract images for cached articles that have resolved URLs but no/bad images
-  if (needsImage.length > 0 && context) {
-    console.log(`Re-extracting images for ${needsImage.length} cached articles...`);
-    let imgFixed = 0;
-    for (let i = 0; i < needsImage.length; i += PLAYWRIGHT_CONCURRENCY) {
-      const batch = needsImage.slice(i, i + PLAYWRIGHT_CONCURRENCY);
-      const promises = batch.map(async (article) => {
-        const page = await context.newPage();
-        try {
-          await page.goto(article.url, { waitUntil: "load", timeout: PLAYWRIGHT_TIMEOUT });
-          await page.waitForTimeout(1500);
-          const imgUrl = await page.evaluate(() => {
-            const isGoodUrl = (u) => {
-              if (!u || !u.startsWith("http")) return false;
-              const lower = u.toLowerCase();
-              return ![
-                "avatar", "/logo", "favicon", "icon", "pixel", "tracking",
-                "1x1", "spacer", "badge", "brand", "masthead", "site-logo",
-                "site_logo", "header-logo", "header_logo", "nav-logo", "nav_logo",
-                ".ico", ".svg", "widget", "button", "banner-ad", "advertisement",
-              ].some((pat) => lower.includes(pat));
-            };
-            // JSON-LD
-            try {
-              const ldScripts = document.querySelectorAll('script[type="application/ld+json"]');
-              for (const script of ldScripts) {
-                const data = JSON.parse(script.textContent || "");
-                const items = Array.isArray(data) ? data : data["@graph"] || [data];
-                for (const item of items) {
-                  const t = item["@type"];
-                  if (["NewsArticle","Article","BlogPosting","WebPage","ReportageNewsArticle"].includes(t)) {
-                    const img = item.image;
-                    if (typeof img === "string" && isGoodUrl(img)) return img;
-                    if (Array.isArray(img) && img.length > 0) {
-                      const first = typeof img[0] === "string" ? img[0] : img[0]?.url;
-                      if (isGoodUrl(first)) return first;
-                    }
-                    if (img?.url && isGoodUrl(img.url)) return img.url;
-                    if (item.thumbnailUrl && isGoodUrl(item.thumbnailUrl)) return item.thumbnailUrl;
-                  }
-                }
-              }
-            } catch {}
-            // OG / Twitter meta
-            for (const sel of ['meta[property="og:image"]','meta[property="og:image:secure_url"]','meta[name="twitter:image"]','meta[name="twitter:image:src"]']) {
-              const val = document.querySelector(sel)?.getAttribute("content") || "";
-              if (isGoodUrl(val)) return val;
-            }
-            // Body images
-            const imgs = Array.from(document.querySelectorAll("article img[src], main img[src], .post-content img[src], .article-body img[src]"));
-            for (const img of imgs) {
-              const src = img.getAttribute("src") || "";
-              if (isGoodUrl(src) && img.naturalWidth > 200) return src;
-            }
-            return "";
-          });
-          if (imgUrl && !isGenericImage(imgUrl)) {
-            article.imageUrl = imgUrl;
-            const articleId = extractArticleId(article.url) || article.url;
-            if (cache[articleId]) cache[articleId].imageUrl = imgUrl;
-            imgFixed++;
-          }
-        } catch { /* page load failed */ }
-        finally { await page.close(); }
-      });
-      await Promise.allSettled(promises);
+  // ── Lightweight HTTP og:image extraction for articles still missing images ──
+  // Playwright fails on ~20% of sites (bot detection, timeouts). A simple HTTP
+  // GET + regex parse is much more reliable for extracting og:image / twitter:image
+  // since these meta tags are server-rendered in HTML (no JS needed).
+  const stillNeedsImage = articles.filter((a) =>
+    !a.imageUrl || a.imageUrl.includes("unsplash.com")
+  ).filter((a) => !a.url.includes("news.google.com")); // must have resolved URL
+
+  if (stillNeedsImage.length > 0) {
+    console.log(`Fetching og:image via HTTP for ${stillNeedsImage.length} articles...`);
+    let httpFixed = 0;
+    const HTTP_CONCURRENCY = 10;
+    for (let i = 0; i < stillNeedsImage.length; i += HTTP_CONCURRENCY) {
+      const batch = stillNeedsImage.slice(i, i + HTTP_CONCURRENCY);
+      await Promise.allSettled(batch.map(async (article) => {
+        const img = await fetchOgImageHttp(article.url);
+        if (img && !isGenericImage(img)) {
+          article.imageUrl = img;
+          const articleId = extractArticleId(article.url) || article.url;
+          if (cache[articleId]) cache[articleId].imageUrl = img;
+          httpFixed++;
+        }
+      }));
     }
-    console.log(`  Image re-extraction: ${imgFixed}/${needsImage.length} fixed`);
+    console.log(`  HTTP og:image extraction: ${httpFixed}/${stillNeedsImage.length} fixed`);
   }
 
   saveUrlCache(cache);
   console.log(`Resolution done: ${resolved} resolved, ${failed} failed`);
   applyFallbackImages(articles);
+}
+
+/** Lightweight og:image extraction via HTTP GET (no Playwright needed).
+ *  Uses browser User-Agent to avoid bot detection. Extracts og:image,
+ *  twitter:image, and JSON-LD image from raw HTML using regex. */
+async function fetchOgImageHttp(url) {
+  if (!url) return "";
+  try {
+    const res = await fetch(url, {
+      headers: { "User-Agent": BROWSER_UA },
+      redirect: "follow",
+      signal: AbortSignal.timeout(10000),
+    });
+    if (!res.ok) return "";
+    const html = await res.text();
+
+    // 1. JSON-LD image (most accurate)
+    const ldMatch = html.match(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/i);
+    if (ldMatch) {
+      try {
+        const data = JSON.parse(ldMatch[1]);
+        const items = Array.isArray(data) ? data : data["@graph"] || [data];
+        for (const item of items) {
+          const t = item["@type"];
+          if (["NewsArticle","Article","BlogPosting","WebPage","ReportageNewsArticle"].includes(t)) {
+            const img = item.image;
+            if (typeof img === "string" && img.startsWith("http")) return img;
+            if (Array.isArray(img) && img.length > 0) {
+              const first = typeof img[0] === "string" ? img[0] : img[0]?.url;
+              if (first && first.startsWith("http")) return first;
+            }
+            if (img?.url && img.url.startsWith("http")) return img.url;
+          }
+        }
+      } catch {}
+    }
+
+    // 2. og:image meta tag
+    const ogMatch = html.match(/<meta[^>]*property=["']og:image["'][^>]*content=["']([^"']+)["']/i)
+      || html.match(/<meta[^>]*content=["']([^"']+)["'][^>]*property=["']og:image["']/i);
+    if (ogMatch?.[1] && ogMatch[1].startsWith("http")) return ogMatch[1];
+
+    // 3. og:image:secure_url
+    const ogSecure = html.match(/<meta[^>]*property=["']og:image:secure_url["'][^>]*content=["']([^"']+)["']/i)
+      || html.match(/<meta[^>]*content=["']([^"']+)["'][^>]*property=["']og:image:secure_url["']/i);
+    if (ogSecure?.[1] && ogSecure[1].startsWith("http")) return ogSecure[1];
+
+    // 4. twitter:image meta tag
+    const twMatch = html.match(/<meta[^>]*name=["']twitter:image["'][^>]*content=["']([^"']+)["']/i)
+      || html.match(/<meta[^>]*content=["']([^"']+)["'][^>]*name=["']twitter:image["']/i);
+    if (twMatch?.[1] && twMatch[1].startsWith("http")) return twMatch[1];
+
+  } catch { /* timeout or network error — skip */ }
+  return "";
 }
 
 function applyFallbackImages(articles) {
