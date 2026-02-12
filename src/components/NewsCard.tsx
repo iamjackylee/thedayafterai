@@ -59,7 +59,7 @@ export default function NewsCard({ article, topicColor }: NewsCardProps) {
       href={article.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group bg-[var(--surface)] overflow-hidden border border-[var(--border)] hover:border-[var(--border-light)] transition-all block card-hover"
+      className="group bg-[var(--surface)] overflow-hidden border border-[var(--border)] hover:border-[var(--border-light)] transition-all flex flex-col h-full card-hover"
       style={{ ["--card-accent" as string]: topicColor || "var(--accent)" }}
     >
       {/* Image with topic-appropriate fallback for broken/missing images */}
@@ -78,15 +78,15 @@ export default function NewsCard({ article, topicColor }: NewsCardProps) {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
       </div>
 
-      {/* Content */}
-      <div className="p-4">
+      {/* Content — flex-1 fills remaining height, footer pushed to bottom */}
+      <div className="p-4 flex flex-col flex-1">
         <h3 className="text-sm font-bold text-white leading-snug mb-2 transition-colors line-clamp-2">
           {article.title}
         </h3>
-        <p className="text-[var(--muted)] text-xs leading-relaxed mb-3 line-clamp-3">
+        <p className="text-[var(--muted)] text-xs leading-relaxed mb-3 line-clamp-3 flex-1">
           {article.summary}
         </p>
-        <div className="flex items-center justify-between text-[10px] text-[var(--text-secondary)]">
+        <div className="flex items-center justify-between text-[10px] text-[var(--text-secondary)] mt-auto">
           <div className="flex items-center gap-1.5">
             <Clock size={10} />
             <span>{formatDate(article.date)}</span>

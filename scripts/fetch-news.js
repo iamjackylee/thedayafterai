@@ -334,7 +334,8 @@ function extractEntries(xml) {
 function stripHtml(html) {
   return html
     .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"').replace(/&#39;/g, "'")
+    .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&nbsp;/g, " ")
+    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(parseInt(code, 10)))
     .replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
 }
 
