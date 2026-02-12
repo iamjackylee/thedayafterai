@@ -737,7 +737,7 @@ export default function Home() {
 
         {/* Section navigation - color-coded pills + latest video */}
         <div className="border-t border-[var(--border)]">
-          <div className="max-w-[1400px] mx-auto px-4 md:px-8 flex items-center gap-3">
+          <div className="max-w-[1400px] mx-auto px-4 md:px-8 flex flex-wrap items-center gap-3">
             {/* Topic pills (scrollable) */}
             <div className="relative flex-1 min-w-0">
               <button
@@ -788,15 +788,15 @@ export default function Home() {
               </button>
             </div>
 
-            {/* Latest video + Watch */}
-            <div className="hidden md:flex items-center gap-3 shrink-0 pl-3 border-l border-[var(--border-light)]">
+            {/* Latest video + Watch — second line on mobile, inline on md+ */}
+            <div className="flex items-center gap-2 w-full md:w-auto md:shrink-0 py-2 md:py-0 border-t md:border-t-0 md:border-l border-[var(--border-light)] md:pl-3">
               <Play size={10} className="text-[#ff0050] shrink-0" fill="currentColor" />
               {channelVideos[0] ? (
                 <a
                   href={`https://www.youtube.com/watch?v=${channelVideos[0].videoId}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs text-[var(--foreground)] truncate max-w-[200px] hover:text-[var(--accent)] transition-colors font-medium"
+                  className="text-xs text-[var(--foreground)] line-clamp-2 md:truncate md:max-w-[200px] hover:text-[var(--accent)] transition-colors font-medium flex-1 min-w-0"
                 >
                   {channelVideos[0].title}
                 </a>
