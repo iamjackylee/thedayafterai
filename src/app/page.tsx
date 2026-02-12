@@ -873,7 +873,7 @@ export default function Home() {
                 </div>
                 {/* Info below thumbnail */}
                 <div className="p-4">
-                  <h3 className="text-lg md:text-xl font-black text-white leading-tight group-hover:text-[var(--accent)] transition-colors line-clamp-2">
+                  <h3 className="text-base sm:text-lg md:text-xl font-black text-white leading-snug group-hover:text-[var(--accent)] transition-colors sm:line-clamp-2">
                     {sortedChannelVideos[0].title}
                   </h3>
                   {sortedChannelVideos[0].description && (
