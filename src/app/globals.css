@@ -122,12 +122,19 @@ html {
   display: flex;
   gap: 3rem;
   white-space: nowrap;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  opacity: 0.7;
+  opacity: 0.85;
   animation: ticker-scroll linear infinite;
   animation-duration: 35s; /* default, overridden per-row via inline style */
   width: max-content;
+}
+
+@media (min-width: 640px) {
+  .headline-ticker-track {
+    font-size: 0.7rem;
+    opacity: 0.7;
+  }
 }
 
 .headline-ticker:hover .headline-ticker-track {
