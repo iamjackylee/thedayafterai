@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -29,8 +28,8 @@ export default function InfoPage() {
         {/* Header */}
         <header className="mb-12 md:mb-16">
           <div className="flex items-center gap-4 mb-6">
-            <Image
-              src="/tdai-letter-logo.png"
+            <img
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/tdai-letter-logo.png`}
               alt="TheDayAfterAI logo"
               width={56}
               height={56}
@@ -52,6 +51,8 @@ export default function InfoPage() {
             and curated headlines from publishers around the world.
           </p>
         </header>
+
+        {/* ── Concrete: What / How / Categories ────────────────────── */}
 
         {/* What We Do */}
         <section className="mb-12 md:mb-14">
@@ -114,6 +115,153 @@ export default function InfoPage() {
             </div>
           </div>
         </section>
+
+        {/* How It Works */}
+        <section className="mb-12 md:mb-14">
+          <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
+            How It Works
+          </h2>
+          <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
+            At TheDayAfterAI News, our content is created through a collaborative
+            effort between AI systems and human editors. AI curators scan and aggregate
+            news across specific AI domains. AI then synthesises this information into
+            clear, engaging narratives. Human editors review the work to ensure
+            accuracy, relevance, and quality before publication. This blend of AI
+            precision and human oversight delivers reliable, up-to-date AI news.
+          </p>
+          <ol className="space-y-4 text-[var(--text-secondary)] leading-relaxed list-decimal list-inside">
+            <li>
+              <span className="text-white font-semibold">Curate</span> — We
+              manually select the day&apos;s most noteworthy AI stories from
+              reputable sources.
+            </li>
+            <li>
+              <span className="text-white font-semibold">Summarise</span> — AI
+              technology condenses and scripts each story into a clear, concise
+              narrative.
+            </li>
+            <li>
+              <span className="text-white font-semibold">Produce</span> — The
+              scripts are transformed into polished video segments with visuals and
+              voiceover.
+            </li>
+            <li>
+              <span className="text-white font-semibold">Publish</span> — Videos
+              go live on YouTube and our website daily, alongside curated headlines
+              from other publishers.
+            </li>
+          </ol>
+        </section>
+
+        {/* What We Cover */}
+        <section className="mb-12 md:mb-14">
+          <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
+            What We Cover
+          </h2>
+          <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
+            Our news hub spans 11 categories organised into three pillars,
+            capturing the full breadth of AI&apos;s influence on the world.
+          </p>
+          <div className="grid gap-6 md:gap-8">
+            <div className="rounded-xl border border-[var(--border-light)] bg-[var(--surface)] p-6 md:p-8">
+              <h3 className="text-lg font-bold text-white mb-3">Tech Frontiers</h3>
+              <ul className="space-y-2 text-[var(--text-secondary)] leading-relaxed">
+                <li><strong className="text-white">AI Academy</strong> — Tutorials, courses, and educational resources for learning AI.</li>
+                <li><strong className="text-white">Chatbot Development</strong> — Advances in conversational AI, LLMs, and agent frameworks.</li>
+                <li><strong className="text-white">Technology &amp; Innovation</strong> — Cutting-edge research, product launches, and industry breakthroughs.</li>
+                <li><strong className="text-white">Unmanned Aircraft</strong> — AI-powered drones, autonomous flight, and aerial intelligence.</li>
+              </ul>
+            </div>
+            <div className="rounded-xl border border-[var(--border-light)] bg-[var(--surface)] p-6 md:p-8">
+              <h3 className="text-lg font-bold text-white mb-3">Global Dynamics</h3>
+              <ul className="space-y-2 text-[var(--text-secondary)] leading-relaxed">
+                <li><strong className="text-white">Business &amp; Economy</strong> — AI&apos;s impact on markets, enterprise adoption, and economic trends.</li>
+                <li><strong className="text-white">Digital Security</strong> — Cybersecurity, AI-driven threats, and defence technologies.</li>
+                <li><strong className="text-white">Environment &amp; Science</strong> — Climate tech, sustainability, and scientific discovery powered by AI.</li>
+                <li><strong className="text-white">Governance &amp; Politics</strong> — AI regulation, policy debates, and geopolitical implications.</li>
+              </ul>
+            </div>
+            <div className="rounded-xl border border-[var(--border-light)] bg-[var(--surface)] p-6 md:p-8">
+              <h3 className="text-lg font-bold text-white mb-3">Arts &amp; Culture</h3>
+              <ul className="space-y-2 text-[var(--text-secondary)] leading-relaxed">
+                <li><strong className="text-white">Health &amp; Style</strong> — AI in healthcare, wellness, fitness, and lifestyle.</li>
+                <li><strong className="text-white">Musical Art</strong> — Generative music, AI composition tools, and the future of sound.</li>
+                <li><strong className="text-white">Visual Art &amp; Photography</strong> — AI-generated imagery, creative tools, and the evolving art world.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* ── Narrative: Origin & Name ─────────────────────────────── */}
+
+        {/* Our Story */}
+        <section className="mb-12 md:mb-14">
+          <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
+            Our Story
+          </h2>
+          <div className="space-y-4 text-[var(--text-secondary)] leading-relaxed">
+            <p>
+              In early 2023, the emergence of advanced generative AI models marked a
+              significant leap in technological innovation. These breakthroughs
+              promised to transform industries, enhance creativity, and address complex
+              global challenges. However, alongside these opportunities, concerns about
+              ethical implications and potential misuse began to dominate public
+              discourse.
+            </p>
+            <p>
+              At TheDayAfterAI News, we believe in presenting a comprehensive view of
+              generative AI. Our mission is to bridge the gap between fear and optimism
+              by curating balanced content that highlights both the challenges and the
+              remarkable advancements in AI. We aim to foster informed discussions and
+              support responsible innovation by showing how AI can be harnessed for
+              good.
+            </p>
+            <p>
+              TheDayAfterAI News was launched on April 3, 2024, marking the beginning
+              of our journey to become your trusted curator of AI news. As generative
+              AI continues to evolve, we remain committed to inspiring curiosity,
+              encouraging responsible innovation, and deepening the public&apos;s
+              understanding of the technology shaping our future.
+            </p>
+          </div>
+        </section>
+
+        {/* Why "TheDayAfterAI" */}
+        <section className="mb-12 md:mb-14">
+          <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
+            Why &ldquo;TheDayAfterAI&rdquo;?
+          </h2>
+          <p className="text-[var(--text-secondary)] leading-relaxed mb-4">
+            Our name embodies our vision of looking beyond the present and
+            anticipating the future impacts of artificial intelligence:
+          </p>
+          <ul className="space-y-3 text-[var(--text-secondary)] leading-relaxed">
+            <li>
+              <strong className="text-white">Forward-Thinking</strong> — We explore
+              not just the current state of AI but also its future developments and
+              long-term implications.
+            </li>
+            <li>
+              <strong className="text-white">Proactive Engagement</strong> — By
+              focusing on &ldquo;the day after&rdquo;, we encourage our audience to
+              think ahead, preparing for and shaping the evolving AI landscape
+              responsibly.
+            </li>
+            <li>
+              <strong className="text-white">Impactful Curation</strong> — We believe
+              that informed discussions today will shape the innovations and ethical
+              standards of tomorrow.
+            </li>
+            <li>
+              <strong className="text-white">Commitment to Change</strong> — Our
+              mission goes beyond curation; we strive to inspire and empower
+              individuals to embrace AI ethically, fostering a collective effort to
+              drive meaningful transformation.
+            </li>
+          </ul>
+        </section>
+
+        {/* ── Aspirational: Mission / Vision / Values ──────────────── */}
 
         {/* Our Mission */}
         <section className="mb-12 md:mb-14">
@@ -196,138 +344,7 @@ export default function InfoPage() {
           </div>
         </section>
 
-        {/* What We Cover */}
-        <section className="mb-12 md:mb-14">
-          <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
-            What We Cover
-          </h2>
-          <ul className="space-y-3 text-[var(--text-secondary)] leading-relaxed">
-            <li>
-              <strong className="text-white">AI Innovations</strong> — Cutting-edge
-              advancements and breakthroughs in AI technology across various
-              industries.
-            </li>
-            <li>
-              <strong className="text-white">Ethics and AI</strong> — The ethical
-              considerations and debates surrounding the development and
-              implementation of AI.
-            </li>
-            <li>
-              <strong className="text-white">AI in Daily Life</strong> — How AI is
-              transforming everyday experiences, from smart homes to healthcare and
-              beyond.
-            </li>
-            <li>
-              <strong className="text-white">AI Events and Conferences</strong> — The
-              latest updates on AI-related events, conferences, and symposiums around
-              the globe.
-            </li>
-          </ul>
-        </section>
-
-        {/* How It Works */}
-        <section className="mb-12 md:mb-14">
-          <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
-            How It Works
-          </h2>
-          <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
-            At TheDayAfterAI News, our content is created through a collaborative
-            effort between AI systems and human editors. AI curators scan and aggregate
-            news across specific AI domains. AI then synthesises this information into
-            clear, engaging narratives. Human editors review the work to ensure
-            accuracy, relevance, and quality before publication. This blend of AI
-            precision and human oversight delivers reliable, up-to-date AI news.
-          </p>
-          <ol className="space-y-4 text-[var(--text-secondary)] leading-relaxed list-decimal list-inside">
-            <li>
-              <span className="text-white font-semibold">Curate</span> — We
-              manually select the day&apos;s most noteworthy AI stories from
-              reputable sources.
-            </li>
-            <li>
-              <span className="text-white font-semibold">Summarise</span> — AI
-              technology condenses and scripts each story into a clear, concise
-              narrative.
-            </li>
-            <li>
-              <span className="text-white font-semibold">Produce</span> — The
-              scripts are transformed into polished video segments with visuals and
-              voiceover.
-            </li>
-            <li>
-              <span className="text-white font-semibold">Publish</span> — Videos
-              go live on YouTube and our website daily, alongside curated headlines
-              from other publishers.
-            </li>
-          </ol>
-        </section>
-
-        {/* Our Story */}
-        <section className="mb-12 md:mb-14">
-          <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
-            Our Story
-          </h2>
-          <div className="space-y-4 text-[var(--text-secondary)] leading-relaxed">
-            <p>
-              In early 2023, the emergence of advanced generative AI models marked a
-              significant leap in technological innovation. These breakthroughs
-              promised to transform industries, enhance creativity, and address complex
-              global challenges. However, alongside these opportunities, concerns about
-              ethical implications and potential misuse began to dominate public
-              discourse.
-            </p>
-            <p>
-              At TheDayAfterAI News, we believe in presenting a comprehensive view of
-              generative AI. Our mission is to bridge the gap between fear and optimism
-              by curating balanced content that highlights both the challenges and the
-              remarkable advancements in AI. We aim to foster informed discussions and
-              support responsible innovation by showing how AI can be harnessed for
-              good.
-            </p>
-            <p>
-              TheDayAfterAI News was launched on April 3, 2024, marking the beginning
-              of our journey to become your trusted curator of AI news. As generative
-              AI continues to evolve, we remain committed to inspiring curiosity,
-              encouraging responsible innovation, and deepening the public&apos;s
-              understanding of the technology shaping our future.
-            </p>
-          </div>
-        </section>
-
-        {/* Why "TheDayAfterAI" */}
-        <section className="mb-12 md:mb-14">
-          <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
-            Why &ldquo;TheDayAfterAI&rdquo;?
-          </h2>
-          <p className="text-[var(--text-secondary)] leading-relaxed mb-4">
-            Our name embodies our vision of looking beyond the present and
-            anticipating the future impacts of artificial intelligence:
-          </p>
-          <ul className="space-y-3 text-[var(--text-secondary)] leading-relaxed">
-            <li>
-              <strong className="text-white">Forward-Thinking</strong> — We explore
-              not just the current state of AI but also its future developments and
-              long-term implications.
-            </li>
-            <li>
-              <strong className="text-white">Proactive Engagement</strong> — By
-              focusing on &ldquo;the day after&rdquo;, we encourage our audience to
-              think ahead, preparing for and shaping the evolving AI landscape
-              responsibly.
-            </li>
-            <li>
-              <strong className="text-white">Impactful Curation</strong> — We believe
-              that informed discussions today will shape the innovations and ethical
-              standards of tomorrow.
-            </li>
-            <li>
-              <strong className="text-white">Commitment to Change</strong> — Our
-              mission goes beyond curation; we strive to inspire and empower
-              individuals to embrace AI ethically, fostering a collective effort to
-              drive meaningful transformation.
-            </li>
-          </ul>
-        </section>
+        {/* ── People & Contact ─────────────────────────────────────── */}
 
         {/* Who We Are */}
         <section className="mb-12 md:mb-14">
