@@ -379,48 +379,6 @@ export default function InfoPage() {
           </div>
         </section>
 
-        {/* Connect */}
-        <section className="mb-12 md:mb-14">
-          <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
-            Connect With Us
-          </h2>
-          <ul className="space-y-3 text-[var(--text-secondary)]">
-            <li>
-              YouTube:{" "}
-              <a
-                href="https://www.youtube.com/@TheDayAfterAI"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--accent)] hover:underline"
-              >
-                @TheDayAfterAI
-              </a>
-            </li>
-            <li>
-              Facebook:{" "}
-              <a
-                href="https://www.facebook.com/thedayafterai"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--accent)] hover:underline"
-              >
-                TheDayAfterAI
-              </a>
-            </li>
-            <li>
-              LinkedIn:{" "}
-              <a
-                href="https://www.linkedin.com/company/thedayafterai/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--accent)] hover:underline"
-              >
-                TheDayAfterAI
-              </a>
-            </li>
-          </ul>
-        </section>
-
       </main>
 
       <SiteFooter />
