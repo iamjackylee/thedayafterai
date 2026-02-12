@@ -53,6 +53,10 @@ interface PrefetchedData {
 
 let _prefetchedCache: PrefetchedData | null = null;
 
+export function clearPrefetchedCache() {
+  _prefetchedCache = null;
+}
+
 async function loadPrefetched(): Promise<PrefetchedData | null> {
   if (_prefetchedCache) return _prefetchedCache;
 

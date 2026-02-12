@@ -23,6 +23,7 @@ import {
   fetchChannelVideos,
   fetchCustomSections,
   fetchTdaaiArticles,
+  clearPrefetchedCache,
   sortByDateDesc,
   PLAYLIST_URL,
   type NewsArticle,
@@ -487,6 +488,7 @@ export default function Home() {
   }, [debouncedQuery]);
 
   const loadData = useCallback(async () => {
+    clearPrefetchedCache();
     setLoadingNews(true);
     setLoadingChannel(true);
 
