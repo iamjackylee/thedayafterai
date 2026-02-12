@@ -1,7 +1,17 @@
 {
-  "fetchedAt": "2026-02-12T19:20:41.483Z",
+  "fetchedAt": "2026-02-12T19:55:58.381Z",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe",
   "news": [
+    {
+      "id": "gn-business-economy-34",
+      "title": "Singapore to invest in AI, strengthen defence in world ‘beset by uncertainties’ - whbl.com",
+      "summary": "Singapore to invest in AI, strengthen defence in world ‘beset by uncertainties’ whbl.com",
+      "topic": "business-economy",
+      "source": "whbl.com",
+      "date": "Thu, 12 Feb 2026 19:35:22 GMT",
+      "imageUrl": "https://storage.googleapis.com/media.mwcradio.com/mimesis/2026-02/12/2026-02-12T091037Z_1_LYNXMPEM1B0K2_RTROPTP_3_SINGAPORE-POLITICS.JPG",
+      "url": "https://whbl.com/2026/02/12/singapore-sees-fy2026-budget-surplus-at-1-of-gdp/"
+    },
     {
       "id": "gn-musical-art-22",
       "title": "This iPod-Style Android App Fixes Everything I Hate About Streaming Music - Make Tech Easier",
@@ -63,7 +73,7 @@
       "url": "https://www.findarticles.com/xiaomi-18-tipped-to-add-200mp-periscope-across-lineup/"
     },
     {
-      "id": "gn-business-economy-15",
+      "id": "gn-business-economy-16",
       "title": "​​FTSE 100 hits record high despite weak GDP data - IG Group",
       "summary": "​​FTSE 100 hits record high despite weak GDP data IG Group",
       "topic": "business-economy",
@@ -143,16 +153,6 @@
       "url": "https://novanews.co.za/when-ai-plays-cupid-the-dangers-of-companion-chatbots/"
     },
     {
-      "id": "gn-business-economy-46",
-      "title": "UK GDP Q4 2025 Reveals Surprising 0.1% Growth, Missing Forecasts Amid Economic Uncertainty - Bitcoin world",
-      "summary": "UK GDP Q4 2025 Reveals Surprising 0.1% Growth, Missing Forecasts Amid Economic Uncertainty Bitcoin world",
-      "topic": "business-economy",
-      "source": "Bitcoin world",
-      "date": "Thu, 12 Feb 2026 08:15:11 GMT",
-      "imageUrl": "https://bitcoinworld.co.in/wp-content/uploads/uk-gdp-q4-2025-growth-analysis.jpg",
-      "url": "https://bitcoinworld.co.in/uk-gdp-q4-2025-growth-analysis/"
-    },
-    {
       "id": "gn-chatbot-development-48",
       "title": "AI That Doesn't Fear 3-Bets: GPT-5.2 Model Becomes a Poker Champion in AI Showdown - SpadePoker",
       "summary": "AI That Doesn't Fear 3-Bets: GPT-5.2 Model Becomes a Poker Champion in AI Showdown SpadePoker",
@@ -173,7 +173,7 @@
       "url": "https://www.itvoice.in/beyond-safer-internet-day-making-digital-safety-a-daily-practice"
     },
     {
-      "id": "gn-business-economy-45",
+      "id": "gn-business-economy-46",
       "title": "EUR/GBP Trims Losses Near 0.8700 As UK GDP Disappoints: Critical Market Shift - Bitcoin world",
       "summary": "EUR/GBP Trims Losses Near 0.8700 As UK GDP Disappoints: Critical Market Shift Bitcoin world",
       "topic": "business-economy",
@@ -363,7 +363,7 @@
       "url": "https://techstory.in/youtube-music-places-lyrics-behind-premium-paywall-sparking-debate-among-users/"
     },
     {
-      "id": "gn-business-economy-20",
+      "id": "gn-business-economy-22",
       "title": "Summary of Governing Council deliberations: Fixed announcement date of January 28, 2026 - Bank of Canada",
       "summary": "Summary of Governing Council deliberations: Fixed announcement date of January 28, 2026 Bank of Canada",
       "topic": "business-economy",
@@ -383,7 +383,7 @@
       "url": "https://newscenter.lbl.gov/2026/02/11/new-ai-sensor-sniffs-out-spectral-targets/"
     },
     {
-      "id": "gn-business-economy-23",
+      "id": "gn-business-economy-21",
       "title": "The $108 Oil War: Can the Middle East Crash the World Economy? - Bloomberg.com",
       "summary": "The $108 Oil War: Can the Middle East Crash the World Economy? Bloomberg.com",
       "topic": "business-economy",
@@ -413,7 +413,7 @@
       "url": "https://www.mixvale.com.br/2026/02/11/galaxy-s27-should-resume-variable-aperture-cameras-to-surpass-iphone-18-pro-in-optical-innovation-en/amp/"
     },
     {
-      "id": "gn-business-economy-10",
+      "id": "gn-business-economy-11",
       "title": "Capital market assumptions 2026 | Long-term return forecasts by asset class - Lombard Odier",
       "summary": "Capital market assumptions 2026 | Long-term return forecasts by asset class Lombard Odier",
       "topic": "business-economy",
@@ -733,14 +733,14 @@
       "url": "https://www.itvoice.in/ismeet-kohli-demanded-this-from-gursimran-khamba-for-valentines-and-its-not-roses"
     },
     {
-      "id": "gn-business-economy-39",
+      "id": "gn-business-economy-40",
       "title": "India–US trade deal explained: Tariffs, oil, GDP growth — What changes now? BofA answers key FAQs - Mint",
       "summary": "India–US trade deal explained: Tariffs, oil, GDP growth — What changes now? BofA answers key FAQs Mint",
       "topic": "business-economy",
       "source": "Mint",
       "date": "Wed, 11 Feb 2026 06:40:19 GMT",
       "imageUrl": "https://www.livemint.com/lm-img/img/2026/02/11/600x338/india_us_trade_deal_1770789216945_1770789217104.jpg",
-      "url": "https://www.livemint.com/market/stock-market-news/indiaus-trade-deal-explained-tariffs-oil-gdp-growth-what-changes-now-bofa-answers-key-faqs/amp-11770788677436.html"
+      "url": "https://www.livemint.com/market/stock-market-news/indiaus-trade-deal-explained-tariffs-oil-gdp-growth-what-changes-now-bofa-answers-key-faqs-11770788677436.html"
     },
     {
       "id": "gn-unmanned-aircraft-28",
@@ -813,14 +813,14 @@
       "url": "https://breakingac.com/news/2026/feb/10/personal-style-meets-personalization-ai-and-the-future-of-menswear/"
     },
     {
-      "id": "gn-business-economy-18",
+      "id": "gn-business-economy-17",
       "title": "China’s Clean Energy Boom Reshapes Global Economic Power Dynamics - Discovery Alert",
       "summary": "China’s Clean Energy Boom Reshapes Global Economic Power Dynamics Discovery Alert",
       "topic": "business-economy",
       "source": "Discovery Alert",
       "date": "Wed, 11 Feb 2026 02:29:02 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQXlBLXlRRHVUYnpXNTRTNUJyUnJVSVdObG9tZ1pmZWRNVjdWSnpXWDlMNzJ0UWdYVTR2QVh4MEpSZTJFQ3NyWXV6Vm9DLTlOUlJjUzZZZDhlWFF0cDg0WS16dExvZzdiVmRySzMxbFo1MmJfVnNLeVZZaEZaQ00xTWxERE8?oc=5"
+      "imageUrl": "https://discoveryalert.com.au/wp-content/uploads/2026/02/415b2365-5cf2-46ff-b3d8-5d702dc5885d-scaled.jpg",
+      "url": "https://discoveryalert.com.au/chinas-clean-energy-boom-economic-strategy-2026/"
     },
     {
       "id": "gn-visual-art-photography-32",
@@ -869,8 +869,8 @@
       "topic": "business-economy",
       "source": "Vietnam+ (VietnamPlus)",
       "date": "Wed, 11 Feb 2026 00:02:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMThqYlIybENEUVY5OXRwR1RUUG5qS193WkJTV2M5SC1uSUw4WEdBdE1yeWlkY1hweDlMeTN6Y3ZlSFktbVlicDAzUGcwcXdueGlxZ1h0Yzc4T2N2N0VwVzYwTGpJZld1dVhqaHR2S2k2QXJlajFsVmxkN0JVcHBYeXcyYS1TaVFMYmh4enVCYzg5bF9aOVE?oc=5"
+      "imageUrl": "https://mediaen.vietnamplus.vn/images/f579a678cf9e90879541752073c260053e1cac9b10af28342fde5ad2b94765847c07ed8525108d6dc204080f20966b861fe715ee7df79a48dba4ed8800f64c83d39aa9b228ac7b6d9aa746ca40f815da/screenshot-2026-02-10-195424.jpg.webp",
+      "url": "https://en.vietnamplus.vn/singapore-raises-economic-growth-forecast-for-2026-post337640.vnp"
     },
     {
       "id": "gn-digital-security-12",
@@ -963,7 +963,7 @@
       "url": "https://www.adweek.com/media/exclusive-these-super-bowl-ads-won-with-ai-but-not-social-media/"
     },
     {
-      "id": "gn-business-economy-25",
+      "id": "gn-business-economy-24",
       "title": "CNA Explains: What's driving Singapore's exceptional economic growth, and can it last? - CNA",
       "summary": "CNA Explains: What's driving Singapore's exceptional economic growth, and can it last? CNA",
       "topic": "business-economy",
@@ -1003,7 +1003,7 @@
       "url": "https://www.sunstar.com.ph/amp/story/davao/lifestyle/the-6-wellness-themes-that-will-fuel-filipinos-in-2026"
     },
     {
-      "id": "gn-business-economy-40",
+      "id": "gn-business-economy-42",
       "title": "The Bank of Canada’s Economy: Things Get Worse, Then You Die - Better Dwelling",
       "summary": "The Bank of Canada’s Economy: Things Get Worse, Then You Die Better Dwelling",
       "topic": "business-economy",
@@ -1163,7 +1163,7 @@
       "url": "https://m.economictimes.com/tech/artificial-intelligence/ai-has-led-to-industrialisation-of-cybercrime-says-i4c-ceo/amp_articleshow/128169777.cms"
     },
     {
-      "id": "gn-business-economy-24",
+      "id": "gn-business-economy-23",
       "title": "AI could trigger a global jobs market collapse by 2027 if left unchecked, former Google ethicist warns - Fortune",
       "summary": "AI could trigger a global jobs market collapse by 2027 if left unchecked, former Google ethicist warns Fortune",
       "topic": "business-economy",
@@ -1813,7 +1813,7 @@
       "url": "https://www.freemalaysiatoday.com/category/business/2026/02/10/singapore-sees-2026-gdp-growing-up-to-4-on-global-strength"
     },
     {
-      "id": "gn-business-economy-17",
+      "id": "gn-business-economy-18",
       "title": "Singapore Sees 2026 GDP Growth as Fast as 4% on Global Strength - Bloomberg.com",
       "summary": "Singapore Sees 2026 GDP Growth as Fast as 4% on Global Strength Bloomberg.com",
       "topic": "business-economy",
@@ -1843,7 +1843,7 @@
       "url": "https://securitybrief.com.au/story/australians-turn-to-ai-for-love-as-dating-scams-surge"
     },
     {
-      "id": "gn-business-economy-37",
+      "id": "gn-business-economy-38",
       "title": "Singapore Raises 2026 Growth Outlook To 2%–4% After Strong 2025 - BusinessToday Malaysia",
       "summary": "Singapore Raises 2026 Growth Outlook To 2%–4% After Strong 2025 BusinessToday Malaysia",
       "topic": "business-economy",
@@ -1863,6 +1863,16 @@
       "url": "https://biz.chosun.com/en/en-it/2026/02/10/ZEUTJPKVE5FHNOG36J7WEBF53Y/"
     },
     {
+      "id": "gn-business-economy-20",
+      "title": "Singapore beats estimates with 5% GDP growth in 2025 amid AI challenges - Nikkei Asia",
+      "summary": "Singapore beats estimates with 5% GDP growth in 2025 amid AI challenges Nikkei Asia",
+      "topic": "business-economy",
+      "source": "Nikkei Asia",
+      "date": "Tue, 10 Feb 2026 00:06:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNWc5X3RwYndBbW1PandnUmQ4ZDNWajIyWGtKVnpCQ2Q5dzNyV3ZMTHJLUzAxLWxsREt2U241UlhEeXpoMVFtUFAxLUYzcUg5RlJLTHBLNlgwMWRNWmU4a2NZVXJ1OXd0TG5Na3hmQWhaSlo2N3BOc2s5VXNUUGNPdmE5b3ViSlFGT0FrWXk2QV8yaDhNYWtYMENZQ0MtQWI2MXVEQQ?oc=5"
+    },
+    {
       "id": "gn-technology-innovation-25",
       "title": "Fractile expansion demonstrates UK growth opportunity - Computer Weekly",
       "summary": "Fractile expansion demonstrates UK growth opportunity Computer Weekly",
@@ -1873,7 +1883,7 @@
       "url": "https://www.computerweekly.com/news/366638933/Fractile-expansion-demonstrates-UK-growth-opportunity"
     },
     {
-      "id": "gn-business-economy-7",
+      "id": "gn-business-economy-6",
       "title": "Singapore raises 2026 growth forecast on global economic momentum and AI demand - Reuters",
       "summary": "Singapore raises 2026 growth forecast on global economic momentum and AI demand Reuters",
       "topic": "business-economy",
@@ -1893,7 +1903,7 @@
       "url": "chrome-error://chromewebdata/"
     },
     {
-      "id": "gn-business-economy-36",
+      "id": "gn-business-economy-37",
       "title": "Singapore’s 2025 GDP growth revised upwards to 5%; 2026 forecast range raised to 2 to 4% - The Business Times",
       "summary": "Singapore’s 2025 GDP growth revised upwards to 5%; 2026 forecast range raised to 2 to 4% The Business Times",
       "topic": "business-economy",
@@ -2141,6 +2151,16 @@
       "date": "Mon, 09 Feb 2026 17:09:04 GMT",
       "imageUrl": "https://news.unl.edu/sites/default/files/styles/lead_image_teaser/public/media/images/220929_Cupola_139_0_1_1_0_0_0.jpg?itok=drJr9JDN",
       "url": "https://news.unl.edu/article/university-of-nebraska-launches-ai-institute-to-lead-in-ethical-innovation-research-and"
+    },
+    {
+      "id": "gn-business-economy-10",
+      "title": "Weekly market commentary - blackrock.com",
+      "summary": "Weekly market commentary blackrock.com",
+      "topic": "business-economy",
+      "source": "blackrock.com",
+      "date": "Mon, 09 Feb 2026 17:03:45 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop&auto=format",
+      "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/publications/weekly-commentary"
     },
     {
       "id": "gn-digital-security-20",
@@ -2463,7 +2483,7 @@
       "url": "https://www.techzine.eu/news/applications/138615/eu-commission-targets-meta-s-blockade-of-rival-ai-chatbots-on-whatsapp/"
     },
     {
-      "id": "gn-business-economy-44",
+      "id": "gn-business-economy-45",
       "title": "Share Markets Close On A High, Sensex Ends Above 84K, Nifty Over 150 Points Up - ABP Live English",
       "summary": "Share Markets Close On A High, Sensex Ends Above 84K, Nifty Over 150 Points Up ABP Live English",
       "topic": "business-economy",
@@ -2501,6 +2521,16 @@
       "date": "Mon, 09 Feb 2026 09:33:31 GMT",
       "imageUrl": "https://www.qoo10.co.id/en/wp-content/uploads/2026/02/Xiaomi-16-Ultra-Elevates-Mobile-Photography-with-200MP-Leica-Camera.jpg",
       "url": "https://www.qoo10.co.id/en/gadget/69272/xiaomi-16-ultra-elevates-mobile-photography-with-200mp-leica-camera-and-professional-zoom-features/"
+    },
+    {
+      "id": "gn-business-economy-25",
+      "title": "Standard Chartered Sees Growth Holding Steady, Driven by New Forces - EconomyNext",
+      "summary": "Standard Chartered Sees Growth Holding Steady, Driven by New Forces EconomyNext",
+      "topic": "business-economy",
+      "source": "EconomyNext",
+      "date": "Mon, 09 Feb 2026 09:09:23 GMT",
+      "imageUrl": "https://economynext.com/wp-content/uploads/2026/02/EN-9.jpg",
+      "url": "https://economynext.com/brand_voice/standard-chartered-sees-growth-holding-steady-driven-by-new-forces/"
     },
     {
       "id": "gn-technology-innovation-16",
@@ -2679,8 +2709,8 @@
       "topic": "business-economy",
       "source": "CommBank",
       "date": "Mon, 09 Feb 2026 02:54:22 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTnI4ZUw5RW53N3hDZm8wekxQWEdJT3hHTjhhQ1djWl9YY1VGUUJRck9LV05jTEI0NlZMVEZ1anNza296bms1QTBZbExJUmIwY3ZMeGpoX3JpY0R0NkZxTU8wTXI1WEVSckFzQWRENHpJczlkSll1V1h6ZHRmNEM0cHIxSjJvZ0lO?oc=5"
+      "imageUrl": "https://assets.commbank.com.au/is/image/commbank/newsroom-three-wall-street-traders:Large",
+      "url": "https://www.commbank.com.au/articles/newsroom/2026/02/ai-boom-bubble-or-both.html"
     },
     {
       "id": "gn-digital-security-46",
@@ -2693,7 +2723,7 @@
       "url": "https://www.moneymag.com.au/ai-romance-scams-valentines-day"
     },
     {
-      "id": "gn-business-economy-3",
+      "id": "gn-business-economy-4",
       "title": "India US Trade Agreement: $500B Deal Details - Discovery Alert",
       "summary": "India US Trade Agreement: $500B Deal Details Discovery Alert",
       "topic": "business-economy",
@@ -2973,6 +3003,16 @@
       "url": "https://exoswan.com/photonics-stocks"
     },
     {
+      "id": "gn-business-economy-14",
+      "title": "Sweden - Economy, Trade, Manufacturing - Britannica",
+      "summary": "Sweden - Economy, Trade, Manufacturing Britannica",
+      "topic": "business-economy",
+      "source": "Britannica",
+      "date": "Sun, 08 Feb 2026 08:00:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop&auto=format",
+      "url": "https://www.britannica.com/place/Sweden/Economy"
+    },
+    {
       "id": "gn-environment-science-20",
       "title": "Crowsnest Pass Coal Mine: 7 Sustainability Trends 2026 - Farmonaut",
       "summary": "Crowsnest Pass Coal Mine: 7 Sustainability Trends 2026 Farmonaut",
@@ -3103,7 +3143,7 @@
       "url": "https://www.technobezz.com/news/nvidia-shares-surge-nearly-8-percent-after-amazon-announces-major-ai-spending"
     },
     {
-      "id": "gn-business-economy-43",
+      "id": "gn-business-economy-44",
       "title": "EXCLUSIVE | India-US Trade Deal Impact: Markets will take it positively, says market expert Sunil Subramaniam | Video - ET Now",
       "summary": "EXCLUSIVE | India-US Trade Deal Impact: Markets will take it positively, says market expert Sunil Subramaniam | Video ET Now",
       "topic": "business-economy",
@@ -3129,8 +3169,8 @@
       "topic": "business-economy",
       "source": "News Ghana",
       "date": "Sat, 07 Feb 2026 12:00:49 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUkptRHdwWVhCVGtxMWdGOVdxSWFLYUZpWmphZ3llbEtBOHY2R2duSDRsaE1RcDhvVlBnTU81TG9KR3oyZGFHLWJlRk9IcFNKMmVtYWFRQnVNTzE2TlBMM2M3R3pzR2pRM2QxYmU0TDFtMFJ1bjBsVGVxMDdVRy05cC1lUzIwZ2RybGxLeFZObEtxb2ZVbExtaWZhQmo4blNoakY0?oc=5"
+      "imageUrl": "https://www.newsghana.com.gh/wp-content/uploads/2025/02/MIIF.png",
+      "url": "https://www.newsghana.com.gh/miif-reports-modest-global-economic-expansion-in-fourth-quarter-of-2025/"
     },
     {
       "id": "gn-visual-art-photography-47",
@@ -3203,24 +3243,14 @@
       "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/fugitive-crypto-scam-kingpin-20-years-73-million-pig-butchering-scam"
     },
     {
-      "id": "gn-business-economy-22",
-      "title": "Trump’s Bold Prediction: US Stock Market Could Double by End of Presidential Term - CryptoRank",
-      "summary": "Trump’s Bold Prediction: US Stock Market Could Double by End of Presidential Term CryptoRank",
-      "topic": "business-economy",
-      "source": "CryptoRank",
-      "date": "Sat, 07 Feb 2026 07:44:36 GMT",
-      "imageUrl": "https://bitcoinworld.co.in/wp-content/uploads/trump-stock-market-doubling-prediction-analysis.jpg",
-      "url": "https://cryptorank.io/news/feed/72088-trump-stock-market-doubling-prediction-analysis"
-    },
-    {
-      "id": "gn-business-economy-34",
+      "id": "gn-business-economy-35",
       "title": "India-US trade deal decoded: What does it mean for economy, markets &amp; Russian oil imports? Explained in 1 - Times of India",
       "summary": "India-US trade deal decoded: What does it mean for economy, markets & Russian oil imports? Explained in 1 Times of India",
       "topic": "business-economy",
       "source": "Times of India",
       "date": "Sat, 07 Feb 2026 06:43:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxPMm1lejR1aXp0RWdOZk9tem9GZ0xldWUwOGJFdTFFS2MycUNPM1A2OWVtaHBkTmpUVDlXZ3daQU55VnhrdVhUajFPOThOMDNWaVFjbEZuTkJkT0FyYWtCUTVDZUdmMDduNFdCMW5fNmRoV3ZJR2FZdlZ4Zjh1X0pyQXFiSXhiaDRzY0Y5WEVoNTN5Xzk4UGpyazFiYlJGbDR5b3k1MEp2R1ZkYVpZUnZfTHBrb1NuZ0xMd2E5NXpPeU9XcERWWEN4NS1iMnM4T2xYbUROSW9ESXlFWHFDRWRRNnBmMzBwcW1HSkNkREhfdHJZX0VWLVc2QTN6cjJKQjFtalB6Vk5kYzlxaDcyXzVjZ1J4VUFWR1NxTTdGbHEwZ9IBpAJBVV95cUxNcjZsNTRkYTFoZVYtRmJXaXRvdlFmaXlFdVBsd0NRbFV0cy1IcmVEWW90NTZBUHh1eDRpNTMtWlF4NWNQU1M5OU42cmYtMHh2V05CVlY2WVFlTWQ1TDhJOHgtbVlQT2VJdmN3dW1EelF5YlNzbC1fX09ZTVhLejVnN09manhocEhiaUpILWFWcUV1UTBQb3NXQmx5YjQ4ZkYtRlAyakVOaEpPVHZFNXVCeHlkdXdsYThNeXE4WkhmeU9kWW5qd21fV1JBdUI2dDB6Qm91NU9MZlBubkljYThBaVdUb3Z4R0lkS0s0aVpFMHZObTdySEQ1akx6Qzd3M0xoVHBvYk91UUY2ekprTVd5VjdrcHJtUjM4dnRBelRocFdZTkdL?oc=5"
+      "imageUrl": "https://static.toiimg.com/thumb/resizemode-4,width-1280,height-720,msid-127912116/127912116.jpg",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/india-us-trade-deal-decoded-what-does-it-mean-for-economy-markets-russian-oil-imports-explained-in-10-charts/articleshow/127911573.cms"
     },
     {
       "id": "gn-unmanned-aircraft-14",
@@ -3453,7 +3483,7 @@
       "url": "https://farmonaut.com/mining/fimiston-gold-mine-7-innovations-transforming-mining"
     },
     {
-      "id": "gn-business-economy-38",
+      "id": "gn-business-economy-39",
       "title": "AI Spending Spree Sparks Tech Valuation Jitters; India Holds Steady - Whalesbook",
       "summary": "AI Spending Spree Sparks Tech Valuation Jitters; India Holds Steady Whalesbook",
       "topic": "business-economy",
@@ -3513,7 +3543,7 @@
       "url": "https://www.wyomingpublicmedia.org/education/2026-02-06/a-new-ai-commission-at-uw-considers-research-and-learning-applications"
     },
     {
-      "id": "gn-business-economy-35",
+      "id": "gn-business-economy-36",
       "title": "Goldman Sachs deploys Claude AI for trade accounting, compliance, and onboarding — Has a new era of invest - The Economic Times",
       "summary": "Goldman Sachs deploys Claude AI for trade accounting, compliance, and onboarding — Has a new era of invest The Economic Times",
       "topic": "business-economy",
@@ -3573,6 +3603,16 @@
       "url": "https://www.webpronews.com/anthropics-ad-free-gambit-how-claude-ai-plans-to-disrupt-the-chatbot-business-model/"
     },
     {
+      "id": "gn-business-economy-7",
+      "title": "AI and creative destruction - Counterfire",
+      "summary": "AI and creative destruction Counterfire",
+      "topic": "business-economy",
+      "source": "Counterfire",
+      "date": "Fri, 06 Feb 2026 14:30:07 GMT",
+      "imageUrl": "https://uploads.counterfire.org/uploads/2026/02/nvidia-lg.jpg",
+      "url": "https://www.counterfire.org/article/ai-and-creative-destruction/"
+    },
+    {
       "id": "gn-environment-science-25",
       "title": "Mineral Containing Iron: Key 2026 Industry Trends - Farmonaut",
       "summary": "Mineral Containing Iron: Key 2026 Industry Trends Farmonaut",
@@ -3623,7 +3663,7 @@
       "url": "https://farmonaut.com/precision-farming/high-technology-farming-latest-farming-technology-2026"
     },
     {
-      "id": "gn-business-economy-4",
+      "id": "gn-business-economy-3",
       "title": "The resilient global economy – and the imbalances lurking beneath. - Capital Economics",
       "summary": "The resilient global economy – and the imbalances lurking beneath. Capital Economics",
       "topic": "business-economy",
@@ -3651,16 +3691,6 @@
       "date": "Fri, 06 Feb 2026 12:56:58 GMT",
       "imageUrl": "https://cdn.ai-forall.com/ifa_dev_media/How_Io_T_and_AI_Are_Transforming_Energy_Management_17f94acfd4.png",
       "url": "https://www.iotforall.com/iot-ai-energy-management"
-    },
-    {
-      "id": "gn-business-economy-6",
-      "title": "Has the bull cycle begun? - RankiaPro",
-      "summary": "Has the bull cycle begun? RankiaPro",
-      "topic": "business-economy",
-      "source": "RankiaPro",
-      "date": "Fri, 06 Feb 2026 12:32:46 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&h=400&fit=crop&auto=format",
-      "url": "https://rankiapro.com/en/insights/has-the-bull-cycle-begun/"
     },
     {
       "id": "gn-health-style-32",
@@ -3833,7 +3863,7 @@
       "url": "chrome-error://chromewebdata/"
     },
     {
-      "id": "gn-business-economy-14",
+      "id": "gn-business-economy-15",
       "title": "China Outlook 2026-27: Resilience and Rebalancing - UBS",
       "summary": "China Outlook 2026-27: Resilience and Rebalancing UBS",
       "topic": "business-economy",
@@ -3913,16 +3943,6 @@
       "url": "https://www.openpr.com/news/4379615/australia-energy-storage-market-to-hit-usd-19-81-gw-to-2026-2034"
     },
     {
-      "id": "gn-business-economy-16",
-      "title": "China Offers South Africa Duty-Free Market Access Deal - Discovery Alert",
-      "summary": "China Offers South Africa Duty-Free Market Access Deal Discovery Alert",
-      "topic": "business-economy",
-      "source": "Discovery Alert",
-      "date": "Fri, 06 Feb 2026 05:49:19 GMT",
-      "imageUrl": "https://discoveryalert.com.au/wp-content/uploads/2026/02/24bc2d65-0e97-42cf-8b53-57cd1e55110e-scaled.jpg",
-      "url": "https://discoveryalert.com.au/strategic-market-diversification-south-africa-china-2026/"
-    },
-    {
       "id": "gn-business-economy-27",
       "title": "Malaysia to Remain Resilient Amid AI Boom and Semiconductor Exports - Nabalu News",
       "summary": "Malaysia to Remain Resilient Amid AI Boom and Semiconductor Exports Nabalu News",
@@ -3933,7 +3953,7 @@
       "url": "https://www.nabalunews.com/post/malaysia-to-remain-resilient-amid-ai-boom-and-semiconductor-exports"
     },
     {
-      "id": "gn-business-economy-42",
+      "id": "gn-business-economy-43",
       "title": "RBI Governor Affirms Global Trade Resilience Amid Economic Uncertainties - scanx.trade",
       "summary": "RBI Governor Affirms Global Trade Resilience Amid Economic Uncertainties scanx.trade",
       "topic": "business-economy",
@@ -4073,16 +4093,6 @@
       "url": "https://www.mixvale.com.br/2026/02/05/galaxy-s27-ultra-will-not-have-new-200mp-sony-sensor-due-to-samsungs-cost-strategy-en/amp/"
     },
     {
-      "id": "gn-business-economy-11",
-      "title": "Trump's trade war creating economic 'mirage' with GDP forecasts, freight market disconnected: Shipping expert - CNBC",
-      "summary": "Trump's trade war creating economic 'mirage' with GDP forecasts, freight market disconnected: Shipping expert CNBC",
-      "topic": "business-economy",
-      "source": "CNBC",
-      "date": "Thu, 05 Feb 2026 19:35:35 GMT",
-      "imageUrl": "https://image.cnbcfm.com/api/v1/image/108252923-1768485369924-gettyimages-2255719593-AFP_92QV92Z.jpeg?v=1768485392",
-      "url": "https://www.cnbc.com/2026/02/05/trump-trade-war-frontloading-creating-a-mirage-in-trade-maritime-expert.html"
-    },
-    {
       "id": "gn-unmanned-aircraft-7",
       "title": "Latest NDAA Supports AI Safety, Innovation, and China Decoupling - Lawfare",
       "summary": "Latest NDAA Supports AI Safety, Innovation, and China Decoupling Lawfare",
@@ -4091,16 +4101,6 @@
       "date": "Thu, 05 Feb 2026 19:19:19 GMT",
       "imageUrl": "https://lawfare-assets-new.azureedge.net/assets/images/default-source/article-images/ai-drone.jpeg?sfvrsn=e03c953_4",
       "url": "https://www.lawfaremedia.org/article/latest-ndaa-supports-ai-safety--innovation--and-china-decoupling"
-    },
-    {
-      "id": "gn-business-economy-21",
-      "title": "Fate of Canadian economy will depend on how we adapt to structural changes, Macklem says - Financial Post",
-      "summary": "Fate of Canadian economy will depend on how we adapt to structural changes, Macklem says Financial Post",
-      "topic": "business-economy",
-      "source": "Financial Post",
-      "date": "Thu, 05 Feb 2026 19:14:50 GMT",
-      "imageUrl": "https://smartcdn.gprod.postmedia.digital/financialpost/wp-content/uploads/2026/02/tiff-macklem-0205-ph.jpg",
-      "url": "https://financialpost.com/news/economy/bank-of-canada-tiff-macklem-urges-business-ramp-up-ai"
     },
     {
       "id": "gn-chatbot-development-20",
