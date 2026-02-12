@@ -86,11 +86,12 @@ export default function InfoPage() {
                 Daily AI Market Insights
               </h3>
               <p className="text-[var(--text-secondary)] leading-relaxed">
-                We harness AI to analyse stock market trends and deliver daily market
-                insights focused on AI-related equities. Our goal is to explore
-                whether artificial intelligence can surface meaningful patterns and
-                forecasts that help viewers make more informed decisions about the
-                rapidly evolving AI sector.
+                Each day we task AI with forecasting the next-day price movement of
+                a single US stock — a different ticker every day — and publish the
+                prediction alongside the actual outcome. The series is an ongoing
+                experiment to test how accurately AI can predict the stock market,
+                tracked transparently so viewers can judge the results for
+                themselves.
               </p>
             </div>
 
