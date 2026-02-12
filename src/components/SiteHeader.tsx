@@ -15,7 +15,7 @@ export default function SiteHeader({ children, bottomBar }: SiteHeaderProps) {
   return (
     <header className="bg-black border-b border-[var(--border)] sticky top-0 z-30">
       <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-4">
-        <div className="flex items-center justify-between gap-4 flex-wrap min-h-[40px]">
+        <div className="flex items-center justify-between gap-4 flex-wrap min-h-[44px]">
           {/* Brand — logo + name */}
           <a href={`${basePath}/`} className="flex items-center gap-3">
             <img
