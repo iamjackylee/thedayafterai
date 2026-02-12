@@ -26,13 +26,14 @@ export default function InfoPage() {
             Building a Better World — One Step at a Time
           </p>
           <p className="text-base text-[var(--text-secondary)] leading-relaxed">
-            Your premier AI-powered news channel — delivering video summaries
-            of the most important AI developments, stock market insights,
-            and headlines from publishers around the world.
+            TheDayAfterAI News is an AI-powered news channel delivering daily
+            video briefings on the most important developments in artificial
+            intelligence—alongside market-focused experiments and a curated news
+            hub linking to publishers worldwide.
           </p>
         </header>
 
-        {/* ── Concrete: What / How / Categories ────────────────────── */}
+        {/* ── Concrete: What / How ───────────────────────────────── */}
 
         {/* What We Do */}
         <section className="mb-12 md:mb-14">
@@ -47,10 +48,10 @@ export default function InfoPage() {
                 AI News Briefing
               </h3>
               <p className="text-[var(--text-secondary)] leading-relaxed">
-                Every day, we hand-pick the most significant AI stories from trusted
-                sources across the web. Our AI-powered production pipeline then
-                transforms these curated articles into concise, engaging video
-                summaries published on our{" "}
+                Every day, we hand-pick the most significant AI stories from
+                reputable sources across the web. Our AI-assisted workflow
+                transforms these articles into short, engaging video summaries
+                published on our{" "}
                 <a
                   href="https://www.youtube.com/@TheDayAfterAI"
                   target="_blank"
@@ -59,8 +60,7 @@ export default function InfoPage() {
                 >
                   YouTube channel
                 </a>
-                . The result: stay informed on everything happening in AI in just a
-                few minutes a day — no doomscrolling required.
+                —so you can stay informed in minutes without doomscrolling.
               </p>
             </div>
 
@@ -70,12 +70,11 @@ export default function InfoPage() {
                 AI Market Insights
               </h3>
               <p className="text-[var(--text-secondary)] leading-relaxed">
-                Each day we task AI with forecasting the next-day price movement of
-                a single US stock — a different ticker every day — and publish the
-                prediction alongside the actual outcome. The series is an ongoing
-                experiment to test how accurately AI can predict the stock market,
-                tracked transparently so viewers can judge the results for
-                themselves.
+                We run a daily, transparent experiment: AI forecasts the next-day
+                price direction of one U.S. stock (a different ticker each day),
+                and we publish the prediction next to the real outcome so viewers
+                can judge performance over time. This series is educational and
+                experimental in nature and is not financial advice.
               </p>
             </div>
 
@@ -85,12 +84,10 @@ export default function InfoPage() {
                 AI News Hub
               </h3>
               <p className="text-[var(--text-secondary)] leading-relaxed">
-                Beyond our own video content, TheDayAfterAI serves as a central hub
-                for the latest AI news from a wide range of publishers and sources.
-                We aggregate headlines with images and external links so you can
-                explore stories in full on their original sites. Think of it as your
-                one-stop dashboard for everything happening in artificial
-                intelligence.
+                Beyond our own videos, TheDayAfterAI also serves as a central
+                dashboard for AI headlines from a wide range of publishers. We
+                curate links to original articles so you can explore the full
+                stories directly on the source sites.
               </p>
             </div>
           </div>
@@ -102,74 +99,32 @@ export default function InfoPage() {
             How It Works
           </h2>
           <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
-            At TheDayAfterAI News, our content is created through a collaborative
-            effort between AI systems and human editors. AI curators scan and aggregate
-            news across specific AI domains. AI then synthesises this information into
-            clear, engaging narratives. Human editors review the work to ensure
-            accuracy, relevance, and quality before publication. This blend of AI
-            precision and human oversight delivers reliable, up-to-date AI news.
+            Our publishing workflow blends AI efficiency with human oversight:
           </p>
           <ol className="space-y-4 text-[var(--text-secondary)] leading-relaxed list-decimal list-inside">
             <li>
               <span className="text-white font-semibold">Curate</span> — We
-              manually select the day&apos;s most noteworthy AI stories from
-              reputable sources.
+              manually select the day&apos;s most important AI stories from
+              trusted sources.
             </li>
             <li>
               <span className="text-white font-semibold">Summarise</span> — AI
-              technology condenses and scripts each story into a clear, concise
-              narrative.
+              condenses key points into clear, structured scripts.
             </li>
             <li>
-              <span className="text-white font-semibold">Produce</span> — The
-              scripts are transformed into polished video segments with visuals and
-              voiceover.
+              <span className="text-white font-semibold">Produce</span> —
+              Scripts become polished video segments with visuals and voiceover.
             </li>
             <li>
-              <span className="text-white font-semibold">Publish</span> — Videos
-              go live on YouTube and our website daily, alongside curated headlines
-              from other publishers.
+              <span className="text-white font-semibold">Review</span> — Human
+              editors check for clarity, accuracy, and relevance before release.
+            </li>
+            <li>
+              <span className="text-white font-semibold">Publish</span> —
+              Content goes live on YouTube and our website daily, alongside
+              curated external headlines.
             </li>
           </ol>
-        </section>
-
-        {/* What We Cover */}
-        <section className="mb-12 md:mb-14">
-          <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
-            What We Cover
-          </h2>
-          <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
-            Our news hub spans 11 categories organised into three pillars,
-            capturing the full breadth of AI&apos;s influence on the world.
-          </p>
-          <div className="grid gap-6 md:gap-8">
-            <div className="rounded-xl border border-[var(--border-light)] bg-[var(--surface)] p-6 md:p-8">
-              <h3 className="text-lg font-bold text-white mb-3">Tech Frontiers</h3>
-              <ul className="space-y-2 text-[var(--text-secondary)] leading-relaxed">
-                <li><strong className="text-white">AI Academy</strong> — Tutorials, courses, and educational resources for learning AI.</li>
-                <li><strong className="text-white">Chatbot Development</strong> — Advances in conversational AI, LLMs, and agent frameworks.</li>
-                <li><strong className="text-white">Technology &amp; Innovation</strong> — Cutting-edge research, product launches, and industry breakthroughs.</li>
-                <li><strong className="text-white">Unmanned Aircraft</strong> — AI-powered drones, autonomous flight, and aerial intelligence.</li>
-              </ul>
-            </div>
-            <div className="rounded-xl border border-[var(--border-light)] bg-[var(--surface)] p-6 md:p-8">
-              <h3 className="text-lg font-bold text-white mb-3">Global Dynamics</h3>
-              <ul className="space-y-2 text-[var(--text-secondary)] leading-relaxed">
-                <li><strong className="text-white">Business &amp; Economy</strong> — AI&apos;s impact on markets, enterprise adoption, and economic trends.</li>
-                <li><strong className="text-white">Digital Security</strong> — Cybersecurity, AI-driven threats, and defence technologies.</li>
-                <li><strong className="text-white">Environment &amp; Science</strong> — Climate tech, sustainability, and scientific discovery powered by AI.</li>
-                <li><strong className="text-white">Governance &amp; Politics</strong> — AI regulation, policy debates, and geopolitical implications.</li>
-              </ul>
-            </div>
-            <div className="rounded-xl border border-[var(--border-light)] bg-[var(--surface)] p-6 md:p-8">
-              <h3 className="text-lg font-bold text-white mb-3">Arts &amp; Culture</h3>
-              <ul className="space-y-2 text-[var(--text-secondary)] leading-relaxed">
-                <li><strong className="text-white">Health &amp; Style</strong> — AI in healthcare, wellness, fitness, and lifestyle.</li>
-                <li><strong className="text-white">Musical Art</strong> — Generative music, AI composition tools, and the future of sound.</li>
-                <li><strong className="text-white">Visual Art &amp; Photography</strong> — AI-generated imagery, creative tools, and the evolving art world.</li>
-              </ul>
-            </div>
-          </div>
         </section>
 
         {/* ── Narrative: Origin & Name ─────────────────────────────── */}
@@ -181,27 +136,23 @@ export default function InfoPage() {
           </h2>
           <div className="space-y-4 text-[var(--text-secondary)] leading-relaxed">
             <p>
-              In early 2023, the emergence of advanced generative AI models marked a
-              significant leap in technological innovation. These breakthroughs
-              promised to transform industries, enhance creativity, and address complex
-              global challenges. However, alongside these opportunities, concerns about
-              ethical implications and potential misuse began to dominate public
-              discourse.
+              In early 2023, generative AI accelerated rapidly—unlocking new
+              possibilities while also raising real concerns about ethics, bias,
+              and misuse. The public conversation often swings between fear and
+              hype.
             </p>
             <p>
-              At TheDayAfterAI News, we believe in presenting a comprehensive view of
-              generative AI. Our mission is to bridge the gap between fear and optimism
-              by curating balanced content that highlights both the challenges and the
-              remarkable advancements in AI. We aim to foster informed discussions and
-              support responsible innovation by showing how AI can be harnessed for
-              good.
+              TheDayAfterAI News exists to bring balance and clarity. We curate
+              content that highlights both risks and breakthroughs, helping
+              audiences understand what matters, what&apos;s changing, and what it
+              could mean next. We aim to support informed discussion and
+              responsible innovation by showing how AI can be used
+              thoughtfully—and where caution is warranted.
             </p>
             <p>
-              TheDayAfterAI News was launched on April 3, 2024, marking the beginning
-              of our journey to become your trusted curator of AI news. As generative
-              AI continues to evolve, we remain committed to inspiring curiosity,
-              encouraging responsible innovation, and deepening the public&apos;s
-              understanding of the technology shaping our future.
+              TheDayAfterAI News launched on April 3, 2024, and we remain
+              committed to accurate, digestible reporting as the technology
+              evolves.
             </p>
           </div>
         </section>
@@ -212,33 +163,67 @@ export default function InfoPage() {
             Why &ldquo;TheDayAfterAI&rdquo;?
           </h2>
           <p className="text-[var(--text-secondary)] leading-relaxed mb-4">
-            Our name embodies our vision of looking beyond the present and
-            anticipating the future impacts of artificial intelligence:
+            Our name reflects a forward-looking mindset:
           </p>
           <ul className="space-y-3 text-[var(--text-secondary)] leading-relaxed">
             <li>
-              <strong className="text-white">Forward-Thinking</strong> — We explore
-              not just the current state of AI but also its future developments and
-              long-term implications.
+              <strong className="text-white">Forward-thinking</strong> — We look
+              beyond today&apos;s headlines to what happens next.
             </li>
             <li>
-              <strong className="text-white">Proactive Engagement</strong> — By
-              focusing on &ldquo;the day after&rdquo;, we encourage our audience to
-              think ahead, preparing for and shaping the evolving AI landscape
-              responsibly.
+              <strong className="text-white">Proactive engagement</strong> — We
+              encourage audiences to prepare for AI&apos;s real-world impact.
             </li>
             <li>
-              <strong className="text-white">Impactful Curation</strong> — We believe
-              that informed discussions today will shape the innovations and ethical
-              standards of tomorrow.
+              <strong className="text-white">Impactful curation</strong> —
+              Better decisions start with better information.
             </li>
             <li>
-              <strong className="text-white">Commitment to Change</strong> — Our
-              mission goes beyond curation; we strive to inspire and empower
-              individuals to embrace AI ethically, fostering a collective effort to
-              drive meaningful transformation.
+              <strong className="text-white">Commitment to change</strong> — We
+              promote ethical, constructive adoption of AI.
             </li>
           </ul>
+        </section>
+
+        {/* ── Categories ─────────────────────────────────────────── */}
+
+        {/* What We Cover */}
+        <section className="mb-12 md:mb-14">
+          <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
+            What We Cover
+          </h2>
+          <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
+            Our coverage spans 11 categories organised into three pillars,
+            capturing AI&apos;s impact across technology, society, and culture.
+          </p>
+          <div className="grid gap-6 md:gap-8">
+            <div className="rounded-xl border border-[var(--border-light)] bg-[var(--surface)] p-6 md:p-8">
+              <h3 className="text-lg font-bold text-white mb-3">Tech Frontiers</h3>
+              <ul className="space-y-2 text-[var(--text-secondary)] leading-relaxed">
+                <li><strong className="text-white">AI Academy</strong> — Tutorials, courses, and learning resources.</li>
+                <li><strong className="text-white">Chatbot Development</strong> — Conversational AI, LLMs, and agent frameworks.</li>
+                <li><strong className="text-white">Technology &amp; Innovation</strong> — Research breakthroughs, product launches, and industry shifts.</li>
+                <li><strong className="text-white">Unmanned Aircraft</strong> — AI-powered drones, autonomy, and aerial intelligence.</li>
+              </ul>
+            </div>
+            <div className="rounded-xl border border-[var(--border-light)] bg-[var(--surface)] p-6 md:p-8">
+              <h3 className="text-lg font-bold text-white mb-3">Global Dynamics</h3>
+              <ul className="space-y-2 text-[var(--text-secondary)] leading-relaxed">
+                <li><strong className="text-white">Business &amp; Economy</strong> — Markets, enterprise adoption, and economic impact.</li>
+                <li><strong className="text-white">Digital Security</strong> — Cybersecurity, AI-driven threats, and defence technologies.</li>
+                <li><strong className="text-white">Environment &amp; Science</strong> — Climate tech, sustainability, and scientific discovery.</li>
+                <li><strong className="text-white">Governance &amp; Politics</strong> — Regulation, policy debates, and geopolitics.</li>
+              </ul>
+            </div>
+            <div className="rounded-xl border border-[var(--border-light)] bg-[var(--surface)] p-6 md:p-8">
+              <h3 className="text-lg font-bold text-white mb-3">Arts &amp; Culture</h3>
+              <ul className="space-y-2 text-[var(--text-secondary)] leading-relaxed">
+                <li><strong className="text-white">Health &amp; Style</strong> — Healthcare, wellness, and lifestyle applications.</li>
+                <li><strong className="text-white">Musical Art</strong> — Generative music, composition tools, and the future of sound.</li>
+                <li><strong className="text-white">Visual Art &amp; Photography</strong> — Creative tools, AI imagery, and evolving visual culture.</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         {/* ── Aspirational: Mission / Vision / Values ──────────────── */}
@@ -249,14 +234,9 @@ export default function InfoPage() {
             Our Mission
           </h2>
           <p className="text-[var(--text-secondary)] leading-relaxed">
-            At TheDayAfterAI News, our mission is to curate and present accurate,
-            engaging, and thought-provoking content that keeps you informed about the
-            advancements and implications of artificial intelligence. We strive to be
-            your trusted source for comprehensive AI news coverage, helping you stay
-            ahead of the curve in this dynamic field. Whether you are a developer,
-            investor, policymaker, or simply curious, we aim to keep you informed with
-            accurate, timely, and easy-to-digest content powered by the very technology
-            we cover.
+            To curate and present accurate, engaging, and thought-provoking AI
+            coverage—helping developers, investors, policymakers, creators, and
+            curious minds stay ahead in a fast-moving world.
           </p>
         </section>
 
@@ -266,8 +246,8 @@ export default function InfoPage() {
             Our Vision
           </h2>
           <p className="text-[var(--text-secondary)] leading-relaxed">
-            To be the leading source of AI news, fostering informed discussions and
-            driving innovation through comprehensive and reliable reporting.
+            To become a leading AI news destination that fosters informed
+            discussion and supports responsible innovation.
           </p>
         </section>
 
@@ -277,35 +257,35 @@ export default function InfoPage() {
             Our Values
           </h2>
           <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
-            Each letter in TDAAI represents a core principle that defines who we are
-            and how we operate.
+            Each letter in TDAAI represents a core principle that defines who we
+            are and how we operate.
           </p>
           <div className="grid gap-4">
             {[
               {
                 letter: "T",
                 title: "Transparency",
-                desc: "We commit to clear and honest curation, ensuring our audience knows the sources of our aggregated content.",
+                desc: "We clearly distinguish our original content from external sources we link to.",
               },
               {
                 letter: "D",
                 title: "Dedication",
-                desc: "Our unwavering dedication to delivering accurate and timely AI news keeps our readers informed and ahead in this rapidly evolving field.",
+                desc: "We publish consistently and prioritise relevance over noise.",
               },
               {
                 letter: "A",
                 title: "Accountability",
-                desc: "We hold ourselves accountable to the highest standards of integrity, ensuring that our reporting is unbiased and reliable.",
+                desc: "We aim for accuracy, correct mistakes, and avoid misleading framing.",
               },
               {
                 letter: "A",
                 title: "Adaptability",
-                desc: "In a field that changes daily, we continuously evolve our tools, methods, and coverage to stay current and relevant.",
+                desc: "We evolve our workflow as AI, platforms, and standards change.",
               },
               {
                 letter: "I",
                 title: "Inclusivity",
-                desc: "We value diverse perspectives and foster an inclusive community, ensuring that our content reflects the multifaceted nature of AI advancements and their global impact.",
+                desc: "We welcome diverse perspectives and global viewpoints.",
               },
             ].map((v, i) => (
               <div
@@ -334,8 +314,8 @@ export default function InfoPage() {
           <div className="space-y-6">
             <p className="text-[var(--text-secondary)] leading-relaxed">
               TheDayAfterAI News is developed under{" "}
-              <strong className="text-white">Jacky Lee Visionary Creations</strong>,
-              a multidisciplinary platform bridging technology, creativity, and
+              <strong className="text-white">Jacky Lee Visionary Creations</strong>—a
+              multidisciplinary platform bridging technology, creativity, and
               community.
             </p>
 
@@ -355,24 +335,26 @@ export default function InfoPage() {
                   >
                     award-winning visual artist
                   </a>{" "}
-                  currently based in Canberra, Australia. A Chartered Building
-                  Engineer and Chartered Building Surveyor accredited by RICS and
-                  CABE, he brings over two decades of professional experience in
-                  Hong Kong&apos;s construction industry to his current ventures.
+                  based in Canberra, Australia. He is also a Chartered Building
+                  Engineer and Chartered Building Surveyor (RICS, CABE), with
+                  over two decades of professional experience in Hong
+                  Kong&apos;s construction industry.
                 </p>
                 <p>
-                  As a photographer, Jacky is a National Geographic Photo Contest
-                  champion, published author, and has been invited as a course
-                  tutor and guest speaker at the University of Hong Kong. He
-                  serves as a photography advisor at the Hong Kong Biodiversity
-                  Museum and regularly judges international photo competitions.
+                  As a photographer, he is a National Geographic Photo Contest
+                  champion and published author, and has been invited as a
+                  course tutor and guest speaker at the University of Hong Kong.
+                  He also serves as a photography advisor to the Hong Kong
+                  Biodiversity Museum and regularly judges international photo
+                  competitions.
                 </p>
                 <p>
-                  Under Jacky Lee Visionary Creations, he leads several ventures
+                  Under Jacky Lee Visionary Creations, he leads multiple ventures
                   including TheDayAfterAI News, Canberra Drone Building
-                  Inspection &amp; Consultancy, and Physiognomy.AI — combining
-                  his engineering background, creative expertise, and passion for
-                  AI to build tools that inform, inspire, and serve communities.
+                  Inspection &amp; Consultancy, and Physiognomy.AI—combining
+                  engineering discipline, creative practice, and a practical
+                  interest in AI to build tools and content that inform, inspire,
+                  and serve communities.
                 </p>
               </div>
             </div>
