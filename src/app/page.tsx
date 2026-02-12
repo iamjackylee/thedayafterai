@@ -986,7 +986,7 @@ export default function Home() {
               </div>
               <div className="flex flex-wrap gap-x-2 gap-y-1 text-xs text-[var(--muted)] mb-4">
                 <a href="/info" className="hover:text-[var(--accent)] transition-colors">About Us</a><span>|</span>
-                <a href="https://www.thedayafterai.com/terms" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">Terms of Service</a><span>|</span>
+                <a href="/terms" className="hover:text-[var(--accent)] transition-colors">Terms of Service</a><span>|</span>
                 <a href="https://www.thedayafterai.com/disclaimer" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">Disclaimer</a><span>|</span>
                 <a href="https://www.thedayafterai.com/ethics-policy" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">Ethics Policy</a><span>|</span>
                 <a href="https://www.thedayafterai.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">Privacy Policy</a><span>|</span>
