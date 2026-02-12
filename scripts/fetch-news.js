@@ -19,6 +19,7 @@ const YOUTUBE_CHANNEL_RSS = `https://www.youtube.com/feeds/videos.xml?channel_id
 const PLAYLIST_URL = `https://www.youtube.com/playlist?list=${PLAYLIST_ID}`;
 
 const OUTPUT_DIR = path.join(__dirname, "..", "public", "data");
+const SCREENSHOTS_DIR = path.join(__dirname, "..", "public", "data", "screenshots");
 const PREFETCHED_PATH = path.join(OUTPUT_DIR, "prefetched.json");
 const URL_CACHE_PATH = path.join(OUTPUT_DIR, "url-cache.json");
 const CUSTOM_JSON_PATH = path.join(OUTPUT_DIR, "custom-articles.json");
@@ -902,7 +903,12 @@ async function resolveArticles(articles) {
 
   saveUrlCache(cache);
   console.log(`Resolution done: ${resolved} resolved, ${failed} failed`);
+
+  // Screenshot fallback — capture hero images for articles still missing images
+  await captureScreenshots(articles, cache);
+
   applyFallbackImages(articles);
+  cleanupScreenshots(articles);
 }
 
 /** Lightweight og:image extraction via HTTP GET (no Playwright needed).
@@ -966,6 +972,151 @@ async function fetchOgImageHttp(url) {
 
   } catch { /* timeout or network error — skip */ }
   return "";
+}
+
+// ── Screenshot-based image capture ─────────────────────────────────
+// When all meta-tag / og:image extraction methods fail, Playwright can still
+// "see" the rendered page. We find the largest visible image element on the
+// page and screenshot just that element, saving it locally. This captures the
+// actual article hero image even when sites block meta-tag scraping or use
+// heavily JS-rendered pages.
+
+/** Generate a short deterministic filename hash from a URL */
+function screenshotHash(url) {
+  let h = 0;
+  for (let i = 0; i < url.length; i++) {
+    h = ((h << 5) - h + url.charCodeAt(i)) | 0;
+  }
+  return Math.abs(h).toString(36);
+}
+
+/** Capture the hero image from a page via Playwright element screenshot.
+ *  Returns the local path (relative to public/) or "" on failure. */
+async function captureHeroScreenshot(page, articleUrl) {
+  try {
+    // Scroll slightly to trigger lazy-loaded hero images
+    await page.evaluate(() => window.scrollBy(0, 300));
+    await page.waitForTimeout(1500);
+    await page.evaluate(() => window.scrollTo(0, 0));
+    await page.waitForTimeout(500);
+
+    // Find the largest visible image on the page (likely the hero/featured image)
+    const imgHandle = await page.evaluateHandle(() => {
+      const isGood = (src) => {
+        if (!src || !src.startsWith("http")) return false;
+        const l = src.toLowerCase();
+        return !["avatar", "/logo", "favicon", "icon", "pixel", "tracking",
+          "1x1", "spacer", "badge", "brand", "masthead", ".ico", ".svg",
+          "site-logo", "site_logo", "header-logo", "nav-logo", "widget",
+          "button", "banner-ad", "advertisement",
+        ].some((p) => l.includes(p));
+      };
+      let best = null;
+      let bestArea = 0;
+      for (const img of document.querySelectorAll("img")) {
+        const rect = img.getBoundingClientRect();
+        // Must be visible, reasonably sized, and have a valid src
+        if (rect.width < 200 || rect.height < 120) continue;
+        if (rect.top > 1200) continue; // only above-the-fold / near top
+        const src = img.currentSrc || img.src || "";
+        if (!isGood(src)) continue;
+        const area = rect.width * rect.height;
+        if (area > bestArea) { bestArea = area; best = img; }
+      }
+      return best;
+    });
+
+    if (!imgHandle || !(await imgHandle.asElement())) return "";
+    const element = imgHandle.asElement();
+
+    // Verify the element is still attached and visible
+    const box = await element.boundingBox();
+    if (!box || box.width < 200 || box.height < 120) return "";
+
+    // Create screenshots directory
+    fs.mkdirSync(SCREENSHOTS_DIR, { recursive: true });
+
+    const filename = `${screenshotHash(articleUrl)}.jpg`;
+    const filepath = path.join(SCREENSHOTS_DIR, filename);
+
+    await element.screenshot({ path: filepath, type: "jpeg", quality: 82 });
+
+    // Verify file was created and is reasonable size (> 5KB, < 2MB)
+    const stat = fs.statSync(filepath);
+    if (stat.size < 5000 || stat.size > 2 * 1024 * 1024) {
+      fs.unlinkSync(filepath);
+      return "";
+    }
+
+    console.log(`    Screenshot captured: ${filename} (${Math.round(stat.size / 1024)}KB)`);
+    // Return path relative to public/ so it works with basePath on GitHub Pages
+    return `data/screenshots/${filename}`;
+  } catch {
+    return "";
+  }
+}
+
+/** Playwright screenshot fallback for articles still missing images.
+ *  Visits each article page with a real browser and captures the hero image. */
+async function captureScreenshots(articles, cache) {
+  const needsScreenshot = articles.filter((a) =>
+    (!a.imageUrl || a.imageUrl.includes("unsplash.com")) &&
+    !a.url.includes("news.google.com") && a.url.startsWith("http")
+  );
+  if (needsScreenshot.length === 0) return;
+
+  let context;
+  try { context = await getPlaywrightContext(); } catch {
+    console.warn("Playwright not available for screenshot capture.");
+    return;
+  }
+
+  console.log(`Capturing hero screenshots for ${needsScreenshot.length} articles...`);
+  let captured = 0;
+
+  for (let i = 0; i < needsScreenshot.length; i += PLAYWRIGHT_CONCURRENCY) {
+    const batch = needsScreenshot.slice(i, i + PLAYWRIGHT_CONCURRENCY);
+    await Promise.allSettled(batch.map(async (article) => {
+      const page = await context.newPage();
+      try {
+        const resp = await page.goto(article.url, { waitUntil: "load", timeout: PLAYWRIGHT_TIMEOUT });
+        // Only proceed if page actually loaded (not 4xx/5xx)
+        if (!resp || resp.status() >= 400) return;
+        await page.waitForTimeout(2000); // let images render
+
+        const localPath = await captureHeroScreenshot(page, article.url);
+        if (localPath) {
+          article.imageUrl = localPath;
+          const articleId = extractArticleId(article.url) || article.url;
+          if (cache[articleId]) cache[articleId].imageUrl = localPath;
+          else cache[articleId] = { url: article.url, imageUrl: localPath };
+          captured++;
+        }
+      } catch { /* page load failed — skip */ }
+      finally { await page.close(); }
+    }));
+  }
+  console.log(`  Screenshot capture: ${captured}/${needsScreenshot.length} captured`);
+  saveUrlCache(cache);
+}
+
+/** Remove screenshot files that are no longer referenced by any article. */
+function cleanupScreenshots(articles) {
+  if (!fs.existsSync(SCREENSHOTS_DIR)) return;
+  const referencedFiles = new Set(
+    articles
+      .filter((a) => a.imageUrl?.startsWith("data/screenshots/"))
+      .map((a) => path.basename(a.imageUrl))
+  );
+  const files = fs.readdirSync(SCREENSHOTS_DIR);
+  let removed = 0;
+  for (const file of files) {
+    if (!referencedFiles.has(file)) {
+      fs.unlinkSync(path.join(SCREENSHOTS_DIR, file));
+      removed++;
+    }
+  }
+  if (removed > 0) console.log(`Cleaned up ${removed} unused screenshots`);
 }
 
 function applyFallbackImages(articles) {
