@@ -39,8 +39,20 @@ function formatDate(dateStr: string): string {
   }
 }
 
+/** Resolve image URL — local screenshot paths need the basePath prefix */
+function resolveImageUrl(imageUrl: string): string {
+  if (!imageUrl) return "";
+  // Local screenshot paths stored as "data/screenshots/xxx.jpg"
+  if (imageUrl.startsWith("data/")) {
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+    return `${basePath}/${imageUrl}`;
+  }
+  return imageUrl;
+}
+
 export default function NewsCard({ article, topicColor }: NewsCardProps) {
   const fallbackImg = getFallbackImage(article.topic);
+  const imgSrc = resolveImageUrl(article.imageUrl) || fallbackImg;
 
   return (
     <a
@@ -53,7 +65,7 @@ export default function NewsCard({ article, topicColor }: NewsCardProps) {
       {/* Image with topic-appropriate fallback for broken/missing images */}
       <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460]">
         <img
-          src={article.imageUrl || fallbackImg}
+          src={imgSrc}
           alt=""
           loading="lazy"
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
