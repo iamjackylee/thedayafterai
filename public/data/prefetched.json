@@ -1,7 +1,17 @@
 {
-  "fetchedAt": "2026-02-12T21:42:38.856Z",
+  "fetchedAt": "2026-02-12T22:05:40.056Z",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe",
   "news": [
+    {
+      "id": "gn-digital-security-43",
+      "title": "50% of Americans Are Reluctant to Discuss Romance Scam Incidents - Dark Reading | Security",
+      "summary": "50% of Americans Are Reluctant to Discuss Romance Scam Incidents Dark Reading | Security",
+      "topic": "digital-security",
+      "source": "Dark Reading | Security",
+      "date": "Thu, 12 Feb 2026 21:07:07 GMT",
+      "imageUrl": "https://eu-images.contentstack.com/v3/assets/blt6d90778a997de1cd/blt850556f866500627/654a5a8e05eb4d040a046894/325351_DR23_Graphics_General_Large_Text_v1.png",
+      "url": "https://www.darkreading.com/cyber-risk/one-in-two-americans-romance-scam-incidents"
+    },
     {
       "id": "gn-environment-science-47",
       "title": "DOE’s Freshly Unveiled 26 Genesis Mission AI Challenges Target Nuclear Timelines, Grid Planning, and Energy Systems - POWER Magazine",
@@ -13,6 +23,16 @@
       "url": "https://www.powermag.com/doe-details-26-genesis-mission-ai-challenges-targeting-nuclear-timelines-grid-planning-and-energy-systems/"
     },
     {
+      "id": "gn-digital-security-38",
+      "title": "Romance scams empty the bank account – and rip out the heart - Biometric Update",
+      "summary": "Romance scams empty the bank account – and rip out the heart Biometric Update",
+      "topic": "digital-security",
+      "source": "Biometric Update",
+      "date": "Thu, 12 Feb 2026 19:47:00 GMT",
+      "imageUrl": "https://d1sr9z1pdl3mb7.cloudfront.net/wp-content/uploads/2024/02/14163805/dating-app-1024x683.jpg",
+      "url": "https://www.biometricupdate.com/202602/romance-scams-empty-the-bank-account-and-rip-out-the-heart"
+    },
+    {
       "id": "gn-musical-art-22",
       "title": "This iPod-Style Android App Fixes Everything I Hate About Streaming Music - Make Tech Easier",
       "summary": "This iPod-Style Android App Fixes Everything I Hate About Streaming Music Make Tech Easier",
@@ -21,6 +41,26 @@
       "date": "Thu, 12 Feb 2026 16:25:00 GMT",
       "imageUrl": "https://www.maketecheasier.com/assets/uploads/2026/02/classiPod-Android-app.jpg",
       "url": "https://www.maketecheasier.com/classipod-ipod-style-android-music-player/"
+    },
+    {
+      "id": "gn-digital-security-47",
+      "title": "8 digital safety tips to know ahead of Valentine’s Day 2026 - TechCabal",
+      "summary": "8 digital safety tips to know ahead of Valentine’s Day 2026 TechCabal",
+      "topic": "digital-security",
+      "source": "TechCabal",
+      "date": "Thu, 12 Feb 2026 15:58:50 GMT",
+      "imageUrl": "https://c76c7bbc41.mjedge.net/wp-content/uploads/tc/2026/02/TC-Featured-Image-design-2026-02-12T165308.499.jpg",
+      "url": "https://techcabal.com/2026/02/12/safety-tips-for-valentines-day/"
+    },
+    {
+      "id": "gn-digital-security-49",
+      "title": "New AI Voice Scam Is Targeting Bank Customers in Florida — Don’t Say “Yes” if This Number Calls - inkl",
+      "summary": "New AI Voice Scam Is Targeting Bank Customers in Florida — Don’t Say “Yes” if This Number Calls inkl",
+      "topic": "digital-security",
+      "source": "inkl",
+      "date": "Thu, 12 Feb 2026 14:54:05 GMT",
+      "imageUrl": "https://images.inkl.com/s3/article/lead_image/23003063/pexels-karlsolano-10998427.jpg",
+      "url": "https://www.inkl.com/news/new-ai-voice-scam-is-targeting-bank-customers-in-florida-don-t-say-yes-if-this-number-calls"
     },
     {
       "id": "gn-business-economy-7",
@@ -43,14 +83,14 @@
       "url": "https://bitcoinworld.co.in/eur-gbp-analysis-uk-gdp-eurozone/"
     },
     {
-      "id": "gn-digital-security-48",
-      "title": "Deepfake Fraud Goes Mainstream - Impakter",
-      "summary": "Deepfake Fraud Goes Mainstream Impakter",
+      "id": "gn-digital-security-14",
+      "title": "How to Avoid Crypto Scams: Expert Guide to Digital Asset Protection - YouHodler",
+      "summary": "How to Avoid Crypto Scams: Expert Guide to Digital Asset Protection YouHodler",
       "topic": "digital-security",
-      "source": "Impakter",
-      "date": "Thu, 12 Feb 2026 12:45:21 GMT",
-      "imageUrl": "https://fastcdn.impakter.com/wp-content/uploads/2026/02/Deepfake-1.jpg?strip=all&quality=92&webp=92&avif=80",
-      "url": "https://impakter.com/deepfake-fraud-goes-mainstream/"
+      "source": "YouHodler",
+      "date": "Thu, 12 Feb 2026 13:30:52 GMT",
+      "imageUrl": "https://cdn.prod.website-files.com/660a94378d5efa3a1040a763/698dd42b3c24749f8c7c2a02_Avoid%20Scam%20Image.png",
+      "url": "https://www.youhodler.com/blog/how-to-avoid-crypto-scams"
     },
     {
       "id": "gn-visual-art-photography-7",
@@ -153,16 +193,6 @@
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRVI1SG1rTEV6WldjWWRkNDZBbXBib0JtTXJEdC1jSy1TQmlfTHdZdkdJMEhYXy15eVVPNDVaUHo5QW4tLWJXMkxGTTc4NUpZY3pkdWc2ZlRya1RtWGVGQXlNV3pEdVVaYXJMVmdvb050SGJWV3Zua1F6b3lrQ1JHYU1VYUJaUExkNTlBT252YVJWZFB3WHpxWGcyUl84NTYyVERTRzFnc3dCNDZTSjlLaVNINUstaThkakxVdWRqMUxyOUc5?oc=5"
     },
     {
-      "id": "gn-digital-security-47",
-      "title": "$2000 a pop: Inside alleged Cairns fake ID scheme - The Cairns Post",
-      "summary": "$2000 a pop: Inside alleged Cairns fake ID scheme The Cairns Post",
-      "topic": "digital-security",
-      "source": "The Cairns Post",
-      "date": "Thu, 12 Feb 2026 10:14:09 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPZHR0TGFsdHQ3UVhEcmJiMHlOZEdlYTZnM2VlMzNHMjk5bkdsWUEwa3NLVDBsVU5CdTBtRkpTcEh5RjdhMTF4ZkJ0OTg2MjRvQUxEUkQzSW5HV2kzVjBOSDdJVGt0dkFUOXZ0LVMwdTdVNHhWc1Zsc080WGtMd3dJX3hNSjRuT3JQYmxqV19QcVdUVVRxZFFoblBoWlExWmhKcDktUHcyWmJqUHNYVGRrdThXZ056aEw1N2JncFZXem1MSGo3MGZZRXhBTVpqYjdONmhtVGhtTEJrVi1XMGg3eTJLYWs3Z0o3?oc=5"
-    },
-    {
       "id": "gn-business-economy-33",
       "title": "How India can reframe global economic cooperation in a multipolar world - Business Standard",
       "summary": "How India can reframe global economic cooperation in a multipolar world Business Standard",
@@ -193,16 +223,6 @@
       "url": "https://ffnews.com/thought-leader/ai-in-financial-crime-new-scams-and-how-to-protect-yourself/"
     },
     {
-      "id": "gn-digital-security-33",
-      "title": "When AI plays Cupid: the dangers of companion chatbots - novanews.co.za",
-      "summary": "When AI plays Cupid: the dangers of companion chatbots novanews.co.za",
-      "topic": "digital-security",
-      "source": "novanews.co.za",
-      "date": "Thu, 12 Feb 2026 08:45:20 GMT",
-      "imageUrl": "https://i0.wp.com/novanews.co.za/wp-content/uploads/2026/02/image-2-3.jpg?fit=1024%2C768&ssl=1",
-      "url": "https://novanews.co.za/when-ai-plays-cupid-the-dangers-of-companion-chatbots/"
-    },
-    {
       "id": "gn-chatbot-development-48",
       "title": "AI That Doesn't Fear 3-Bets: GPT-5.2 Model Becomes a Poker Champion in AI Showdown - SpadePoker",
       "summary": "AI That Doesn't Fear 3-Bets: GPT-5.2 Model Becomes a Poker Champion in AI Showdown SpadePoker",
@@ -211,16 +231,6 @@
       "date": "Thu, 12 Feb 2026 08:11:57 GMT",
       "imageUrl": "https://www.spadepoker.tv/media/images/articles/list/AI_Cropped.png",
       "url": "https://www.spadepoker.tv/en/news/ai-that-doesnt-fear-3-bets-gpt-52-model-becomes-a-poker-champion-in-ai-showdown/"
-    },
-    {
-      "id": "gn-digital-security-41",
-      "title": "Beyond Safer Internet Day: Making Digital Safety a Daily Practice - IT Voice Media",
-      "summary": "Beyond Safer Internet Day: Making Digital Safety a Daily Practice IT Voice Media",
-      "topic": "digital-security",
-      "source": "IT Voice Media",
-      "date": "Thu, 12 Feb 2026 08:10:55 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.itvoice.in/beyond-safer-internet-day-making-digital-safety-a-daily-practice"
     },
     {
       "id": "gn-business-economy-43",
@@ -253,16 +263,6 @@
       "url": "https://punemirror.com/entertainment/youtube/youtube-music-ai-playlist-premium-feature/"
     },
     {
-      "id": "gn-digital-security-40",
-      "title": "Palo Alto Networks Completes Acquisition of CyberArk to Secure the AI Era - IT Voice Media",
-      "summary": "Palo Alto Networks Completes Acquisition of CyberArk to Secure the AI Era IT Voice Media",
-      "topic": "digital-security",
-      "source": "IT Voice Media",
-      "date": "Thu, 12 Feb 2026 07:39:26 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.itvoice.in/palo-alto-networks-completes-acquisition-of-cyberark-to-secure-the-ai-era"
-    },
-    {
       "id": "gn-business-economy-44",
       "title": "UK GDP Growth Stalls: Markets Brace For March Rate Cut Amid Economic Uncertainty - Bitcoin world",
       "summary": "UK GDP Growth Stalls: Markets Brace For March Rate Cut Amid Economic Uncertainty Bitcoin world",
@@ -271,16 +271,6 @@
       "date": "Thu, 12 Feb 2026 07:35:12 GMT",
       "imageUrl": "https://bitcoinworld.co.in/wp-content/uploads/uk-gdp-growth-march-rate-cut.jpg",
       "url": "https://bitcoinworld.co.in/uk-gdp-growth-march-rate-cut/"
-    },
-    {
-      "id": "gn-digital-security-36",
-      "title": "Love Is in the Air — and So Are Scammers: Valentine’s Day 2026 Threats to Watch For - IT Voice Media",
-      "summary": "Love Is in the Air — and So Are Scammers: Valentine’s Day 2026 Threats to Watch For IT Voice Media",
-      "topic": "digital-security",
-      "source": "IT Voice Media",
-      "date": "Thu, 12 Feb 2026 07:20:46 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.itvoice.in/love-is-in-the-air-and-so-are-scammers-valentines-day-2026-threats-to-watch-for"
     },
     {
       "id": "gn-environment-science-14",
@@ -313,6 +303,16 @@
       "url": "https://heidoh.com/united-states/us-lawmakers-call-for-broader-chip-equipment-export-curbs-on-china-over-security-risks"
     },
     {
+      "id": "gn-digital-security-45",
+      "title": "2026 Valentine's romance scams and how to avoid them - AOL.com",
+      "summary": "2026 Valentine's romance scams and how to avoid them AOL.com",
+      "topic": "digital-security",
+      "source": "AOL.com",
+      "date": "Thu, 12 Feb 2026 04:39:01 GMT",
+      "imageUrl": "https://s.yimg.com/ny/api/res/1.2/x9vctAWnvbFsqAYpbJr8UA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTI0MDA7aD0xMzUw/https://media.zenfs.com/en/aol_fox_news_text_745/2a3874435c30fb5821509ae8a46a2ee5",
+      "url": "https://www.aol.com/articles/2026-valentines-romance-scams-avoid-203009692.html"
+    },
+    {
       "id": "gn-visual-art-photography-28",
       "title": "New leaks indicate iPhone 17 with ProMotion display and significant lens improvements - Mix Vale",
       "summary": "New leaks indicate iPhone 17 with ProMotion display and significant lens improvements Mix Vale",
@@ -331,6 +331,16 @@
       "date": "Thu, 12 Feb 2026 03:25:43 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop&auto=format",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTmt1OFlXZ3MzSFVRUmdsMVdyY1dudGdYeExTR3NBVXV1OU40X3BkbnVCRTJBUGE0dTBVT0MtRTRmbmVqRXVKQzJLTS04aGpyR1RLNmdQZk1hbGJnUTRiaUNuWTFLSkhPdDhqcmtGblpINjFidWJ4alVMNmh2SUFnbzVuYmwzMlAzNDM3bWs1dHg5NTB1b1ZQanFmMk9kMkR2Q1ltMTZVVGFKWlhGdmMwRjdrNjcyZXpaTHFWeFFrRjkyeGVUWU40?oc=5"
+    },
+    {
+      "id": "gn-digital-security-30",
+      "title": "Okonjo-Iweala Raises Alarm Over Fake AI Video Using Her Image - tv360nigeria.com",
+      "summary": "Okonjo-Iweala Raises Alarm Over Fake AI Video Using Her Image tv360nigeria.com",
+      "topic": "digital-security",
+      "source": "tv360nigeria.com",
+      "date": "Thu, 12 Feb 2026 02:43:40 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTi1vV0RzSmtWcTJEMTFZWVFURUswSmx5M1g3aEFCNjlVdy1LWVJnM1FuQ1p5RTZsWnlRTF94NTNNM0djTHdIUjRpUXlmWlJzSHFIUDlTWTF4aE9DWEhmbmpMOTVTcXdiMXFjYmMxX3loRWhFcGQ4Y211OXlySzYyNi1VNVdnSGpjOF9JRkNOUkVMVUx6SUE?oc=5"
     },
     {
       "id": "gn-visual-art-photography-36",
@@ -363,7 +373,7 @@
       "url": "https://www.newelectronics.co.uk/content/news/uk-startup-olix-secures-220m-to-advance-photonic-ai-chip-development"
     },
     {
-      "id": "gn-digital-security-26",
+      "id": "gn-digital-security-34",
       "title": "Digital Gold for Predators: Tenable Expert Warns of AI-Powered “Dark Age” for Romance Scams Ahead of Valentine’s Day - iTWire",
       "summary": "Digital Gold for Predators: Tenable Expert Warns of AI-Powered “Dark Age” for Romance Scams Ahead of Valentine’s Day iTWire",
       "topic": "digital-security",
@@ -563,7 +573,7 @@
       "url": "https://www.datacenterdynamics.com/en/news/uk-chip-startup-olix-raises-220m-for-development-of-photonic-ai-chips-that-forgo-the-need-for-hbm-report/"
     },
     {
-      "id": "gn-digital-security-7",
+      "id": "gn-digital-security-9",
       "title": "Generative AI Cyber Threats 2026: Deepfake Fraud Scams and Synthetic Identity Fraud Deepfakes Surge - Tech Times",
       "summary": "Generative AI Cyber Threats 2026: Deepfake Fraud Scams and Synthetic Identity Fraud Deepfakes Surge Tech Times",
       "topic": "digital-security",
@@ -603,7 +613,7 @@
       "url": "https://www.inventiva.co.in/trends/top-10-entertainment-tech-firms-in-2026/"
     },
     {
-      "id": "gn-digital-security-38",
+      "id": "gn-digital-security-48",
       "title": "Google Cloud flags North Korea-linked crypto malware campaign - TradingView",
       "summary": "Google Cloud flags North Korea-linked crypto malware campaign TradingView",
       "topic": "digital-security",
@@ -633,17 +643,17 @@
       "url": "https://sundayguardianlive.com/tech-news/samsung-galaxy-s26-ultra-expected-to-launch-with-quad-lens-setup-camera-specs-design-price-pre-order-offers-more-169780/"
     },
     {
-      "id": "gn-digital-security-8",
-      "title": "When Deepfakes Target Your Business - LegalMatch Shows How to Stop Abuse and Recover Losses - Newswire.com",
-      "summary": "When Deepfakes Target Your Business - LegalMatch Shows How to Stop Abuse and Recover Losses Newswire.com",
+      "id": "gn-digital-security-10",
+      "title": "When Deepfakes Target Your Business - LegalMatch Shows How to Stop Abuse and Recover Losses - newswire.com",
+      "summary": "When Deepfakes Target Your Business - LegalMatch Shows How to Stop Abuse and Recover Losses newswire.com",
       "topic": "digital-security",
-      "source": "Newswire.com",
+      "source": "newswire.com",
       "date": "Wed, 11 Feb 2026 12:00:00 GMT",
       "imageUrl": "https://cdn.nwe.io/files/x/be/1c/247acd5893eac4bd4d682b7e9059.jpg",
       "url": "https://www.newswire.com/news/when-deepfakes-target-your-business-legalmatch-shows-how-to-stop-abuse-and"
     },
     {
-      "id": "gn-digital-security-17",
+      "id": "gn-digital-security-22",
       "title": "India Tightens Deepfake Rules: New AI Labelling Mandate to Reshape Content Creation and Social Media - The Hans India",
       "summary": "India Tightens Deepfake Rules: New AI Labelling Mandate to Reshape Content Creation and Social Media The Hans India",
       "topic": "digital-security",
@@ -723,6 +733,16 @@
       "url": "https://www.uktech.news/defence-tech/occam-ai-drone-ukraine-funding-20260211"
     },
     {
+      "id": "gn-digital-security-31",
+      "title": "'I only post on Twitter' - Ngozi Okonjo-Iweala warns against fake media - nigerianeye.com",
+      "summary": "'I only post on Twitter' - Ngozi Okonjo-Iweala warns against fake media nigerianeye.com",
+      "topic": "digital-security",
+      "source": "nigerianeye.com",
+      "date": "Wed, 11 Feb 2026 09:47:49 GMT",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgozj3xsuhm_DbJQ8cpDq9DV2sQXoCNuuICuLbN-oVRcyGbAhaC58iG6_wFm62VvmaFylQ6lhG0yo9_TXulSlYH4ZBruUkrULSKroelPvq0Lfqe0GZPMEqNSLGtdN7r9AIlY7-bRsBaKNDlqTGq8f8AOS7kzQzvF3UPLq4KQNV8IhMBIjANdfllLF-BNWI/w1200-h630-p-k-no-nu/Okonjo-Iweala.webp",
+      "url": "https://www.nigerianeye.com/2026/02/i-only-post-on-twitter-ngozi-okonjo.html"
+    },
+    {
       "id": "gn-musical-art-35",
       "title": "YouTube Music announces AI-powered playlist creation - YugaTech",
       "summary": "YouTube Music announces AI-powered playlist creation YugaTech",
@@ -773,16 +793,6 @@
       "url": "https://community.designtaxi.com/topic/23411-youtube-debuts-ai-playlist-generator-that-turns-your-vibes-into-music-recovery/"
     },
     {
-      "id": "gn-digital-security-39",
-      "title": "Genesys Launches Industry’s First Agentic Virtual Agent Powered by LAMs for Enterprise CX - IT Voice Media",
-      "summary": "Genesys Launches Industry’s First Agentic Virtual Agent Powered by LAMs for Enterprise CX IT Voice Media",
-      "topic": "digital-security",
-      "source": "IT Voice Media",
-      "date": "Wed, 11 Feb 2026 07:07:12 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.itvoice.in/genesys-launches-industrys-first-agentic-virtual-agent-powered-by-lams-for-enterprise-cx"
-    },
-    {
       "id": "gn-musical-art-15",
       "title": "Unleash Your Mood with YouTube Music’s New AI-Powered Playlist Feature - Retail News Asia",
       "summary": "Unleash Your Mood with YouTube Music’s New AI-Powered Playlist Feature Retail News Asia",
@@ -791,16 +801,6 @@
       "date": "Wed, 11 Feb 2026 06:57:38 GMT",
       "imageUrl": "https://www.retailnews.asia/wp-content/uploads/2019/08/Youtube-stream.jpg",
       "url": "https://www.retailnews.asia/unleash-your-mood-with-youtube-musics-new-ai-powered-playlist-feature/"
-    },
-    {
-      "id": "gn-digital-security-42",
-      "title": "Ismeet Kohli demanded this from Gursimran Khamba for Valentine’s, and it’s not roses! - IT Voice Media",
-      "summary": "Ismeet Kohli demanded this from Gursimran Khamba for Valentine’s, and it’s not roses! IT Voice Media",
-      "topic": "digital-security",
-      "source": "IT Voice Media",
-      "date": "Wed, 11 Feb 2026 06:46:37 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.itvoice.in/ismeet-kohli-demanded-this-from-gursimran-khamba-for-valentines-and-its-not-roses"
     },
     {
       "id": "gn-unmanned-aircraft-28",
@@ -823,7 +823,7 @@
       "url": "https://gulfnews.com/technology/best-iphone-camera-under-dh3000-why-the-iphone-16e-still-shines-amid-18-pro-max-leaks-1.500439165"
     },
     {
-      "id": "gn-digital-security-27",
+      "id": "gn-digital-security-35",
       "title": "AI turns romance scams into industrial-scale fraud - SecurityBrief Asia",
       "summary": "AI turns romance scams into industrial-scale fraud SecurityBrief Asia",
       "topic": "digital-security",
@@ -861,6 +861,16 @@
       "date": "Wed, 11 Feb 2026 04:52:11 GMT",
       "imageUrl": "https://img.36krcdn.com/hsossms/20260211/v2_3e90df2eca8a4cc3a24e3ecd05ebeafd@5091053@ai_oswg1056057oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
       "url": "https://eu.36kr.com/en/p/3678264053719682"
+    },
+    {
+      "id": "gn-digital-security-1",
+      "title": "AI supercharges industrial-scale online romance scams - SecurityBrief Australia",
+      "summary": "AI supercharges industrial-scale online romance scams SecurityBrief Australia",
+      "topic": "digital-security",
+      "source": "SecurityBrief Australia",
+      "date": "Wed, 11 Feb 2026 03:50:00 GMT",
+      "imageUrl": "https://securitybrief.com.au/uploads/story/2026/02/11/compatible_ai_romance_scam_dark_room_laptop_shadows_reaching_for_wallet_heart.jpg",
+      "url": "https://securitybrief.com.au/story/ai-supercharges-industrial-scale-online-romance-scams"
     },
     {
       "id": "gn-health-style-9",
@@ -933,7 +943,7 @@
       "url": "https://en.vietnamplus.vn/singapore-raises-economic-growth-forecast-for-2026-post337640.vnp"
     },
     {
-      "id": "gn-digital-security-12",
+      "id": "gn-digital-security-17",
       "title": "Under-reporting masks scale of ransomware crisis, ESET warn - MSN",
       "summary": "Under-reporting masks scale of ransomware crisis, ESET warn MSN",
       "topic": "digital-security",
@@ -973,7 +983,7 @@
       "url": "https://www.trendhunter.com/amp/trends/muse-deep-sleep-boost"
     },
     {
-      "id": "gn-digital-security-21",
+      "id": "gn-digital-security-26",
       "title": "Cybersafety: How to protect yourself against AI scams, online fakes and frauds - consumerconnectng.com",
       "summary": "Cybersafety: How to protect yourself against AI scams, online fakes and frauds consumerconnectng.com",
       "topic": "digital-security",
@@ -1093,6 +1103,16 @@
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5Qd3ZCTEQwbUY2azBuX0VrNGhhRW9BUFd5RU9hX1R6aGJVOGR6a2VTWFJRY0d6eFBFWjZNQy1sQzVCbTF0cGEzTVFicjFubTRKN3dDbk1NYXdicXBCU1JRWEZMRExfeG40TzVjUVRJZ3loYlluUFhfS0t30gGOAUFVX3lxTE9sVXcycGhTOVBfdjVTcDlKMXFKOThpQ2lONW5zWi1tcGVsNnQ2M2N4azM1V05ZdW1rT2dwTW5ic3FqeGNXcTZaVERIdVJXUXhyNjltNEtLd3ZFN0h0NUlpbnBteHBCVzhrblJHSVNVVmNzNk9obkkwal9BY3lnZ0dfWDF1QTl6b1dJM21EREE?oc=5"
     },
     {
+      "id": "gn-digital-security-4",
+      "title": "AI vibe scamming is here - marketplace.org",
+      "summary": "AI vibe scamming is here marketplace.org",
+      "topic": "digital-security",
+      "source": "marketplace.org",
+      "date": "Tue, 10 Feb 2026 21:00:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQYUFJOU8zVlZkaTFqamlBbnY4cWdtSnhiaEh5ZENnT3JkTGVHSmJWRzBOVnBJVFQ4eTdDVGdXVzdQbFM5eXN0MTNScWczYmtCRzJ5blNhSTZ3NXJjT1VBT0JfMjFWbThTRXVMbERDZFlSTnhMYUYtYTZZX0lCeVdnS0dHTmUtQkY3bDZYQmNNS1pRNmZXRnpR?oc=5"
+    },
+    {
       "id": "gn-visual-art-photography-29",
       "title": "New Galaxy S26 Ultra focuses on performance: complete guidance on buying or waiting for the next model - Mix Vale",
       "summary": "New Galaxy S26 Ultra focuses on performance: complete guidance on buying or waiting for the next model Mix Vale",
@@ -1163,7 +1183,7 @@
       "url": "https://cordcuttersnews.com/youtube-will-start-using-ai-to-make-you-playlists-if-youre-a-premium-subscriber/"
     },
     {
-      "id": "gn-digital-security-10",
+      "id": "gn-digital-security-12",
       "title": "Florida Grandmother Loses $200K to AI Deepfake Doctor Scam - Gadget Review",
       "summary": "Florida Grandmother Loses $200K to AI Deepfake Doctor Scam Gadget Review",
       "topic": "digital-security",
@@ -1173,7 +1193,7 @@
       "url": "https://www.gadgetreview.com/florida-grandmother-loses-200k-to-ai-deepfake-doctor-scam"
     },
     {
-      "id": "gn-digital-security-28",
+      "id": "gn-digital-security-37",
       "title": "Love in the Age of AI - Why 2026 Romance Scams are Almost Impossible to Spot - KnowBe4 blog",
       "summary": "Love in the Age of AI - Why 2026 Romance Scams are Almost Impossible to Spot KnowBe4 blog",
       "topic": "digital-security",
@@ -1233,16 +1253,6 @@
       "url": "https://www.androidheadlines.com/2026/02/youtube-music-ai-playlist-generator-premium-features.html"
     },
     {
-      "id": "gn-digital-security-37",
-      "title": "AI has led to industrialisation of cybercrime, says I4C CEO - The Economic Times",
-      "summary": "AI has led to industrialisation of cybercrime, says I4C CEO The Economic Times",
-      "topic": "digital-security",
-      "source": "The Economic Times",
-      "date": "Tue, 10 Feb 2026 17:31:00 GMT",
-      "imageUrl": "https://m.economictimes.com/thumb/msid-128169777,width-1200,height-900,resizemode-4,imgsize-97262/ai-has-led-to-industrialisation-of-cybercrime-says-i4c-ceo.jpg",
-      "url": "https://m.economictimes.com/tech/artificial-intelligence/ai-has-led-to-industrialisation-of-cybercrime-says-i4c-ceo/amp_articleshow/128169777.cms"
-    },
-    {
       "id": "gn-business-economy-13",
       "title": "AI could trigger a global jobs market collapse by 2027 if left unchecked, former Google ethicist warns - Fortune",
       "summary": "AI could trigger a global jobs market collapse by 2027 if left unchecked, former Google ethicist warns Fortune",
@@ -1263,7 +1273,7 @@
       "url": "https://innovation-village.com/spotify-hits-a-record-751m-monthly-users/"
     },
     {
-      "id": "gn-digital-security-23",
+      "id": "gn-digital-security-29",
       "title": "Analysis: Deepfake Fraud Explodes as AI Tools Become Widely Accessible - breitbart.com",
       "summary": "Analysis: Deepfake Fraud Explodes as AI Tools Become Widely Accessible breitbart.com",
       "topic": "digital-security",
@@ -1283,7 +1293,7 @@
       "url": "https://www.azernews.az/region/254239.html"
     },
     {
-      "id": "gn-digital-security-5",
+      "id": "gn-digital-security-6",
       "title": "AI fueled massive surge in fraud losses last year, study finds - CFO Dive",
       "summary": "AI fueled massive surge in fraud losses last year, study finds CFO Dive",
       "topic": "digital-security",
@@ -1313,7 +1323,7 @@
       "url": "https://lifehacker.com/tech/ai-playlists-youtube-music?utm_medium=RSS"
     },
     {
-      "id": "gn-digital-security-15",
+      "id": "gn-digital-security-20",
       "title": "Binance’s Yi He Warns Persistent FUD Is Eroding Crypto Market Confidence - Live Bitcoin News",
       "summary": "Binance’s Yi He Warns Persistent FUD Is Eroding Crypto Market Confidence Live Bitcoin News",
       "topic": "digital-security",
@@ -1343,7 +1353,7 @@
       "url": "https://www.gizchina.com/redmi-phones/redmi-k100-wants-to-play-with-the-big-guys-and-packs-200mp-periscope-lens"
     },
     {
-      "id": "gn-digital-security-32",
+      "id": "gn-digital-security-42",
       "title": "Phantom Chat Feature Targeted in Fresh Bitcoin Phishing Wave: $BMIC Offers Security - TradingView",
       "summary": "Phantom Chat Feature Targeted in Fresh Bitcoin Phishing Wave: $BMIC Offers Security TradingView",
       "topic": "digital-security",
@@ -1583,16 +1593,6 @@
       "url": "https://www.theverge.com/streaming/876230/youtube-music-just-got-an-ai-playlist-maker"
     },
     {
-      "id": "gn-digital-security-49",
-      "title": "Trust as a target: The parallels between application and romance fraud - Retail Banker International",
-      "summary": "Trust as a target: The parallels between application and romance fraud Retail Banker International",
-      "topic": "digital-security",
-      "source": "Retail Banker International",
-      "date": "Tue, 10 Feb 2026 12:46:11 GMT",
-      "imageUrl": "https://www.retailbankerinternational.com/wp-content/uploads/sites/2/2026/02/scam-fi2.jpg",
-      "url": "https://www.retailbankerinternational.com/comment/parallels-between-application-and-romance-fraud/"
-    },
-    {
       "id": "gn-musical-art-20",
       "title": "YouTube Launches AI Playlist Feature for Premium Users on Mobile - Букви",
       "summary": "YouTube Launches AI Playlist Feature for Premium Users on Mobile Букви",
@@ -1613,7 +1613,7 @@
       "url": "https://farmonaut.com/mining/kuwait-oil-company-7-breakthrough-innovations-shaping-2026"
     },
     {
-      "id": "gn-digital-security-29",
+      "id": "gn-digital-security-39",
       "title": "New scam spotted that uses a calendar invite, deepfakes of CEOs, and a troubleshooting program to create backdoors and data miners - PC Gamer",
       "summary": "New scam spotted that uses a calendar invite, deepfakes of CEOs, and a troubleshooting program to create backdoors and data miners PC Gamer",
       "topic": "digital-security",
@@ -1623,7 +1623,7 @@
       "url": "https://www.pcgamer.com/software/ai/ai-assisted-hacking-group-hits-targets-with-a-complicated-social-engineering-scam-that-involves-deepfaked-ceos-spoofed-zoom-calls-and-a-malicious-troubleshooting-program/"
     },
     {
-      "id": "gn-digital-security-31",
+      "id": "gn-digital-security-41",
       "title": "AI-assisted hacking group hits targets with a… - inkl",
       "summary": "AI-assisted hacking group hits targets with a… inkl",
       "topic": "digital-security",
@@ -1681,6 +1681,16 @@
       "date": "Tue, 10 Feb 2026 11:51:12 GMT",
       "imageUrl": "https://market.us/wp-content/uploads/2026/02/Event-Camera-Market-Size-Analysis-Bar-Graph.jpg",
       "url": "https://market.us/report/event-camera-market/"
+    },
+    {
+      "id": "gn-digital-security-36",
+      "title": "Valentine’s Day may be peak season for romance scammers, but the threat is year-round - Retail Banker International",
+      "summary": "Valentine’s Day may be peak season for romance scammers, but the threat is year-round Retail Banker International",
+      "topic": "digital-security",
+      "source": "Retail Banker International",
+      "date": "Tue, 10 Feb 2026 11:31:10 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQnFtODJnZ09fMWtwT19RTXBpNlJfRXVSeEpMcDIwWWE5WEo3a0VKb2RzY3JHVldYQ1l0Q1hDeGdTelh4ajhSSkJleFBDekJKZUpHbWJGeUlKN1FjTGNEQWFSdGtERFhUbHVGZDVhVzBubnpUYlVOT3d2UzRnLTgyNHYyU1RNelBacmU0OGlB?oc=5"
     },
     {
       "id": "gn-technology-innovation-7",
@@ -1753,16 +1763,6 @@
       "url": "https://www.findarticles.com/flagships-test-triple-100mp-cameras-and-100mp-selfies/"
     },
     {
-      "id": "gn-digital-security-43",
-      "title": "Valentine’s Day is coming: How vulnerable are you to AI-enabled romance scams? - UNSW Sydney",
-      "summary": "Valentine’s Day is coming: How vulnerable are you to AI-enabled romance scams? UNSW Sydney",
-      "topic": "digital-security",
-      "source": "UNSW Sydney",
-      "date": "Tue, 10 Feb 2026 09:05:14 GMT",
-      "imageUrl": "https://www.unsw.edu.au/content/dam/images/business/2026-01-newsroom/2026-01-newsroom-tinder-online-app.cropimg.width=700.crop=landscape.jpeg",
-      "url": "https://www.unsw.edu.au/newsroom/news/2026/02/valentine-s-day-is-coming--how-vulnerable-are-you-to-ai-scams"
-    },
-    {
       "id": "gn-environment-science-43",
       "title": "AI boom at your expense? Growing electricity demand and rising electricity prices: AI data centers vs. the power grid - Xpert.Digital - Konrad Wolfenstein",
       "summary": "AI boom at your expense? Growing electricity demand and rising electricity prices: AI data centers vs. the power grid Xpert.Digital - Konrad Wolfenstein",
@@ -1773,7 +1773,7 @@
       "url": "https://xpert.digital/en/ai-data-centers-vs.-power-grid/"
     },
     {
-      "id": "gn-digital-security-11",
+      "id": "gn-digital-security-16",
       "title": "Interview with HelpAge on cybercrime and online safety for senior citizens on Safer Internet Day - t2ONLINE",
       "summary": "Interview with HelpAge on cybercrime and online safety for senior citizens on Safer Internet Day t2ONLINE",
       "topic": "digital-security",
@@ -1833,7 +1833,7 @@
       "url": "https://www.sciencedaily.com/releases/2026/02/260210005419.htm"
     },
     {
-      "id": "gn-digital-security-35",
+      "id": "gn-digital-security-46",
       "title": "AI Becomes A Weapon as Cyberattacks Jump 18% Globally In 2025 - ciol.com",
       "summary": "AI Becomes A Weapon as Cyberattacks Jump 18% Globally In 2025 ciol.com",
       "topic": "digital-security",
@@ -1963,7 +1963,7 @@
       "url": "https://intellectia.ai/news/stock/nvidia-set-to-benefit-from-surge-in-ai-hardware-demand"
     },
     {
-      "id": "gn-digital-security-24",
+      "id": "gn-digital-security-32",
       "title": "Australians turn to AI for love as dating scams surge - SecurityBrief Australia",
       "summary": "Australians turn to AI for love as dating scams surge SecurityBrief Australia",
       "topic": "digital-security",
@@ -2033,7 +2033,7 @@
       "url": "https://www.theedgesingapore.com/amp/news/singapore-news/ai-led-demand-continue-singapore-raises-2026-growth-forecast-2-4-2025-gdp-5"
     },
     {
-      "id": "gn-digital-security-25",
+      "id": "gn-digital-security-33",
       "title": "'Deepfake' AI is making romance scams more sophisticated than ever - 9News.com.au",
       "summary": "'Deepfake' AI is making romance scams more sophisticated than ever 9News.com.au",
       "topic": "digital-security",
@@ -2073,14 +2073,14 @@
       "url": "https://www.climatecontrolnews.com.au/contracting/testing-ai-enabled-energy-systems"
     },
     {
-      "id": "gn-digital-security-13",
-      "title": "Binance’s CZ and Yi He Star in AI-Generated Deepfake Dramas Flooding Crypto Twitter - BeInCrypto",
-      "summary": "Binance’s CZ and Yi He Star in AI-Generated Deepfake Dramas Flooding Crypto Twitter BeInCrypto",
+      "id": "gn-digital-security-15",
+      "title": "Binance’s CZ and Yi He Star in AI-Generated Deepfake Dramas Flooding Crypto Twitter - Yahoo Finance",
+      "summary": "Binance’s CZ and Yi He Star in AI-Generated Deepfake Dramas Flooding Crypto Twitter Yahoo Finance",
       "topic": "digital-security",
-      "source": "BeInCrypto",
-      "date": "Mon, 09 Feb 2026 22:47:00 GMT",
-      "imageUrl": "https://assets.beincrypto.com/img/H_S7Qnl0SI51gKhr3cE0HKKwOjs=/smart/2b2fab55c9a945c29d4a7b6e75e49b5a",
-      "url": "https://beincrypto.com/binance-cz-yi-he-ai-deepfake-videos-crypto-twitter/"
+      "source": "Yahoo Finance",
+      "date": "Mon, 09 Feb 2026 22:47:03 GMT",
+      "imageUrl": "https://s.yimg.com/ny/api/res/1.2/0Lmxz9Ir4DK_nvsf24LOFg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU7Y2Y9d2VicA--/https://media.zenfs.com/en/beincrypto_us_662/c1284fa4cf2e19348953a5d73c057719",
+      "url": "https://finance.yahoo.com/news/binance-cz-yi-star-ai-224703151.html"
     },
     {
       "id": "gn-visual-art-photography-1",
@@ -2283,7 +2283,7 @@
       "url": "https://www.blackrock.com/corporate/insights/blackrock-investment-institute/publications/weekly-commentary"
     },
     {
-      "id": "gn-digital-security-20",
+      "id": "gn-digital-security-25",
       "title": "Cybersecurity threats in Ghana: A comprehensive analysis - MyJoyOnline",
       "summary": "Cybersecurity threats in Ghana: A comprehensive analysis MyJoyOnline",
       "topic": "digital-security",
@@ -2623,7 +2623,7 @@
       "url": "https://www.techzine.eu/news/applications/138615/eu-commission-targets-meta-s-blockade-of-rival-ai-chatbots-on-whatsapp/"
     },
     {
-      "id": "gn-digital-security-16",
+      "id": "gn-digital-security-21",
       "title": "Tech scams increase during Tet (Lunar New Year), users need to pay attention to the '3 Don'ts - 2 Musts' principle to protect themselves from risks. - Việt Báo",
       "summary": "Tech scams increase during Tet (Lunar New Year), users need to pay attention to the '3 Don'ts - 2 Musts' principle to protect themselves from risks. Việt Báo",
       "topic": "digital-security",
@@ -2841,16 +2841,6 @@
       "date": "Mon, 09 Feb 2026 02:54:22 GMT",
       "imageUrl": "https://assets.commbank.com.au/is/image/commbank/newsroom-three-wall-street-traders:Large",
       "url": "https://www.commbank.com.au/articles/newsroom/2026/02/ai-boom-bubble-or-both.html"
-    },
-    {
-      "id": "gn-digital-security-46",
-      "title": "AI romance scams: How to stay safe this Valentine's Day - moneymag.com.au",
-      "summary": "AI romance scams: How to stay safe this Valentine's Day moneymag.com.au",
-      "topic": "digital-security",
-      "source": "moneymag.com.au",
-      "date": "Mon, 09 Feb 2026 02:42:00 GMT",
-      "imageUrl": "https://media.moneymag.com.au/prod/media/library/Money_Mag/2026/02._February/AI-romance-scams-How-to-stay-safe-this-Valentines-Day-0001.jpg",
-      "url": "https://www.moneymag.com.au/ai-romance-scams-valentines-day"
     },
     {
       "id": "gn-musical-art-45",
@@ -3253,7 +3243,7 @@
       "url": "https://timesofindia.indiatimes.com/technology/mobiles-tabs/samsung-galaxy-s26-series-google-pixel-10a-and-5-other-smartphones-launching-in-february/articleshow/128029728.cms"
     },
     {
-      "id": "gn-digital-security-14",
+      "id": "gn-digital-security-18",
       "title": "AI, Digital Revolution: Now Formidable Tools For Identity Fraud - aljazirahnews.com",
       "summary": "AI, Digital Revolution: Now Formidable Tools For Identity Fraud aljazirahnews.com",
       "topic": "digital-security",
@@ -3323,14 +3313,14 @@
       "url": "https://farmonaut.com/mining/saracen-mineral-leading-gold-mining-in-western-australia"
     },
     {
-      "id": "gn-digital-security-30",
+      "id": "gn-digital-security-40",
       "title": "Fugitive Crypto Scam Kingpin Gets 20 Years for $73 Million ‘Pig Butchering’ Scam - Bitdefender",
       "summary": "Fugitive Crypto Scam Kingpin Gets 20 Years for $73 Million ‘Pig Butchering’ Scam Bitdefender",
       "topic": "digital-security",
       "source": "Bitdefender",
       "date": "Sat, 07 Feb 2026 08:00:00 GMT",
-      "imageUrl": "https://blogapp.bitdefender.com/hotforsecurity/content/images/2026/02/chart-4.jpg",
-      "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/fugitive-crypto-scam-kingpin-20-years-73-million-pig-butchering-scam"
+      "imageUrl": "https://blogapp.bitdefender.com/hotforsecurity/content/images/2026/02/header-1.png",
+      "url": "https://www.bitdefender.com/en-gb/blog/hotforsecurity/fugitive-crypto-scam-kingpin-20-years-73-million-pig-butchering-scam"
     },
     {
       "id": "gn-business-economy-23",
@@ -3351,6 +3341,16 @@
       "date": "Sat, 07 Feb 2026 06:43:00 GMT",
       "imageUrl": "https://static.toiimg.com/thumb/resizemode-4,width-1280,height-720,msid-127912116/127912116.jpg",
       "url": "https://timesofindia.indiatimes.com/business/india-business/india-us-trade-deal-decoded-what-does-it-mean-for-economy-markets-russian-oil-imports-explained-in-10-charts/articleshow/127911573.cms"
+    },
+    {
+      "id": "gn-digital-security-19",
+      "title": "Silent Alarm: Culture of Secrecy Fueling Kenya’s Ransomware Crisis - streamlinefeed.co.ke",
+      "summary": "Silent Alarm: Culture of Secrecy Fueling Kenya’s Ransomware Crisis streamlinefeed.co.ke",
+      "topic": "digital-security",
+      "source": "streamlinefeed.co.ke",
+      "date": "Sat, 07 Feb 2026 06:15:38 GMT",
+      "imageUrl": "https://nyjbuhvfbjutcfbphchh.supabase.co/storage/v1/object/public/media/c54a66eb-818a-481f-9aff-d789a9d141a1/590c3816-fef9-4c0f-9e15-44accbbcb496.jpg",
+      "url": "https://streamlinefeed.co.ke/news/silent-alarm-culture-of-secrecy-fueling-kenyas-ransomware-crisis"
     },
     {
       "id": "gn-unmanned-aircraft-14",
@@ -3383,7 +3383,7 @@
       "url": "https://www.fool.com/investing/stock-market/market-sectors/information-technology/ai-stocks/"
     },
     {
-      "id": "gn-digital-security-9",
+      "id": "gn-digital-security-11",
       "title": "Warning about deepfake scams using fake voices and impersonations of acquaintances during Tet (Lunar New Year). - Việt Báo",
       "summary": "Warning about deepfake scams using fake voices and impersonations of acquaintances during Tet (Lunar New Year). Việt Báo",
       "topic": "digital-security",
@@ -3393,7 +3393,7 @@
       "url": "https://vietbao.vn/en/canh-bao-lua-dao-deepfake-gia-giong-gia-hinh-nguoi-quen-dip-tet-581362.html"
     },
     {
-      "id": "gn-digital-security-19",
+      "id": "gn-digital-security-23",
       "title": "Under-reporting masks scale of ransomware crisis, ESET warn - the-star.co.ke",
       "summary": "Under-reporting masks scale of ransomware crisis, ESET warn the-star.co.ke",
       "topic": "digital-security",
@@ -3431,16 +3431,6 @@
       "date": "Sat, 07 Feb 2026 02:09:57 GMT",
       "imageUrl": "https://www.qoo10.co.id/en/wp-content/uploads/2026/02/Smartphone-Photography-2026-Shifts-Focus-from-AI-Cameras-to-Enhanced.webp.jpg",
       "url": "https://www.qoo10.co.id/en/gadget/68671/smartphone-photography-2026-shifts-focus-from-ai-cameras-to-enhanced-hardware-innovation/"
-    },
-    {
-      "id": "gn-digital-security-44",
-      "title": "AI is helping banks save millions by transforming payment fraud prevention - mastercard.com",
-      "summary": "AI is helping banks save millions by transforming payment fraud prevention mastercard.com",
-      "topic": "digital-security",
-      "source": "mastercard.com",
-      "date": "Sat, 07 Feb 2026 01:16:33 GMT",
-      "imageUrl": "https://www.mastercard.com/content/dam/mccom/shared/news-and-trends/insights/2026/ai-is-helping-banks-save-millions-by-transforming-payment-fraud-prevention/Woman%20looking%20out%20window%20featured%20image.png",
-      "url": "https://www.mastercard.com/global/en/news-and-trends/Insights/2026/ai-is-helping-banks-save-millions-by-transforming-payment-fraud-prevention.html"
     },
     {
       "id": "gn-environment-science-25",
@@ -3543,7 +3533,17 @@
       "url": "https://www.insideprecisionmedicine.com/topics/precision-medicine/ai-that-reads-brain-mris-in-seconds-could-transform-neurologic-care/"
     },
     {
-      "id": "gn-digital-security-6",
+      "id": "gn-digital-security-13",
+      "title": "Gran, 82, loses $200,000 retirement savings in AI deepfake doctor scam - Daily Express US",
+      "summary": "Gran, 82, loses $200,000 retirement savings in AI deepfake doctor scam Daily Express US",
+      "topic": "digital-security",
+      "source": "Daily Express US",
+      "date": "Fri, 06 Feb 2026 19:43:30 GMT",
+      "imageUrl": "https://cdn-images.the-express.com/img/dynamic/10/1200x630/510344.jpg",
+      "url": "https://www.the-express.com/news/us-news/198395/gran-82-loses-200k-retirement-savings-ai-deepfake-doctor-scam"
+    },
+    {
+      "id": "gn-digital-security-8",
       "title": "Staying on Guard Against the Growing Use of Deepfakes - PaymentsJournal",
       "summary": "Staying on Guard Against the Growing Use of Deepfakes PaymentsJournal",
       "topic": "digital-security",
@@ -3551,16 +3551,6 @@
       "date": "Fri, 06 Feb 2026 19:30:00 GMT",
       "imageUrl": "https://b2161880.smushcdn.com/2161880/wp-content/uploads/2018/04/deep-web-1106648_1280-750x375.jpg?lossy=1&strip=1&webp=1",
       "url": "https://www.paymentsjournal.com/staying-on-guard-against-the-growing-use-of-deepfakes/"
-    },
-    {
-      "id": "gn-digital-security-45",
-      "title": "AI-Generated Fraud Forces Banks to Rethink Identity Verification - ACA International",
-      "summary": "AI-Generated Fraud Forces Banks to Rethink Identity Verification ACA International",
-      "topic": "digital-security",
-      "source": "ACA International",
-      "date": "Fri, 06 Feb 2026 19:01:28 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.acainternational.org/news/ai-generated-fraud-forces-banks-to-rethink-identity-verification/"
     },
     {
       "id": "gn-environment-science-20",
@@ -3591,6 +3581,16 @@
       "date": "Fri, 06 Feb 2026 17:43:12 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=400&fit=crop&auto=format",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBRYUswOXBCQUVsZVQyT0h4RG5Qdzk4MkxxQlpOMUlNVGxjSTlSREhPV3A5RWJ3Y0xfanVuYmdEd1FIZklNSGY5MUdmZVlxcnFGMy1HdWkwd3Qwci1leW1JUFdoOEtKVXozNVVCZWJGUzl0Q0k?oc=5"
+    },
+    {
+      "id": "gn-digital-security-28",
+      "title": "Deepfakes now used to impersonate gamblers and defeat onboarding checks, Isle of Man regulator says - Tribuna.com",
+      "summary": "Deepfakes now used to impersonate gamblers and defeat onboarding checks, Isle of Man regulator says Tribuna.com",
+      "topic": "digital-security",
+      "source": "Tribuna.com",
+      "date": "Fri, 06 Feb 2026 17:00:17 GMT",
+      "imageUrl": "https://pictures.tribuna.com/image/80ad613a-10ce-4400-b22e-926e503c3b33?width=1920&quality=70",
+      "url": "https://tribuna.com/en/casino/news/2026-02-06-deepfakes-now-used-to-impersonate-gamblers-and-defeat-onboarding-checks-isle-of-man-regul/"
     },
     {
       "id": "gn-technology-innovation-9",
@@ -3703,7 +3703,7 @@
       "url": "https://farmonaut.com/mining/mineral-containing-iron-key-2026-industry-trends"
     },
     {
-      "id": "gn-digital-security-4",
+      "id": "gn-digital-security-5",
       "title": "Deepfake fraud goes industrial: How AI scams are scaling globally in 2026 - The News International",
       "summary": "Deepfake fraud goes industrial: How AI scams are scaling globally in 2026 The News International",
       "topic": "digital-security",
@@ -3731,6 +3731,16 @@
       "date": "Fri, 06 Feb 2026 13:32:13 GMT",
       "imageUrl": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1zkPFc.img?w=768&h=512&m=4&q=70",
       "url": "https://www.msn.com/en-in/money/news/not-just-music-spotify-will-soon-start-selling-books-too/ar-AA1VNmD4"
+    },
+    {
+      "id": "gn-digital-security-7",
+      "title": "AI deepfake romance scam steals woman's home and life savings - Fox News",
+      "summary": "AI deepfake romance scam steals woman's home and life savings Fox News",
+      "topic": "digital-security",
+      "source": "Fox News",
+      "date": "Fri, 06 Feb 2026 13:31:18 GMT",
+      "imageUrl": "https://static.foxnews.com/foxnews.com/content/uploads/2026/02/la-woman-ai-scam.jpg",
+      "url": "https://www.foxnews.com/tech/ai-deepfake-romance-scam-steals-womans-home-life-savings"
     },
     {
       "id": "gn-business-economy-3",
@@ -3813,7 +3823,7 @@
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdE1MbDNSVFE4LWhmak0xcGs2WDF3a0owaVRkQjVZRXF5OHdVakdYRXVLYW9FWDhsaU1jcHpBWGh4bG9IcUEteDE5am11UzdKNE1BZmhmbzh6RTBBR3gzQUQxcmhIX2wtakpud0dnT2dtVTZHMDlsSW1iOWQ5NExMczlQN2gySURHcWtSYnl4ZmFMLXY0NHlnbko5M2llNGI3ZGYw?oc=5"
     },
     {
-      "id": "gn-digital-security-34",
+      "id": "gn-digital-security-44",
       "title": "8 Online Scams Everyone Falls For and How to Spot Them Before Losing Money - Tech Times",
       "summary": "8 Online Scams Everyone Falls For and How to Spot Them Before Losing Money Tech Times",
       "topic": "digital-security",
@@ -3983,6 +3993,16 @@
       "url": "https://autogpt.net/top-ai-outfit-generator-tools/"
     },
     {
+      "id": "gn-digital-security-24",
+      "title": "Instant Payment Fraud Risks Surge as Real-Time Transaction Systems Expand Across US Financial Platforms - CybersecurityNews",
+      "summary": "Instant Payment Fraud Risks Surge as Real-Time Transaction Systems Expand Across US Financial Platforms CybersecurityNews",
+      "topic": "digital-security",
+      "source": "CybersecurityNews",
+      "date": "Fri, 06 Feb 2026 07:25:06 GMT",
+      "imageUrl": "https://i2.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9C6RayUWDgHJsUMJyBdMx08offrC_VKPxp1j8P_TX878dLPwMriQu-bJLnT_1sO_hkw8uZVbigLNgyx8xrWYlNkyHj41nqZbFPxUzPIjNRDTqp9I4M5tvzZckoCu5I5JXV9JB9R4sBpl4kM7q7t42BMplEpbyHLIBo-8DfJ3oDzXhdPwF1_8tYoaTo38/s16000/TTT%20-%202026-02-05T183343.759.webp?w=1600&resize=1600,900&ssl=1",
+      "url": "https://cybersecuritynews.com/instant-payment-fraud-risks-surge-as-real-time-transaction-systems-expand-across-us-financial-platforms/"
+    },
+    {
       "id": "gn-unmanned-aircraft-4",
       "title": "Public Safety Drones Market Share to Reach $3.7 Billion by 2032 - openPR.com",
       "summary": "Public Safety Drones Market Share to Reach $3.7 Billion by 2032 openPR.com",
@@ -3993,7 +4013,7 @@
       "url": "https://www.openpr.com/news/4379862/public-safety-drones-market-share-to-reach-3-7-billion-by-2032"
     },
     {
-      "id": "gn-digital-security-22",
+      "id": "gn-digital-security-27",
       "title": "ESET Threat Report: Deepfake scams and AI co-generated malware among key cyber risks for Kenya - Bizna Kenya",
       "summary": "ESET Threat Report: Deepfake scams and AI co-generated malware among key cyber risks for Kenya Bizna Kenya",
       "topic": "digital-security",
@@ -4153,16 +4173,6 @@
       "url": "https://medicalxpress.com/news/2026-02-powerful-ai-substance-disorder-treatment.html"
     },
     {
-      "id": "gn-digital-security-1",
-      "title": "Upcover adds deepfake cover to cyber insurance in Australia - SecurityBrief Australia",
-      "summary": "Upcover adds deepfake cover to cyber insurance in Australia SecurityBrief Australia",
-      "topic": "digital-security",
-      "source": "SecurityBrief Australia",
-      "date": "Thu, 05 Feb 2026 21:30:00 GMT",
-      "imageUrl": "https://securitybrief.com.au/uploads/story/2026/02/05/compatible_Anish_Sinha.jpg",
-      "url": "https://securitybrief.com.au/story/upcover-adds-deepfake-cover-to-cyber-insurance-in-australia"
-    },
-    {
       "id": "gn-environment-science-16",
       "title": "Earth Observation Data Basics - NASA Earthdata (.gov)",
       "summary": "Earth Observation Data Basics NASA Earthdata (.gov)",
@@ -4281,16 +4291,6 @@
       "date": "Thu, 05 Feb 2026 14:55:14 GMT",
       "imageUrl": "https://cdn.mos.cms.futurecdn.net/ubcLwYk8iEPrGv3HtYpgnJ-1920-80.jpg",
       "url": "https://www.tomsguide.com/us/best-cameras,review-2196.html"
-    },
-    {
-      "id": "gn-digital-security-18",
-      "title": "ESET Report: AI-Generated Malware and Deep fakes Surges in Kenya - TechTrendsKE",
-      "summary": "ESET Report: AI-Generated Malware and Deep fakes Surges in Kenya TechTrendsKE",
-      "topic": "digital-security",
-      "source": "TechTrendsKE",
-      "date": "Thu, 05 Feb 2026 13:40:37 GMT",
-      "imageUrl": "https://techtrendske.co.ke/wp-content/uploads/2023/04/cyber-criminals.png",
-      "url": "https://techtrendske.co.ke/2026/02/05/eset-report-ai-generated-malware-and-deep-fakes-surges-in-kenya/"
     },
     {
       "id": "gn-health-style-0",
