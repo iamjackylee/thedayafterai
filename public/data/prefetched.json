@@ -1,7 +1,17 @@
 {
-  "fetchedAt": "2026-02-12T14:09:33.922Z",
+  "fetchedAt": "2026-02-12T17:14:05.002Z",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe",
   "news": [
+    {
+      "id": "gn-musical-art-22",
+      "title": "This iPod-Style Android App Fixes Everything I Hate About Streaming Music - Make Tech Easier",
+      "summary": "This iPod-Style Android App Fixes Everything I Hate About Streaming Music Make Tech Easier",
+      "topic": "musical-art",
+      "source": "Make Tech Easier",
+      "date": "Thu, 12 Feb 2026 16:25:00 GMT",
+      "imageUrl": "https://www.maketecheasier.com/assets/uploads/2026/02/classiPod-Android-app.jpg",
+      "url": "https://www.maketecheasier.com/classipod-ipod-style-android-music-player/"
+    },
     {
       "id": "gn-digital-security-48",
       "title": "Deepfake Fraud Goes Mainstream - Impakter",
@@ -93,7 +103,7 @@
       "url": "https://www.itvoice.in/beyond-safer-internet-day-making-digital-safety-a-daily-practice"
     },
     {
-      "id": "gn-musical-art-30",
+      "id": "gn-musical-art-32",
       "title": "YouTube Music AI Playlist delivers powerful new upgrade for Premium users - Pune Mirror",
       "summary": "YouTube Music AI Playlist delivers powerful new upgrade for Premium users Pune Mirror",
       "topic": "musical-art",
@@ -123,7 +133,7 @@
       "url": "https://www.itvoice.in/love-is-in-the-air-and-so-are-scammers-valentines-day-2026-threats-to-watch-for"
     },
     {
-      "id": "gn-musical-art-13",
+      "id": "gn-musical-art-6",
       "title": "AI Playlists Are Revolutionizing Music Streaming: Is Apple Music About to Catch Up? - Tech Times",
       "summary": "AI Playlists Are Revolutionizing Music Streaming: Is Apple Music About to Catch Up? Tech Times",
       "topic": "musical-art",
@@ -173,17 +183,7 @@
       "url": "https://www.photonics.com/Articles/Illuminating-the-Invisible-The-Technologies/p5/vo271/i1959/a71899"
     },
     {
-      "id": "gn-musical-art-5",
-      "title": "An AI Liza Minnelli is the star of the 'Eleven Album' - Mashable",
-      "summary": "An AI Liza Minnelli is the star of the 'Eleven Album' Mashable",
-      "topic": "musical-art",
-      "source": "Mashable",
-      "date": "Thu, 12 Feb 2026 01:09:06 GMT",
-      "imageUrl": "https://helios-i.mashable.com/imagery/articles/07qwxQN5RhtewGJp5AgPPRZ/hero-image.fill.size_1200x675.v1769026995.jpg",
-      "url": "https://mashable.com/article/elevenlabs-launches-eleven-album-liza-minnelli-listen-spotify"
-    },
-    {
-      "id": "gn-musical-art-12",
+      "id": "gn-musical-art-13",
       "title": "Will Apple Music Get AI Playlists in iOS 27? - MacRumors",
       "summary": "Will Apple Music Get AI Playlists in iOS 27? MacRumors",
       "topic": "musical-art",
@@ -243,7 +243,7 @@
       "url": "https://bitcoinworld.co.in/singapore-gdp-uob-ai-forecast/"
     },
     {
-      "id": "gn-musical-art-10",
+      "id": "gn-musical-art-11",
       "title": "YouTube’s New AI Playlist Tool Is Fast, but Is It Smarter Than Spotify? - Lifewire",
       "summary": "YouTube’s New AI Playlist Tool Is Fast, but Is It Smarter Than Spotify? Lifewire",
       "topic": "musical-art",
@@ -253,7 +253,7 @@
       "url": "https://www.lifewire.com/youtube-music-premium-ai-playlist-11904573"
     },
     {
-      "id": "gn-musical-art-40",
+      "id": "gn-musical-art-44",
       "title": "YouTube Music Places Lyrics Behind Premium Paywall, Sparking Debate Among Users - TechStory",
       "summary": "YouTube Music Places Lyrics Behind Premium Paywall, Sparking Debate Among Users TechStory",
       "topic": "musical-art",
@@ -281,16 +281,6 @@
       "date": "Wed, 11 Feb 2026 17:46:43 GMT",
       "imageUrl": "https://newscenter.lbl.gov/wp-content/uploads/2026/02/2_Newscenter_Featured_1190x750px_AliJaveyFig5.png",
       "url": "https://newscenter.lbl.gov/2026/02/11/new-ai-sensor-sniffs-out-spectral-targets/"
-    },
-    {
-      "id": "gn-musical-art-49",
-      "title": "‘Human made’: Irish music industry pitches AI fightback - Business Post",
-      "summary": "‘Human made’: Irish music industry pitches AI fightback Business Post",
-      "topic": "musical-art",
-      "source": "Business Post",
-      "date": "Wed, 11 Feb 2026 16:58:43 GMT",
-      "imageUrl": "https://imengine.public.prod.sbp.infomaker.io/?uuid=d2a79144-a220-5727-be77-bd7824d3c8a4&type=preview&function=original",
-      "url": "https://www.businesspost.ie/politics/human-made-irish-music-industry-pitches-ai-fightback/"
     },
     {
       "id": "gn-technology-innovation-43",
@@ -343,17 +333,17 @@
       "url": "https://www.lombardodier.com/insights/2026/february/rethink-capital-market-assumptions.html"
     },
     {
-      "id": "gn-musical-art-7",
+      "id": "gn-musical-art-8",
       "title": "YouTube Unveils AI-Driven Playlists for Premium iOS and Android Users - ITP.net",
       "summary": "YouTube Unveils AI-Driven Playlists for Premium iOS and Android Users ITP.net",
       "topic": "musical-art",
       "source": "ITP.net",
       "date": "Wed, 11 Feb 2026 14:18:38 GMT",
-      "imageUrl": "https://www.itp.net/cloud/2026/02/11/shutterstock_2618538499-scaled.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&h=400&fit=crop&auto=format",
       "url": "https://www.itp.net/digital-culture/youtube-unveils-ai-driven-playlists-for-premium-ios-and-android-users"
     },
     {
-      "id": "gn-musical-art-39",
+      "id": "gn-musical-art-43",
       "title": "Best Spotify Music Converter Review – Convert Spotify to MP3 - TechBullion",
       "summary": "Best Spotify Music Converter Review – Convert Spotify to MP3 TechBullion",
       "topic": "musical-art",
@@ -363,7 +353,7 @@
       "url": "https://techbullion.com/best-spotify-music-converter-review-convert-spotify-to-mp3/"
     },
     {
-      "id": "gn-musical-art-11",
+      "id": "gn-musical-art-12",
       "title": "Spotify Just Killed Thousands of Third-Party Music Apps, and Developers Reveal Which Ones Are Next - Headphonesty",
       "summary": "Spotify Just Killed Thousands of Third-Party Music Apps, and Developers Reveal Which Ones Are Next Headphonesty",
       "topic": "musical-art",
@@ -413,6 +403,16 @@
       "url": "https://industrytoday.co.uk/it/edge-ai-hardware-market-size-to-reach-usd-15-billion-growing-at-134-cagr-by-2035"
     },
     {
+      "id": "gn-musical-art-47",
+      "title": "The future of music and audio in MENA: Anghami’s predictions for 2026 - Campaign Middle East",
+      "summary": "The future of music and audio in MENA: Anghami’s predictions for 2026 Campaign Middle East",
+      "topic": "musical-art",
+      "source": "Campaign Middle East",
+      "date": "Wed, 11 Feb 2026 12:39:03 GMT",
+      "imageUrl": "https://campaignme.com/wp-content/uploads/2026/02/Predictions-Cover-scaled.jpg",
+      "url": "https://campaignme.com/the-future-of-music-and-audio-in-mena-anghamis-predictions-for-2026/"
+    },
+    {
       "id": "gn-technology-innovation-37",
       "title": "AI Chip Battle Intensifies as Broadcom and Cisco Challenge Nvidia’s Market Lead - Blockonomi",
       "summary": "AI Chip Battle Intensifies as Broadcom and Cisco Challenge Nvidia’s Market Lead Blockonomi",
@@ -423,7 +423,7 @@
       "url": "https://blockonomi.com/ai-chip-battle-intensifies-as-broadcom-and-cisco-challenge-nvidias-market-lead/"
     },
     {
-      "id": "gn-musical-art-42",
+      "id": "gn-musical-art-46",
       "title": "Top 10 Entertainment Tech Firms In 2026 - inventiva.co.in",
       "summary": "Top 10 Entertainment Tech Firms In 2026 inventiva.co.in",
       "topic": "musical-art",
@@ -443,7 +443,7 @@
       "url": "https://www.tradingview.com/news/cointelegraph:e02252b87094b:0-google-cloud-flags-north-korea-linked-crypto-malware-campaign/"
     },
     {
-      "id": "gn-musical-art-32",
+      "id": "gn-musical-art-34",
       "title": "Spotify Hits 751 Million Monthly Users Following 11% Growth - Dataconomy",
       "summary": "Spotify Hits 751 Million Monthly Users Following 11% Growth Dataconomy",
       "topic": "musical-art",
@@ -483,16 +483,6 @@
       "url": "https://www.thehansindia.com/technology/tech-news/india-tightens-deepfake-rules-new-ai-labelling-mandate-to-reshape-content-creation-and-social-media-1047628"
     },
     {
-      "id": "gn-musical-art-43",
-      "title": "Google Rolls Out YouTube AI Playlist Feature For Personalised Music: How To Use - ETV Bharat",
-      "summary": "Google Rolls Out YouTube AI Playlist Feature For Personalised Music: How To Use ETV Bharat",
-      "topic": "musical-art",
-      "source": "ETV Bharat",
-      "date": "Wed, 11 Feb 2026 11:44:33 GMT",
-      "imageUrl": "https://imgs.etvbharat.com/etvbharat/prod-images/11-02-2026/1200-675-26018832-566-26018832-1770811043992.jpg",
-      "url": "https://www.etvbharat.com/en/technology/google-launches-youtube-ai-playlist-how-to-use-enn26021105108"
-    },
-    {
       "id": "gn-chatbot-development-25",
       "title": "Super Bowl spots spark fight over whether we're ready for ads from our chatbots - AOL.com",
       "summary": "Super Bowl spots spark fight over whether we're ready for ads from our chatbots AOL.com",
@@ -503,7 +493,7 @@
       "url": "https://www.aol.com/news/super-bowl-spots-spark-fight-110000471.html"
     },
     {
-      "id": "gn-musical-art-18",
+      "id": "gn-musical-art-17",
       "title": "YouTube is following Spotify in adding AI playlist creation - Trusted Reviews",
       "summary": "YouTube is following Spotify in adding AI playlist creation Trusted Reviews",
       "topic": "musical-art",
@@ -513,14 +503,14 @@
       "url": "https://www.trustedreviews.com/news/youtube-is-following-spotify-in-adding-ai-playlist-creation"
     },
     {
-      "id": "gn-musical-art-23",
+      "id": "gn-musical-art-26",
       "title": "YouTube just changed music forever: New AI playlist feature is here! - Indiablooms",
       "summary": "YouTube just changed music forever: New AI playlist feature is here! Indiablooms",
       "topic": "musical-art",
       "source": "Indiablooms",
       "date": "Wed, 11 Feb 2026 11:05:39 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUFExWDNvZXQ0VWFFV3VXMWNwd3A1VUlmR1I4YWpZUU9lOXpMTTl5eFA5RFJ4WGpPRThVN1dNeEh5M1B4N1l1anc0MjVoUUE0Y3p6eHlpMklxN3JxMUh5WUhhMTZPN3dhLU5vZlpydnBqQW9Eak1aYmNWZzM3UTRiZ29nNnNWTURESDFiN2dtd0YtdkJYRUJiVXhGamJOTkNWOHVsZlVaY2JiTXM?oc=5"
+      "imageUrl": "https://www.indiablooms.com/storage/assets/n/2026/1770807939613215582.jpg",
+      "url": "https://www.indiablooms.com/life/youtube-just-changed-music-forever-new-ai-playlist-feature-is-here/details"
     },
     {
       "id": "gn-chatbot-development-6",
@@ -533,7 +523,7 @@
       "url": "https://www.latimes.com/business/story/2026-02-11/super-bowl-spots-spark-fight-over-whether-were-ready-for-ads-from-our-chatbots"
     },
     {
-      "id": "gn-musical-art-22",
+      "id": "gn-musical-art-24",
       "title": "YouTube Music Brings AI Playlist Magic to Premium Subscribers - Techgenyz",
       "summary": "YouTube Music Brings AI Playlist Magic to Premium Subscribers Techgenyz",
       "topic": "musical-art",
@@ -543,7 +533,7 @@
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNYXl0cElxc1pDVTQ5RGVqNjBEaXFib2RwbVVvTHN0VGV0cmFWbFZ4NEYyc0MwNWlLUXJJaFRpazR1WjlmTzNSWHdlTzZ4Ymh0QlNOdHliZzZjcm0yTlRsdkVKQlNXRy1ZOTZIRjlRQzdGOXJkTHJsSmZjMEEyamdHbQ?oc=5"
     },
     {
-      "id": "gn-musical-art-44",
+      "id": "gn-musical-art-48",
       "title": "NetEase Cloud Music Inc. Reports Fiscal Year 2025 Financial Results - The Manila Times",
       "summary": "NetEase Cloud Music Inc. Reports Fiscal Year 2025 Financial Results The Manila Times",
       "topic": "musical-art",
@@ -573,7 +563,7 @@
       "url": "https://telconews.com.au/story/submer-buys-radian-arc-to-build-sovereign-telco-ai-edge"
     },
     {
-      "id": "gn-musical-art-33",
+      "id": "gn-musical-art-35",
       "title": "YouTube Music announces AI-powered playlist creation - YugaTech",
       "summary": "YouTube Music announces AI-powered playlist creation YugaTech",
       "topic": "musical-art",
@@ -581,6 +571,16 @@
       "date": "Wed, 11 Feb 2026 08:07:48 GMT",
       "imageUrl": "https://www.yugatech.com/wp-content/uploads/2026/02/Youtube-Music.jpg",
       "url": "https://www.yugatech.com/news/youtube-music-announces-ai-powered-playlist-creation/"
+    },
+    {
+      "id": "gn-musical-art-36",
+      "title": "All Things Considered - NPR",
+      "summary": "All Things Considered NPR",
+      "topic": "musical-art",
+      "source": "NPR",
+      "date": "Wed, 11 Feb 2026 08:00:00 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5aWUJlMDZkOVV4NkJPTGJOZlFLQ3R2MUVJWUFtOFc4Q1I1c3VhYXdqc0RDUF84bFdTRWJKOFF6eVpURnZ1NEttVXE2QXI3YjF0dDc0TmpTcTdzWkxLZjRhRQ?oc=5"
     },
     {
       "id": "gn-environment-science-4",
@@ -603,7 +603,7 @@
       "url": "https://vocal.media/trader/hang-seng-index-key-insights-and-market-trends"
     },
     {
-      "id": "gn-musical-art-38",
+      "id": "gn-musical-art-41",
       "title": "YouTube Music introduces an AI-powered playlist generator for premium subscribers on Android and iOS - Techlusive",
       "summary": "YouTube Music introduces an AI-powered playlist generator for premium subscribers on Android and iOS Techlusive",
       "topic": "musical-art",
@@ -613,7 +613,7 @@
       "url": "https://www.techlusive.in/apps/youtube-music-introduces-an-ai-powered-playlist-generator-for-premium-subscribers-on-android-and-ios-1645281/"
     },
     {
-      "id": "gn-musical-art-35",
+      "id": "gn-musical-art-38",
       "title": "YouTube debuts AI playlist generator that turns your vibes into music recovery - DesignTAXI Community",
       "summary": "YouTube debuts AI playlist generator that turns your vibes into music recovery DesignTAXI Community",
       "topic": "musical-art",
@@ -633,7 +633,7 @@
       "url": "https://www.itvoice.in/genesys-launches-industrys-first-agentic-virtual-agent-powered-by-lams-for-enterprise-cx"
     },
     {
-      "id": "gn-musical-art-14",
+      "id": "gn-musical-art-15",
       "title": "Unleash Your Mood with YouTube Music’s New AI-Powered Playlist Feature - Retail News Asia",
       "summary": "Unleash Your Mood with YouTube Music’s New AI-Powered Playlist Feature Retail News Asia",
       "topic": "musical-art",
@@ -923,7 +923,7 @@
       "url": "https://www.mixvale.com.br/2026/02/10/new-galaxy-s26-ultra-focuses-on-performance-complete-guidance-on-buying-or-waiting-for-the-next-model-en/"
     },
     {
-      "id": "gn-musical-art-27",
+      "id": "gn-musical-art-29",
       "title": "YouTube introduces AI playlist creation feature for premium users - 디지털투데이",
       "summary": "YouTube introduces AI playlist creation feature for premium users 디지털투데이",
       "topic": "musical-art",
@@ -941,6 +941,16 @@
       "date": "Tue, 10 Feb 2026 20:51:00 GMT",
       "imageUrl": "https://ts2.tech/wp-content/uploads/2026/02/broadcom-stock-price-dips-as-cisco-debuts-ai-networking-chip-and-ubs-downgrades-tech-featured-1.jpg",
       "url": "https://ts2.tech/en/broadcom-stock-price-dips-as-cisco-debuts-ai-networking-chip-and-ubs-downgrades-tech/"
+    },
+    {
+      "id": "gn-musical-art-49",
+      "title": "Spotify eyes AI ‘derivatives’ as new revenue stream for artists – says its tech to let fans make remixes and covers is ready - Music Business Worldwide",
+      "summary": "Spotify eyes AI ‘derivatives’ as new revenue stream for artists – says its tech to let fans make remixes and covers is ready Music Business Worldwide",
+      "topic": "musical-art",
+      "source": "Music Business Worldwide",
+      "date": "Tue, 10 Feb 2026 20:17:54 GMT",
+      "imageUrl": "https://www.musicbusinessworldwide.com/files/2026/02/shutterstock_1954106548.jpg",
+      "url": "https://www.musicbusinessworldwide.com/spotify-eyes-ai-derivatives-as-new-revenue-stream-for-artists-and-says-its-tech-to-let-fans-make-remixes-covers-is-ready/"
     },
     {
       "id": "gn-musical-art-19",
@@ -963,7 +973,7 @@
       "url": "https://medicalxpress.com/news/2026-02-artificial-intelligence-tool-personalize-ovarian.html"
     },
     {
-      "id": "gn-musical-art-34",
+      "id": "gn-musical-art-37",
       "title": "YouTube Will Start Using AI To Make You Playlists If You’re a Premium Subscriber - | Cord Cutters News",
       "summary": "YouTube Will Start Using AI To Make You Playlists If You’re a Premium Subscriber | Cord Cutters News",
       "topic": "musical-art",
@@ -1013,17 +1023,27 @@
       "url": "https://officechai.com/ai/google-gemini-was-fastest-growing-ai-platform-in-january-2026-usage-grew-19-2/"
     },
     {
-      "id": "gn-musical-art-36",
+      "id": "gn-musical-art-42",
+      "title": "YouTube Launches AI-Powered Playlist Generator for Premium Users - FilmoGaz",
+      "summary": "YouTube Launches AI-Powered Playlist Generator for Premium Users FilmoGaz",
+      "topic": "musical-art",
+      "source": "FilmoGaz",
+      "date": "Tue, 10 Feb 2026 18:22:01 GMT",
+      "imageUrl": "https://www.filmogaz.com/uploads/images/202602/image_1200x675_698b774a7b4b4.webp",
+      "url": "https://www.filmogaz.com/143288"
+    },
+    {
+      "id": "gn-musical-art-39",
       "title": "YouTube Rolls Out AI Playlist Generator for Premium Users - innovation-village.com",
       "summary": "YouTube Rolls Out AI Playlist Generator for Premium Users innovation-village.com",
       "topic": "musical-art",
       "source": "innovation-village.com",
       "date": "Tue, 10 Feb 2026 17:42:25 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNT1RuZHEtZW0xdjdlakhic2hxbUNLMHQ0VkE1S3FQcWFkZml0MU5mVThiQVU3V25USnM2N2tLam93VWVGeFJLRVVGS01Tb0lqMkpWWENBZWlzd1JBNHpmSlFxbWp5OGNET0pTNjdkNS1md01RYmdSRlRPMjRvdjNiaDk0ckgxOWt5VnR0TnpZSzRLOVk?oc=5"
+      "imageUrl": "https://innovation-village.com/wp-content/uploads/2026/02/youtubee.png",
+      "url": "https://innovation-village.com/youtube-rolls-out-ai-playlist-generator-for-premium-users/"
     },
     {
-      "id": "gn-musical-art-31",
+      "id": "gn-musical-art-33",
       "title": "YouTube Music Can Now Generate AI Playlists Based on Your Vibes - Android Headlines",
       "summary": "YouTube Music Can Now Generate AI Playlists Based on Your Vibes Android Headlines",
       "topic": "musical-art",
@@ -1053,14 +1073,14 @@
       "url": "https://m.economictimes.com/tech/artificial-intelligence/ai-has-led-to-industrialisation-of-cybercrime-says-i4c-ceo/amp_articleshow/128169777.cms"
     },
     {
-      "id": "gn-musical-art-37",
+      "id": "gn-musical-art-40",
       "title": "Spotify hits a record 751M monthly users - innovation-village.com",
       "summary": "Spotify hits a record 751M monthly users innovation-village.com",
       "topic": "musical-art",
       "source": "innovation-village.com",
       "date": "Tue, 10 Feb 2026 17:27:46 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5uOV9IYzVYQzRGelBWVnFoWlNmMDdwQUE2V05vX0xmSEpsY0RSaE9RTlRyQ24yWFYxVlhYSVp6U1RXSmhqT2NvSVBSWVg1Q0VGdWQ4QVVTR1JNOFIxaU1nSmNMLTFzRTVkVGpWWGVGUkh3bXloWWxaUllPVG8?oc=5"
+      "imageUrl": "https://innovation-village.com/wp-content/uploads/2026/02/spotifyy.png",
+      "url": "https://innovation-village.com/spotify-hits-a-record-751m-monthly-users/"
     },
     {
       "id": "gn-digital-security-23",
@@ -1093,7 +1113,7 @@
       "url": "https://www.cfodive.com/news/ai-fueled-massive-surge-fraud-losses-pindrop-retail/811404/"
     },
     {
-      "id": "gn-musical-art-6",
+      "id": "gn-musical-art-18",
       "title": "AI-Generated Playlists Are Coming to YouTube Music - Lifehacker",
       "summary": "AI-Generated Playlists Are Coming to YouTube Music Lifehacker",
       "topic": "musical-art",
@@ -1163,7 +1183,7 @@
       "url": "https://www.tradingview.com/news/financewire:96d3e1c32094b:0-zenatech-s-drone-as-a-service-expands-builder-services-capability-delivering-drone-driven-speed-and-precision-to-surveying-for-homebuilders/"
     },
     {
-      "id": "gn-musical-art-24",
+      "id": "gn-musical-art-27",
       "title": "YouTube Adds AI Prompt Playlists For Premium Users - findarticles.com",
       "summary": "YouTube Adds AI Prompt Playlists For Premium Users findarticles.com",
       "topic": "musical-art",
@@ -1253,7 +1273,7 @@
       "url": "https://www.myjoyonline.com/ghana-deploys-ai-and-drones-to-shift-mining-regulation-from-reactive-to-preventive-minerals-commission/"
     },
     {
-      "id": "gn-musical-art-28",
+      "id": "gn-musical-art-30",
       "title": "YouTube Music can now turn your thoughts into a personalized playlist - Digital Trends",
       "summary": "YouTube Music can now turn your thoughts into a personalized playlist Digital Trends",
       "topic": "musical-art",
@@ -1263,7 +1283,7 @@
       "url": "https://www.digitaltrends.com/home-theater/youtube-music-can-now-turn-you-thoughts-into-a-personalized-playlist/"
     },
     {
-      "id": "gn-musical-art-25",
+      "id": "gn-musical-art-28",
       "title": "Spotify Reports Record 751 Million Users and Revenue Growth in Q4 2025 - Букви",
       "summary": "Spotify Reports Record 751 Million Users and Revenue Growth in Q4 2025 Букви",
       "topic": "musical-art",
@@ -1291,16 +1311,6 @@
       "date": "Tue, 10 Feb 2026 14:24:28 GMT",
       "imageUrl": "https://www.manilatimes.net//theme_manilatimes/images/manila-logo-header-web-new.png",
       "url": "https://www.manilatimes.net/2026/02/10/tmt-newswire/globenewswire/sustainability-magazines-latest-issue-features-global-brands-redefining-fashions-impact/2275379"
-    },
-    {
-      "id": "gn-musical-art-48",
-      "title": "Udio seeks dismissal of indie artists’ copyright lawsuit over jurisdiction - Music Business Worldwide",
-      "summary": "Udio seeks dismissal of indie artists’ copyright lawsuit over jurisdiction Music Business Worldwide",
-      "topic": "musical-art",
-      "source": "Music Business Worldwide",
-      "date": "Tue, 10 Feb 2026 14:05:06 GMT",
-      "imageUrl": "https://www.musicbusinessworldwide.com/files/2026/01/shutterstock_2484114167.jpg",
-      "url": "https://www.musicbusinessworldwide.com/udio-seeks-to-dismiss-indie-artists-copyright-lawsuit-over-jurisdiction/"
     },
     {
       "id": "gn-technology-innovation-4",
@@ -1333,7 +1343,7 @@
       "url": "https://www.thehindu.com/news/national/govt-tightens-rules-on-ai-generated-deepfake-content-mandates-faster-takedown-of-flagged-material/article70615674.ece"
     },
     {
-      "id": "gn-musical-art-17",
+      "id": "gn-musical-art-23",
       "title": "Spotify hits a record 751M monthly users thanks to Wrapped, new free features - TechCrunch",
       "summary": "Spotify hits a record 751M monthly users thanks to Wrapped, new free features TechCrunch",
       "topic": "musical-art",
@@ -1453,7 +1463,7 @@
       "url": "https://farmonaut.com/mining/drilling-bits-oil-and-gas-drilling-rig-7-innovations"
     },
     {
-      "id": "gn-musical-art-15",
+      "id": "gn-musical-art-14",
       "title": "YouTube Music drops AI playlist generator for Premium subs - The Tech Buzz",
       "summary": "YouTube Music drops AI playlist generator for Premium subs The Tech Buzz",
       "topic": "musical-art",
@@ -1523,6 +1533,16 @@
       "url": "https://thedefensepost.com/2026/02/10/india-laser-sniper-ugv/"
     },
     {
+      "id": "gn-musical-art-1",
+      "title": "AI-generated ‘slop’ spreads on Spotify, raising platform integrity concerns - Digital Watch Observatory",
+      "summary": "AI-generated ‘slop’ spreads on Spotify, raising platform integrity concerns Digital Watch Observatory",
+      "topic": "musical-art",
+      "source": "Digital Watch Observatory",
+      "date": "Tue, 10 Feb 2026 10:09:08 GMT",
+      "imageUrl": "https://diplo-media.s3.eu-central-1.amazonaws.com/2026/02/2151065106.jpg",
+      "url": "https://dig.watch/updates/ai-generated-slop-spreads-on-spotify-raising-platform-integrity-concerns"
+    },
+    {
       "id": "gn-chatbot-development-16",
       "title": "Goodcall - Goodcall",
       "summary": "Goodcall Goodcall",
@@ -1571,16 +1591,6 @@
       "date": "Tue, 10 Feb 2026 08:00:00 GMT",
       "imageUrl": "https://image.chitra.live/api/v1/wps/94f3a18/b8dea16e-9592-411e-97d0-5bb2e5463b68/276/Markets-blog-new-1200x630.jpg",
       "url": "https://www.investmentweek.co.uk/blog/4080428/market-movers-blog"
-    },
-    {
-      "id": "gn-musical-art-46",
-      "title": "Music-Related Legislation Before Congress Right Now: Full List of Bills (UPDATING) - Billboard",
-      "summary": "Music-Related Legislation Before Congress Right Now: Full List of Bills (UPDATING) Billboard",
-      "topic": "musical-art",
-      "source": "Billboard",
-      "date": "Tue, 10 Feb 2026 08:00:00 GMT",
-      "imageUrl": "https://www.billboard.com/wp-content/uploads/2025/09/us-capitol-building-2025-billboard-1800.jpg",
-      "url": "https://www.billboard.com/lists/music-related-bills-congress-now-list-legislation/"
     },
     {
       "id": "gn-environment-science-47",
@@ -1923,7 +1933,7 @@
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZE9UVzBwSnMtdmJyVHlKb2cwbzMwdE1EUGJRTElldmhFN2VmNnFlMnNETkpxR0NvY2VLUWN3T2duVm9EX3o4NURKZFFHMjJsazY5SWt5Qkx1VHd6czlFRktlZUtLUFA2YXM5cHBlSUc3MUhvNXNrM0xOVElpeGFPaGZLSkpieTg?oc=5"
     },
     {
-      "id": "gn-musical-art-3",
+      "id": "gn-musical-art-7",
       "title": "Did the Super Bowl Convince You to Try Apple Music? Here's How to Move Your Playlists - CNET",
       "summary": "Did the Super Bowl Convince You to Try Apple Music? Here's How to Move Your Playlists CNET",
       "topic": "musical-art",
@@ -2483,6 +2493,16 @@
       "url": "https://farmonaut.com/mining/sunshine-mining-company-leads-sustainable-mining-in-2026"
     },
     {
+      "id": "gn-musical-art-5",
+      "title": "TikTok fans to Spotify listeners challenge for artists - BBC",
+      "summary": "TikTok fans to Spotify listeners challenge for artists BBC",
+      "topic": "musical-art",
+      "source": "BBC",
+      "date": "Mon, 09 Feb 2026 08:49:15 GMT",
+      "imageUrl": "https://ichef.bbci.co.uk/news/480/cpsprodpb/841c/live/4cfd3f20-fdf7-11f0-a8b8-bdd2c5f9bcad.png.webp",
+      "url": "https://www.bbc.com/news/articles/cx2yv25l8dro"
+    },
+    {
       "id": "gn-chatbot-development-17",
       "title": "Anthropic Targets ChatGPT Advertising In Super Bowl Spots - Silicon UK",
       "summary": "Anthropic Targets ChatGPT Advertising In Super Bowl Spots Silicon UK",
@@ -2643,7 +2663,7 @@
       "url": "https://discoveryalert.com.au/india-us-trade-framework-economic-architecture-2026/"
     },
     {
-      "id": "gn-musical-art-41",
+      "id": "gn-musical-art-45",
       "title": "Billboard Japan Keeps YouTube Data US Charts Drop - neonmusic.co.uk",
       "summary": "Billboard Japan Keeps YouTube Data US Charts Drop neonmusic.co.uk",
       "topic": "musical-art",
@@ -2793,7 +2813,7 @@
       "url": "https://en.brinkwire.com/technology/vivo-bets-big-on-small-phones-with-x300s-strategy-shift/"
     },
     {
-      "id": "gn-musical-art-9",
+      "id": "gn-musical-art-10",
       "title": "Why I switched from Spotify to YouTube Music for background listening - MakeUseOf",
       "summary": "Why I switched from Spotify to YouTube Music for background listening MakeUseOf",
       "topic": "musical-art",
@@ -2851,6 +2871,16 @@
       "date": "Sun, 08 Feb 2026 14:17:47 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=400&fit=crop&auto=format",
       "url": "https://www.mixvale.com.br/2026/02/08/samsung-innovates-the-galaxy-s26-ultras-camera-with-anti-glare-technology-and-realistic-skin-colors-en/"
+    },
+    {
+      "id": "gn-musical-art-9",
+      "title": "Spotify Premium users just got another neat feature – but lyrics are being limited for free YouTube Music users - TechRadar",
+      "summary": "Spotify Premium users just got another neat feature – but lyrics are being limited for free YouTube Music users TechRadar",
+      "topic": "musical-art",
+      "source": "TechRadar",
+      "date": "Sun, 08 Feb 2026 13:30:00 GMT",
+      "imageUrl": "https://cdn.mos.cms.futurecdn.net/8qUNq4VKEcoQrk9jtETRAd-2560-80.jpg",
+      "url": "https://www.techradar.com/audio/spotify/spotify-just-got-a-neat-upgrade-to-give-you-the-stories-behind-the-songs-but-it-looks-like-youtube-music-is-removing-a-key-feature-from-free-accounts"
     },
     {
       "id": "gn-chatbot-development-46",
@@ -3373,6 +3403,16 @@
       "url": "https://www.barrons.com/articles/nvidia-stock-price-amazon-ai-chips-5c61966d"
     },
     {
+      "id": "gn-musical-art-2",
+      "title": "Spotify Will Now Use AI to Tell You the Meaning Behind Your Favorite Songs - Lifehacker",
+      "summary": "Spotify Will Now Use AI to Tell You the Meaning Behind Your Favorite Songs Lifehacker",
+      "topic": "musical-art",
+      "source": "Lifehacker",
+      "date": "Fri, 06 Feb 2026 16:30:17 GMT",
+      "imageUrl": "https://lifehacker.com/imagery/articles/01KGSTD1SZQ3KGA0KRYY8YS9BH/hero-image.jpg",
+      "url": "https://lifehacker.com/tech/spotifys-about-the-song-feature-summarizes-the-meaning-of-songs"
+    },
+    {
       "id": "gn-ai-academy-2",
       "title": "A new AI commission at UW considers research and learning applications - Wyoming Public Media",
       "summary": "A new AI commission at UW considers research and learning applications Wyoming Public Media",
@@ -3401,16 +3441,6 @@
       "date": "Fri, 06 Feb 2026 16:08:14 GMT",
       "imageUrl": "https://avweb.b-cdn.net/wp-content/uploads/sites/3/2026/01/shutterstock_2680909045.jpg?width=1000&height=667",
       "url": "https://avweb.com/aviation-news/drones/faa-tightens-drone-enforcement/"
-    },
-    {
-      "id": "gn-musical-art-47",
-      "title": "Sarah McLachlan, Mac DeMarco, Leith Ross and More Support SOCAN Campaign to Stop Unlicensed AI Music - Billboard Canada",
-      "summary": "Sarah McLachlan, Mac DeMarco, Leith Ross and More Support SOCAN Campaign to Stop Unlicensed AI Music Billboard Canada",
-      "topic": "musical-art",
-      "source": "Billboard Canada",
-      "date": "Fri, 06 Feb 2026 15:31:18 GMT",
-      "imageUrl": "https://ca.billboard.com/media-library/image.jpg?id=61108985&width=1200&height=600&coordinates=0%2C671%2C0%2C1328",
-      "url": "https://ca.billboard.com/business/tech/socan-unlicensed-ai-training-campaign"
     },
     {
       "id": "gn-unmanned-aircraft-8",
@@ -3473,7 +3503,7 @@
       "url": "https://www.theglobeandmail.com/investing/markets/stocks/TSM/pressreleases/69301/4-stocks-that-could-be-your-ticket-to-creating-generational-wealth/"
     },
     {
-      "id": "gn-musical-art-29",
+      "id": "gn-musical-art-31",
       "title": "Not just music, Spotify will soon start selling books too - MSN",
       "summary": "Not just music, Spotify will soon start selling books too MSN",
       "topic": "musical-art",
@@ -3553,7 +3583,7 @@
       "url": "https://www.preventionweb.net/news/how-technology-helping-communities-across-globe-adapt-climate-change"
     },
     {
-      "id": "gn-musical-art-2",
+      "id": "gn-musical-art-3",
       "title": "Prompt Fidelity: Measuring How Much of Your Intent an AI Agent Actually Executes - Towards Data Science",
       "summary": "Prompt Fidelity: Measuring How Much of Your Intent an AI Agent Actually Executes Towards Data Science",
       "topic": "musical-art",
@@ -3853,7 +3883,7 @@
       "url": "https://www.webpronews.com/amds-strategic-pivot-how-chipmakers-ai-ambitions-are-reshaping-the-semiconductor-power-dynamic/"
     },
     {
-      "id": "gn-musical-art-26",
+      "id": "gn-musical-art-25",
       "title": "Death by streaming | Review of Liz Pelly’s Mood Machine - The Hindu",
       "summary": "Death by streaming | Review of Liz Pelly’s Mood Machine The Hindu",
       "topic": "musical-art",
@@ -3981,16 +4011,6 @@
       "date": "Thu, 05 Feb 2026 19:35:35 GMT",
       "imageUrl": "https://image.cnbcfm.com/api/v1/image/108252923-1768485369924-gettyimages-2255719593-AFP_92QV92Z.jpeg?v=1768485392",
       "url": "https://www.cnbc.com/2026/02/05/trump-trade-war-frontloading-creating-a-mirage-in-trade-maritime-expert.html"
-    },
-    {
-      "id": "gn-musical-art-45",
-      "title": "K-pop industry eyes royalties boost as China’s copyright body signs deals with Tencent Music and NetEase Cloud Music - Music Business Worldwide",
-      "summary": "K-pop industry eyes royalties boost as China’s copyright body signs deals with Tencent Music and NetEase Cloud Music Music Business Worldwide",
-      "topic": "musical-art",
-      "source": "Music Business Worldwide",
-      "date": "Thu, 05 Feb 2026 19:28:19 GMT",
-      "imageUrl": "https://www.musicbusinessworldwide.com/files/2022/03/BTSGrams-scaled.jpeg",
-      "url": "https://www.musicbusinessworldwide.com/k-pop-industry-eyes-royalties-boost-as-chinas-copyright-body-signs-deals-with-tencent-music-and-netease-cloud-music/"
     },
     {
       "id": "gn-unmanned-aircraft-7",
@@ -4163,16 +4183,6 @@
       "url": "https://www.tradingview.com/news/zacks:acce648e5094b:0-nvidia-trades-at-a-premium-valuation-should-you-still-buy-the-stock/"
     },
     {
-      "id": "gn-musical-art-8",
-      "title": "YouTube Music is the best music streaming service and it's not due to its audio quality - Android Police",
-      "summary": "YouTube Music is the best music streaming service and it's not due to its audio quality Android Police",
-      "topic": "musical-art",
-      "source": "Android Police",
-      "date": "Thu, 05 Feb 2026 13:00:10 GMT",
-      "imageUrl": "https://static0.anpoimages.com/wordpress/wp-content/uploads/wm/2025/09/youtube-music-autoplay.jpg?w=1600&h=900&fit=crop",
-      "url": "https://www.androidpolice.com/youtube-music-is-the-best-music-streaming-service/"
-    },
-    {
       "id": "gn-health-style-0",
       "title": "13 best fitness watches for 2026, tried and tested - Good Housekeeping",
       "summary": "13 best fitness watches for 2026, tried and tested Good Housekeeping",
@@ -4291,16 +4301,6 @@
       "date": "Thu, 05 Feb 2026 10:09:00 GMT",
       "imageUrl": "https://cdn.open-pr.com/L/2/L205853631_g.jpg",
       "url": "https://www.openpr.com/news/4378596/drone-warfare-market-to-reach-usd-39-5-billion-by-2032-says"
-    },
-    {
-      "id": "gn-musical-art-1",
-      "title": "Al music on Spotify is exploding — here's how to identify it before you hit play - Android Authority",
-      "summary": "Al music on Spotify is exploding — here's how to identify it before you hit play Android Authority",
-      "topic": "musical-art",
-      "source": "Android Authority",
-      "date": "Thu, 05 Feb 2026 10:03:43 GMT",
-      "imageUrl": "https://www.androidauthority.com/wp-content/uploads/2025/09/spotify-local-recommendations.jpg",
-      "url": "https://www.androidauthority.com/how-to-spot-ai-music-3637174/"
     },
     {
       "id": "gn-health-style-28",
