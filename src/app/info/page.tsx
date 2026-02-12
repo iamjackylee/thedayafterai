@@ -41,10 +41,10 @@ export default function InfoPage() {
           </h2>
 
           <div className="grid gap-6 md:gap-8">
-            {/* Card 1 — Daily AI News Videos */}
+            {/* Card 1 — Daily AI News Briefing */}
             <div className="rounded-xl border border-[var(--border-light)] bg-[var(--surface)] p-6 md:p-8">
               <h3 className="text-lg font-bold text-white mb-3">
-                Daily AI News Video Summaries
+                Daily AI News Briefing
               </h3>
               <p className="text-[var(--text-secondary)] leading-relaxed">
                 Every day, we hand-pick the most significant AI stories from trusted
