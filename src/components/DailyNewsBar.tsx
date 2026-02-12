@@ -26,19 +26,19 @@ export default function DailyNewsBar({ latestVideo }: DailyNewsBarProps) {
         </div>
 
         {/* Latest video */}
-        <div className="flex items-center gap-2 flex-1 min-w-0 justify-center">
+        <div className="flex items-center gap-2 w-full sm:w-auto sm:flex-1 sm:min-w-0 justify-center order-last sm:order-none">
           <Play size={10} className="text-[#ff0050] shrink-0" fill="currentColor" />
           {latestVideo ? (
             <a
               href={`https://www.youtube.com/watch?v=${latestVideo.videoId}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-[var(--foreground)] truncate hover:text-[var(--accent)] transition-colors font-medium"
+              className="text-xs text-[var(--foreground)] sm:truncate hover:text-[var(--accent)] transition-colors font-medium"
             >
               {latestVideo.title}
             </a>
           ) : (
-            <span className="text-xs text-[var(--muted)] truncate">
+            <span className="text-xs text-[var(--muted)] sm:truncate">
               Loading latest video...
             </span>
           )}
