@@ -13,19 +13,19 @@ export default function InfoPage() {
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
       <SiteHeader />
 
-      <main className="max-w-[900px] mx-auto px-4 md:px-8 py-12 md:py-16">
+      <main className="max-w-[900px] mx-auto px-4 md:px-8 py-8 md:py-12">
         {/* Page header */}
-        <header className="mb-12 md:mb-16">
+        <header className="mb-10 md:mb-12">
           <h1
-            className="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4"
+            className="text-2xl md:text-3xl font-extrabold text-white tracking-tight mb-4"
             style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
           >
             About Us
           </h1>
-          <p className="text-xl text-white font-semibold mb-2">
+          <p className="text-lg text-white font-semibold mb-2">
             Building a Better World — One Step at a Time
           </p>
-          <p className="text-lg text-[var(--text-secondary)] leading-relaxed max-w-[700px]">
+          <p className="text-base text-[var(--text-secondary)] leading-relaxed">
             Your premier AI-powered news channel — delivering daily video summaries
             of the most important AI developments, AI-driven stock market insights,
             and curated headlines from publishers around the world.

@@ -13,10 +13,10 @@ export default function TermsPage() {
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
       <SiteHeader />
 
-      <main className="max-w-[900px] mx-auto px-4 md:px-8 py-12 md:py-16">
-        <header className="mb-12">
+      <main className="max-w-[900px] mx-auto px-4 md:px-8 py-8 md:py-12">
+        <header className="mb-10 md:mb-12">
           <h1
-            className="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4"
+            className="text-2xl md:text-3xl font-extrabold text-white tracking-tight mb-4"
             style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
           >
             Terms of Service
