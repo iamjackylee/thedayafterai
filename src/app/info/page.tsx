@@ -5,7 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata: Metadata = {
   title: "About Us | TheDayAfterAI News",
   description:
-    "TheDayAfterAI is an AI-powered news channel delivering daily AI news videos, AI-driven market insights, and curated headlines from across the web.",
+    "TheDayAfterAI is an AI-powered news channel delivering AI news briefings, market insights, and headlines from across the web.",
 };
 
 export default function InfoPage() {
@@ -26,9 +26,9 @@ export default function InfoPage() {
             Building a Better World — One Step at a Time
           </p>
           <p className="text-base text-[var(--text-secondary)] leading-relaxed">
-            Your premier AI-powered news channel — delivering daily video summaries
-            of the most important AI developments, AI-driven stock market insights,
-            and curated headlines from publishers around the world.
+            Your premier AI-powered news channel — delivering video summaries
+            of the most important AI developments, stock market insights,
+            and headlines from publishers around the world.
           </p>
         </header>
 
@@ -41,10 +41,10 @@ export default function InfoPage() {
           </h2>
 
           <div className="grid gap-6 md:gap-8">
-            {/* Card 1 — Daily AI News Briefing */}
+            {/* Card 1 — AI News Briefing */}
             <div className="rounded-xl border border-[var(--border-light)] bg-[var(--surface)] p-6 md:p-8">
               <h3 className="text-lg font-bold text-white mb-3">
-                Daily AI News Briefing
+                AI News Briefing
               </h3>
               <p className="text-[var(--text-secondary)] leading-relaxed">
                 Every day, we hand-pick the most significant AI stories from trusted
@@ -67,7 +67,7 @@ export default function InfoPage() {
             {/* Card 2 — AI Market Insights */}
             <div className="rounded-xl border border-[var(--border-light)] bg-[var(--surface)] p-6 md:p-8">
               <h3 className="text-lg font-bold text-white mb-3">
-                Daily AI Market Insights
+                AI Market Insights
               </h3>
               <p className="text-[var(--text-secondary)] leading-relaxed">
                 Each day we task AI with forecasting the next-day price movement of
@@ -82,7 +82,7 @@ export default function InfoPage() {
             {/* Card 3 — News Hub */}
             <div className="rounded-xl border border-[var(--border-light)] bg-[var(--surface)] p-6 md:p-8">
               <h3 className="text-lg font-bold text-white mb-3">
-                Curated AI News Hub
+                AI News Hub
               </h3>
               <p className="text-[var(--text-secondary)] leading-relaxed">
                 Beyond our own video content, TheDayAfterAI serves as a central hub
