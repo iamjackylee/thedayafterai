@@ -1,7 +1,7 @@
 "use client";
 
 import { ExternalLink, Clock } from "lucide-react";
-import type { NewsArticle } from "@/lib/api";
+import { decodeEntities, type NewsArticle } from "@/lib/api";
 
 interface NewsCardProps {
   article: NewsArticle;
@@ -81,10 +81,10 @@ export default function NewsCard({ article, topicColor }: NewsCardProps) {
       {/* Content — flex-1 fills remaining height, footer pushed to bottom */}
       <div className="p-4 flex flex-col flex-1">
         <h3 className="text-sm font-bold text-white leading-snug mb-2 transition-colors line-clamp-2">
-          {article.title}
+          {decodeEntities(article.title)}
         </h3>
         <p className="text-[var(--muted)] text-xs leading-relaxed mb-3 line-clamp-3 flex-1">
-          {article.summary}
+          {decodeEntities(article.summary)}
         </p>
         <div className="flex items-center justify-between text-[10px] text-[var(--text-secondary)] mt-auto">
           <div className="flex items-center gap-1.5">
