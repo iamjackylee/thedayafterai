@@ -24,6 +24,7 @@ import {
   fetchCustomSections,
   fetchTdaaiArticles,
   clearPrefetchedCache,
+  decodeEntities,
   sortByDateDesc,
   PLAYLIST_URL,
   type NewsArticle,
@@ -180,7 +181,7 @@ function CustomSectionRow({ section, showCount }: { section: CustomSection; show
             </div>
             <div className="p-3">
               <h4 className="text-xs font-bold text-white transition-colors line-clamp-2 leading-snug">
-                {article.title}
+                {decodeEntities(article.title)}
               </h4>
               <div className="flex items-center gap-2 mt-2">
                 <span className="text-[var(--text-secondary)] text-[10px] font-medium">
@@ -314,11 +315,11 @@ function TdaaiSectionRow({ articles }: { articles: TdaaiArticle[] }) {
             </div>
             <div className="p-3">
               <h4 className="text-xs font-bold text-white transition-colors line-clamp-2 leading-snug">
-                {article.title}
+                {decodeEntities(article.title)}
               </h4>
               {article.summary && article.summary !== article.title && (
                 <p className="text-[var(--muted)] text-[10px] leading-relaxed mt-1 line-clamp-2">
-                  {article.summary}
+                  {decodeEntities(article.summary)}
                 </p>
               )}
               <div className="flex items-center gap-2 mt-2">
@@ -379,7 +380,7 @@ function CategoryRow({ topic, articles, id, showCount }: { topic: typeof TOPICS[
       return !isNaN(d) && now - d <= day;
     });
     const src = recent.length > 0 ? recent : articles.slice(0, 5);
-    return src.map((a) => a.title).join("  \u2022  ");
+    return src.map((a) => decodeEntities(a.title)).join("  \u2022  ");
   }, [articles]);
 
   // Scale ticker speed proportional to text length (~0.3s per character)
@@ -971,7 +972,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-[var(--border)] mt-12">
+      <footer className="border-t border-[var(--border)] mt-2">
         <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-10">
           {/* Top section: Brand + Category columns */}
           <div className="flex flex-col lg:flex-row gap-8 mb-8">

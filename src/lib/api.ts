@@ -53,6 +53,20 @@ interface PrefetchedData {
 
 let _prefetchedCache: PrefetchedData | null = null;
 
+/** Decode stray HTML entities that may slip through the prefetch pipeline */
+export function decodeEntities(text: string): string {
+  if (!text) return text;
+  return text
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#(\d+);/g, (_, code: string) => String.fromCharCode(parseInt(code, 10)))
+    .replace(/ {2,}/g, " ")
+    .trim();
+}
+
 export function clearPrefetchedCache() {
   _prefetchedCache = null;
 }
