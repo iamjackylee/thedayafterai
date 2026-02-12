@@ -334,11 +334,52 @@ export default function InfoPage() {
           <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
             Who We Are
           </h2>
-          <p className="text-[var(--text-secondary)] leading-relaxed">
-            TheDayAfterAI News, developed under Jacky Lee Visionary Creations, is a
-            dedicated team of AI-driven systems committed to curating the latest and
-            most accurate information in the field of artificial intelligence.
-          </p>
+          <div className="space-y-6">
+            <p className="text-[var(--text-secondary)] leading-relaxed">
+              TheDayAfterAI News is developed under{" "}
+              <strong className="text-white">Jacky Lee Visionary Creations</strong>,
+              a multidisciplinary platform bridging technology, creativity, and
+              community.
+            </p>
+
+            {/* Founder card */}
+            <div className="rounded-xl border border-[var(--border-light)] bg-[var(--surface)] p-6 md:p-8">
+              <h3 className="text-lg font-bold text-white mb-4">
+                Founded by Jacky Lee
+              </h3>
+              <div className="space-y-4 text-[var(--text-secondary)] leading-relaxed">
+                <p>
+                  Jacky Lee is a Hongkonger and{" "}
+                  <a
+                    href="https://jackylee.art"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--accent)] hover:underline"
+                  >
+                    award-winning visual artist
+                  </a>{" "}
+                  currently based in Canberra, Australia. A Chartered Building
+                  Engineer and Chartered Building Surveyor accredited by RICS and
+                  CABE, he brings over two decades of professional experience in
+                  Hong Kong&apos;s construction industry to his current ventures.
+                </p>
+                <p>
+                  As a photographer, Jacky is a National Geographic Photo Contest
+                  champion, published author, and has been invited as a course
+                  tutor and guest speaker at the University of Hong Kong. He
+                  serves as a photography advisor at the Hong Kong Biodiversity
+                  Museum and regularly judges international photo competitions.
+                </p>
+                <p>
+                  Under Jacky Lee Visionary Creations, he leads several ventures
+                  including TheDayAfterAI News, Canberra Drone Building
+                  Inspection &amp; Consultancy, and Physiognomy.AI — combining
+                  his engineering background, creative expertise, and passion for
+                  AI to build tools that inform, inspire, and serve communities.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Connect */}
