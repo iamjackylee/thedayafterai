@@ -390,7 +390,7 @@ function CategoryRow({ topic, articles, id, showCount }: { topic: typeof TOPICS[
   return (
     <div className="category-section" id={id} data-topic-section={topic.id}>
       {/* Category header with colored border and arrows */}
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex items-center justify-between mb-4 flex-wrap">
         <div
           className="category-header shrink-0"
           style={{ borderLeftColor: topic.color } as React.CSSProperties}
@@ -410,7 +410,7 @@ function CategoryRow({ topic, articles, id, showCount }: { topic: typeof TOPICS[
           </div>
         </div>
         {/* Scrolling headline ticker */}
-        <div className="headline-ticker mx-3 flex-1 min-w-0 overflow-hidden">
+        <div className="headline-ticker w-full sm:w-auto sm:flex-1 sm:min-w-0 order-last sm:order-none mx-0 sm:mx-3 mt-2 sm:mt-0 overflow-hidden">
           <div className="headline-ticker-track" style={{ color: topic.color, animationDuration: `${tickerDuration}s` }}>
             <span>{tickerText}</span>
             <span>{tickerText}</span>
