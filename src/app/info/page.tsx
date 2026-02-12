@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
   title: "About Us | TheDayAfterAI News",
@@ -11,37 +11,17 @@ export const metadata: Metadata = {
 export default function InfoPage() {
   return (
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
-      {/* Navigation bar */}
-      <nav className="border-b border-[var(--border)] sticky top-0 z-50 bg-[var(--background)]/90 backdrop-blur-md">
-        <div className="max-w-[900px] mx-auto px-4 md:px-8 h-14 flex items-center">
-          <Link
-            href="/"
-            className="flex items-center gap-2 text-sm text-[var(--muted)] hover:text-[var(--accent)] transition-colors"
-          >
-            <ArrowLeft size={16} />
-            Back to News
-          </Link>
-        </div>
-      </nav>
+      <SiteHeader />
 
       <main className="max-w-[900px] mx-auto px-4 md:px-8 py-12 md:py-16">
-        {/* Header */}
+        {/* Page header */}
         <header className="mb-12 md:mb-16">
-          <div className="flex items-center gap-4 mb-6">
-            <img
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/tdai-letter-logo.png`}
-              alt="TheDayAfterAI logo"
-              width={56}
-              height={56}
-              className="rounded-lg"
-            />
-            <h1
-              className="text-3xl md:text-4xl font-extrabold text-white tracking-tight"
-              style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
-            >
-              TheDayAfterAI News
-            </h1>
-          </div>
+          <h1
+            className="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4"
+            style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
+          >
+            About Us
+          </h1>
           <p className="text-xl text-white font-semibold mb-2">
             Building a Better World — One Step at a Time
           </p>
@@ -441,14 +421,9 @@ export default function InfoPage() {
           </ul>
         </section>
 
-        {/* Footer note */}
-        <footer className="border-t border-[var(--border)] pt-8 text-xs text-[var(--muted)]">
-          <p>
-            Copyright &copy; 2024-{new Date().getFullYear()} TheDayAfterAI News.
-            All Rights Reserved.
-          </p>
-        </footer>
       </main>
+
+      <SiteFooter />
     </div>
   );
 }
