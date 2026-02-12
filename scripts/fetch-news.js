@@ -636,8 +636,15 @@ async function resolveArticles(articles) {
         : cache[id];
       article.url = entry.url || article.url;
       // Always prefer cached Playwright-extracted image over RSS image
-      // (RSS images from Google News are usually publisher logos)
-      if (entry.imageUrl) article.imageUrl = entry.imageUrl;
+      // (RSS images from Google News are usually publisher logos or
+      // images from a different article in the same news cluster).
+      if (entry.imageUrl) {
+        article.imageUrl = entry.imageUrl;
+      } else if (entry.url) {
+        // We resolved this article before but couldn't extract an image.
+        // Clear the RSS image so the screenshot fallback can try instead.
+        article.imageUrl = "";
+      }
       cacheHits++;
     }
   }
@@ -804,7 +811,15 @@ async function resolveArticles(articles) {
           // Only store Playwright-extracted images in cache (not RSS logos).
           // If Playwright found nothing, store "" so future runs re-try extraction.
           const extractedImg = (imgUrl && !isGenericImage(imgUrl)) ? imgUrl : "";
-          if (extractedImg) article.imageUrl = extractedImg;
+          if (extractedImg) {
+            article.imageUrl = extractedImg;
+          } else {
+            // Clear the unreliable RSS image — Google News RSS often returns
+            // images from a different article in the same news cluster.
+            // Better to trigger the screenshot fallback or show a topic
+            // placeholder than display a wrong article's image.
+            article.imageUrl = "";
+          }
           if (articleId) cache[articleId] = { url: finalUrl, imageUrl: extractedImg };
           resolved++;
         } else { failed++; }
