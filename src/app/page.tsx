@@ -5,9 +5,7 @@ import {
   Search,
   Loader2,
   RefreshCw,
-  Facebook,
   Youtube,
-  Linkedin,
   ChevronLeft,
   ChevronRight,
   ChevronsLeft,
@@ -17,6 +15,8 @@ import {
 } from "lucide-react";
 import NewsCard from "@/components/NewsCard";
 import VideoCard from "@/components/VideoCard";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 import { TOPICS } from "@/lib/topics";
 import {
   fetchNews,
@@ -703,42 +703,10 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-black">
-      {/* Header */}
-      <header className="bg-black border-b border-[var(--border)] sticky top-0 z-30">
-        <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-4">
-          <div className="flex items-center justify-between gap-4 flex-wrap">
-            {/* Brand — logo + name */}
-            <div className="flex items-center gap-3">
-              <img
-                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/tdai-letter-logo.png`}
-                alt="TDAI"
-                className="h-8 tdai-hue opacity-90"
-              />
-              <span className="text-xl font-extrabold text-white tracking-tight" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>TheDayAfterAI News</span>
-            </div>
-
-            {/* Search + Refresh */}
-            <div className="flex items-center gap-2 flex-1 max-w-md">
-              <div className="relative flex-1">
-                <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted)]" />
-                <input
-                  type="text"
-                  value={debouncedQuery}
-                  onChange={(e) => setDebouncedQuery(e.target.value)}
-                  placeholder="Search AI news..."
-                  className="w-full bg-[var(--surface)] border border-[var(--border-light)] rounded-none pl-10 pr-4 py-2.5 text-sm text-white placeholder:text-[var(--muted)] outline-none focus:border-[var(--accent)] transition-colors"
-                />
-              </div>
-              <button onClick={loadData} title="Refresh" className="p-2 hover:bg-[var(--surface-light)] transition-colors rounded-sm">
-                <RefreshCw size={16} className={`text-[var(--muted)] ${loadingNews ? "animate-spin" : ""}`} />
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Section navigation - color-coded pills + latest video */}
-        <div className="border-t border-[var(--border)]">
-          <div className="max-w-[1400px] mx-auto px-4 md:px-8 flex flex-wrap items-center gap-3">
+      <SiteHeader
+        bottomBar={
+          <div className="border-t border-[var(--border)]">
+            <div className="max-w-[1400px] mx-auto px-4 md:px-8 flex flex-wrap items-center gap-3">
             {/* Topic pills (scrollable) */}
             <div className="relative flex-1 min-w-0">
               <button
@@ -816,9 +784,27 @@ export default function Home() {
                 <ExternalLink size={10} />
               </a>
             </div>
+            </div>
           </div>
+        }
+      >
+        {/* Search + Refresh */}
+        <div className="flex items-center gap-2 flex-1 max-w-md">
+          <div className="relative flex-1">
+            <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted)]" />
+            <input
+              type="text"
+              value={debouncedQuery}
+              onChange={(e) => setDebouncedQuery(e.target.value)}
+              placeholder="Search AI news..."
+              className="w-full bg-[var(--surface)] border border-[var(--border-light)] rounded-none pl-10 pr-4 py-2.5 text-sm text-white placeholder:text-[var(--muted)] outline-none focus:border-[var(--accent)] transition-colors"
+            />
+          </div>
+          <button onClick={loadData} title="Refresh" className="p-2 hover:bg-[var(--surface-light)] transition-colors rounded-sm">
+            <RefreshCw size={16} className={`text-[var(--muted)] ${loadingNews ? "animate-spin" : ""}`} />
+          </button>
         </div>
-      </header>
+      </SiteHeader>
 
       {/* Content */}
       <main className="max-w-[1400px] mx-auto px-4 md:px-8 py-8">
@@ -971,79 +957,7 @@ export default function Home() {
         )}
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-[var(--border)] mt-2">
-        <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-10">
-          {/* Top section: Brand + Category columns */}
-          <div className="flex flex-col lg:flex-row gap-8 mb-8">
-            {/* Brand column — wider, takes ~38% */}
-            <div className="lg:w-[38%] lg:pr-8 lg:border-r lg:border-[var(--border)]">
-              <h2 className="text-lg font-extrabold text-white tracking-tight mb-4" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>TheDayAfterAI News</h2>
-              <div className="flex items-center gap-4 mb-5">
-                <a href="https://www.facebook.com/thedayafterai" target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Facebook size={20} /></a>
-                <a href={PLAYLIST_URL} target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Youtube size={20} /></a>
-                <a href="https://www.linkedin.com/company/thedayafterai/" target="_blank" rel="noopener noreferrer" className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"><Linkedin size={20} /></a>
-              </div>
-              <div className="flex flex-wrap gap-x-2 gap-y-1 text-xs text-[var(--muted)] mb-4">
-                <a href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/info`} className="hover:text-[var(--accent)] transition-colors">About Us</a><span>|</span>
-                <a href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/terms`} className="hover:text-[var(--accent)] transition-colors">Terms of Service</a><span>|</span>
-                <a href="https://www.thedayafterai.com/disclaimer" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">Disclaimer</a><span>|</span>
-                <a href="https://www.thedayafterai.com/ethics-policy" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">Ethics Policy</a><span>|</span>
-                <a href="https://www.thedayafterai.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">Privacy Policy</a><span>|</span>
-                <a href="https://www.thedayafterai.com/licensing" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">Licensing Terms</a><span>|</span>
-                <a href="https://www.thedayafterai.com/advertise" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">Advertise with Us</a>
-              </div>
-              <p className="text-xs text-[var(--text-secondary)] italic">
-                Copyright &copy; 2024-{new Date().getFullYear()} TheDayAfterAI News. All Rights Reserved.
-              </p>
-            </div>
-
-            {/* Category columns — grouped with tighter gaps */}
-            <div className="lg:flex-1 grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-6">
-              {/* Tech Frontiers */}
-              <div>
-                <h3 className="text-xs font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-2">Tech Frontiers</h3>
-                <ul className="space-y-1 text-[13px]">
-                  <li><button onClick={() => scrollToSection("ai-academy")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">AI Academy</button></li>
-                  <li><button onClick={() => scrollToSection("chatbot-development")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Chatbot Development</button></li>
-                  <li><button onClick={() => scrollToSection("technology-innovation")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Technology &amp; Innovation</button></li>
-                  <li><button onClick={() => scrollToSection("unmanned-aircraft")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Unmanned Aircraft</button></li>
-                </ul>
-              </div>
-
-              {/* Global Dynamics */}
-              <div>
-                <h3 className="text-xs font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-2">Global Dynamics</h3>
-                <ul className="space-y-1 text-[13px]">
-                  <li><button onClick={() => scrollToSection("business-economy")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Business &amp; Economy</button></li>
-                  <li><button onClick={() => scrollToSection("digital-security")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Digital Security</button></li>
-                  <li><button onClick={() => scrollToSection("environment-science")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Environment &amp; Science</button></li>
-                  <li><button onClick={() => scrollToSection("governance-politics")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Governance &amp; Politics</button></li>
-                </ul>
-              </div>
-
-              {/* Arts & Culture */}
-              <div>
-                <h3 className="text-xs font-bold text-[var(--text-secondary)] uppercase tracking-wider mb-2">Arts &amp; Culture</h3>
-                <ul className="space-y-1 text-[13px]">
-                  <li><button onClick={() => scrollToSection("health-style")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Health &amp; Style</button></li>
-                  <li><button onClick={() => scrollToSection("musical-art")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Musical Art</button></li>
-                  <li><button onClick={() => scrollToSection("visual-art-photography")} className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors">Visual Art &amp; Photography</button></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Acknowledgment of Country — full width, aligned with columns above */}
-          <div className="border-t border-[var(--border)] pt-6">
-            <h4 className="text-sm font-bold text-white mb-2">Acknowledgment of Country</h4>
-            <p className="text-xs text-[var(--text-secondary)] leading-relaxed">
-              TheDayAfterAI respectfully acknowledges the Ngunnawal people of the Australian Capital Territory as the Traditional Custodians of the land on which we operate. We pay our respects to their Elders past, present, and emerging, and extend that respect to all Aboriginal and Torres Strait Islander peoples. This acknowledgment honours the enduring connection of Indigenous Australians to their land and culture.{" "}
-              <a href="https://www.reconciliation.org.au/" target="_blank" rel="noopener noreferrer" className="underline hover:text-[var(--accent)] transition-colors">Learn more</a>.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter onScrollToSection={scrollToSection} />
     </div>
   );
 }
