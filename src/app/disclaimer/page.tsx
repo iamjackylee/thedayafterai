@@ -59,11 +59,12 @@ export default function DisclaimerPage() {
             <p className="mt-3">
               Any reliance you place on such information is strictly at your own risk. It is your
               responsibility to verify any information obtained from this Website before relying on
-              it, especially content sourced from third-party websites. To the maximum extent
-              permitted by law, we exclude all liability for any loss or damage (including, without
-              limitation, indirect or consequential loss or damage, or any loss or damage whatsoever
-              arising from loss of data or profits) arising out of or in connection with the use of
-              this Website.
+              it, especially content sourced from third-party websites. Subject to
+              Section&nbsp;10 (Australian Consumer Law), and to the maximum extent permitted by
+              law, we exclude all liability for any loss or damage (including, without limitation,
+              indirect or consequential loss or damage, or any loss or damage whatsoever arising
+              from loss of data or profits) arising out of or in connection with the use of this
+              Website.
             </p>
           </section>
 
@@ -92,7 +93,8 @@ export default function DisclaimerPage() {
               reviewed by human editors before publication, AI-generated content may contain
               inaccuracies, errors, or omissions. AI systems may produce outputs that are
               incomplete, out of date, or that do not fully reflect the nuance of the underlying
-              subject matter.
+              subject matter. AI systems may also produce outputs that appear plausible but are
+              factually incorrect (&ldquo;hallucinations&rdquo;).
             </p>
             <p className="mt-3">
               We do not warrant or represent that any AI-generated content is accurate, complete,
@@ -153,7 +155,28 @@ export default function DisclaimerPage() {
             </p>
 
             <h3 className="text-base font-semibold text-white mt-6 mb-2">
-              4.5 Seek Independent Advice
+              4.5 No Dealing
+            </h3>
+            <p>
+              <strong className="text-white">TheDayAfterAI</strong> does not trade in, hold
+              positions in, or receive any benefit from the securities it forecasts or references.
+              No director, employee, or agent of TheDayAfterAI is authorised to trade on the basis
+              of forecasts published on this Website.
+            </p>
+
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">
+              4.6 International Investors
+            </h3>
+            <p>
+              The AI Market Insights feature relates to U.S.-listed securities. This content may not
+              be appropriate for investors in Australia or any other jurisdiction without separate
+              consideration of the tax, regulatory, currency, and other implications of dealing in
+              foreign securities. Nothing on this Website constitutes an offer or invitation in any
+              jurisdiction where such offer or invitation is not authorised or would be unlawful.
+            </p>
+
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">
+              4.7 Seek Independent Advice
             </h3>
             <p>
               Before making any investment or financial decision, you should obtain independent
@@ -187,6 +210,11 @@ export default function DisclaimerPage() {
               endorsement, recommendation, or favouring by{" "}
               <strong className="text-white">TheDayAfterAI</strong>.
             </p>
+            <p className="mt-3">
+              When you follow a link to an external website, you leave the Website and this
+              Disclaimer (together with our Terms of Service and Privacy Policy) will no longer
+              apply. You access external websites entirely at your own risk.
+            </p>
           </section>
 
           {/* 6. Views and Opinions */}
@@ -215,11 +243,12 @@ export default function DisclaimerPage() {
             <p>
               This Website may contain copyrighted material, the use of which has not always been
               specifically authorised by the copyright owner. We believe this constitutes
-              &ldquo;fair dealing&rdquo; under the <em>Copyright Act 1968</em> (Cth) and
-              &ldquo;fair use&rdquo; under applicable international copyright laws, as such
-              material is made available for criticism, comment, news reporting, teaching,
-              scholarship, or research. We make every effort to attribute content to its original
-              sources.
+              &ldquo;fair dealing&rdquo; for the purpose of reporting news within the meaning of
+              section&nbsp;42 of the <em>Copyright Act 1968</em> (Cth), or for the purpose of
+              criticism or review within the meaning of section&nbsp;41 of that Act. Where our
+              audience extends to other jurisdictions, we also rely on equivalent fair use or fair
+              dealing provisions under applicable international copyright laws. We make every
+              effort to attribute content to its original sources.
             </p>
 
             <h3 className="text-base font-semibold text-white mt-6 mb-2">
@@ -253,6 +282,13 @@ export default function DisclaimerPage() {
               on the Website at any time without prior notice. We do not undertake any obligation to
               update the information on this Website, and information may become outdated over time.
             </p>
+            <p className="mt-3">
+              We may also update this Disclaimer from time to time. Any changes will be effective
+              immediately upon posting the revised Disclaimer on this page. The &ldquo;Last
+              updated&rdquo; date at the top of this page will be amended accordingly. Your
+              continued use of the Website following the posting of changes constitutes your
+              acceptance of those changes. We encourage you to review this Disclaimer periodically.
+            </p>
           </section>
 
           {/* 9. No Warranties */}
@@ -266,7 +302,10 @@ export default function DisclaimerPage() {
               kind, whether express or implied, including but not limited to implied warranties of
               merchantability, fitness for a particular purpose, and non-infringement. We do not
               warrant that the Website will be uninterrupted, error-free, secure, or free of
-              viruses or other harmful components.
+              viruses or other harmful components. Without limiting the foregoing, we make no
+              warranty or representation as to the accuracy of any AI model, the currency of any
+              training data used by an AI model, or the reliability of any AI-generated prediction,
+              forecast, or analysis.
             </p>
           </section>
 
@@ -326,13 +365,22 @@ export default function DisclaimerPage() {
               </li>
             </ul>
             <p className="mt-3">
+              In no event shall{" "}
+              <strong className="text-white">TheDayAfterAI</strong>&apos;s total aggregate
+              liability to you for all damages, losses, and causes of action exceed the amount you
+              have paid us, if any, for accessing the Website in the twelve (12) months preceding
+              the event giving rise to the liability.
+            </p>
+            <p className="mt-3">
               The limitations and exclusions in this section do not apply to liability that cannot be
               excluded or limited under the Australian Consumer Law or other applicable legislation.
-              For full details, see our{" "}
+              Where our liability cannot be excluded but can be limited under section&nbsp;64A of
+              the ACL, the limitations set out in Section&nbsp;10 of this Disclaimer apply. You also
+              acknowledge the indemnification obligations set out in our{" "}
               <Link href="/terms" className="text-[var(--accent)] hover:underline">
                 Terms of Service
-              </Link>
-              .
+              </Link>{" "}
+              (Section&nbsp;12).
             </p>
           </section>
 
@@ -343,17 +391,31 @@ export default function DisclaimerPage() {
             </h2>
             <p>
               This Disclaimer is governed by and construed in accordance with the laws of the
-              Australian Capital Territory. Any disputes arising under or in connection with this
-              Disclaimer shall be subject to the exclusive jurisdiction of the courts of the
-              Australian Capital Territory and the federal courts of Australia exercising
-              jurisdiction in the Australian Capital Territory.
+              Australian Capital Territory and the Commonwealth of Australia, without regard to
+              conflict of law provisions. You irrevocably submit to the non-exclusive jurisdiction
+              of the courts of the Australian Capital Territory and any courts entitled to hear
+              appeals therefrom.
             </p>
           </section>
 
-          {/* 13. Contact Us */}
+          {/* 13. Severability */}
           <section>
             <h2 className="text-xl font-bold text-white mb-4 border-l-4 border-[var(--accent)] pl-4">
-              13. Contact Us
+              13. Severability
+            </h2>
+            <p>
+              If any provision of this Disclaimer is held to be invalid, unlawful, or unenforceable
+              by a court of competent jurisdiction, that provision shall be severed and the
+              remaining provisions shall continue in full force and effect. Where possible, the
+              invalid provision shall be interpreted in a manner consistent with applicable law to
+              reflect its original intent.
+            </p>
+          </section>
+
+          {/* 14. Contact Us */}
+          <section>
+            <h2 className="text-xl font-bold text-white mb-4 border-l-4 border-[var(--accent)] pl-4">
+              14. Contact Us
             </h2>
             <p>
               If you have any questions about this Disclaimer, please{" "}
