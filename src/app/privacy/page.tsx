@@ -572,7 +572,14 @@ export default function PrivacyPage() {
               8.4 How to Exercise Your GDPR Rights
             </h3>
             <p>
-              To exercise any of these rights, please{" "}
+              To exercise any of these rights, please email us at{" "}
+              <a
+                href="mailto:info@thedayafterai.com"
+                className="text-[var(--accent)] hover:underline"
+              >
+                info@thedayafterai.com
+              </a>{" "}
+              or{" "}
               <a
                 href="https://www.thedayafterai.com/contact"
                 target="_blank"
@@ -633,7 +640,14 @@ export default function PrivacyPage() {
               9.3 How to Exercise Your CCPA Rights
             </h3>
             <p>
-              To exercise any of these rights, please{" "}
+              To exercise any of these rights, please email us at{" "}
+              <a
+                href="mailto:info@thedayafterai.com"
+                className="text-[var(--accent)] hover:underline"
+              >
+                info@thedayafterai.com
+              </a>{" "}
+              or{" "}
               <a
                 href="https://www.thedayafterai.com/contact"
                 target="_blank"

@@ -268,17 +268,13 @@ export default function DisclaimerPage() {
               We respect the intellectual property rights of others. When we curate content from
               third-party sources, we strive to provide appropriate attribution, including links to
               the original content whenever possible. If you believe that your copyrighted work has
-              been used in a way that constitutes copyright infringement, please{" "}
-              <a
-                href="https://www.thedayafterai.com/contact"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--accent)] hover:underline"
-              >
-                contact us
-              </a>{" "}
-              immediately and we will take appropriate action, which may include removing or
-              disabling access to the material in question.
+              been used in a way that constitutes copyright infringement, please contact us
+              immediately. For the information we require in a copyright infringement notice and
+              our takedown procedure, see our{" "}
+              <Link href="/terms" className="text-[var(--accent)] hover:underline">
+                Terms of Service
+              </Link>{" "}
+              (Section&nbsp;5.4).
             </p>
           </section>
 
@@ -307,15 +303,15 @@ export default function DisclaimerPage() {
               9. No Warranties
             </h2>
             <p>
-              To the maximum extent permitted by law, this Website and its content are provided on
-              an &ldquo;as is&rdquo; and &ldquo;as available&rdquo; basis without warranties of any
-              kind, whether express or implied, including but not limited to implied warranties of
-              merchantability, fitness for a particular purpose, and non-infringement. We do not
-              warrant that the Website will be uninterrupted, error-free, secure, or free of
-              viruses or other harmful components. Without limiting the foregoing, we make no
-              warranty or representation as to the accuracy of any AI model, the currency of any
-              training data used by an AI model, or the reliability of any AI-generated prediction,
-              forecast, or analysis.
+              This section supplements the warranty exclusions in our{" "}
+              <Link href="/terms" className="text-[var(--accent)] hover:underline">
+                Terms of Service
+              </Link>{" "}
+              (Section&nbsp;10.1). Without limiting that section, and without limiting any
+              Non-Excludable Guarantee under the ACL, we make no warranty or representation as to
+              the accuracy of any AI model, the currency of any training data used by an AI model,
+              or the reliability of any AI-generated prediction, forecast, or analysis published on
+              this Website.
             </p>
           </section>
 
@@ -325,25 +321,17 @@ export default function DisclaimerPage() {
               10. Australian Consumer Law
             </h2>
             <p>
-              Certain legislation, including the Australian Consumer Law (Schedule&nbsp;2 of the{" "}
-              <em>Competition and Consumer Act 2010</em> (Cth)) (&ldquo;ACL&rdquo;), may imply
-              warranties, conditions, or guarantees, or impose obligations on TheDayAfterAI, that
-              cannot be excluded, restricted, or modified except to a limited extent
-              (&ldquo;Non-Excludable Guarantees&rdquo;). Nothing in this Disclaimer purports to
-              exclude, restrict, or modify the application of any Non-Excludable Guarantee.
-            </p>
-            <p className="mt-3">
-              Except in relation to Non-Excludable Guarantees, all conditions, warranties, and
-              guarantees that may otherwise be implied by statute, custom, or the general law are
-              expressly excluded to the maximum extent permitted by law.
-            </p>
-            <p className="mt-3">
-              Where TheDayAfterAI is permitted by law to limit its liability for breach of a
-              Non-Excludable Guarantee, our liability is limited, at our option, to: (a)&nbsp;in
-              the case of services, the supply of the services again or the payment of the cost of
-              having the services supplied again; and (b)&nbsp;in the case of goods, the
-              replacement of the goods, the supply of equivalent goods, or the payment of the cost
-              of replacing the goods or acquiring equivalent goods.
+              Nothing in this Disclaimer purports to exclude, restrict, or modify the application
+              of any guarantee, condition, or warranty implied by the Australian Consumer Law
+              (Schedule&nbsp;2 of the <em>Competition and Consumer Act 2010</em> (Cth))
+              (&ldquo;ACL&rdquo;) that cannot be excluded, restricted, or modified
+              (&ldquo;Non-Excludable Guarantees&rdquo;). For the full Australian Consumer Law
+              notice, including the statutory limitation of remedies for breach of
+              Non-Excludable Guarantees under section&nbsp;64A of the ACL, see our{" "}
+              <Link href="/terms" className="text-[var(--accent)] hover:underline">
+                Terms of Service
+              </Link>{" "}
+              (Section&nbsp;10.3).
             </p>
           </section>
 
@@ -353,44 +341,36 @@ export default function DisclaimerPage() {
               11. Limitation of Liability
             </h2>
             <p>
-              Subject to Section&nbsp;10 (Australian Consumer Law), and to the fullest extent
-              permitted by applicable law,{" "}
-              <strong className="text-white">TheDayAfterAI</strong>, its directors, employees,
-              partners, agents, suppliers, and affiliates shall not be liable for any indirect,
-              incidental, special, consequential, or punitive damages, including without limitation
-              loss of profits, data, use, goodwill, or other intangible losses, resulting from:
+              This section supplements the Limitation of Liability set out in our{" "}
+              <Link href="/terms" className="text-[var(--accent)] hover:underline">
+                Terms of Service
+              </Link>{" "}
+              (Section&nbsp;11), which applies to all use of the Website. Without limiting
+              that section, and subject to Section&nbsp;10 above (Australian Consumer Law),
+              TheDayAfterAI shall not be liable for:
             </p>
             <ul className="list-disc list-inside space-y-1 ml-2 mt-3">
-              <li>your access to, use of, or inability to access or use the Website;</li>
-              <li>any content obtained from the Website, including AI-generated content;</li>
               <li>
                 any financial loss arising from reliance on AI-generated market insights, stock
                 forecasts, or other financial information published on this Website;
               </li>
               <li>
-                any conduct or content of any third party on or linked from the Website; or
+                any loss or damage arising from your reliance on third-party content accessed
+                through links on this Website; or
               </li>
               <li>
-                unauthorised access, use, or alteration of your transmissions or content.
+                any loss resulting from AI-generated content that is inaccurate, incomplete, or
+                out of date, including hallucinations.
               </li>
             </ul>
             <p className="mt-3">
-              In no event shall{" "}
-              <strong className="text-white">TheDayAfterAI</strong>&apos;s total aggregate
-              liability to you for all damages, losses, and causes of action exceed the amount you
-              have paid us, if any, for accessing the Website in the twelve (12) months preceding
-              the event giving rise to the liability.
-            </p>
-            <p className="mt-3">
-              The limitations and exclusions in this section do not apply to liability that cannot be
-              excluded or limited under the Australian Consumer Law or other applicable legislation.
-              Where our liability cannot be excluded but can be limited under section&nbsp;64A of
-              the ACL, the limitations set out in Section&nbsp;10 of this Disclaimer apply. You also
-              acknowledge the indemnification obligations set out in our{" "}
+              The aggregate liability cap, ACL carve-out, and indemnification obligations set out
+              in the{" "}
               <Link href="/terms" className="text-[var(--accent)] hover:underline">
                 Terms of Service
               </Link>{" "}
-              (Section&nbsp;12).
+              (Sections&nbsp;10.3, 11, and&nbsp;12) apply equally to claims arising under this
+              Disclaimer.
             </p>
           </section>
 
