@@ -29,9 +29,17 @@ export default function TermsPage() {
           {/* Preamble */}
           <p>
             Welcome to <strong className="text-white">TheDayAfterAI</strong> (&ldquo;we&rdquo;,
-            &ldquo;our&rdquo; or &ldquo;us&rdquo;), operated by{" "}
-            <strong className="text-white">Jacky Lee Visionary Creations</strong> (ABN to be
-            confirmed). These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and use
+            &ldquo;our&rdquo; or &ldquo;us&rdquo;), a project developed and operated by{" "}
+            <strong className="text-white">Jacky Lee Visionary Creations</strong> (
+            <a
+              href="https://jackyleevc.com"
+              className="text-[var(--accent)] hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              jackyleevc.com
+            </a>
+            ). These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and use
             of{" "}
             <a
               href="https://thedayafterai.com"
@@ -472,8 +480,16 @@ export default function TermsPage() {
             </h2>
             <p className="mb-3">
               You agree to indemnify, defend, and hold harmless{" "}
-              <strong className="text-white">TheDayAfterAI</strong>, its operator (Jacky Lee
-              Visionary Creations), affiliates, officers, directors, employees, and agents from and
+              <strong className="text-white">TheDayAfterAI</strong>, its operator ({" "}
+              <a
+                href="https://jackyleevc.com"
+                className="text-[var(--accent)] hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Jacky Lee Visionary Creations
+              </a>
+              ), affiliates, officers, directors, employees, and agents from and
               against any and all claims, damages, obligations, losses, liabilities, costs, or
               debt, and expenses (including but not limited to legal fees) arising from:
             </p>
