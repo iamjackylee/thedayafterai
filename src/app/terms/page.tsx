@@ -32,12 +32,12 @@ export default function TermsPage() {
             &ldquo;our&rdquo; or &ldquo;us&rdquo;), a project developed and operated by{" "}
             <strong className="text-white">Jacky Lee Visionary Creations</strong> (
             <a
-              href="https://jackyleevc.com"
+              href="https://jackylee.art"
               className="text-[var(--accent)] hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              jackyleevc.com
+              jackylee.art
             </a>
             ). These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and use
             of{" "}
@@ -482,7 +482,7 @@ export default function TermsPage() {
               You agree to indemnify, defend, and hold harmless{" "}
               <strong className="text-white">TheDayAfterAI</strong>, its operator ({" "}
               <a
-                href="https://jackyleevc.com"
+                href="https://jackylee.art"
                 className="text-[var(--accent)] hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
