@@ -380,7 +380,7 @@ export default function LicensingPage() {
               </li>
               <li>
                 You must not use the Content in a way that competes
-                directly with TheDayAfterAI&apos;s own publication or
+                directly with TheDayAfterAI&apos;s own platform or
                 licensing of the Content.
               </li>
               <li>
