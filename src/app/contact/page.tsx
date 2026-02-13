@@ -34,15 +34,7 @@ export default function ContactPage() {
             opportunities. Whether you have questions, need assistance, or
             wish to engage with us for media purposes, we&apos;re here to
             help. Please choose the category that best fits your needs and
-            reach out to us using the form below or email us directly
-            at{" "}
-            <a
-              href="mailto:info@thedayafterai.com"
-              className="text-[var(--accent)] hover:underline"
-            >
-              info@thedayafterai.com
-            </a>
-            .
+            reach out to us using the form below.
           </p>
 
           {/* Contact Categories */}

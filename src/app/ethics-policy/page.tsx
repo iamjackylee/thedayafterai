@@ -62,21 +62,17 @@ export default function EthicsPolicyPage() {
             the Terms of Service, the Terms of Service prevail.
           </p>
           <p>
-            <strong className="text-white">TheDayAfterAI</strong> is a project
+            <strong className="text-white">TheDayAfterAI News</strong> (&ldquo;TheDayAfterAI&rdquo;) is a project
             developed and operated by{" "}
-            <strong className="text-white">
-              Jacky Lee Visionary Creations
-            </strong>{" "}
-            (
             <a
               href="https://jackylee.art"
               className="text-[var(--accent)] hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              jackylee.art
+              Jacky Lee Visionary Creations
             </a>
-            ). We are committed to producing and curating AI news content that
+            . We are committed to producing and curating AI news content that
             is transparent, accurate, fair, and independent. Our editorial
             values are embodied in the letters of our name:{" "}
             <strong className="text-white">T</strong>ransparency,{" "}
@@ -607,14 +603,13 @@ export default function EthicsPolicyPage() {
             <p className="mb-3">
               If you believe that any content published on this Website breaches
               this Policy, is inaccurate, unfair, or otherwise raises an
-              editorial concern, you may lodge a complaint by contacting us
-              at{" "}
-              <a
-                href="mailto:info@thedayafterai.com"
+              editorial concern, you may lodge a complaint by{" "}
+              <Link
+                href="/contact"
                 className="text-[var(--accent)] hover:underline"
               >
-                info@thedayafterai.com
-              </a>
+                contacting us
+              </Link>
               . Your complaint should include:
             </p>
             <ul className="list-disc list-inside space-y-1 ml-2">
@@ -735,15 +730,7 @@ export default function EthicsPolicyPage() {
               16. Contact Us
             </h2>
             <p>
-              If you have any questions about this Policy, please email us
-              at{" "}
-              <a
-                href="mailto:info@thedayafterai.com"
-                className="text-[var(--accent)] hover:underline"
-              >
-                info@thedayafterai.com
-              </a>{" "}
-              or{" "}
+              If you have any questions about this Policy, please{" "}
               <Link
                 href="/contact"
                 className="text-[var(--accent)] hover:underline"

@@ -274,22 +274,14 @@ export default function InfoPage() {
             <p className="text-[var(--text-secondary)] leading-relaxed">
               TheDayAfterAI News is a venture of{" "}
               <a
-                href="https://jackyleevc.com"
+                href="https://jackylee.art"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[var(--accent)] hover:underline"
               >
                 Jacky Lee Visionary Creations
               </a>
-              , founded by Hongkonger and Canberra-based{" "}
-              <a
-                href="https://jackylee.art"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--accent)] hover:underline"
-              >
-                visual artist
-              </a>{" "}
+              , founded by Hongkonger and Canberra-based visual artist
               Jacky Lee—combining engineering discipline, creative practice,
               and a practical interest in AI.
             </p>

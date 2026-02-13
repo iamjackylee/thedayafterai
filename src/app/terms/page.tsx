@@ -28,18 +28,17 @@ export default function TermsPage() {
         <div className="prose-terms space-y-10 text-[var(--text-secondary)] leading-relaxed">
           {/* Preamble */}
           <p>
-            Welcome to <strong className="text-white">TheDayAfterAI</strong> (&ldquo;we&rdquo;,
-            &ldquo;our&rdquo; or &ldquo;us&rdquo;), a project developed and operated by{" "}
-            <strong className="text-white">Jacky Lee Visionary Creations</strong> (
+            Welcome to <strong className="text-white">TheDayAfterAI News</strong> (&ldquo;TheDayAfterAI&rdquo;,
+            &ldquo;we&rdquo;, &ldquo;our&rdquo; or &ldquo;us&rdquo;), a project developed and operated by{" "}
             <a
               href="https://jackylee.art"
               className="text-[var(--accent)] hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              jackylee.art
+              Jacky Lee Visionary Creations
             </a>
-            ). These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and use
+            . These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and use
             of{" "}
             <a
               href="https://thedayafterai.com"
@@ -361,13 +360,10 @@ export default function TermsPage() {
             </h3>
             <p>
               If you encounter content that you believe violates these Terms, please report it to
-              us at{" "}
-              <a
-                href="mailto:info@thedayafterai.com"
-                className="text-[var(--accent)] hover:underline"
-              >
-                info@thedayafterai.com
-              </a>
+              us via our{" "}
+              <Link href="/contact" className="text-[var(--accent)] hover:underline">
+                contact page
+              </Link>
               . We will review the reported content and take appropriate action in a timely manner.
             </p>
           </section>
@@ -592,14 +588,10 @@ export default function TermsPage() {
               14.1 Informal Resolution
             </h3>
             <p>
-              Before commencing any formal dispute resolution proceedings, you agree to first
-              contact us at{" "}
-              <a
-                href="mailto:info@thedayafterai.com"
-                className="text-[var(--accent)] hover:underline"
-              >
-                info@thedayafterai.com
-              </a>{" "}
+              Before commencing any formal dispute resolution proceedings, you agree to first{" "}
+              <Link href="/contact" className="text-[var(--accent)] hover:underline">
+                contact us
+              </Link>{" "}
               and attempt to resolve the dispute informally for at least 30 days.
             </p>
 
@@ -704,14 +696,7 @@ export default function TermsPage() {
               19. Contact Us
             </h2>
             <p>
-              If you have any questions about these Terms, please email us at{" "}
-              <a
-                href="mailto:info@thedayafterai.com"
-                className="text-[var(--accent)] hover:underline"
-              >
-                info@thedayafterai.com
-              </a>{" "}
-              or{" "}
+              If you have any questions about these Terms, please{" "}
               <Link href="/contact" className="text-[var(--accent)] hover:underline">
                 contact us
               </Link>
