@@ -29,8 +29,8 @@ export default function DisclaimerPage() {
           {/* Preamble */}
           <p>
             This Disclaimer applies to all content published on{" "}
-            <strong className="text-white">TheDayAfterAI</strong> (&ldquo;we&rdquo;,
-            &ldquo;our&rdquo; or &ldquo;us&rdquo;) at thedayafterai.com (&ldquo;Website&rdquo;).
+            <strong className="text-white">TheDayAfterAI News</strong> (&ldquo;TheDayAfterAI&rdquo;,
+            &ldquo;we&rdquo;, &ldquo;our&rdquo; or &ldquo;us&rdquo;) at thedayafterai.com (&ldquo;Website&rdquo;).
             It should be read together with our{" "}
             <Link href="/terms" className="text-[var(--accent)] hover:underline">
               Terms of Service

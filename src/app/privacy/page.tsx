@@ -28,8 +28,8 @@ export default function PrivacyPage() {
         <div className="prose-terms space-y-10 text-[var(--text-secondary)] leading-relaxed">
           {/* Preamble */}
           <p>
-            Welcome to <strong className="text-white">TheDayAfterAI</strong> (&ldquo;we&rdquo;,
-            &ldquo;our&rdquo; or &ldquo;us&rdquo;). We curate artificial intelligence news from
+            Welcome to <strong className="text-white">TheDayAfterAI News</strong> (&ldquo;TheDayAfterAI&rdquo;,
+            &ldquo;we&rdquo;, &ldquo;our&rdquo; or &ldquo;us&rdquo;). We curate artificial intelligence news from
             various sources and present it on thedayafterai.com (&ldquo;Website&rdquo;). This
             Privacy Policy explains how we collect, use, disclose, and safeguard your information
             when you interact with our curated content and services. It should be read together

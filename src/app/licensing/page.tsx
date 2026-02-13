@@ -34,8 +34,8 @@ export default function LicensingPage() {
             These Licensing Terms (&ldquo;Licensing Terms&rdquo;) govern the
             purchase and use of articles and images
             (&ldquo;Content&rdquo;) provided by{" "}
-            <strong className="text-white">TheDayAfterAI</strong>{" "}
-            (&ldquo;we&rdquo;, &ldquo;our&rdquo; or &ldquo;us&rdquo;) at
+            <strong className="text-white">TheDayAfterAI News</strong>{" "}
+            (&ldquo;TheDayAfterAI&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo; or &ldquo;us&rdquo;) at
             thedayafterai.com (&ldquo;Website&rdquo;). By purchasing and
             using our Content, you (&ldquo;Licensee&rdquo;) agree to be
             bound by these Licensing Terms. These Licensing Terms should be
