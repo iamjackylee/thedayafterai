@@ -29,7 +29,7 @@ export default function TermsPage() {
           {/* Preamble */}
           <p>
             Welcome to <strong className="text-white">TheDayAfterAI News</strong> (&ldquo;TheDayAfterAI&rdquo;,
-            &ldquo;we&rdquo;, &ldquo;our&rdquo; or &ldquo;us&rdquo;), a project developed and operated by{" "}
+            &ldquo;we&rdquo;, &ldquo;our&rdquo; or &ldquo;us&rdquo;), a publication developed and operated by{" "}
             <a
               href="https://jackylee.art"
               className="text-[var(--accent)] hover:underline"
