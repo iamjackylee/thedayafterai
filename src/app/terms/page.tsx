@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
@@ -21,7 +22,7 @@ export default function TermsPage() {
           >
             Terms of Service
           </h1>
-          <p className="text-sm text-[var(--muted)]">Last updated: December 6, 2024</p>
+          <p className="text-sm text-[var(--muted)]">Last updated: February 13, 2025</p>
         </header>
 
         <div className="prose-terms space-y-10 text-[var(--text-secondary)] leading-relaxed">
@@ -36,27 +37,40 @@ export default function TermsPage() {
             >
               thedayafterai.com
             </a>{" "}
-            (&ldquo;Website&rdquo;). By accessing or using our Website, you agree to comply with
-            and be bound by these Terms and our Privacy Policy. If you do not agree to these Terms,
-            please do not use our Website.
+            (&ldquo;Website&rdquo;), including our daily AI news video briefings, AI market insight
+            experiments, and curated news hub. By accessing or using our Website, you agree to comply
+            with and be bound by these Terms and our{" "}
+            <Link href="/privacy" className="text-[var(--accent)] hover:underline">
+              Privacy Policy
+            </Link>
+            . If you do not agree, please do not use the Website.
           </p>
 
-          {/* 1. Introduction */}
+          {/* 1. About the Service */}
           <section>
             <h2 className="text-xl font-bold text-white mb-4 border-l-4 border-[var(--accent)] pl-4">
-              1. Introduction
+              1. About the Service
             </h2>
             <p>
-              <strong className="text-white">TheDayAfterAI</strong> is an AI-powered news channel
-              that operates in three areas: (a) producing daily AI news video summaries from
-              manually curated sources, published on our YouTube channel; (b) running a daily AI
-              stock market forecast experiment in which AI predicts the next-day price movement of a
-              single US stock each day, to transparently test AI&apos;s prediction accuracy; and
-              (c) serving as a curated news hub that aggregates AI headlines with images and external
-              links from various publishers. By using our Website, you agree to comply with these
-              Terms and all applicable laws and regulations. If you do not agree with any part of
-              these Terms, you are prohibited from using or accessing the Website.
+              <strong className="text-white">TheDayAfterAI</strong> is an independent AI news channel
+              that operates in three areas:
             </p>
+            <ul className="list-disc list-inside space-y-1 ml-2 mt-3">
+              <li>
+                <strong className="text-white">AI News Briefing</strong> — daily video summaries of
+                the most significant AI stories, published on our YouTube channel.
+              </li>
+              <li>
+                <strong className="text-white">AI Market Insights</strong> — a daily experiment in
+                which AI forecasts the next-day price direction of a single U.S. stock. Results are
+                published openly. This is educational and experimental only—not financial advice.
+              </li>
+              <li>
+                <strong className="text-white">AI News Hub</strong> — a curated dashboard of AI
+                headlines linking to original articles from publishers worldwide. We do not claim
+                ownership of third-party content.
+              </li>
+            </ul>
           </section>
 
           {/* 2. User Responsibilities */}
@@ -109,25 +123,19 @@ export default function TermsPage() {
               accounts, and downloading materials for personal reference. Any other use, including
               but not limited to reproduction, modification, distribution, or republication of the
               content for commercial purposes, without our prior written consent, is strictly
-              prohibited. For users seeking to utilize our content for commercial purposes,{" "}
-              <strong className="text-white">TheDayAfterAI</strong> offers various licensing options
-              to accommodate different needs. Detailed information about our licensing tiers,
-              eligibility criteria, and permitted uses is available on our dedicated Licensing Terms
-              page. By purchasing a license, you agree to adhere to the specific terms associated
-              with your selected license tier. Users are responsible for ensuring that their use of
-              any third-party content complies with applicable copyright laws and the terms set
-              forth by the original content providers.
+              prohibited. Users are responsible for ensuring that their use of any third-party
+              content complies with applicable copyright laws and the terms set forth by the
+              original content providers.
             </p>
 
-            <h3 className="text-base font-semibold text-white mt-6 mb-2">3.3 Marketing Use</h3>
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">3.3 Commercial Use</h3>
             <p>
               Commercial entities or individuals seeking to use our content for marketing or other
-              commercial purposes must adhere to the licensing options detailed in our Licensing
-              Terms. To request permissions beyond the scope of the purchased license, please
-              contact us with details of your intended use. Approval will be granted based on the
-              scope and nature of the intended use and may involve agreeing to an additional
-              licensing fee. Any commercial use of third-party content requires direct permission
-              from the original content owners.{" "}
+              commercial purposes must obtain explicit written permission from{" "}
+              <strong className="text-white">TheDayAfterAI</strong>. Please contact us with details
+              of your intended use. Approval will be granted based on the scope and nature of the
+              intended use and may involve a licensing fee. Any commercial use of third-party
+              content requires direct permission from the original content owners.{" "}
               <strong className="text-white">TheDayAfterAI</strong> cannot grant permissions for
               content it does not own.
             </p>
@@ -209,14 +217,6 @@ export default function TermsPage() {
               those websites. We recommend that you review their terms and privacy policies before
               engaging with their content.
             </p>
-
-            <h3 className="text-base font-semibold text-white mt-6 mb-2">3.8 Licensing Terms</h3>
-            <p>
-              <strong className="text-white">TheDayAfterAI</strong> offers various licensing
-              options for the purchase and commercial use of our articles and images. These
-              licensing terms are detailed in our Licensing Terms page. By purchasing content, you
-              agree to adhere to the specific terms associated with your selected license tier.
-            </p>
           </section>
 
           {/* 4. Accountability */}
@@ -256,7 +256,7 @@ export default function TermsPage() {
             <ul className="list-disc list-inside space-y-1 ml-2">
               <li>Remove or modify any content that violates these terms;</li>
               <li>
-                Suspend or terminate your account without prior notice if you engage in prohibited
+                Suspend or terminate your access without prior notice if you engage in prohibited
                 activities; and
               </li>
               <li>Report any unlawful activities to the appropriate authorities.</li>
@@ -278,10 +278,14 @@ export default function TermsPage() {
               5. Privacy Policy
             </h2>
             <p>
-              Please review our Privacy Policy, which also governs your visit to our Website, to
-              understand how we collect, use, disclose, and safeguard your information. The Privacy
-              Policy is incorporated into these Terms by reference and forms an integral part of
-              your agreement with <strong className="text-white">TheDayAfterAI</strong>.
+              Please review our{" "}
+              <Link href="/privacy" className="text-[var(--accent)] hover:underline">
+                Privacy Policy
+              </Link>
+              , which also governs your use of the Website, to understand how we collect, use,
+              disclose, and safeguard your information. The Privacy Policy is incorporated into
+              these Terms by reference and forms an integral part of your agreement with{" "}
+              <strong className="text-white">TheDayAfterAI</strong>.
             </p>
           </section>
 
@@ -324,14 +328,12 @@ export default function TermsPage() {
               <strong className="text-white">TheDayAfterAI</strong>.
             </p>
             <p className="mt-4">
-              Our Daily AI Market Insights feature is an experimental series in which AI is used to
-              forecast the next-day price movement of a single US stock each day. This content is
-              provided solely for informational and educational purposes as part of an ongoing
-              experiment to test AI prediction accuracy. It does not constitute financial advice,
-              investment recommendations, or a solicitation to buy or sell any securities. You
-              should not rely on any market insight or forecast provided on this Website when making
-              investment decisions. Always consult a qualified financial adviser before making any
-              investment.
+              Our AI Market Insights feature is an experimental series in which AI forecasts the
+              next-day price direction of a single U.S. stock each day. This content is provided
+              solely for informational and educational purposes. It does not constitute financial
+              advice, investment recommendations, or a solicitation to buy or sell any securities.
+              You should not rely on any forecast provided on this Website when making investment
+              decisions. Always consult a qualified financial adviser before making any investment.
             </p>
           </section>
 
@@ -483,14 +485,12 @@ export default function TermsPage() {
               15. Contact Us
             </h2>
             <p>
-              If you have any questions about these Terms, please{" "}
+              If you have any questions about these Terms, please email us at{" "}
               <a
-                href="https://www.thedayafterai.com/contact"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:info@thedayafterai.com"
                 className="text-[var(--accent)] hover:underline"
               >
-                contact us
+                info@thedayafterai.com
               </a>
               .
             </p>
