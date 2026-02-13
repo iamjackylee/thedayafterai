@@ -219,11 +219,15 @@ export default function TermsPage() {
             <h3 className="text-base font-semibold text-white mt-6 mb-2">5.3 Commercial Use</h3>
             <p>
               Commercial entities or individuals seeking to use our content for marketing or other
-              commercial purposes must obtain explicit written permission from{" "}
-              <strong className="text-white">TheDayAfterAI</strong>. Please contact us with
-              details of your intended use. Approval will be granted based on the scope and nature
-              of the intended use and may involve a licensing fee. Any commercial use of
-              third-party content requires direct permission from the original content owners.{" "}
+              commercial purposes must obtain a licence under our{" "}
+              <Link href="/licensing" className="text-[var(--accent)] hover:underline">
+                Licensing Terms
+              </Link>
+              {" "}or obtain explicit written permission from{" "}
+              <strong className="text-white">TheDayAfterAI</strong>. Approval will be granted
+              based on the scope and nature of the intended use and may involve a licensing fee.
+              Any commercial use of third-party content requires direct permission from the
+              original content owners.{" "}
               <strong className="text-white">TheDayAfterAI</strong> cannot grant permissions for
               content it does not own.
             </p>
@@ -675,9 +679,13 @@ export default function TermsPage() {
               <Link href="/disclaimer" className="text-[var(--accent)] hover:underline">
                 Disclaimer
               </Link>
-              , and{" "}
+              ,{" "}
               <Link href="/ethics-policy" className="text-[var(--accent)] hover:underline">
                 Editorial Independence and Ethics Policy
+              </Link>
+              , and{" "}
+              <Link href="/licensing" className="text-[var(--accent)] hover:underline">
+                Licensing Terms
               </Link>
               , constitute the entire agreement between you and{" "}
               <strong className="text-white">TheDayAfterAI</strong> regarding your use of the
