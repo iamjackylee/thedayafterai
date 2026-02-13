@@ -30,16 +30,15 @@ export default function TermsPage() {
           <p>
             Welcome to <strong className="text-white">TheDayAfterAI</strong> (&ldquo;we&rdquo;,
             &ldquo;our&rdquo; or &ldquo;us&rdquo;), a project developed and operated by{" "}
-            <strong className="text-white">Jacky Lee Visionary Creations</strong> (
             <a
               href="https://jackylee.art"
               className="text-[var(--accent)] hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              jackylee.art
+              Jacky Lee Visionary Creations
             </a>
-            ). These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and use
+            . These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and use
             of{" "}
             <a
               href="https://thedayafterai.com"

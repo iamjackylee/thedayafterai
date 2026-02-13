@@ -64,19 +64,15 @@ export default function EthicsPolicyPage() {
           <p>
             <strong className="text-white">TheDayAfterAI</strong> is a project
             developed and operated by{" "}
-            <strong className="text-white">
-              Jacky Lee Visionary Creations
-            </strong>{" "}
-            (
             <a
               href="https://jackylee.art"
               className="text-[var(--accent)] hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              jackylee.art
+              Jacky Lee Visionary Creations
             </a>
-            ). We are committed to producing and curating AI news content that
+            . We are committed to producing and curating AI news content that
             is transparent, accurate, fair, and independent. Our editorial
             values are embodied in the letters of our name:{" "}
             <strong className="text-white">T</strong>ransparency,{" "}
