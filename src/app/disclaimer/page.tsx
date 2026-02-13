@@ -40,7 +40,8 @@ export default function DisclaimerPage() {
               Privacy Policy
             </Link>
             . To the extent of any inconsistency between this Disclaimer and the Terms of Service,
-            the Terms of Service prevail.
+            the Terms of Service prevail. By accessing or using our Website, you acknowledge that
+            you have read, understood, and agree to be bound by this Disclaimer.
           </p>
 
           {/* 1. General Disclaimer */}
@@ -56,11 +57,13 @@ export default function DisclaimerPage() {
               services, or related graphics contained on the Website for any purpose.
             </p>
             <p className="mt-3">
-              Any reliance you place on such information is strictly at your own risk. To the
-              maximum extent permitted by law, we exclude all liability for any loss or damage
-              (including, without limitation, indirect or consequential loss or damage, or any loss
-              or damage whatsoever arising from loss of data or profits) arising out of or in
-              connection with the use of this Website.
+              Any reliance you place on such information is strictly at your own risk. It is your
+              responsibility to verify any information obtained from this Website before relying on
+              it, especially content sourced from third-party websites. To the maximum extent
+              permitted by law, we exclude all liability for any loss or damage (including, without
+              limitation, indirect or consequential loss or damage, or any loss or damage whatsoever
+              arising from loss of data or profits) arising out of or in connection with the use of
+              this Website.
             </p>
           </section>
 
@@ -178,6 +181,12 @@ export default function DisclaimerPage() {
               or damage arising from your reliance on third-party content or from your use of any
               external website accessed through a link on this Website.
             </p>
+            <p className="mt-3">
+              Any reference on this Website to any specific commercial product, process, or service
+              by trade name, trademark, manufacturer, or otherwise does not constitute or imply an
+              endorsement, recommendation, or favouring by{" "}
+              <strong className="text-white">TheDayAfterAI</strong>.
+            </p>
           </section>
 
           {/* 6. Views and Opinions */}
@@ -194,10 +203,62 @@ export default function DisclaimerPage() {
             </p>
           </section>
 
-          {/* 7. No Warranties */}
+          {/* 7. Fair Use and Content Attribution */}
           <section>
             <h2 className="text-xl font-bold text-white mb-4 border-l-4 border-[var(--accent)] pl-4">
-              7. No Warranties
+              7. Fair Use and Content Attribution
+            </h2>
+
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">
+              7.1 Fair Use Notice
+            </h3>
+            <p>
+              This Website may contain copyrighted material, the use of which has not always been
+              specifically authorised by the copyright owner. We believe this constitutes
+              &ldquo;fair dealing&rdquo; under the <em>Copyright Act 1968</em> (Cth) and
+              &ldquo;fair use&rdquo; under applicable international copyright laws, as such
+              material is made available for criticism, comment, news reporting, teaching,
+              scholarship, or research. We make every effort to attribute content to its original
+              sources.
+            </p>
+
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">
+              7.2 Content Attribution
+            </h3>
+            <p>
+              We respect the intellectual property rights of others. When we curate content from
+              third-party sources, we strive to provide appropriate attribution, including links to
+              the original content whenever possible. If you believe that your copyrighted work has
+              been used in a way that constitutes copyright infringement, please{" "}
+              <a
+                href="https://www.thedayafterai.com/contact"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--accent)] hover:underline"
+              >
+                contact us
+              </a>{" "}
+              immediately and we will take appropriate action, which may include removing or
+              disabling access to the material in question.
+            </p>
+          </section>
+
+          {/* 8. Changes to Content */}
+          <section>
+            <h2 className="text-xl font-bold text-white mb-4 border-l-4 border-[var(--accent)] pl-4">
+              8. Changes to Content
+            </h2>
+            <p>
+              We reserve the right to make additions, deletions, or modifications to the contents
+              on the Website at any time without prior notice. We do not undertake any obligation to
+              update the information on this Website, and information may become outdated over time.
+            </p>
+          </section>
+
+          {/* 9. No Warranties */}
+          <section>
+            <h2 className="text-xl font-bold text-white mb-4 border-l-4 border-[var(--accent)] pl-4">
+              9. No Warranties
             </h2>
             <p>
               To the maximum extent permitted by law, this Website and its content are provided on
@@ -209,10 +270,10 @@ export default function DisclaimerPage() {
             </p>
           </section>
 
-          {/* 8. Australian Consumer Law */}
+          {/* 10. Australian Consumer Law */}
           <section>
             <h2 className="text-xl font-bold text-white mb-4 border-l-4 border-[var(--accent)] pl-4">
-              8. Australian Consumer Law
+              10. Australian Consumer Law
             </h2>
             <p>
               Certain legislation, including the Australian Consumer Law (Schedule&nbsp;2 of the{" "}
@@ -237,13 +298,13 @@ export default function DisclaimerPage() {
             </p>
           </section>
 
-          {/* 9. Limitation of Liability */}
+          {/* 11. Limitation of Liability */}
           <section>
             <h2 className="text-xl font-bold text-white mb-4 border-l-4 border-[var(--accent)] pl-4">
-              9. Limitation of Liability
+              11. Limitation of Liability
             </h2>
             <p>
-              Subject to Section&nbsp;8 (Australian Consumer Law), and to the fullest extent
+              Subject to Section&nbsp;10 (Australian Consumer Law), and to the fullest extent
               permitted by applicable law,{" "}
               <strong className="text-white">TheDayAfterAI</strong>, its directors, employees,
               partners, agents, suppliers, and affiliates shall not be liable for any indirect,
@@ -267,7 +328,7 @@ export default function DisclaimerPage() {
             <p className="mt-3">
               The limitations and exclusions in this section do not apply to liability that cannot be
               excluded or limited under the Australian Consumer Law or other applicable legislation.
-              For full details, see Section&nbsp;11 of our{" "}
+              For full details, see our{" "}
               <Link href="/terms" className="text-[var(--accent)] hover:underline">
                 Terms of Service
               </Link>
@@ -275,10 +336,10 @@ export default function DisclaimerPage() {
             </p>
           </section>
 
-          {/* 10. Governing Law */}
+          {/* 12. Governing Law */}
           <section>
             <h2 className="text-xl font-bold text-white mb-4 border-l-4 border-[var(--accent)] pl-4">
-              10. Governing Law
+              12. Governing Law
             </h2>
             <p>
               This Disclaimer is governed by and construed in accordance with the laws of the
@@ -289,10 +350,10 @@ export default function DisclaimerPage() {
             </p>
           </section>
 
-          {/* 11. Contact Us */}
+          {/* 13. Contact Us */}
           <section>
             <h2 className="text-xl font-bold text-white mb-4 border-l-4 border-[var(--accent)] pl-4">
-              11. Contact Us
+              13. Contact Us
             </h2>
             <p>
               If you have any questions about this Disclaimer, please{" "}
