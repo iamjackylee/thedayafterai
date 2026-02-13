@@ -538,9 +538,11 @@ export default function Home() {
   }, [loadData]);
 
   // Auto-scroll to section when navigating from another page with a hash (e.g. /#ai-academy)
+  // Wait for both news and channel videos to finish loading so the layout is
+  // stable before calculating scroll offsets.
   const hasScrolledToHash = useRef(false);
   useEffect(() => {
-    if (hasScrolledToHash.current || loadingNews) return;
+    if (hasScrolledToHash.current || loadingNews || loadingChannel) return;
     const hash = window.location.hash.replace("#", "");
     if (!hash) return;
     const el = document.querySelector(`[data-topic-section="${hash}"]`);
@@ -553,7 +555,7 @@ export default function Home() {
         window.scrollTo({ top, behavior: "smooth" });
       });
     }
-  }, [loadingNews]);
+  }, [loadingNews, loadingChannel]);
 
   // Scroll to a section when a nav button is clicked
   const scrollToSection = (sectionId: string) => {
