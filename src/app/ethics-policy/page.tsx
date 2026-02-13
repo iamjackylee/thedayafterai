@@ -58,7 +58,8 @@ export default function EthicsPolicyPage() {
             >
               Disclaimer
             </Link>
-            .
+            . To the extent of any inconsistency between this Policy and
+            the Terms of Service, the Terms of Service prevail.
           </p>
           <p>
             <strong className="text-white">TheDayAfterAI</strong> is a project
@@ -682,8 +683,11 @@ export default function EthicsPolicyPage() {
               to reflect changes in editorial practices, technology, or
               applicable law. Any changes will be effective immediately upon
               posting the revised Policy on this page and updating the
-              &ldquo;Last updated&rdquo; date above. We encourage you to review
-              this Policy periodically.
+              &ldquo;Last updated&rdquo; date above. Where we make material
+              changes to this Policy (for example, changes to our AI disclosure
+              standards or editorial safeguards), we will use reasonable efforts
+              to notify you — for example, by posting a prominent notice on our
+              Website. We encourage you to review this Policy periodically.
             </p>
           </section>
 
@@ -695,9 +699,10 @@ export default function EthicsPolicyPage() {
             <p>
               This Policy is governed by and construed in accordance with the
               laws of the Australian Capital Territory and the Commonwealth of
-              Australia. You irrevocably submit to the non-exclusive
-              jurisdiction of the courts of the Australian Capital Territory and
-              any courts entitled to hear appeals therefrom.
+              Australia, without regard to conflict of law provisions. You
+              irrevocably submit to the non-exclusive jurisdiction of the courts
+              of the Australian Capital Territory and any courts entitled to
+              hear appeals therefrom.
             </p>
           </section>
 
@@ -710,7 +715,9 @@ export default function EthicsPolicyPage() {
               If any provision of this Policy is held to be invalid, unlawful,
               or unenforceable by a court of competent jurisdiction, that
               provision shall be severed and the remaining provisions shall
-              continue in full force and effect.
+              continue in full force and effect. Where possible, the invalid
+              provision shall be interpreted in a manner consistent with
+              applicable law to reflect its original intent.
             </p>
           </section>
 
