@@ -95,9 +95,7 @@ export default function SiteFooter({ onScrollToSection }: SiteFooterProps) {
               </a>
               <span>|</span>
               <a
-                href="https://www.thedayafterai.com/disclaimer"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`${basePath}/disclaimer`}
                 className="hover:text-[var(--accent)] transition-colors"
               >
                 Disclaimer
