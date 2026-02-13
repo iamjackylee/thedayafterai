@@ -5,7 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata: Metadata = {
   title: "About Us | TheDayAfterAI News",
   description:
-    "TheDayAfterAI is an AI-powered news channel delivering AI news briefings, market insights, and headlines from across the web.",
+    "TheDayAfterAI is an independent AI news channel delivering daily video briefings, market insights, and curated headlines from across the web.",
 };
 
 export default function InfoPage() {
@@ -23,13 +23,12 @@ export default function InfoPage() {
             About Us
           </h1>
           <p className="text-lg text-white font-semibold mb-2">
-            Building a Better World — One Step at a Time
+            AI moves fast. We help you keep up.
           </p>
           <p className="text-base text-[var(--text-secondary)] leading-relaxed">
-            TheDayAfterAI News is an AI-powered news channel delivering daily
-            video briefings on the most important developments in artificial
-            intelligence—alongside market-focused experiments and a curated news
-            hub linking to publishers worldwide.
+            TheDayAfterAI News delivers daily video briefings, transparent
+            market experiments, and curated headlines from publishers
+            worldwide—so you can stay informed in minutes, not hours.
           </p>
         </header>
 
@@ -48,10 +47,8 @@ export default function InfoPage() {
                 AI News Briefing
               </h3>
               <p className="text-[var(--text-secondary)] leading-relaxed">
-                Every day, we hand-pick the most significant AI stories from
-                reputable sources across the web. Our AI-assisted workflow
-                transforms these articles into short, engaging video summaries
-                published on our{" "}
+                Each day we pick the most significant AI stories from trusted
+                sources and turn them into concise video summaries on our{" "}
                 <a
                   href="https://www.youtube.com/@TheDayAfterAI"
                   target="_blank"
@@ -60,7 +57,7 @@ export default function InfoPage() {
                 >
                   YouTube channel
                 </a>
-                —so you can stay informed in minutes without doomscrolling.
+                . No doomscrolling required.
               </p>
             </div>
 
@@ -70,11 +67,13 @@ export default function InfoPage() {
                 AI Market Insights
               </h3>
               <p className="text-[var(--text-secondary)] leading-relaxed">
-                We run a daily, transparent experiment: AI forecasts the next-day
-                price direction of one U.S. stock (a different ticker each day),
-                and we publish the prediction next to the real outcome so viewers
-                can judge performance over time. This series is educational and
-                experimental in nature and is not financial advice.
+                A daily experiment: AI predicts the next-day price direction of
+                one U.S. stock (a different ticker each day). We publish the
+                forecast alongside the actual result—tracked openly so you can
+                judge performance over time.
+              </p>
+              <p className="text-[var(--text-secondary)] text-sm mt-2 italic">
+                Educational and experimental only—not financial advice.
               </p>
             </div>
 
@@ -84,10 +83,9 @@ export default function InfoPage() {
                 AI News Hub
               </h3>
               <p className="text-[var(--text-secondary)] leading-relaxed">
-                Beyond our own videos, TheDayAfterAI also serves as a central
-                dashboard for AI headlines from a wide range of publishers. We
-                curate links to original articles so you can explore the full
-                stories directly on the source sites.
+                A central dashboard of AI headlines from publishers everywhere.
+                We curate and link to the original articles—we don&apos;t claim
+                ownership of third-party content.
               </p>
             </div>
           </div>
@@ -99,13 +97,13 @@ export default function InfoPage() {
             How It Works
           </h2>
           <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
-            Our publishing workflow blends AI efficiency with human oversight:
+            AI efficiency meets human oversight:
           </p>
           <ol className="space-y-4 text-[var(--text-secondary)] leading-relaxed list-decimal list-inside">
             <li>
               <span className="text-white font-semibold">Curate</span> — We
-              manually select the day&apos;s most important AI stories from
-              trusted sources.
+              select the day&apos;s most important AI stories from trusted
+              sources.
             </li>
             <li>
               <span className="text-white font-semibold">Summarise</span> — AI
@@ -117,72 +115,14 @@ export default function InfoPage() {
             </li>
             <li>
               <span className="text-white font-semibold">Review</span> — Human
-              editors check for clarity, accuracy, and relevance before release.
+              editors check for clarity, accuracy, and relevance.
             </li>
             <li>
               <span className="text-white font-semibold">Publish</span> —
-              Content goes live on YouTube and our website daily, alongside
-              curated external headlines.
+              Videos and curated headlines go live daily on YouTube and our
+              website.
             </li>
           </ol>
-        </section>
-
-        {/* ── Narrative: Origin & Name ─────────────────────────────── */}
-
-        {/* Our Story */}
-        <section className="mb-12 md:mb-14">
-          <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
-            Our Story
-          </h2>
-          <div className="space-y-4 text-[var(--text-secondary)] leading-relaxed">
-            <p>
-              In early 2023, generative AI accelerated rapidly—unlocking new
-              possibilities while also raising real concerns about ethics, bias,
-              and misuse. The public conversation often swings between fear and
-              hype.
-            </p>
-            <p>
-              TheDayAfterAI News exists to bring balance and clarity. We curate
-              content that highlights both risks and breakthroughs, helping
-              audiences understand what matters, what&apos;s changing, and what it
-              could mean next. We aim to support informed discussion and
-              responsible innovation by showing how AI can be used
-              thoughtfully—and where caution is warranted.
-            </p>
-            <p>
-              TheDayAfterAI News launched on April 3, 2024, and we remain
-              committed to accurate, digestible reporting as the technology
-              evolves.
-            </p>
-          </div>
-        </section>
-
-        {/* Why "TheDayAfterAI" */}
-        <section className="mb-12 md:mb-14">
-          <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
-            Why &ldquo;TheDayAfterAI&rdquo;?
-          </h2>
-          <p className="text-[var(--text-secondary)] leading-relaxed mb-4">
-            Our name reflects a forward-looking mindset:
-          </p>
-          <ul className="space-y-3 text-[var(--text-secondary)] leading-relaxed">
-            <li>
-              <strong className="text-white">Forward-thinking</strong> — We look
-              beyond today&apos;s headlines to what happens next.
-            </li>
-            <li>
-              <strong className="text-white">Proactive engagement</strong> — We
-              encourage audiences to prepare for AI&apos;s real-world impact.
-            </li>
-            <li>
-              <strong className="text-white">Impactful curation</strong> —
-              Better decisions start with better information.
-            </li>
-            <li>
-              <strong className="text-white">Commitment to change</strong> — We
-              promote ethical, constructive adoption of AI.
-            </li>
-          </ul>
         </section>
 
         {/* ── Categories ─────────────────────────────────────────── */}
@@ -193,8 +133,8 @@ export default function InfoPage() {
             What We Cover
           </h2>
           <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
-            Our coverage spans 11 categories organised into three pillars,
-            capturing AI&apos;s impact across technology, society, and culture.
+            11 categories across three pillars, covering AI&apos;s impact on
+            technology, society, and culture.
           </p>
           <div className="grid gap-6 md:gap-8">
             <div className="rounded-xl border border-[var(--border-light)] bg-[var(--surface)] p-6 md:p-8">
@@ -226,39 +166,53 @@ export default function InfoPage() {
           </div>
         </section>
 
-        {/* ── Aspirational: Mission / Vision / Values ──────────────── */}
+        {/* ── Narrative: Origin & Name ─────────────────────────────── */}
 
-        {/* Our Mission */}
+        {/* Our Story */}
         <section className="mb-12 md:mb-14">
           <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
-            Our Mission
+            Our Story
+          </h2>
+          <div className="space-y-4 text-[var(--text-secondary)] leading-relaxed">
+            <p>
+              When generative AI took off in 2023, public conversation swung
+              between fear and hype. We wanted something in between—clear,
+              balanced reporting that shows both the breakthroughs and the risks
+              so people can form their own views.
+            </p>
+            <p>
+              TheDayAfterAI News launched on{" "}
+              <strong className="text-white">April 3, 2024</strong>, and
+              we&apos;ve published daily ever since—committed to accurate,
+              digestible coverage as the technology evolves.
+            </p>
+          </div>
+        </section>
+
+        {/* Why "TheDayAfterAI" */}
+        <section className="mb-12 md:mb-14">
+          <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
+            Why &ldquo;TheDayAfterAI&rdquo;?
           </h2>
           <p className="text-[var(--text-secondary)] leading-relaxed">
-            To curate and present accurate, engaging, and thought-provoking AI
-            coverage—helping developers, investors, policymakers, creators, and
-            curious minds stay ahead in a fast-moving world.
+            Because what matters isn&apos;t only what AI does today—it&apos;s
+            what happens the day after. We focus on long-term impact, not just
+            headlines, and encourage preparation over reaction.
           </p>
         </section>
 
-        {/* Our Vision */}
-        <section className="mb-12 md:mb-14">
-          <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
-            Our Vision
-          </h2>
-          <p className="text-[var(--text-secondary)] leading-relaxed">
-            To become a leading AI news destination that fosters informed
-            discussion and supports responsible innovation.
-          </p>
-        </section>
+        {/* ── Mission & Values ──────────────────────────────────────── */}
 
-        {/* Our Values */}
+        {/* Mission & Values — combined */}
         <section className="mb-12 md:mb-14">
           <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
-            Our Values
+            Mission &amp; Values
           </h2>
           <p className="text-[var(--text-secondary)] leading-relaxed mb-6">
-            Each letter in TDAAI represents a core principle that defines who we
-            are and how we operate.
+            We exist to help developers, investors, policymakers, creators, and
+            curious minds stay ahead of AI—through accurate, engaging,
+            thought-provoking coverage. Everything we do is guided by five
+            principles:
           </p>
           <div className="grid gap-4">
             {[
@@ -304,59 +258,51 @@ export default function InfoPage() {
           </div>
         </section>
 
-        {/* ── People & Contact ─────────────────────────────────────── */}
+        {/* ── People ─────────────────────────────────────────────── */}
 
         {/* Who We Are */}
         <section className="mb-12 md:mb-14">
           <h2 className="text-xl md:text-2xl font-bold text-white mb-6 border-l-4 border-[var(--accent)] pl-4">
             Who We Are
           </h2>
-          <div className="space-y-6">
-            <p className="text-[var(--text-secondary)] leading-relaxed">
-              TheDayAfterAI News is developed under{" "}
-              <strong className="text-white">Jacky Lee Visionary Creations</strong>—a
-              multidisciplinary platform bridging technology, creativity, and
-              community.
-            </p>
 
-            {/* Founder card */}
-            <div className="rounded-xl border border-[var(--border-light)] bg-[var(--surface)] p-6 md:p-8">
-              <h3 className="text-lg font-bold text-white mb-4">
-                Founded by Jacky Lee
-              </h3>
-              <div className="space-y-4 text-[var(--text-secondary)] leading-relaxed">
-                <p>
-                  Jacky Lee is a Hongkonger and{" "}
-                  <a
-                    href="https://jackylee.art"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--accent)] hover:underline"
-                  >
-                    award-winning visual artist
-                  </a>{" "}
-                  based in Canberra, Australia. He is also a Chartered Building
-                  Engineer and Chartered Building Surveyor (RICS, CABE), with
-                  over two decades of professional experience in Hong
-                  Kong&apos;s construction industry.
-                </p>
-                <p>
-                  As a photographer, he is a National Geographic Photo Contest
-                  champion and published author, and has been invited as a
-                  course tutor and guest speaker at the University of Hong Kong.
-                  He also serves as a photography advisor to the Hong Kong
-                  Biodiversity Museum and regularly judges international photo
-                  competitions.
-                </p>
-                <p>
-                  Under Jacky Lee Visionary Creations, he leads multiple ventures
-                  including TheDayAfterAI News, Canberra Drone Building
-                  Inspection &amp; Consultancy, and Physiognomy.AI—combining
-                  engineering discipline, creative practice, and a practical
-                  interest in AI to build tools and content that inform, inspire,
-                  and serve communities.
-                </p>
-              </div>
+          {/* Founder card */}
+          <div className="rounded-xl border border-[var(--border-light)] bg-[var(--surface)] p-6 md:p-8">
+            <h3 className="text-lg font-bold text-white mb-4">
+              Founded by Jacky Lee
+            </h3>
+            <div className="space-y-4 text-[var(--text-secondary)] leading-relaxed">
+              <p>
+                Jacky Lee is a Hongkonger and{" "}
+                <a
+                  href="https://jackylee.art"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--accent)] hover:underline"
+                >
+                  award-winning visual artist
+                </a>{" "}
+                based in Canberra, Australia. He is also a Chartered Building
+                Engineer and Chartered Building Surveyor (RICS, CABE), with
+                over two decades of professional experience in Hong
+                Kong&apos;s construction industry.
+              </p>
+              <p>
+                As a photographer, he is a National Geographic Photo Contest
+                champion and published author, and has been invited as a
+                course tutor and guest speaker at the University of Hong Kong.
+                He also serves as a photography advisor to the Hong Kong
+                Biodiversity Museum and regularly judges international photo
+                competitions.
+              </p>
+              <p>
+                Under{" "}
+                <strong className="text-white">Jacky Lee Visionary Creations</strong>,
+                he leads multiple ventures including TheDayAfterAI News,
+                Canberra Drone Building Inspection &amp; Consultancy, and
+                Physiognomy.AI—combining engineering discipline, creative
+                practice, and a practical interest in AI.
+              </p>
             </div>
           </div>
         </section>
