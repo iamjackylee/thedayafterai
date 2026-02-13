@@ -102,9 +102,7 @@ export default function SiteFooter({ onScrollToSection }: SiteFooterProps) {
               </a>
               <span>|</span>
               <a
-                href="https://www.thedayafterai.com/ethics-policy"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`${basePath}/ethics-policy`}
                 className="hover:text-[var(--accent)] transition-colors"
               >
                 Ethics Policy
