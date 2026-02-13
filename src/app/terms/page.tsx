@@ -483,7 +483,16 @@ export default function TermsPage() {
               15. Contact Us
             </h2>
             <p>
-              If you have any questions about these Terms, please contact us.
+              If you have any questions about these Terms, please{" "}
+              <a
+                href="https://www.thedayafterai.com/contact"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--accent)] hover:underline"
+              >
+                contact us
+              </a>
+              .
             </p>
           </section>
         </div>

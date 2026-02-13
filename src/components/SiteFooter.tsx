@@ -113,9 +113,7 @@ export default function SiteFooter({ onScrollToSection }: SiteFooterProps) {
               </a>
               <span>|</span>
               <a
-                href="https://www.thedayafterai.com/privacy-policy"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`${basePath}/privacy`}
                 className="hover:text-[var(--accent)] transition-colors"
               >
                 Privacy Policy
@@ -137,6 +135,15 @@ export default function SiteFooter({ onScrollToSection }: SiteFooterProps) {
                 className="hover:text-[var(--accent)] transition-colors"
               >
                 Advertise with Us
+              </a>
+              <span>|</span>
+              <a
+                href="https://www.thedayafterai.com/contact"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[var(--accent)] transition-colors"
+              >
+                Contact
               </a>
             </div>
             <p className="text-xs text-[var(--text-secondary)] italic">
