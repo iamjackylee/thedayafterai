@@ -123,9 +123,7 @@ export default function SiteFooter({ onScrollToSection }: SiteFooterProps) {
               </a>
               <span>|</span>
               <a
-                href="https://www.thedayafterai.com/advertise"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`${basePath}/advertise`}
                 className="hover:text-[var(--accent)] transition-colors"
               >
                 Advertise with Us
