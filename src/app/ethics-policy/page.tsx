@@ -62,7 +62,7 @@ export default function EthicsPolicyPage() {
             the Terms of Service, the Terms of Service prevail.
           </p>
           <p>
-            <strong className="text-white">TheDayAfterAI News</strong> (&ldquo;TheDayAfterAI&rdquo;) is a publication
+            <strong className="text-white">TheDayAfterAI News</strong> (&ldquo;TheDayAfterAI&rdquo;) is a digital news platform
             developed and operated by{" "}
             <a
               href="https://jackylee.art"
