@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-13T19:51:40.149Z",
+  "fetchedAt": "2026-02-13T20:32:38.213Z",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe",
   "news": [
     {
@@ -13,6 +13,16 @@
       "url": "https://www.techpolicy.press/how-measurement-can-fix-content-moderations-language-equity-gap/"
     },
     {
+      "id": "gn-health-style-13",
+      "title": "What are the best uses for AI in fashion retail marketing? - Drapers",
+      "summary": "What are the best uses for AI in fashion retail marketing? Drapers",
+      "topic": "health-style",
+      "source": "Drapers",
+      "date": "Fri, 13 Feb 2026 16:04:38 GMT",
+      "imageUrl": "https://cdn.rt.emap.com/wp-content/uploads/sites/2/2025/12/08103139/HM-AI-digital-twin.webp",
+      "url": "https://www.drapersonline.com/subscriber-only-content/how-fashion-retail-is-utilising-ai-in-marketing"
+    },
+    {
       "id": "gn-visual-art-photography-1",
       "title": "Apple may be eyeing this old Samsung feature. Why now? - PhoneArena",
       "summary": "Apple may be eyeing this old Samsung feature. Why now? PhoneArena",
@@ -23,7 +33,7 @@
       "url": "https://www.phonearena.com/news/Apple-may-be-eyeing-this-old-Samsung-feature.-Why-now_id178186"
     },
     {
-      "id": "gn-health-style-42",
+      "id": "gn-health-style-45",
       "title": "New diagnostic system leverages AI to help fight hospital-acquired infections - U of T Engineering News -",
       "summary": "New diagnostic system leverages AI to help fight hospital-acquired infections U of T Engineering News -",
       "topic": "health-style",
@@ -33,7 +43,7 @@
       "url": "https://news.engineering.utoronto.ca/new-diagnostic-system-leverages-ai-to-help-fight-hospital-acquired-infections/"
     },
     {
-      "id": "gn-health-style-49",
+      "id": "gn-health-style-42",
       "title": "When my doctor is the chatbot Dr. Afu: this is how AI sneaks into healthcare in China - El Mundo America",
       "summary": "When my doctor is the chatbot Dr. Afu: this is how AI sneaks into healthcare in China El Mundo America",
       "topic": "health-style",
@@ -133,7 +143,7 @@
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQXhDaUpqNktIMHN4anJkSWFkNzRkRFd2Tl9feWs0bGdMSE1kY3FUbEs4MWVINkJSLTBIRDJGelY3TWo4S0MtdFp6QU40WUFyUnhqZG14UVljNUdDWkZWV3Z3ZlZRc2Y2d3BFQmQzR1JJUWdKcGZVWkU2UkIxZG9EaW5sMU9nTDE2QXZpRkljMzZZcXlOWXBhUVJ6a005NU0?oc=5"
     },
     {
-      "id": "gn-health-style-23",
+      "id": "gn-health-style-25",
       "title": "Top 10 Fitness Apps In 2026 - inventiva.co.in",
       "summary": "Top 10 Fitness Apps In 2026 inventiva.co.in",
       "topic": "health-style",
@@ -141,16 +151,6 @@
       "date": "Fri, 13 Feb 2026 11:13:48 GMT",
       "imageUrl": "https://www.inventiva.co.in/wp-content/uploads/2024/05/Just-Explore-38.jpg",
       "url": "https://www.inventiva.co.in/trends/top-10-fitness-apps-in-2026/"
-    },
-    {
-      "id": "gn-health-style-8",
-      "title": "Ramadan 2026 UAE: AI wearables help you fast safer, smarter, healthier - Gulf News",
-      "summary": "Ramadan 2026 UAE: AI wearables help you fast safer, smarter, healthier Gulf News",
-      "topic": "health-style",
-      "source": "Gulf News",
-      "date": "Fri, 13 Feb 2026 10:47:04 GMT",
-      "imageUrl": "https://media.assettype.com/gulfnews/2025-03-10/bsvrsfyk/shutterstockSMART_WATCH_1_1741606948120.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
-      "url": "https://gulfnews.com/amp/story/uae%2Framadan%2Framadan-2026-uae-ai-wearables-help-you-fast-safer-smarter-healthier-1.500442225"
     },
     {
       "id": "gn-governance-politics-46",
@@ -183,7 +183,7 @@
       "url": "https://azat.tv/en/claude-opus-4-6-rivals-emerge-ai-race-shifts-focus/"
     },
     {
-      "id": "gn-health-style-28",
+      "id": "gn-health-style-32",
       "title": "As Services Expand, More Foreigners Seek Treatment in China - Sixth Tone",
       "summary": "As Services Expand, More Foreigners Seek Treatment in China Sixth Tone",
       "topic": "health-style",
@@ -193,7 +193,7 @@
       "url": "https://www.sixthtone.com/news/1018204"
     },
     {
-      "id": "gn-health-style-17",
+      "id": "gn-health-style-16",
       "title": "The Vogue Business Beauty Trend Tracker - Vogue",
       "summary": "The Vogue Business Beauty Trend Tracker Vogue",
       "topic": "health-style",
@@ -201,6 +201,16 @@
       "date": "Fri, 13 Feb 2026 10:30:00 GMT",
       "imageUrl": "https://assets.vogue.com/photos/698501529ae7e2a702417501/16:9/w_2992,h_1683,c_limit/BEAUTY-TRACKER-story.jpg",
       "url": "https://www.vogue.com/article/the-vogue-business-beauty-tracker"
+    },
+    {
+      "id": "gn-health-style-20",
+      "title": "Personalized Nutrition and Supplements Market Analysis - GlobeNewswire",
+      "summary": "Personalized Nutrition and Supplements Market Analysis GlobeNewswire",
+      "topic": "health-style",
+      "source": "GlobeNewswire",
+      "date": "Fri, 13 Feb 2026 10:27:47 GMT",
+      "imageUrl": "https://ml.globenewswire.com/Resource/Download/908fb457-7f8e-4a08-9081-5565e3dfb3d7",
+      "url": "https://www.globenewswire.com/news-release/2026/02/13/3237928/0/en/Personalized-Nutrition-and-Supplements-Market-Analysis-Report-2026-24-52-Bn-Market-Opportunities-Trends-Competitive-Landscape-Strategies-and-Forecasts-2020-2025-2025-2030F-2035F.html"
     },
     {
       "id": "gn-governance-politics-29",
@@ -253,7 +263,7 @@
       "url": "https://www.findarticles.com/spotify-beats-youtube-music-in-hands-on-test-results/"
     },
     {
-      "id": "gn-health-style-45",
+      "id": "gn-health-style-43",
       "title": "World’s first AI-based optical diagnostic platform to distinguish nasal secretion from cerebrospinal fluid - EurekAlert!",
       "summary": "World’s first AI-based optical diagnostic platform to distinguish nasal secretion from cerebrospinal fluid EurekAlert!",
       "topic": "health-style",
@@ -363,7 +373,7 @@
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE10T19SdWVBVjBOUnRkYkdfbElVRzNzZ3pwNFlNckpuNHBuV3VodHZfaElCc21Md1ZBdjZPNmQxV2pqUE4tX2hoWHpnUVNhVFQ5aFdVeXJZVzdjaUVGbUJhbkZ4TkpBM1R5QVFNeXZyVjEwTmJHVWROcUtR0gGOAUFVX3lxTE9pYlFmWGFtaWV3Wk4wY2p4d3pBLTZCemtCSzRMUDlsYVpVZThiNl9CNVJwUExYSTJ0Rk9sT1BkNTR0YlNXTGhFc0IyLVVLV3hHcDhmanJsOW01Vmhsek15UTRhclRIZHhXa3I2Vjl5RDBma3hFWXd4aWMtUi1sNDZDczlZR3FINk1LelhjMXc?oc=5"
     },
     {
-      "id": "gn-health-style-43",
+      "id": "gn-health-style-41",
       "title": "Man suffers acute kidney injury after AI misdiagnosis leads to triple-dose medication error - The Standard (HK)",
       "summary": "Man suffers acute kidney injury after AI misdiagnosis leads to triple-dose medication error The Standard (HK)",
       "topic": "health-style",
@@ -413,24 +423,14 @@
       "url": "https://www.theedgesingapore.com/views/singapore-economy/singapores-economy-roll-how-long"
     },
     {
-      "id": "gn-health-style-41",
+      "id": "gn-health-style-40",
       "title": "Gleneagles Hospital HK forms strategic partnership to advance venous disease care - Healthcare Asia Magazine",
       "summary": "Gleneagles Hospital HK forms strategic partnership to advance venous disease care Healthcare Asia Magazine",
       "topic": "health-style",
       "source": "Healthcare Asia Magazine",
       "date": "Fri, 13 Feb 2026 02:49:39 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNZUFrMDNPWUNFSWJNUWUwakRfVFZCa0xQX3kwLXBzWlNIbm1WSXl1ODhJLTZLekJJeVlPMU80UGlkeHB0ZHBuU3Y4NHhETEQ4U2E4bFVqQ3dPakUxV1Y1blQ3RUFnSnJ2bG1jeDFXWVdTT3hMUEhKWGZ4aHdaeXFmR2lhNWVpbjJTSThTUXY1RzM2eUJSLUJDd1l0UTl6OFVaWEd0RHN5X201SXU0Mm5TQWppWlFXWmJNa3c?oc=5"
-    },
-    {
-      "id": "gn-health-style-7",
-      "title": "Why Reviewers Say This Affordable Fitness Tracker Beats More Expensive Models - AOL.com",
-      "summary": "Why Reviewers Say This Affordable Fitness Tracker Beats More Expensive Models AOL.com",
-      "topic": "health-style",
-      "source": "AOL.com",
-      "date": "Fri, 13 Feb 2026 02:29:52 GMT",
-      "imageUrl": "https://s.yimg.com/os/en/aol_mens_journal_ecomm_462/b93cce9f60b6fc630bc72d00d88d102f",
-      "url": "https://www.aol.com/lifestyle/why-reviewers-affordable-fitness-tracker-195755081.html"
+      "imageUrl": "https://healthcareasiamagazine.com/s3/files/styles/opengraph/public/2026-02/1770371053375.jpeg?h=57a9d5b8&itok=dN_QIRSo",
+      "url": "https://healthcareasiamagazine.com/news/gleneagles-hospital-hk-forms-strategic-partnership-advance-venous-disease-care"
     },
     {
       "id": "gn-governance-politics-26",
@@ -573,14 +573,14 @@
       "url": "https://www.darkreading.com/cyber-risk/one-in-two-americans-romance-scam-incidents"
     },
     {
-      "id": "gn-health-style-30",
-      "title": "Siemens Healthineers and Mayo Clinic Expand Strategic Collaboration to Enhance Patient Care Through Advanced Technology - Siemens Healthineers",
-      "summary": "Siemens Healthineers and Mayo Clinic Expand Strategic Collaboration to Enhance Patient Care Through Advanced Technology Siemens Healthineers",
+      "id": "gn-health-style-14",
+      "title": "Mexico Apparel Market: Size, Share and Industry Trends Analysis - vocal.media",
+      "summary": "Mexico Apparel Market: Size, Share and Industry Trends Analysis vocal.media",
       "topic": "health-style",
-      "source": "Siemens Healthineers",
-      "date": "Thu, 12 Feb 2026 20:55:20 GMT",
-      "imageUrl": "https://corporate.webassets.siemens-healthineers.com/38ef4ae7975f4724/414608ae9efc/v/40a941ec3c38/siemens-healthineers-press-Mayo-Clinic-.jpg",
-      "url": "https://www.siemens-healthineers.com/press/releases/mayo-clinic"
+      "source": "vocal.media",
+      "date": "Thu, 12 Feb 2026 20:27:56 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOU3h3SXB5UXZzV2FVbExGa1Jjc2FybFZ3UGQtMDRHTXV3LWNXemhkM0lKSVZCQXJ0eUx4ZW4zdnZqenNnclk2c2EzSWEwa0V1Z0UzOFJ5VHdWS29ydmZVU3FNR2FsR3dDOVVwbGNVZUI1RldycnVZeW9hQ2hHSVdjME9kNS1LRHNYcEcwaA?oc=5"
     },
     {
       "id": "gn-business-economy-8",
@@ -743,7 +743,7 @@
       "url": "https://www.internetmatters.org/hub/research/preparing-young-people-to-vote-in-a-complex-attention-driven-environment/"
     },
     {
-      "id": "gn-health-style-27",
+      "id": "gn-health-style-29",
       "title": "Confronting High - Incidence Severe Diseases: Ping An's Groundbreaking Battle with Medical AI - 36 Kr",
       "summary": "Confronting High - Incidence Severe Diseases: Ping An's Groundbreaking Battle with Medical AI 36 Kr",
       "topic": "health-style",
@@ -791,16 +791,6 @@
       "date": "Thu, 12 Feb 2026 13:21:07 GMT",
       "imageUrl": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/07d27235-a156-4213-3582-faf34a69bb00/public",
       "url": "https://opentools.ai/news/anthropic-ups-the-ante-claudes-free-tier-now-packs-a-punch-with-premium-features"
-    },
-    {
-      "id": "gn-health-style-14",
-      "title": "Mexico Apparel Market: Size, Share and Industry Trends Analysis - vocal.media",
-      "summary": "Mexico Apparel Market: Size, Share and Industry Trends Analysis vocal.media",
-      "topic": "health-style",
-      "source": "vocal.media",
-      "date": "Thu, 12 Feb 2026 13:11:47 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOU3h3SXB5UXZzV2FVbExGa1Jjc2FybFZ3UGQtMDRHTXV3LWNXemhkM0lKSVZCQXJ0eUx4ZW4zdnZqenNnclk2c2EzSWEwa0V1Z0UzOFJ5VHdWS29ydmZVU3FNR2FsR3dDOVVwbGNVZUI1RldycnVZeW9hQ2hHSVdjME9kNS1LRHNYcEcwaA?oc=5"
     },
     {
       "id": "gn-chatbot-development-36",
@@ -1113,7 +1103,7 @@
       "url": "https://www.aol.com/articles/2026-valentines-romance-scams-avoid-203009692.html"
     },
     {
-      "id": "gn-health-style-22",
+      "id": "gn-health-style-23",
       "title": "Mexico Health and Wellness Market Size, Share, Industry Growth and Forecast 2026-2034 - vocal.media",
       "summary": "Mexico Health and Wellness Market Size, Share, Industry Growth and Forecast 2026-2034 vocal.media",
       "topic": "health-style",
@@ -1263,7 +1253,7 @@
       "url": "https://www.visiontimes.com/2026/02/11/artificial-intelligence-disrupts-business-models-and-tech-markets.html"
     },
     {
-      "id": "gn-health-style-40",
+      "id": "gn-health-style-39",
       "title": "Opinion | Doctors Are Quietly Using AI. Bans Won't Fix That. - MedPage Today",
       "summary": "Opinion | Doctors Are Quietly Using AI. Bans Won't Fix That. MedPage Today",
       "topic": "health-style",
@@ -1273,7 +1263,7 @@
       "url": "https://www.medpagetoday.com/opinion/second-opinions/119842"
     },
     {
-      "id": "gn-health-style-39",
+      "id": "gn-health-style-38",
       "title": "AI tools find 12 biomarkers that may speed a Sjögren’s diagnosis - Sjogren's Disease News",
       "summary": "AI tools find 12 biomarkers that may speed a Sjögren’s diagnosis Sjogren's Disease News",
       "topic": "health-style",
@@ -1301,6 +1291,16 @@
       "date": "Wed, 11 Feb 2026 19:07:32 GMT",
       "imageUrl": "https://techstory.in/wp-content/uploads/2026/02/images-2026-02-12T003206.112.jpeg",
       "url": "https://techstory.in/youtube-music-places-lyrics-behind-premium-paywall-sparking-debate-among-users/"
+    },
+    {
+      "id": "gn-health-style-19",
+      "title": "Europe Protein Ingredients Market Size and Forecast 2025–2033 - vocal.media",
+      "summary": "Europe Protein Ingredients Market Size and Forecast 2025–2033 vocal.media",
+      "topic": "health-style",
+      "source": "vocal.media",
+      "date": "Wed, 11 Feb 2026 18:39:19 GMT",
+      "imageUrl": "https://res.cloudinary.com/jerrick/image/upload/c_scale,f_jpg,q_auto/698f635b955c91001d2ab223.png",
+      "url": "https://vocal.media/trader/europe-protein-ingredients-market-size-and-forecast-2025-2033-upvb1066z"
     },
     {
       "id": "gn-business-economy-21",
@@ -1453,7 +1453,7 @@
       "url": "https://thetechfounders.co.uk/news/olix-25-year-old-founder-raises-220m-for-uk-ai-chip-startup/"
     },
     {
-      "id": "gn-health-style-10",
+      "id": "gn-health-style-8",
       "title": "Style Intelligence Platforms - Trend Hunter",
       "summary": "Style Intelligence Platforms Trend Hunter",
       "topic": "health-style",
@@ -1523,7 +1523,7 @@
       "url": "https://www.mixvale.com.br/2026/02/11/galaxy-s27-should-resume-variable-aperture-cameras-to-surpass-iphone-18-pro-in-optical-innovation-en/"
     },
     {
-      "id": "gn-health-style-18",
+      "id": "gn-health-style-17",
       "title": "AI-Assisted Marketing Tools - Trend Hunter",
       "summary": "AI-Assisted Marketing Tools Trend Hunter",
       "topic": "health-style",
@@ -1683,13 +1683,13 @@
       "url": "https://www.trustedreviews.com/news/youtube-is-following-spotify-in-adding-ai-playlist-creation"
     },
     {
-      "id": "gn-health-style-48",
+      "id": "gn-health-style-49",
       "title": "Japan’s Healthcare Analytics Surge: Innovation at the Speed of AI | Healthcare Analytics Market to Hit - EIN News",
       "summary": "Japan’s Healthcare Analytics Surge: Innovation at the Speed of AI | Healthcare Analytics Market to Hit EIN News",
       "topic": "health-style",
       "source": "EIN News",
       "date": "Wed, 11 Feb 2026 11:13:00 GMT",
-      "imageUrl": "https://img.einnews.com/ampsize/1050682/japan-healthcare-analytics-mark.png",
+      "imageUrl": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=400&fit=crop&auto=format",
       "url": "https://www.einnews.com/pr_news/891353576/japan-s-healthcare-analytics-surge-innovation-at-the-speed-of-ai-healthcare-analytics-market-to-hit-us-15-10b-by-2033"
     },
     {
@@ -1903,7 +1903,7 @@
       "url": "https://www.livemint.com/market/stock-market-news/indiaus-trade-deal-explained-tariffs-oil-gdp-growth-what-changes-now-bofa-answers-key-faqs-11770788677436.html"
     },
     {
-      "id": "gn-health-style-26",
+      "id": "gn-health-style-28",
       "title": "Who’s accountable when your AI health assistant gets it wrong? - Medical Republic",
       "summary": "Who’s accountable when your AI health assistant gets it wrong? Medical Republic",
       "topic": "health-style",
@@ -2003,7 +2003,7 @@
       "url": "https://securitybrief.com.au/story/ai-supercharges-industrial-scale-online-romance-scams"
     },
     {
-      "id": "gn-health-style-12",
+      "id": "gn-health-style-10",
       "title": "Personal Style Meets Personalization: AI and the Future of Menswear - Breaking AC",
       "summary": "Personal Style Meets Personalization: AI and the Future of Menswear Breaking AC",
       "topic": "health-style",
@@ -2253,7 +2253,7 @@
       "url": "https://betterdwelling.com/the-bank-of-canadas-economy-things-get-worse-then-you-die/"
     },
     {
-      "id": "gn-health-style-9",
+      "id": "gn-health-style-7",
       "title": "Top 7 Fitness App Development Companies in California (2026) - WhaTech",
       "summary": "Top 7 Fitness App Development Companies in California (2026) WhaTech",
       "topic": "health-style",
@@ -2333,7 +2333,7 @@
       "url": "https://www.makeuseof.com/youtube-music-ai-powered-playlist-feature/"
     },
     {
-      "id": "gn-health-style-36",
+      "id": "gn-health-style-37",
       "title": "New artificial intelligence tool may help personalize ovarian cancer treatment from day one - Medical Xpress",
       "summary": "New artificial intelligence tool may help personalize ovarian cancer treatment from day one Medical Xpress",
       "topic": "health-style",
@@ -2423,16 +2423,6 @@
       "url": "https://www.filmogaz.com/143288"
     },
     {
-      "id": "gn-health-style-38",
-      "title": "Frailty and functional decline: Why diagnosis is not enough - KevinMD.com",
-      "summary": "Frailty and functional decline: Why diagnosis is not enough KevinMD.com",
-      "topic": "health-style",
-      "source": "KevinMD.com",
-      "date": "Tue, 10 Feb 2026 18:10:31 GMT",
-      "imageUrl": "https://kevinmd.com/wp-content/uploads/Gemini_Generated_Image_t4p8jwt4p8jwt4p8-1024x717.png",
-      "url": "https://kevinmd.com/2026/02/frailty-and-functional-decline-why-diagnosis-is-not-enough.html"
-    },
-    {
       "id": "gn-governance-politics-31",
       "title": "House committee investigates left-wing organizations 'sowing chaos' across US - Fox News",
       "summary": "House committee investigates left-wing organizations 'sowing chaos' across US Fox News",
@@ -2443,7 +2433,7 @@
       "url": "https://www.foxnews.com/live-news/house-committee-hearing-grill-left-wing-groups-chinese-propaganda"
     },
     {
-      "id": "gn-health-style-44",
+      "id": "gn-health-style-46",
       "title": "Building genomic medicine in Saudi Arabia - Nature",
       "summary": "Building genomic medicine in Saudi Arabia Nature",
       "topic": "health-style",
@@ -3003,7 +2993,7 @@
       "url": "https://datacentremagazine.com/news/what-role-do-data-centres-play-in-nvidias-us-5tn-valuation"
     },
     {
-      "id": "gn-health-style-11",
+      "id": "gn-health-style-9",
       "title": "Fashion isn’t ready for the rise of AI stylists - Dazed",
       "summary": "Fashion isn’t ready for the rise of AI stylists Dazed",
       "topic": "health-style",
@@ -3013,7 +3003,7 @@
       "url": "https://www.dazeddigital.com/fashion/article/69590/1/rise-of-ai-fashion-stylist-chatgpt-openai-ralph-lauren-ask-ralph-asos"
     },
     {
-      "id": "gn-health-style-15",
+      "id": "gn-health-style-12",
       "title": "The Vogue Business AI Tracker - Vogue",
       "summary": "The Vogue Business AI Tracker Vogue",
       "topic": "health-style",
@@ -3053,6 +3043,16 @@
       "url": "https://thedefensepost.com/2026/02/10/armenia-us-vbat-drones/"
     },
     {
+      "id": "gn-health-style-47",
+      "title": "Saudi Arabia Healthcare IT Market: Digital Transformation, AI Integration &amp; Growth Outlook - vocal.media",
+      "summary": "Saudi Arabia Healthcare IT Market: Digital Transformation, AI Integration & Growth Outlook vocal.media",
+      "topic": "health-style",
+      "source": "vocal.media",
+      "date": "Tue, 10 Feb 2026 09:20:37 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQa2syUE8xeXN4ZjR1TnB5V212dmV3dWVCYUtYSW9INzdFZVdXVEJFNjFfVHRrNTN3TmYwNVVWSFhkMkV2cXJHN0J5TTllckVzYW9wcHJmVnNOaGY1Qy1rbkUxbzJHN3l2Y0k2enlYZlJBVHdkSm04RU55SE44aWJxLU9uc0wzS21nYU9YNG15M1hGYVhfRG9xZ2hxaVRZMElCQmhsU19TQThibVh4Mms4NWR0b3dGUUNpZFVJ?oc=5"
+    },
+    {
       "id": "gn-business-economy-45",
       "title": "UPSC Key: India-Malaysia relations, PM CARES Fund, and AI Impact Summit - The Indian Express",
       "summary": "UPSC Key: India-Malaysia relations, PM CARES Fund, and AI Impact Summit The Indian Express",
@@ -3073,7 +3073,7 @@
       "url": "https://www.findarticles.com/flagships-test-triple-100mp-cameras-and-100mp-selfies/"
     },
     {
-      "id": "gn-health-style-46",
+      "id": "gn-health-style-44",
       "title": "How Digital Health Tools Are Transforming Patient‑Centered Clinical Research - WorldHealth.net",
       "summary": "How Digital Health Tools Are Transforming Patient‑Centered Clinical Research WorldHealth.net",
       "topic": "health-style",
@@ -3091,16 +3091,6 @@
       "date": "Tue, 10 Feb 2026 08:00:00 GMT",
       "imageUrl": "https://www.billboard.com/wp-content/uploads/2025/09/us-capitol-building-2025-billboard-1800.jpg",
       "url": "https://www.billboard.com/lists/music-related-bills-congress-now-list-legislation/"
-    },
-    {
-      "id": "gn-health-style-16",
-      "title": "Top 25 Applications of AI: Transforming Industries Today - Simplilearn.com",
-      "summary": "Top 25 Applications of AI: Transforming Industries Today Simplilearn.com",
-      "topic": "health-style",
-      "source": "Simplilearn.com",
-      "date": "Tue, 10 Feb 2026 08:00:00 GMT",
-      "imageUrl": "https://www.simplilearn.com/ice9/free_resources_article_thumb/Akshay.jpg",
-      "url": "https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/artificial-intelligence-applications"
     },
     {
       "id": "gn-ai-academy-46",
@@ -3131,6 +3121,16 @@
       "date": "Tue, 10 Feb 2026 08:00:00 GMT",
       "imageUrl": "https://www.nerdwallet.com/tachyon/2017/05/googling-best-stocks-buy-need-index-fund1.jpg?resize=350%2C350",
       "url": "https://www.nerdwallet.com/investing/learn/best-semiconductor-stocks"
+    },
+    {
+      "id": "gn-health-style-15",
+      "title": "Top 25 Applications of AI: Transforming Industries Today - Simplilearn.com",
+      "summary": "Top 25 Applications of AI: Transforming Industries Today Simplilearn.com",
+      "topic": "health-style",
+      "source": "Simplilearn.com",
+      "date": "Tue, 10 Feb 2026 08:00:00 GMT",
+      "imageUrl": "https://www.simplilearn.com/ice9/free_resources_article_thumb/Akshay.jpg",
+      "url": "https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/artificial-intelligence-applications"
     },
     {
       "id": "gn-environment-science-43",
@@ -3203,7 +3203,7 @@
       "url": "https://tibet.net/the-epstein-files-and-chinas-information-war-against-the-dalai-lama/"
     },
     {
-      "id": "gn-health-style-35",
+      "id": "gn-health-style-34",
       "title": "AI reads brain MRIs in seconds and flags emergencies - ScienceDaily",
       "summary": "AI reads brain MRIs in seconds and flags emergencies ScienceDaily",
       "topic": "health-style",
@@ -3224,12 +3224,12 @@
     },
     {
       "id": "gn-health-style-33",
-      "title": "A researcher warned against using artificial intelligence as an alternative source of health advice, saying it is not yet ready to replace physicians and may provide incorrect diagnoses. | via ANC 24/7 See more in the link in the comments section. - Facebook",
-      "summary": "A researcher warned against using artificial intelligence as an alternative source of health advice, saying it is not yet ready to replace physicians and may provide incorrect diagnoses. | via ANC 24/7 See more in the link in the comments section. Facebook",
+      "title": "A researcher warned against using artificial intelligence as an alternative source of health advice, saying it is not yet ready to replace physicians and may provide incorrect diagnoses. | via ANC 24/7 See more in the link in the comments section. - facebook.com",
+      "summary": "A researcher warned against using artificial intelligence as an alternative source of health advice, saying it is not yet ready to replace physicians and may provide incorrect diagnoses. | via ANC 24/7 See more in the link in the comments section. facebook.com",
       "topic": "health-style",
-      "source": "Facebook",
+      "source": "facebook.com",
       "date": "Tue, 10 Feb 2026 06:00:01 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=400&fit=crop&auto=format",
+      "imageUrl": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600&h=400&fit=crop&auto=format",
       "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FabscbnNEWS%2Fposts%2Fa-researcher-warned-against-using-artificial-intelligence-as-an-alternative-sour%2F1418222147019704%2F"
     },
     {
@@ -3263,7 +3263,7 @@
       "url": "https://www.techbuzz.ai/articles/taiwan-rejects-u-s-demand-for-40-chip-supply-chain-shift"
     },
     {
-      "id": "gn-health-style-47",
+      "id": "gn-health-style-48",
       "title": "Wearable Medical Devices Market Trends: Remote Patient Monitoring, AI Integration &amp; Forecast to 2033 - vocal.media",
       "summary": "Wearable Medical Devices Market Trends: Remote Patient Monitoring, AI Integration & Forecast to 2033 vocal.media",
       "topic": "health-style",
@@ -3373,7 +3373,7 @@
       "url": "https://securitybrief.com.au/story/australians-turn-to-ai-for-love-as-dating-scams-surge"
     },
     {
-      "id": "gn-health-style-29",
+      "id": "gn-health-style-30",
       "title": "Can Medical AI Lie? Large Study Maps How LLMs Handle Health Misinformation - Mount Sinai",
       "summary": "Can Medical AI Lie? Large Study Maps How LLMs Handle Health Misinformation Mount Sinai",
       "topic": "health-style",
@@ -3663,7 +3663,7 @@
       "url": "https://www.myjoyonline.com/cybersecurity-threats-in-ghana-a-comprehensive-analysis-2/"
     },
     {
-      "id": "gn-health-style-25",
+      "id": "gn-health-style-27",
       "title": "Reliability of LLMs as medical assistants for the general public: a randomized preregistered study - Nature",
       "summary": "Reliability of LLMs as medical assistants for the general public: a randomized preregistered study Nature",
       "topic": "health-style",
@@ -3823,16 +3823,6 @@
       "url": "https://www.chemistryworld.com/news/india-eu-trade-deal-will-cut-tariffs-and-enable-economic-migration/4022913.article"
     },
     {
-      "id": "gn-health-style-21",
-      "title": "GBT Technologies, Inc. (OTC: GTCH) Wholly Owned Subsidiary, “Cube Wellness Technologies”, Enters Digital Wellness Sector with First Major Investment in Smart Wellness AI Machines to Support Nationwide University Rollout and Appoints New Board Mem - Yahoo Finance",
-      "summary": "GBT Technologies, Inc. (OTC: GTCH) Wholly Owned Subsidiary, “Cube Wellness Technologies”, Enters Digital Wellness Sector with First Major Investment in Smart Wellness AI Machines to Support Nationwide University Rollout and Appoints New Board Mem Yahoo Finance",
-      "topic": "health-style",
-      "source": "Yahoo Finance",
-      "date": "Mon, 09 Feb 2026 13:42:00 GMT",
-      "imageUrl": "https://s.yimg.com/os/en/globenewswire.com/c1bd9aa98d5dbd09ce2e377c17f37a52",
-      "url": "https://finance.yahoo.com/news/gbt-technologies-inc-otc-gtch-134200675.html"
-    },
-    {
       "id": "gn-chatbot-development-27",
       "title": "OpenAI's ChatGPT growth reaccelerates past 10% as $100B round looms - The Tech Buzz",
       "summary": "OpenAI's ChatGPT growth reaccelerates past 10% as $100B round looms The Tech Buzz",
@@ -3841,6 +3831,16 @@
       "date": "Mon, 09 Feb 2026 13:42:00 GMT",
       "imageUrl": "https://charming-card-d91ad3487b.media.strapiapp.com/file_f5f3915085.png",
       "url": "https://www.techbuzz.ai/articles/openai-s-chatgpt-growth-reaccelerates-past-10-as-100b-round-looms"
+    },
+    {
+      "id": "gn-health-style-21",
+      "title": "GBT Technologies, Inc. (OTC: GTCH) Wholly Owned Subsidiary, “Cube Wellness Technologies”, Enters Digital Wellness Sector with First Major Investment in Smart Wellness AI Machines to Support Nationwide University Rollout and Appoints New Board Mem - Yahoo Finance",
+      "summary": "GBT Technologies, Inc. (OTC: GTCH) Wholly Owned Subsidiary, “Cube Wellness Technologies”, Enters Digital Wellness Sector with First Major Investment in Smart Wellness AI Machines to Support Nationwide University Rollout and Appoints New Board Mem Yahoo Finance",
+      "topic": "health-style",
+      "source": "Yahoo Finance",
+      "date": "Mon, 09 Feb 2026 13:42:00 GMT",
+      "imageUrl": "https://s.yimg.com/os/en/globenewswire.com/c1bd9aa98d5dbd09ce2e377c17f37a52",
+      "url": "https://finance.yahoo.com/news/gbt-technologies-inc-otc-gtch-134200675.html"
     },
     {
       "id": "gn-environment-science-27",
@@ -3933,17 +3933,27 @@
       "url": "https://www.openpr.com/news/4382588/united-states-remote-sensing-market-is-expected-to-grow-at-15-2"
     },
     {
-      "id": "gn-health-style-32",
+      "id": "gn-health-style-35",
       "title": "As AI enters the operating room, reports arise of botched surgeries and misidentified body parts - Reuters",
       "summary": "As AI enters the operating room, reports arise of botched surgeries and misidentified body parts Reuters",
       "topic": "health-style",
       "source": "Reuters",
-      "date": "Mon, 09 Feb 2026 11:30:00 GMT",
+      "date": "Mon, 09 Feb 2026 11:34:36 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=400&fit=crop&auto=format",
       "url": "https://www.reuters.com/investigations/ai-enters-operating-room-reports-arise-botched-surgeries-misidentified-body-2026-02-09/"
     },
     {
-      "id": "gn-health-style-13",
+      "id": "gn-health-style-24",
+      "title": "Banana Powder Market Set to Soar to USD 2,195.2 Million by 2034 | CAGR 5.95% - vocal.media",
+      "summary": "Banana Powder Market Set to Soar to USD 2,195.2 Million by 2034 | CAGR 5.95% vocal.media",
+      "topic": "health-style",
+      "source": "vocal.media",
+      "date": "Mon, 09 Feb 2026 11:23:11 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop&auto=format",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTEI4SzhyaV9sN2g1R1JaUEVGYmVCd1gzTHNuSzhlMDYwMjFEeUhQZUN3aVFYR0tZb21BREJGV1p0ZTI1dGhOQkFtZnNuQ2tjOGxsV2MtNy1MRzhKZE5LUnZYSW9RbzJmRk9tQlp6WmFDMlppYy1hcmRPODdrSzU2ZmFfd1RneWNVOFhwOVVZNlJyQW45QmxTRllPR0hPYm5LNGc?oc=5"
+    },
+    {
+      "id": "gn-health-style-11",
       "title": "Artificial Intelligence Across the Apparel Value Chain: From Trend Forecasting to Factory Floor Automation - Fibre2Fashion",
       "summary": "Artificial Intelligence Across the Apparel Value Chain: From Trend Forecasting to Factory Floor Automation Fibre2Fashion",
       "topic": "health-style",
@@ -3983,7 +3993,7 @@
       "url": "https://www.digitalcameraworld.com/buying-guides/the-10-best-camera-drones"
     },
     {
-      "id": "gn-health-style-20",
+      "id": "gn-health-style-22",
       "title": "Contract Catering Market Expands with AI Integration and Changing Corporate Dining Needs - vocal.media",
       "summary": "Contract Catering Market Expands with AI Integration and Changing Corporate Dining Needs vocal.media",
       "topic": "health-style",
@@ -4383,7 +4393,7 @@
       "url": "https://en.brinkwire.com/technology/vivo-bets-big-on-small-phones-with-x300s-strategy-shift/"
     },
     {
-      "id": "gn-health-style-24",
+      "id": "gn-health-style-26",
       "title": "20+ Best Gemini &amp; ChatGPT Prompts for Health and Fitness (2026 Guide) - TechMitra",
       "summary": "20+ Best Gemini & ChatGPT Prompts for Health and Fitness (2026 Guide) TechMitra",
       "topic": "health-style",
@@ -4613,7 +4623,7 @@
       "url": "chrome-error://chromewebdata/"
     },
     {
-      "id": "gn-health-style-34",
+      "id": "gn-health-style-36",
       "title": "'A second set of eyes': AI-supported breast cancer screening spots more cancers earlier, landmark trial finds - Live Science",
       "summary": "'A second set of eyes': AI-supported breast cancer screening spots more cancers earlier, landmark trial finds Live Science",
       "topic": "health-style",
@@ -4973,7 +4983,7 @@
       "url": "https://stories.tamu.edu/news/2026/02/06/texas-am-is-the-no-1-research-university-in-texas-top-25-nationally/"
     },
     {
-      "id": "gn-health-style-19",
+      "id": "gn-health-style-18",
       "title": "Digital Nutrition Trackers - Trend Hunter",
       "summary": "Digital Nutrition Trackers Trend Hunter",
       "topic": "health-style",
@@ -5071,16 +5081,6 @@
       "date": "Fri, 06 Feb 2026 18:06:00 GMT",
       "imageUrl": "https://fortune.com/img-assets/wp-content/uploads/2026/02/AP26037083228655.jpg",
       "url": "https://fortune.com/2026/02/06/trump-tariff-impact-economy-data-american-investment-who-pays/"
-    },
-    {
-      "id": "gn-health-style-37",
-      "title": "Large language model diagnostic assistance for physicians in a lower-middle-income country: a randomized controlled trial - Nature",
-      "summary": "Large language model diagnostic assistance for physicians in a lower-middle-income country: a randomized controlled trial Nature",
-      "topic": "health-style",
-      "source": "Nature",
-      "date": "Fri, 06 Feb 2026 17:54:10 GMT",
-      "imageUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs44360-025-00007-8/MediaObjects/44360_2025_7_Fig1_HTML.png",
-      "url": "https://www.nature.com/articles/s44360-025-00007-8"
     },
     {
       "id": "gn-visual-art-photography-0",
