@@ -5,6 +5,10 @@ on:
     - cron: "*/10 * * * *" # Every 10 minutes (rotating: 1 category per run, full cycle ~130 min)
   workflow_dispatch: # Allow manual trigger
 
+concurrency:
+  group: fetch-news
+  cancel-in-progress: true
+
 permissions:
   contents: write
   actions: write
@@ -38,6 +42,7 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "chore: update pre-fetched news data [skip ci]"
+            git pull --rebase origin main
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
