@@ -271,39 +271,28 @@ export default function InfoPage() {
             <h3 className="text-lg font-bold text-white mb-4">
               Founded by Jacky Lee
             </h3>
-            <div className="space-y-4 text-[var(--text-secondary)] leading-relaxed">
-              <p>
-                Jacky Lee is a Hongkonger and{" "}
-                <a
-                  href="https://jackylee.art"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[var(--accent)] hover:underline"
-                >
-                  award-winning visual artist
-                </a>{" "}
-                based in Canberra, Australia. He is also a Chartered Building
-                Engineer and Chartered Building Surveyor (RICS, CABE), with
-                over two decades of professional experience in Hong
-                Kong&apos;s construction industry.
-              </p>
-              <p>
-                As a photographer, he is a National Geographic Photo Contest
-                champion and published author, and has been invited as a
-                course tutor and guest speaker at the University of Hong Kong.
-                He also serves as a photography advisor to the Hong Kong
-                Biodiversity Museum and regularly judges international photo
-                competitions.
-              </p>
-              <p>
-                Under{" "}
-                <strong className="text-white">Jacky Lee Visionary Creations</strong>,
-                he leads multiple ventures including TheDayAfterAI News,
-                Canberra Drone Building Inspection &amp; Consultancy, and
-                Physiognomy.AI—combining engineering discipline, creative
-                practice, and a practical interest in AI.
-              </p>
-            </div>
+            <p className="text-[var(--text-secondary)] leading-relaxed">
+              TheDayAfterAI News is a venture of{" "}
+              <a
+                href="https://jackyleevc.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--accent)] hover:underline"
+              >
+                Jacky Lee Visionary Creations
+              </a>
+              , founded by Hongkonger and Canberra-based{" "}
+              <a
+                href="https://jackylee.art"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--accent)] hover:underline"
+              >
+                visual artist
+              </a>{" "}
+              Jacky Lee—combining engineering discipline, creative practice,
+              and a practical interest in AI.
+            </p>
           </div>
         </section>
 
