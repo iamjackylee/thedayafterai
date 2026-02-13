@@ -130,9 +130,7 @@ export default function SiteFooter({ onScrollToSection }: SiteFooterProps) {
               </a>
               <span>|</span>
               <a
-                href="https://www.thedayafterai.com/contact"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`${basePath}/contact`}
                 className="hover:text-[var(--accent)] transition-colors"
               >
                 Contact

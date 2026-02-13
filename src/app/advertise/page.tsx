@@ -702,14 +702,12 @@ export default function AdvertisePage() {
                 info@thedayafterai.com
               </a>{" "}
               or{" "}
-              <a
-                href="https://www.thedayafterai.com/contact"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/contact"
                 className="text-[var(--accent)] hover:underline"
               >
                 contact us
-              </a>
+              </Link>
               .
             </p>
           </section>

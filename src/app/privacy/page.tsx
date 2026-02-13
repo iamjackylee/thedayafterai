@@ -580,14 +580,9 @@ export default function PrivacyPage() {
                 info@thedayafterai.com
               </a>{" "}
               or{" "}
-              <a
-                href="https://www.thedayafterai.com/contact"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--accent)] hover:underline"
-              >
+              <Link href="/contact" className="text-[var(--accent)] hover:underline">
                 contact us
-              </a>
+              </Link>
               . We may need to verify your identity before responding to such requests.
             </p>
           </section>
@@ -648,14 +643,9 @@ export default function PrivacyPage() {
                 info@thedayafterai.com
               </a>{" "}
               or{" "}
-              <a
-                href="https://www.thedayafterai.com/contact"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--accent)] hover:underline"
-              >
+              <Link href="/contact" className="text-[var(--accent)] hover:underline">
                 contact us
-              </a>
+              </Link>
               . We may need to verify your identity before processing your request, which may
               require you to provide additional information.
             </p>
@@ -816,14 +806,9 @@ export default function PrivacyPage() {
                 info@thedayafterai.com
               </a>{" "}
               or{" "}
-              <a
-                href="https://www.thedayafterai.com/contact"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--accent)] hover:underline"
-              >
+              <Link href="/contact" className="text-[var(--accent)] hover:underline">
                 contact us
-              </a>
+              </Link>
               .
             </p>
           </section>
