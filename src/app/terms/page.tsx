@@ -74,12 +74,14 @@ export default function TermsPage() {
               </li>
               <li>
                 <strong className="text-white">AI Market Insights</strong> — a daily experiment in
-                which AI forecasts the next-day price direction of a single U.S. stock. Results are
-                published openly. This content is educational and experimental only. It does not
-                constitute financial product advice within the meaning of the{" "}
-                <em>Corporations Act 2001</em> (Cth). TheDayAfterAI does not hold an Australian
-                Financial Services Licence (AFSL) and is not authorised to provide financial
-                product advice.
+                which AI forecasts the next-day price direction of a single U.S.-listed stock.
+                Results are published openly. This content is general information only, published
+                for educational and entertainment purposes as part of an ongoing experiment. It
+                does not constitute financial product advice—whether general or personal—within the
+                meaning of section&nbsp;766B of the <em>Corporations Act 2001</em> (Cth), and is
+                not intended to influence any person in making a decision in relation to a
+                financial product. TheDayAfterAI does not hold an Australian Financial Services
+                Licence (AFSL) and is not authorised to provide financial services of any kind.
               </li>
               <li>
                 <strong className="text-white">AI News Hub</strong> — a curated dashboard of AI
@@ -401,33 +403,73 @@ export default function TermsPage() {
             <h2 className="text-xl font-bold text-white mb-4 border-l-4 border-[var(--accent)] pl-4">
               10. Disclaimer
             </h2>
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">
+              10.1 General Disclaimer
+            </h3>
             <p>
               To the maximum extent permitted by law,{" "}
               <strong className="text-white">TheDayAfterAI</strong> provides the Website and its
               content on an &ldquo;as is&rdquo; and &ldquo;as available&rdquo; basis, without
-              warranties of any kind, whether express or implied. We curate content from various
-              external sources and use AI-assisted workflows to produce original summaries. We do
-              not guarantee the accuracy, completeness, or validity of any information presented,
+              warranties of any kind, whether express or implied, including but not limited to
+              implied warranties of merchantability, fitness for a particular purpose, and
+              non-infringement. We curate content from various external sources and use
+              AI-assisted workflows to produce original summaries. We do not guarantee the
+              accuracy, completeness, timeliness, or validity of any information presented,
               whether original or sourced from third parties. The opinions expressed in the curated
               content are those of the original authors and do not necessarily reflect the views
               of <strong className="text-white">TheDayAfterAI</strong>.
             </p>
-            <p className="mt-4">
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">
+              10.2 Important Notice — AI Market Insights
+            </h3>
+            <p>
               Our AI Market Insights feature is an experimental series in which AI forecasts the
-              next-day price direction of a single U.S. stock each day. This content is provided
-              solely for informational and educational purposes. It does not constitute financial
-              product advice within the meaning of the <em>Corporations Act 2001</em> (Cth),
-              investment recommendations, or a solicitation to buy or sell any securities.{" "}
-              <strong className="text-white">TheDayAfterAI</strong> does not hold an Australian
-              Financial Services Licence (AFSL). You should not rely on any forecast provided on
-              this Website when making investment decisions. Always consult a qualified and
-              licensed financial adviser before making any investment.
+              next-day price direction of a single U.S.-listed stock each day. This content is{" "}
+              <strong className="text-white">general information only</strong>. It is not, and is
+              not intended to be, financial product advice—whether general or personal—within the
+              meaning of section&nbsp;766B of the <em>Corporations Act 2001</em> (Cth). It does
+              not constitute a recommendation, an offer, or a solicitation to buy, sell, or hold
+              any financial product, and has not been prepared having regard to any person&apos;s
+              investment objectives, financial situation, or particular needs.
             </p>
-            <p className="mt-4 text-white font-semibold">
-              Nothing in these Terms excludes, restricts, or modifies any consumer guarantee,
-              right, or remedy conferred on you by the Australian Consumer Law (Schedule&nbsp;2 of
-              the <em>Competition and Consumer Act 2010</em> (Cth)) or any other applicable law
-              that cannot be excluded, restricted, or modified by agreement.
+            <p className="mt-3">
+              <strong className="text-white">TheDayAfterAI</strong> does not hold an Australian
+              Financial Services Licence (AFSL) and is not a representative of any AFSL holder. We
+              are not authorised to provide financial services under the{" "}
+              <em>Corporations Act 2001</em> (Cth).
+            </p>
+            <p className="mt-3">
+              AI-generated forecasts are the output of experimental machine-learning models. Past
+              forecast accuracy is not a reliable indicator of future results. You must not rely on
+              any forecast, prediction, or analysis published on this Website when making
+              investment or financial decisions. Before acting on any information, you should
+              obtain independent professional advice from a person who holds an appropriate AFSL
+              and who has considered your personal circumstances.
+            </p>
+
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">
+              10.3 Australian Consumer Law
+            </h3>
+            <p>
+              Certain legislation, including the Australian Consumer Law (Schedule&nbsp;2 of the{" "}
+              <em>Competition and Consumer Act 2010</em> (Cth)) (&ldquo;ACL&rdquo;), may imply
+              warranties, conditions, or guarantees, or impose obligations on TheDayAfterAI, that
+              cannot be excluded, restricted, or modified except to a limited extent
+              (&ldquo;Non-Excludable Guarantees&rdquo;). Nothing in these Terms purports to
+              exclude, restrict, or modify the application of any Non-Excludable Guarantee.
+            </p>
+            <p className="mt-3">
+              Except in relation to Non-Excludable Guarantees, all conditions, warranties, and
+              guarantees that may otherwise be implied by statute, custom, or the general law are
+              expressly excluded to the maximum extent permitted by law.
+            </p>
+            <p className="mt-3">
+              Where TheDayAfterAI is permitted by law to limit its liability for breach of a
+              Non-Excludable Guarantee, our liability is limited, at our option, to: (a)&nbsp;in
+              the case of services, the supply of the services again or the payment of the cost of
+              having the services supplied again; and (b)&nbsp;in the case of goods, the
+              replacement of the goods, the supply of equivalent goods, or the payment of the cost
+              of replacing the goods or acquiring equivalent goods.
             </p>
           </section>
 
@@ -437,8 +479,8 @@ export default function TermsPage() {
               11. Limitation of Liability
             </h2>
             <p className="mb-3">
-              To the fullest extent permitted by applicable law (and subject to the Australian
-              Consumer Law carve-out in Section&nbsp;10),{" "}
+              Subject to Section&nbsp;10.3 (Australian Consumer Law), and to the fullest extent
+              permitted by applicable law,{" "}
               <strong className="text-white">TheDayAfterAI</strong> shall not be liable for any
               indirect, incidental, special, consequential, or punitive damages, or any loss of
               profits, revenues, data, or use, whether incurred directly or indirectly, arising
@@ -470,6 +512,12 @@ export default function TermsPage() {
               transmitted, or otherwise made available via the Website. This includes, without
               limitation, any financial losses arising from reliance on AI-generated market
               insights or stock forecasts.
+            </p>
+            <p className="mt-3">
+              The limitations and exclusions in this section do not apply to liability that cannot
+              be excluded or limited under the Australian Consumer Law or other applicable
+              legislation. Where our liability cannot be excluded but can be limited under
+              section&nbsp;64A of the ACL, the limitations set out in Section&nbsp;10.3 apply.
             </p>
           </section>
 
