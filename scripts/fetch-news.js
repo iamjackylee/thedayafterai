@@ -1147,9 +1147,9 @@ function parseVideoEntries(xml) {
   const entries = extractEntries(xml);
   return entries.map((entry) => {
     const videoId = getTagContent(entry, "yt:videoId")[0] || "";
-    const title = getTagContent(entry, "title")[0] || "";
+    const title = stripHtml(getTagContent(entry, "title")[0] || "");
     const published = getTagContent(entry, "published")[0] || "";
-    const description = getTagContent(entry, "media:description")[0] || "";
+    const description = stripHtml(getTagContent(entry, "media:description")[0] || "");
     const thumbnails = getTagAttr(entry, "media:thumbnail", "url");
     const thumbnail = thumbnails[0] || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
     return { id: videoId, videoId, title, thumbnail, publishedAt: published, description, channelTitle: "TheDayAfterAI" };

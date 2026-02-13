@@ -1,7 +1,7 @@
 "use client";
 
 import { Play, Radio, ExternalLink } from "lucide-react";
-import { PLAYLIST_URL, CHANNEL_NAME, type YouTubeVideo } from "@/lib/api";
+import { decodeEntities, PLAYLIST_URL, CHANNEL_NAME, type YouTubeVideo } from "@/lib/api";
 
 interface DailyNewsBarProps {
   latestVideo: YouTubeVideo | null;
@@ -35,7 +35,7 @@ export default function DailyNewsBar({ latestVideo }: DailyNewsBarProps) {
               rel="noopener noreferrer"
               className="text-xs text-[var(--foreground)] sm:truncate hover:text-[var(--accent)] transition-colors font-medium"
             >
-              {latestVideo.title}
+              {decodeEntities(latestVideo.title)}
             </a>
           ) : (
             <span className="text-xs text-[var(--muted)] sm:truncate">
