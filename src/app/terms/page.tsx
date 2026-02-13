@@ -126,7 +126,15 @@ export default function TermsPage() {
               however, we do not guarantee the accuracy, completeness, or reliability of any
               AI-generated output. You acknowledge that AI-generated content may contain errors,
               omissions, or unintended inaccuracies, and you should independently verify any
-              information before relying on it.
+              information before relying on it. For further details, see our{" "}
+              <Link href="/disclaimer" className="text-[var(--accent)] hover:underline">
+                Disclaimer
+              </Link>{" "}
+              (Section&nbsp;3) and our{" "}
+              <Link href="/ethics-policy" className="text-[var(--accent)] hover:underline">
+                Ethics Policy
+              </Link>{" "}
+              (Section&nbsp;2).
             </p>
           </section>
 
@@ -384,10 +392,14 @@ export default function TermsPage() {
             </h2>
             <p>
               We reserve the right to make changes to our Website, policies, and these Terms at
-              any time. If these Terms are materially changed, we will post the revised Terms on
-              the Website and update the &ldquo;Last updated&rdquo; date above. Your continued use
-              of the Website following the posting of changes constitutes your acceptance of such
-              changes. We encourage you to review these Terms periodically.
+              any time. Any changes will be effective immediately upon posting the revised Terms
+              on this page and updating the &ldquo;Last updated&rdquo; date above. Where we make
+              material changes to these Terms (for example, changes to the limitation of liability,
+              indemnification, or dispute resolution provisions), we will use reasonable efforts to
+              notify you — for example, by posting a prominent notice on our Website or, where we
+              hold your email address, by sending you an email. Your continued use of the Website
+              following the posting of changes constitutes your acceptance of such changes. We
+              encourage you to review these Terms periodically.
             </p>
           </section>
 
@@ -431,28 +443,18 @@ export default function TermsPage() {
               10.2 Important Notice — AI Market Insights
             </h3>
             <p>
-              Our AI Market Insights feature is an experimental series in which AI forecasts the
-              next-day price direction of a single U.S.-listed stock each day. This content is{" "}
-              <strong className="text-white">general information only</strong>. It is not, and is
-              not intended to be, financial product advice—whether general or personal—within the
-              meaning of section&nbsp;766B of the <em>Corporations Act 2001</em> (Cth). It does
-              not constitute a recommendation, an offer, or a solicitation to buy, sell, or hold
-              any financial product, and has not been prepared having regard to any person&apos;s
-              investment objectives, financial situation, or particular needs.
-            </p>
-            <p className="mt-3">
-              <strong className="text-white">TheDayAfterAI</strong> does not hold an Australian
-              Financial Services Licence (AFSL) and is not a representative of any AFSL holder. We
-              are not authorised to provide financial services under the{" "}
-              <em>Corporations Act 2001</em> (Cth).
-            </p>
-            <p className="mt-3">
-              AI-generated forecasts are the output of experimental machine-learning models. Past
-              forecast accuracy is not a reliable indicator of future results. You must not rely on
-              any forecast, prediction, or analysis published on this Website when making
-              investment or financial decisions. Before acting on any information, you should
-              obtain independent professional advice from a person who holds an appropriate AFSL
-              and who has considered your personal circumstances.
+              Our AI Market Insights feature is{" "}
+              <strong className="text-white">general information only</strong>. It does not
+              constitute financial product advice—whether general or personal—within the meaning
+              of section&nbsp;766B of the <em>Corporations Act 2001</em> (Cth).
+              TheDayAfterAI does not hold an Australian Financial Services Licence (AFSL). For the
+              full financial information disclaimer, including important notices on past
+              performance, international investors, and the obligation to seek independent advice,
+              see our{" "}
+              <Link href="/disclaimer" className="text-[var(--accent)] hover:underline">
+                Disclaimer
+              </Link>{" "}
+              (Section&nbsp;4).
             </p>
 
             <h3 className="text-base font-semibold text-white mt-6 mb-2">
@@ -512,8 +514,9 @@ export default function TermsPage() {
             </ul>
             <p className="mt-3">
               In no event shall <strong className="text-white">TheDayAfterAI</strong>&apos;s total
-              liability to you for all damages, losses, and causes of action exceed the amount you
-              have paid, if any, for accessing the Website.{" "}
+              aggregate liability to you for all damages, losses, and causes of action exceed the
+              amount you have paid us, if any, for accessing the Website in the twelve (12) months
+              preceding the event giving rise to the liability.{" "}
               <strong className="text-white">TheDayAfterAI</strong> is not liable for any errors
               or omissions in content (whether human-authored or AI-generated), nor for any loss
               or damage of any kind incurred as a result of the use of any content posted,
@@ -695,6 +698,15 @@ export default function TermsPage() {
                 className="text-[var(--accent)] hover:underline"
               >
                 info@thedayafterai.com
+              </a>{" "}
+              or{" "}
+              <a
+                href="https://www.thedayafterai.com/contact"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--accent)] hover:underline"
+              >
+                contact us
               </a>
               .
             </p>

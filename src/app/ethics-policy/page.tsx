@@ -515,7 +515,15 @@ export default function EthicsPolicyPage() {
               personal — within the meaning of section&nbsp;766B of the{" "}
               <em>Corporations Act 2001</em> (Cth). TheDayAfterAI does not hold
               an Australian Financial Services Licence (AFSL) and is not
-              authorised to provide financial services.
+              authorised to provide financial services. For the full financial
+              information disclaimer, see our{" "}
+              <Link
+                href="/disclaimer"
+                className="text-[var(--accent)] hover:underline"
+              >
+                Disclaimer
+              </Link>{" "}
+              (Section&nbsp;4).
             </p>
 
             <h3 className="text-base font-semibold text-white mt-6 mb-2">
