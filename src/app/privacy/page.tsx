@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
@@ -21,7 +22,7 @@ export default function PrivacyPage() {
           >
             Privacy Policy
           </h1>
-          <p className="text-sm text-[var(--muted)]">Last updated: December 5, 2025</p>
+          <p className="text-sm text-[var(--muted)]">Last updated: February 13, 2026</p>
         </header>
 
         <div className="prose-terms space-y-10 text-[var(--text-secondary)] leading-relaxed">
@@ -31,9 +32,24 @@ export default function PrivacyPage() {
             &ldquo;our&rdquo; or &ldquo;us&rdquo;). We curate artificial intelligence news from
             various sources and present it on thedayafterai.com (&ldquo;Website&rdquo;). This
             Privacy Policy explains how we collect, use, disclose, and safeguard your information
-            when you interact with our curated content and services. Please read this policy
-            carefully. By accessing or using our Website, you agree to the terms outlined in this
-            Privacy Policy.
+            when you interact with our curated content and services. It should be read together
+            with our{" "}
+            <Link href="/terms" className="text-[var(--accent)] hover:underline">
+              Terms of Service
+            </Link>{" "}
+            and{" "}
+            <Link href="/disclaimer" className="text-[var(--accent)] hover:underline">
+              Disclaimer
+            </Link>
+            . Please read this policy carefully. By accessing or using our Website, you agree to
+            the terms outlined in this Privacy Policy.
+          </p>
+          <p>
+            We are committed to managing your personal information in accordance with the{" "}
+            <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles
+            (&ldquo;APPs&rdquo;) contained in that Act, as well as any other applicable privacy
+            legislation in the jurisdictions in which we operate or from which our Website is
+            accessed.
           </p>
 
           {/* 1. Information We Collect */}
@@ -64,10 +80,12 @@ export default function PrivacyPage() {
               </li>
             </ul>
 
-            <h3 className="text-base font-semibold text-white mt-6 mb-2">1.2 Non-Personal Information</h3>
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">1.2 Automatically Collected Information</h3>
             <p className="mb-3">
-              We may collect non-personally identifiable information (&ldquo;Non-Personal
-              Information&rdquo;) about you whenever you interact with our Website. This may include:
+              We may automatically collect certain information whenever you interact with our
+              Website. Some of this information (for example, IP addresses) may constitute Personal
+              Information under the <em>Privacy Act 1988</em> (Cth) where it can reasonably be used
+              to identify an individual. Automatically collected information may include:
             </p>
             <ul className="list-disc list-inside space-y-1 ml-2">
               <li>
@@ -75,9 +93,9 @@ export default function PrivacyPage() {
                 Website, such as pages visited, time spent on pages, and navigation paths.
               </li>
               <li>
-                <strong className="text-white">Device Information:</strong> Information about the
-                device you use to access our Website, including IP address, browser type, operating
-                system, and device identifiers.
+                <strong className="text-white">Device and Network Information:</strong> Information
+                about the device and network you use to access our Website, including IP address,
+                browser type, operating system, and device identifiers.
               </li>
               <li>
                 <strong className="text-white">Cookies and Tracking Technologies:</strong>{" "}
@@ -136,15 +154,19 @@ export default function PrivacyPage() {
             </h3>
             <ul className="list-disc list-inside space-y-1 ml-2">
               <li>
-                <strong className="text-white">Personalized Advertising:</strong> To display
-                personalized advertisements based on your interests and browsing behavior.
+                <strong className="text-white">Personalised Advertising:</strong> We may display
+                personalised advertisements based on your interests and browsing behaviour. You can
+                opt out of personalised advertising by adjusting your cookie preferences through
+                your browser settings or by using industry opt-out tools such as the Digital
+                Advertising Alliance&apos;s opt-out page.
               </li>
               <li>
                 <strong className="text-white">Third-Party Advertising Partners:</strong> We may
                 share limited information with third-party advertising partners, who may use cookies
                 and similar technologies to collect or receive information from our Website and
                 elsewhere on the internet to provide measurement services and targeted ads. We
-                encourage you to review the privacy policies of these third parties.
+                encourage you to review the privacy policies of these third parties. We do not sell
+                your Personal Information.
               </li>
             </ul>
 
@@ -173,7 +195,9 @@ export default function PrivacyPage() {
                 Access to such information is restricted to authorised team members and it is used
                 only for editorial purposes consistent with our Editorial Independence and Ethics
                 Policy. We do not disclose the identities of confidential sources unless legally
-                required to do so.
+                required to do so. Where applicable, we rely on the journalist privilege under
+                section&nbsp;126K of the <em>Evidence Act 1995</em> (Cth) to protect the identity
+                of our confidential sources.
               </li>
             </ul>
           </section>
@@ -195,28 +219,26 @@ export default function PrivacyPage() {
             <ul className="list-disc list-inside space-y-1 ml-2">
               <li>
                 <strong className="text-white">Hosting Providers:</strong> To host and maintain our
-                Website.
+                Website. Our Website is currently hosted on third-party infrastructure. The hosting
+                provider may collect server logs, which can include IP addresses, request timestamps,
+                and referring URLs.
               </li>
               <li>
                 <strong className="text-white">Email Service Providers:</strong> To manage our email
-                communications.
+                communications and newsletters.
               </li>
               <li>
-                <strong className="text-white">Analytics Providers:</strong>
-                <ul className="list-disc list-inside space-y-1 ml-6 mt-1">
-                  <li>
-                    <strong className="text-white">Google Analytics:</strong> We use Google Analytics
-                    to understand how our Website is used. Google Analytics may collect information
-                    about your use of the Website, including your IP address. For more information on
-                    how Google collects and processes data, please visit Google&apos;s Privacy Policy.
-                  </li>
-                  <li>
-                    <strong className="text-white">Squarespace Analytics:</strong> We use Squarespace
-                    Analytics to monitor and analyze the performance and usage of our Website.
-                    Squarespace Analytics may collect information such as your IP address, browser
-                    type, device information, and browsing behavior.
-                  </li>
-                </ul>
+                <strong className="text-white">Analytics Providers:</strong> We may use third-party
+                analytics tools to understand how our Website is used. Where we do so, these
+                providers may collect information about your use of the Website, including your IP
+                address, browser type, device information, and browsing behaviour. We will update
+                this section to identify specific analytics providers as and when they are adopted.
+              </li>
+              <li>
+                <strong className="text-white">API Service Providers:</strong> We use third-party
+                APIs (such as the YouTube Data API and news aggregation APIs) to deliver content on
+                the Website. Your interaction with embedded content from these providers may be
+                subject to their own privacy policies.
               </li>
             </ul>
 
@@ -225,7 +247,9 @@ export default function PrivacyPage() {
             </h3>
             <p>
               In the event of a merger, acquisition, or sale of all or a portion of our assets, your
-              information may be transferred as part of the transaction.
+              information may be transferred as part of the transaction. Where practicable, we will
+              notify you before your Personal Information is transferred and becomes subject to a
+              different privacy policy.
             </p>
 
             <h3 className="text-base font-semibold text-white mt-6 mb-2">3.3 With Your Consent</h3>
@@ -289,12 +313,10 @@ export default function PrivacyPage() {
               4.3 Other Tracking Technologies
             </h3>
             <p>
-              We may use web beacons, pixel tags, and similar technologies to monitor and analyze
-              the usage of our Website and to deliver targeted advertisements. Additionally, we use
-              Google Analytics to understand how our Website is used. We also use Squarespace
-              Analytics to monitor and analyze the performance and usage of our Website. Please note
-              that third-party content providers may also use cookies and tracking technologies on
-              our Website over which we have no control. We encourage you to review the privacy
+              We may use web beacons, pixel tags, and similar technologies to monitor and analyse
+              the usage of our Website. Please note that third-party content providers (including
+              embedded video players and news APIs) may also use cookies and tracking technologies
+              on our Website over which we have no control. We encourage you to review the privacy
               policies of these third parties.
             </p>
 
@@ -336,6 +358,19 @@ export default function PrivacyPage() {
               storage is 100% secure. Therefore, we cannot guarantee absolute security of your
               information.
             </p>
+
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">
+              5.2 Data Breach Notification
+            </h3>
+            <p>
+              In the event of an eligible data breach within the meaning of Part&nbsp;IIIC of
+              the <em>Privacy Act 1988</em> (Cth) (the Notifiable Data Breaches scheme), we will
+              take all steps required under that Act, including notifying affected individuals and
+              the Office of the Australian Information Commissioner (OAIC) as soon as practicable.
+              Where a data breach affects individuals in the European Economic Area, we will also
+              comply with our notification obligations under Articles&nbsp;33 and&nbsp;34 of the
+              GDPR.
+            </p>
           </section>
 
           {/* 6. Data Retention */}
@@ -343,11 +378,33 @@ export default function PrivacyPage() {
             <h2 className="text-xl font-bold text-white mb-4 border-l-4 border-[var(--accent)] pl-4">
               6. Data Retention
             </h2>
-            <p>
-              We retain your Personal Information only for as long as necessary to fulfill the
+            <p className="mb-3">
+              We retain your Personal Information only for as long as necessary to fulfil the
               purposes outlined in this Privacy Policy, unless a longer retention period is required
-              or permitted by law. When your information is no longer needed, we will securely delete
-              or anonymize it.
+              or permitted by law. As a general guide:
+            </p>
+            <ul className="list-disc list-inside space-y-1 ml-2">
+              <li>
+                <strong className="text-white">Account information</strong> — retained for the life
+                of your account and for up to 12&nbsp;months after account closure, unless we are
+                required by law to retain it for longer.
+              </li>
+              <li>
+                <strong className="text-white">Contact and support enquiries</strong> — retained for
+                up to 24&nbsp;months from the date of the last communication.
+              </li>
+              <li>
+                <strong className="text-white">Server logs and analytics data</strong> — retained
+                for up to 26&nbsp;months, after which they are aggregated or deleted.
+              </li>
+              <li>
+                <strong className="text-white">Marketing and newsletter data</strong> — retained
+                until you unsubscribe, after which your data will be deleted within 30&nbsp;days.
+              </li>
+            </ul>
+            <p className="mt-3">
+              When your information is no longer needed, we will securely delete or anonymise it in
+              accordance with our data retention procedures.
             </p>
           </section>
 
@@ -356,41 +413,81 @@ export default function PrivacyPage() {
             <h2 className="text-xl font-bold text-white mb-4 border-l-4 border-[var(--accent)] pl-4">
               7. Your Rights and Choices
             </h2>
-            <p className="mb-4">
-              Depending on your jurisdiction, you may have the following rights regarding your
-              Personal Information:
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">
+              7.1 Rights Under the Australian Privacy Principles
+            </h3>
+            <p className="mb-3">
+              Under the <em>Privacy Act 1988</em> (Cth) and the APPs, you have the following
+              rights in relation to Personal Information we hold about you:
+            </p>
+            <ul className="list-disc list-inside space-y-1 ml-2">
+              <li>
+                <strong className="text-white">Access (APP&nbsp;12):</strong> You have the right to
+                request access to the Personal Information we hold about you. We will respond to
+                your request within a reasonable period (and in any event within 30&nbsp;days).
+              </li>
+              <li>
+                <strong className="text-white">Correction (APP&nbsp;13):</strong> You have the right
+                to request that we correct any Personal Information that is inaccurate, out of date,
+                incomplete, irrelevant, or misleading.
+              </li>
+            </ul>
+            <p className="mt-3">
+              To exercise these rights, please contact us using the details in Section&nbsp;16
+              below. We may need to verify your identity before processing your request.
             </p>
 
-            <h3 className="text-base font-semibold text-white mt-6 mb-2">7.1 Access and Correction</h3>
-            <p>
-              You can access and update your Personal Information by logging into your account or
-              contacting us directly.
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">
+              7.2 Additional Rights
+            </h3>
+            <p className="mb-3">
+              Depending on your jurisdiction, you may also have the following rights:
             </p>
+            <ul className="list-disc list-inside space-y-1 ml-2">
+              <li>
+                <strong className="text-white">Data Portability:</strong> You may have the right to
+                receive a copy of your Personal Information in a structured, machine-readable format.
+              </li>
+              <li>
+                <strong className="text-white">Deletion:</strong> You may request the deletion of
+                your Personal Information, subject to certain exceptions (for example, where we are
+                required by law to retain it).
+              </li>
+            </ul>
 
-            <h3 className="text-base font-semibold text-white mt-6 mb-2">7.2 Data Portability</h3>
-            <p>
-              You may have the right to receive a copy of your Personal Information in a structured,
-              machine-readable format.
-            </p>
-
-            <h3 className="text-base font-semibold text-white mt-6 mb-2">7.3 Deletion</h3>
-            <p>
-              You may request the deletion of your Personal Information, subject to certain
-              exceptions.
-            </p>
-
-            <h3 className="text-base font-semibold text-white mt-6 mb-2">7.4 Opt-Out</h3>
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">7.3 Opt-Out and Consent Withdrawal</h3>
             <p>
               You can opt out of receiving promotional communications by following the unsubscribe
-              instructions included in such emails or by contacting us directly.
+              instructions included in such emails or by contacting us directly. Where we process
+              your Personal Information on the basis of your consent, you have the right to withdraw
+              that consent at any time by contacting us. Withdrawal of consent does not affect the
+              lawfulness of processing carried out before the withdrawal.
             </p>
 
-            <h3 className="text-base font-semibold text-white mt-6 mb-2">7.5 Do Not Track</h3>
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">7.4 Do Not Track</h3>
             <p>
               Our Website does not respond to &ldquo;Do Not Track&rdquo; signals. However, you can
               manage your tracking preferences through your browser settings. Please be aware that
               third-party sites linked from our Website may also not honour &ldquo;Do Not
               Track&rdquo; signals.
+            </p>
+
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">7.5 Complaints</h3>
+            <p>
+              If you believe we have breached the APPs or mishandled your Personal Information, you
+              may lodge a complaint with us using the contact details in Section&nbsp;16. We will
+              acknowledge your complaint within 7&nbsp;days and endeavour to resolve it within
+              30&nbsp;days. If you are not satisfied with our response, you have the right to lodge
+              a complaint with the Office of the Australian Information Commissioner (OAIC) at{" "}
+              <a
+                href="https://www.oaic.gov.au"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--accent)] hover:underline"
+              >
+                www.oaic.gov.au
+              </a>
+              .
             </p>
           </section>
 
@@ -411,13 +508,27 @@ export default function PrivacyPage() {
             </p>
 
             <h3 className="text-base font-semibold text-white mt-6 mb-2">
-              8.2 Data Processing by Squarespace
+              8.2 Lawful Basis for Processing
             </h3>
-            <p>
-              Our Website is hosted on the Squarespace platform, which processes data on our behalf.
-              While we strive to ensure that your Personal Information is handled in compliance with
-              GDPR, certain aspects of data processing are managed by Squarespace.
+            <p className="mb-3">
+              Under GDPR Article&nbsp;6, we process your Personal Information on the following
+              lawful bases:
             </p>
+            <ul className="list-disc list-inside space-y-1 ml-2">
+              <li>
+                <strong className="text-white">Consent</strong> — for marketing communications and
+                non-essential cookies (Article&nbsp;6(1)(a)).
+              </li>
+              <li>
+                <strong className="text-white">Legitimate Interests</strong> — for website analytics,
+                fraud prevention, and improving our services, where those interests are not overridden
+                by your data protection rights (Article&nbsp;6(1)(f)).
+              </li>
+              <li>
+                <strong className="text-white">Legal Obligation</strong> — where we are required to
+                process your data to comply with applicable law (Article&nbsp;6(1)(c)).
+              </li>
+            </ul>
 
             <h3 className="text-base font-semibold text-white mt-6 mb-2">
               8.3 Specific GDPR Rights
@@ -486,15 +597,7 @@ export default function PrivacyPage() {
             </p>
 
             <h3 className="text-base font-semibold text-white mt-6 mb-2">
-              9.2 Data Processing by Squarespace
-            </h3>
-            <p>
-              Our Website is hosted on the Squarespace platform, which processes data on our behalf.
-              Some aspects of data processing are managed by Squarespace.
-            </p>
-
-            <h3 className="text-base font-semibold text-white mt-6 mb-2">
-              9.3 Specific CCPA Rights
+              9.2 Specific CCPA Rights
             </h3>
             <ul className="list-disc list-inside space-y-1 ml-2">
               <li>
@@ -522,7 +625,7 @@ export default function PrivacyPage() {
             </ul>
 
             <h3 className="text-base font-semibold text-white mt-6 mb-2">
-              9.4 How to Exercise Your CCPA Rights
+              9.3 How to Exercise Your CCPA Rights
             </h3>
             <p>
               To exercise any of these rights, please{" "}
@@ -538,7 +641,7 @@ export default function PrivacyPage() {
               require you to provide additional information.
             </p>
 
-            <h3 className="text-base font-semibold text-white mt-6 mb-2">9.5 Authorized Agents</h3>
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">9.4 Authorized Agents</h3>
             <p>
               You may designate an authorized agent to make a request on your behalf. The authorized
               agent must have written permission to act on your behalf, and we may require you to
@@ -546,7 +649,7 @@ export default function PrivacyPage() {
             </p>
 
             <h3 className="text-base font-semibold text-white mt-6 mb-2">
-              9.6 Minors Under 16 Years of Age
+              9.5 Minors Under 16 Years of Age
             </h3>
             <p>
               We do not knowingly collect or sell Personal Information from minors under 16 years of
@@ -566,7 +669,9 @@ export default function PrivacyPage() {
               Our Website is not intended for children under the age of 13. We do not knowingly
               collect Personal Information from children under 13. If we become aware that a child
               under 13 has provided us with Personal Information, we will take steps to delete such
-              information promptly.
+              information promptly. Under the APPs, we treat Personal Information of children as
+              sensitive where the child may not have the capacity to consent, and we will seek
+              parental or guardian consent where required.
             </p>
           </section>
 
@@ -595,28 +700,39 @@ export default function PrivacyPage() {
             </h3>
             <p>
               Your Personal Information may be transferred to and processed in countries other than
-              the country in which you are resident. These countries may have data protection laws
-              that differ from those of your country.
+              the country in which you are resident, including the United States. These countries
+              may have data protection laws that differ from those of your country.
             </p>
 
             <h3 className="text-base font-semibold text-white mt-6 mb-2">
-              12.2 Data Processing by Squarespace
+              12.2 Safeguards for Cross-Border Transfers
             </h3>
-            <p>
-              Our Website is hosted on the Squarespace platform, which may use servers located in
-              the United States and other countries. Squarespace processes data on our behalf, and
-              we rely on them to implement appropriate safeguards to protect your Personal
-              Information in compliance with applicable data protection laws.
+            <p className="mb-3">
+              Where your Personal Information is transferred overseas, we take reasonable steps to
+              comply with:
             </p>
+            <ul className="list-disc list-inside space-y-1 ml-2">
+              <li>
+                <strong className="text-white">APP&nbsp;8</strong> — Before disclosing Personal
+                Information to an overseas recipient, we take reasonable steps to ensure that the
+                recipient does not breach the APPs in relation to that information.
+              </li>
+              <li>
+                <strong className="text-white">GDPR</strong> — Where we transfer Personal
+                Information of EEA residents outside the EEA, we rely on appropriate safeguards
+                such as Standard Contractual Clauses (SCCs) approved by the European Commission, or
+                transfers to countries that have received an adequacy decision.
+              </li>
+            </ul>
 
             <h3 className="text-base font-semibold text-white mt-6 mb-2">
-              12.3 User Consent to Data Transfers
+              12.3 Hosting and Third-Party Infrastructure
             </h3>
             <p>
-              By using our Website and providing your information, you consent to the transfer of
-              your Personal Information to our servers and facilities, which may be located outside
-              your country of residence. We take reasonable steps to ensure that your data is treated
-              securely and in accordance with this Privacy Policy.
+              Our Website is hosted on third-party infrastructure, which may use servers located in
+              the United States and other countries. We require our hosting providers and service
+              providers to implement appropriate technical and organisational safeguards to protect
+              your Personal Information.
             </p>
           </section>
 
@@ -627,16 +743,47 @@ export default function PrivacyPage() {
             </h2>
             <p>
               We may update this Privacy Policy from time to time. Any changes will be effective
-              immediately upon posting the revised policy on our Website. We encourage you to review
+              immediately upon posting the revised policy on our Website and updating the
+              &ldquo;Last updated&rdquo; date at the top of this page. Where we make material
+              changes to this Privacy Policy (for example, changes to the types of Personal
+              Information we collect or the purposes for which we use it), we will use reasonable
+              efforts to notify you — for example, by posting a prominent notice on our Website or,
+              where we hold your email address, by sending you an email. We encourage you to review
               this Privacy Policy periodically to stay informed about how we are protecting your
               information.
             </p>
           </section>
 
-          {/* 14. Contact Us */}
+          {/* 14. Governing Law */}
           <section>
             <h2 className="text-xl font-bold text-white mb-4 border-l-4 border-[var(--accent)] pl-4">
-              14. Contact Us
+              14. Governing Law
+            </h2>
+            <p>
+              This Privacy Policy is governed by and construed in accordance with the laws of the
+              Australian Capital Territory and the Commonwealth of Australia, including the{" "}
+              <em>Privacy Act 1988</em> (Cth), without regard to conflict of law provisions. You
+              irrevocably submit to the non-exclusive jurisdiction of the courts of the Australian
+              Capital Territory and any courts entitled to hear appeals therefrom.
+            </p>
+          </section>
+
+          {/* 15. Severability */}
+          <section>
+            <h2 className="text-xl font-bold text-white mb-4 border-l-4 border-[var(--accent)] pl-4">
+              15. Severability
+            </h2>
+            <p>
+              If any provision of this Privacy Policy is held to be invalid, unlawful, or
+              unenforceable by a court of competent jurisdiction, that provision shall be severed
+              and the remaining provisions shall continue in full force and effect.
+            </p>
+          </section>
+
+          {/* 16. Contact Us */}
+          <section>
+            <h2 className="text-xl font-bold text-white mb-4 border-l-4 border-[var(--accent)] pl-4">
+              16. Contact Us
             </h2>
             <p>
               If you have any questions or concerns about this Privacy Policy or our data practices,
