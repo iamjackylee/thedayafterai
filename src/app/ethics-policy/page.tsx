@@ -62,7 +62,7 @@ export default function EthicsPolicyPage() {
             the Terms of Service, the Terms of Service prevail.
           </p>
           <p>
-            <strong className="text-white">TheDayAfterAI News</strong> (&ldquo;TheDayAfterAI&rdquo;) is a project
+            <strong className="text-white">TheDayAfterAI News</strong> (&ldquo;TheDayAfterAI&rdquo;) is a publication
             developed and operated by{" "}
             <a
               href="https://jackylee.art"
@@ -138,18 +138,19 @@ export default function EthicsPolicyPage() {
             </p>
             <ul className="list-disc list-inside space-y-1 ml-2">
               <li>
-                <strong className="text-white">AI News Briefing</strong> — AI
-                curators scan and aggregate news across specific AI domains. An
-                AI reporter synthesises this information into clear, engaging
-                summaries using machine learning and natural language
-                processing. Human editors review all AI-generated output before
-                publication to ensure accuracy, relevance, and quality.
+                <strong className="text-white">AI News Briefing</strong> — Each
+                day we select the most significant AI stories from trusted
+                sources. AI condenses the key points into clear, structured
+                scripts, which are produced into concise video summaries
+                published on our YouTube channel and website. Human editors
+                review all output before publication to ensure accuracy,
+                relevance, and quality.
               </li>
               <li>
                 <strong className="text-white">AI Market Insights</strong> — AI
                 forecasts the next-day price direction of a single U.S.-listed
                 stock each day. This is an experimental feature published for
-                educational and entertainment purposes only. It does not
+                educational and experimental purposes only. It does not
                 constitute financial product advice. See our{" "}
                 <Link
                   href="/disclaimer"

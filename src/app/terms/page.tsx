@@ -29,7 +29,7 @@ export default function TermsPage() {
           {/* Preamble */}
           <p>
             Welcome to <strong className="text-white">TheDayAfterAI News</strong> (&ldquo;TheDayAfterAI&rdquo;,
-            &ldquo;we&rdquo;, &ldquo;our&rdquo; or &ldquo;us&rdquo;), a project developed and operated by{" "}
+            &ldquo;we&rdquo;, &ldquo;our&rdquo; or &ldquo;us&rdquo;), a publication developed and operated by{" "}
             <a
               href="https://jackylee.art"
               className="text-[var(--accent)] hover:underline"
@@ -83,7 +83,7 @@ export default function TermsPage() {
                 <strong className="text-white">AI Market Insights</strong> — a daily experiment in
                 which AI forecasts the next-day price direction of a single U.S.-listed stock.
                 Results are published openly. This content is general information only, published
-                for educational and entertainment purposes as part of an ongoing experiment. It
+                for educational and experimental purposes as part of an ongoing experiment. It
                 does not constitute financial product advice—whether general or personal—within the
                 meaning of section&nbsp;766B of the <em>Corporations Act 2001</em> (Cth), and is
                 not intended to influence any person in making a decision in relation to a
