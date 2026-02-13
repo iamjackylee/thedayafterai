@@ -408,14 +408,7 @@ export default function DisclaimerPage() {
               14. Contact Us
             </h2>
             <p>
-              If you have any questions about this Disclaimer, please email us at{" "}
-              <a
-                href="mailto:info@thedayafterai.com"
-                className="text-[var(--accent)] hover:underline"
-              >
-                info@thedayafterai.com
-              </a>{" "}
-              or{" "}
+              If you have any questions about this Disclaimer, please{" "}
               <Link href="/contact" className="text-[var(--accent)] hover:underline">
                 contact us
               </Link>

@@ -129,12 +129,12 @@ export default function AdvertisePage() {
             <p className="mt-3">
               For detailed audience demographics, traffic data, and a
               downloadable media kit, please{" "}
-              <a
-                href="mailto:info@thedayafterai.com"
+              <Link
+                href="/contact"
                 className="text-[var(--accent)] hover:underline"
               >
                 contact our advertising team
-              </a>
+              </Link>
               .
             </p>
           </section>
@@ -496,13 +496,13 @@ export default function AdvertisePage() {
             <ol className="list-decimal list-inside space-y-3 ml-2">
               <li>
                 <strong className="text-white">Contact Us</strong> —
-                Reach out to our advertising team at{" "}
-                <a
-                  href="mailto:info@thedayafterai.com"
+                Reach out to our advertising team via our{" "}
+                <Link
+                  href="/contact"
                   className="text-[var(--accent)] hover:underline"
                 >
-                  info@thedayafterai.com
-                </a>{" "}
+                  contact page
+                </Link>{" "}
                 with your enquiry, including your target audience, budget,
                 and preferred ad format.
               </li>
@@ -693,15 +693,7 @@ export default function AdvertisePage() {
             </h2>
             <p>
               We&apos;re excited to partner with you. To explore
-              advertising opportunities or request a media kit, please
-              email us at{" "}
-              <a
-                href="mailto:info@thedayafterai.com"
-                className="text-[var(--accent)] hover:underline"
-              >
-                info@thedayafterai.com
-              </a>{" "}
-              or{" "}
+              advertising opportunities or request a media kit, please{" "}
               <Link
                 href="/contact"
                 className="text-[var(--accent)] hover:underline"

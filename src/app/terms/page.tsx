@@ -361,13 +361,10 @@ export default function TermsPage() {
             </h3>
             <p>
               If you encounter content that you believe violates these Terms, please report it to
-              us at{" "}
-              <a
-                href="mailto:info@thedayafterai.com"
-                className="text-[var(--accent)] hover:underline"
-              >
-                info@thedayafterai.com
-              </a>
+              us via our{" "}
+              <Link href="/contact" className="text-[var(--accent)] hover:underline">
+                contact page
+              </Link>
               . We will review the reported content and take appropriate action in a timely manner.
             </p>
           </section>
@@ -592,14 +589,10 @@ export default function TermsPage() {
               14.1 Informal Resolution
             </h3>
             <p>
-              Before commencing any formal dispute resolution proceedings, you agree to first
-              contact us at{" "}
-              <a
-                href="mailto:info@thedayafterai.com"
-                className="text-[var(--accent)] hover:underline"
-              >
-                info@thedayafterai.com
-              </a>{" "}
+              Before commencing any formal dispute resolution proceedings, you agree to first{" "}
+              <Link href="/contact" className="text-[var(--accent)] hover:underline">
+                contact us
+              </Link>{" "}
               and attempt to resolve the dispute informally for at least 30 days.
             </p>
 
@@ -704,14 +697,7 @@ export default function TermsPage() {
               19. Contact Us
             </h2>
             <p>
-              If you have any questions about these Terms, please email us at{" "}
-              <a
-                href="mailto:info@thedayafterai.com"
-                className="text-[var(--accent)] hover:underline"
-              >
-                info@thedayafterai.com
-              </a>{" "}
-              or{" "}
+              If you have any questions about these Terms, please{" "}
               <Link href="/contact" className="text-[var(--accent)] hover:underline">
                 contact us
               </Link>

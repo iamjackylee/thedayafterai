@@ -642,15 +642,7 @@ export default function LicensingPage() {
             </h2>
             <p>
               For assistance in determining the appropriate Licensing Tier
-              or for any enquiries regarding these Licensing Terms, please
-              email us at{" "}
-              <a
-                href="mailto:info@thedayafterai.com"
-                className="text-[var(--accent)] hover:underline"
-              >
-                info@thedayafterai.com
-              </a>{" "}
-              or{" "}
+              or for any enquiries regarding these Licensing Terms, please{" "}
               <Link
                 href="/contact"
                 className="text-[var(--accent)] hover:underline"
