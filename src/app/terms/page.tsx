@@ -659,10 +659,14 @@ export default function TermsPage() {
               These Terms, together with our{" "}
               <Link href="/privacy" className="text-[var(--accent)] hover:underline">
                 Privacy Policy
-              </Link>{" "}
-              and{" "}
+              </Link>
+              ,{" "}
               <Link href="/disclaimer" className="text-[var(--accent)] hover:underline">
                 Disclaimer
+              </Link>
+              , and{" "}
+              <Link href="/ethics-policy" className="text-[var(--accent)] hover:underline">
+                Editorial Independence and Ethics Policy
               </Link>
               , constitute the entire agreement between you and{" "}
               <strong className="text-white">TheDayAfterAI</strong> regarding your use of the
