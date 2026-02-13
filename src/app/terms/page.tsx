@@ -687,6 +687,10 @@ export default function TermsPage() {
               <Link href="/licensing" className="text-[var(--accent)] hover:underline">
                 Licensing Terms
               </Link>
+              , and{" "}
+              <Link href="/advertise" className="text-[var(--accent)] hover:underline">
+                Advertise with Us
+              </Link>
               , constitute the entire agreement between you and{" "}
               <strong className="text-white">TheDayAfterAI</strong> regarding your use of the
               Website and supersede all prior agreements and understandings, whether written or
@@ -708,14 +712,9 @@ export default function TermsPage() {
                 info@thedayafterai.com
               </a>{" "}
               or{" "}
-              <a
-                href="https://www.thedayafterai.com/contact"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--accent)] hover:underline"
-              >
+              <Link href="/contact" className="text-[var(--accent)] hover:underline">
                 contact us
-              </a>
+              </Link>
               .
             </p>
           </section>
