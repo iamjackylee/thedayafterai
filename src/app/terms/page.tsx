@@ -22,7 +22,7 @@ export default function TermsPage() {
           >
             Terms of Service
           </h1>
-          <p className="text-sm text-[var(--muted)]">Last updated: February 13, 2025</p>
+          <p className="text-sm text-[var(--muted)]">Last updated: February 13, 2026</p>
         </header>
 
         <div className="prose-terms space-y-10 text-[var(--text-secondary)] leading-relaxed">
@@ -52,6 +52,14 @@ export default function TermsPage() {
             comply with and be bound by these Terms and our{" "}
             <Link href="/privacy" className="text-[var(--accent)] hover:underline">
               Privacy Policy
+            </Link>
+            ,{" "}
+            <Link href="/disclaimer" className="text-[var(--accent)] hover:underline">
+              Disclaimer
+            </Link>
+            , and{" "}
+            <Link href="/ethics-policy" className="text-[var(--accent)] hover:underline">
+              Editorial Independence and Ethics Policy
             </Link>
             . If you do not agree, please do not use the Website.
           </p>

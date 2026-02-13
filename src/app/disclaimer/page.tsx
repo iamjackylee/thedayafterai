@@ -34,10 +34,14 @@ export default function DisclaimerPage() {
             It should be read together with our{" "}
             <Link href="/terms" className="text-[var(--accent)] hover:underline">
               Terms of Service
-            </Link>{" "}
-            and{" "}
+            </Link>
+            ,{" "}
             <Link href="/privacy" className="text-[var(--accent)] hover:underline">
               Privacy Policy
+            </Link>
+            , and{" "}
+            <Link href="/ethics-policy" className="text-[var(--accent)] hover:underline">
+              Editorial Independence and Ethics Policy
             </Link>
             . To the extent of any inconsistency between this Disclaimer and the Terms of Service,
             the Terms of Service prevail. By accessing or using our Website, you acknowledge that
@@ -161,7 +165,13 @@ export default function DisclaimerPage() {
               <strong className="text-white">TheDayAfterAI</strong> does not trade in, hold
               positions in, or receive any benefit from the securities it forecasts or references.
               No director, employee, or agent of TheDayAfterAI is authorised to trade on the basis
-              of forecasts published on this Website.
+              of forecasts published on this Website. This prohibition extends to family members
+              and close associates of editorial staff to the extent that they have advance
+              knowledge of unpublished forecasts. See also our{" "}
+              <Link href="/ethics-policy" className="text-[var(--accent)] hover:underline">
+                Ethics Policy
+              </Link>{" "}
+              (Section&nbsp;5.2).
             </p>
 
             <h3 className="text-base font-semibold text-white mt-6 mb-2">
@@ -418,7 +428,14 @@ export default function DisclaimerPage() {
               14. Contact Us
             </h2>
             <p>
-              If you have any questions about this Disclaimer, please{" "}
+              If you have any questions about this Disclaimer, please email us at{" "}
+              <a
+                href="mailto:info@thedayafterai.com"
+                className="text-[var(--accent)] hover:underline"
+              >
+                info@thedayafterai.com
+              </a>{" "}
+              or{" "}
               <a
                 href="https://www.thedayafterai.com/contact"
                 target="_blank"

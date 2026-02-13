@@ -36,13 +36,18 @@ export default function PrivacyPage() {
             with our{" "}
             <Link href="/terms" className="text-[var(--accent)] hover:underline">
               Terms of Service
-            </Link>{" "}
-            and{" "}
+            </Link>
+            ,{" "}
             <Link href="/disclaimer" className="text-[var(--accent)] hover:underline">
               Disclaimer
             </Link>
-            . Please read this policy carefully. By accessing or using our Website, you agree to
-            the terms outlined in this Privacy Policy.
+            , and{" "}
+            <Link href="/ethics-policy" className="text-[var(--accent)] hover:underline">
+              Editorial Independence and Ethics Policy
+            </Link>
+            . To the extent of any inconsistency between this Privacy Policy and the Terms of
+            Service, the Terms of Service prevail. Please read this policy carefully. By accessing
+            or using our Website, you agree to the terms outlined in this Privacy Policy.
           </p>
           <p>
             We are committed to managing your personal information in accordance with the{" "}
@@ -776,7 +781,9 @@ export default function PrivacyPage() {
             <p>
               If any provision of this Privacy Policy is held to be invalid, unlawful, or
               unenforceable by a court of competent jurisdiction, that provision shall be severed
-              and the remaining provisions shall continue in full force and effect.
+              and the remaining provisions shall continue in full force and effect. Where possible,
+              the invalid provision shall be interpreted in a manner consistent with applicable law
+              to reflect its original intent.
             </p>
           </section>
 
@@ -787,7 +794,14 @@ export default function PrivacyPage() {
             </h2>
             <p>
               If you have any questions or concerns about this Privacy Policy or our data practices,
-              please{" "}
+              please email us at{" "}
+              <a
+                href="mailto:info@thedayafterai.com"
+                className="text-[var(--accent)] hover:underline"
+              >
+                info@thedayafterai.com
+              </a>{" "}
+              or{" "}
               <a
                 href="https://www.thedayafterai.com/contact"
                 target="_blank"
