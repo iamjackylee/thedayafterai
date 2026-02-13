@@ -32,7 +32,7 @@ export default function SiteFooter({ onScrollToSection }: SiteFooterProps) {
     }
     return (
       <a
-        href={`${basePath}/`}
+        href={`${basePath}/#${id}`}
         className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"
       >
         {label}

@@ -537,6 +537,24 @@ export default function Home() {
     loadData();
   }, [loadData]);
 
+  // Auto-scroll to section when navigating from another page with a hash (e.g. /#ai-academy)
+  const hasScrolledToHash = useRef(false);
+  useEffect(() => {
+    if (hasScrolledToHash.current || loadingNews) return;
+    const hash = window.location.hash.replace("#", "");
+    if (!hash) return;
+    const el = document.querySelector(`[data-topic-section="${hash}"]`);
+    if (el) {
+      hasScrolledToHash.current = true;
+      requestAnimationFrame(() => {
+        const header = document.querySelector("header");
+        const headerHeight = header ? header.getBoundingClientRect().height + 16 : 140;
+        const top = el.getBoundingClientRect().top + window.scrollY - headerHeight;
+        window.scrollTo({ top, behavior: "smooth" });
+      });
+    }
+  }, [loadingNews]);
+
   // Scroll to a section when a nav button is clicked
   const scrollToSection = (sectionId: string) => {
     const el = document.querySelector(`[data-topic-section="${sectionId}"]`);
