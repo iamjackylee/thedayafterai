@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-14T23:01:38.167Z",
+  "fetchedAt": "2026-02-14T23:36:59.575Z",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe",
   "news": [
     {
@@ -91,16 +91,6 @@
       "date": "Sat, 14 Feb 2026 14:11:40 GMT",
       "imageUrl": "images/news/government-courthouse-parliament-building-silhouette-scales-of-justice-digital-law-ai-regulation-tech-policy-governance-cybersecurity-circuit-board-network-legal-system-justice-balance.webp",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOeXZCd1NLWmVXN2FCM1Nhazl4dHVKSktEZm9QSU1nV0tLa3AzVjZjTi1aN2lwekwwYkJVLXlZUjNuNjVkTmlmNWU0alltNkx6ZFB4MFBpSklEVDRVQm5GSUVnQ0twdlN2S2FpQnFWQXc1Nloyd09vZk9leGV0bUEwcmJKaHhQNWUzRm1kMHZvRC1xWTYw?oc=5"
-    },
-    {
-      "id": "gn-digital-security-26",
-      "title": "AI-fuelled romance scams continue to surge this Valentine’s season, warn cyber experts - TahawulTech.com",
-      "summary": "AI-fuelled romance scams continue to surge this Valentine’s season, warn cyber experts TahawulTech.com",
-      "topic": "digital-security",
-      "source": "TahawulTech.com",
-      "date": "Sat, 14 Feb 2026 14:04:02 GMT",
-      "imageUrl": "images/news/secure-messaging-cybersecurity-chat-protection-shield-icon-warning-alert-phishing-scam-detection-data-privacy-encryption-trust-safety-content-moderation-online-communication-risk-management-ai-security-3d-minimal-illustration.webp",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNU19KVVBaTUx5T1djeV9oNUcyZmtBOFFXVXYyc2ppeTkxLWNYTFZqaUpDQ0cwdTZWVXo2b0ZwdjcyOG9rbEEtWEFCaXQxS3V5bG9UdWF4YTRWZlBYcm9OVXBRRzdiM3lxcjhEQURrSXpScGlDd3VXUUNnVkl3MVRsOEFvTlNYbTZ6OE1CVVpkMkVrNlY1UnAyZU9nQ0lraklvQ09jS1NXZUpqN0FsUy1iM0dabHRlT3FKMEVzTlBvMkxoZw?oc=5"
     },
     {
       "id": "gn-chatbot-development-34",
@@ -843,7 +833,7 @@
       "url": "https://winbuzzer.com/2026/02/13/anthropic-expands-claude-free-tier-openai-chatgpt-ads-xcxwbn/"
     },
     {
-      "id": "gn-digital-security-29",
+      "id": "gn-digital-security-26",
       "title": "Bank of Ireland saved customers €9.7 million by using AI to detect fraud in card payments - Finextra Research",
       "summary": "Bank of Ireland saved customers €9.7 million by using AI to detect fraud in card payments Finextra Research",
       "topic": "digital-security",
@@ -853,7 +843,7 @@
       "url": "https://www.finextra.com/newsarticle/47303/bank-of-ireland-saved-customers-97-million-by-using-ai-to-detect-fraud-in-card-payments"
     },
     {
-      "id": "gn-digital-security-28",
+      "id": "gn-digital-security-27",
       "title": "AI romance scams surge on UK dating apps, says study - SecurityBrief UK",
       "summary": "AI romance scams surge on UK dating apps, says study SecurityBrief UK",
       "topic": "digital-security",
@@ -1033,7 +1023,7 @@
       "url": "https://aerospaceglobalnews.com/news/hensoldt-helsing-ca1-europa-drone/"
     },
     {
-      "id": "gn-digital-security-36",
+      "id": "gn-digital-security-34",
       "title": "ClickFix crypto scam: shocking deepfake Zoom attacks on crypto bosses - Pune Mirror",
       "summary": "ClickFix crypto scam: shocking deepfake Zoom attacks on crypto bosses Pune Mirror",
       "topic": "digital-security",
@@ -1123,7 +1113,7 @@
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1hVU03dXAxdTNaQzE3S0JPUDY1VHBzbnZ5YUhFSGVVUy1rUnlJLVBMWDByM0pQM091V2ZKMF82bm9DZWpQVHkxWGh5bTEwVjhCaENzdnZZSWFtMXlTeTVzOXM1T2w1LWJ0Q0JSZF9UV0pIUVU?oc=5"
     },
     {
-      "id": "gn-digital-security-32",
+      "id": "gn-digital-security-30",
       "title": "SA daters warned as AI ‘pig butchering’ surges ahead of Valentines Day - ITWeb",
       "summary": "SA daters warned as AI ‘pig butchering’ surges ahead of Valentines Day ITWeb",
       "topic": "digital-security",
@@ -1141,6 +1131,16 @@
       "date": "Fri, 13 Feb 2026 08:36:48 GMT",
       "imageUrl": "https://i.thedefensepost.com/wp-content/uploads/2024/09/image.jpg",
       "url": "https://thedefensepost.com/2026/02/13/acs-bullfrog-us-award/"
+    },
+    {
+      "id": "gn-digital-security-49",
+      "title": "Shashi Tharoor Slams ‘Fake News’ Video: How To Detect AI-Generated Voices And Content - News18",
+      "summary": "Shashi Tharoor Slams ‘Fake News’ Video: How To Detect AI-Generated Voices And Content News18",
+      "topic": "digital-security",
+      "source": "News18",
+      "date": "Fri, 13 Feb 2026 08:06:00 GMT",
+      "imageUrl": "images/news/ai-knowledge-base-open-book-information-network-learning-education-digital-library-text-summaries-connected-nodes-search-indexing-research-documentation-machine-learning-natural-language-processing-content-discovery-abstract-line-icon-illustration.webp",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRXg3LXdvNHF2NS14c0RmTDJSdE5lZlN5dlBWdHp0RV80TnlwYVlkUVBwMTlJZFBkNS1GOEtqVkxkM1dZV3ZkdnIyeGFtZnk5ME9oMURSSkhDOFFEZ19ZemhPQlB1dU1XRVJFT2xuTFhCckROeGR6M0ZUbS1fcEd2LTlZaHJ1Q01FT0djRlo4LWpsOUIyUmxXWi1Va3hUNXcxc1pjeEdneFNndFJDS2luWWNjclNmMEdhRFZ4V2tqR1FiTnhWd2pj0gHMAUFVX3lxTE1GSlVHYWwyTC1CT1Y3Q254UUFZYjYxRTVRRzNIY3JsX1pSYXZIdGFSejM2X0JBQW5xWDNhX1ctZ3hwWkprSGh0RVIyUVFRWkFkWVRjOUttY2YwYUNvQ0ZzaVdPU1dyWERabVRVMTdnNmR4ZWRoOUtIUWhSelg2REo1Um5IZDNoQm5jWjZCTmcwdWJIeEVrU1hGQ2pGWnFoTFhqeWxFaVZfajJpSDhTZUJSNEFoMERleXV4ZnhNaW03bnNqZVBJOE1aWlhjTA?oc=5"
     },
     {
       "id": "gn-chatbot-development-39",
@@ -1523,7 +1523,7 @@
       "url": "https://natlawreview.com/article/patentability-implications-eu-ai-act?amp"
     },
     {
-      "id": "gn-digital-security-27",
+      "id": "gn-digital-security-38",
       "title": "McAfee warns Australians of AI-fuelled Valentine scams - SecurityBrief Australia",
       "summary": "McAfee warns Australians of AI-fuelled Valentine scams SecurityBrief Australia",
       "topic": "digital-security",
@@ -1533,7 +1533,7 @@
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdXhmSFB3a0UxMHVocmRpMk1GdERSZVVVcGtNdzVMUU16akNJN25mMXFrRW56bnlUdUotenBvQVhVM2NrMkd1T18wWk9ac2xEU0laTFpYbGtWbDVNd2k1SUIzUlF1R2RVdzNpR2FZYjhvS2JKQm16T2NFbkE5WUtBTmZGWWFuZXZmQ2NWdUQ1Yy1mMGM?oc=5"
     },
     {
-      "id": "gn-digital-security-37",
+      "id": "gn-digital-security-36",
       "title": "AI-driven romance scams emerge as new threat ahead of Valentine's Day - Mi-3.com.au",
       "summary": "AI-driven romance scams emerge as new threat ahead of Valentine's Day Mi-3.com.au",
       "topic": "digital-security",
@@ -1543,7 +1543,7 @@
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTVB6cHAzbVR5Q3BOT2xNcVdoeUZVQ2RINFZrVVdmUVpQci02S1BIUHNTSE41TXNQeTBwNlN6OGNUVkV0VmdqSHJsTEVqNFkzVVU0MDQ0OUs4SUxPSG9wckZUOEYxM3owNUZHUXNwRlJOMVVvUmVkWkM4c0tpem9WeHpXSnJVbk5wNHo5WVB2QXFfa3lOM190RDg3V1Nwdw?oc=5"
     },
     {
-      "id": "gn-digital-security-30",
+      "id": "gn-digital-security-28",
       "title": "Dating online this Valentine’s Day? Here’s how to spot an AI romance scam - Digital Trends",
       "summary": "Dating online this Valentine’s Day? Here’s how to spot an AI romance scam Digital Trends",
       "topic": "digital-security",
@@ -1623,7 +1623,7 @@
       "url": "https://www.multistate.us/insider/2026/2/12/how-ai-generated-content-laws-are-changing-across-the-country"
     },
     {
-      "id": "gn-digital-security-48",
+      "id": "gn-digital-security-47",
       "title": "Build Your Own AI-Resistant Anti-Fraud System - Weiss Ratings",
       "summary": "Build Your Own AI-Resistant Anti-Fraud System Weiss Ratings",
       "topic": "digital-security",
@@ -1843,7 +1843,7 @@
       "url": "https://dronelife.com/2026/02/12/promo-drone-announces-new-distribution-for-signage-drone/"
     },
     {
-      "id": "gn-digital-security-33",
+      "id": "gn-digital-security-31",
       "title": "New AI Voice Scam Is Targeting Bank Customers in Florida — Don’t Say “Yes” if This Number Calls - inkl",
       "summary": "New AI Voice Scam Is Targeting Bank Customers in Florida — Don’t Say “Yes” if This Number Calls inkl",
       "topic": "digital-security",
@@ -2023,7 +2023,7 @@
       "url": "https://open.kg/en/news/economy/71740-integra-city-predstavila-ii-reshenija-dlja-umnyh-i-ustojchivyh-gorodov-na-ai-everything-egypt-2026.html"
     },
     {
-      "id": "gn-digital-security-38",
+      "id": "gn-digital-security-37",
       "title": "Deepfake Fraud Goes Mainstream - Impakter",
       "summary": "Deepfake Fraud Goes Mainstream Impakter",
       "topic": "digital-security",
@@ -2093,7 +2093,7 @@
       "url": "https://www.computerworld.com/article/4131303/germany-greenlights-the-eu-ai-act-triggering-countdown-for-enterprise-compliance.html"
     },
     {
-      "id": "gn-digital-security-31",
+      "id": "gn-digital-security-29",
       "title": "ThreatsDay Bulletin: AI Prompt RCE, Claude 0-Click, RenEngine Loader, Auto 0-Days &amp; 25+ Stories - The Hacker News",
       "summary": "ThreatsDay Bulletin: AI Prompt RCE, Claude 0-Click, RenEngine Loader, Auto 0-Days & 25+ Stories The Hacker News",
       "topic": "digital-security",
@@ -2283,7 +2283,7 @@
       "url": "https://thecyberexpress.com/india-ai-generated-content-it-rules/"
     },
     {
-      "id": "gn-digital-security-5",
+      "id": "gn-digital-security-6",
       "title": "AI-fuelled romance scams spread beyond dating apps - SecurityBrief UK",
       "summary": "AI-fuelled romance scams spread beyond dating apps SecurityBrief UK",
       "topic": "digital-security",
@@ -2433,17 +2433,17 @@
       "url": "https://punemirror.com/entertainment/youtube/youtube-music-ai-playlist-premium-feature/"
     },
     {
-      "id": "gn-digital-security-35",
-      "title": "Palo Alto Networks Completes Acquisition of CyberArk to Secure the AI Era - IT Voice Media",
-      "summary": "Palo Alto Networks Completes Acquisition of CyberArk to Secure the AI Era IT Voice Media",
+      "id": "gn-digital-security-33",
+      "title": "Palo Alto Networks Completes Acquisition of CyberArk to Secure the AI Era - itvoice.in",
+      "summary": "Palo Alto Networks Completes Acquisition of CyberArk to Secure the AI Era itvoice.in",
       "topic": "digital-security",
-      "source": "IT Voice Media",
+      "source": "itvoice.in",
       "date": "Thu, 12 Feb 2026 07:39:26 GMT",
-      "imageUrl": "images/news/ai-voice-assistant-speech-to-text-microphone-audio-waveform-transcription-chat-message-multimodal-media-upload-podcast-recording-voice-recognition-natural-language-processing-voice-chat-interface-dictation-communication-technology-illustration.webp",
+      "imageUrl": "images/news/ai-chatbot-interface-neural-network-brain-conversational-ai-dialogue-bubbles-virtual-assistant-natural-language-processing-llm-chat-window-customer-support-chat-automation-human-ai-interaction-digital-intelligence-technology-background.webp",
       "url": "https://www.itvoice.in/palo-alto-networks-completes-acquisition-of-cyberark-to-secure-the-ai-era"
     },
     {
-      "id": "gn-digital-security-47",
+      "id": "gn-digital-security-46",
       "title": "As AI fraud surges, Mitek hardens Spain’s online ID checks - Stock Titan",
       "summary": "As AI fraud surges, Mitek hardens Spain’s online ID checks Stock Titan",
       "topic": "digital-security",
@@ -2953,16 +2953,6 @@
       "url": "https://thetechfounders.co.uk/news/olix-25-year-old-founder-raises-220m-for-uk-ai-chip-startup/"
     },
     {
-      "id": "gn-digital-security-45",
-      "title": "Yardstik Launches Human Trust Platform to Combat AI-Driven Hiring Fraud - PR Newswire",
-      "summary": "Yardstik Launches Human Trust Platform to Combat AI-Driven Hiring Fraud PR Newswire",
-      "topic": "digital-security",
-      "source": "PR Newswire",
-      "date": "Wed, 11 Feb 2026 15:00:00 GMT",
-      "imageUrl": "images/news/secure-messaging-cybersecurity-chat-protection-shield-icon-warning-alert-phishing-scam-detection-data-privacy-encryption-trust-safety-content-moderation-online-communication-risk-management-ai-security-3d-minimal-illustration.webp",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOY2o5dlVYOHdrdFE2VEZQUkZRN0N1TTdlLWFweEFoOTRDZm1xNGtiM2lPS1RPeTRjNVo2Q3NqT282aEQ0YlNWMzlZdzhqQmNuM3lyT2cxNTN3dE9CQ3loTl9fVEg5V3FnTGtUMlNrTFJGeWxYaVFnZHFZZU85Z3JIM3JRWHZSelEyelo0QW1xOXhNZjhOOVdfRWpCNjEtU25uUlhUaTllN1hVcnBCZktBZXpIU3R5dGZGYmEteVBTUTNUd3VrM3c?oc=5"
-    },
-    {
       "id": "gn-health-style-47",
       "title": "Inside the rise of the smart hospital: GE HealthCare’s Elie Chaillot on AI, genomics and the future of care in the Middle East - Arabian Business",
       "summary": "Inside the rise of the smart hospital: GE HealthCare’s Elie Chaillot on AI, genomics and the future of care in the Middle East Arabian Business",
@@ -3063,7 +3053,7 @@
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNEo3Ulc1cUlyZldLMXRjYk93dUhMMHlVM283YkVOUHpCU2ZiTWdBVUY3Q2daeWt0NnVkQU5CekJWVENNUXlsUTZmQ2RrTVZyc05vb2FXQ1p1NXMzX0paRDVya0ZJTWhoRThwcHZuN0w1ZXpxLWIxTVZCZjhKcC1vLWl1alBjT1YxT2I3WkJmWQ?oc=5"
     },
     {
-      "id": "gn-digital-security-6",
+      "id": "gn-digital-security-5",
       "title": "Generative AI Cyber Threats 2026: Deepfake Fraud Scams and Synthetic Identity Fraud Deepfakes Surge - Tech Times",
       "summary": "Generative AI Cyber Threats 2026: Deepfake Fraud Scams and Synthetic Identity Fraud Deepfakes Surge Tech Times",
       "topic": "digital-security",
@@ -3104,10 +3094,10 @@
     },
     {
       "id": "gn-digital-security-7",
-      "title": "When Deepfakes Target Your Business - LegalMatch Shows How to Stop Abuse and Recover Losses - Newswire.com",
-      "summary": "When Deepfakes Target Your Business - LegalMatch Shows How to Stop Abuse and Recover Losses Newswire.com",
+      "title": "When Deepfakes Target Your Business - LegalMatch Shows How to Stop Abuse and Recover Losses - newswire.com",
+      "summary": "When Deepfakes Target Your Business - LegalMatch Shows How to Stop Abuse and Recover Losses newswire.com",
       "topic": "digital-security",
-      "source": "Newswire.com",
+      "source": "newswire.com",
       "date": "Wed, 11 Feb 2026 12:00:00 GMT",
       "imageUrl": "https://cdn.nwe.io/files/x/be/1c/247acd5893eac4bd4d682b7e9059.jpg",
       "url": "https://www.newswire.com/news/when-deepfakes-target-your-business-legalmatch-shows-how-to-stop-abuse-and"
@@ -3804,10 +3794,10 @@
     },
     {
       "id": "gn-digital-security-21",
-      "title": "Love in the Age of AI - Why 2026 Romance Scams are Almost Impossible to Spot - KnowBe4 blog",
-      "summary": "Love in the Age of AI - Why 2026 Romance Scams are Almost Impossible to Spot KnowBe4 blog",
+      "title": "Love in the Age of AI - Why 2026 Romance Scams are Almost Impossible to Spot - KnowBe4",
+      "summary": "Love in the Age of AI - Why 2026 Romance Scams are Almost Impossible to Spot KnowBe4",
       "topic": "digital-security",
-      "source": "KnowBe4 blog",
+      "source": "KnowBe4",
       "date": "Tue, 10 Feb 2026 19:02:16 GMT",
       "imageUrl": "https://blog.knowbe4.com/hubfs/Social%20Image%20Repository/Evangelist%20Blog%20Social%20Graphics/Evangelists-Roger%20Grimes.jpg",
       "url": "https://blog.knowbe4.com/love-in-the-age-of-ai-why-2026-romance-scams-are-almost-impossible-to-spot"
@@ -4003,7 +3993,7 @@
       "url": "https://www.postguam.com/news/local/bill-targets-ai-and-deepfakes-to-protect-election-integrity/article_37b8edcf-c5cd-4fc3-b718-91bc0073183d.html"
     },
     {
-      "id": "gn-digital-security-49",
+      "id": "gn-digital-security-48",
       "title": "AI in Financial Risk Management: Future Strategies (2026) - vocal.media",
       "summary": "AI in Financial Risk Management: Future Strategies (2026) vocal.media",
       "topic": "digital-security",
@@ -4074,10 +4064,10 @@
     },
     {
       "id": "gn-digital-security-22",
-      "title": "New scam spotted that uses a calendar invite, deepfakes of CEOs, and a troubleshooting program to create backdoors and data miners - PC Gamer",
-      "summary": "New scam spotted that uses a calendar invite, deepfakes of CEOs, and a troubleshooting program to create backdoors and data miners PC Gamer",
+      "title": "New scam spotted that uses a calendar invite, deepfakes of CEOs, and a troubleshooting program to create backdoors and data miners - pcgamer.com",
+      "summary": "New scam spotted that uses a calendar invite, deepfakes of CEOs, and a troubleshooting program to create backdoors and data miners pcgamer.com",
       "topic": "digital-security",
-      "source": "PC Gamer",
+      "source": "pcgamer.com",
       "date": "Tue, 10 Feb 2026 12:37:21 GMT",
       "imageUrl": "https://cdn.mos.cms.futurecdn.net/hYQgGNSjwjKrvyVuLEkzQM-2000-80.jpg",
       "url": "https://www.pcgamer.com/software/ai/ai-assisted-hacking-group-hits-targets-with-a-complicated-social-engineering-scam-that-involves-deepfaked-ceos-spoofed-zoom-calls-and-a-malicious-troubleshooting-program/"
@@ -4443,7 +4433,7 @@
       "url": "https://www.sciencedaily.com/releases/2026/02/260210005419.htm"
     },
     {
-      "id": "gn-digital-security-34",
+      "id": "gn-digital-security-32",
       "title": "AI Becomes A Weapon as Cyberattacks Jump 18% Globally In 2025 - ciol.com",
       "summary": "AI Becomes A Weapon as Cyberattacks Jump 18% Globally In 2025 ciol.com",
       "topic": "digital-security",
@@ -4621,6 +4611,16 @@
       "date": "Mon, 09 Feb 2026 23:41:55 GMT",
       "imageUrl": "https://imageresizer.static9.net.au/0-ugSNOI8AHV-CjBH1F07ruX3uA=/0x424:4032x2692/750x422/https%3A%2F%2Fprod.static9.net.au%2Ffs%2F8efd665c-3673-4a98-824c-cbea82c000df",
       "url": "https://www.9news.com.au/national/romance-scam-ai-intimacy-romance-scams-more-sophisticated-than-ever-technology-news/3136643f-ebd1-40cf-bd5a-f29887f33bbc"
+    },
+    {
+      "id": "gn-digital-security-35",
+      "title": "Valentine’s Day is coming: How vulnerable are you to AI-enabled romance scams? - UNSW Sydney",
+      "summary": "Valentine’s Day is coming: How vulnerable are you to AI-enabled romance scams? UNSW Sydney",
+      "topic": "digital-security",
+      "source": "UNSW Sydney",
+      "date": "Mon, 09 Feb 2026 23:30:35 GMT",
+      "imageUrl": "https://www.unsw.edu.au/content/dam/images/business/2026-01-newsroom/2026-01-newsroom-tinder-online-app.cropimg.width=700.crop=landscape.jpeg",
+      "url": "https://www.unsw.edu.au/newsroom/news/2026/02/valentine-s-day-is-coming--how-vulnerable-are-you-to-ai-scams"
     },
     {
       "id": "gn-environment-science-8",
@@ -5303,7 +5303,7 @@
       "url": "https://intellectia.ai/news/stock/mondaycom-issues-weak-guidance-amid-ai-disruption-concerns"
     },
     {
-      "id": "gn-digital-security-46",
+      "id": "gn-digital-security-45",
       "title": "5 Ways Scammers Are Using AI &amp; How To Protect Yourself From Them - SAYS",
       "summary": "5 Ways Scammers Are Using AI & How To Protect Yourself From Them SAYS",
       "topic": "digital-security",
