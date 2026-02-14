@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-14T09:55:15.523Z",
+  "fetchedAt": "2026-02-14T10:22:26.708Z",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe",
   "news": [
     {
@@ -13,7 +13,7 @@
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQVJROEZFUkRTdzR4cXh6UjJqQ1lRb2JtUGRSOWY5WWo5djYtUGNoWHFpdTVlcVFmcVpUbUZ1eWVweHZSSV83VGxWR1E0b0cyZFdBYnJwNzdrVWpzNllCRGZhMF8weVJRbXdWeDZZTTNOdGJyaVJLTHdXVzI4REk2SjBhNTN1NmdjdXNwRk9mU3NrNTFoczhKRk5VTVhaZTZE?oc=5"
     },
     {
-      "id": "gn-business-economy-38",
+      "id": "gn-business-economy-41",
       "title": "Portfolio Shifts: Can YMAB disrupt its industry - Quarterly Market Review &amp; AI Driven Stock Movement Reports - mfd.ru",
       "summary": "Portfolio Shifts: Can YMAB disrupt its industry - Quarterly Market Review & AI Driven Stock Movement Reports mfd.ru",
       "topic": "business-economy",
@@ -53,7 +53,7 @@
       "url": "https://www.cnbc.com/2026/02/13/anthropic-open-ai-super-bowl-ads.html"
     },
     {
-      "id": "gn-business-economy-24",
+      "id": "gn-business-economy-26",
       "title": "Markets Edge Higher Despite AI Disruption Fears and Inflation Optimism - Devdiscourse",
       "summary": "Markets Edge Higher Despite AI Disruption Fears and Inflation Optimism Devdiscourse",
       "topic": "business-economy",
@@ -61,6 +61,16 @@
       "date": "Fri, 13 Feb 2026 21:26:44 GMT",
       "imageUrl": "data/images/business-economy/ydti2p.webp",
       "url": "https://www.devdiscourse.com/article/technology/3804837-markets-edge-higher-despite-ai-disruption-fears-and-inflation-optimism?amp"
+    },
+    {
+      "id": "gn-business-economy-19",
+      "title": "S&amp;P 500 Selloff: Deutsche Bank Warns of Tech Rout and AI’s Daunting Disruption - CryptoRank",
+      "summary": "S&P 500 Selloff: Deutsche Bank Warns of Tech Rout and AI’s Daunting Disruption CryptoRank",
+      "topic": "business-economy",
+      "source": "CryptoRank",
+      "date": "Fri, 13 Feb 2026 20:52:15 GMT",
+      "imageUrl": "data/images/business-economy/i0iv0z.webp",
+      "url": "https://cryptorank.io/news/feed/c45b8-sp500-tech-selloff-ai-disruption"
     },
     {
       "id": "gn-unmanned-aircraft-13",
@@ -103,7 +113,7 @@
       "url": "https://www.lexology.com/pro/content/brazils-ai-legislation-in-limbo-compliance-pressure-isnt"
     },
     {
-      "id": "gn-business-economy-39",
+      "id": "gn-business-economy-42",
       "title": "AI Disruptions and Corporate Earnings Shape European Market Trends - Devdiscourse",
       "summary": "AI Disruptions and Corporate Earnings Shape European Market Trends Devdiscourse",
       "topic": "business-economy",
@@ -113,7 +123,7 @@
       "url": "https://www.devdiscourse.com/article/business/3804704-ai-disruptions-and-corporate-earnings-shape-european-market-trends?amp"
     },
     {
-      "id": "gn-business-economy-20",
+      "id": "gn-business-economy-18",
       "title": "Stock Market Breaks Key Levels Amid AI Disruption Fears; Cisco, AppLovin, Arista, Vertiv In Focus: Weekly Review - Investor's Business Daily",
       "summary": "Stock Market Breaks Key Levels Amid AI Disruption Fears; Cisco, AppLovin, Arista, Vertiv In Focus: Weekly Review Investor's Business Daily",
       "topic": "business-economy",
@@ -133,7 +143,7 @@
       "url": "https://www.drapersonline.com/subscriber-only-content/how-fashion-retail-is-utilising-ai-in-marketing"
     },
     {
-      "id": "gn-business-economy-36",
+      "id": "gn-business-economy-39",
       "title": "Market Shaken: Tech Stocks Dip Amid AI Disruption Fears - Devdiscourse",
       "summary": "Market Shaken: Tech Stocks Dip Amid AI Disruption Fears Devdiscourse",
       "topic": "business-economy",
@@ -173,7 +183,7 @@
       "url": "https://www.inkl.com/news/4-tax-scams-retirees-should-watch-out-for-in-2026"
     },
     {
-      "id": "gn-business-economy-26",
+      "id": "gn-business-economy-28",
       "title": "Why Nvidia, Intel and Pinterest crashed today while Rivian and Palantir surge big - AI disruption fears sh - The Economic Times",
       "summary": "Why Nvidia, Intel and Pinterest crashed today while Rivian and Palantir surge big - AI disruption fears sh The Economic Times",
       "topic": "business-economy",
@@ -183,7 +193,7 @@
       "url": "https://economictimes.indiatimes.com/news/international/us/why-nvidia-intel-and-pinterest-crashed-today-while-rivian-and-palantir-surge-big-ai-disruption-fears-shake-us-stock-market/articleshow/128312887.cms?from=mdr"
     },
     {
-      "id": "gn-business-economy-19",
+      "id": "gn-business-economy-24",
       "title": "US stocks today: Wall Street steadies after softer inflation data; AI disruption fears keep markets cauti - Times of India",
       "summary": "US stocks today: Wall Street steadies after softer inflation data; AI disruption fears keep markets cauti Times of India",
       "topic": "business-economy",
@@ -243,7 +253,7 @@
       "url": "https://www.openpr.com/news/4390365/global-demand-response-market-to-reach-usd-127-1-billion-by-2035"
     },
     {
-      "id": "gn-business-economy-30",
+      "id": "gn-business-economy-32",
       "title": "Inflation Eases Amid AI Disruption Fears: Mixed Signals for U.S. Markets - Devdiscourse",
       "summary": "Inflation Eases Amid AI Disruption Fears: Mixed Signals for U.S. Markets Devdiscourse",
       "topic": "business-economy",
@@ -263,7 +273,7 @@
       "url": "chrome-error://chromewebdata/"
     },
     {
-      "id": "gn-business-economy-32",
+      "id": "gn-business-economy-35",
       "title": "Market Declines Amid AI Disruption Concerns - Intellectia AI",
       "summary": "Market Declines Amid AI Disruption Concerns Intellectia AI",
       "topic": "business-economy",
@@ -303,14 +313,14 @@
       "url": "https://www.altenergymag.com/news/2026/02/13/hybrid-solar-wind-market-to-reach-usd-23-billion-by-2032-driven-by-renewable-energy-integration-and-grid-modernization/46759/"
     },
     {
-      "id": "gn-business-economy-25",
+      "id": "gn-business-economy-27",
       "title": "Stock Market Meltdown: Dow Drops 650 Points, Bitcoin Sinks to $65K as AI Disruption Fears Hammer Tech and C... - Blockmanity",
       "summary": "Stock Market Meltdown: Dow Drops 650 Points, Bitcoin Sinks to $65K as AI Disruption Fears Hammer Tech and C... Blockmanity",
       "topic": "business-economy",
       "source": "Blockmanity",
       "date": "Fri, 13 Feb 2026 13:33:52 GMT",
-      "imageUrl": "",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNSTJSQ2VNX2NheFNfV3p2dzlrUEY5cVo1X1l4MUpSRi1wYjBEdWo3VGtZb0dXellrNG1xTDM1dVZIWjVTb2U0Z3BocG9IQVFfQjJubzJEbjM2dnBCTjU0eU4yb2hneE9KU2ZaUGtQcnFkLXlMdkpoUWJ6cmtrY21ZWnd4VExYdGJfNlFqbndvaHJoU1picUlZS3hDbG1MVWNabFY0UFlPVlVmeXVyaVN4ZVFsSUNXRVBKWnhvM3Y1VzVGNjQ2QlJHS1RFODA2OUZHMXBpMTJ30gHbAUFVX3lxTE5TNFRLUFN4UXhSamxEUC1RQjFsX3FQNFF0WGNIM3VwZlYyT1ZaNFpuWGtqYWJZOWxDZWhjM18wcEhOcGp6NUpORnlFTFJ1Y01IXzFPaUJnMHFWWFhrVHZIaXo5WFllbnFaU1hPTVh1Q0lBMHRjUXVyeFpEVmJTdW1PWF9hVHdmMjdwYVpjbXFhX3VkNlU0djQ4M0J4WnZWaG9yVHdvemp2WDNRV3ktUWN1SGdqYVctZ3dVUmRFa0hHYkp5dlU3QURxS05wbUt0Z2VJNDc1WFpqOEFsSQ?oc=5"
+      "imageUrl": "data/images/business-economy/gh2943.webp",
+      "url": "https://blockmanity.com/news/stock-market-meltdown-dow-drops-650-points-bitcoin-sinks-to-65k-as-ai-disruption-fears-hammer-tech-and-crypto/"
     },
     {
       "id": "gn-chatbot-development-33",
@@ -333,7 +343,7 @@
       "url": "https://timesofindia.indiatimes.com/technology/mobiles-tabs/best-compact-smartphones-samsung-galaxy-s25-iphone-16e-pixel-9-and-other-phones-that-come-with-smaller-screens/articleshow/128306948.cms"
     },
     {
-      "id": "gn-business-economy-27",
+      "id": "gn-business-economy-29",
       "title": "Global Markets Waver as AI Disruption and U.S. Inflation Loom - Devdiscourse",
       "summary": "Global Markets Waver as AI Disruption and U.S. Inflation Loom Devdiscourse",
       "topic": "business-economy",
@@ -413,16 +423,6 @@
       "url": "https://www.openpr.com/news/4390116/australia-power-market-projected-to-reach-twh-377-by-2034"
     },
     {
-      "id": "gn-business-economy-40",
-      "title": "S&amp;P 500 Selloff: Deutsche Bank Warns Of Tech Rout And AI's Daunting Disruption - Bitcoin world",
-      "summary": "S&P 500 Selloff: Deutsche Bank Warns Of Tech Rout And AI's Daunting Disruption Bitcoin world",
-      "topic": "business-economy",
-      "source": "Bitcoin world",
-      "date": "Fri, 13 Feb 2026 11:45:13 GMT",
-      "imageUrl": "data/images/business-economy/i0iv0z.webp",
-      "url": "https://bitcoinworld.co.in/sp500-tech-selloff-ai-disruption/"
-    },
-    {
       "id": "gn-ai-academy-5",
       "title": "Chinese scientists awarded for sci-tech innovation and leadership in frontier research - China Daily",
       "summary": "Chinese scientists awarded for sci-tech innovation and leadership in frontier research China Daily",
@@ -463,6 +463,16 @@
       "url": "https://hackread.com/17-billion-wake-up-call-securing-crypto-ai-scams/"
     },
     {
+      "id": "gn-business-economy-15",
+      "title": "India can cross 10 per cent GDP: Uniphore CEO ahead of AI Impact Summit - indianews.com.au",
+      "summary": "India can cross 10 per cent GDP: Uniphore CEO ahead of AI Impact Summit indianews.com.au",
+      "topic": "business-economy",
+      "source": "indianews.com.au",
+      "date": "Fri, 13 Feb 2026 11:16:53 GMT",
+      "imageUrl": "data/images/business-economy/y4yb5v.webp",
+      "url": "https://indianews.com.au/india-can-cross-10-per-cent-gdp-uniphore-ceo-ahead-of-ai-impact-summit/"
+    },
+    {
       "id": "gn-technology-innovation-29",
       "title": "ByteDance Eyes In-House AI Processor, Explores Samsung Partnership - CXO Digitalpulse",
       "summary": "ByteDance Eyes In-House AI Processor, Explores Samsung Partnership CXO Digitalpulse",
@@ -483,7 +493,7 @@
       "url": "https://www.inventiva.co.in/trends/top-10-fitness-apps-in-2026/"
     },
     {
-      "id": "gn-business-economy-3",
+      "id": "gn-business-economy-2",
       "title": "Market Volatility: AI Disruption and Walmart Earnings Insights - Global Banking &amp; Finance Review®",
       "summary": "Market Volatility: AI Disruption and Walmart Earnings Insights Global Banking & Finance Review®",
       "topic": "business-economy",
@@ -523,7 +533,7 @@
       "url": "https://azat.tv/en/claude-opus-4-6-rivals-emerge-ai-race-shifts-focus/"
     },
     {
-      "id": "gn-business-economy-45",
+      "id": "gn-business-economy-48",
       "title": "How Oracle's AI Agents Streamline Supply Chain Operations - AI Magazine",
       "summary": "How Oracle's AI Agents Streamline Supply Chain Operations AI Magazine",
       "topic": "business-economy",
@@ -633,7 +643,7 @@
       "url": "https://www.eurekalert.org/news-releases/1116327"
     },
     {
-      "id": "gn-business-economy-31",
+      "id": "gn-business-economy-34",
       "title": "AI Technology Disrupts Market Dynamics - Intellectia AI",
       "summary": "AI Technology Disrupts Market Dynamics Intellectia AI",
       "topic": "business-economy",
@@ -733,7 +743,17 @@
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE16OG5mT2hjcnJVeXgyck43TzUyd3ZWczdjYmNfQ056c19xWHZTQVJxSFhoWFdWa3Z2OXBaakF6bHZwdmZyWUpTWXJzUmJtZ0g3V1pJd09QY3kwamREdkplZFVLd052bVpjVlEtbWZzM2hsRWZtYTZnMA?oc=5"
     },
     {
-      "id": "gn-business-economy-11",
+      "id": "gn-business-economy-44",
+      "title": "Agentic AI: Beyond Chatbots to Autonomous Intelligence - Discovery Alert",
+      "summary": "Agentic AI: Beyond Chatbots to Autonomous Intelligence Discovery Alert",
+      "topic": "business-economy",
+      "source": "Discovery Alert",
+      "date": "Fri, 13 Feb 2026 06:20:14 GMT",
+      "imageUrl": "data/images/business-economy/gi4tre.webp",
+      "url": "https://discoveryalert.com.au/agentic-ai-vs-chatbots-automation-2026/"
+    },
+    {
+      "id": "gn-business-economy-12",
       "title": "US Growth Surges on AI, But Equity Peaks Near as Currency Fears Mount - Whalesbook",
       "summary": "US Growth Surges on AI, But Equity Peaks Near as Currency Fears Mount Whalesbook",
       "topic": "business-economy",
@@ -743,7 +763,7 @@
       "url": "https://www.whalesbook.com/news/English/economy/US-Growth-Surges-on-AI-But-Equity-Peaks-Near-as-Currency-Fears-Mount/698ebf9b119a61fe896f32fe"
     },
     {
-      "id": "gn-business-economy-34",
+      "id": "gn-business-economy-37",
       "title": "AI Disruption Sparks Indian IT Sell-off, Re-evaluating Sector Valuations - Whalesbook",
       "summary": "AI Disruption Sparks Indian IT Sell-off, Re-evaluating Sector Valuations Whalesbook",
       "topic": "business-economy",
@@ -793,7 +813,7 @@
       "url": "https://www.aol.com/articles/nvidia-stock-buy-120500254.html"
     },
     {
-      "id": "gn-business-economy-33",
+      "id": "gn-business-economy-36",
       "title": "Indian Markets Skid: AI Fears Spark IT Sell-Off - Whalesbook",
       "summary": "Indian Markets Skid: AI Fears Spark IT Sell-Off Whalesbook",
       "topic": "business-economy",
@@ -923,16 +943,6 @@
       "url": "https://www.msn.com/en-xl/africa/nigeria/okonjo-iweala-warns-nigerians-over-ai-manipulated-fake-video/ar-AA1W8t8O"
     },
     {
-      "id": "gn-business-economy-13",
-      "title": "Stock market today: Dow, S&amp;P 500, Nasdaq sink as tech gets hit as AI disruption fears grow; gold, bitcoin sink - Yahoo Finance",
-      "summary": "Stock market today: Dow, S&P 500, Nasdaq sink as tech gets hit as AI disruption fears grow; gold, bitcoin sink Yahoo Finance",
-      "topic": "business-economy",
-      "source": "Yahoo Finance",
-      "date": "Fri, 13 Feb 2026 00:58:00 GMT",
-      "imageUrl": "data/images/business-economy/h5bclm.webp",
-      "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-sink-as-tech-gets-hit-as-ai-disruption-fears-grow-gold-bitcoin-sink-210353533.html"
-    },
-    {
       "id": "gn-unmanned-aircraft-0",
       "title": "Global Drones as a Service (DaaS) Opportunity Positioned to Exceed $25 Billion Over the Next Decade - AI Magazine",
       "summary": "Global Drones as a Service (DaaS) Opportunity Positioned to Exceed $25 Billion Over the Next Decade AI Magazine",
@@ -941,6 +951,16 @@
       "date": "Fri, 13 Feb 2026 00:51:59 GMT",
       "imageUrl": "https://ml.globenewswire.com/media/MmVkZTMzMGMtN2IwNi00Y2Y2LWI5MzQtM2I3MzA4YjFhNThhLTUwMDE1MzIxMS0yMDI2LTAyLTEyLWVu/tiny/MarketNewsUpdates-com.png",
       "url": "https://aimagazine.com/globenewswire/3237238"
+    },
+    {
+      "id": "gn-business-economy-8",
+      "title": "Singapore to invest in AI, strengthen defence in world ‘beset by uncertainties’ - KFGO",
+      "summary": "Singapore to invest in AI, strengthen defence in world ‘beset by uncertainties’ KFGO",
+      "topic": "business-economy",
+      "source": "KFGO",
+      "date": "Fri, 13 Feb 2026 00:42:16 GMT",
+      "imageUrl": "data/images/business-economy/mhgqbu.webp",
+      "url": "https://kfgo.com/2026/02/12/singapore-sees-fy2026-budget-surplus-at-1-of-gdp/"
     },
     {
       "id": "gn-ai-academy-40",
@@ -1073,16 +1093,6 @@
       "url": "https://www.fool.com/investing/stock-market/market-sectors/information-technology/semiconductor-stocks/microchip-stocks/"
     },
     {
-      "id": "gn-business-economy-15",
-      "title": "Dow slides 600 points, S&amp;P 500 falls for a third day as AI disruption fears rattle markets: Live updates - CNBC",
-      "summary": "Dow slides 600 points, S&P 500 falls for a third day as AI disruption fears rattle markets: Live updates CNBC",
-      "topic": "business-economy",
-      "source": "CNBC",
-      "date": "Thu, 12 Feb 2026 21:16:00 GMT",
-      "imageUrl": "",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9FN2VlMkQwUUxVWHdDU0E4SU41bmdRTXliZFdLc2RTZVJGeU93RVd0WVJtcmJQcWFuUXZIcXJCU2RyaEFmOUJvTGF4ck5IXzJEMTBqMWdNSGZybDAzdnQyZlpIZVRoVVJIVXB4ZkdvTjVGX3VLYnM00gF8QVVfeXFMTUJFYjdqZHI4dXI5WUdRVWpOWVlYcUc0WWRQVUF3RVlBWVBKS3ZYZjJpMktKbE9pZWV4X3BLT180ZFBsanpaWF9vTTI2QV9xcTk5VC1fR0dpb3hXbVdoNWJkZXNQT1ZnZ0hnN3pBaHdwQTVnazFXZjJWY1BkSQ?oc=5"
-    },
-    {
       "id": "gn-digital-security-45",
       "title": "Swipe Left on These 5 Major Dating App Red Flags - PCMag Middle East",
       "summary": "Swipe Left on These 5 Major Dating App Red Flags PCMag Middle East",
@@ -1113,7 +1123,7 @@
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOU3h3SXB5UXZzV2FVbExGa1Jjc2FybFZ3UGQtMDRHTXV3LWNXemhkM0lKSVZCQXJ0eUx4ZW4zdnZqenNnclk2c2EzSWEwa0V1Z0UzOFJ5VHdWS29ydmZVU3FNR2FsR3dDOVVwbGNVZUI1RldycnVZeW9hQ2hHSVdjME9kNS1LRHNYcEcwaA?oc=5"
     },
     {
-      "id": "gn-business-economy-4",
+      "id": "gn-business-economy-5",
       "title": "Valuing data assets in the AI economy: The new currency for valuations, tariffs and GDP - The American Bazaar",
       "summary": "Valuing data assets in the AI economy: The new currency for valuations, tariffs and GDP The American Bazaar",
       "topic": "business-economy",
@@ -1153,7 +1163,7 @@
       "url": "https://www.musicbusinessworldwide.com/ascap-paid-out-a-record-1-76bn-to-songwriters-and-publishers-in-2025/"
     },
     {
-      "id": "gn-business-economy-35",
+      "id": "gn-business-economy-38",
       "title": "AI Tools Disrupt Trucking Industry Demand - Intellectia AI",
       "summary": "AI Tools Disrupt Trucking Industry Demand Intellectia AI",
       "topic": "business-economy",
@@ -1171,16 +1181,6 @@
       "date": "Thu, 12 Feb 2026 18:35:18 GMT",
       "imageUrl": "images/chatbot-development/ge93oc.webp",
       "url": "https://www.aol.com/finance/openai-ceo-sam-altman-declares-141751028.html"
-    },
-    {
-      "id": "gn-business-economy-47",
-      "title": "Supply Chain AI Takes Spotlight at Manifest 2026 - Transport Topics",
-      "summary": "Supply Chain AI Takes Spotlight at Manifest 2026 Transport Topics",
-      "topic": "business-economy",
-      "source": "Transport Topics",
-      "date": "Thu, 12 Feb 2026 18:30:00 GMT",
-      "imageUrl": "data/images/business-economy/ocuixv.webp",
-      "url": "https://www.ttnews.com/articles/supply-chain-ai-manifest-2026"
     },
     {
       "id": "gn-musical-art-32",
@@ -1203,7 +1203,7 @@
       "url": "https://www.idsnews.com/article/2026/02/opinion-mike-tyson-superbowl-ads-maha-ai-iu-bloomington-indiana"
     },
     {
-      "id": "gn-business-economy-23",
+      "id": "gn-business-economy-25",
       "title": "What triggered US stock market crash today: Wall Street plunges as $1.2 trillion AI “scare trade” slams lo - The Economic Times",
       "summary": "What triggered US stock market crash today: Wall Street plunges as $1.2 trillion AI “scare trade” slams lo The Economic Times",
       "topic": "business-economy",
@@ -1213,7 +1213,7 @@
       "url": "https://economictimes.indiatimes.com/news/international/us/what-triggered-us-stock-market-crash-today-wall-street-plunges-as-1-2-trillion-ai-scare-trade-slams-logistics-and-software-stocks-dow-sp-500-and-nasdaq-each-fall-over-1/articleshow/128270356.cms?from=mdr"
     },
     {
-      "id": "gn-business-economy-21",
+      "id": "gn-business-economy-22",
       "title": "Office real estate stocks tumble as AI disruption casualties in the stock market grow by the day - CNBC",
       "summary": "Office real estate stocks tumble as AI disruption casualties in the stock market grow by the day CNBC",
       "topic": "business-economy",
@@ -1233,7 +1233,7 @@
       "url": "https://winbuzzer.com/2026/02/12/openai-updates-gpt-5-2-instant-improve-response-style-xcxwbn/"
     },
     {
-      "id": "gn-business-economy-42",
+      "id": "gn-business-economy-45",
       "title": "How Oracle's AI Agents Will Power Automatous Procurement - Procurement Magazine",
       "summary": "How Oracle's AI Agents Will Power Automatous Procurement Procurement Magazine",
       "topic": "business-economy",
@@ -1263,7 +1263,7 @@
       "url": "https://www.cryptopolitan.com/anthropic-commits-20-million-to-counter-openais-political-machine/"
     },
     {
-      "id": "gn-business-economy-14",
+      "id": "gn-business-economy-17",
       "title": "Software Stocks: Are Investors Worrying Too Much About AI Disruption? - Morningstar Canada",
       "summary": "Software Stocks: Are Investors Worrying Too Much About AI Disruption? Morningstar Canada",
       "topic": "business-economy",
@@ -1391,16 +1391,6 @@
       "date": "Thu, 12 Feb 2026 13:21:07 GMT",
       "imageUrl": "images/chatbot-development/ynj2rj.webp",
       "url": "https://opentools.ai/news/anthropic-ups-the-ante-claudes-free-tier-now-packs-a-punch-with-premium-features"
-    },
-    {
-      "id": "gn-business-economy-16",
-      "title": "AI Stocks Turn Choppy On Disruption Fears. But This Week's Winners Stand Out. - Investor's Business Daily",
-      "summary": "AI Stocks Turn Choppy On Disruption Fears. But This Week's Winners Stand Out. Investor's Business Daily",
-      "topic": "business-economy",
-      "source": "Investor's Business Daily",
-      "date": "Thu, 12 Feb 2026 13:15:00 GMT",
-      "imageUrl": "",
-      "url": "https://www.investors.com/news/technology/ai-stocks-artificial-intelligence-stocks-2026-leaders-laggards-feb9/"
     },
     {
       "id": "gn-unmanned-aircraft-3",
@@ -1573,7 +1563,7 @@
       "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2227059"
     },
     {
-      "id": "gn-business-economy-44",
+      "id": "gn-business-economy-47",
       "title": "How Oracle AI Agents are Boosting Supply Chain Efficiency - Supply Chain Digital",
       "summary": "How Oracle AI Agents are Boosting Supply Chain Efficiency Supply Chain Digital",
       "topic": "business-economy",
@@ -1663,6 +1653,16 @@
       "url": "https://ffnews.com/thought-leader/ai-in-financial-crime-new-scams-and-how-to-protect-yourself/"
     },
     {
+      "id": "gn-business-economy-13",
+      "title": "Sebi's Tech Gambit: India Markets Forge Sophistication Amid AI Risks - Whalesbook",
+      "summary": "Sebi's Tech Gambit: India Markets Forge Sophistication Amid AI Risks Whalesbook",
+      "topic": "business-economy",
+      "source": "Whalesbook",
+      "date": "Thu, 12 Feb 2026 09:34:05 GMT",
+      "imageUrl": "data/images/business-economy/my0g8l.webp",
+      "url": "https://www.whalesbook.com/news/English/sebiexchange/Sebis-Tech-Gambit-India-Markets-Forge-Sophistication-Amid-AI-Risks/698d646dba46a4833be105cd"
+    },
+    {
       "id": "gn-governance-politics-44",
       "title": "India Brings AI-Generated Content Under Formal Regulation with IT Rules Amendment - The Cyber Express",
       "summary": "India Brings AI-Generated Content Under Formal Regulation with IT Rules Amendment The Cyber Express",
@@ -1733,7 +1733,7 @@
       "url": "https://kalkinemedia.com/us/stocks/technology/how-nvidia-nasdaqnvda-powers-the-nasdaq-composite-ai-revolution"
     },
     {
-      "id": "gn-business-economy-37",
+      "id": "gn-business-economy-40",
       "title": "Palo Alto Networks Set to Release Earnings Report - Intellectia AI",
       "summary": "Palo Alto Networks Set to Release Earnings Report Intellectia AI",
       "topic": "business-economy",
@@ -1753,14 +1753,14 @@
       "url": "https://punemirror.com/entertainment/youtube/youtube-music-ai-playlist-premium-feature/"
     },
     {
-      "id": "gn-business-economy-46",
+      "id": "gn-business-economy-49",
       "title": "“Responding to Global Supply Chain Risks Through AI Analytics and Data-Driven Decision-Making,” Samsung SDS Unveils Global Digital Logistics Solution at Manifest 2026| News - Samsung SDS",
       "summary": "“Responding to Global Supply Chain Risks Through AI Analytics and Data-Driven Decision-Making,” Samsung SDS Unveils Global Digital Logistics Solution at Manifest 2026| News Samsung SDS",
       "topic": "business-economy",
       "source": "Samsung SDS",
       "date": "Thu, 12 Feb 2026 07:44:56 GMT",
-      "imageUrl": "",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9ZSWlxMTBOMVNGSEFsczF1WFIzQ1VfQnNzVzFVYmdpdWhqMnB4Zy05V0JHTXpiSXg0ZW9QZmVKa0lGMXBPbHlzNzlBeFMtX3BfOUdLdWVhZU5td2pUdy1EM1g3Z28yZw?oc=5"
+      "imageUrl": "data/images/business-economy/7fzqni.webp",
+      "url": "https://www.samsungsds.com/en/news/manifest-260212.html"
     },
     {
       "id": "gn-chatbot-development-37",
@@ -1843,6 +1843,16 @@
       "url": "https://www.intelligenceonline.com/europe-russia/2026/02/12/harmattan-ai-s-french-drones-apparently--made-in-vietnam,110626234-art"
     },
     {
+      "id": "gn-business-economy-33",
+      "title": "Taiwan's AI-powered economy soars in the shadow of bubble fears and China threats - Devdiscourse",
+      "summary": "Taiwan's AI-powered economy soars in the shadow of bubble fears and China threats Devdiscourse",
+      "topic": "business-economy",
+      "source": "Devdiscourse",
+      "date": "Thu, 12 Feb 2026 05:10:14 GMT",
+      "imageUrl": "data/images/business-economy/qd0x7s.webp",
+      "url": "https://www.devdiscourse.com/article/technology/3802032-taiwans-ai-powered-economy-soars-in-the-shadow-of-bubble-fears-and-china-threats?amp"
+    },
+    {
       "id": "gn-technology-innovation-40",
       "title": "US lawmakers call for broader chip equipment export curbs on China over security risks - Heidoh",
       "summary": "US lawmakers call for broader chip equipment export curbs on China over security risks Heidoh",
@@ -1871,16 +1881,6 @@
       "date": "Thu, 12 Feb 2026 03:36:38 GMT",
       "imageUrl": "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=600&h=400&fit=crop&auto=format",
       "url": "https://www.mixvale.com.br/2026/02/12/new-leaks-indicate-iphone-17-with-promotion-display-and-significant-lens-improvements-en/"
-    },
-    {
-      "id": "gn-business-economy-7",
-      "title": "Jobs Beat and AI Disruption Concerns Hit Stocks-Market Analysis for February 11th, 2026 - The Globe and Mail",
-      "summary": "Jobs Beat and AI Disruption Concerns Hit Stocks-Market Analysis for February 11th, 2026 The Globe and Mail",
-      "topic": "business-economy",
-      "source": "The Globe and Mail",
-      "date": "Thu, 12 Feb 2026 03:22:30 GMT",
-      "imageUrl": "data/images/business-economy/a65zw3.webp",
-      "url": "https://www.theglobeandmail.com/investing/markets/stocks/DGX/pressreleases/166332/jobs-beat-and-ai-disruption-concerns-hit-stocks-market-analysis-for-february-11th-2026/"
     },
     {
       "id": "gn-visual-art-photography-36",
@@ -1991,6 +1991,16 @@
       "date": "Wed, 11 Feb 2026 22:20:04 GMT",
       "imageUrl": "https://www.msoe.edu/images/social-rectangle.png",
       "url": "https://www.msoe.edu/about-msoe/news/details/msoe-alumnus-behrgen-smith-named-finalist-for-prestigious-hertz-foundation-fellowship/"
+    },
+    {
+      "id": "gn-business-economy-9",
+      "title": "Jobs Beat and AI Disruption Concerns Hit Stocks-Market Analysis for February 11th, 2026 - The Globe and Mail",
+      "summary": "Jobs Beat and AI Disruption Concerns Hit Stocks-Market Analysis for February 11th, 2026 The Globe and Mail",
+      "topic": "business-economy",
+      "source": "The Globe and Mail",
+      "date": "Wed, 11 Feb 2026 21:12:20 GMT",
+      "imageUrl": "data/images/business-economy/a65zw3.webp",
+      "url": "https://www.theglobeandmail.com/investing/markets/stocks/AIG/pressreleases/166332/jobs-beat-and-ai-disruption-concerns-hit-stocks-market-analysis-for-february-11th-2026/"
     },
     {
       "id": "gn-chatbot-development-2",
@@ -2223,11 +2233,11 @@
       "url": "https://www.trendhunter.com/amp/trends/fitchecklab"
     },
     {
-      "id": "gn-business-economy-18",
-      "title": "Software Stocks Trade at Bargain Bin Prices After AI-Fueled Drop - Bloomberg.com",
-      "summary": "Software Stocks Trade at Bargain Bin Prices After AI-Fueled Drop Bloomberg.com",
+      "id": "gn-business-economy-21",
+      "title": "Software Stocks Trade at Bargain Bin Prices After AI-Fueled Drop - Bloomberg",
+      "summary": "Software Stocks Trade at Bargain Bin Prices After AI-Fueled Drop Bloomberg",
       "topic": "business-economy",
-      "source": "Bloomberg.com",
+      "source": "Bloomberg",
       "date": "Wed, 11 Feb 2026 14:47:43 GMT",
       "imageUrl": "",
       "url": "https://www.bloomberg.com/news/articles/2026-02-11/software-stocks-trade-at-bargain-bin-prices-after-ai-fueled-drop"
@@ -2611,16 +2621,6 @@
       "date": "Wed, 11 Feb 2026 08:00:00 GMT",
       "imageUrl": "https://www.startus-insights.com/wp-content/uploads/2026/01/Power-Distribution-Industry-Report-SharedImg-StartUs-Insights-noresize.webp",
       "url": "https://www.startus-insights.com/innovators-guide/power-distribution-industry-report/"
-    },
-    {
-      "id": "gn-business-economy-10",
-      "title": "Japan's Economic Trends and Bitcoin Market Analysis - Intellectia AI",
-      "summary": "Japan's Economic Trends and Bitcoin Market Analysis Intellectia AI",
-      "topic": "business-economy",
-      "source": "Intellectia AI",
-      "date": "Wed, 11 Feb 2026 08:00:00 GMT",
-      "imageUrl": "",
-      "url": "https://intellectia.ai/news/stock/japans-economic-trends-and-bitcoin-market-analysis"
     },
     {
       "id": "gn-musical-art-38",
@@ -3093,7 +3093,7 @@
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQ3MyLVZKOEZKS2k4aWZ2U2MwYUVDb1ZMN3V5ZXdCWVZFelc0bDVWUnJZbzJSOExGQmNQSzRYRjBpemttVDZEeERIa1BVQmsyZXVYdkR2bnhtUmZ2QVRINVI0QWlZQmlEdWlwdjBycEdma2tZWmRwT3ZjZzI5WkFSZEl0eThzRkhUbzg2TWdpbk9YYk05S0MtME1TZjRIbjRlZmZhOGVoUS12QmZ3ZFhGcmstQ21kdnNOOEJpWW5lMTZmdmvSAcgBQVVfeXFMTThVaElvNUNReUZBcTVRdjlrR0duRXBpM1ZGZDJBOWZTSW11b1lxRWtaYzJPUmlOMEpWcjFRTVV2U3IxYWcxSG5fTjMtZUdTbHN5clM4ajkyYk1VSFdGd1JSd291UmczMFFUY01HbFhNQWFRVUNhWjNRVlBySUVjTGhkdE1kU2ZqX2pYdzBQSlZ2ampTV0xvbTRXZWp5NFZ0YVBTTGVVbXlYX2hMbFR1NEwtN1JjVG5oaHFrTHQzUlpnc1JuRlNTT3I?oc=5"
     },
     {
-      "id": "gn-business-economy-41",
+      "id": "gn-business-economy-43",
       "title": "Asia Stocks Pull Back From Record Highs on AI Disruption Fears; KOSPI Slips Nearly 4% - vocal.media",
       "summary": "Asia Stocks Pull Back From Record Highs on AI Disruption Fears; KOSPI Slips Nearly 4% vocal.media",
       "topic": "business-economy",
@@ -3183,7 +3183,7 @@
       "url": "https://www.msn.com/en-us/news/technology/youtube-music-can-now-generate-ai-playlists-based-on-your-vibes/ar-AA1W4Xj3"
     },
     {
-      "id": "gn-business-economy-5",
+      "id": "gn-business-economy-4",
       "title": "AI could trigger a global jobs market collapse by 2027 if left unchecked, former Google ethicist warns - Fortune",
       "summary": "AI could trigger a global jobs market collapse by 2027 if left unchecked, former Google ethicist warns Fortune",
       "topic": "business-economy",
@@ -3243,7 +3243,7 @@
       "url": "https://farmonaut.com/mining/pdo-oman-driving-sustainable-energy-and-innovation-in-2026"
     },
     {
-      "id": "gn-business-economy-43",
+      "id": "gn-business-economy-46",
       "title": "From Automation To Autonomy: AI For The CFO And Supply Chain Finance - Forbes",
       "summary": "From Automation To Autonomy: AI For The CFO And Supply Chain Finance Forbes",
       "topic": "business-economy",
@@ -3401,16 +3401,6 @@
       "date": "Tue, 10 Feb 2026 15:07:24 GMT",
       "imageUrl": "https://cdn.sanity.io/images/0vv8moc6/psychtimes/d6ff733ee09ccd1a76dba5b1d9fee5bbcf98fd84-6016x4016.jpg",
       "url": "https://www.psychiatrictimes.com/view/can-ai-cure-medicine-s-ills"
-    },
-    {
-      "id": "gn-business-economy-49",
-      "title": "Is agentic AI ready to reshape Global Business Services? - VentureBeat",
-      "summary": "Is agentic AI ready to reshape Global Business Services? VentureBeat",
-      "topic": "business-economy",
-      "source": "VentureBeat",
-      "date": "Tue, 10 Feb 2026 15:00:49 GMT",
-      "imageUrl": "data/images/business-economy/k97vp0.webp",
-      "url": "https://venturebeat.com/orchestration/is-agentic-ai-ready-to-reshape-global-business-services"
     },
     {
       "id": "gn-unmanned-aircraft-14",
@@ -3783,16 +3773,6 @@
       "url": "https://www.preventionweb.net/collections/artificial-intelligence-ai-disaster-risk-reduction"
     },
     {
-      "id": "gn-business-economy-12",
-      "title": "UPSC Key: India-Malaysia relations, PM CARES Fund, and AI Impact Summit - The Indian Express",
-      "summary": "UPSC Key: India-Malaysia relations, PM CARES Fund, and AI Impact Summit The Indian Express",
-      "topic": "business-economy",
-      "source": "The Indian Express",
-      "date": "Tue, 10 Feb 2026 09:17:00 GMT",
-      "imageUrl": "data/images/business-economy/xmcgzz.webp",
-      "url": "https://indianexpress.com/article/upsc-current-affairs/upsc-key-india-malaysia-relations-pm-cares-fund-and-ai-impact-summit-10522699/"
-    },
-    {
       "id": "gn-visual-art-photography-13",
       "title": "Flagships Test Triple 100MP Cameras And 100MP Selfies - findarticles.com",
       "summary": "Flagships Test Triple 100MP Cameras And 100MP Selfies findarticles.com",
@@ -3813,7 +3793,7 @@
       "url": "https://worldhealth.net/news/digital-health-tools-transforming-research/"
     },
     {
-      "id": "gn-business-economy-28",
+      "id": "gn-business-economy-30",
       "title": "Small Caps Surge, But Valuations Warn; IT Faces AI Disruption - Whalesbook",
       "summary": "Small Caps Surge, But Valuations Warn; IT Faces AI Disruption Whalesbook",
       "topic": "business-economy",
@@ -3863,16 +3843,6 @@
       "url": "https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/artificial-intelligence-applications"
     },
     {
-      "id": "gn-business-economy-8",
-      "title": "The Best AI ETFs and How to Start Investing - NerdWallet",
-      "summary": "The Best AI ETFs and How to Start Investing NerdWallet",
-      "topic": "business-economy",
-      "source": "NerdWallet",
-      "date": "Tue, 10 Feb 2026 08:00:00 GMT",
-      "imageUrl": "data/images/business-economy/cfutgn.webp",
-      "url": "https://www.nerdwallet.com/investing/learn/best-performing-ai-etfs"
-    },
-    {
       "id": "gn-governance-politics-33",
       "title": "AI Regulation and Compliance in the US – Navigating the Legal Intricacies of Software Development - appinventiv.com",
       "summary": "AI Regulation and Compliance in the US – Navigating the Legal Intricacies of Software Development appinventiv.com",
@@ -3881,6 +3851,16 @@
       "date": "Tue, 10 Feb 2026 08:00:00 GMT",
       "imageUrl": "data/images/governance-politics/bkohrj.webp",
       "url": "https://appinventiv.com/blog/ai-regulation-and-compliance-in-us/"
+    },
+    {
+      "id": "gn-business-economy-11",
+      "title": "The Best AI ETFs and How to Start Investing - NerdWallet",
+      "summary": "The Best AI ETFs and How to Start Investing NerdWallet",
+      "topic": "business-economy",
+      "source": "NerdWallet",
+      "date": "Tue, 10 Feb 2026 08:00:00 GMT",
+      "imageUrl": "data/images/business-economy/cfutgn.webp",
+      "url": "https://www.nerdwallet.com/investing/learn/best-performing-ai-etfs"
     },
     {
       "id": "gn-environment-science-38",
@@ -4033,6 +4013,16 @@
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdWpEdi1nSVR3TWYyYVpxNFlGZmJPbGg3dlMwYkgzc0dKMjgzZHlFcFhMWDkxXzhLVnE5YTVFMENiUGNWLW9QVEt5VmpwVkMtOTFmZEQwNzhpSlQzM21aUlVNQWZFTmJ5d1o1LWlpSGdPc0oyaVk4S0dmcl9kUGxDVU56RS1ka3lEVDRj?oc=5"
     },
     {
+      "id": "gn-business-economy-7",
+      "title": "Singapore beats estimates with 5% GDP growth in 2025 amid AI challenges - Nikkei Asia",
+      "summary": "Singapore beats estimates with 5% GDP growth in 2025 amid AI challenges Nikkei Asia",
+      "topic": "business-economy",
+      "source": "Nikkei Asia",
+      "date": "Tue, 10 Feb 2026 01:45:00 GMT",
+      "imageUrl": "data/images/business-economy/8ul28i.webp",
+      "url": "https://asia.nikkei.com/economy/singapore-beats-estimates-with-5-gdp-growth-in-2025-amid-ai-challenges"
+    },
+    {
       "id": "gn-governance-politics-31",
       "title": "India Unveils Techno-Legal Framework to Embed Governance Into AI Systems by Design - BABL AI",
       "summary": "India Unveils Techno-Legal Framework to Embed Governance Into AI Systems by Design BABL AI",
@@ -4093,14 +4083,14 @@
       "url": "https://biz.chosun.com/en/en-it/2026/02/10/ZEUTJPKVE5FHNOG36J7WEBF53Y/"
     },
     {
-      "id": "gn-business-economy-9",
-      "title": "AI-led demand to continue as Singapore raises 2026 growth forecast to 2 to 4%; 2025 GDP up 5% - The Edge Singapore",
-      "summary": "AI-led demand to continue as Singapore raises 2026 growth forecast to 2 to 4%; 2025 GDP up 5% The Edge Singapore",
+      "id": "gn-business-economy-3",
+      "title": "Singapore raises 2026 growth forecast on global economic momentum and AI demand - Reuters",
+      "summary": "Singapore raises 2026 growth forecast on global economic momentum and AI demand Reuters",
       "topic": "business-economy",
-      "source": "The Edge Singapore",
-      "date": "Mon, 09 Feb 2026 23:54:13 GMT",
+      "source": "Reuters",
+      "date": "Tue, 10 Feb 2026 00:03:00 GMT",
       "imageUrl": "",
-      "url": "https://www.theedgesingapore.com/news/singapore-news/ai-led-demand-continue-singapore-raises-2026-growth-forecast-2-4-2025-gdp-5"
+      "url": "https://www.reuters.com/world/asia-pacific/singapores-economy-grows-69-yy-q4-2025-higher-than-advance-estimate-2026-02-10/"
     },
     {
       "id": "gn-digital-security-31",
@@ -4283,7 +4273,7 @@
       "url": "https://petapixel.com/best-waterproof-cameras/"
     },
     {
-      "id": "gn-business-economy-17",
+      "id": "gn-business-economy-20",
       "title": "Why you shouldn’t worry about AI eating the stock market, top analyst says. The U.S. economy is ‘about to take off’ - Fortune",
       "summary": "Why you shouldn’t worry about AI eating the stock market, top analyst says. The U.S. economy is ‘about to take off’ Fortune",
       "topic": "business-economy",
@@ -4743,16 +4733,6 @@
       "url": "https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/top-generative-ai-tools"
     },
     {
-      "id": "gn-business-economy-48",
-      "title": "Top 10 AI in Manufacturing Companies Driving Smart Factory Innovation in 2026 - Fortune Business Insights",
-      "summary": "Top 10 AI in Manufacturing Companies Driving Smart Factory Innovation in 2026 Fortune Business Insights",
-      "topic": "business-economy",
-      "source": "Fortune Business Insights",
-      "date": "Mon, 09 Feb 2026 08:00:00 GMT",
-      "imageUrl": "",
-      "url": "https://www.fortunebusinessinsights.com/blog/top-ai-in-manufacturing-companies-11156"
-    },
-    {
       "id": "gn-health-style-6",
       "title": "WHO backs wearables: From smart rings to CGMs, here's how wearables are boosting preventive healthcare - Moneycontrol",
       "summary": "WHO backs wearables: From smart rings to CGMs, here's how wearables are boosting preventive healthcare Moneycontrol",
@@ -4763,7 +4743,7 @@
       "url": "https://www.moneycontrol.com/health-and-fitness/who-backs-wearables-from-smart-rings-to-cgms-here-s-how-wearables-are-boosting-preventive-healthcare-article-13818763.html"
     },
     {
-      "id": "gn-business-economy-22",
+      "id": "gn-business-economy-23",
       "title": "Markets Brief: The Big 2026 Sector Rotation as AI Disrupts the Disruptors - Morningstar",
       "summary": "Markets Brief: The Big 2026 Sector Rotation as AI Disrupts the Disruptors Morningstar",
       "topic": "business-economy",
@@ -4863,7 +4843,7 @@
       "url": "https://www.yahoo.com/news/articles/10-business-schools-watch-2026-034923993.html"
     },
     {
-      "id": "gn-business-economy-29",
+      "id": "gn-business-economy-31",
       "title": "Monday.com Issues Weak Guidance Amid AI Disruption Concerns - Intellectia AI",
       "summary": "Monday.com Issues Weak Guidance Amid AI Disruption Concerns Intellectia AI",
       "topic": "business-economy",
@@ -4953,6 +4933,16 @@
       "url": "https://www.webpronews.com/googles-pixel-10a-gambit-how-a-499-phone-became-the-most-strategically-important-device-in-the-android-ecosystem/"
     },
     {
+      "id": "gn-business-economy-10",
+      "title": "Partnership for a new global AI discourse - The Financial Express | First Financial Daily of Bangladesh",
+      "summary": "Partnership for a new global AI discourse The Financial Express | First Financial Daily of Bangladesh",
+      "topic": "business-economy",
+      "source": "The Financial Express | First Financial Daily of Bangladesh",
+      "date": "Sun, 08 Feb 2026 17:04:47 GMT",
+      "imageUrl": "data/images/business-economy/rwwzmr.webp",
+      "url": "https://thefinancialexpress.com.bd/views/reviews/partnership-for-a-new-global-ai-discourse"
+    },
+    {
       "id": "gn-visual-art-photography-30",
       "title": "Vivo Bets Big on Small Phones With X300s Strategy Shift - en.brinkwire.com",
       "summary": "Vivo Bets Big on Small Phones With X300s Strategy Shift en.brinkwire.com",
@@ -4973,14 +4963,14 @@
       "url": "https://techmitra.in/20-best-chatgpt-prompts-for-health-and-fitness/"
     },
     {
-      "id": "gn-business-economy-2",
-      "title": "Inflation, AI, Geopolitics To Impact Australian Economy : Analysis - Crowdfund Insider",
-      "summary": "Inflation, AI, Geopolitics To Impact Australian Economy : Analysis Crowdfund Insider",
+      "id": "gn-business-economy-16",
+      "title": "$715B AI Spending Surge Won't Boost Economy, JPMorgan Warns - TheTradable",
+      "summary": "$715B AI Spending Surge Won't Boost Economy, JPMorgan Warns TheTradable",
       "topic": "business-economy",
-      "source": "Crowdfund Insider",
-      "date": "Sun, 08 Feb 2026 15:42:41 GMT",
-      "imageUrl": "data/images/business-economy/vc890v.webp",
-      "url": "https://www.crowdfundinsider.com/2026/02/260395-inflation-ai-geopolitics-to-impact-australian-economy-analysis/"
+      "source": "TheTradable",
+      "date": "Sun, 08 Feb 2026 15:05:30 GMT",
+      "imageUrl": "",
+      "url": "https://thetradable.com/global-economy/715b-ai-spending-surge-wont-boost-economy-jpmorgan-warns--ms"
     },
     {
       "id": "gn-visual-art-photography-24",
@@ -5211,6 +5201,16 @@
       "date": "Sat, 07 Feb 2026 15:47:00 GMT",
       "imageUrl": "https://m.foolcdn.com/media/dubs/original_images/AIQ_2.6.26.png?_w=3840",
       "url": "https://www.fool.com/investing/stock-market/market-sectors/information-technology/ai-stocks/ai-etfs/"
+    },
+    {
+      "id": "gn-business-economy-14",
+      "title": "India-US trade deal LIVE Updates – Access to NVIDIA chips, AI tech a ‘big win’ in US deal, says Piyush Goyal - The Financial Express",
+      "summary": "India-US trade deal LIVE Updates – Access to NVIDIA chips, AI tech a ‘big win’ in US deal, says Piyush Goyal The Financial Express",
+      "topic": "business-economy",
+      "source": "The Financial Express",
+      "date": "Sat, 07 Feb 2026 14:19:35 GMT",
+      "imageUrl": "data/images/business-economy/pf249t.webp",
+      "url": "https://www.financialexpress.com/business/news/india-us-trade-deal-framework-live-updates-modi-trump/4134266/"
     },
     {
       "id": "gn-technology-innovation-32",
