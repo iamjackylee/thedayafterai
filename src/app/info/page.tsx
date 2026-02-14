@@ -68,18 +68,18 @@ export default function InfoPage() {
                 AI Market Insights
               </h3>
               <p className="text-[var(--text-secondary)] leading-relaxed">
-                A daily technology experiment designed solely to test
-                AI&apos;s capability in analysing financial market data—not
-                to encourage trading. AI forecasts the price direction of a
-                U.S.-listed stock over the next five trading days, and we
-                publish results openly.
+                Can AI predict which way a stock will move? We run a daily
+                experiment to find out—forecasting the five-day price
+                direction of a U.S.-listed stock and sharing every result
+                publicly. Think of it as a live research journal you can
+                follow along with.
               </p>
               <p className="text-[var(--text-secondary)] text-sm mt-2 italic">
-                Educational and experimental only—not financial advice. See our{" "}
+                This is a technology experiment, not financial advice.{" "}
                 <Link href="/disclaimer" className="text-[var(--accent)] hover:underline">
-                  Disclaimer
-                </Link>{" "}
-                (Section&nbsp;4) for full details.
+                  Full details here
+                </Link>
+                .
               </p>
             </div>
 
@@ -89,9 +89,9 @@ export default function InfoPage() {
                 AI News Hub
               </h3>
               <p className="text-[var(--text-secondary)] leading-relaxed">
-                A central dashboard of AI headlines from publishers everywhere.
-                We curate and link to the original articles—we don&apos;t claim
-                ownership of third-party content.
+                One dashboard, dozens of publishers. We pull together the
+                best AI headlines from across the web so you can scan what
+                matters—and click through to the full stories.
               </p>
             </div>
           </div>
@@ -225,27 +225,27 @@ export default function InfoPage() {
               {
                 letter: "T",
                 title: "Transparency",
-                desc: "We clearly distinguish our original content from external sources we link to.",
+                desc: "You always know what\u2019s ours and what\u2019s sourced\u2014no hidden agendas.",
               },
               {
                 letter: "D",
                 title: "Dedication",
-                desc: "We publish consistently and prioritise relevance over noise.",
+                desc: "New content every single day, focused on signal over noise.",
               },
               {
                 letter: "A",
                 title: "Accountability",
-                desc: "We aim for accuracy, correct mistakes, and avoid misleading framing.",
+                desc: "When we get it wrong, we own it and fix it\u2014fast.",
               },
               {
                 letter: "A",
                 title: "Adaptability",
-                desc: "We evolve our workflow as AI, platforms, and standards change.",
+                desc: "AI never stands still, and neither do we. Our tools and process evolve constantly.",
               },
               {
                 letter: "I",
                 title: "Inclusivity",
-                desc: "We welcome diverse perspectives and global viewpoints.",
+                desc: "Global stories, diverse voices, every perspective welcome.",
               },
             ].map((v, i) => (
               <div
@@ -293,6 +293,14 @@ export default function InfoPage() {
             </p>
           </div>
         </section>
+
+        {/* Lightweight legal bridge */}
+        <p className="text-sm text-[var(--text-secondary)] text-center mt-8 mb-2">
+          For the fine print, see our{" "}
+          <Link href="/terms" className="text-[var(--accent)] hover:underline">Terms</Link>,{" "}
+          <Link href="/privacy" className="text-[var(--accent)] hover:underline">Privacy Policy</Link>, and{" "}
+          <Link href="/disclaimer" className="text-[var(--accent)] hover:underline">Disclaimer</Link>.
+        </p>
 
       </main>
 
