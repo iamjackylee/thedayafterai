@@ -1,0 +1,78 @@
+name: Fallback Image Report
+
+on:
+  schedule:
+    - cron: "0 * * * *" # Every hour, on the hour
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate fallback image report
+        id: report
+        run: |
+          REPORT=$(node scripts/report-fallback-images.js)
+          # Save to file for gh issue body (avoids shell escaping issues)
+          echo "$REPORT" > /tmp/report.md
+
+          # Count fallback articles for the title
+          FALLBACK_COUNT=$(echo "$REPORT" | grep -oP 'Using fallback images:\s*\K\d+' || echo "0")
+          NO_IMAGE_COUNT=$(echo "$REPORT" | grep -oP 'No image at all:\s*\K\d+' || echo "0")
+          echo "fallback_count=$FALLBACK_COUNT" >> "$GITHUB_OUTPUT"
+          echo "no_image_count=$NO_IMAGE_COUNT" >> "$GITHUB_OUTPUT"
+          echo "has_issues=$([ "$FALLBACK_COUNT" -gt 0 ] || [ "$NO_IMAGE_COUNT" -gt 0 ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
+
+      - name: Find existing report issue
+        id: find_issue
+        run: |
+          ISSUE_NUMBER=$(gh issue list --label "fallback-report" --state open --json number --jq '.[0].number // empty' 2>/dev/null || echo "")
+          echo "issue_number=$ISSUE_NUMBER" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Create label if missing
+        run: |
+          gh label create "fallback-report" --description "Auto-generated fallback image report" --color "d4c5f9" 2>/dev/null || true
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Update or create report issue
+        if: steps.report.outputs.has_issues == 'true'
+        run: |
+          TITLE="Fallback Image Report: ${{ steps.report.outputs.fallback_count }} fallback, ${{ steps.report.outputs.no_image_count }} missing"
+          if [ -n "${{ steps.find_issue.outputs.issue_number }}" ]; then
+            gh issue edit "${{ steps.find_issue.outputs.issue_number }}" \
+              --title "$TITLE" \
+              --body-file /tmp/report.md
+            echo "Updated issue #${{ steps.find_issue.outputs.issue_number }}"
+          else
+            gh issue create \
+              --title "$TITLE" \
+              --body-file /tmp/report.md \
+              --label "fallback-report"
+            echo "Created new report issue"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Close issue if all images resolved
+        if: steps.report.outputs.has_issues == 'false' && steps.find_issue.outputs.issue_number != ''
+        run: |
+          gh issue close "${{ steps.find_issue.outputs.issue_number }}" \
+            --comment "All articles now have real images! Closing this report."
+          echo "Closed issue #${{ steps.find_issue.outputs.issue_number }} — no fallback images remaining"
+        env:
+          GH_TOKEN: ${{ github.token }}
