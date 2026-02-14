@@ -36,8 +36,8 @@ yarn-error.log*
 
 # auto-generated images (downloaded at fetch time, not committed)
 # Note: public/images/{category}/ curated fallbacks ARE committed
+# Note: public/data/screenshots/ ARE committed (hero image fallbacks)
 /public/data/images/
-/public/data/screenshots/
 
 # vercel
 .vercel
