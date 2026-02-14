@@ -35,7 +35,7 @@ yarn-error.log*
 !.env.example
 
 # auto-generated images (downloaded at fetch time, not committed)
-# Note: public/images/{category}/ curated fallbacks ARE committed
+# Note: public/images/news/ curated fallbacks ARE committed
 # Note: public/data/screenshots/ ARE committed (hero image fallbacks)
 /public/data/images/
 
