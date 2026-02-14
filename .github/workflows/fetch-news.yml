@@ -42,7 +42,7 @@ jobs:
             git add public/data/screenshots/
           fi
           if [ -d "public/data/images" ]; then
-            git add public/data/images/
+            git add -f public/data/images/
           fi
           if git diff --staged --quiet; then
             echo "No changes to commit"
