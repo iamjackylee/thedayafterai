@@ -483,6 +483,8 @@ function pickLocalFallback(article) {
 
 function isGenericImage(url) {
   if (!url) return true;
+  // Malformed URLs (e.g. https:/host instead of https://host) can't be fetched
+  if (/^https?:\/[^/]/i.test(url)) return true;
   // Small images in URL params (width/w/size < 150) are likely icons/logos
   if (/(?:width|w|size)=(?:1[0-4]?\d|[1-9]\d?)(?:\D|$)/i.test(url)) return true;
   return [
@@ -491,6 +493,7 @@ function isGenericImage(url) {
     /placeholder/i, /\/avatar/i, /site[-_]?logo/i, /brand[-_]?logo/i,
     /masthead/i, /header[-_]?logo/i, /nav[-_]?logo/i, /\.ico(?:\?|$)/i,
     /og[-_]img/i, /default[-_]?og/i, /site[-_]?default/i,
+    /\/emblem/i, /\/crest/i, /\/coat[-_]of[-_]arms/i,
   ].some((re) => re.test(url));
 }
 
@@ -829,6 +832,7 @@ async function resolveArticles(articles) {
                 "site_logo", "header-logo", "header_logo", "nav-logo", "nav_logo",
                 ".ico", ".svg", "widget", "button", "banner-ad", "advertisement",
                 "og-img", "og_img", "default-og", "site-default",
+                "/emblem", "/crest", "coat-of-arms",
               ].some((pat) => lower.includes(pat));
             };
 
@@ -949,6 +953,7 @@ async function resolveArticles(articles) {
             const isGood = (u) => u && u.startsWith("http") && ![
               "avatar","/logo","favicon","icon","pixel","tracking","1x1","spacer",
               "badge","brand","masthead","site-logo","site_logo",".ico",".svg",
+              "/emblem","/crest","coat-of-arms",
             ].some((p) => u.toLowerCase().includes(p));
             // JSON-LD
             try {
@@ -1141,13 +1146,13 @@ async function downloadArticleImages(articles) {
           redirect: "follow",
           signal: AbortSignal.timeout(10000),
         });
-        if (!res.ok) { failed++; return; }
+        if (!res.ok) { article.imageUrl = ""; failed++; return; }
 
         const contentType = res.headers.get("content-type") || "";
-        if (!contentType.startsWith("image/")) { failed++; return; }
+        if (!contentType.startsWith("image/")) { article.imageUrl = ""; failed++; return; }
 
         const buffer = Buffer.from(await res.arrayBuffer());
-        if (buffer.length < 1000) { failed++; return; }
+        if (buffer.length < 1000) { article.imageUrl = ""; failed++; return; }
 
         // Resize to 600×400 and convert to WebP for consistent, fast thumbnails
         await sharp(buffer)
@@ -1158,14 +1163,15 @@ async function downloadArticleImages(articles) {
         const stat = fs.statSync(fullPath);
         if (stat.size < 500) {
           fs.unlinkSync(fullPath);
-          failed++;
+          article.imageUrl = ""; failed++;
           return;
         }
 
         article.imageUrl = localPath;
         downloaded++;
       } catch {
-        // Download or sharp error — leave the external URL as-is
+        // Download or sharp error — clear so screenshot/fallback pipeline can handle
+        article.imageUrl = "";
         failed++;
       }
     }));
@@ -1231,6 +1237,7 @@ async function captureHeroScreenshot(page, articleUrl) {
           "1x1", "spacer", "badge", "brand", "masthead", ".ico", ".svg",
           "site-logo", "site_logo", "header-logo", "nav-logo", "widget",
           "button", "banner-ad", "advertisement",
+          "/emblem", "/crest", "coat-of-arms",
         ].some((p) => l.includes(p));
       };
       let best = null;
