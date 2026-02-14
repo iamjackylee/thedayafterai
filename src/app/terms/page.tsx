@@ -22,7 +22,7 @@ export default function TermsPage() {
           >
             Terms of Service
           </h1>
-          <p className="text-sm text-[var(--muted)]">Last updated: February 13, 2026</p>
+          <p className="text-sm text-[var(--muted)]">Last updated: February 14, 2026</p>
         </header>
 
         <div className="prose-terms space-y-10 text-[var(--text-secondary)] leading-relaxed">
@@ -304,7 +304,14 @@ export default function TermsPage() {
             <p>
               We provide links to third-party websites and may display thumbnail images sourced
               from those websites solely for the purpose of identifying and linking to the original
-              article. <strong className="text-white">TheDayAfterAI</strong> does not endorse or
+              article. Where an original publisher image is unavailable, we may display an
+              AI-generated image as a visual placeholder. For full details on how images are
+              sourced and the limitations of AI-generated images, see our{" "}
+              <Link href="/disclaimer" className="text-[var(--accent)] hover:underline">
+                Disclaimer
+              </Link>{" "}
+              (Section&nbsp;3.2).{" "}
+              <strong className="text-white">TheDayAfterAI</strong> does not endorse or
               assume responsibility for any content, information, or services available on
               third-party websites. When accessing external links, you are subject to the terms
               and policies of those websites. If you are a content owner and believe your material
