@@ -326,16 +326,25 @@ export default function EthicsPolicyPage() {
             </p>
 
             <h3 className="text-base font-semibold text-white mt-6 mb-2">
-              5.2 No Dealing in Forecasted Securities
+              5.2 Interests Disclosure and Dealing
             </h3>
             <p>
-              TheDayAfterAI does not trade in, hold positions in, or receive any
-              benefit from the securities it forecasts or references in the AI
-              Market Insights feature. No director, employee, or agent of
-              TheDayAfterAI is authorised to trade on the basis of forecasts
-              published on this Website. This prohibition extends to family
-              members and close associates of editorial staff to the extent
-              that they have advance knowledge of unpublished forecasts.
+              TheDayAfterAI, its directors, employees, agents, and their
+              respective associates may from time to time hold interests in
+              securities that are the subject of content published on this
+              Website. Full details of our interests disclosure, including the
+              purpose of the AI Market Insights experiment and the safeguards we
+              apply to manage actual and perceived conflicts of interest, are set
+              out in our{" "}
+              <Link
+                href="/disclaimer"
+                className="text-[var(--accent)] hover:underline"
+              >
+                Disclaimer
+              </Link>{" "}
+              (Section&nbsp;4.5). All editorial team members are required to
+              disclose any relevant interest to the Editor-in-Chief before any
+              content referencing the relevant security is published or generated.
             </p>
 
             <h3 className="text-base font-semibold text-white mt-6 mb-2">

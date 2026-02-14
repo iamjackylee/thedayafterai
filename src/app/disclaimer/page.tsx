@@ -176,19 +176,35 @@ export default function DisclaimerPage() {
             </p>
 
             <h3 className="text-base font-semibold text-white mt-6 mb-2">
-              4.5 No Dealing
+              4.5 Purpose of AI Market Insights and Interests Disclosure
             </h3>
             <p>
-              <strong className="text-white">TheDayAfterAI</strong> does not trade in, hold
-              positions in, or receive any benefit from the securities it forecasts or references.
-              No director, employee, or agent of TheDayAfterAI is authorised to trade on the basis
-              of forecasts published on this Website. This prohibition extends to family members
-              and close associates of editorial staff to the extent that they have advance
-              knowledge of unpublished forecasts. See also our{" "}
+              The <strong className="text-white">AI Market Insights</strong> feature is published
+              solely as a technology experiment designed to test and evaluate the capability of
+              artificial intelligence in analysing publicly available financial market data. It is
+              not published for the purpose of attracting, encouraging, or inducing any person to
+              trade in, buy, sell, or hold any financial product. No content published in connection
+              with the AI Market Insights feature is intended to constitute a securities
+              recommendation or statement of opinion intended to influence any person in making a
+              decision in relation to a financial product within the meaning of section&nbsp;766B of
+              the <em>Corporations Act 2001</em> (Cth).
+            </p>
+            <p className="mt-3">
+              <strong className="text-white">TheDayAfterAI</strong>, its directors, employees,
+              agents, and their respective associates may from time to time hold, acquire, or
+              dispose of interests (including direct and indirect financial interests) in securities
+              that are the subject of AI-generated forecasts or are otherwise referenced on this
+              Website. Any such interest is held independently of the editorial and AI-generation
+              process and does not influence the selection of securities for analysis or the content
+              of any forecast. The existence of any such interest should not be taken as a
+              recommendation or endorsement of the relevant security.
+            </p>
+            <p className="mt-3">
+              For details on how we manage conflicts of interest, see our{" "}
               <Link href="/ethics-policy" className="text-[var(--accent)] hover:underline">
                 Ethics Policy
               </Link>{" "}
-              (Section&nbsp;5.2).
+              (Section&nbsp;5).
             </p>
 
             <h3 className="text-base font-semibold text-white mt-6 mb-2">

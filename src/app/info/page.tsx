@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
@@ -67,13 +68,18 @@ export default function InfoPage() {
                 AI Market Insights
               </h3>
               <p className="text-[var(--text-secondary)] leading-relaxed">
-                A daily experiment: AI forecasts the price direction of a
-                U.S.-listed stock over the next five trading days. We publish
-                the forecast alongside the actual result—tracked openly so you
-                can judge performance over time.
+                A daily technology experiment designed solely to test
+                AI&apos;s capability in analysing financial market data—not
+                to encourage trading. AI forecasts the price direction of a
+                U.S.-listed stock over the next five trading days, and we
+                publish results openly.
               </p>
               <p className="text-[var(--text-secondary)] text-sm mt-2 italic">
-                Educational and experimental only—not financial advice.
+                Educational and experimental only—not financial advice. See our{" "}
+                <Link href="/disclaimer" className="text-[var(--accent)] hover:underline">
+                  Disclaimer
+                </Link>{" "}
+                (Section&nbsp;4) for full details.
               </p>
             </div>
 
