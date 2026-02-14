@@ -1,0 +1,69 @@
+{
+  "_comment": "Each category has curated fallback images with keyword tags for relevance matching. Place image files in public/images/{category}/ and list them here. The fetch script scores article titles against these tags and uses a hash for variety so different articles get different thumbnails.",
+  "ai-academy": [
+    { "file": "foundations-research.webp", "tags": ["fundamental", "research", "university", "breakthrough", "academic", "discovery", "science", "study", "paper"] },
+    { "file": "model-advancement.webp", "tags": ["model", "advancement", "architecture", "benchmark", "milestone", "training", "performance", "capabilities", "frontier"] },
+    { "file": "education-integration.webp", "tags": ["education", "platform", "integration", "tools", "learning", "teaching", "workflow", "knowledge", "curriculum"] },
+    { "file": "ethics-philosophy.webp", "tags": ["ethics", "alignment", "safety", "human", "societal", "governance", "responsibility", "philosophy", "debate"] }
+  ],
+  "business-economy": [
+    { "file": "global-economy.webp", "tags": ["economy", "trade", "GDP", "market", "growth", "disruption", "supply", "chain", "commerce"] },
+    { "file": "investment-strategy.webp", "tags": ["startup", "funding", "venture", "capital", "investment", "IPO", "acquisition", "merger", "valuation"] },
+    { "file": "workforce-jobs.webp", "tags": ["workforce", "jobs", "hiring", "displacement", "automation", "reskilling", "employment", "labour", "productivity"] },
+    { "file": "enterprise-adoption.webp", "tags": ["enterprise", "adoption", "deploy", "solution", "application", "revenue", "business", "digital", "transformation"] }
+  ],
+  "chatbot-development": [
+    { "file": "market-competition.webp", "tags": ["chatbot", "competition", "GPT", "Claude", "Gemini", "language", "model", "benchmark", "rivalry"] },
+    { "file": "enterprise-chatbot.webp", "tags": ["enterprise", "deployment", "customer", "service", "conversational", "business", "automation", "workflow"] },
+    { "file": "personal-assistant.webp", "tags": ["personal", "assistant", "daily", "productivity", "companion", "consumer", "voice", "smart"] },
+    { "file": "social-impact.webp", "tags": ["social", "impact", "misinformation", "trust", "ethics", "deepfake", "communication", "society"] }
+  ],
+  "digital-security": [
+    { "file": "scam-fraud.webp", "tags": ["scam", "fraud", "phishing", "deepfake", "impersonation", "social", "engineering", "cyber", "attack"] },
+    { "file": "privacy-surveillance.webp", "tags": ["privacy", "surveillance", "data", "collection", "tracking", "facial", "recognition", "biometric", "breach"] },
+    { "file": "security-law.webp", "tags": ["cybercrime", "law", "regulation", "liability", "ethics", "hacking", "legislation", "compliance", "prosecution"] },
+    { "file": "security-defence.webp", "tags": ["cybersecurity", "threat", "detection", "defence", "protection", "malware", "encryption", "zero", "trust"] }
+  ],
+  "environment-science": [
+    { "file": "climate-earth.webp", "tags": ["climate", "weather", "prediction", "environmental", "monitoring", "disaster", "carbon", "sustainability", "emissions"] },
+    { "file": "smart-infrastructure.webp", "tags": ["smart", "grid", "energy", "efficiency", "renewable", "city", "infrastructure", "transport", "urban"] },
+    { "file": "biology-ecology.webp", "tags": ["biology", "ecology", "conservation", "biodiversity", "wildlife", "agriculture", "farming", "ocean", "marine"] },
+    { "file": "scientific-discovery.webp", "tags": ["scientific", "discovery", "physics", "quantum", "computing", "chemistry", "materials", "space", "astronomy"] }
+  ],
+  "governance-politics": [
+    { "file": "elections-democracy.webp", "tags": ["election", "campaign", "political", "democracy", "voting", "disinformation", "propaganda", "influence"] },
+    { "file": "regulation-law.webp", "tags": ["regulation", "legislation", "bill", "law", "framework", "policy", "compliance", "government", "reform"] },
+    { "file": "national-security.webp", "tags": ["national", "security", "defence", "military", "intelligence", "geopolitics", "warfare", "arms"] },
+    { "file": "accountability-bias.webp", "tags": ["governance", "accountability", "bias", "fairness", "trust", "transparency", "rights", "discrimination"] }
+  ],
+  "health-style": [
+    { "file": "lifestyle-tech.webp", "tags": ["fitness", "wearable", "health", "tracker", "lifestyle", "fashion", "food", "nutrition", "wellness"] },
+    { "file": "medical-ai.webp", "tags": ["medical", "diagnosis", "treatment", "clinical", "hospital", "drug", "discovery", "pharmaceutical", "surgery"] },
+    { "file": "human-relationship.webp", "tags": ["human", "relationship", "companion", "emotional", "dating", "social", "connection", "friend", "bond"] },
+    { "file": "mental-health.webp", "tags": ["mental", "health", "therapy", "counselling", "wellbeing", "stress", "anxiety", "depression", "mindfulness"] }
+  ],
+  "musical-art": [
+    { "file": "streaming-curation.webp", "tags": ["music", "streaming", "playlist", "recommendation", "Spotify", "radio", "broadcasting", "curation", "listener"] },
+    { "file": "music-industry.webp", "tags": ["music", "industry", "label", "royalty", "copyright", "licensing", "business", "revenue", "rights"] },
+    { "file": "artist-collaboration.webp", "tags": ["artist", "collaboration", "technology", "producer", "musician", "partnership", "creative", "production"] },
+    { "file": "music-creation.webp", "tags": ["music", "creation", "compose", "generate", "produce", "song", "sound", "design", "remix", "vocal"] }
+  ],
+  "technology-innovation": [
+    { "file": "hardware-chips.webp", "tags": ["chip", "semiconductor", "processor", "GPU", "hardware", "computing", "infrastructure", "data", "centre"] },
+    { "file": "tech-startups.webp", "tags": ["startup", "founder", "entrepreneur", "innovation", "launch", "accelerator", "venture", "disrupt", "growth"] },
+    { "file": "wearable-devices.webp", "tags": ["wearable", "device", "smartwatch", "glasses", "headset", "gadget", "consumer", "electronics", "sensor"] },
+    { "file": "robotics-automation.webp", "tags": ["robot", "robotics", "humanoid", "autonomous", "machine", "factory", "automation", "manufacturing", "IoT"] }
+  ],
+  "unmanned-aircraft": [
+    { "file": "civilian-drones.webp", "tags": ["drone", "delivery", "logistics", "commercial", "civilian", "agriculture", "surveying", "inspection", "mapping"] },
+    { "file": "drone-regulation.webp", "tags": ["drone", "regulation", "airspace", "FAA", "CASA", "licensing", "safety", "policy", "privacy", "compliance"] },
+    { "file": "military-drones.webp", "tags": ["military", "drone", "combat", "UAV", "autonomous", "weapon", "defence", "surveillance", "swarm"] },
+    { "file": "drone-technology.webp", "tags": ["drone", "technology", "breakthrough", "navigation", "sensor", "battery", "flight", "eVTOL", "air", "taxi"] }
+  ],
+  "visual-art-photography": [
+    { "file": "imaging-equipment.webp", "tags": ["camera", "lens", "sensor", "computational", "photography", "mirrorless", "DSLR", "hardware", "capture"] },
+    { "file": "editing-tools.webp", "tags": ["photo", "editing", "retouching", "software", "Photoshop", "upscale", "enhance", "video", "effects"] },
+    { "file": "mobile-photography.webp", "tags": ["smartphone", "camera", "mobile", "photography", "phone", "app", "filter", "portrait", "Instagram"] },
+    { "file": "artistic-innovation.webp", "tags": ["generated", "art", "digital", "painting", "creative", "visual", "exhibition", "gallery", "NFT", "illustration"] }
+  ]
+}

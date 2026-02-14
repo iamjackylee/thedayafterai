@@ -34,10 +34,9 @@ yarn-error.log*
 .env*
 !.env.example
 
-# downloaded article images (generated at fetch time, not committed)
-/public/images/**/*.webp
-/public/images/**/*.jpg
-/public/images/**/*.png
+# auto-generated images (downloaded at fetch time, not committed)
+# Note: public/images/{category}/ curated fallbacks ARE committed
+/public/data/images/
 /public/data/screenshots/
 
 # vercel
