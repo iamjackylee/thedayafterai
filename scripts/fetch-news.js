@@ -20,7 +20,9 @@ const PLAYLIST_URL = `https://www.youtube.com/playlist?list=${PLAYLIST_ID}`;
 
 const OUTPUT_DIR = path.join(__dirname, "..", "public", "data");
 const SCREENSHOTS_DIR = path.join(__dirname, "..", "public", "data", "screenshots");
-const IMAGES_DIR = path.join(__dirname, "..", "public", "images");
+const DOWNLOADED_IMAGES_DIR = path.join(__dirname, "..", "public", "data", "images");
+const FALLBACK_IMAGES_DIR = path.join(__dirname, "..", "public", "images");
+const IMAGE_MANIFEST_PATH = path.join(__dirname, "..", "public", "images", "image-manifest.json");
 const PREFETCHED_PATH = path.join(OUTPUT_DIR, "prefetched.json");
 const URL_CACHE_PATH = path.join(OUTPUT_DIR, "url-cache.json");
 const CUSTOM_JSON_PATH = path.join(OUTPUT_DIR, "custom-articles.json");
@@ -344,70 +346,70 @@ function stripHtml(html) {
     .replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
 }
 
-// ── Fallback images ────────────────────────────────────────────────
+// ── Local fallback image picker (replaces Unsplash stock images) ──────
+// Each category has curated images in public/images/{category}/ with keyword
+// tags in image-manifest.json. The picker scores each image against the
+// article title + summary, then uses a title-hash to diversify among the
+// top-scoring images so 30 articles don't all show the same thumbnail.
 
-const TOPIC_FALLBACK_IMAGES = {
-  "ai-academy": [
-    "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop&auto=format",
-  ],
-  "business-economy": [
-    "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&h=400&fit=crop&auto=format",
-  ],
-  "chatbot-development": [
-    "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=600&h=400&fit=crop&auto=format",
-  ],
-  "digital-security": [
-    "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600&h=400&fit=crop&auto=format",
-  ],
-  "environment-science": [
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&h=400&fit=crop&auto=format",
-  ],
-  "governance-politics": [
-    "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1555848962-6e79363ec58f?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&h=400&fit=crop&auto=format",
-  ],
-  "health-style": [
-    "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=600&h=400&fit=crop&auto=format",
-  ],
-  "musical-art": [
-    "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=600&h=400&fit=crop&auto=format",
-  ],
-  "technology-innovation": [
-    "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop&auto=format",
-  ],
-  "unmanned-aircraft": [
-    "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1508444845599-5c89863b1c44?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=600&h=400&fit=crop&auto=format",
-  ],
-  "visual-art-photography": [
-    "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=400&fit=crop&auto=format",
-    "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=600&h=400&fit=crop&auto=format",
-  ],
-};
+let _imageManifest = null;
 
-function generateImageUrl(title, topic) {
-  const images = TOPIC_FALLBACK_IMAGES[topic || "technology-innovation"] || TOPIC_FALLBACK_IMAGES["technology-innovation"];
-  const hash = title.split("").reduce((acc, ch) => acc + ch.charCodeAt(0), 0);
-  return images[hash % images.length];
+function loadImageManifest() {
+  if (_imageManifest) return _imageManifest;
+  try {
+    _imageManifest = JSON.parse(fs.readFileSync(IMAGE_MANIFEST_PATH, "utf-8"));
+  } catch {
+    _imageManifest = {};
+  }
+  return _imageManifest;
+}
+
+/** Score how relevant an image's tags are to an article's text. */
+function scoreRelevance(text, tags) {
+  const lower = text.toLowerCase();
+  let score = 0;
+  for (const tag of tags) {
+    if (lower.includes(tag.toLowerCase())) score++;
+  }
+  return score;
+}
+
+/** Pick the best local fallback image for an article from its category pool.
+ *  Returns relative path like "images/{category}/filename.webp" or "" if none. */
+function pickLocalFallback(article) {
+  const manifest = loadImageManifest();
+  const category = article.topic || "technology-innovation";
+  const pool = manifest[category] || [];
+  if (pool.length === 0) return "";
+
+  // Filter to images whose files actually exist
+  const available = pool.filter((img) => {
+    const fullPath = path.join(FALLBACK_IMAGES_DIR, category, img.file);
+    return fs.existsSync(fullPath);
+  });
+  if (available.length === 0) return "";
+
+  const text = `${article.title} ${article.summary || ""}`;
+
+  // Score every image by keyword relevance
+  const scored = available.map((img) => ({
+    file: img.file,
+    score: scoreRelevance(text, img.tags || []),
+  }));
+
+  // Sort descending by score
+  scored.sort((a, b) => b.score - a.score);
+
+  // Gather the top tier — anything within 1 point of the best, or at least
+  // all zero-scorers (so hash diversity still works when nothing matches)
+  const best = scored[0].score;
+  const topTier = scored.filter((s) => s.score >= Math.max(best - 1, 0));
+
+  // Hash-based pick within the top tier for diversity across articles
+  const hash = text.split("").reduce((acc, ch) => acc + ch.charCodeAt(0), 0);
+  const pick = topTier[Math.abs(hash) % topTier.length];
+
+  return `images/${category}/${pick.file}`;
 }
 
 // ── Helpers ────────────────────────────────────────────────────────
@@ -666,7 +668,7 @@ async function resolveArticles(articles) {
   // Articles with resolved URLs but no image (need image re-extraction)
   const needsImage = articles.filter((a) => {
     if (a.url.includes("news.google.com")) return false; // handled above
-    return !a.imageUrl || a.imageUrl.includes("unsplash.com");
+    return !a.imageUrl;
   });
   if (toResolve.length === 0 && needsImage.length === 0) {
     console.log("All URLs resolved from cache and all have images!");
@@ -849,7 +851,7 @@ async function resolveArticles(articles) {
   // Articles with resolved URLs but no image (cache had imageUrl:"") get another
   // chance with the stealthier Playwright settings.
   const needsPlaywrightImage = articles.filter((a) =>
-    (!a.imageUrl || a.imageUrl.includes("unsplash.com")) &&
+    !a.imageUrl &&
     !a.url.includes("news.google.com") && a.url.startsWith("http")
   );
   if (needsPlaywrightImage.length > 0) {
@@ -906,8 +908,7 @@ async function resolveArticles(articles) {
   // A simple HTTP GET + regex parse for extracting og:image / twitter:image
   // since these meta tags are server-rendered in HTML (no JS needed).
   const stillNeedsImage = articles.filter((a) =>
-    !a.imageUrl || a.imageUrl.includes("unsplash.com")
-  ).filter((a) => !a.url.includes("news.google.com")); // must have resolved URL
+    !a.imageUrl   ).filter((a) => !a.url.includes("news.google.com")); // must have resolved URL
 
   if (stillNeedsImage.length > 0) {
     console.log(`Fetching og:image via HTTP for ${stillNeedsImage.length} articles...`);
@@ -1016,8 +1017,7 @@ const IMAGE_DL_CONCURRENCY = 10;
  *  Inserts between HTTP og:image extraction and screenshot fallback. */
 async function downloadArticleImages(articles) {
   const toDownload = articles.filter((a) =>
-    a.imageUrl && a.imageUrl.startsWith("http") && !a.imageUrl.includes("unsplash.com")
-  );
+    a.imageUrl && a.imageUrl.startsWith("http")   );
   if (toDownload.length === 0) return;
 
   let sharp;
@@ -1033,12 +1033,12 @@ async function downloadArticleImages(articles) {
     const batch = toDownload.slice(i, i + IMAGE_DL_CONCURRENCY);
     await Promise.allSettled(batch.map(async (article) => {
       const category = article.topic || "technology-innovation";
-      const categoryDir = path.join(IMAGES_DIR, category);
+      const categoryDir = path.join(DOWNLOADED_IMAGES_DIR, category);
       fs.mkdirSync(categoryDir, { recursive: true });
 
       const hash = screenshotHash(article.imageUrl);
       const filename = `${hash}.webp`;
-      const localPath = `images/${category}/${filename}`;
+      const localPath = `data/images/${category}/${filename}`;
       const fullPath = path.join(categoryDir, filename);
 
       // Skip if already downloaded in a previous run
@@ -1092,27 +1092,26 @@ async function downloadArticleImages(articles) {
   console.log(`  Image download: ${downloaded} new, ${skipped} cached, ${failed} failed`);
 }
 
-/** Remove locally-downloaded images no longer referenced by any article. */
-function cleanupCategoryImages(articles) {
+/** Remove auto-downloaded images no longer referenced by any article. */
+function cleanupDownloadedImages(articles) {
   const referenced = new Set(
     articles
-      .filter((a) => a.imageUrl?.startsWith("images/"))
+      .filter((a) => a.imageUrl?.startsWith("data/images/"))
       .map((a) => a.imageUrl)
   );
   let removed = 0;
   for (const category of CATEGORY_KEYS) {
-    const dir = path.join(IMAGES_DIR, category);
+    const dir = path.join(DOWNLOADED_IMAGES_DIR, category);
     if (!fs.existsSync(dir)) continue;
     for (const file of fs.readdirSync(dir)) {
-      if (file === ".gitkeep") continue;
-      const relPath = `images/${category}/${file}`;
+      const relPath = `data/images/${category}/${file}`;
       if (!referenced.has(relPath)) {
         fs.unlinkSync(path.join(dir, file));
         removed++;
       }
     }
   }
-  if (removed > 0) console.log(`Cleaned up ${removed} unused category images`);
+  if (removed > 0) console.log(`Cleaned up ${removed} unused downloaded images`);
 }
 
 // ── Screenshot-based image capture ─────────────────────────────────
@@ -1201,7 +1200,7 @@ async function captureHeroScreenshot(page, articleUrl) {
  *  Visits each article page with a real browser and captures the hero image. */
 async function captureScreenshots(articles, cache) {
   const needsScreenshot = articles.filter((a) =>
-    (!a.imageUrl || a.imageUrl.includes("unsplash.com")) &&
+    !a.imageUrl &&
     !a.url.includes("news.google.com") && a.url.startsWith("http")
   );
   if (needsScreenshot.length === 0) return;
@@ -1261,9 +1260,14 @@ function cleanupScreenshots(articles) {
 }
 
 function applyFallbackImages(articles) {
+  let applied = 0;
   for (const article of articles) {
-    if (!article.imageUrl) article.imageUrl = generateImageUrl(article.title, article.topic);
+    if (!article.imageUrl) {
+      article.imageUrl = pickLocalFallback(article);
+      if (article.imageUrl) applied++;
+    }
   }
+  if (applied > 0) console.log(`  Applied ${applied} local fallback images`);
 }
 
 // ── YouTube ────────────────────────────────────────────────────────
@@ -1711,14 +1715,14 @@ async function main() {
   data.playlistUrl = PLAYLIST_URL;
   savePrefetched(data);
 
-  // Clean up downloaded images no longer referenced by any article
-  cleanupCategoryImages(data.news || []);
+  // Clean up auto-downloaded images no longer referenced by any article
+  cleanupDownloadedImages(data.news || []);
 
   await closePlaywright();
 
   const newsCount = (data.news || []).length;
   const realUrlCount = (data.news || []).filter((a) => !a.url.includes("news.google.com")).length;
-  const realImgCount = (data.news || []).filter((a) => a.imageUrl && !a.imageUrl.includes("unsplash.com")).length;
+  const realImgCount = (data.news || []).filter((a) => a.imageUrl).length;
   console.log(`\nSaved: ${newsCount} news (${realUrlCount} real URLs, ${realImgCount} real images), ${(data.channelVideos || []).length} videos, ${(data.tdaaiArticles || []).length} TDAAI`);
 }
 
