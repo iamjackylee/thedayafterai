@@ -1,5 +1,4 @@
 {
-  "_comment": "Manual image overrides for articles using fallback images. Map article URLs to image filenames in public/data/image-overrides/. The fetch script will resize and convert them to WebP automatically.",
-  "_usage": "1. Check the 'Fallback Image Report' GitHub Issue for articles using fallback images. 2. Visit the article URL and save its feature image. 3. Drop the image into public/data/image-overrides/ (any format: jpg, png, webp). 4. Add an entry below mapping the article URL to the image filename. 5. Commit and push — the next fetch run will pick it up.",
+  "_comment": "Optional JSON mapping for manual image overrides (custom filenames). Most users should use the auto-scan method instead: just name the file with the URL hash shown in the GitHub Issue report (e.g. 'abc123.jpg') and drop it into public/data/image-overrides/. This JSON file is only needed if you want to use a custom filename that doesn't match the hash.",
   "overrides": {}
 }

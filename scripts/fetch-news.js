@@ -1295,25 +1295,46 @@ function applyFallbackImages(articles) {
 }
 
 // ── Manual image overrides ──────────────────────────────────────────
-// Users can override fallback images by:
-//   1. Dropping an image into public/data/image-overrides/
-//   2. Adding an entry in public/data/image-overrides.json mapping article URL → filename
-// The override is applied AFTER fallback images, replacing the fallback with the
-// user-provided image. Images are resized and converted to WebP via sharp.
+// Override fallback images by dropping an image into public/data/image-overrides/.
+// Two matching methods (auto-scan is primary, JSON is optional fallback):
+//
+// Method 1 — AUTO-SCAN (no JSON editing):
+//   Name the file with the article's URL hash (shown in the GitHub Issue report).
+//   e.g. "abc123.jpg" where "abc123" is the hash. Any extension works.
+//
+// Method 2 — JSON MAPPING (optional, for custom filenames):
+//   Add an entry in image-overrides.json: { "overrides": { "<url>": "<filename>" } }
 
-function loadImageOverrides() {
+/** Build a hash→filepath map by scanning the image-overrides/ folder.
+ *  Filenames like "abc123.jpg" are indexed by their stem "abc123". */
+function scanOverrideFiles() {
+  const map = {};
+  try {
+    const files = fs.readdirSync(IMAGE_OVERRIDES_DIR);
+    for (const f of files) {
+      if (f === ".gitkeep") continue;
+      const stem = path.basename(f, path.extname(f));
+      if (stem) map[stem] = path.join(IMAGE_OVERRIDES_DIR, f);
+    }
+  } catch { /* folder doesn't exist */ }
+  return map;
+}
+
+function loadJsonOverrides() {
   try {
     const data = JSON.parse(fs.readFileSync(IMAGE_OVERRIDES_PATH, "utf-8"));
     return data.overrides || {};
   } catch { return {}; }
 }
 
-/** Apply manual image overrides for articles currently using fallback images.
- *  Processes override images through sharp (resize + WebP) just like downloaded images. */
+/** Apply manual image overrides for articles using fallback (or missing) images.
+ *  Matches by URL hash (auto-scan) or by URL key (JSON mapping).
+ *  Processes override images through sharp (resize + WebP). */
 async function applyImageOverrides(articles) {
-  const overrides = loadImageOverrides();
-  const overrideUrls = Object.keys(overrides);
-  if (overrideUrls.length === 0) return;
+  const fileMap = scanOverrideFiles();         // hash → absolute filepath
+  const jsonOverrides = loadJsonOverrides();    // url → filename
+
+  if (Object.keys(fileMap).length === 0 && Object.keys(jsonOverrides).length === 0) return;
 
   let sharp;
   try { sharp = require("sharp"); } catch {
@@ -1323,23 +1344,36 @@ async function applyImageOverrides(articles) {
 
   let applied = 0;
   for (const article of articles) {
-    // Check if this article has an override (match by URL)
-    const overrideFile = overrides[article.url];
-    if (!overrideFile) continue;
+    // Determine override source file path
+    let overridePath = null;
+    let overrideLabel = "";
 
-    // Find the override image file (support multiple extensions)
-    const overridePath = path.join(IMAGE_OVERRIDES_DIR, overrideFile);
-    if (!fs.existsSync(overridePath)) {
-      console.warn(`  Override image not found: ${overrideFile} (for ${article.url.slice(0, 60)}...)`);
-      continue;
+    // Method 1: auto-scan by URL hash (primary — no JSON needed)
+    const hash = screenshotHash(article.url);
+    if (fileMap[hash]) {
+      overridePath = fileMap[hash];
+      overrideLabel = path.basename(overridePath);
     }
+
+    // Method 2: JSON mapping fallback (for custom filenames)
+    if (!overridePath && jsonOverrides[article.url]) {
+      const jsonFile = jsonOverrides[article.url];
+      const candidate = path.join(IMAGE_OVERRIDES_DIR, jsonFile);
+      if (fs.existsSync(candidate)) {
+        overridePath = candidate;
+        overrideLabel = jsonFile;
+      } else {
+        console.warn(`  Override image not found: ${jsonFile} (for ${article.url.slice(0, 60)}...)`);
+      }
+    }
+
+    if (!overridePath) continue;
 
     // Process through sharp → WebP in the standard images directory
     const category = article.topic || "technology-innovation";
     const categoryDir = path.join(DOWNLOADED_IMAGES_DIR, category);
     fs.mkdirSync(categoryDir, { recursive: true });
 
-    const hash = screenshotHash(`override-${article.url}`);
     const filename = `override-${hash}.webp`;
     const fullPath = path.join(categoryDir, filename);
     const localPath = `data/images/${category}/${filename}`;
@@ -1352,9 +1386,9 @@ async function applyImageOverrides(articles) {
 
       article.imageUrl = localPath;
       applied++;
-      console.log(`  Override applied: ${overrideFile} → ${article.title.slice(0, 50)}...`);
+      console.log(`  Override applied: ${overrideLabel} → ${article.title.slice(0, 50)}...`);
     } catch (err) {
-      console.warn(`  Override processing failed for ${overrideFile}: ${err.message}`);
+      console.warn(`  Override processing failed for ${overrideLabel}: ${err.message}`);
     }
   }
 
