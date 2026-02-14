@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-14T10:22:26.708Z",
+  "fetchedAt": "2026-02-14T10:54:01.856Z",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe",
   "news": [
     {
@@ -11,6 +11,16 @@
       "date": "Sat, 14 Feb 2026 05:33:14 GMT",
       "imageUrl": "",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQVJROEZFUkRTdzR4cXh6UjJqQ1lRb2JtUGRSOWY5WWo5djYtUGNoWHFpdTVlcVFmcVpUbUZ1eWVweHZSSV83VGxWR1E0b0cyZFdBYnJwNzdrVWpzNllCRGZhMF8weVJRbXdWeDZZTTNOdGJyaVJLTHdXVzI4REk2SjBhNTN1NmdjdXNwRk9mU3NrNTFoczhKRk5VTVhaZTZE?oc=5"
+    },
+    {
+      "id": "gn-environment-science-3",
+      "title": "Artificial Intelligence (AI) Transforming Indian Agriculture - PIB",
+      "summary": "Artificial Intelligence (AI) Transforming Indian Agriculture PIB",
+      "topic": "environment-science",
+      "source": "PIB",
+      "date": "Sat, 14 Feb 2026 05:22:00 GMT",
+      "imageUrl": "data/images/environment-science/l1f347.webp",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2227914"
     },
     {
       "id": "gn-business-economy-41",
@@ -31,6 +41,16 @@
       "date": "Sat, 14 Feb 2026 01:14:39 GMT",
       "imageUrl": "data/images/governance-politics/jmbolz.webp",
       "url": "https://www.telegraphindia.com/amp/india/watchdogs-flag-bjps-ai-weapon-on-muslims-warn-of-surveillance-risks-ahead-of-summit-prnt/cid/2147253"
+    },
+    {
+      "id": "gn-environment-science-47",
+      "title": "John Deere (DE) Taps the AI Boom to Drive the Future of Farming - TipRanks",
+      "summary": "John Deere (DE) Taps the AI Boom to Drive the Future of Farming TipRanks",
+      "topic": "environment-science",
+      "source": "TipRanks",
+      "date": "Sat, 14 Feb 2026 00:09:57 GMT",
+      "imageUrl": "data/screenshots/zapoxv.jpg",
+      "url": "https://www.tipranks.com/news/john-deere-de-harnesses-the-ai-boom-to-drive-the-future-of-farming"
     },
     {
       "id": "gn-chatbot-development-17",
@@ -103,6 +123,16 @@
       "url": "https://home.barclays/news/press-releases/20260/02/ai-deepfake-concerns-see-gen-z--swiping-left--on-dating-apps/"
     },
     {
+      "id": "gn-environment-science-17",
+      "title": "Apraava Energy Hosts AI-Focused Pre-Summit Ahead of India AI Impact Summit 2026 - Energetica India Magazine",
+      "summary": "Apraava Energy Hosts AI-Focused Pre-Summit Ahead of India AI Impact Summit 2026 Energetica India Magazine",
+      "topic": "environment-science",
+      "source": "Energetica India Magazine",
+      "date": "Fri, 13 Feb 2026 17:55:21 GMT",
+      "imageUrl": "data/images/environment-science/3u672u.webp",
+      "url": "https://energetica-india.net/news/apraava-energy-hosts-ai-focused-pre-summit-ahead-of-india-ai-impact-summit-2026"
+    },
+    {
       "id": "gn-governance-politics-22",
       "title": "Brazil’s AI legislation is in limbo – but compliance pressure isn’t - Lexology",
       "summary": "Brazil’s AI legislation is in limbo – but compliance pressure isn’t Lexology",
@@ -131,6 +161,16 @@
       "date": "Fri, 13 Feb 2026 17:31:00 GMT",
       "imageUrl": "",
       "url": "https://www.investors.com/news/stock-market-breaks-key-levels-ai-disruption-fears-cisco-applovin-arista-vertiv/"
+    },
+    {
+      "id": "gn-environment-science-24",
+      "title": "AI investment and the effect on urban digital twins - Computer Weekly",
+      "summary": "AI investment and the effect on urban digital twins Computer Weekly",
+      "topic": "environment-science",
+      "source": "Computer Weekly",
+      "date": "Fri, 13 Feb 2026 17:14:19 GMT",
+      "imageUrl": "data/images/environment-science/cqvfbn.webp",
+      "url": "https://www.computerweekly.com/feature/AI-investment-and-the-effect-on-urban-digital-twins"
     },
     {
       "id": "gn-health-style-13",
@@ -243,16 +283,6 @@
       "url": "https://www.mundoamerica.com/news/2026/02/13/698f372be4d4d8575a8b456f.html"
     },
     {
-      "id": "gn-environment-science-49",
-      "title": "Global Demand Response Market to Reach USD 127.1 Billion by 2035 - openPR.com",
-      "summary": "Global Demand Response Market to Reach USD 127.1 Billion by 2035 openPR.com",
-      "topic": "environment-science",
-      "source": "openPR.com",
-      "date": "Fri, 13 Feb 2026 14:35:26 GMT",
-      "imageUrl": "https://cdn.open-pr.com/L/2/L213916787_g.jpg",
-      "url": "https://www.openpr.com/news/4390365/global-demand-response-market-to-reach-usd-127-1-billion-by-2035"
-    },
-    {
       "id": "gn-business-economy-32",
       "title": "Inflation Eases Amid AI Disruption Fears: Mixed Signals for U.S. Markets - Devdiscourse",
       "summary": "Inflation Eases Amid AI Disruption Fears: Mixed Signals for U.S. Markets Devdiscourse",
@@ -293,24 +323,14 @@
       "url": "https://www.bloomberg.com/news/articles/2026-02-13/shield-ai-in-talks-to-raise-1-billion-at-12-billion-valuation"
     },
     {
-      "id": "gn-environment-science-15",
-      "title": "AWS empowers energy companies to accelerate sustainable biofuel supply chains - Amazon Web Services (AWS)",
-      "summary": "AWS empowers energy companies to accelerate sustainable biofuel supply chains Amazon Web Services (AWS)",
+      "id": "gn-environment-science-46",
+      "title": "America’s Key to Biotechnology Leadership? AI-Ready Biodata. - Just Security",
+      "summary": "America’s Key to Biotechnology Leadership? AI-Ready Biodata. Just Security",
       "topic": "environment-science",
-      "source": "Amazon Web Services (AWS)",
-      "date": "Fri, 13 Feb 2026 14:00:37 GMT",
-      "imageUrl": "https://d2908q01vomqb2.cloudfront.net/c5b76da3e608d34edb07244cd9b875ee86906328/2025/12/01/AWS-empowers-energy-companies-to-accelerate-sustainable-biofuel-supply-chains-1120x630.jpg",
-      "url": "https://aws.amazon.com/blogs/industries/aws-empowers-energy-companies-to-accelerate-sustainable-biofuel-supply-chains/"
-    },
-    {
-      "id": "gn-environment-science-43",
-      "title": "Hybrid Solar Wind Market to Reach USD 2.3 Billion by 2032, Driven by Renewable Energy Integration and Grid Modernization - AltEnergyMag",
-      "summary": "Hybrid Solar Wind Market to Reach USD 2.3 Billion by 2032, Driven by Renewable Energy Integration and Grid Modernization AltEnergyMag",
-      "topic": "environment-science",
-      "source": "AltEnergyMag",
-      "date": "Fri, 13 Feb 2026 13:38:07 GMT",
-      "imageUrl": "https://www.altenergymag.com/images/facebooknews.jpg",
-      "url": "https://www.altenergymag.com/news/2026/02/13/hybrid-solar-wind-market-to-reach-usd-23-billion-by-2032-driven-by-renewable-energy-integration-and-grid-modernization/46759/"
+      "source": "Just Security",
+      "date": "Fri, 13 Feb 2026 13:34:40 GMT",
+      "imageUrl": "data/images/environment-science/jr136q.webp",
+      "url": "https://www.justsecurity.org/130841/us-biotech-leadership-ai/?utm_source=rss&utm_medium=rss&utm_campaign=us-biotech-leadership-ai"
     },
     {
       "id": "gn-business-economy-27",
@@ -353,13 +373,13 @@
       "url": "https://www.devdiscourse.com/article/headlines/3804264-global-markets-waver-as-ai-disruption-and-us-inflation-loom?amp"
     },
     {
-      "id": "gn-environment-science-47",
+      "id": "gn-environment-science-15",
       "title": "AI In Energy Market to Reach US$ 99.48 Billion by 2032 | North - openPR.com",
       "summary": "AI In Energy Market to Reach US$ 99.48 Billion by 2032 | North openPR.com",
       "topic": "environment-science",
       "source": "openPR.com",
       "date": "Fri, 13 Feb 2026 12:46:21 GMT",
-      "imageUrl": "https://cdn.open-pr.com/L/2/L213964953_g.jpg",
+      "imageUrl": "data/images/environment-science/2tiv86.webp",
       "url": "https://www.openpr.com/news/4390224/ai-in-energy-market-to-reach-us-99-48-billion-by-2032-north"
     },
     {
@@ -413,16 +433,6 @@
       "url": "https://www.zdnet.com/home-and-office/home-entertainment/spotify-vs-youtube-music/"
     },
     {
-      "id": "gn-environment-science-39",
-      "title": "Australia Power Market Projected to Reach TWH 377 by 2034 - openPR.com",
-      "summary": "Australia Power Market Projected to Reach TWH 377 by 2034 openPR.com",
-      "topic": "environment-science",
-      "source": "openPR.com",
-      "date": "Fri, 13 Feb 2026 11:56:57 GMT",
-      "imageUrl": "https://cdn.open-pr.com/L/2/L213125198_g.jpg",
-      "url": "https://www.openpr.com/news/4390116/australia-power-market-projected-to-reach-twh-377-by-2034"
-    },
-    {
       "id": "gn-ai-academy-5",
       "title": "Chinese scientists awarded for sci-tech innovation and leadership in frontier research - China Daily",
       "summary": "Chinese scientists awarded for sci-tech innovation and leadership in frontier research China Daily",
@@ -441,16 +451,6 @@
       "date": "Fri, 13 Feb 2026 11:31:58 GMT",
       "imageUrl": "https://s.yimg.com/ny/api/res/1.2/SfNPB9mj69b7TONv2iMqbQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTE0MDA7aD05MzI-/https://media.zenfs.com/en/aol_the_motley_fool_392/9431c0724b4352ab1f874524100b4bbc",
       "url": "https://www.aol.com/articles/unpopular-opinion-jensen-huang-making-092600561.html"
-    },
-    {
-      "id": "gn-environment-science-34",
-      "title": "Cutting-Edge Technologies Shaping the Future of Sustainable Energy - Energy Live News",
-      "summary": "Cutting-Edge Technologies Shaping the Future of Sustainable Energy Energy Live News",
-      "topic": "environment-science",
-      "source": "Energy Live News",
-      "date": "Fri, 13 Feb 2026 11:27:22 GMT",
-      "imageUrl": "https://www.energylivenews.com/wp-content/uploads/2026/02/New-Project-2026-02-13T112519.218.jpg",
-      "url": "https://www.energylivenews.com/2026/02/13/cutting-edge-technologies-shaping-the-future-of-sustainable-energy/"
     },
     {
       "id": "gn-digital-security-11",
@@ -603,6 +603,16 @@
       "url": "https://marquettewire.org/4150577/opinion/ai-musicians-are-unethical-to-the-music-industry/"
     },
     {
+      "id": "gn-environment-science-32",
+      "title": "Getting Smarter: Growing uptake of AI across project planning, design and execution - Indian Infrastructure Magazine",
+      "summary": "Getting Smarter: Growing uptake of AI across project planning, design and execution Indian Infrastructure Magazine",
+      "topic": "environment-science",
+      "source": "Indian Infrastructure Magazine",
+      "date": "Fri, 13 Feb 2026 10:04:39 GMT",
+      "imageUrl": "data/images/environment-science/w0esn1.webp",
+      "url": "https://indianinfrastructure.com/2026/02/13/getting-smarter-growing-uptake-of-ai-across-project-planning-design-and-execution/"
+    },
+    {
       "id": "gn-unmanned-aircraft-21",
       "title": "Hensoldt and Helsing partner on CA-1 Europa drone - Aerospace Global News",
       "summary": "Hensoldt and Helsing partner on CA-1 Europa drone Aerospace Global News",
@@ -651,6 +661,16 @@
       "date": "Fri, 13 Feb 2026 09:03:53 GMT",
       "imageUrl": "",
       "url": "https://intellectia.ai/news/stock/ai-technology-disrupts-market-dynamics"
+    },
+    {
+      "id": "gn-environment-science-28",
+      "title": "China debuts world’s first AI-powered Earth observation satellite for smart cities - The News International",
+      "summary": "China debuts world’s first AI-powered Earth observation satellite for smart cities The News International",
+      "topic": "environment-science",
+      "source": "The News International",
+      "date": "Fri, 13 Feb 2026 08:48:00 GMT",
+      "imageUrl": "data/images/environment-science/amy16r.webp",
+      "url": "https://www.thenews.com.pk/latest/1392157-china-debuts-worlds-first-ai-powered-earth-observation-satellite-for-smart-cities"
     },
     {
       "id": "gn-digital-security-35",
@@ -713,6 +733,16 @@
       "url": "https://venturebeat.com/technology/minimaxs-new-open-m2-5-and-m2-5-lightning-near-state-of-the-art-while"
     },
     {
+      "id": "gn-environment-science-20",
+      "title": "Apraava Energy hosts pre-summit for “India AI Impact Summit” - T&amp;D India",
+      "summary": "Apraava Energy hosts pre-summit for “India AI Impact Summit” T&D India",
+      "topic": "environment-science",
+      "source": "T&amp;D India",
+      "date": "Fri, 13 Feb 2026 07:46:29 GMT",
+      "imageUrl": "data/images/environment-science/1xtora.webp",
+      "url": "https://www.tndindia.com/apraava-energy-hosts-pre-summit-for-india-ai-impact-summit/"
+    },
+    {
       "id": "gn-ai-academy-20",
       "title": "Google DeepMind Introduces Aletheia: The AI Agent Moving from Math Competitions to Fully Autonomous Professional Research Discoveries - MarkTechPost",
       "summary": "Google DeepMind Introduces Aletheia: The AI Agent Moving from Math Competitions to Fully Autonomous Professional Research Discoveries MarkTechPost",
@@ -721,6 +751,16 @@
       "date": "Fri, 13 Feb 2026 07:03:39 GMT",
       "imageUrl": "https://www.marktechpost.com/wp-content/uploads/2026/02/blog-banner23-20.png",
       "url": "https://www.marktechpost.com/2026/02/12/google-deepmind-introduces-aletheia-the-ai-agent-moving-from-math-competitions-to-fully-autonomous-professional-research-discoveries/"
+    },
+    {
+      "id": "gn-environment-science-26",
+      "title": "Mobile Mapping Market Insights: Autonomous Vehicles, 3D Data &amp; Industry Forecast to 2033 - vocal.media",
+      "summary": "Mobile Mapping Market Insights: Autonomous Vehicles, 3D Data & Industry Forecast to 2033 vocal.media",
+      "topic": "environment-science",
+      "source": "vocal.media",
+      "date": "Fri, 13 Feb 2026 06:58:09 GMT",
+      "imageUrl": "data/images/environment-science/qyplkg.webp",
+      "url": "https://vocal.media/futurism/mobile-mapping-market-insights-autonomous-vehicles-3-d-data-and-industry-forecast-to-2033"
     },
     {
       "id": "gn-digital-security-24",
@@ -773,16 +813,6 @@
       "url": "https://www.whalesbook.com/news/English/economy/AI-Disruption-Sparks-Indian-IT-Sell-off-Re-evaluating-Sector-Valuations/698eb84a119a61fe896f2467"
     },
     {
-      "id": "gn-environment-science-46",
-      "title": "Australia Superconducting Magnetic Energy Storage Market: Grid Stability, Renewable Integration &amp; Technology Advancement - vocal.media",
-      "summary": "Australia Superconducting Magnetic Energy Storage Market: Grid Stability, Renewable Integration & Technology Advancement vocal.media",
-      "topic": "environment-science",
-      "source": "vocal.media",
-      "date": "Fri, 13 Feb 2026 05:25:53 GMT",
-      "imageUrl": "https://res.cloudinary.com/jerrick/image/upload/c_scale,f_jpg,q_auto/698eb5a3444824001e1c4310.png",
-      "url": "https://vocal.media/futurism/australia-superconducting-magnetic-energy-storage-market-grid-stability-renewable-integration-and-technology-advancement"
-    },
-    {
       "id": "gn-digital-security-16",
       "title": "What's a passphrase that can save hard-earned money from AI scammers? - India Today",
       "summary": "What's a passphrase that can save hard-earned money from AI scammers? India Today",
@@ -801,6 +831,16 @@
       "date": "Fri, 13 Feb 2026 05:02:41 GMT",
       "imageUrl": "data/images/governance-politics/1ttw5h.webp",
       "url": "https://www.kuam.com/story/153437639/senators-weigh-free-speech-concerns-as-bill-targets-deceptive-ai-use"
+    },
+    {
+      "id": "gn-environment-science-44",
+      "title": "Squid Juice, AI &amp; Optimism: Noteworthy Nuggets from National Farm Machinery Show - Precision Farming Dealer",
+      "summary": "Squid Juice, AI & Optimism: Noteworthy Nuggets from National Farm Machinery Show Precision Farming Dealer",
+      "topic": "environment-science",
+      "source": "Precision Farming Dealer",
+      "date": "Fri, 13 Feb 2026 05:00:00 GMT",
+      "imageUrl": "data/images/environment-science/16qjzk.webp",
+      "url": "https://www.precisionfarmingdealer.com/blogs/1-from-the-virtual-terminal/post/6978-squid-juice-ai-and-optimism-noteworthy-nuggets-from-national-farm-machinery-show"
     },
     {
       "id": "gn-technology-innovation-21",
@@ -823,16 +863,6 @@
       "url": "https://www.whalesbook.com/news/English/economy/Indian-Markets-Skid-AI-Fears-Spark-IT-Sell-Off/698ea8d4119a61fe896efdbd"
     },
     {
-      "id": "gn-environment-science-40",
-      "title": "Australia Renewable Energy Market: Capacity Expansion, Policy Support &amp; Technology Integration - vocal.media",
-      "summary": "Australia Renewable Energy Market: Capacity Expansion, Policy Support & Technology Integration vocal.media",
-      "topic": "environment-science",
-      "source": "vocal.media",
-      "date": "Fri, 13 Feb 2026 04:25:34 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTXl1Q0pubk5mNnJtT3dyN1otcUFESFlMbjFVMXAtUXZnbTh3YzhCazRWQ084cjdpOHpiU1NjRXlPSVB2NG1ZSWZkNVhDTkI4c3RYcjB2ZW5WdzZxSzlZSXFHSUE3VDRXdk9UeHJJQmQ1RHJjVGVDZWJOTlBXaHJjNlMxcGVyXzU1bTRfV0IxLUEyZHpkYkN2Wl9mTGZCTkxuaVkwVHM0UWFJaVo0RWpvelVNYUJlRHBTeThsMFRtTjQ?oc=5"
-    },
-    {
       "id": "gn-unmanned-aircraft-11",
       "title": "Drone rescue finds runaway in freezing woods - Shore News Network",
       "summary": "Drone rescue finds runaway in freezing woods Shore News Network",
@@ -849,8 +879,8 @@
       "topic": "environment-science",
       "source": "Discovery Alert",
       "date": "Fri, 13 Feb 2026 04:18:03 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdmROY096WEJXNktDOW5WbmFoRTdVZ3FpdU5KaGtvVGZUZjFuVi1VVzBoa1lOUlhQY1Nzc1FEWmJnNmlYRUhLUlhJMEtMb3IxTktIZ0VZaDFkM0lMSTc2aWZPdEJISjZDbkpRZG9YNXQyUmUtYTRnLVYwWnZCRWlLS2RKSXJiNEE?oc=5"
+      "imageUrl": "data/images/environment-science/5xtjiv.webp",
+      "url": "https://discoveryalert.com.au/ai-in-mining-2026-modernization-efficiency-safety/"
     },
     {
       "id": "gn-technology-innovation-30",
@@ -963,6 +993,16 @@
       "url": "https://kfgo.com/2026/02/12/singapore-sees-fy2026-budget-surplus-at-1-of-gdp/"
     },
     {
+      "id": "gn-environment-science-41",
+      "title": "Taiwan ramps up circular economy push with new laws, AI and green funding - Eco-Business",
+      "summary": "Taiwan ramps up circular economy push with new laws, AI and green funding Eco-Business",
+      "topic": "environment-science",
+      "source": "Eco-Business",
+      "date": "Fri, 13 Feb 2026 00:28:00 GMT",
+      "imageUrl": "data/images/environment-science/eyltlk.webp",
+      "url": "https://www.eco-business.com/news/taiwan-ramps-up-circular-economy-push-with-new-laws-ai-and-green-funding/"
+    },
+    {
       "id": "gn-ai-academy-40",
       "title": "Ungjin Thinkbig Releases New Commercial Video for \"Ungjin Smartall\" - 아시아경제",
       "summary": "Ungjin Thinkbig Releases New Commercial Video for \"Ungjin Smartall\" 아시아경제",
@@ -1013,24 +1053,14 @@
       "url": "https://www.digitaltrends.com/computing/how-to-protect-yourself-from-ai-powered-romance-scams-this-valentines-day/"
     },
     {
-      "id": "gn-environment-science-20",
+      "id": "gn-environment-science-10",
       "title": "Innovative AI Technique Enhances Accuracy of Brazil’s National Soybean Yield Forecasts - BIOENGINEER.ORG",
       "summary": "Innovative AI Technique Enhances Accuracy of Brazil’s National Soybean Yield Forecasts BIOENGINEER.ORG",
       "topic": "environment-science",
       "source": "BIOENGINEER.ORG",
       "date": "Thu, 12 Feb 2026 22:20:50 GMT",
-      "imageUrl": "https://bioengineer.org/wp-content/uploads/2026/02/Innovative-AI-Technique-Enhances-Accuracy-of-Brazils-National-Soybean-Yield.jpg",
+      "imageUrl": "data/images/environment-science/rm3xsl.webp",
       "url": "https://bioengineer.org/innovative-ai-technique-enhances-accuracy-of-brazils-national-soybean-yield-forecasts/"
-    },
-    {
-      "id": "gn-environment-science-33",
-      "title": "TAQA Abu Dhabi Energy Growth: Sustainable Power &amp; Oil 2026 - Farmonaut",
-      "summary": "TAQA Abu Dhabi Energy Growth: Sustainable Power & Oil 2026 Farmonaut",
-      "topic": "environment-science",
-      "source": "Farmonaut",
-      "date": "Thu, 12 Feb 2026 22:18:29 GMT",
-      "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/07/Blog-Policy-Pricing-1.png",
-      "url": "https://farmonaut.com/mining/taqa-abu-dhabi-energy-growth-sustainable-power-oil-2026"
     },
     {
       "id": "gn-digital-security-0",
@@ -1063,13 +1093,13 @@
       "url": "https://www.eagletribune.com/news/boston/house-sets-limits-on-ai-in-political-ads/article_fe9ddba2-a981-4969-a9d8-142170870725.html"
     },
     {
-      "id": "gn-environment-science-45",
+      "id": "gn-environment-science-14",
       "title": "DOE Details 26 Genesis Mission AI Challenges, Targeting Nuclear Timelines, Grid Planning, and Energy Systems - POWER Magazine",
       "summary": "DOE Details 26 Genesis Mission AI Challenges, Targeting Nuclear Timelines, Grid Planning, and Energy Systems POWER Magazine",
       "topic": "environment-science",
       "source": "POWER Magazine",
       "date": "Thu, 12 Feb 2026 21:51:34 GMT",
-      "imageUrl": "https://www.powermag.com/wp-content/uploads/2026/02/genesismission-doe.jpeg",
+      "imageUrl": "data/images/environment-science/vqi58m.webp",
       "url": "https://www.powermag.com/doe-details-26-genesis-mission-ai-challenges-targeting-nuclear-timelines-grid-planning-and-energy-systems/"
     },
     {
@@ -1283,16 +1313,6 @@
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbGpwNUU3NDVrQ0dKQno4Ny1Zd2tsaWhtS0U1SUhqT0dDcUl3YWEwR00yYktMMWpIYkFQMTNJZmdtU1RrYkNneXBhWldOZTFpQzljMGFqdV84OE5uLTVpODFVOGFLRWg5R1BoQzBYamVVQm5CdWYwUk9BRTJOVXJ2SHVsa3l0UndDNVFfejN0VDdRMTNBQWY2LUlQbmN6LUltdnJF?oc=5"
     },
     {
-      "id": "gn-environment-science-6",
-      "title": "In Moldova, the Authority for Meteorology and Environmental Monitoring will be established - ipn.md",
-      "summary": "In Moldova, the Authority for Meteorology and Environmental Monitoring will be established ipn.md",
-      "topic": "environment-science",
-      "source": "ipn.md",
-      "date": "Thu, 12 Feb 2026 15:42:39 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&h=400&fit=crop&auto=format",
-      "url": "https://ipn.md/en/in-moldova-the-authority-for-meteorology-and-environmental-monitoring-will-be-established/"
-    },
-    {
       "id": "gn-ai-academy-18",
       "title": "LLM Scout Research Reveals Structural Shift Behind Declining AI Referral Traffic as Usage Grows - markets.businessinsider.com",
       "summary": "LLM Scout Research Reveals Structural Shift Behind Declining AI Referral Traffic as Usage Grows markets.businessinsider.com",
@@ -1301,6 +1321,16 @@
       "date": "Thu, 12 Feb 2026 15:29:29 GMT",
       "imageUrl": "https://storage.googleapis.com/mmstudio-images/gallery/16268/89183350-1770909140-1.jpg",
       "url": "https://markets.businessinsider.com/news/stocks/llm-scout-research-reveals-structural-shift-behind-declining-ai-referral-traffic-as-usage-grows-1035820534"
+    },
+    {
+      "id": "gn-environment-science-22",
+      "title": "REC to Showcase AI Initiatives, Host Global Sessions at India AI Impact Summit 2026 - Kashmir Convener",
+      "summary": "REC to Showcase AI Initiatives, Host Global Sessions at India AI Impact Summit 2026 Kashmir Convener",
+      "topic": "environment-science",
+      "source": "Kashmir Convener",
+      "date": "Thu, 12 Feb 2026 15:23:27 GMT",
+      "imageUrl": "https://kashmirconvener.com/wp-content/uploads/2025/12/REC-Limited-Achieves-Top-ESG-Rating-Among-Financial-Institutions-by-NSE-ESG-Ratings-1024x746.jpg",
+      "url": "https://kashmirconvener.com/rec-to-showcase-ai-initiatives-host-global-sessions-at-india-ai-impact-summit-2026/"
     },
     {
       "id": "gn-unmanned-aircraft-7",
@@ -1423,6 +1453,26 @@
       "url": "https://newsukraine.rbc.ua/news/pentagon-seeks-wartime-ai-tools-developers-1770900800.html"
     },
     {
+      "id": "gn-environment-science-29",
+      "title": "China launches new AI-powered Earth observation satellite - bastillepost.com",
+      "summary": "China launches new AI-powered Earth observation satellite bastillepost.com",
+      "topic": "environment-science",
+      "source": "bastillepost.com",
+      "date": "Thu, 12 Feb 2026 12:47:04 GMT",
+      "imageUrl": "data/images/environment-science/oapm58.webp",
+      "url": "https://www.bastillepost.com/global/article/5608736-china-launches-new-ai-powered-earth-observation-satellite"
+    },
+    {
+      "id": "gn-environment-science-37",
+      "title": "INTEGRA CITY presented AI solutions for smart and sustainable cities at Ai Everything Egypt 2026 - open.kg",
+      "summary": "INTEGRA CITY presented AI solutions for smart and sustainable cities at Ai Everything Egypt 2026 open.kg",
+      "topic": "environment-science",
+      "source": "open.kg",
+      "date": "Thu, 12 Feb 2026 12:46:00 GMT",
+      "imageUrl": "data/images/environment-science/p9jgnw.webp",
+      "url": "https://open.kg/en/news/economy/71740-integra-city-predstavila-ii-reshenija-dlja-umnyh-i-ustojchivyh-gorodov-na-ai-everything-egypt-2026.html"
+    },
+    {
       "id": "gn-visual-art-photography-10",
       "title": "Samsung Brings AI to Budget Phones With Galaxy A07 5G Launch - The Tech Buzz",
       "summary": "Samsung Brings AI to Budget Phones With Galaxy A07 5G Launch The Tech Buzz",
@@ -1473,14 +1523,14 @@
       "url": "https://www.mixvale.com.br/2026/02/12/iphone-18-pro-will-have-lens-with-variable-mechanical-aperture-and-pressures-samsung-to-develop-urgent-prototypes-en/"
     },
     {
-      "id": "gn-environment-science-2",
-      "title": "AXA and Planet Partner to Revolutionize Disaster Management and Prevention - Business Wire",
-      "summary": "AXA and Planet Partner to Revolutionize Disaster Management and Prevention Business Wire",
+      "id": "gn-environment-science-35",
+      "title": "Dubai brings self-driving AI cars to streets: Baidu, Uber’s Apollo Go goes live in UAE emirate - Times of India",
+      "summary": "Dubai brings self-driving AI cars to streets: Baidu, Uber’s Apollo Go goes live in UAE emirate Times of India",
       "topic": "environment-science",
-      "source": "Business Wire",
-      "date": "Thu, 12 Feb 2026 12:02:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&h=400&fit=crop&auto=format",
-      "url": "chrome-error://chromewebdata/"
+      "source": "Times of India",
+      "date": "Thu, 12 Feb 2026 12:03:00 GMT",
+      "imageUrl": "data/images/environment-science/37zsqj.webp",
+      "url": "https://timesofindia.indiatimes.com/world/middle-east/dubai-brings-self-driving-ai-cars-to-streets-baidu-ubers-apollo-go-goes-live-in-uae-emirate/amp_articleshow/128249697.cms"
     },
     {
       "id": "gn-governance-politics-27",
@@ -1503,23 +1553,13 @@
       "url": "https://www.computerworld.com/article/4131303/germany-greenlights-the-eu-ai-act-triggering-countdown-for-enterprise-compliance.html"
     },
     {
-      "id": "gn-environment-science-35",
-      "title": "Europe’s data centres industry on brink of unprecedented expansion - Enlit World",
-      "summary": "Europe’s data centres industry on brink of unprecedented expansion Enlit World",
-      "topic": "environment-science",
-      "source": "Enlit World",
-      "date": "Thu, 12 Feb 2026 11:53:35 GMT",
-      "imageUrl": "https://enlit.stream.prepr.io/6t8l5vrzx642/w_1600,h_900,c_center/mike-winterson-eudca.jpg",
-      "url": "https://www.enlit.world/library/europes-data-centres-industry-on-brink-of-unprecedented-expansion"
-    },
-    {
-      "id": "gn-environment-science-19",
+      "id": "gn-environment-science-9",
       "title": "Infosys to deploy ExxonMobil’s data centre fluids for efficient cooling of AI infra - The Economic Times",
       "summary": "Infosys to deploy ExxonMobil’s data centre fluids for efficient cooling of AI infra The Economic Times",
       "topic": "environment-science",
       "source": "The Economic Times",
       "date": "Thu, 12 Feb 2026 11:53:00 GMT",
-      "imageUrl": "https://m.economictimes.com/thumb/msid-128256676,width-1200,height-900,resizemode-4,imgsize-116940/infosys-x-exxon.jpg",
+      "imageUrl": "data/images/environment-science/7q75tn.webp",
       "url": "https://m.economictimes.com/tech/information-tech/infosys-to-deploy-exxonmobils-data-centre-fluids-for-efficient-cooling-of-ai-infra/amp_articleshow/128256286.cms"
     },
     {
@@ -1563,6 +1603,16 @@
       "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2227059"
     },
     {
+      "id": "gn-environment-science-38",
+      "title": "Mohit Bansal Highlights Responsible AI and Infrastructure Readiness at TiE Chandigarh AI Summit - Devdiscourse",
+      "summary": "Mohit Bansal Highlights Responsible AI and Infrastructure Readiness at TiE Chandigarh AI Summit Devdiscourse",
+      "topic": "environment-science",
+      "source": "Devdiscourse",
+      "date": "Thu, 12 Feb 2026 11:03:08 GMT",
+      "imageUrl": "data/images/environment-science/pqdo7o.webp",
+      "url": "https://www.devdiscourse.com/article/business/3802537-mohit-bansal-highlights-responsible-ai-and-infrastructure-readiness-at-tie-chandigarh-ai-summit?amp"
+    },
+    {
       "id": "gn-business-economy-47",
       "title": "How Oracle AI Agents are Boosting Supply Chain Efficiency - Supply Chain Digital",
       "summary": "How Oracle AI Agents are Boosting Supply Chain Efficiency Supply Chain Digital",
@@ -1573,14 +1623,14 @@
       "url": "https://supplychaindigital.com/news/oracle-ai-agents-boosting-supply-chain-efficiency"
     },
     {
-      "id": "gn-environment-science-41",
-      "title": "Saudi Arabia’s Power Capacity To Surpass 106 GW By 2034 Amid Renewable Energy Push - SolarQuarter",
-      "summary": "Saudi Arabia’s Power Capacity To Surpass 106 GW By 2034 Amid Renewable Energy Push SolarQuarter",
+      "id": "gn-environment-science-39",
+      "title": "Mohit Bansal Highlights Responsible AI and Infrastructure Readiness at TiE Chandigarh AI Summit - Big News Network.com",
+      "summary": "Mohit Bansal Highlights Responsible AI and Infrastructure Readiness at TiE Chandigarh AI Summit Big News Network.com",
       "topic": "environment-science",
-      "source": "SolarQuarter",
-      "date": "Thu, 12 Feb 2026 10:42:38 GMT",
-      "imageUrl": "https://solarquarter.com/wp-content/uploads/2026/02/image-129.png",
-      "url": "https://solarquarter.com/2026/02/12/saudi-arabias-power-capacity-to-surpass-106-gw-by-2034-amid-renewable-energy-push/"
+      "source": "Big News Network.com",
+      "date": "Thu, 12 Feb 2026 11:00:00 GMT",
+      "imageUrl": "data/images/environment-science/4kr76w.webp",
+      "url": "https://www.bignewsnetwork.com/news/278863762/mohit-bansal-highlights-responsible-ai-and-infrastructure-readiness-at-tie-chandigarh-ai-summit"
     },
     {
       "id": "gn-unmanned-aircraft-4",
@@ -1613,16 +1663,6 @@
       "url": "https://oboronka.mezha.ua/en/farsight-vision-zaluchiv-7-2-mln-yevro-investiciy-308509/"
     },
     {
-      "id": "gn-environment-science-7",
-      "title": "Hazy conditions expected in Singapore soon - The Straits Times",
-      "summary": "Hazy conditions expected in Singapore soon The Straits Times",
-      "topic": "environment-science",
-      "source": "The Straits Times",
-      "date": "Thu, 12 Feb 2026 10:05:00 GMT",
-      "imageUrl": "https://cassette.sphdigital.com.sg/image/straitstimes/72d1e8cbf3d902e1fa6424f7eeb38397cd2030bfdb2ae925bbf40c1f06330daa",
-      "url": "https://www.straitstimes.com/singapore/politics/hazy-conditions-could-hit-singapore-in-the-coming-weeks-grace-fu"
-    },
-    {
       "id": "gn-technology-innovation-27",
       "title": "Samsung Fires the Starting Gun on HBM4: Inside the Race to Build the Memory Chips That Will Define the Next Era of AI - WebProNews",
       "summary": "Samsung Fires the Starting Gun on HBM4: Inside the Race to Build the Memory Chips That Will Define the Next Era of AI WebProNews",
@@ -1631,6 +1671,16 @@
       "date": "Thu, 12 Feb 2026 10:00:38 GMT",
       "imageUrl": "https://www.webpronews.com/wp-content/uploads/2026/02/article-10027-1770890357.jpeg",
       "url": "https://www.webpronews.com/samsung-fires-the-starting-gun-on-hbm4-inside-the-race-to-build-the-memory-chips-that-will-define-the-next-era-of-ai/"
+    },
+    {
+      "id": "gn-environment-science-19",
+      "title": "Rajasthan boosts power procurement efficiency with AI and digital tools: ₹35 crore investment - ETEnergyworld.com",
+      "summary": "Rajasthan boosts power procurement efficiency with AI and digital tools: ₹35 crore investment ETEnergyworld.com",
+      "topic": "environment-science",
+      "source": "ETEnergyworld.com",
+      "date": "Thu, 12 Feb 2026 09:41:31 GMT",
+      "imageUrl": "data/images/environment-science/a91rux.webp",
+      "url": "https://energy.economictimes.indiatimes.com/news/power/rajasthans-35-crore-investment-to-revolutionize-power-procurement-with-ai-technologies/128249675"
     },
     {
       "id": "gn-chatbot-development-43",
@@ -1763,6 +1813,16 @@
       "url": "https://www.samsungsds.com/en/news/manifest-260212.html"
     },
     {
+      "id": "gn-environment-science-4",
+      "title": "Why undetected degradation is costing solar operators and how AI can help - Devdiscourse",
+      "summary": "Why undetected degradation is costing solar operators and how AI can help Devdiscourse",
+      "topic": "environment-science",
+      "source": "Devdiscourse",
+      "date": "Thu, 12 Feb 2026 07:40:32 GMT",
+      "imageUrl": "",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNbHNrdXo5b3pVRG5GN0ZJQ1hxeXFjWEU0VmZwZGM4QzFhWi1Qdm1nbExDZC1mdEJIemNGNjliQlhjSXU5d2hPYmNLMFJqb1JJUnFTMVBkNFJjUTVpUmVJRlVKYVVXWXIzbmp6S2V3VE10M2RsSTdaTXBWNWYzd2czV20yN1hpREhGLTlSc0ZjN2pBMHdQQ2EzZDZPbzFiRFJBQ3NmSi1FSUJEakFIbFRiMHhtZEhUWU1Qc0RXclpKU1lPUGxHZ1JIdXZjNXJyUdIBzgFBVV95cUxNbHNrdXo5b3pVRG5GN0ZJQ1hxeXFjWEU0VmZwZGM4QzFhWi1Qdm1nbExDZC1mdEJIemNGNjliQlhjSXU5d2hPYmNLMFJqb1JJUnFTMVBkNFJjUTVpUmVJRlVKYVVXWXIzbmp6S2V3VE10M2RsSTdaTXBWNWYzd2czV20yN1hpREhGLTlSc0ZjN2pBMHdQQ2EzZDZPbzFiRFJBQ3NmSi1FSUJEakFIbFRiMHhtZEhUWU1Qc0RXclpKU1lPUGxHZ1JIdXZjNXJyUQ?oc=5"
+    },
+    {
       "id": "gn-chatbot-development-37",
       "title": "Anthropic’s Claude Surpasses Google Gemini as Top AI for Real Work - FilmoGaz",
       "summary": "Anthropic’s Claude Surpasses Google Gemini as Top AI for Real Work FilmoGaz",
@@ -1811,6 +1871,26 @@
       "date": "Thu, 12 Feb 2026 06:35:22 GMT",
       "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/02/20260212061433_NM-PK-picture.jpg",
       "url": "https://www.moneycontrol.com/news/business/information-technology/india-can-build-world-class-ai-at-home-reap-healthcare-agriculture-gains-google-deepmind-s-pushmeet-kohli-13825005.html"
+    },
+    {
+      "id": "gn-environment-science-27",
+      "title": "How AI can strengthen urban resilience in real time - Devdiscourse",
+      "summary": "How AI can strengthen urban resilience in real time Devdiscourse",
+      "topic": "environment-science",
+      "source": "Devdiscourse",
+      "date": "Thu, 12 Feb 2026 06:21:51 GMT",
+      "imageUrl": "data/images/environment-science/qi9myh.webp",
+      "url": "https://www.devdiscourse.com/article/technology/3798394-how-ai-can-strengthen-urban-resilience-in-real-time?amp"
+    },
+    {
+      "id": "gn-environment-science-33",
+      "title": "AI key to decarbonizing and securing global port operations - Devdiscourse",
+      "summary": "AI key to decarbonizing and securing global port operations Devdiscourse",
+      "topic": "environment-science",
+      "source": "Devdiscourse",
+      "date": "Thu, 12 Feb 2026 06:19:30 GMT",
+      "imageUrl": "data/images/environment-science/ueey99.webp",
+      "url": "https://www.devdiscourse.com/article/technology/3798038-ai-key-to-decarbonizing-and-securing-global-port-operations?amp"
     },
     {
       "id": "gn-musical-art-5",
@@ -1983,6 +2063,16 @@
       "url": "https://www.wcvb.com/article/massachusetts-lawmakers-curb-deepfakes-ai-protect-election-integrity/70317490"
     },
     {
+      "id": "gn-environment-science-48",
+      "title": "NC State to Host National Conference on AI in Agriculture - Morning Ag Clips",
+      "summary": "NC State to Host National Conference on AI in Agriculture Morning Ag Clips",
+      "topic": "environment-science",
+      "source": "Morning Ag Clips",
+      "date": "Wed, 11 Feb 2026 22:29:20 GMT",
+      "imageUrl": "data/images/environment-science/jeb4gc.webp",
+      "url": "https://www.morningagclips.com/nc-state-to-host-national-conference-on-ai-in-agriculture/"
+    },
+    {
       "id": "gn-ai-academy-27",
       "title": "MSOE alumnus Behrgen Smith named finalist for prestigious Hertz Foundation Fellowship - Milwaukee School of Engineering",
       "summary": "MSOE alumnus Behrgen Smith named finalist for prestigious Hertz Foundation Fellowship Milwaukee School of Engineering",
@@ -2093,13 +2183,13 @@
       "url": "https://spectrumlocalnews.com/tx/south-texas-el-paso/news/2026/02/11/use-of-ai-in-texas-political-campaign-ads-sparks-debate"
     },
     {
-      "id": "gn-environment-science-11",
+      "id": "gn-environment-science-6",
       "title": "A.I.’s Environmental Impact Is Testing Corporate Climate Commitments - observer.com",
       "summary": "A.I.’s Environmental Impact Is Testing Corporate Climate Commitments observer.com",
       "topic": "environment-science",
       "source": "observer.com",
       "date": "Wed, 11 Feb 2026 17:37:46 GMT",
-      "imageUrl": "https://observer.com/wp-content/uploads/sites/2/2026/02/Microsoft-Wiconsin-Data-Center.png?quality=80",
+      "imageUrl": "data/images/environment-science/4bqbt4.webp",
       "url": "https://observer.com/2026/02/ai-environmental-impact-is-testing-corporate-climate-commitments/"
     },
     {
@@ -2271,6 +2361,16 @@
       "date": "Wed, 11 Feb 2026 13:59:38 GMT",
       "imageUrl": "https://www.headphonesty.com/wp-content/uploads/2026/02/Whole_features_vanished_while_Spotify_called_it_safety_.jpg",
       "url": "https://www.headphonesty.com/2026/02/spotify-crackdown-thousands-third-party-music-apps/"
+    },
+    {
+      "id": "gn-environment-science-42",
+      "title": "E-OilÉ: Rethinking plastic packaging with innovative biomaterials and artificial intelligence - Innovation News Network",
+      "summary": "E-OilÉ: Rethinking plastic packaging with innovative biomaterials and artificial intelligence Innovation News Network",
+      "topic": "environment-science",
+      "source": "Innovation News Network",
+      "date": "Wed, 11 Feb 2026 13:53:47 GMT",
+      "imageUrl": "",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQWVhybXFiT0lEMzFucHNrdjdpLTN6NmNBSXUzb0FXYU1UUzhXTHJCQ2pwNjhtd1NzS2dfcmZkaG9Jb01lVkRsVUJ0UDJBcHk3NE9reVZiUlVvSElpaGFSZUV6NmdaT3RydV82SFVVeGpSSTBqeUI2d1h2b0hQRGxTQThXVFIxbWdhTzB6bGZLQ1JTek1RU19feUtEUVNfU1AwTFBXZ1RLaVYzRC1GX1duLWJHQmh5ekp5Nm9ydUMzSzZ0Y3JNQVpSSGNfdTV1UQ?oc=5"
     },
     {
       "id": "gn-technology-innovation-13",
@@ -2523,6 +2623,16 @@
       "url": "https://www.manilatimes.net/2026/02/11/tmt-newswire/pr-newswire/netease-cloud-music-inc-reports-fiscal-year-2025-financial-results/2275993"
     },
     {
+      "id": "gn-environment-science-34",
+      "title": "Integra City International Group Presents AI Solutions for Smart and Sustainable Cities at Ai Everything Egypt 2026 - Ahram Online",
+      "summary": "Integra City International Group Presents AI Solutions for Smart and Sustainable Cities at Ai Everything Egypt 2026 Ahram Online",
+      "topic": "environment-science",
+      "source": "Ahram Online",
+      "date": "Wed, 11 Feb 2026 10:21:34 GMT",
+      "imageUrl": "data/images/environment-science/697kvh.webp",
+      "url": "https://english.ahram.org.eg/News/562220.aspx"
+    },
+    {
       "id": "gn-governance-politics-13",
       "title": "FactCheckAfrica Empowers Ogun Youths, Journalists, and Civic Actors on Inclusive and Accessible Use of AI for Transparency and Accountability - factcheckafrica.net",
       "summary": "FactCheckAfrica Empowers Ogun Youths, Journalists, and Civic Actors on Inclusive and Accessible Use of AI for Transparency and Accountability factcheckafrica.net",
@@ -2613,14 +2723,14 @@
       "url": "https://www.simplilearn.com/10-algorithms-machine-learning-engineers-need-to-know-article"
     },
     {
-      "id": "gn-environment-science-42",
-      "title": "Power Distribution Industry Report [2026]: 1600 GW Queued Projects - StartUs Insights",
-      "summary": "Power Distribution Industry Report [2026]: 1600 GW Queued Projects StartUs Insights",
+      "id": "gn-environment-science-49",
+      "title": "Multi-Rotor Agricultural Drone Market to Reach USD 671.89 - openPR.com",
+      "summary": "Multi-Rotor Agricultural Drone Market to Reach USD 671.89 openPR.com",
       "topic": "environment-science",
-      "source": "StartUs Insights",
-      "date": "Wed, 11 Feb 2026 08:00:00 GMT",
-      "imageUrl": "https://www.startus-insights.com/wp-content/uploads/2026/01/Power-Distribution-Industry-Report-SharedImg-StartUs-Insights-noresize.webp",
-      "url": "https://www.startus-insights.com/innovators-guide/power-distribution-industry-report/"
+      "source": "openPR.com",
+      "date": "Wed, 11 Feb 2026 07:28:19 GMT",
+      "imageUrl": "data/images/environment-science/uqeluy.webp",
+      "url": "https://www.openpr.com/news/4385848/multi-rotor-agricultural-drone-market-to-reach-usd-671-89"
     },
     {
       "id": "gn-musical-art-38",
@@ -2663,33 +2773,13 @@
       "url": "https://www.medicalrepublic.com.au/whos-accountable-when-your-ai-health-assistant-gets-it-wrong/123164"
     },
     {
-      "id": "gn-environment-science-25",
-      "title": "Sunshine Mining Company Leads Sustainable Mining In 2026 - Farmonaut",
-      "summary": "Sunshine Mining Company Leads Sustainable Mining In 2026 Farmonaut",
-      "topic": "environment-science",
-      "source": "Farmonaut",
-      "date": "Wed, 11 Feb 2026 06:31:11 GMT",
-      "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/07/Blog-Policy-Pricing-1.png",
-      "url": "https://farmonaut.com/mining/sunshine-mining-company-leads-sustainable-mining-in-2026"
-    },
-    {
-      "id": "gn-environment-science-27",
-      "title": "Tamarack Inc Tony Beets: 2026 Mining Innovations - Farmonaut",
-      "summary": "Tamarack Inc Tony Beets: 2026 Mining Innovations Farmonaut",
-      "topic": "environment-science",
-      "source": "Farmonaut",
-      "date": "Wed, 11 Feb 2026 06:16:08 GMT",
-      "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/07/Blog-Policy-Pricing-1.png",
-      "url": "https://farmonaut.com/mining/tamarack-inc-tony-beets-2026-mining-innovations-2"
-    },
-    {
-      "id": "gn-environment-science-14",
+      "id": "gn-environment-science-7",
       "title": "Can AI and satellites raise trust in carbon credits? - Springwise",
       "summary": "Can AI and satellites raise trust in carbon credits? Springwise",
       "topic": "environment-science",
       "source": "Springwise",
       "date": "Wed, 11 Feb 2026 06:05:53 GMT",
-      "imageUrl": "https://edienetlive.s3.eu-west-2.amazonaws.com/wp-content/uploads/sites/5/innovationprofessional-scientific-technicalcarbon-credit-certification-using-advanced-ai-technology.jpg",
+      "imageUrl": "data/images/environment-science/uhawke.webp",
       "url": "https://springwise.com/diverse-nature/carbon-credit-certification-using-advanced-ai-technology/"
     },
     {
@@ -2863,16 +2953,6 @@
       "url": "https://consumerconnectng.com/51701"
     },
     {
-      "id": "gn-environment-science-23",
-      "title": "Jafurah Gas: Transforming Saudi Energy &amp; Agriculture 2026 - Farmonaut",
-      "summary": "Jafurah Gas: Transforming Saudi Energy & Agriculture 2026 Farmonaut",
-      "topic": "environment-science",
-      "source": "Farmonaut",
-      "date": "Tue, 10 Feb 2026 22:22:58 GMT",
-      "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/07/Blog-Policy-Pricing-1.png",
-      "url": "https://farmonaut.com/mining/jafurah-gas-transforming-saudi-energy-agriculture-2026"
-    },
-    {
       "id": "gn-chatbot-development-20",
       "title": "OpenAI's ChatGPT, whose growth slowed amid the offensive of competitive services such as Gemini and - 매일경제",
       "summary": "OpenAI's ChatGPT, whose growth slowed amid the offensive of competitive services such as Gemini and 매일경제",
@@ -3021,6 +3101,16 @@
       "date": "Tue, 10 Feb 2026 20:17:54 GMT",
       "imageUrl": "https://www.musicbusinessworldwide.com/files/2026/02/shutterstock_1954106548.jpg",
       "url": "https://www.musicbusinessworldwide.com/spotify-eyes-ai-derivatives-as-new-revenue-stream-for-artists-and-says-its-tech-to-let-fans-make-remixes-covers-is-ready/"
+    },
+    {
+      "id": "gn-environment-science-18",
+      "title": "AI-Powered Energy Independence- Ktech to Showcase Energy Storage and AI Management Solutions at Intersolar 2026 - The AI Journal",
+      "summary": "AI-Powered Energy Independence- Ktech to Showcase Energy Storage and AI Management Solutions at Intersolar 2026 The AI Journal",
+      "topic": "environment-science",
+      "source": "The AI Journal",
+      "date": "Tue, 10 Feb 2026 19:53:09 GMT",
+      "imageUrl": "data/images/environment-science/spmtnl.webp",
+      "url": "https://aijourn.com/ai-powered-energy-independence-ktech-to-showcase-energy-storage-and-ai-management-solutions-at-intersolar-2026/"
     },
     {
       "id": "gn-musical-art-14",
@@ -3233,16 +3323,6 @@
       "url": "https://www.cfodive.com/news/ai-fueled-massive-surge-fraud-losses-pindrop-retail/811404/"
     },
     {
-      "id": "gn-environment-science-22",
-      "title": "PDO Oman: Driving Sustainable Energy And Innovation In 2026 - Farmonaut",
-      "summary": "PDO Oman: Driving Sustainable Energy And Innovation In 2026 Farmonaut",
-      "topic": "environment-science",
-      "source": "Farmonaut",
-      "date": "Tue, 10 Feb 2026 17:10:13 GMT",
-      "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/07/Blog-Policy-Pricing-1.png",
-      "url": "https://farmonaut.com/mining/pdo-oman-driving-sustainable-energy-and-innovation-in-2026"
-    },
-    {
       "id": "gn-business-economy-46",
       "title": "From Automation To Autonomy: AI For The CFO And Supply Chain Finance - Forbes",
       "summary": "From Automation To Autonomy: AI For The CFO And Supply Chain Finance Forbes",
@@ -3321,6 +3401,16 @@
       "date": "Tue, 10 Feb 2026 16:23:30 GMT",
       "imageUrl": "data/images/unmanned-aircraft/i0jmr4.webp",
       "url": "https://www.tradingview.com/news/financewire:96d3e1c32094b:0-zenatech-s-drone-as-a-service-expands-builder-services-capability-delivering-drone-driven-speed-and-precision-to-surveying-for-homebuilders/"
+    },
+    {
+      "id": "gn-environment-science-45",
+      "title": "NC State to Host National Conference on AI in Agriculture - NC State University",
+      "summary": "NC State to Host National Conference on AI in Agriculture NC State University",
+      "topic": "environment-science",
+      "source": "NC State University",
+      "date": "Tue, 10 Feb 2026 16:19:58 GMT",
+      "imageUrl": "data/images/environment-science/deri1.webp",
+      "url": "https://cals.ncsu.edu/news/nc-state-to-host-national-conference-on-ai-in-agriculture/"
     },
     {
       "id": "gn-unmanned-aircraft-18",
@@ -3423,6 +3513,16 @@
       "url": "https://www.digitaltrends.com/home-theater/youtube-music-can-now-turn-you-thoughts-into-a-personalized-playlist/"
     },
     {
+      "id": "gn-environment-science-40",
+      "title": "Hyderabad PVNR Expressway Moves To AI Enforcement - urbanacres.in",
+      "summary": "Hyderabad PVNR Expressway Moves To AI Enforcement urbanacres.in",
+      "topic": "environment-science",
+      "source": "urbanacres.in",
+      "date": "Tue, 10 Feb 2026 14:33:40 GMT",
+      "imageUrl": "",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1TM3RGS0JmZ0pRenFGSk1WUEtSTGI5cDhtSnhJODIzdDVoYzFWd2RNdW9FUDhiVVNNaHVOOTRRR1JnenVMWmZxZzJfNWprYV9leHlRQjFleUk4c29Za0o5Sy1MWWx3eWRsZWMteG41WmxXUU1ISW5HU3E3VnM?oc=5"
+    },
+    {
       "id": "gn-musical-art-25",
       "title": "Spotify Reports Record 751 Million Users and Revenue Growth in Q4 2025 - mezha.net",
       "summary": "Spotify Reports Record 751 Million Users and Revenue Growth in Q4 2025 mezha.net",
@@ -3431,16 +3531,6 @@
       "date": "Tue, 10 Feb 2026 14:29:48 GMT",
       "imageUrl": "https://mezha.net/wp-content/uploads/2026/02/10/spotify-reports-record-751.webp",
       "url": "https://mezha.net/eng/bukvy/spotify-reports-record-751-million-users-and-revenue-growth-in-q4-2025/"
-    },
-    {
-      "id": "gn-environment-science-18",
-      "title": "Sustainability Magazine’s Latest Issue Features Global Brands Redefining Fashion’s Impact - The Manila Times",
-      "summary": "Sustainability Magazine’s Latest Issue Features Global Brands Redefining Fashion’s Impact The Manila Times",
-      "topic": "environment-science",
-      "source": "The Manila Times",
-      "date": "Tue, 10 Feb 2026 14:24:28 GMT",
-      "imageUrl": "https://www.manilatimes.net//theme_manilatimes/images/manila-logo-header-web-new.png",
-      "url": "https://www.manilatimes.net/2026/02/10/tmt-newswire/globenewswire/sustainability-magazines-latest-issue-features-global-brands-redefining-fashions-impact/2275379"
     },
     {
       "id": "gn-technology-innovation-5",
@@ -3553,16 +3643,6 @@
       "url": "https://mezha.net/eng/bukvy/youtube-launches-ai-playlist-feature-for-premium-users-on-mobile/"
     },
     {
-      "id": "gn-environment-science-28",
-      "title": "Kuwait Oil Company: 7 Breakthrough Innovations Shaping 2026 - Farmonaut",
-      "summary": "Kuwait Oil Company: 7 Breakthrough Innovations Shaping 2026 Farmonaut",
-      "topic": "environment-science",
-      "source": "Farmonaut",
-      "date": "Tue, 10 Feb 2026 12:40:39 GMT",
-      "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/07/Blog-Policy-Pricing-1.png",
-      "url": "https://farmonaut.com/mining/kuwait-oil-company-7-breakthrough-innovations-shaping-2026"
-    },
-    {
       "id": "gn-digital-security-38",
       "title": "New scam spotted that uses a calendar invite, deepfakes of CEOs, and a troubleshooting program to create backdoors and data miners - PC Gamer",
       "summary": "New scam spotted that uses a calendar invite, deepfakes of CEOs, and a troubleshooting program to create backdoors and data miners PC Gamer",
@@ -3583,6 +3663,16 @@
       "url": "https://www.inkl.com/news/ai-assisted-hacking-group-hits-targets-with-a-complicated-social-engineering-scam-that-involves-deepfaked-ceos-spoofed-zoom-calls-and-a-malicious-troubleshooting-program"
     },
     {
+      "id": "gn-environment-science-13",
+      "title": "How is physical artificial intelligence used to optimize data center efficiency? - EE World Online",
+      "summary": "How is physical artificial intelligence used to optimize data center efficiency? EE World Online",
+      "topic": "environment-science",
+      "source": "EE World Online",
+      "date": "Tue, 10 Feb 2026 12:33:36 GMT",
+      "imageUrl": "data/images/environment-science/f7y5qi.webp",
+      "url": "https://www.eeworldonline.com/how-is-physical-artificial-intelligence-used-to-optimize-data-center-efficiency/"
+    },
+    {
       "id": "gn-governance-politics-48",
       "title": "Florida Legislature stalls on DeSantis AI regulations as House balks at governor's approach - The Business Journals",
       "summary": "Florida Legislature stalls on DeSantis AI regulations as House balks at governor's approach The Business Journals",
@@ -3591,16 +3681,6 @@
       "date": "Tue, 10 Feb 2026 12:26:00 GMT",
       "imageUrl": "data/images/governance-politics/ckb8lv.webp",
       "url": "https://www.bizjournals.com/jacksonville/news/2026/02/10/ai-bill-florida-stalls.html"
-    },
-    {
-      "id": "gn-environment-science-29",
-      "title": "Drilling Bits, Oil And Gas Drilling Rig: 7 Innovations - Farmonaut",
-      "summary": "Drilling Bits, Oil And Gas Drilling Rig: 7 Innovations Farmonaut",
-      "topic": "environment-science",
-      "source": "Farmonaut",
-      "date": "Tue, 10 Feb 2026 12:12:47 GMT",
-      "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/07/Blog-Policy-Pricing-1.png",
-      "url": "https://farmonaut.com/mining/drilling-bits-oil-and-gas-drilling-rig-7-innovations"
     },
     {
       "id": "gn-musical-art-12",
@@ -3763,13 +3843,13 @@
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQa2syUE8xeXN4ZjR1TnB5V212dmV3dWVCYUtYSW9INzdFZVdXVEJFNjFfVHRrNTN3TmYwNVVWSFhkMkV2cXJHN0J5TTllckVzYW9wcHJmVnNOaGY1Qy1rbkUxbzJHN3l2Y0k2enlYZlJBVHdkSm04RU55SE44aWJxLU9uc0wzS21nYU9YNG15M1hGYVhfRG9xZ2hxaVRZMElCQmhsU19TQThibVh4Mms4NWR0b3dGUUNpZFVJ?oc=5"
     },
     {
-      "id": "gn-environment-science-10",
+      "id": "gn-environment-science-5",
       "title": "Artificial intelligence (AI) for disaster risk reduction - PreventionWeb.net",
       "summary": "Artificial intelligence (AI) for disaster risk reduction PreventionWeb.net",
       "topic": "environment-science",
       "source": "PreventionWeb.net",
       "date": "Tue, 10 Feb 2026 09:19:51 GMT",
-      "imageUrl": "https://www.preventionweb.net/sites/default/files/styles/landscape_16_9/public/2024-06/Shutterstock_2055335264.jpg?itok=-f4EyCeP",
+      "imageUrl": "data/images/environment-science/sdk2bk.webp",
       "url": "https://www.preventionweb.net/collections/artificial-intelligence-ai-disaster-risk-reduction"
     },
     {
@@ -3801,6 +3881,16 @@
       "date": "Tue, 10 Feb 2026 08:42:36 GMT",
       "imageUrl": "data/images/business-economy/ksi35c.webp",
       "url": "https://www.whalesbook.com/news/English/stock-investment-ideas/Small-Caps-Surge-But-Valuations-Warn-IT-Faces-AI-Disruption/698aeeed757d40c78185905f"
+    },
+    {
+      "id": "gn-environment-science-30",
+      "title": "Dubai’s bold traffic relief strategy: How RTA is keeping the UAE emirate moving, AI infrastructure and fu - Times of India",
+      "summary": "Dubai’s bold traffic relief strategy: How RTA is keeping the UAE emirate moving, AI infrastructure and fu Times of India",
+      "topic": "environment-science",
+      "source": "Times of India",
+      "date": "Tue, 10 Feb 2026 08:33:00 GMT",
+      "imageUrl": "data/images/environment-science/lkhafo.webp",
+      "url": "https://timesofindia.indiatimes.com/world/middle-east/dubais-bold-traffic-relief-strategy-how-rta-is-keeping-the-uae-emirate-moving-ai-infrastructure-and-future-mobility-plans/articleshow/128143603.cms"
     },
     {
       "id": "gn-musical-art-46",
@@ -3863,13 +3953,13 @@
       "url": "https://www.nerdwallet.com/investing/learn/best-performing-ai-etfs"
     },
     {
-      "id": "gn-environment-science-38",
+      "id": "gn-environment-science-12",
       "title": "AI boom at your expense? Growing electricity demand and rising electricity prices: AI data centers vs. the power grid - Xpert.Digital - Konrad Wolfenstein",
       "summary": "AI boom at your expense? Growing electricity demand and rising electricity prices: AI data centers vs. the power grid Xpert.Digital - Konrad Wolfenstein",
       "topic": "environment-science",
       "source": "Xpert.Digital - Konrad Wolfenstein",
       "date": "Tue, 10 Feb 2026 07:46:25 GMT",
-      "imageUrl": "https://ecfeda1c.rocketcdn.me/wp-content/uploads/2026/02/ki-steigende-strompreise-Xpert.Digital-png.png",
+      "imageUrl": "data/images/environment-science/7kr8xe.webp",
       "url": "https://xpert.digital/en/ai-data-centers-vs.-power-grid/"
     },
     {
@@ -3933,16 +4023,6 @@
       "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FabscbnNEWS%2Fposts%2Fa-researcher-warned-against-using-artificial-intelligence-as-an-alternative-sour%2F1418222147019704%2F"
     },
     {
-      "id": "gn-environment-science-9",
-      "title": "Weather Forecast for Wyoming this Tuesday, February 10: Intense Cold and Cloudy Skies - Heraldo USA",
-      "summary": "Weather Forecast for Wyoming this Tuesday, February 10: Intense Cold and Cloudy Skies Heraldo USA",
-      "topic": "environment-science",
-      "source": "Heraldo USA",
-      "date": "Tue, 10 Feb 2026 05:38:23 GMT",
-      "imageUrl": "https://assets.heraldousa.com/__export/1770701330337/sites/heraldousa/img/2026/02/10/20260210_022849962_weather_wyoming.jpg_1217713605.jpg",
-      "url": "https://www.heraldousa.com/trending/weather-forecast-for-wyoming-this-tuesday-february-10-intense-cold-and-cloudy-skies-20260210-0001.html"
-    },
-    {
       "id": "gn-ai-academy-16",
       "title": "AI models at IBM and DeepMind are pushing DNA toward a GPT era - IBM",
       "summary": "AI models at IBM and DeepMind are pushing DNA toward a GPT era IBM",
@@ -3991,6 +4071,16 @@
       "date": "Tue, 10 Feb 2026 04:22:37 GMT",
       "imageUrl": "https://i.pcmag.com/imagery/roundups/063BUF2XoLMtmoynofL3fKy-7..v1569492617.jpg",
       "url": "https://www.pcmag.com/picks/the-best-smartwatches?test_uuid=04IpBmWGZleS0I0J3epvMrC&test_variant=A"
+    },
+    {
+      "id": "gn-environment-science-23",
+      "title": "AI-Driven Mega-Mobility Analysis in Smart Cities - Mirage News",
+      "summary": "AI-Driven Mega-Mobility Analysis in Smart Cities Mirage News",
+      "topic": "environment-science",
+      "source": "Mirage News",
+      "date": "Tue, 10 Feb 2026 03:42:00 GMT",
+      "imageUrl": "data/images/environment-science/j1swt6.webp",
+      "url": "https://www.miragenews.com/ai-driven-mega-mobility-analysis-in-smart-cities-1616780/"
     },
     {
       "id": "gn-ai-academy-31",
@@ -4113,13 +4203,13 @@
       "url": "https://www.webpronews.com/openai-crosses-the-rubicon-chatgpts-first-ads-signal-a-seismic-shift-in-how-ai-makes-money/"
     },
     {
-      "id": "gn-environment-science-31",
+      "id": "gn-environment-science-11",
       "title": "Testing AI-enabled energy systems - Climate Control News",
       "summary": "Testing AI-enabled energy systems Climate Control News",
       "topic": "environment-science",
       "source": "Climate Control News",
       "date": "Mon, 09 Feb 2026 23:04:00 GMT",
-      "imageUrl": "https://yaffa-cdn.s3.amazonaws.com/yaffadsp/images/dspArticle/leadImage/batteriesweb.jpg",
+      "imageUrl": "data/images/environment-science/9t1l7t.webp",
       "url": "https://www.climatecontrolnews.com.au/contracting/testing-ai-enabled-energy-systems"
     },
     {
@@ -4183,16 +4273,6 @@
       "url": "https://www.visiontimes.com/2026/02/09/taiwan-plans-to-produce-210000-drones-and-1000-unmanned-surface-vehicles.html"
     },
     {
-      "id": "gn-environment-science-36",
-      "title": "Battery Storage Comes of Age: From Grid Accessory to Essential Infrastructure - POWER Magazine",
-      "summary": "Battery Storage Comes of Age: From Grid Accessory to Essential Infrastructure POWER Magazine",
-      "topic": "environment-science",
-      "source": "POWER Magazine",
-      "date": "Mon, 09 Feb 2026 20:51:43 GMT",
-      "imageUrl": "https://www.powermag.com/wp-content/uploads/2026/02/fig1-sse-50mw-battery-storage-asset-at-salisbury-in-wiltshire-england.png",
-      "url": "https://www.powermag.com/battery-storage-comes-of-age-from-grid-accessory-to-essential-infrastructure/"
-    },
-    {
       "id": "gn-ai-academy-22",
       "title": "Wabi raises $20M to build a new app discovery platform - StartupHub.ai",
       "summary": "Wabi raises $20M to build a new app discovery platform StartupHub.ai",
@@ -4201,16 +4281,6 @@
       "date": "Mon, 09 Feb 2026 20:48:45 GMT",
       "imageUrl": "https://bsmromhjxdnndenlrpgx.supabase.co/storage/v1/object/public/entity-images/posts/1049777.webp",
       "url": "https://www.startuphub.ai/ai-news/funding-round/2025/wabi-raises-20m-to-build-a-new-app-discovery-platform"
-    },
-    {
-      "id": "gn-environment-science-13",
-      "title": "Earth Observation Data Basics - NASA Earthdata (.gov)",
-      "summary": "Earth Observation Data Basics NASA Earthdata (.gov)",
-      "topic": "environment-science",
-      "source": "NASA Earthdata (.gov)",
-      "date": "Mon, 09 Feb 2026 20:33:14 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.earthdata.nasa.gov/learn/earth-observation-data-basics"
     },
     {
       "id": "gn-visual-art-photography-18",
@@ -4299,7 +4369,7 @@
       "topic": "environment-science",
       "source": "Ventureburn",
       "date": "Mon, 09 Feb 2026 17:34:05 GMT",
-      "imageUrl": "https://ventureburn.com/wp-content/uploads/2026/02/Tomorrow.io-Raises-175M-for-AI-Powered-Weather-Satellites.jpeg",
+      "imageUrl": "data/images/environment-science/yi6cv4.webp",
       "url": "https://ventureburn.com/tomorrow-io-raises-175m-for-ai-powered-weather-satellites/"
     },
     {
@@ -4331,6 +4401,16 @@
       "date": "Mon, 09 Feb 2026 17:02:02 GMT",
       "imageUrl": "https://www.myjoyonline.com/wp-content/uploads/2026/02/cyber.jpeg",
       "url": "https://www.myjoyonline.com/cybersecurity-threats-in-ghana-a-comprehensive-analysis-2/"
+    },
+    {
+      "id": "gn-environment-science-25",
+      "title": "Webinar (3 Mar): Preparing for AI - understanding the data groundwork with Sunderland - Smart Cities World",
+      "summary": "Webinar (3 Mar): Preparing for AI - understanding the data groundwork with Sunderland Smart Cities World",
+      "topic": "environment-science",
+      "source": "Smart Cities World",
+      "date": "Mon, 09 Feb 2026 16:41:30 GMT",
+      "imageUrl": "data/images/environment-science/3vpopc.webp",
+      "url": "https://www.smartcitiesworld.net/webinars/webinar-preparing-for-ai-understanding-the-data-groundwork-with-sunderland"
     },
     {
       "id": "gn-health-style-27",
@@ -4383,6 +4463,16 @@
       "url": "https://www.digitalcameraworld.com/buying-guides/best-mac-webcam"
     },
     {
+      "id": "gn-environment-science-21",
+      "title": "Renewable energy news: Nadara, Capalo AI, Samsung SDI, EWP - GreentechLead",
+      "summary": "Renewable energy news: Nadara, Capalo AI, Samsung SDI, EWP GreentechLead",
+      "topic": "environment-science",
+      "source": "GreentechLead",
+      "date": "Mon, 09 Feb 2026 15:41:27 GMT",
+      "imageUrl": "data/images/environment-science/4oar9o.webp",
+      "url": "https://greentechlead.com/energy-news/renewable-energy-news-nadara-capalo-ai-samsung-sdi-ewp-52208"
+    },
+    {
       "id": "gn-chatbot-development-35",
       "title": "California State University System Partners With Tech Giants to Become First AI-Empowered University Network - Technobezz",
       "summary": "California State University System Partners With Tech Giants to Become First AI-Empowered University Network Technobezz",
@@ -4401,16 +4491,6 @@
       "date": "Mon, 09 Feb 2026 15:22:45 GMT",
       "imageUrl": "images/chatbot-development/vtpwdb.webp",
       "url": "https://247wallst.com/investing/2026/02/09/google-gemini-just-set-xrps-realistic-ceiling-for-2026-and-its-not-what-bulls-want-to-hear/"
-    },
-    {
-      "id": "gn-environment-science-12",
-      "title": "Ore Sorting: Boosting Mining Efficiency &amp; Sustainability in 2025 - Farmonaut",
-      "summary": "Ore Sorting: Boosting Mining Efficiency & Sustainability in 2025 Farmonaut",
-      "topic": "environment-science",
-      "source": "Farmonaut",
-      "date": "Mon, 09 Feb 2026 14:57:03 GMT",
-      "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/07/Blog-Policy-Pricing-1.png",
-      "url": "https://farmonaut.com/mining/ore-sorting-boosting-mining-efficiency-sustainability"
     },
     {
       "id": "gn-chatbot-development-7",
@@ -4493,16 +4573,6 @@
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNVNtODVoeFpRNTd4ZzFSLXI2ZU1IVVZlWnlHRXlSMlJKcXBWbjZKbUxsZ1VmcnVOcTAxNkgweVQxX25jbG9RUHFzUUpTQS1GRlpMQWxzMWlQb21qU0h5QzlpdkNReVZTM2JEcXNhWmFjLWoya3IyT0VlNnRzaF9ESGVvX1VGdFdhcUFnQzlqU280d1I0dC1r?oc=5"
     },
     {
-      "id": "gn-environment-science-24",
-      "title": "Phoenix Copper 2026: Leading Sustainable Mining - Farmonaut",
-      "summary": "Phoenix Copper 2026: Leading Sustainable Mining Farmonaut",
-      "topic": "environment-science",
-      "source": "Farmonaut",
-      "date": "Mon, 09 Feb 2026 13:23:03 GMT",
-      "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/07/Blog-Policy-Pricing-1.png",
-      "url": "https://farmonaut.com/mining/phoenix-copper-2026-leading-sustainable-mining"
-    },
-    {
       "id": "gn-chatbot-development-26",
       "title": "Bot Games Launches AI Agent Competition with 1 BTC Prize Pool, Open Source Only - openPR.com",
       "summary": "Bot Games Launches AI Agent Competition with 1 BTC Prize Pool, Open Source Only openPR.com",
@@ -4531,26 +4601,6 @@
       "date": "Mon, 09 Feb 2026 12:01:39 GMT",
       "imageUrl": "https://www.geeky-gadgets.com/wp-content/uploads/2026/02/iphone-camera-vs-chinese-smartphones_optimized.jpg",
       "url": "https://www.geeky-gadgets.com/iphone-camera/"
-    },
-    {
-      "id": "gn-environment-science-37",
-      "title": "Asia Pacific Smart Meters Market to Reach US$ 53.6 Billion - GlobeNewswire",
-      "summary": "Asia Pacific Smart Meters Market to Reach US$ 53.6 Billion GlobeNewswire",
-      "topic": "environment-science",
-      "source": "GlobeNewswire",
-      "date": "Mon, 09 Feb 2026 11:44:42 GMT",
-      "imageUrl": "https://ml.globenewswire.com/Resource/Download/a77988df-ad1a-4619-9a4e-367c858dc70e",
-      "url": "https://www.globenewswire.com/news-release/2026/02/09/3234376/0/en/Asia-Pacific-Smart-Meters-Market-to-Reach-US-53-6-Billion-by-2031-as-Grid-Modernization-and-Energy-Theft-Reduction-Accelerate-Astute-Analytica.html"
-    },
-    {
-      "id": "gn-environment-science-4",
-      "title": "United States Remote Sensing Market is Expected to Grow at 15.2% - openPR.com",
-      "summary": "United States Remote Sensing Market is Expected to Grow at 15.2% openPR.com",
-      "topic": "environment-science",
-      "source": "openPR.com",
-      "date": "Mon, 09 Feb 2026 11:44:33 GMT",
-      "imageUrl": "https://cdn.open-pr.com/L/2/L209766012_g.jpg",
-      "url": "https://www.openpr.com/news/4382588/united-states-remote-sensing-market-is-expected-to-grow-at-15-2"
     },
     {
       "id": "gn-health-style-35",
@@ -4733,6 +4783,16 @@
       "url": "https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/top-generative-ai-tools"
     },
     {
+      "id": "gn-environment-science-36",
+      "title": "AI Innovations in Dubai: Accelerating Business Growth - appinventiv.com",
+      "summary": "AI Innovations in Dubai: Accelerating Business Growth appinventiv.com",
+      "topic": "environment-science",
+      "source": "appinventiv.com",
+      "date": "Mon, 09 Feb 2026 08:00:00 GMT",
+      "imageUrl": "data/images/environment-science/848htf.webp",
+      "url": "https://appinventiv.com/blog/ai-innovations-in-dubai/"
+    },
+    {
       "id": "gn-health-style-6",
       "title": "WHO backs wearables: From smart rings to CGMs, here's how wearables are boosting preventive healthcare - Moneycontrol",
       "summary": "WHO backs wearables: From smart rings to CGMs, here's how wearables are boosting preventive healthcare Moneycontrol",
@@ -4833,6 +4893,16 @@
       "url": "https://www.pcmag.com/picks/the-best-ai-chatbots?test_uuid=04IpBmWGZleS0I0J3epvMrC&test_variant=B"
     },
     {
+      "id": "gn-environment-science-31",
+      "title": "From demos to daily transport: How Las Vegas is turning autonomy into real urban infrastructure - Robotics &amp; Automation News",
+      "summary": "From demos to daily transport: How Las Vegas is turning autonomy into real urban infrastructure Robotics & Automation News",
+      "topic": "environment-science",
+      "source": "Robotics &amp; Automation News",
+      "date": "Mon, 09 Feb 2026 03:52:11 GMT",
+      "imageUrl": "data/images/environment-science/8f3lqh.webp",
+      "url": "https://roboticsandautomationnews.com/2026/02/09/from-demos-to-daily-transport-how-las-vegas-is-turning-autonomy-into-real-urban-infrastructure/98772/"
+    },
+    {
       "id": "gn-ai-academy-34",
       "title": "10 Business Schools To Watch In 2026 - Yahoo",
       "summary": "10 Business Schools To Watch In 2026 Yahoo",
@@ -4911,6 +4981,16 @@
       "date": "Sun, 08 Feb 2026 23:43:55 GMT",
       "imageUrl": "https://www.qoo10.co.id/en/wp-content/uploads/2026/02/3-Smartphones-with-Camera-Features-That-Surpass-iPhone-17-Pro.jpg",
       "url": "https://www.qoo10.co.id/en/gadget/69160/3-smartphones-with-camera-features-that-surpass-iphone-17-pro-max-in-zoom-low-light-and-detail/"
+    },
+    {
+      "id": "gn-environment-science-43",
+      "title": "Artificial intelligence called future of farming - The Western Producer",
+      "summary": "Artificial intelligence called future of farming The Western Producer",
+      "topic": "environment-science",
+      "source": "The Western Producer",
+      "date": "Sun, 08 Feb 2026 23:35:22 GMT",
+      "imageUrl": "",
+      "url": "https://www.producer.com/news/artificial-intelligence-called-future-of-farming/"
     },
     {
       "id": "gn-digital-security-1",
@@ -5043,16 +5123,6 @@
       "url": "https://www.msn.com/en-nz/news/other/overland-ai-raises-100-million-to-expand-use-of-ground-drones-in-the-us-army/ar-AA1VKskP?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
     },
     {
-      "id": "gn-environment-science-17",
-      "title": "Crowsnest Pass Coal Mine: 7 Sustainability Trends 2026 - Farmonaut",
-      "summary": "Crowsnest Pass Coal Mine: 7 Sustainability Trends 2026 Farmonaut",
-      "topic": "environment-science",
-      "source": "Farmonaut",
-      "date": "Sun, 08 Feb 2026 04:30:53 GMT",
-      "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/07/Blog-Policy-Pricing-1.png",
-      "url": "https://farmonaut.com/mining/crowsnest-pass-coal-mine-7-sustainability-trends-2026"
-    },
-    {
       "id": "gn-chatbot-development-22",
       "title": "Anthropic Claude Opus 4.6 Explained: A powerful model for real world-coding, enterprise agents and professional work - The Financial Express",
       "summary": "Anthropic Claude Opus 4.6 Explained: A powerful model for real world-coding, enterprise agents and professional work The Financial Express",
@@ -5073,34 +5143,14 @@
       "url": "https://www.gizmochina.com/2026/02/08/xiaomi-magnetic-lens-launch-2026/"
     },
     {
-      "id": "gn-environment-science-26",
-      "title": "Leonora Mining: 7 Innovations Boost Leonora Mine In 2026 - Farmonaut",
-      "summary": "Leonora Mining: 7 Innovations Boost Leonora Mine In 2026 Farmonaut",
-      "topic": "environment-science",
-      "source": "Farmonaut",
-      "date": "Sat, 07 Feb 2026 23:42:09 GMT",
-      "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/07/Blog-Policy-Pricing-1.png",
-      "url": "https://farmonaut.com/mining/leonora-mining-7-innovations-boost-leonora-mine-in-2026"
-    },
-    {
-      "id": "gn-environment-science-16",
+      "id": "gn-environment-science-8",
       "title": "The world is increasingly concerned about total AI, and China is aligning itself with Indonesia in a wave of regulations that seek to curb its total replacement - ECOticias.com",
       "summary": "The world is increasingly concerned about total AI, and China is aligning itself with Indonesia in a wave of regulations that seek to curb its total replacement ECOticias.com",
       "topic": "environment-science",
       "source": "ECOticias.com",
       "date": "Sat, 07 Feb 2026 23:30:00 GMT",
-      "imageUrl": "https://www.ecoticias.com/en/wp-content/uploads/2026/02/china-indonesia-ai-regulation-data-centers-energy-water.jpg",
+      "imageUrl": "data/images/environment-science/j5u9x1.webp",
       "url": "https://www.ecoticias.com/en/the-world-is-increasingly-concerned-about-total-ai-and-china-is-aligning-itself-with-indonesia-in-a-wave-of-regulations-that-seek-to-curb-its-total-replacement/26787/"
-    },
-    {
-      "id": "gn-environment-science-30",
-      "title": "Flake Graphite &amp; Graphite Flakes: US Mines, 2026 Trends - Farmonaut",
-      "summary": "Flake Graphite & Graphite Flakes: US Mines, 2026 Trends Farmonaut",
-      "topic": "environment-science",
-      "source": "Farmonaut",
-      "date": "Sat, 07 Feb 2026 22:56:52 GMT",
-      "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/07/Blog-Policy-Pricing-1.png",
-      "url": "https://farmonaut.com/mining/flake-graphite-graphite-flakes-us-mines-2026-trends"
     },
     {
       "id": "gn-visual-art-photography-6",
@@ -5173,6 +5223,16 @@
       "url": "chrome-error://chromewebdata/"
     },
     {
+      "id": "gn-environment-science-2",
+      "title": "Managing nature-based tourism with AI: Evidence from the Peruvian Amazon - Devdiscourse",
+      "summary": "Managing nature-based tourism with AI: Evidence from the Peruvian Amazon Devdiscourse",
+      "topic": "environment-science",
+      "source": "Devdiscourse",
+      "date": "Sat, 07 Feb 2026 16:58:50 GMT",
+      "imageUrl": "",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPVktEYWVpTTVGakhrX0lodXJPemI2THlBSVh5eV9oS0tVdlBUNUotd1dGZ1hkem5VVHpONmxWRnMtcnlCeW1qaW9yeUdnZXMyREYyZHBJUjVsN3Rvd09XQ3dJMkZGTFlQWTl3RWxhb2oya1RRRG0xRktqV2lEUVZMSjE3ei1FM1VOdmxZQnNlVzdhMW5jZlMxRmpTaE1QY29lcVQyRVpQVmJidHgtQThzQ1pzV0R2Y1VqVVVfX0RjWTB4c2NoSVdQYUhhWdIBywFBVV95cUxPVktEYWVpTTVGakhrX0lodXJPemI2THlBSVh5eV9oS0tVdlBUNUotd1dGZ1hkem5VVHpONmxWRnMtcnlCeW1qaW9yeUdnZXMyREYyZHBJUjVsN3Rvd09XQ3dJMkZGTFlQWTl3RWxhb2oya1RRRG0xRktqV2lEUVZMSjE3ei1FM1VOdmxZQnNlVzdhMW5jZlMxRmpTaE1QY29lcVQyRVpQVmJidHgtQThzQ1pzV0R2Y1VqVVVfX0RjWTB4c2NoSVdQYUhhWQ?oc=5"
+    },
+    {
       "id": "gn-governance-politics-46",
       "title": "New York CEO Dan Herbatschek of Ramsey Theory Capital Delivers New Real-Time Governance for Enterprise AI Systems as AI Safety Laws Accelerate - The Manila Times",
       "summary": "New York CEO Dan Herbatschek of Ramsey Theory Capital Delivers New Real-Time Governance for Enterprise AI Systems as AI Safety Laws Accelerate The Manila Times",
@@ -5181,6 +5241,16 @@
       "date": "Sat, 07 Feb 2026 16:51:05 GMT",
       "imageUrl": "data/images/governance-politics/pnd8mt.webp",
       "url": "https://www.manilatimes.net/2026/02/08/tmt-newswire/globenewswire/new-york-ceo-dan-herbatschek-of-ramsey-theory-capital-delivers-new-real-time-governance-for-enterprise-ai-systems-as-ai-safety-laws-accelerate/2273786"
+    },
+    {
+      "id": "gn-environment-science-16",
+      "title": "Why microgrids are turning to AI to manage renewable power - Devdiscourse",
+      "summary": "Why microgrids are turning to AI to manage renewable power Devdiscourse",
+      "topic": "environment-science",
+      "source": "Devdiscourse",
+      "date": "Sat, 07 Feb 2026 16:43:50 GMT",
+      "imageUrl": "",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOUoxWW9NQ05LbWVDQm9yY2d6cmp4cC1RMFJFV0JpTllNeFJQXzVUd1d5RDRmMXIyRUlwRm94ME1KcXYzbFQwSTY5eEZrLWZoYnROcVlwSUZKWkJlM3BDeTVyOEpHcC02SEE5Yk14UEVEUGl0dmh1bWZqa3loYjZyMWZ5ZllFcklHWG9JamNrX3phaTFIREhmVEJIaGxtUWczQk1jNmd3cnhESEJDMTJDTmVoZ2FMVlRyMHfSAboBQVVfeXFMTTlKMVlvTUNOS21lQ0JvcmNnenJqeHAtUTBSRVdCaU5ZTXhSUF81VHdXeUQ0ZjFyMkVJcEZveDBNSnF2M2xUMEk2OXhGay1maGJ0TnFZcElGSlpCZTNwQ3k1cjhKR3AtNkhBOWJNeFBFRFBpdHZodW1mamt5aGI2cjFmeWZZRXJJR1hvSWpja196YWkxSERIZlRCSGhsbVFnM0JNYzZnd3J4REhCQzEyQ05laGdhTFZUcjB3?oc=5"
     },
     {
       "id": "gn-health-style-36",
@@ -5233,16 +5303,6 @@
       "url": "https://timesofindia.indiatimes.com/technology/mobiles-tabs/samsung-galaxy-s26-series-google-pixel-10a-and-5-other-smartphones-launching-in-february/articleshow/128029728.cms"
     },
     {
-      "id": "gn-environment-science-48",
-      "title": "Saudi Arabia High-Brightness LED Industry: Advanced Display Technologies &amp; Energy Savings Trends - vocal.media",
-      "summary": "Saudi Arabia High-Brightness LED Industry: Advanced Display Technologies & Energy Savings Trends vocal.media",
-      "topic": "environment-science",
-      "source": "vocal.media",
-      "date": "Sat, 07 Feb 2026 10:36:51 GMT",
-      "imageUrl": "https://res.cloudinary.com/jerrick/image/upload/c_scale,f_jpg,q_auto/698da27c863fe5001dd55192.jpg",
-      "url": "https://vocal.media/futurism/saudi-arabia-high-brightness-led-industry-advanced-display-technologies-and-energy-savings-trends"
-    },
-    {
       "id": "gn-governance-politics-11",
       "title": "Japan's lower house election becomes a testing ground for generative AI misinformation - the-decoder.com",
       "summary": "Japan's lower house election becomes a testing ground for generative AI misinformation the-decoder.com",
@@ -5253,46 +5313,6 @@
       "url": "https://the-decoder.com/japans-lower-house-election-becomes-a-testing-ground-for-generative-ai-misinformation/"
     },
     {
-      "id": "gn-environment-science-44",
-      "title": "Bulk Copper: Key To Sustainable Agriculture 2026 - Farmonaut",
-      "summary": "Bulk Copper: Key To Sustainable Agriculture 2026 Farmonaut",
-      "topic": "environment-science",
-      "source": "Farmonaut",
-      "date": "Sat, 07 Feb 2026 09:50:01 GMT",
-      "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/07/Blog-Policy-Pricing-1.png",
-      "url": "https://farmonaut.com/mining/bulk-copper-key-to-sustainable-agriculture-2026"
-    },
-    {
-      "id": "gn-environment-science-5",
-      "title": "Hydroponic, Harvest &amp; Ranch Equipment: 2026 Innovations - Farmonaut",
-      "summary": "Hydroponic, Harvest & Ranch Equipment: 2026 Innovations Farmonaut",
-      "topic": "environment-science",
-      "source": "Farmonaut",
-      "date": "Sat, 07 Feb 2026 09:49:47 GMT",
-      "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/06/Satellite-Remote-Sensing-Crop-Health-Data-7-Yield-Tips_2.jpg",
-      "url": "https://farmonaut.com/news/hydroponic-harvest-ranch-equipment-2026-innovations"
-    },
-    {
-      "id": "gn-environment-science-8",
-      "title": "Agriculture Research: Sensor Advancements Boost Field Crops - Farmonaut",
-      "summary": "Agriculture Research: Sensor Advancements Boost Field Crops Farmonaut",
-      "topic": "environment-science",
-      "source": "Farmonaut",
-      "date": "Sat, 07 Feb 2026 09:36:53 GMT",
-      "imageUrl": "https://farmonaut.com/wp-content/uploads/2024/09/2-181.png",
-      "url": "https://farmonaut.com/precision-farming/agriculture-research-sensor-advancements-boost-field-crops"
-    },
-    {
-      "id": "gn-environment-science-3",
-      "title": "IoT For Smart Farming: 7 Game-Changing Systems For 2026 - Farmonaut",
-      "summary": "IoT For Smart Farming: 7 Game-Changing Systems For 2026 Farmonaut",
-      "topic": "environment-science",
-      "source": "Farmonaut",
-      "date": "Sat, 07 Feb 2026 09:36:34 GMT",
-      "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/06/Yield-Mapping-Precision-Farming-7-Ways-to-Boost-Yields_1.jpg",
-      "url": "https://farmonaut.com/precision-farming/iot-for-smart-farming-7-game-changing-systems-for-2026"
-    },
-    {
       "id": "gn-chatbot-development-34",
       "title": "Anthropic Launches Claude Opus 4.6: A Big Step in AI Competition - indiaherald.com",
       "summary": "Anthropic Launches Claude Opus 4.6: A Big Step in AI Competition indiaherald.com",
@@ -5301,16 +5321,6 @@
       "date": "Sat, 07 Feb 2026 09:04:27 GMT",
       "imageUrl": "images/chatbot-development/nlw8fn.webp",
       "url": "https://www.indiaherald.com/Viral/Read/994877498/Anthropic-Launches-Claude-Opus-A-Big-Step-in-AI-Competition"
-    },
-    {
-      "id": "gn-environment-science-21",
-      "title": "Saracen Mineral: Leading Gold Mining In Western Australia - Farmonaut",
-      "summary": "Saracen Mineral: Leading Gold Mining In Western Australia Farmonaut",
-      "topic": "environment-science",
-      "source": "Farmonaut",
-      "date": "Sat, 07 Feb 2026 08:48:38 GMT",
-      "imageUrl": "https://farmonaut.com/wp-content/uploads/2025/07/Blog-Policy-Pricing-1.png",
-      "url": "https://farmonaut.com/mining/saracen-mineral-leading-gold-mining-in-western-australia"
     },
     {
       "id": "gn-chatbot-development-28",
@@ -5381,16 +5391,6 @@
       "date": "Sat, 07 Feb 2026 03:24:51 GMT",
       "imageUrl": "images/chatbot-development/oe0jo.webp",
       "url": "https://www.moneycontrol.com/technology/google-may-soon-allow-users-to-import-chat-history-from-chatgpt-and-other-chatbots-article-13816532.html"
-    },
-    {
-      "id": "gn-environment-science-32",
-      "title": "Zinc-Ion Battery Technology Advances Renewable Energy Storage in 2026 - Discovery Alert",
-      "summary": "Zinc-Ion Battery Technology Advances Renewable Energy Storage in 2026 Discovery Alert",
-      "topic": "environment-science",
-      "source": "Discovery Alert",
-      "date": "Sat, 07 Feb 2026 02:34:09 GMT",
-      "imageUrl": "https://discoveryalert.com.au/wp-content/uploads/2026/02/36bc2983-dfb9-4f5f-a43b-469f78610a19-scaled.jpg",
-      "url": "https://discoveryalert.com.au/zinc-ion-battery-renewable-energy-storage-2026/"
     },
     {
       "id": "gn-ai-academy-32",
