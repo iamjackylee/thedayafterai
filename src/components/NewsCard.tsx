@@ -36,17 +36,28 @@ function resolveImageUrl(imageUrl: string): string {
 /** Topic-based curated fallback images — used when the primary image fails to load.
  *  Maps each topic to a representative image from public/images/news/. */
 const TOPIC_FALLBACK: Record<string, string> = {
-  "ai-academy": "images/news/foundations-research.webp",
-  "business-economy": "images/news/global-economy.webp",
-  "chatbot-development": "images/news/market-competition.webp",
-  "digital-security": "images/news/security-defence.webp",
-  "environment-science": "images/news/climate-earth.webp",
-  "governance-politics": "images/news/regulation-law.webp",
-  "health-style": "images/news/medical-ai.webp",
-  "musical-art": "images/news/music-creation.webp",
-  "technology-innovation": "images/news/hardware-chips.webp",
-  "unmanned-aircraft": "images/news/civilian-drones.webp",
-  "visual-art-photography": "images/news/artistic-innovation.webp",
+  "ai-academy":
+    "images/news/ai-academy-machine-learning-education-open-book-holographic-brain-data-analytics-dashboard-charts-knowledge-base-digital-learning-neural-network-research-insights-visualization.webp",
+  "business-economy":
+    "images/news/ai-stock-market-prediction-neural-network-brain-candlestick-chart-algorithmic-trading-quant-finance-machine-learning-signal-analysis-bullish-trend-price-action-technical-analysis-trading-bot-data-visualization-financial-forecast.webp",
+  "chatbot-development":
+    "images/news/ai-chatbot-conversation-colorful-speech-bubbles-messaging-dialogue-natural-language-processing-customer-support-live-chat-communication-platform-social-media-comments-interaction-feedback-community-discussion-forum-3d-illustration.webp",
+  "digital-security":
+    "images/news/cybersecurity-data-center-protection-secure-cloud-infrastructure-server-racks-city-skyline-digital-shield-dome-network-security-lock-icons-encryption-firewall-zero-trust-threat-defense-critical-it-systems-privacy-protection.webp",
+  "environment-science":
+    "images/news/planet-earth-global-data-ocean-waves-digital-grid-climate-science-simulation-geospatial-analytics-world-technology-network-astronomy-space-background-environmental-monitoring-climate-change-visualization-futuristic-illustration.webp",
+  "governance-politics":
+    "images/news/government-courthouse-parliament-building-silhouette-scales-of-justice-digital-law-ai-regulation-tech-policy-governance-cybersecurity-circuit-board-network-legal-system-justice-balance.webp",
+  "health-style":
+    "images/news/smartphone-stethoscope-digital-healthcare-telemedicine-mobile-health-app-remote-diagnostics-medical-checkup-health-monitoring-clinic-on-phone-doctor-consultation-ehealth-mhealth-patient-care-health-technology-ui-mockup.webp",
+  "musical-art":
+    "images/news/ai-voice-assistant-speech-to-text-microphone-audio-waveform-transcription-chat-message-multimodal-media-upload-podcast-recording-voice-recognition-natural-language-processing-voice-chat-interface-dictation-communication-technology-illustration.webp",
+  "technology-innovation":
+    "images/news/robotic-arms-automated-data-center-server-racks-ai-compute-cluster-cloud-computing-gpu-infrastructure-industrial-robotics-machine-learning-automation-network-cabling-digital-factory-technology-3d-isometric-illustration.webp",
+  "unmanned-aircraft":
+    "images/news/unmanned-aircraft-drone-swarm-network-control-map-radar-sensor-nodes-target-tracking-surveillance-reconnaissance-flight-paths-airspace-monitoring-command-and-control-c2-geospatial-visualization-military-aviation-strategy-situational-awareness.webp",
+  "visual-art-photography":
+    "images/news/fashion-design-mannequin-dress-form-tailor-dummy-ai-neural-network-overlay-monochrome-minimal-collage-blank-photo-frames-mockup-template-creative-layout-editorial-design-studio-apparel-patternmaking-visualization-modern-3d-illustration.webp",
 };
 
 export default function NewsCard({ article, topicColor }: NewsCardProps) {
