@@ -1,7 +1,7 @@
 "use client";
 
 import { Play } from "lucide-react";
-import type { YouTubeVideo } from "@/lib/api";
+import { decodeEntities, type YouTubeVideo } from "@/lib/api";
 
 interface VideoCardProps {
   video: YouTubeVideo;
@@ -50,7 +50,7 @@ export default function VideoCard({ video }: VideoCardProps) {
       {/* Info */}
       <div className="p-3">
         <h4 className="text-xs font-bold text-white group-hover:text-[var(--accent)] transition-colors line-clamp-2 leading-snug">
-          {video.title}
+          {decodeEntities(video.title)}
         </h4>
         <div className="flex items-center gap-2 mt-2">
           <span className="text-[var(--text-secondary)] text-[10px] font-medium">
