@@ -81,7 +81,7 @@ export default function TermsPage() {
               </li>
               <li>
                 <strong className="text-white">AI Market Insights</strong> — a daily experiment in
-                which AI forecasts the next-day price direction of a single U.S.-listed stock.
+                which AI forecasts the price direction of a U.S.-listed stock over the next five trading days.
                 Results are published openly. This content is general information only, published
                 for educational and experimental purposes as part of an ongoing experiment. It
                 does not constitute financial product advice—whether general or personal—within the

@@ -67,10 +67,10 @@ export default function InfoPage() {
                 AI Market Insights
               </h3>
               <p className="text-[var(--text-secondary)] leading-relaxed">
-                A daily experiment: AI predicts the next-day price direction of
-                one U.S. stock (a different ticker each day). We publish the
-                forecast alongside the actual result—tracked openly so you can
-                judge performance over time.
+                A daily experiment: AI forecasts the price direction of a
+                U.S.-listed stock over the next five trading days. We publish
+                the forecast alongside the actual result—tracked openly so you
+                can judge performance over time.
               </p>
               <p className="text-[var(--text-secondary)] text-sm mt-2 italic">
                 Educational and experimental only—not financial advice.
