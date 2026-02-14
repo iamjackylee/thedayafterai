@@ -602,13 +602,27 @@ async function fetchCategoryNews(category) {
   return articles;
 }
 
+// Strip trailing " - Source Name" suffix so syndicated duplicates are caught
+function normalizeTitle(title, source) {
+  let t = title;
+  // Strip " - Source" suffix if present (Google News appends it)
+  if (source && t.endsWith(` - ${source}`)) {
+    t = t.slice(0, -(` - ${source}`).length);
+  }
+  return t.trim().toLowerCase();
+}
+
 // Parse RSS items into articles array (shared by time-filtered and unfiltered passes)
 function parseRssItems(items, articles, seenTitles, category) {
   for (const item of items) {
     if (articles.length >= ARTICLES_PER_CATEGORY) break;
 
     const title = getTagContent(item, "title")[0] || "";
-    if (!title || seenTitles.has(title)) continue;
+    if (!title) continue;
+
+    const source = getTagContent(item, "source")[0] || "Google News";
+    const normTitle = normalizeTitle(title, source);
+    if (seenTitles.has(normTitle)) continue;
 
     const rawDescription = getTagContent(item, "description")[0] || "";
     const description = stripHtml(rawDescription);
@@ -617,11 +631,10 @@ function parseRssItems(items, articles, seenTitles, category) {
     const textToCheck = `${title} ${description}`;
     if (!AI_RELEVANCE_KEYWORDS.test(textToCheck)) continue;
 
-    seenTitles.add(title);
+    seenTitles.add(normTitle);
 
     const link = getTagContent(item, "link")[0] || "";
     const pubDate = getTagContent(item, "pubDate")[0] || "";
-    const source = getTagContent(item, "source")[0] || "Google News";
 
     let imageUrl = "";
     const mediaUrls = getTagAttr(item, "media:content", "url");
