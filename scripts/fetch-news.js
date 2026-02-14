@@ -439,8 +439,10 @@ function scoreRelevance(text, tags) {
 }
 
 /** Pick the single best local fallback image for an article from the global pool.
- *  Returns relative path like "images/news/filename.webp" or "" if none. */
-function pickLocalFallback(article) {
+ *  Returns relative path like "images/news/filename.webp" or "" if none.
+ *  @param {Set<string>} [usedImages] — filenames already assigned in this topic;
+ *         the picked filename is added to the set automatically. */
+function pickLocalFallback(article, usedImages) {
   const manifest = loadImageManifest();
   const pool = manifest.images || [];
   if (pool.length === 0) return "";
@@ -470,12 +472,19 @@ function pickLocalFallback(article) {
   // every image is eligible so the hash still diversifies.
   const best = scored[0].score;
   const threshold = best >= 3 ? best - 1 : best === 0 ? 0 : best;
-  const topTier = scored.filter((s) => s.score >= threshold);
+  let topTier = scored.filter((s) => s.score >= threshold);
+
+  // Avoid reusing an image already assigned within the same topic/category
+  if (usedImages && usedImages.size > 0) {
+    const unused = topTier.filter((s) => !usedImages.has(s.file));
+    if (unused.length > 0) topTier = unused;
+  }
 
   // Hash-based pick within the top tier for diversity across articles
   const hash = text.split("").reduce((acc, ch) => acc + ch.charCodeAt(0), 0);
   const pick = topTier[Math.abs(hash) % topTier.length];
 
+  if (usedImages) usedImages.add(pick.file);
   return `images/news/${pick.file}`;
 }
 
@@ -1366,10 +1375,23 @@ function validateLocalImagePaths(articles) {
 
 function applyFallbackImages(articles) {
   validateLocalImagePaths(articles);
+
+  // Track fallback images already in use per topic to avoid duplicates
+  const usedByTopic = new Map();
+  for (const article of articles) {
+    if (article.imageUrl && article.imageUrl.startsWith("images/news/")) {
+      const topic = article.topic || "default";
+      if (!usedByTopic.has(topic)) usedByTopic.set(topic, new Set());
+      usedByTopic.get(topic).add(article.imageUrl.replace("images/news/", ""));
+    }
+  }
+
   let applied = 0;
   for (const article of articles) {
     if (!article.imageUrl) {
-      article.imageUrl = pickLocalFallback(article);
+      const topic = article.topic || "default";
+      if (!usedByTopic.has(topic)) usedByTopic.set(topic, new Set());
+      article.imageUrl = pickLocalFallback(article, usedByTopic.get(topic));
       if (article.imageUrl) applied++;
     }
   }
@@ -1396,10 +1418,22 @@ function sanitizeAllArticles(articles) {
   validateLocalImagePaths(articles);
 
   // 3. Apply curated fallback images to any articles still missing images
+  //    Track used fallback images per topic to avoid duplicates within categories
+  const usedByTopic = new Map();
+  for (const article of articles) {
+    if (article.imageUrl && article.imageUrl.startsWith("images/news/")) {
+      const topic = article.topic || "default";
+      if (!usedByTopic.has(topic)) usedByTopic.set(topic, new Set());
+      usedByTopic.get(topic).add(article.imageUrl.replace("images/news/", ""));
+    }
+  }
+
   let applied = 0;
   for (const article of articles) {
     if (!article.imageUrl) {
-      article.imageUrl = pickLocalFallback(article);
+      const topic = article.topic || "default";
+      if (!usedByTopic.has(topic)) usedByTopic.set(topic, new Set());
+      article.imageUrl = pickLocalFallback(article, usedByTopic.get(topic));
       if (article.imageUrl) applied++;
     }
   }
