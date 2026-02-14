@@ -1,7 +1,17 @@
 {
-  "fetchedAt": "2026-02-14T21:54:17.854Z",
+  "fetchedAt": "2026-02-14T22:18:28.631Z",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe",
   "news": [
+    {
+      "id": "gn-health-style-40",
+      "title": "AI-powered apps and bots are barging into medicine. Doctors have questions - AOL.com",
+      "summary": "AI-powered apps and bots are barging into medicine. Doctors have questions AOL.com",
+      "topic": "health-style",
+      "source": "AOL.com",
+      "date": "Sat, 14 Feb 2026 19:04:25 GMT",
+      "imageUrl": "images/news/ai-voice-assistant-speech-to-text-microphone-audio-waveform-transcription-chat-message-multimodal-media-upload-podcast-recording-voice-recognition-natural-language-processing-voice-chat-interface-dictation-communication-technology-illustration.webp",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSFBkMWNlWjNqYjRnRTF6dFBtb2xLdHVERDA5djNZVWdQbXJBMkpNRjRRcWdGXy1lc3FHOUtqMHpDRVd1SkJBVEdCZXV3aDFWRUlDS1RFYTQ2RkNZQW5iWTNMTHdkZ1NRRU5STHVDTWl2ZWk3cHpJQkJXX09QR2ZaQnE1Um1jOUdLVkJYaTdxSHJEVzJnWHZZY2s4QW0zbnAyZGNGdlMzRndOX2VfYXAtUnJLZGw3NUtEdVNnaXZKV21sdmduajl0WA?oc=5"
+    },
     {
       "id": "gn-business-economy-47",
       "title": "AI Disruption Fears Deepen as US Stock Markets Log Weekly Losses - Azat TV",
@@ -41,6 +51,16 @@
       "date": "Sat, 14 Feb 2026 15:36:41 GMT",
       "imageUrl": "images/news/ai-knowledge-base-open-book-information-network-learning-education-digital-library-text-summaries-connected-nodes-search-indexing-research-documentation-machine-learning-natural-language-processing-content-discovery-abstract-line-icon-illustration.webp",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVzB4UFFKMmg2RUkycTYxLWRfczhJdjlUZTdBVXhxeE8ySFFKVW5QRGlSRlVHT1VLcThuTWpxVUNrZlUweUdtb1RvODVjWG9wT3FDbVlZLXBYVUY1anhFSFdnVzNOVzdzVUVBejkzQTdlY3BsMEN0RzgwM1Z0YkJ5bUlPa3lMWDFSZXZPXy1hRXJXellxWThOTkMwYUF4a2F5LXFN?oc=5"
+    },
+    {
+      "id": "gn-health-style-19",
+      "title": "Researchers identify mental health effects of AI-driven job insecurity - Medical Xpress",
+      "summary": "Researchers identify mental health effects of AI-driven job insecurity Medical Xpress",
+      "topic": "health-style",
+      "source": "Medical Xpress",
+      "date": "Sat, 14 Feb 2026 15:00:03 GMT",
+      "imageUrl": "images/news/ai-nutrition-dashboard-healthy-meal-bowl-food-tracking-app-diet-analytics-macronutrient-microbiome-salad-grains-vegetables-protein-balanced-diet-ui-widgets-charts-graphs-data-visualization-health-wellness-digital-health-diet-planner-calorie-counter.webp",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSDJvYzRNeUdydmFkVlpNdlgzODJnVUd5MmhqaEFSM2lQMVNvTXpnNXVqRXBKQXNiR1hfM3lDNXN0MHNYcndCUmhWYlZMT0xXa3ExV3pKeVQ0RGtUTjJLWFhPRjZZQVlqZmxDMzNtWmc5VGpWaWV3Znd4a19PX0g5Qg?oc=5"
     },
     {
       "id": "gn-business-economy-33",
@@ -383,7 +403,7 @@
       "url": "https://www.devdiscourse.com/article/technology/3804837-markets-edge-higher-despite-ai-disruption-fears-and-inflation-optimism?amp"
     },
     {
-      "id": "gn-health-style-45",
+      "id": "gn-health-style-46",
       "title": "AI breakthrough provides life-saving insights in everyday blood analysis - Digital Journal",
       "summary": "AI breakthrough provides life-saving insights in everyday blood analysis Digital Journal",
       "topic": "health-style",
@@ -633,7 +653,7 @@
       "url": "https://nationalinterest.org/blog/energy-world/to-meet-ais-energy-needs-america-needs-permitting-reform"
     },
     {
-      "id": "gn-health-style-32",
+      "id": "gn-health-style-33",
       "title": "When my doctor is the chatbot Dr. Afu: this is how AI sneaks into healthcare in China - El Mundo America",
       "summary": "When my doctor is the chatbot Dr. Afu: this is how AI sneaks into healthcare in China El Mundo America",
       "topic": "health-style",
@@ -1033,7 +1053,7 @@
       "url": "https://www.businesstoday.in/technology/news/story/seedance-20-heres-why-bytedances-viral-ai-tool-is-turning-heads-with-hollywood-style-video-creation-516052-2026-02-13"
     },
     {
-      "id": "gn-health-style-27",
+      "id": "gn-health-style-25",
       "title": "World’s first AI-based optical diagnostic platform to distinguish nasal secretion from cerebrospinal fluid - EurekAlert!",
       "summary": "World’s first AI-based optical diagnostic platform to distinguish nasal secretion from cerebrospinal fluid EurekAlert!",
       "topic": "health-style",
@@ -1153,7 +1173,7 @@
       "url": "https://www.tndindia.com/apraava-energy-hosts-pre-summit-for-india-ai-impact-summit/"
     },
     {
-      "id": "gn-health-style-43",
+      "id": "gn-health-style-44",
       "title": "Artificial Intelligence (AI) in Cancer Radiology – Recent Cureus Review of Literature - Medical Dialogues",
       "summary": "Artificial Intelligence (AI) in Cancer Radiology – Recent Cureus Review of Literature Medical Dialogues",
       "topic": "health-style",
@@ -1173,7 +1193,7 @@
       "url": "https://www.whalesbook.com/news/English/tech/Indian-IT-Stocks-Tumble-Amid-AI-Disruption-Fears/698ed29e119a61fe896f59d7"
     },
     {
-      "id": "gn-health-style-40",
+      "id": "gn-health-style-41",
       "title": "AI-Enabled Clinical Decision Support Systems Market to Reach USD 15.3 Billion by 2033 at 20.89% CAGR - openPR.com",
       "summary": "AI-Enabled Clinical Decision Support Systems Market to Reach USD 15.3 Billion by 2033 at 20.89% CAGR openPR.com",
       "topic": "health-style",
@@ -1183,7 +1203,7 @@
       "url": "https://www.openpr.com/news/4389645/ai-enabled-clinical-decision-support-systems-market-to-reach"
     },
     {
-      "id": "gn-health-style-41",
+      "id": "gn-health-style-42",
       "title": "AI Potential in Transforming Management of Hematologic Malignancies- Latest Cureus Review - Medical Dialogues",
       "summary": "AI Potential in Transforming Management of Hematologic Malignancies- Latest Cureus Review Medical Dialogues",
       "topic": "health-style",
@@ -2123,7 +2143,7 @@
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTnRJRmlReTVqYXNoM1o4ZUVpSHduN2tENXp2R0lWUnhxaFFpM3JKR3VVX0RNWnRVYVM0TXN2Vl9tVGFDdDlacmFSSXYyZXNSLXJKV3RLT1ppb0g3U0N5VGNDV3d6R3BCVjJjNkNiQkpMUy1lVmc0amJUVEtONXZ2Ny1CNDd6cnRseGIzMVBmMm5CeVhzd0tqaHpqbU1UWDNuX2h1eQ?oc=5"
     },
     {
-      "id": "gn-health-style-48",
+      "id": "gn-health-style-49",
       "title": "Adam Vital Hospital partners with Siemens Healthineers to build AI-driven infrastructure for new medical facilities in Dubai - Gulf News",
       "summary": "Adam Vital Hospital partners with Siemens Healthineers to build AI-driven infrastructure for new medical facilities in Dubai Gulf News",
       "topic": "health-style",
@@ -2653,7 +2673,7 @@
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNb2R6c0h2ek9aOVVnUGRzVDJaQlIzVWZFZGFOdEJFQlVnNGYwV1FxVTFMTmtyVGxSYlhFcHZTMWdxMThpallNV2x0WnpJMnFtd05nSGlGSWN6bHR0eUdOYTlmSUNFYWtoWmhjcGZmUFpXWEZhTXh3QzM2TFpuUTFmOF9vamo?oc=5"
     },
     {
-      "id": "gn-health-style-26",
+      "id": "gn-health-style-27",
       "title": "Opinion | Doctors Are Quietly Using AI. Bans Won't Fix That. - MedPage Today",
       "summary": "Opinion | Doctors Are Quietly Using AI. Bans Won't Fix That. MedPage Today",
       "topic": "health-style",
@@ -2663,7 +2683,7 @@
       "url": "https://www.medpagetoday.com/opinion/second-opinions/119842"
     },
     {
-      "id": "gn-health-style-25",
+      "id": "gn-health-style-26",
       "title": "AI tools find 12 biomarkers that may speed a Sjögren’s diagnosis - Sjogren's Disease News",
       "summary": "AI tools find 12 biomarkers that may speed a Sjögren’s diagnosis Sjogren's Disease News",
       "topic": "health-style",
@@ -2803,7 +2823,7 @@
       "url": "https://swikblog.com/uk-ai-chip-startup-olix-raises-220m-inference-chips/"
     },
     {
-      "id": "gn-health-style-20",
+      "id": "gn-health-style-21",
       "title": "AI-Guided GDMT Optimization After HFrEF Hospitalization: The ASSIST-HF SIRIO Randomized Pilot Trial - JACC Journals",
       "summary": "AI-Guided GDMT Optimization After HFrEF Hospitalization: The ASSIST-HF SIRIO Randomized Pilot Trial JACC Journals",
       "topic": "health-style",
@@ -2903,7 +2923,7 @@
       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOY2o5dlVYOHdrdFE2VEZQUkZRN0N1TTdlLWFweEFoOTRDZm1xNGtiM2lPS1RPeTRjNVo2Q3NqT282aEQ0YlNWMzlZdzhqQmNuM3lyT2cxNTN3dE9CQ3loTl9fVEg5V3FnTGtUMlNrTFJGeWxYaVFnZHFZZU85Z3JIM3JRWHZSelEyelo0QW1xOXhNZjhOOVdfRWpCNjEtU25uUlhUaTllN1hVcnBCZktBZXpIU3R5dGZGYmEteVBTUTNUd3VrM3c?oc=5"
     },
     {
-      "id": "gn-health-style-46",
+      "id": "gn-health-style-47",
       "title": "Inside the rise of the smart hospital: GE HealthCare’s Elie Chaillot on AI, genomics and the future of care in the Middle East - Arabian Business",
       "summary": "Inside the rise of the smart hospital: GE HealthCare’s Elie Chaillot on AI, genomics and the future of care in the Middle East Arabian Business",
       "topic": "health-style",
@@ -3093,7 +3113,7 @@
       "url": "https://hrdailyadvisor.hci.org/2026/02/11/what-hr-leaders-need-to-know-navigating-ai-regulation-amid-federal-state-conflict/"
     },
     {
-      "id": "gn-health-style-33",
+      "id": "gn-health-style-32",
       "title": "Japan’s Healthcare Analytics Surge: Innovation at the Speed of AI | Healthcare Analytics Market to Hit - EIN News",
       "summary": "Japan’s Healthcare Analytics Surge: Innovation at the Speed of AI | Healthcare Analytics Market to Hit EIN News",
       "topic": "health-style",
@@ -3133,7 +3153,7 @@
       "url": "https://www.indiablooms.com/life/youtube-just-changed-music-forever-new-ai-playlist-feature-is-here/details"
     },
     {
-      "id": "gn-health-style-44",
+      "id": "gn-health-style-45",
       "title": "Scientists create AI model that reads brain MRIs in seconds: Prima diagnoses patients with 97.5% accuracy, ... - Bhaskar English",
       "summary": "Scientists create AI model that reads brain MRIs in seconds: Prima diagnoses patients with 97.5% accuracy, ... Bhaskar English",
       "topic": "health-style",
@@ -3263,16 +3283,6 @@
       "url": "https://tech.eu/2026/02/11/mozart-ai-secures-6m-to-develop-ai-tools-for-music-creation/"
     },
     {
-      "id": "gn-health-style-49",
-      "title": "Philips brings AI-powered innovations to World Health Expo Dubai 2026 that give back time for better care - ZAWYA",
-      "summary": "Philips brings AI-powered innovations to World Health Expo Dubai 2026 that give back time for better care ZAWYA",
-      "topic": "health-style",
-      "source": "ZAWYA",
-      "date": "Wed, 11 Feb 2026 08:32:46 GMT",
-      "imageUrl": "images/news/smartwatch-health-monitoring-heartbeat-ecg-waveform-pulse-line-wearable-technology-digital-health-fitness-tracker-medical-vitals-sensor-biometric-data-heart-rate-analysis-ai-healthcare-telemedicine-holographic-wave-blue-purple-glow-modern-gadget.webp",
-      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPdnlKSjdnWEhXZTgzUF9ab0ZmMk9QYTU5eVpUWFhQQXdocC12UWNPWHU0Z2wtaW9mc0l1a0s5OWtaVkt5dmJDLUxjRklrMzRJNVRBbGlvdXMycm85ajFDRHIwaU1CblI1RzdzSXI3R2NVOU5LMlRfRHFMOUdHYTMwVkxldmw3ZVpGNkNyNlNWTjc3ck5lN2FhUWtRYnRTX0ltcVptcWZFa2tEX0pZdGtiZE9JVXhwVnJRVUVJMFFyRUdTam5SMnV5aEZoMkExcU40QmFnajhlZFNjM0pHaERaTnZ2dEJlcU1VVjBmRlFRN2IwR21PU0JlNlNaLWk?oc=5"
-    },
-    {
       "id": "gn-musical-art-47",
       "title": "Mozart AI secures £4.4 million Seed Investment led by Balderton Capital - UK Tech Investment News",
       "summary": "Mozart AI secures £4.4 million Seed Investment led by Balderton Capital UK Tech Investment News",
@@ -3333,16 +3343,6 @@
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBkSDZFaThiQm1wbi1ZY0tEZmxxTktRbmZPTktJRkZaLVphN0JKVVlpem1qYlYzYzRQdWZYbUhKLU5LUGl4YTZLcVktSm43ZnYta1l2NDFVWWhZZExYWFVlRmV4RTFjRzFBcWQtYks1bjZ2Qy1wVTFKWFZ1T19xdw?oc=5"
     },
     {
-      "id": "gn-health-style-10",
-      "title": "Grok Ani: Complete Guide to Create Your Own AI Companion - perfectcorp.com",
-      "summary": "Grok Ani: Complete Guide to Create Your Own AI Companion perfectcorp.com",
-      "topic": "health-style",
-      "source": "perfectcorp.com",
-      "date": "Wed, 11 Feb 2026 08:00:00 GMT",
-      "imageUrl": "images/news/fashion-design-mannequin-dress-form-tailor-dummy-ai-neural-network-overlay-monochrome-minimal-collage-blank-photo-frames-mockup-template-creative-layout-editorial-design-studio-apparel-patternmaking-visualization-modern-3d-illustration.webp",
-      "url": "https://www.perfectcorp.com/consumer/blog/generative-AI/grok-ani"
-    },
-    {
       "id": "gn-technology-innovation-11",
       "title": "Surging AI Hardware Demand Benefits Nvidia and Broadcom - Intellectia AI",
       "summary": "Surging AI Hardware Demand Benefits Nvidia and Broadcom Intellectia AI",
@@ -3371,6 +3371,16 @@
       "date": "Wed, 11 Feb 2026 08:00:00 GMT",
       "imageUrl": "images/news/earth-globe-cutaway-cross-section-planetary-layers-core-mantle-crust-geology-illustration-geospatial-data-visualization-radar-waves-signal-rings-network-nodes-connection-lines-global-analysis-model-diagram.webp",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9xYVB2QmczUWJ1TGRTRXNaV0w2cEM4bV9iRktPR2hQVmVhSDBZZjBtSEl0MFBhbUZVNjV3c2FiU3FUSkxRbmZDMFNvZ1lhMGFFTENKNEZfWHRWQlprTXoyYjlncDY1ckU?oc=5"
+    },
+    {
+      "id": "gn-health-style-10",
+      "title": "Grok Ani: Complete Guide to Create Your Own AI Companion - perfectcorp.com",
+      "summary": "Grok Ani: Complete Guide to Create Your Own AI Companion perfectcorp.com",
+      "topic": "health-style",
+      "source": "perfectcorp.com",
+      "date": "Wed, 11 Feb 2026 08:00:00 GMT",
+      "imageUrl": "images/news/fashion-design-mannequin-dress-form-tailor-dummy-ai-neural-network-overlay-monochrome-minimal-collage-blank-photo-frames-mockup-template-creative-layout-editorial-design-studio-apparel-patternmaking-visualization-modern-3d-illustration.webp",
+      "url": "https://www.perfectcorp.com/consumer/blog/generative-AI/grok-ani"
     },
     {
       "id": "gn-musical-art-39",
@@ -3503,7 +3513,7 @@
       "url": "https://gulfnews.com/lifestyle/ahead-of-samsung-galaxy-s26-ultra-uae-expert-explains-2026-flagship-trends-from-ai-to-smarter-cameras-1.500438747"
     },
     {
-      "id": "gn-health-style-47",
+      "id": "gn-health-style-48",
       "title": "BPL Medical Bets Big on AI-Driven Diagnostics - The New Indian Express",
       "summary": "BPL Medical Bets Big on AI-Driven Diagnostics The New Indian Express",
       "topic": "health-style",
@@ -3673,7 +3683,7 @@
       "url": "https://www.makeuseof.com/youtube-music-ai-powered-playlist-feature/"
     },
     {
-      "id": "gn-health-style-23",
+      "id": "gn-health-style-29",
       "title": "New artificial intelligence tool may help personalize ovarian cancer treatment from day one - Medical Xpress",
       "summary": "New artificial intelligence tool may help personalize ovarian cancer treatment from day one Medical Xpress",
       "topic": "health-style",
@@ -4303,6 +4313,16 @@
       "url": "https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/artificial-intelligence-applications"
     },
     {
+      "id": "gn-technology-innovation-17",
+      "title": "The Best AI ETFs and How to Start Investing - NerdWallet",
+      "summary": "The Best AI ETFs and How to Start Investing NerdWallet",
+      "topic": "technology-innovation",
+      "source": "NerdWallet",
+      "date": "Tue, 10 Feb 2026 08:00:00 GMT",
+      "imageUrl": "https://www.nerdwallet.com/tachyon/2023/02/GettyImages-1180038537.jpg?resize=350%2C350",
+      "url": "https://www.nerdwallet.com/investing/learn/best-performing-ai-etfs"
+    },
+    {
       "id": "gn-health-style-9",
       "title": "Top 25 Applications of AI: Transforming Industries Today - Simplilearn.com",
       "summary": "Top 25 Applications of AI: Transforming Industries Today Simplilearn.com",
@@ -4313,7 +4333,7 @@
       "url": "https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/artificial-intelligence-applications"
     },
     {
-      "id": "gn-health-style-42",
+      "id": "gn-health-style-43",
       "title": "The Role of AI in Revolutionizing Healthcare in the UAE - appinventiv.com",
       "summary": "The Role of AI in Revolutionizing Healthcare in the UAE appinventiv.com",
       "topic": "health-style",
@@ -4321,16 +4341,6 @@
       "date": "Tue, 10 Feb 2026 08:00:00 GMT",
       "imageUrl": "https://appinventiv.com/wp-content/uploads/2025/02/The-Role-of-AI-in-Revolutionizing-Healthcare-in-the-UAE.webp",
       "url": "https://appinventiv.com/blog/ai-in-healthcare-in-dubai/"
-    },
-    {
-      "id": "gn-technology-innovation-17",
-      "title": "The Best AI ETFs and How to Start Investing - NerdWallet",
-      "summary": "The Best AI ETFs and How to Start Investing NerdWallet",
-      "topic": "technology-innovation",
-      "source": "NerdWallet",
-      "date": "Tue, 10 Feb 2026 08:00:00 GMT",
-      "imageUrl": "https://www.nerdwallet.com/tachyon/2023/02/GettyImages-1180038537.jpg?resize=350%2C350",
-      "url": "https://www.nerdwallet.com/investing/learn/best-performing-ai-etfs"
     },
     {
       "id": "gn-environment-science-9",
@@ -4363,7 +4373,7 @@
       "url": "https://www.tomsguide.com/ai/i-tested-gemini-3-flash-vs-claude-4-6-opus-in-9-tough-challenges-heres-the-winner"
     },
     {
-      "id": "gn-health-style-21",
+      "id": "gn-health-style-22",
       "title": "AI reads brain MRIs in seconds and flags emergencies - ScienceDaily",
       "summary": "AI reads brain MRIs in seconds and flags emergencies ScienceDaily",
       "topic": "health-style",
@@ -4383,7 +4393,7 @@
       "url": "https://www.ciol.com/news/ai-powered-cybercrime-deepfake-fraud-ransomware-check-point-report-11090502"
     },
     {
-      "id": "gn-health-style-22",
+      "id": "gn-health-style-23",
       "title": "A researcher warned against using artificial intelligence as an alternative source of health advice, saying it is not yet ready to replace physicians and may provide incorrect diagnoses. | via ANC 24/7 See more in the link in the comments section. - Facebook",
       "summary": "A researcher warned against using artificial intelligence as an alternative source of health advice, saying it is not yet ready to replace physicians and may provide incorrect diagnoses. | via ANC 24/7 See more in the link in the comments section. Facebook",
       "topic": "health-style",
@@ -4523,7 +4533,7 @@
       "url": "https://securitybrief.com.au/story/australians-turn-to-ai-for-love-as-dating-scams-surge"
     },
     {
-      "id": "gn-health-style-16",
+      "id": "gn-health-style-17",
       "title": "Can Medical AI Lie? Large Study Maps How LLMs Handle Health Misinformation - Mount Sinai",
       "summary": "Can Medical AI Lie? Large Study Maps How LLMs Handle Health Misinformation Mount Sinai",
       "topic": "health-style",
@@ -4563,7 +4573,7 @@
       "url": "https://www.climatecontrolnews.com.au/contracting/testing-ai-enabled-energy-systems"
     },
     {
-      "id": "gn-health-style-38",
+      "id": "gn-health-style-36",
       "title": "AI in the Hospital: Striking Nurses Grapple With Fast-Changing Tech - The Indypendent",
       "summary": "AI in the Hospital: Striking Nurses Grapple With Fast-Changing Tech The Indypendent",
       "topic": "health-style",
@@ -4623,7 +4633,7 @@
       "url": "https://www.openpr.com/news/4383220/the-drone-sector-s-policy-shift-four-companies-driving-growth"
     },
     {
-      "id": "gn-health-style-36",
+      "id": "gn-health-style-38",
       "title": "UAE's First Robotic SEEG Procedure Performed at Cleveland Clinic Abu Dhabi - Cleveland Clinic",
       "summary": "UAE's First Robotic SEEG Procedure Performed at Cleveland Clinic Abu Dhabi Cleveland Clinic",
       "topic": "health-style",
@@ -4733,7 +4743,7 @@
       "url": "https://www.smartcitiesworld.net/webinars/webinar-preparing-for-ai-understanding-the-data-groundwork-with-sunderland"
     },
     {
-      "id": "gn-health-style-17",
+      "id": "gn-health-style-16",
       "title": "Reliability of LLMs as medical assistants for the general public: a randomized preregistered study - Nature",
       "summary": "Reliability of LLMs as medical assistants for the general public: a randomized preregistered study Nature",
       "topic": "health-style",
@@ -4853,16 +4863,6 @@
       "url": "https://www.msn.com/en-ie/news/other/mq-20-avenger-shown-with-nose-mounted-laser-in-autonomous-combat-drone-concept/ar-AA1P58C2?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
     },
     {
-      "id": "gn-health-style-29",
-      "title": "AI-powered apps and bots are barging into medicine. Doctors have questions. - Reuters",
-      "summary": "AI-powered apps and bots are barging into medicine. Doctors have questions. Reuters",
-      "topic": "health-style",
-      "source": "Reuters",
-      "date": "Mon, 09 Feb 2026 14:13:26 GMT",
-      "imageUrl": "images/news/ai-voice-assistant-speech-to-text-microphone-audio-waveform-transcription-chat-message-multimodal-media-upload-podcast-recording-voice-recognition-natural-language-processing-voice-chat-interface-dictation-communication-technology-illustration.webp",
-      "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/ai-powered-apps-bots-are-barging-into-medicine-doctors-have-questions-2026-02-09/"
-    },
-    {
       "id": "gn-visual-art-photography-25",
       "title": "AI in Africa: A Creative Revolution Challenging Hollywood Fears and Limitations - TheWrap",
       "summary": "AI in Africa: A Creative Revolution Challenging Hollywood Fears and Limitations TheWrap",
@@ -4903,16 +4903,6 @@
       "url": "https://finance.yahoo.com/news/mofy-vfx-tencent-video-breakout-134500981.html"
     },
     {
-      "id": "gn-health-style-11",
-      "title": "GBT Technologies, Inc. (OTC: GTCH) Wholly Owned Subsidiary, “Cube Wellness Technologies”, Enters Digital Wellness Sector with First Major Investment in Smart Wellness AI Machines to Support Nationwide University Rollout and Appoints New Board Mem - Yahoo Finance",
-      "summary": "GBT Technologies, Inc. (OTC: GTCH) Wholly Owned Subsidiary, “Cube Wellness Technologies”, Enters Digital Wellness Sector with First Major Investment in Smart Wellness AI Machines to Support Nationwide University Rollout and Appoints New Board Mem Yahoo Finance",
-      "topic": "health-style",
-      "source": "Yahoo Finance",
-      "date": "Mon, 09 Feb 2026 13:42:00 GMT",
-      "imageUrl": "https://s.yimg.com/os/en/globenewswire.com/c1bd9aa98d5dbd09ce2e377c17f37a52",
-      "url": "https://finance.yahoo.com/news/gbt-technologies-inc-otc-gtch-134200675.html"
-    },
-    {
       "id": "gn-chatbot-development-25",
       "title": "OpenAI's ChatGPT growth reaccelerates past 10% as $100B round looms - The Tech Buzz",
       "summary": "OpenAI's ChatGPT growth reaccelerates past 10% as $100B round looms The Tech Buzz",
@@ -4921,6 +4911,16 @@
       "date": "Mon, 09 Feb 2026 13:42:00 GMT",
       "imageUrl": "https://charming-card-d91ad3487b.media.strapiapp.com/file_f5f3915085.png",
       "url": "https://www.techbuzz.ai/articles/openai-s-chatgpt-growth-reaccelerates-past-10-as-100b-round-looms"
+    },
+    {
+      "id": "gn-health-style-11",
+      "title": "GBT Technologies, Inc. (OTC: GTCH) Wholly Owned Subsidiary, “Cube Wellness Technologies”, Enters Digital Wellness Sector with First Major Investment in Smart Wellness AI Machines to Support Nationwide University Rollout and Appoints New Board Mem - Yahoo Finance",
+      "summary": "GBT Technologies, Inc. (OTC: GTCH) Wholly Owned Subsidiary, “Cube Wellness Technologies”, Enters Digital Wellness Sector with First Major Investment in Smart Wellness AI Machines to Support Nationwide University Rollout and Appoints New Board Mem Yahoo Finance",
+      "topic": "health-style",
+      "source": "Yahoo Finance",
+      "date": "Mon, 09 Feb 2026 13:42:00 GMT",
+      "imageUrl": "https://s.yimg.com/os/en/globenewswire.com/c1bd9aa98d5dbd09ce2e377c17f37a52",
+      "url": "https://finance.yahoo.com/news/gbt-technologies-inc-otc-gtch-134200675.html"
     },
     {
       "id": "gn-governance-politics-36",
@@ -4963,7 +4963,7 @@
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeXIzNHZneDNKWlZnMW1yTHpIelFUWkY2YTlmTFJRb3VVME9fcHNQQ1FaV3BVRU0xVFEzaXNCbnFSdFI0ampPM1VsSFhGbERYWTc1VWE4NUgyOHE4WkxZMXJqV2l4RFRvT2tfYzNqZ2g0dDdYYlhCTmd2aXU1dWpoc0xaOWwxZlhqbXZUOUJXbmdXNEZHMmdmcS11TVpuamVOWG91b2E4Y0E5dE1TbVk0ejFn0gGyAUFVX3lxTE5kdHFxQ3VSYzQyam5BTlNwY3FnUnoya0ZYZy1iTXFvUjdCUnFoSzFkT2pSYzhrczlOSWIydFlPWktRMGNqc3ZYX2pkaUVoTEVQYXZZZjU4bDZrUEhCMmg5ZTdCWlMxeGxzemhmSEpXRzdHRHJhWXpCQi1QMDdscE9zTXVpVTE4MGRkYmpiWWtKOUZyOXVOZHZzYi1aR0Z3VjZpbkQ4UDRTSHNpVzV3blpZaVE?oc=5"
     },
     {
-      "id": "gn-health-style-19",
+      "id": "gn-health-style-20",
       "title": "As AI enters the operating room, reports arise of botched surgeries and misidentified body parts - Reuters",
       "summary": "As AI enters the operating room, reports arise of botched surgeries and misidentified body parts Reuters",
       "topic": "health-style",
@@ -5023,16 +5023,6 @@
       "url": "https://www.digitalcameraworld.com/buying-guides/the-10-best-camera-drones"
     },
     {
-      "id": "gn-health-style-30",
-      "title": "Breast cancer: AI-assisted mammography cuts later diagnosis rate - Medical News Today",
-      "summary": "Breast cancer: AI-assisted mammography cuts later diagnosis rate Medical News Today",
-      "topic": "health-style",
-      "source": "Medical News Today",
-      "date": "Mon, 09 Feb 2026 10:30:11 GMT",
-      "imageUrl": "images/news/ai-chatbot-interface-neural-network-brain-conversational-ai-dialogue-bubbles-virtual-assistant-natural-language-processing-llm-chat-window-customer-support-chat-automation-human-ai-interaction-digital-intelligence-technology-background.webp",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaENKcUhlR3cxMGZtNkxnNmdqWXhFazU5djg2cTQzYUk2bUkxZUNVeGlHTnhQMVJEMHlaUFJobG1vY1Ztd2pUbElKUFZFa19YcUxTcWJjX2UxM3VhR0Z4bEYtX01YNjBwa0VQSFprTTBjLUluV1JDMlQ4Rjk2R2lMeHpIUllISzdTV1lrQjJUWVlNOVJZbDFlb0VkeGFBU1BFMzRYYVNyb21YcnNiYXBvUzNEc2plRUk?oc=5"
-    },
-    {
       "id": "gn-visual-art-photography-26",
       "title": "ByteDance’s new model sparks stock rally as China’s AI video battle escalates - South China Morning Post",
       "summary": "ByteDance’s new model sparks stock rally as China’s AI video battle escalates South China Morning Post",
@@ -5041,6 +5031,16 @@
       "date": "Mon, 09 Feb 2026 10:30:11 GMT",
       "imageUrl": "https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2026/02/09/385374c0-86e7-4feb-9821-1befa45acdcd_1aa6ade8.jpg?itok=O70JsX8l&v=1770630078",
       "url": "https://www.scmp.com/tech/article/3342932/bytedances-new-model-sparks-stock-rally-chinas-ai-video-battle-escalates"
+    },
+    {
+      "id": "gn-health-style-30",
+      "title": "Breast cancer: AI-assisted mammography cuts later diagnosis rate - Medical News Today",
+      "summary": "Breast cancer: AI-assisted mammography cuts later diagnosis rate Medical News Today",
+      "topic": "health-style",
+      "source": "Medical News Today",
+      "date": "Mon, 09 Feb 2026 10:30:11 GMT",
+      "imageUrl": "images/news/ai-chatbot-interface-neural-network-brain-conversational-ai-dialogue-bubbles-virtual-assistant-natural-language-processing-llm-chat-window-customer-support-chat-automation-human-ai-interaction-digital-intelligence-technology-background.webp",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaENKcUhlR3cxMGZtNkxnNmdqWXhFazU5djg2cTQzYUk2bUkxZUNVeGlHTnhQMVJEMHlaUFJobG1vY1Ztd2pUbElKUFZFa19YcUxTcWJjX2UxM3VhR0Z4bEYtX01YNjBwa0VQSFprTTBjLUluV1JDMlQ4Rjk2R2lMeHpIUllISzdTV1lrQjJUWVlNOVJZbDFlb0VkeGFBU1BFMzRYYVNyb21YcnNiYXBvUzNEc2plRUk?oc=5"
     },
     {
       "id": "gn-unmanned-aircraft-47",
