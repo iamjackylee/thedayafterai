@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-14T23:36:59.575Z",
+  "fetchedAt": "2026-02-14T23:54:25.719Z",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe",
   "news": [
     {
@@ -31,6 +31,16 @@
       "date": "Sat, 14 Feb 2026 17:10:31 GMT",
       "imageUrl": "images/news/ai-analytics-dashboard-data-visualization-layered-cards-financial-charts-market-trends-business-intelligence-kpi-reporting-big-data-insights-performance-metrics-forecasting-technology-network-background-3d-interface-illustration.webp",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1aLTJGaENaYjFzNWF4LUNDUXBsbTNZdzFEY0xxVGlVcWprcXVDZDBxcDR4ekFKbTF3TXNHVHY2eUNkdkNac29mNzVRVmtWVGVLZWFobi1zYkpfaWlpcFNFV1lCRnBRYTdwa0NvNUFUWGU3czdHTVdjNQ?oc=5"
+    },
+    {
+      "id": "gn-governance-politics-8",
+      "title": "Citing risk of deception, House passes bill regulating AI use in elections - thelocalnews.news",
+      "summary": "Citing risk of deception, House passes bill regulating AI use in elections thelocalnews.news",
+      "topic": "governance-politics",
+      "source": "thelocalnews.news",
+      "date": "Sat, 14 Feb 2026 16:53:49 GMT",
+      "imageUrl": "images/news/ai-law-regulation-digital-justice-court-gavel-legal-tech-governance-compliance-policy-judiciary-courthouse-columns-classical-pillars-rule-of-law-legal-document-interface-circuit-board-background-technology-and-ethics-3d-line-art-illustration.webp",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTmZaWXN4SEEtN0gxMUJaa3lKQVJLRWZ2TDk2aEFWWG9jYzVUdC1hdGtPdkRaSEJVaHNMNTFyQXNMTlJFalNnQWlRd1liME9sOWt0LTVCWEd1YzNSWDFPV1VDVUc5cHpNOFlLUGJpUXZrUFVjSlp3UWVRWlRkWHpoRmtxaFI5akljdWxhMEtvd0pXYWFKQ2xxQ2xaM0w3U3NkQ1FkMFAtTWQ4cHhuZHlITw?oc=5"
     },
     {
       "id": "gn-visual-art-photography-44",
@@ -163,23 +173,23 @@
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPNThsbDBwY2dnckYteUpyeFRSZVJLUUtjNVRwWGpOYi1NbVFORk1jMUUxOC1IU09WQVVWNzRXb1k0Y1BmUHlVa2RBZFN6UmtSTTA1UDMybmgzWEdQeTY2THpaaWxBcDlmYUpTQW1GNFJ4SmxtY3o1T213RWlYSzNOQjVJbjVyZnRzNFNUVFUzdTBmSU5Bd0hnaDZKWnFXZTRUV296b2l4MURjM0QtTmxLUVV1M2o5QndfaEE?oc=5"
     },
     {
-      "id": "gn-governance-politics-11",
+      "id": "gn-governance-politics-12",
       "title": "AI political ads crackdown: Massachusetts passes disclosure bill as Maryland deepfake proposal sparks free speech fight - crispng.com",
       "summary": "AI political ads crackdown: Massachusetts passes disclosure bill as Maryland deepfake proposal sparks free speech fight crispng.com",
       "topic": "governance-politics",
       "source": "crispng.com",
       "date": "Sat, 14 Feb 2026 10:54:19 GMT",
-      "imageUrl": "data/images/governance-politics/sffvsz.webp",
+      "imageUrl": "https://crispng.com/wp-content/uploads/2026/02/mass-state-house-scaled.jpg",
       "url": "https://crispng.com/ai-political-ads-massachusetts-maryland-deepfake-bills/"
     },
     {
-      "id": "gn-governance-politics-10",
+      "id": "gn-governance-politics-13",
       "title": "Maryland’s Deepfake Ban Proposal Faces First Amendment Challenges - FilmoGaz",
       "summary": "Maryland’s Deepfake Ban Proposal Faces First Amendment Challenges FilmoGaz",
       "topic": "governance-politics",
       "source": "FilmoGaz",
       "date": "Sat, 14 Feb 2026 10:30:02 GMT",
-      "imageUrl": "data/images/governance-politics/rdw21f.webp",
+      "imageUrl": "https://www.filmogaz.com/uploads/images/202602/image_1200x675_69904eab59b90.webp",
       "url": "https://www.filmogaz.com/149201"
     },
     {
@@ -333,13 +343,13 @@
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE02eG5mV0RyQnRrQWpyUjlrT2owWmhObms5WUVCUkhFb19SVEVobnhFM29vMXd3WGJwTUFiNXZXa0g4ZER0SzRnaThNWkR1YTJvUDI2T21pb3lrQkhpbXdBQmNqdHB4SHp1NVhxMUxpOVJmdkdTYUY3YVVuWlI5QQ?oc=5"
     },
     {
-      "id": "gn-governance-politics-21",
+      "id": "gn-governance-politics-23",
       "title": "Watchdogs flag BJP's AI 'weapon' on Muslims, warn of surveillance risks ahead of summit - Telegraph India",
       "summary": "Watchdogs flag BJP's AI 'weapon' on Muslims, warn of surveillance risks ahead of summit Telegraph India",
       "topic": "governance-politics",
       "source": "Telegraph India",
       "date": "Sat, 14 Feb 2026 01:14:39 GMT",
-      "imageUrl": "data/images/governance-politics/jmbolz.webp",
+      "imageUrl": "images/news/ai-chipset-supply-chain-disruption-circuit-board-jigsaw-puzzle-missing-piece-hardware-shortage-semiconductor-crisis-tech-manufacturing-bottleneck-system-failure-component-dependency-infrastructure-risk-electronics-innovation-illustration.webp",
       "url": "https://www.telegraphindia.com/amp/india/watchdogs-flag-bjps-ai-weapon-on-muslims-warn-of-surveillance-risks-ahead-of-summit-prnt/cid/2147253"
     },
     {
@@ -513,13 +523,13 @@
       "url": "https://energetica-india.net/news/apraava-energy-hosts-ai-focused-pre-summit-ahead-of-india-ai-impact-summit-2026"
     },
     {
-      "id": "gn-governance-politics-24",
+      "id": "gn-governance-politics-25",
       "title": "Brazil’s AI legislation is in limbo – but compliance pressure isn’t - Lexology",
       "summary": "Brazil’s AI legislation is in limbo – but compliance pressure isn’t Lexology",
       "topic": "governance-politics",
       "source": "Lexology",
       "date": "Fri, 13 Feb 2026 17:42:14 GMT",
-      "imageUrl": "data/images/governance-politics/w4b2hd.webp",
+      "imageUrl": "https://www.lexology.com/images/share/lexology-social-media.png",
       "url": "https://www.lexology.com/pro/content/brazils-ai-legislation-in-limbo-compliance-pressure-isnt"
     },
     {
@@ -653,13 +663,13 @@
       "url": "https://www.businessupturn.com/brand-post/unmanned-aerial-vehicle-uav-drones-market-size-worth-usd-209-91-billion-by-2035-driven-by-commercial-adoption-and-defense-investments/"
     },
     {
-      "id": "gn-governance-politics-42",
+      "id": "gn-governance-politics-46",
       "title": "To Meet AI’s Energy Needs, America Needs Permitting Reform - The National Interest",
       "summary": "To Meet AI’s Energy Needs, America Needs Permitting Reform The National Interest",
       "topic": "governance-politics",
       "source": "The National Interest",
       "date": "Fri, 13 Feb 2026 14:42:44 GMT",
-      "imageUrl": "data/images/governance-politics/8fxyms.webp",
+      "imageUrl": "https://nationalinterest.org/wp-content/uploads/2026/02/To-Meet-AIs-Energy-Needs-America-Needs-Permitting-Reform-021026-SS.jpg",
       "url": "https://nationalinterest.org/blog/energy-world/to-meet-ais-energy-needs-america-needs-permitting-reform"
     },
     {
@@ -853,23 +863,23 @@
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSUdOVHJMUnd2U3p2YUpxZEZuUkFjRFBhWHdwc2hkWVd2OE9Hci12S294Rk5ja0FlMGYzR1FVM0ZfVDVUM3p4MWNHaDRfWmdtUTd2bkE4dWN6UnRGeFdzZlVxZk85d1VfNUVSQUllLWRiS1ZzSDVoeG1KR3poMk9kdVBZUm9lVUNUUFRqNDJ3?oc=5"
     },
     {
-      "id": "gn-governance-politics-39",
+      "id": "gn-governance-politics-41",
       "title": "Emerging Federal AI Strategy: FTC Sets Aside Rytr Consent Order; and Uncertainty Looms with BEAD Funding and State AI Laws — AI: The Washington Report - Mintz",
       "summary": "Emerging Federal AI Strategy: FTC Sets Aside Rytr Consent Order; and Uncertainty Looms with BEAD Funding and State AI Laws — AI: The Washington Report Mintz",
       "topic": "governance-politics",
       "source": "Mintz",
       "date": "Fri, 13 Feb 2026 12:00:00 GMT",
-      "imageUrl": "data/images/governance-politics/wdowjy.webp",
+      "imageUrl": "https://www.mintz.com/sites/default/files/media/images/2024-06-17/Viewpoints-Small-General.png",
       "url": "https://www.mintz.com/insights-center/viewpoints/54731/2026-02-13-emerging-federal-ai-strategy-ftc-sets-aside-rytr"
     },
     {
-      "id": "gn-governance-politics-22",
+      "id": "gn-governance-politics-24",
       "title": "Fake AI Videos of Rajiv Shukla, Shashi Tharoor, Jaishankar: Pakistan’s Brand of Propaganda Warfare Lies Exposed - Tfipost.com",
       "summary": "Fake AI Videos of Rajiv Shukla, Shashi Tharoor, Jaishankar: Pakistan’s Brand of Propaganda Warfare Lies Exposed Tfipost.com",
       "topic": "governance-politics",
       "source": "Tfipost.com",
       "date": "Fri, 13 Feb 2026 11:58:28 GMT",
-      "imageUrl": "data/images/governance-politics/ycpn9t.webp",
+      "imageUrl": "https://tfipost.com/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-13-at-5.28.52-PM.jpeg",
       "url": "https://tfipost.com/2026/02/fake-ai-videos-of-rajiv-shukla-shashi-tharoor-jaishankar-pakistans-brand-of-propaganda-warfare-lies-exposed/"
     },
     {
@@ -943,13 +953,13 @@
       "url": "https://gulfnews.com/amp/story/uae%2Framadan%2Framadan-2026-uae-ai-wearables-help-you-fast-safer-smarter-healthier-1.500442225"
     },
     {
-      "id": "gn-governance-politics-34",
+      "id": "gn-governance-politics-33",
       "title": "Legal framework for AI-based vehicle systems and software - Taylor Wessing",
       "summary": "Legal framework for AI-based vehicle systems and software Taylor Wessing",
       "topic": "governance-politics",
       "source": "Taylor Wessing",
       "date": "Fri, 13 Feb 2026 10:42:15 GMT",
-      "imageUrl": "data/images/governance-politics/3metul.webp",
+      "imageUrl": "https://www.taylorwessing.com/-/media/taylor-wessing/images/social-media/automotive_tw24_open_graph_image_2500x1306px.jpg?as=0&dmc=0&iar=0&thn=0&udi=0?&hash=A2082CCDED6D0DB2AF2B94FC0453F728",
       "url": "https://www.taylorwessing.com/fr/insights-and-events/insights/2026/02/faq-ki-und-software"
     },
     {
@@ -963,13 +973,13 @@
       "url": "https://azat.tv/en/claude-opus-4-6-rivals-emerge-ai-race-shifts-focus/"
     },
     {
-      "id": "gn-governance-politics-20",
+      "id": "gn-governance-politics-22",
       "title": "OPINION | AI ethics in the age of narrative warfare - theweek.in",
       "summary": "OPINION | AI ethics in the age of narrative warfare theweek.in",
       "topic": "governance-politics",
       "source": "theweek.in",
       "date": "Fri, 13 Feb 2026 10:22:07 GMT",
-      "imageUrl": "data/images/governance-politics/26f30a.webp",
+      "imageUrl": "http://img.theweek.in/content/dam/week/week/news/defence/images/2026/2/13/ai-impact-summit.jpg",
       "url": "https://www.theweek.in/news/defence/2026/02/13/opinion-or-ai-ethics-in-the-age-of-narrative-warfare.html"
     },
     {
@@ -1323,13 +1333,13 @@
       "url": "https://markets.chroniclejournal.com/chroniclejournal/article/worldnewswire-2026-2-13-ai-generated-sound-design-why-seedance-20s-audio-matters-for-immersive-content"
     },
     {
-      "id": "gn-governance-politics-13",
+      "id": "gn-governance-politics-15",
       "title": "Senators weigh free speech concerns as bill targets \"deceptive\" AI use - kuam.com",
       "summary": "Senators weigh free speech concerns as bill targets \"deceptive\" AI use kuam.com",
       "topic": "governance-politics",
       "source": "kuam.com",
       "date": "Fri, 13 Feb 2026 05:02:41 GMT",
-      "imageUrl": "data/images/governance-politics/1ttw5h.webp",
+      "imageUrl": "https://immergo-producer-images.nyc3.cdn.digitaloceanspaces.com/images/story/KUAM/28605046_G.jpeg",
       "url": "https://www.kuam.com/story/153437639/senators-weigh-free-speech-concerns-as-bill-targets-deceptive-ai-use"
     },
     {
@@ -1433,13 +1443,13 @@
       "url": "https://www.frontier-enterprise.com/preparing-for-the-agentic-ai-infrastructure-shift/"
     },
     {
-      "id": "gn-governance-politics-18",
+      "id": "gn-governance-politics-21",
       "title": "Chinese Cyber Army Forgets to Delete AI Prompts In Posts Aimed at Taiwan - Vision Times",
       "summary": "Chinese Cyber Army Forgets to Delete AI Prompts In Posts Aimed at Taiwan Vision Times",
       "topic": "governance-politics",
       "source": "Vision Times",
       "date": "Fri, 13 Feb 2026 02:14:53 GMT",
-      "imageUrl": "data/images/governance-politics/ky3rq7.webp",
+      "imageUrl": "https://img.visiontimes.com/2026/01/p3570221a410167391-1.jpg",
       "url": "https://www.visiontimes.com/2026/02/12/chinese-cyber-army-forgets-to-delete-ai-prompts-in-posts-aimed-at-taiwan.html"
     },
     {
@@ -1513,14 +1523,14 @@
       "url": "https://www.eco-business.com/news/taiwan-ramps-up-circular-economy-push-with-new-laws-ai-and-green-funding/"
     },
     {
-      "id": "gn-governance-politics-48",
+      "id": "gn-governance-politics-43",
       "title": "Patentability Implications of the EU AI Act - The National Law Review",
       "summary": "Patentability Implications of the EU AI Act The National Law Review",
       "topic": "governance-politics",
       "source": "The National Law Review",
-      "date": "Thu, 12 Feb 2026 23:31:19 GMT",
-      "imageUrl": "data/images/governance-politics/98jg4q.webp",
-      "url": "https://natlawreview.com/article/patentability-implications-eu-ai-act?amp"
+      "date": "Thu, 12 Feb 2026 23:33:46 GMT",
+      "imageUrl": "images/news/ai-law-and-ethics-justice-scales-legal-balance-technology-regulation-circuit-board-line-art-digital-governance-algorithmic-accountability-ai-policy-compliance-court-judiciary-fairness-book-knowledge-illustration.webp",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9pT2Z6SkQwa3VQVk1ROGJ4eW1sZEpZZVppTC16OWFlUTE5dnMwcmNRTEZKdHF2dklhc05mYmtKVS1VbllRQmdkdHdSUkdpOGVmVVNoSWdDVDJoSE1nUXp4dTF6ajdMVERqQ25hR09HR21hUndfYWI4M9IBfkFVX3lxTE1IYWRqSmZVVXRlczRyMFlPYW9aMGZ4Y202bXRDSFpHa2ROdjY1SFlCRjNMTHBEYmxHQlR0RDRGYlBXSnpEMFk4VWlTTTRaQ1E3R2t4cEI3QWxXajctaVBZUmYwQmpnN1F1ZGd6UnZRZG5VUDFxWGpLTm9UUkQ2dw?oc=5"
     },
     {
       "id": "gn-digital-security-38",
@@ -1593,13 +1603,13 @@
       "url": "https://rollingout.com/2026/02/12/applied-materials-stock-surge-ai-chip/"
     },
     {
-      "id": "gn-governance-politics-5",
+      "id": "gn-governance-politics-6",
       "title": "House sets limits on AI in political ads - Eagle-Tribune",
       "summary": "House sets limits on AI in political ads Eagle-Tribune",
       "topic": "governance-politics",
       "source": "Eagle-Tribune",
       "date": "Thu, 12 Feb 2026 22:00:00 GMT",
-      "imageUrl": "data/images/governance-politics/ezpto2.webp",
+      "imageUrl": "https://bloximages.chicago2.vip.townnews.com/eagletribune.com/content/tncms/custom/image/ae213140-df8c-11e7-b06d-b798580d75a5.jpg?resize=600%2C333",
       "url": "https://www.eagletribune.com/news/boston/house-sets-limits-on-ai-in-political-ads/article_fe9ddba2-a981-4969-a9d8-142170870725.html"
     },
     {
@@ -1631,16 +1641,6 @@
       "date": "Thu, 12 Feb 2026 21:10:58 GMT",
       "imageUrl": "images/news/ai-chipset-supply-chain-disruption-circuit-board-jigsaw-puzzle-missing-piece-hardware-shortage-semiconductor-crisis-tech-manufacturing-bottleneck-system-failure-component-dependency-infrastructure-risk-electronics-innovation-illustration.webp",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSS1JVEoyTnpENFk0ekdZejBpcVJwRGxXRU43Qkd4OFpDTGEyaVdVVG1KZDBvTWFtNkhNREotNXNBVFdMQmsyTFg5RG1HTFQtaUlIUTM2NGE2ODlhUS1naTBOLUVSc0hzN3c2N092SzhYTHpxOGVPNWEtMDdaa0V5STVnTXVMWWNPNzFNLWY5V3o0TlRQazVF?oc=5"
-    },
-    {
-      "id": "gn-governance-politics-46",
-      "title": "Whose Rules Govern the Algorithmic Boss? State AI Employment Laws, Federal Preemption Threats, and the Coming Litigation Wave - The National Law Review",
-      "summary": "Whose Rules Govern the Algorithmic Boss? State AI Employment Laws, Federal Preemption Threats, and the Coming Litigation Wave The National Law Review",
-      "topic": "governance-politics",
-      "source": "The National Law Review",
-      "date": "Thu, 12 Feb 2026 21:05:17 GMT",
-      "imageUrl": "data/images/governance-politics/i8ilm3.webp",
-      "url": "https://natlawreview.com/article/whose-rules-govern-algorithmic-boss-state-ai-employment-laws-federal-preemption"
     },
     {
       "id": "gn-business-economy-4",
@@ -1703,16 +1703,6 @@
       "url": "https://www.aol.com/finance/openai-ceo-sam-altman-declares-141751028.html"
     },
     {
-      "id": "gn-governance-politics-16",
-      "title": "OPINION: From AI commercials to Mike Tyson’s wacky PSA, propaganda floods our screens - Indiana Daily Student",
-      "summary": "OPINION: From AI commercials to Mike Tyson’s wacky PSA, propaganda floods our screens Indiana Daily Student",
-      "topic": "governance-politics",
-      "source": "Indiana Daily Student",
-      "date": "Thu, 12 Feb 2026 18:15:00 GMT",
-      "imageUrl": "data/images/governance-politics/ynrp57.webp",
-      "url": "https://www.idsnews.com/article/2026/02/opinion-mike-tyson-superbowl-ads-maha-ai-iu-bloomington-indiana"
-    },
-    {
       "id": "gn-musical-art-25",
       "title": "How to Use Apple Music with ChatGPT: Easy Setup Guide - Analytics Insight",
       "summary": "How to Use Apple Music with ChatGPT: Easy Setup Guide Analytics Insight",
@@ -1721,6 +1711,16 @@
       "date": "Thu, 12 Feb 2026 18:15:00 GMT",
       "imageUrl": "images/news/workflow-automation-app-integration-dashboard-icons-email-calendar-folder-documents-analytics-customer-support-headset-notifications-productivity-suite-digital-connection-lines-cloud-services-ui-illustration.webp",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQndzMmlEUDFjX2RiSl9JQ3ZPMG5zRGo1cEhaNC1VVFVYVkE4Tk5WWkNtQWZiVHVmaEQ0VmVaRllWQkhaT08wYlVXT3EzTVNQWngwOVozLV9QdjlGUUlSMHZJYk12Nk1WOHdMTnE2ZUpHdGlEbWlxX2ZLNVpVTUFIMUtRUkE5bV8zRUV3TnpvTGRObVh3NXY0c3JiU3NITlAwYm5FTnFOQ0JmWlJsWnfSAbsBQVVfeXFMTUFlVXdycE1rQkpaaUp2S09YOFY2VU5vcWMxRjVvbmVUd1pfcG1ha1duY2JHU2xhLXRyaWV0ZmYwUVJDZ21wZTBMVnRnQ3pzUzFJNGZwQXl4N2VtSmd0UFRpa0lsSGY4eXV3YnpzY1gzdDU5N0tUcXh5REpHOU1qa0tNVlZpekhFV3pEN2pyTEpDNzhudm16X2c4V3Z0czFhaVg5WGtyTWNmeGkzSnNucEdlQV9qTFVteXRERQ?oc=5"
+    },
+    {
+      "id": "gn-governance-politics-19",
+      "title": "OPINION: From AI commercials to Mike Tyson’s wacky PSA, propaganda floods our screens - Indiana Daily Student",
+      "summary": "OPINION: From AI commercials to Mike Tyson’s wacky PSA, propaganda floods our screens Indiana Daily Student",
+      "topic": "governance-politics",
+      "source": "Indiana Daily Student",
+      "date": "Thu, 12 Feb 2026 18:15:00 GMT",
+      "imageUrl": "https://snworksceo.imgix.net/ids/d87b06c2-c524-45a0-b3b4-36cf7049cc77.sized-1000x1000.jpg?w=800",
+      "url": "https://www.idsnews.com/article/2026/02/opinion-mike-tyson-superbowl-ads-maha-ai-iu-bloomington-indiana"
     },
     {
       "id": "gn-business-economy-26",
@@ -1783,13 +1783,13 @@
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWEpBSXFXbEY0QS1SX1p0N09LUEtFZHpUdDBkenN4NnV4eE9FQVliZF9wS0JaYVlCc1FrNXNPRUhMcWFWU3JSM2MzT0llMEI2MENUamZiVmlwVUNDZDN6cndwcXRPRm1sbUxhR2tZYXZmUEY5RUdjOXd0SU00UjRQWXJNM3U?oc=5"
     },
     {
-      "id": "gn-governance-politics-44",
+      "id": "gn-governance-politics-49",
       "title": "Anthropic commits $20 million to counter OpenAI’s political machine - Cryptopolitan",
       "summary": "Anthropic commits $20 million to counter OpenAI’s political machine Cryptopolitan",
       "topic": "governance-politics",
       "source": "Cryptopolitan",
       "date": "Thu, 12 Feb 2026 16:14:00 GMT",
-      "imageUrl": "data/images/governance-politics/bql4hq.webp",
+      "imageUrl": "https://www.cryptopolitan.com/wp-content/uploads/2026/02/Anthropic-to-donate-20-million-to-US-political-group-backing-AI-regulation.webp",
       "url": "https://www.cryptopolitan.com/anthropic-commits-20-million-to-counter-openais-political-machine/"
     },
     {
@@ -2003,6 +2003,16 @@
       "url": "https://newsukraine.rbc.ua/news/pentagon-seeks-wartime-ai-tools-developers-1770900800.html"
     },
     {
+      "id": "gn-governance-politics-45",
+      "title": "Canada still has no meaningful AI regulation - Policy Alternatives",
+      "summary": "Canada still has no meaningful AI regulation Policy Alternatives",
+      "topic": "governance-politics",
+      "source": "Policy Alternatives",
+      "date": "Thu, 12 Feb 2026 13:00:00 GMT",
+      "imageUrl": "https://www.policyalternatives.ca/wp-content/uploads/2026/02/2026.01.22-Blog-AIpolicy-3.jpeg",
+      "url": "https://www.policyalternatives.ca/news-research/canada-still-has-no-meaningful-ai-regulation/"
+    },
+    {
       "id": "gn-environment-science-29",
       "title": "China launches new AI-powered Earth observation satellite - bastillepost.com",
       "summary": "China launches new AI-powered Earth observation satellite bastillepost.com",
@@ -2073,23 +2083,23 @@
       "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQYnlhd1U0ZEZxRnF3UDR1dTVKdjNYOWZwT3BRbVBBZDhZeWxfMGFBMnVfdkktVjJCQmRkZC1UNnYyMVNHTmJjbTZfaENFWXZYNm1JVEFCc0pVcnI5YzFCZTJLR3lObnUtT1VqQVFrcGFhR2JtclkxRmdMNkJmRmdVMnE5M3F4dzlYNGljV0FzaEsxeVUyZXBlRWN5SzQtLTJlMlVoOWY1b1FuVnZ5MHZKc0c2OXdpUDV6ZzVSRlBxeFdDajgtRy0tcGtGLXpkSTZ0Sm9RdlB4NFBERVhRajVVTDNsOTRmM1VzQTdqSXo3RlgtUHppVzRKOVh4eUhBWEZY0gGGAkFVX3lxTE5WbzhBTk5tWFJleURBeGxaWDByLWZ0bWt3UThlU1R4bEdYeUFETnRGRHFCM0xhcDNfQjlpaUQwSVVST2k2ZjIwM25fYTVvT0F3Z29sU002M2pQNGQteWxwN2owc1VQMmFSS1JaaVdpaXlVOTkySW1DTlZ0WnV0R0ZxZXJaQ1EtcFRSNWpLRjNtbEhseHVBd2FQdDJic3dmXzFBLUhzUFVPNnBQWHlhUzVDYmJlOUJZeFI0OXQyMFBhVElSbUE1SThCdzVyeWlKU0k3ajJNRkFpY1k2Nk5nWDdKNFFkRzB1VlFELXVHdmhCMTk0VWRHV2VsNWp3RFhScTMyTGl1Vmc?oc=5"
     },
     {
-      "id": "gn-governance-politics-30",
+      "id": "gn-governance-politics-29",
       "title": "NY Enacts RAISE Act Amid Federal AI Security Push — AI: The Washington Report - Mintz",
       "summary": "NY Enacts RAISE Act Amid Federal AI Security Push — AI: The Washington Report Mintz",
       "topic": "governance-politics",
       "source": "Mintz",
       "date": "Thu, 12 Feb 2026 12:00:00 GMT",
-      "imageUrl": "data/images/governance-politics/wdowjy.webp",
+      "imageUrl": "https://www.mintz.com/sites/default/files/media/images/2024-06-17/Viewpoints-Small-General.png",
       "url": "https://www.mintz.com/insights-center/viewpoints/54731/2026-02-06-ny-enacts-raise-act-amid-federal-ai-security-push-ai"
     },
     {
-      "id": "gn-governance-politics-31",
+      "id": "gn-governance-politics-30",
       "title": "Germany greenlights the EU AI Act, triggering countdown for enterprise compliance - Computerworld",
       "summary": "Germany greenlights the EU AI Act, triggering countdown for enterprise compliance Computerworld",
       "topic": "governance-politics",
       "source": "Computerworld",
       "date": "Thu, 12 Feb 2026 11:58:23 GMT",
-      "imageUrl": "data/images/governance-politics/7zt1qj.webp",
+      "imageUrl": "https://www.computerworld.com/wp-content/uploads/2026/02/4131303-0-12664600-1770897551-Google-will-jetzt-doch-den-EU-AI-Act-unterstutzen.jpg?quality=50&strip=all",
       "url": "https://www.computerworld.com/article/4131303/germany-greenlights-the-eu-ai-act-triggering-countdown-for-enterprise-compliance.html"
     },
     {
@@ -2273,16 +2283,6 @@
       "url": "https://ffnews.com/thought-leader/ai-in-financial-crime-new-scams-and-how-to-protect-yourself/"
     },
     {
-      "id": "gn-governance-politics-45",
-      "title": "India Brings AI-Generated Content Under Formal Regulation with IT Rules Amendment - The Cyber Express",
-      "summary": "India Brings AI-Generated Content Under Formal Regulation with IT Rules Amendment The Cyber Express",
-      "topic": "governance-politics",
-      "source": "The Cyber Express",
-      "date": "Thu, 12 Feb 2026 09:30:04 GMT",
-      "imageUrl": "data/images/governance-politics/7tfez4.webp",
-      "url": "https://thecyberexpress.com/india-ai-generated-content-it-rules/"
-    },
-    {
       "id": "gn-digital-security-6",
       "title": "AI-fuelled romance scams spread beyond dating apps - SecurityBrief UK",
       "summary": "AI-fuelled romance scams spread beyond dating apps SecurityBrief UK",
@@ -2313,13 +2313,13 @@
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNb212a05rbE8xcHlfcTRPV25oY2hxbkxoeHZMLUthMllEbmtad2tNbG5zN1NJc200SG00Uzh0RldNTDVUdkxabGdxZk81MG1KS0pOenYzTkkyZEdEUmhtNC1IN3pDWDFQaUdycXdDWFlwT0d4VnRGNGVpOTRGbTF0N2dQa1duTWw5Ynl3OUExR1RjQk00UVRFVms4em1JNTd6dUY4?oc=5"
     },
     {
-      "id": "gn-governance-politics-41",
+      "id": "gn-governance-politics-42",
       "title": "AI Governance Bill to mandate risk management, accountability, says deputy minister - The Edge Malaysia",
       "summary": "AI Governance Bill to mandate risk management, accountability, says deputy minister The Edge Malaysia",
       "topic": "governance-politics",
       "source": "The Edge Malaysia",
       "date": "Thu, 12 Feb 2026 08:43:35 GMT",
-      "imageUrl": "data/images/governance-politics/yxt31.webp",
+      "imageUrl": "https://assets.theedgemarkets.com/20241025_PEO_MDX_SUMMIT_2024_DATUK_WILSON_UGAK_ANAK_KUMBONG_3_LYY_20260212164155_theedgemalaysia.jpg",
       "url": "https://theedgemalaysia.com/node/792778"
     },
     {
@@ -2329,7 +2329,7 @@
       "topic": "governance-politics",
       "source": "Computing UK",
       "date": "Thu, 12 Feb 2026 08:43:26 GMT",
-      "imageUrl": "data/images/governance-politics/fcbzdo.webp",
+      "imageUrl": "https://www.computing.co.uk/news/2026/legislation-regulation/media_1a5573e173753cb9ee4dd4785fb03bab991d9dca1.jpg?width=1200&format=pjpg&optimize=medium",
       "url": "https://www.computing.co.uk/news/2026/legislation-regulation/uk-regulators-need-resources-ai"
     },
     {
@@ -2553,16 +2553,6 @@
       "url": "https://www.techtimes.com/articles/314600/20260212/ai-playlists-are-revolutionizing-music-streaming-apple-music-about-catch.htm"
     },
     {
-      "id": "gn-governance-politics-19",
-      "title": "Russia spreading new series of AI videos imitating “street interviews with Ukrainians” – CCD - Ukrinform",
-      "summary": "Russia spreading new series of AI videos imitating “street interviews with Ukrainians” – CCD Ukrinform",
-      "topic": "governance-politics",
-      "source": "Ukrinform",
-      "date": "Thu, 12 Feb 2026 05:45:00 GMT",
-      "imageUrl": "data/images/governance-politics/fyieuf.webp",
-      "url": "https://www.ukrinform.net/amp/rubric-society/4090439-russia-spreading-new-series-of-ai-videos-imitating-street-interviews-with-ukrainians-ccd.html"
-    },
-    {
       "id": "gn-unmanned-aircraft-42",
       "title": "France • Harmattan AI's French drones apparently 'Made in Vietnam' - Intelligence Online",
       "summary": "France • Harmattan AI's French drones apparently 'Made in Vietnam' Intelligence Online",
@@ -2633,13 +2623,13 @@
       "url": "https://venturebeat.com/technology/z-ais-open-source-glm-5-achieves-record-low-hallucination-rate-and-leverages"
     },
     {
-      "id": "gn-governance-politics-12",
+      "id": "gn-governance-politics-14",
       "title": "House Votes to Combat Misinformation from Deepfakes in Elections - Common Cause",
       "summary": "House Votes to Combat Misinformation from Deepfakes in Elections Common Cause",
       "topic": "governance-politics",
       "source": "Common Cause",
       "date": "Wed, 11 Feb 2026 23:31:47 GMT",
-      "imageUrl": "data/images/governance-politics/35mrr0.webp",
+      "imageUrl": "https://www.commoncause.org/massachusetts/wp-content/uploads/2026/01/GettyImages-2201260900-scaled.jpg",
       "url": "https://www.commoncause.org/massachusetts/press/house-votes-to-combat-misinformation-from-deepfakes-in-elections/"
     },
     {
@@ -2669,7 +2659,7 @@
       "topic": "governance-politics",
       "source": "WCVB",
       "date": "Wed, 11 Feb 2026 22:51:00 GMT",
-      "imageUrl": "data/images/governance-politics/5t27hj.webp",
+      "imageUrl": "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/boston-state-house-american-flag-68dea224198cc.png?crop=1xw:1xh;center,top&resize=1200:*",
       "url": "https://www.wcvb.com/article/massachusetts-lawmakers-curb-deepfakes-ai-protect-election-integrity/70317490"
     },
     {
@@ -2733,6 +2723,16 @@
       "url": "https://www.lifewire.com/youtube-music-premium-ai-playlist-11904573"
     },
     {
+      "id": "gn-governance-politics-5",
+      "title": "Beacon Hill targets AI in political advertising - cnhinews.com",
+      "summary": "Beacon Hill targets AI in political advertising cnhinews.com",
+      "topic": "governance-politics",
+      "source": "cnhinews.com",
+      "date": "Wed, 11 Feb 2026 19:31:38 GMT",
+      "imageUrl": "images/news/human-face-model-facial-recognition-mesh-biometric-landmarks-ai-computer-vision-identity-verification-digital-face-scan-front-view-neutral-expression-head-mapping-wireframe-grid-background-user-interface-target-points-authentication-technology.webp",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNMURiUWRsaWgzT0R5bjhRdHdIT01vUFBhNWdzZnlNVGx5NTBjYVNmcXVqUVAzY0lDR0ViWmhMdmhkRlhOQnRCZDJqS0didlJRR2xlNjVEWXFSQzZzMW1DUGp3eUhKQzdrVGZDS1ZnaUkwSTVMMFU2UXVINkpYZE9hczhWQXloMW1FVFZkbURhUlV1UQ?oc=5"
+    },
+    {
       "id": "gn-visual-art-photography-38",
       "title": "AI Video Generation Startup Runway Raises $315 Million At $5.3 Billion Valuation - OfficeChai",
       "summary": "AI Video Generation Startup Runway Raises $315 Million At $5.3 Billion Valuation OfficeChai",
@@ -2774,12 +2774,12 @@
     },
     {
       "id": "gn-governance-politics-2",
-      "title": "Use of AI in Texas political campaign ads sparks debate - Spectrum News 1",
-      "summary": "Use of AI in Texas political campaign ads sparks debate Spectrum News 1",
+      "title": "Use of AI in Texas political campaign ads sparks debate - Spectrum News",
+      "summary": "Use of AI in Texas political campaign ads sparks debate Spectrum News",
       "topic": "governance-politics",
-      "source": "Spectrum News 1",
+      "source": "Spectrum News",
       "date": "Wed, 11 Feb 2026 17:44:00 GMT",
-      "imageUrl": "data/images/governance-politics/soryqy.webp",
+      "imageUrl": "https://s7d2.scene7.com/is/image/TWCNews/Texas_Capitol_empty_chairs_Democrats_AP_08052025",
       "url": "https://spectrumlocalnews.com/tx/south-texas-el-paso/news/2026/02/11/use-of-ai-in-texas-political-campaign-ads-sparks-debate"
     },
     {
@@ -2833,13 +2833,13 @@
       "url": "https://www.businesspost.ie/politics/human-made-irish-music-industry-pitches-ai-fightback/"
     },
     {
-      "id": "gn-governance-politics-17",
+      "id": "gn-governance-politics-20",
       "title": "Violent Non-State Actors and Generative AI in Warfare: The Rsf and the Sudanese Civil War - Small Wars Journal",
       "summary": "Violent Non-State Actors and Generative AI in Warfare: The Rsf and the Sudanese Civil War Small Wars Journal",
       "topic": "governance-politics",
       "source": "Small Wars Journal",
       "date": "Wed, 11 Feb 2026 16:52:15 GMT",
-      "imageUrl": "data/images/governance-politics/r32o5d.webp",
+      "imageUrl": "https://smallwarsjournal.com/wp-content/uploads/2026/01/South_Sudan_022.jpg",
       "url": "https://smallwarsjournal.com/2026/02/11/generative-ai-sudan-civil-war/"
     },
     {
@@ -2943,6 +2943,16 @@
       "url": "https://dronelife.com/2026/02/11/gao-drone-delivery-oversight-bvlos-safety/"
     },
     {
+      "id": "gn-governance-politics-10",
+      "title": "AI in Texas political ads is fair game, but Crockett and Paxton ads draw social media scrutiny - Houston Chronicle",
+      "summary": "AI in Texas political ads is fair game, but Crockett and Paxton ads draw social media scrutiny Houston Chronicle",
+      "topic": "governance-politics",
+      "source": "Houston Chronicle",
+      "date": "Wed, 11 Feb 2026 15:06:21 GMT",
+      "imageUrl": "images/news/ai-law-and-ethics-justice-scales-legal-balance-technology-regulation-circuit-board-line-art-digital-governance-algorithmic-accountability-ai-policy-compliance-court-judiciary-fairness-book-knowledge-illustration.webp",
+      "url": "https://www.houstonchronicle.com/news/houston-texas/trending/article/jasmine-crockett-ai-senate-campaign-ad-21343986.php"
+    },
+    {
       "id": "gn-technology-innovation-4",
       "title": "Olix: 25-Year-Old Founder Raises $220M for UK AI Chip Startup Now Valued at $1 Billion - thetechfounders.co.uk",
       "summary": "Olix: 25-Year-Old Founder Raises $220M for UK AI Chip Startup Now Valued at $1 Billion thetechfounders.co.uk",
@@ -3023,13 +3033,13 @@
       "url": "https://dronexl.co/2026/02/11/drone-injured-man-iowa-ravine/"
     },
     {
-      "id": "gn-governance-politics-37",
+      "id": "gn-governance-politics-36",
       "title": "Tennessee's AI Bill Would Criminalize the Training of AI Chatbots - The National Law Review",
       "summary": "Tennessee's AI Bill Would Criminalize the Training of AI Chatbots The National Law Review",
       "topic": "governance-politics",
       "source": "The National Law Review",
       "date": "Wed, 11 Feb 2026 13:18:45 GMT",
-      "imageUrl": "data/images/governance-politics/jxw9gb.webp",
+      "imageUrl": "https://natlawreview.com/sites/default/files/2026-02/technology%20AI%20artificial%20intelligence%20machine%20learning%20mobile%20phone%20customer%20assistance.jpg",
       "url": "https://natlawreview.com/article/tennessees-ai-bill-would-criminalize-training-ai-cha"
     },
     {
@@ -3073,13 +3083,13 @@
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVzh3d3NqLWRmZ1RFS3pVVmk4M1dGa0VRbnl1c3RJRm1uOWxSdHJMOHcxd3lwVm52VURwamxmR2tQcWRHRHl6blRRUExxNzZKcERlRmktaHhXN3QxWlZBN0dzeGdtWm1rQlFsanl1MzJUbTdQNmxJSThiV1NUZE0tV3lSWnpock9iZmNEUjVISm9ncG5CMVVBdUVR?oc=5"
     },
     {
-      "id": "gn-governance-politics-15",
+      "id": "gn-governance-politics-18",
       "title": "AI-Driven Influence Operations: Threats to Middle Eastern Information Sovereignty in the Age of Synthetic Media - TRENDS Research &amp; Advisory",
       "summary": "AI-Driven Influence Operations: Threats to Middle Eastern Information Sovereignty in the Age of Synthetic Media TRENDS Research & Advisory",
       "topic": "governance-politics",
       "source": "TRENDS Research &amp; Advisory",
       "date": "Wed, 11 Feb 2026 12:08:59 GMT",
-      "imageUrl": "data/images/governance-politics/h9nmt.webp",
+      "imageUrl": "https://trendsresearch.org/wp-content/uploads/2026/02/AI-Driven-Influence-Operations-1024x563.jpg",
       "url": "https://trendsresearch.org/insight/ai-driven-influence-operations-threats-to-middle-eastern-information-sovereignty-in-the-age-of-synthetic-media/"
     },
     {
@@ -3129,7 +3139,7 @@
       "topic": "governance-politics",
       "source": "WBUR",
       "date": "Wed, 11 Feb 2026 11:40:31 GMT",
-      "imageUrl": "data/images/governance-politics/trrxxq.webp",
+      "imageUrl": "https://wordpress.wbur.org/wp-content/uploads/2026/02/0308_state-house01-1000x666.jpg",
       "url": "https://www.wbur.org/news/2026/02/11/ai-political-ads-massachusetts-bills-regulation"
     },
     {
@@ -3143,13 +3153,13 @@
       "url": "https://www.trustedreviews.com/news/youtube-is-following-spotify-in-adding-ai-playlist-creation"
     },
     {
-      "id": "gn-governance-politics-38",
+      "id": "gn-governance-politics-37",
       "title": "What HR Leaders Need to Know: Navigating AI Regulation Amid Federal-State Conflict - HR Daily Advisor",
       "summary": "What HR Leaders Need to Know: Navigating AI Regulation Amid Federal-State Conflict HR Daily Advisor",
       "topic": "governance-politics",
       "source": "HR Daily Advisor",
       "date": "Wed, 11 Feb 2026 11:14:05 GMT",
-      "imageUrl": "data/images/governance-politics/x6u8qy.webp",
+      "imageUrl": "https://hrdailyadvisor.hci.org/app/uploads/sites/3/2024/05/GettyImages-1472123000-e1740170706415.jpg",
       "url": "https://hrdailyadvisor.hci.org/2026/02/11/what-hr-leaders-need-to-know-navigating-ai-regulation-amid-federal-state-conflict/"
     },
     {
@@ -3233,13 +3243,13 @@
       "url": "https://english.ahram.org.eg/News/562220.aspx"
     },
     {
-      "id": "gn-governance-politics-14",
+      "id": "gn-governance-politics-17",
       "title": "FactCheckAfrica Empowers Ogun Youths, Journalists, and Civic Actors on Inclusive and Accessible Use of AI for Transparency and Accountability - factcheckafrica.net",
       "summary": "FactCheckAfrica Empowers Ogun Youths, Journalists, and Civic Actors on Inclusive and Accessible Use of AI for Transparency and Accountability factcheckafrica.net",
       "topic": "governance-politics",
       "source": "factcheckafrica.net",
       "date": "Wed, 11 Feb 2026 10:21:03 GMT",
-      "imageUrl": "data/images/governance-politics/5rzo1v.webp",
+      "imageUrl": "https://factcheckafrica.net/wp-content/uploads/2026/02/IMG_5184_Original-scaled.jpeg",
       "url": "https://factcheckafrica.net/factcheckafrica-empowers-ogun-youths-journalists-and-civic-actors-on-inclusive-and-accessible-use-of-ai-for-transparency-and-accountability/"
     },
     {
@@ -3253,13 +3263,13 @@
       "url": "https://techwireasia.com/2026/02/openai-samsung-and-sk-move-ahead-with-korea-data-centre-build/"
     },
     {
-      "id": "gn-governance-politics-43",
+      "id": "gn-governance-politics-48",
       "title": "South Korea becomes the first in the world to enact AI legal framework legislation - 헤럴드인사이트",
       "summary": "South Korea becomes the first in the world to enact AI legal framework legislation 헤럴드인사이트",
       "topic": "governance-politics",
       "source": "헤럴드인사이트",
       "date": "Wed, 11 Feb 2026 09:31:21 GMT",
-      "imageUrl": "images/news/documents-to-chat-ai-rag-retrieval-augmented-generation-file-upload-knowledge-base-text-to-conversation-document-processing-search-indexing-embedding-vector-database-contextual-answering-chat-interface-data-ingestion-workflow-abstract-line.webp",
+      "imageUrl": "images/news/ai-law-regulation-digital-justice-court-gavel-legal-tech-governance-compliance-policy-judiciary-courthouse-columns-classical-pillars-rule-of-law-legal-document-interface-circuit-board-background-technology-and-ethics-3d-line-art-illustration.webp",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE15WERRSUlsdVQzUzl3YjBhT3hHRXBUSEJSclVFblNVdjJMNl9RdzhmZWVIR2JuRm1iU1FseHMybGpHdkF0RERnSFNDRDNUMUVCTEpDU0RmZUVrV2dncXQyNW54N1Ewa2gwd1p0SlJIemY?oc=5"
     },
     {
@@ -3633,16 +3643,6 @@
       "url": "https://www.adweek.com/media/exclusive-these-super-bowl-ads-won-with-ai-but-not-social-media/"
     },
     {
-      "id": "gn-governance-politics-9",
-      "title": "Beacon Hill targets AI in political advertising - Eagle-Tribune",
-      "summary": "Beacon Hill targets AI in political advertising Eagle-Tribune",
-      "topic": "governance-politics",
-      "source": "Eagle-Tribune",
-      "date": "Tue, 10 Feb 2026 22:00:00 GMT",
-      "imageUrl": "data/images/governance-politics/ezpto2.webp",
-      "url": "https://www.eagletribune.com/news/boston/beacon-hill-targets-ai-in-political-advertising/article_7f744c18-1241-421e-b0c3-8cb2353b4162.html"
-    },
-    {
       "id": "gn-technology-innovation-6",
       "title": "2 Millionaire-Maker AI Stocks to Buy in February - The Motley Fool",
       "summary": "2 Millionaire-Maker AI Stocks to Buy in February The Motley Fool",
@@ -3653,24 +3653,14 @@
       "url": "https://www.fool.com/investing/2026/02/10/2-millionaire-maker-ai-stocks-to-buy-in-february/"
     },
     {
-      "id": "gn-governance-politics-32",
+      "id": "gn-governance-politics-31",
       "title": "Delaney Hints at New Quantum, AI Legislation - MeriTalk",
       "summary": "Delaney Hints at New Quantum, AI Legislation MeriTalk",
       "topic": "governance-politics",
       "source": "MeriTalk",
       "date": "Tue, 10 Feb 2026 21:39:52 GMT",
-      "imageUrl": "data/images/governance-politics/bec9qg.webp",
+      "imageUrl": "https://meritalk.com/wp-content/uploads/2020/02/shutterstock_566281690-min.jpg",
       "url": "https://www.meritalk.com/articles/delaney-hints-at-new-quantum-ai-legislation/"
-    },
-    {
-      "id": "gn-governance-politics-23",
-      "title": "Navigating the evolving landscape of AI regulation in Australian workplaces - hcamag.com",
-      "summary": "Navigating the evolving landscape of AI regulation in Australian workplaces hcamag.com",
-      "topic": "governance-politics",
-      "source": "hcamag.com",
-      "date": "Tue, 10 Feb 2026 21:28:39 GMT",
-      "imageUrl": "data/images/governance-politics/2ta2dl.webp",
-      "url": "https://www.hcamag.com/au/specialisation/employment-law/navigating-the-evolving-landscape-of-ai-regulation-in-australian-workplaces/564916"
     },
     {
       "id": "gn-unmanned-aircraft-19",
@@ -3691,6 +3681,16 @@
       "date": "Tue, 10 Feb 2026 21:10:12 GMT",
       "imageUrl": "https://csis-website-prod.s3.amazonaws.com/s3fs-public/2026-02/GettyImages-848907828_cropped.jpg?VersionId=r5a.LE3TwWzM6Ff8pOEtO7f3xnXoQmrQ",
       "url": "https://www.csis.org/analysis/how-russia-reshaping-command-and-control-ai-enabled-warfare"
+    },
+    {
+      "id": "gn-governance-politics-38",
+      "title": "Congress Formalizes Autonomous Vehicle Framework With SELF DRIVE Act - act-news.com",
+      "summary": "Congress Formalizes Autonomous Vehicle Framework With SELF DRIVE Act act-news.com",
+      "topic": "governance-politics",
+      "source": "act-news.com",
+      "date": "Tue, 10 Feb 2026 21:08:18 GMT",
+      "imageUrl": "images/news/fashion-design-mannequin-dress-form-tailor-dummy-ai-neural-network-overlay-monochrome-minimal-collage-blank-photo-frames-mockup-template-creative-layout-editorial-design-studio-apparel-patternmaking-visualization-modern-3d-illustration.webp",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9aN1MxM3AxblZVMkxrM0RYSlp5OERKUkJQQ3I5amg4RDJxR1NYNm9JYTl2cU43WTR5bnF0Y044ZlZ0QTJOcVVkYm5Mb0hvWjNzcTlHd0RKd1dXNGRCS3JyakpDOEllVTk2cXR2c0Job1U?oc=5"
     },
     {
       "id": "gn-musical-art-20",
@@ -3771,16 +3771,6 @@
       "date": "Tue, 10 Feb 2026 19:30:26 GMT",
       "imageUrl": "https://www.gadgetreview.com/wp-content/uploads/GR_-PNG-Logo-01-1-scaled.png",
       "url": "https://www.gadgetreview.com/florida-grandmother-loses-200k-to-ai-deepfake-doctor-scam"
-    },
-    {
-      "id": "gn-governance-politics-29",
-      "title": "How Is AI Regulated? Examples, Benefits, &amp; Drawbacks - Britannica",
-      "summary": "How Is AI Regulated? Examples, Benefits, & Drawbacks Britannica",
-      "topic": "governance-politics",
-      "source": "Britannica",
-      "date": "Tue, 10 Feb 2026 19:15:00 GMT",
-      "imageUrl": "images/news/ai-chatbot-interface-neural-network-brain-conversational-ai-dialogue-bubbles-virtual-assistant-natural-language-processing-llm-chat-window-customer-support-chat-automation-human-ai-interaction-digital-intelligence-technology-background.webp",
-      "url": "https://www.britannica.com/money/ai-rules-and-regulations"
     },
     {
       "id": "gn-business-economy-45",
@@ -3973,6 +3963,16 @@
       "url": "https://www.psychiatrictimes.com/view/can-ai-cure-medicine-s-ills"
     },
     {
+      "id": "gn-governance-politics-44",
+      "title": "EU Legislators and Tech Industry Leaders Take Steps to Facilitate Compliance Under EU AI Act - The AI Journal",
+      "summary": "EU Legislators and Tech Industry Leaders Take Steps to Facilitate Compliance Under EU AI Act The AI Journal",
+      "topic": "governance-politics",
+      "source": "The AI Journal",
+      "date": "Tue, 10 Feb 2026 14:47:19 GMT",
+      "imageUrl": "images/news/transparent-glass-cube-enclosing-interlocking-gears-cogs-mechanical-system-ai-engine-automation-workflow-process-optimization-industrial-technology-innovation-digital-network-nodes-3d-render-minimalist-pedestal-display-tech-concept-illustration.webp",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxON3JoXzFyN3YtMm8tOWJGTEt5OWhuVkI2amN1bm11eWN6NWVNc0xpN3IzQlpMWlJBbmJ5YUFzWDB3WDRiMnBaRHpQNTVPbEpvMkp0TVUxRFdxVzl4MmVzaDh5d0FWVHNyWWNQTFlWVWVEaGNyeV9xelNOd25mTXVEd3BGNWNwV2hfajRRdFFPUWNpbC1LVmZjSWpXWHAwcFhGZXhRMUpDNzh6ZkZSZS1PbmtvZw?oc=5"
+    },
+    {
       "id": "gn-environment-science-41",
       "title": "Hyderabad PVNR Expressway Moves To AI Enforcement - urbanacres.in",
       "summary": "Hyderabad PVNR Expressway Moves To AI Enforcement urbanacres.in",
@@ -3983,13 +3983,13 @@
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1TM3RGS0JmZ0pRenFGSk1WUEtSTGI5cDhtSnhJODIzdDVoYzFWd2RNdW9FUDhiVVNNaHVOOTRRR1JnenVMWmZxZzJfNWprYV9leHlRQjFleUk4c29Za0o5Sy1MWWx3eWRsZWMteG41WmxXUU1ISW5HU3E3VnM?oc=5"
     },
     {
-      "id": "gn-governance-politics-7",
+      "id": "gn-governance-politics-9",
       "title": "Bill targets AI and deepfakes to protect election integrity - The Guam Daily Post",
       "summary": "Bill targets AI and deepfakes to protect election integrity The Guam Daily Post",
       "topic": "governance-politics",
       "source": "The Guam Daily Post",
       "date": "Tue, 10 Feb 2026 14:00:00 GMT",
-      "imageUrl": "data/images/governance-politics/8xu8gu.webp",
+      "imageUrl": "https://bloximages.newyork1.vip.townnews.com/postguam.com/content/tncms/assets/v3/editorial/4/f0/4f0bdb1f-1bab-4f2b-bb23-3b302935bf57/683e8bdbab58b.image.jpg?crop=1612%2C846%2C0%2C219&resize=1200%2C630&order=crop%2Cresize",
       "url": "https://www.postguam.com/news/local/bill-targets-ai-and-deepfakes-to-protect-election-integrity/article_37b8edcf-c5cd-4fc3-b718-91bc0073183d.html"
     },
     {
@@ -4003,13 +4003,13 @@
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMW9PSzVyM3VDM2NLOHhlamFIcksxMWJTend3NThBd0FOdng0c0dYbWtNVlhqY3Y3VmlzRlFQeHRCMlI3SXdzNVhibVJNeFl2LXZOYXkxWTRBbE9sX1lEQU9tZmtCeXFsSHpzdkdYQkRoTGV5Ny1HMEt4LTdhUmE4UkNIWlZrOU0?oc=5"
     },
     {
-      "id": "gn-governance-politics-6",
+      "id": "gn-governance-politics-7",
       "title": "AI-generated campaign attacks are here. So far, Massachusetts has no laws to restrict them. - The Boston Globe",
       "summary": "AI-generated campaign attacks are here. So far, Massachusetts has no laws to restrict them. The Boston Globe",
       "topic": "governance-politics",
       "source": "The Boston Globe",
       "date": "Tue, 10 Feb 2026 13:15:00 GMT",
-      "imageUrl": "data/images/governance-politics/qqax92.webp",
+      "imageUrl": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/Y5PLWA3ZEOVABKI5NYWO6RHCGE.jpg?auth=401383be0a4fbbd8007040b5eeb41d31f2b6b2bbeb2849b572e40d1964292cfe&width=1200&height=672",
       "url": "https://www.bostonglobe.com/2026/02/10/metro/massachusetts-campaigns-ai-content-maura-healey-attacks/"
     },
     {
@@ -4021,16 +4021,6 @@
       "date": "Tue, 10 Feb 2026 13:06:21 GMT",
       "imageUrl": "images/news/robotic-arms-automated-data-center-server-racks-ai-compute-cluster-cloud-computing-gpu-infrastructure-industrial-robotics-machine-learning-automation-network-cabling-digital-factory-technology-3d-isometric-illustration.webp",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUHFLNktwaHVUOWVveHAtSFp0eThnLXAtVDJxWWF1ZlFKU0xqTzBGZHRaWjM0aDd4NGZsdmRhTmFnUlp4QkhUZEhxWEE1YkM3RHlqWWtiTzE2ZFZObTRXNWppazlBeFJXRnF0bGU1OHVHTE5aQkFEQWQ0SEtmOER3ejdZLTRNY2JfaF9SZXRkZE1sZF9qd0E5bzlkblpLY1YybERvQlRTWnVTRHpkc0dMcGh5QUNPUE5heFhyTk1R?oc=5"
-    },
-    {
-      "id": "gn-governance-politics-27",
-      "title": "Congress hears split testimony on AI regulation and the workplace - HR Executive",
-      "summary": "Congress hears split testimony on AI regulation and the workplace HR Executive",
-      "topic": "governance-politics",
-      "source": "HR Executive",
-      "date": "Tue, 10 Feb 2026 13:00:10 GMT",
-      "imageUrl": "data/images/governance-politics/dwa4x7.webp",
-      "url": "https://hrexecutive.com/congress-hears-split-testimony-on-ai-regulation-and-the-workplace/"
     },
     {
       "id": "gn-visual-art-photography-20",
@@ -4083,16 +4073,6 @@
       "url": "https://www.inkl.com/news/ai-assisted-hacking-group-hits-targets-with-a-complicated-social-engineering-scam-that-involves-deepfaked-ceos-spoofed-zoom-calls-and-a-malicious-troubleshooting-program"
     },
     {
-      "id": "gn-governance-politics-49",
-      "title": "Florida Legislature stalls on DeSantis AI regulations as House balks at governor's approach - The Business Journals",
-      "summary": "Florida Legislature stalls on DeSantis AI regulations as House balks at governor's approach The Business Journals",
-      "topic": "governance-politics",
-      "source": "The Business Journals",
-      "date": "Tue, 10 Feb 2026 12:26:00 GMT",
-      "imageUrl": "data/images/governance-politics/ckb8lv.webp",
-      "url": "https://www.bizjournals.com/jacksonville/news/2026/02/10/ai-bill-florida-stalls.html"
-    },
-    {
       "id": "gn-musical-art-10",
       "title": "YouTube Music drops AI playlist generator for Premium subs - The Tech Buzz",
       "summary": "YouTube Music drops AI playlist generator for Premium subs The Tech Buzz",
@@ -4113,13 +4093,13 @@
       "url": "chrome-error://chromewebdata/"
     },
     {
-      "id": "gn-governance-politics-26",
+      "id": "gn-governance-politics-27",
       "title": "Preemption is No Panacea: Congress Must Create a Workable National Framework for American AI Dominance - corporatecomplianceinsights.com",
       "summary": "Preemption is No Panacea: Congress Must Create a Workable National Framework for American AI Dominance corporatecomplianceinsights.com",
       "topic": "governance-politics",
       "source": "corporatecomplianceinsights.com",
       "date": "Tue, 10 Feb 2026 12:02:22 GMT",
-      "imageUrl": "data/images/governance-politics/n0r1kl.webp",
+      "imageUrl": "https://www.corporatecomplianceinsights.com/wp-content/uploads/2026/02/us-flag-on-computer-chip.jpg",
       "url": "https://www.corporatecomplianceinsights.com/congress-must-create-workable-national-framework-american-ai-dominance/"
     },
     {
@@ -4253,6 +4233,16 @@
       "url": "https://thedefensepost.com/2026/02/10/armenia-us-vbat-drones/"
     },
     {
+      "id": "gn-governance-politics-16",
+      "title": "AI as ‘Poison and Antidote’: Prof. Odunlami Calls for Ethical Use of Technology Against Misinformation - factcheckafrica.net",
+      "summary": "AI as ‘Poison and Antidote’: Prof. Odunlami Calls for Ethical Use of Technology Against Misinformation factcheckafrica.net",
+      "topic": "governance-politics",
+      "source": "factcheckafrica.net",
+      "date": "Tue, 10 Feb 2026 09:32:09 GMT",
+      "imageUrl": "images/news/transparent-glass-cube-enclosing-interlocking-gears-cogs-mechanical-system-ai-engine-automation-workflow-process-optimization-industrial-technology-innovation-digital-network-nodes-3d-render-minimalist-pedestal-display-tech-concept-illustration.webp",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQVFlTN0MzTk4tdnF5aWc0bVlIbW1yZzN3emRmc3hsSzVXSko4emM1YVB1dkwtdG1PQW5zb1NBNm9DMXlLenZna0pfdUQteVdTR1JWcWJQTlVDQkN5dG5scG9JandIbE9iUS0zREFmNGRYMzFuMUN5UnFYWUV5YTExT1ZFdk1SSnpWZVg4cTNMMnBxTXJIWG1aUXh4NG5nN1k5Y0ltM2g0VUpqUEVjdTdKRV9jT3hLS3VieE16cHBGeElpVHd2WXc?oc=5"
+    },
+    {
       "id": "gn-health-style-34",
       "title": "Saudi Arabia Healthcare IT Market: Digital Transformation, AI Integration &amp; Growth Outlook - vocal.media",
       "summary": "Saudi Arabia Healthcare IT Market: Digital Transformation, AI Integration & Growth Outlook vocal.media",
@@ -4323,16 +4313,6 @@
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRDJxbndPVk1sT0l0SG41d2h5Q1VRRnV1SVJUR3ZlMFB1b3l6elI0Um02MGhSRE9fRE1mU1VhUzhNOGFYZkhNWThibnhuS0JBLVdyX1NJcDluN1FiSGRFT1hxT291bkJweEY2U1Y0SDVnZ1g0T1N4NmJfV2EtVGd2ck5PRmNtUEFrZkEycWxKYll6Vmtic2ZLUFhTU3RQbjhTWlVNYw?oc=5"
     },
     {
-      "id": "gn-governance-politics-35",
-      "title": "AI Regulation and Compliance in the US – Navigating the Legal Intricacies of Software Development - appinventiv.com",
-      "summary": "AI Regulation and Compliance in the US – Navigating the Legal Intricacies of Software Development appinventiv.com",
-      "topic": "governance-politics",
-      "source": "appinventiv.com",
-      "date": "Tue, 10 Feb 2026 08:00:00 GMT",
-      "imageUrl": "data/images/governance-politics/bkohrj.webp",
-      "url": "https://appinventiv.com/blog/ai-regulation-and-compliance-in-us/"
-    },
-    {
       "id": "gn-business-economy-12",
       "title": "The Best AI ETFs and How to Start Investing - NerdWallet",
       "summary": "The Best AI ETFs and How to Start Investing NerdWallet",
@@ -4381,6 +4361,16 @@
       "date": "Tue, 10 Feb 2026 08:00:00 GMT",
       "imageUrl": "https://www.simplilearn.com/ice9/free_resources_article_thumb/Akshay.jpg",
       "url": "https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/artificial-intelligence-applications"
+    },
+    {
+      "id": "gn-governance-politics-34",
+      "title": "AI Regulation and Compliance in the US – Navigating the Legal Intricacies of Software Development - appinventiv.com",
+      "summary": "AI Regulation and Compliance in the US – Navigating the Legal Intricacies of Software Development appinventiv.com",
+      "topic": "governance-politics",
+      "source": "appinventiv.com",
+      "date": "Tue, 10 Feb 2026 08:00:00 GMT",
+      "imageUrl": "https://appinventiv.com/wp-content/uploads/2024/09/ai_regulation_and_compliance_in_the_us_navigating_the_legal_intricacies_of_software_development.webp",
+      "url": "https://appinventiv.com/blog/ai-regulation-and-compliance-in-us/"
     },
     {
       "id": "gn-environment-science-9",
@@ -4553,13 +4543,13 @@
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdWpEdi1nSVR3TWYyYVpxNFlGZmJPbGg3dlMwYkgzc0dKMjgzZHlFcFhMWDkxXzhLVnE5YTVFMENiUGNWLW9QVEt5VmpwVkMtOTFmZEQwNzhpSlQzM21aUlVNQWZFTmJ5d1o1LWlpSGdPc0oyaVk4S0dmcl9kUGxDVU56RS1ka3lEVDRj?oc=5"
     },
     {
-      "id": "gn-governance-politics-33",
+      "id": "gn-governance-politics-32",
       "title": "India Unveils Techno-Legal Framework to Embed Governance Into AI Systems by Design - BABL AI",
       "summary": "India Unveils Techno-Legal Framework to Embed Governance Into AI Systems by Design BABL AI",
       "topic": "governance-politics",
       "source": "BABL AI",
       "date": "Tue, 10 Feb 2026 01:40:11 GMT",
-      "imageUrl": "data/images/governance-politics/cy9cf8.webp",
+      "imageUrl": "https://babl.ai/wp-content/uploads/2026/02/BABL-News-Graphic-2026-02-09T175156.563.png",
       "url": "https://babl.ai/india-unveils-techno-legal-framework-to-embed-governance-into-ai-systems-by-design/"
     },
     {
@@ -4663,13 +4653,13 @@
       "url": "https://www.middleeasteye.net/news/saudi-arabia-talks-us-company-ai-powered-drones-sources-say"
     },
     {
-      "id": "gn-governance-politics-25",
+      "id": "gn-governance-politics-26",
       "title": "Governing the AI transition: Lessons from the 1996 Telecommunications Act - Brookings",
       "summary": "Governing the AI transition: Lessons from the 1996 Telecommunications Act Brookings",
       "topic": "governance-politics",
       "source": "Brookings",
       "date": "Mon, 09 Feb 2026 21:22:30 GMT",
-      "imageUrl": "data/images/governance-politics/q96lxx.webp",
+      "imageUrl": "https://www.brookings.edu/wp-content/uploads/2026/01/GettyImages-1678687629-1.jpg?quality=75",
       "url": "https://www.brookings.edu/articles/governing-the-ai-transition-lessons-from-the-1996-telecommunications-act/"
     },
     {
@@ -4733,6 +4723,16 @@
       "url": "https://fortune.com/2026/02/09/how-bad-will-ai-disruption-eating-stock-market-tech-stocks-be-economic-boom/"
     },
     {
+      "id": "gn-governance-politics-39",
+      "title": "Artificial intelligence: key updates and developments (2 – 9 February) - Lexology",
+      "summary": "Artificial intelligence: key updates and developments (2 – 9 February) Lexology",
+      "topic": "governance-politics",
+      "source": "Lexology",
+      "date": "Mon, 09 Feb 2026 18:24:23 GMT",
+      "imageUrl": "images/news/abstract-human-silhouette-profile-blue-aura-digital-brain-network-neural-connections-ai-mind-machine-learning-cognitive-science-neurotechnology-futuristic-wireframe-head-technology-innovation-data-visualization-virtual-intelligence-ethereal-glow.webp",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVDY0REYyODdJOEh5QXVTblhJeURfeWRBemt5b2hjVmc5akxFRU1La2daNnB4NHMtaDdRSkRSVDRyY2FGcFYwbDZvdTU0bUw0VDUzdG5Ea0g5WWl1dnd4TnNCdXJrd2Z4V210SUlEeTZCRjdPd1dYcHJHaUsxM1A0cXhmY2lkMUtqM1BDeUNsZVJsSG5ZRllvbXNDcmc2U1hPLWYtNg?oc=5"
+    },
+    {
       "id": "gn-visual-art-photography-31",
       "title": "AI-generated ads dropped the ball at this year’s Super Bowl - The Verge",
       "summary": "AI-generated ads dropped the ball at this year’s Super Bowl The Verge",
@@ -4769,7 +4769,7 @@
       "topic": "governance-politics",
       "source": "1News",
       "date": "Mon, 09 Feb 2026 17:04:20 GMT",
-      "imageUrl": "data/images/governance-politics/qinb41.webp",
+      "imageUrl": "https://cloudfront-ap-southeast-2.images.arcpublishing.com/tvnz/AA5MADQPRVGAXE7SDG3ZRIOQBE.jpg",
       "url": "https://www.1news.co.nz/2026/02/10/election-2026-what-parties-say-about-the-threat-of-ai-to-fool-voters/"
     },
     {
@@ -4973,13 +4973,13 @@
       "url": "https://finance.yahoo.com/news/gbt-technologies-inc-otc-gtch-134200675.html"
     },
     {
-      "id": "gn-governance-politics-36",
+      "id": "gn-governance-politics-35",
       "title": "Malaysia steps up legal framework for AI governance - Vietnam+ (VietnamPlus)",
       "summary": "Malaysia steps up legal framework for AI governance Vietnam+ (VietnamPlus)",
       "topic": "governance-politics",
       "source": "Vietnam+ (VietnamPlus)",
       "date": "Mon, 09 Feb 2026 13:29:56 GMT",
-      "imageUrl": "images/news/government-courthouse-parliament-building-silhouette-scales-of-justice-digital-law-ai-regulation-tech-policy-governance-cybersecurity-circuit-board-network-legal-system-justice-balance.webp",
+      "imageUrl": "images/news/fashion-design-mannequin-dress-form-tailor-dummy-ai-neural-network-overlay-monochrome-minimal-collage-blank-photo-frames-mockup-template-creative-layout-editorial-design-studio-apparel-patternmaking-visualization-modern-3d-illustration.webp",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNVNtODVoeFpRNTd4ZzFSLXI2ZU1IVVZlWnlHRXlSMlJKcXBWbjZKbUxsZ1VmcnVOcTAxNkgweVQxX25jbG9RUHFzUUpTQS1GRlpMQWxzMWlQb21qU0h5QzlpdkNReVZTM2JEcXNhWmFjLWoya3IyT0VlNnRzaF9ESGVvX1VGdFdhcUFnQzlqU280d1I0dC1r?oc=5"
     },
     {
@@ -5121,6 +5121,16 @@
       "date": "Mon, 09 Feb 2026 10:05:26 GMT",
       "imageUrl": "https://www.techzine.eu/wp-content/uploads/2025/01/Whatsapp_unsplash.jpg",
       "url": "https://www.techzine.eu/news/applications/138615/eu-commission-targets-meta-s-blockade-of-rival-ai-chatbots-on-whatsapp/"
+    },
+    {
+      "id": "gn-governance-politics-47",
+      "title": "Digital minister confirms AI governance bill to combat deepfakes is in the works - Malay Mail",
+      "summary": "Digital minister confirms AI governance bill to combat deepfakes is in the works Malay Mail",
+      "topic": "governance-politics",
+      "source": "Malay Mail",
+      "date": "Mon, 09 Feb 2026 09:23:28 GMT",
+      "imageUrl": "images/news/abstract-wireframe-brain-neural-network-mesh-line-art-digital-neuroscience-ai-intelligence-cognition-mind-thinking-3d-hologram-organic-curves-ethereal-minimalist-monochrome-gray-background-data-visualization-neuron-connectivity-machine-learning.webp",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNbS1IeExLcHVVN0pvTkJTRVFXWlBKTXRQbi13cUlCTlI2czZGZzR1RkhMRkNpT2lZcExneU1wY0RRMGE0QUpsVG5HSG5BUlpQUWhBamN5NVB5Qk80em00RnZBZi1FZkVwakVmcm1ZcVFjSll5dWNOdDJqUHNWMGZxUGpqUm1EcFpxYzZRVlViVHZQZjdEVFdIcm8waFZTY0dlcU0wZzNLZnZCNnJXZjVKRjd0TzUyUWM4SHl5bC1pMkliMFZXU1BFUG1mSDdqOVItSzNVaNIB2gFBVV95cUxQei11R25PTGZYZ09LZnhYSVotZFVxNnJqWFM2T0xIMU5xcDFNdm1yUFRrYjlITTVmNHBJVmZYYS1laEJZRi1ZM1ZrQUVqV1hfb0pwVGs1Ny04WHRid2N2dldWQ1BvZ2VPYW5RRFNKU190SGJFSHBVZk5halJULXp0RDNHbE10RXJYWU9MNzFSZGl2U3F6ZWtIVVVFSUpHYUpsZ3NGQzN4ZlpOdW1JNUt6ZUlhYkhJZjlUME1YcFJITVZpWk01ZmQwNXkxd1ROQWI5QVVaWjdMTmJ3Zw?oc=5"
     },
     {
       "id": "gn-environment-science-3",
@@ -5349,7 +5359,7 @@
       "topic": "governance-politics",
       "source": "Wamda",
       "date": "Mon, 09 Feb 2026 02:03:11 GMT",
-      "imageUrl": "data/images/governance-politics/hp92jo.webp",
+      "imageUrl": "https://cdn.wamda.com/feature-images/e41870ea1531ff2.jpg",
       "url": "https://www.wamda.com/2026/02/ai-regulation-taking-shape-companies-need-act-early"
     },
     {
@@ -5453,13 +5463,13 @@
       "url": "https://ts2.tech/en/intel-stock-back-above-50-after-ai-capex-bounce-and-china-cpu-shortage-report-what-to-watch-next-week/"
     },
     {
-      "id": "gn-governance-politics-8",
+      "id": "gn-governance-politics-11",
       "title": "AI-driven disinformation targets BNP as elections near - Jagonews24.com",
       "summary": "AI-driven disinformation targets BNP as elections near Jagonews24.com",
       "topic": "governance-politics",
       "source": "Jagonews24.com",
       "date": "Sun, 08 Feb 2026 07:08:24 GMT",
-      "imageUrl": "data/images/governance-politics/yrbybk.webp",
+      "imageUrl": "https://cdn.jagonews24.com/media/imgAllNew/BG/2023March/fake-20260208130606.jpg",
       "url": "https://www.jagonews24.com/en/politics/news/89705"
     },
     {
@@ -5491,16 +5501,6 @@
       "date": "Sat, 07 Feb 2026 23:30:00 GMT",
       "imageUrl": "https://www.ecoticias.com/en/wp-content/uploads/2026/02/china-indonesia-ai-regulation-data-centers-energy-water.jpg",
       "url": "https://www.ecoticias.com/en/the-world-is-increasingly-concerned-about-total-ai-and-china-is-aligning-itself-with-indonesia-in-a-wave-of-regulations-that-seek-to-curb-its-total-replacement/26787/"
-    },
-    {
-      "id": "gn-governance-politics-47",
-      "title": "New York CEO Dan Herbatschek of Ramsey Theory Capital Delivers New Real-Time Governance for Enterprise AI Systems as AI Safety Laws Accelerate - The Manila Times",
-      "summary": "New York CEO Dan Herbatschek of Ramsey Theory Capital Delivers New Real-Time Governance for Enterprise AI Systems as AI Safety Laws Accelerate The Manila Times",
-      "topic": "governance-politics",
-      "source": "The Manila Times",
-      "date": "Sat, 07 Feb 2026 16:51:05 GMT",
-      "imageUrl": "data/images/governance-politics/pnd8mt.webp",
-      "url": "https://www.manilatimes.net/2026/02/08/tmt-newswire/globenewswire/new-york-ceo-dan-herbatschek-of-ramsey-theory-capital-delivers-new-real-time-governance-for-enterprise-ai-systems-as-ai-safety-laws-accelerate/2273786"
     }
   ],
   "channelVideos": [
