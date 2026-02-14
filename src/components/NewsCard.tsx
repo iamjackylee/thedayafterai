@@ -24,7 +24,7 @@ function formatDate(dateStr: string): string {
 /** Resolve image URL — local paths (downloads, screenshots, curated fallbacks) need the basePath prefix */
 function resolveImageUrl(imageUrl: string): string {
   if (!imageUrl) return "";
-  // Local paths: "data/images/...", "data/screenshots/...", "images/{category}/..."
+  // Local paths: "data/images/...", "data/screenshots/...", "images/news/..."
   if (imageUrl.startsWith("data/") || imageUrl.startsWith("images/")) {
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
     return `${basePath}/${imageUrl}`;
