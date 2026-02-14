@@ -28,6 +28,10 @@ const ARTICLES_PER_CATEGORY = 50;
 const PLAYWRIGHT_CONCURRENCY = 5;
 const PLAYWRIGHT_TIMEOUT = 15000;
 
+// AI-relevance keywords — articles must mention at least one to be included.
+// This prevents Google News from returning tangentially related non-AI articles.
+const AI_RELEVANCE_KEYWORDS = /(?:\b(?:ai|artificial\s+intelligence|machine\s+learning|deep\s*learning|neural\s+nets?|llms?|large\s+language\s+models?|generative|gpt|chatgpt|gemini|claude|copilot|openai|deepmind|anthropic|midjourney|dall[\-·]?e|stable\s+diffusion|chatbots?|deepfakes?|robot(?:ic|s)?|autonomous|self[\-\s]driving|computer\s+vision|natural\s+language|nlp|algorithms?|automation|predictive\s+analytics|smart\s+(?:device|assistant|speaker|home)|wearables?|drones?|uavs?)\b|a\.i\.)/i;
+
 // ── Category search queries ────────────────────────────────────────
 
 const CATEGORY_QUERIES = {
@@ -580,13 +584,19 @@ function parseRssItems(items, articles, seenTitles, category) {
 
     const title = getTagContent(item, "title")[0] || "";
     if (!title || seenTitles.has(title)) continue;
+
+    const rawDescription = getTagContent(item, "description")[0] || "";
+    const description = stripHtml(rawDescription);
+
+    // Reject articles that don't mention AI in title or description
+    const textToCheck = `${title} ${description}`;
+    if (!AI_RELEVANCE_KEYWORDS.test(textToCheck)) continue;
+
     seenTitles.add(title);
 
     const link = getTagContent(item, "link")[0] || "";
     const pubDate = getTagContent(item, "pubDate")[0] || "";
     const source = getTagContent(item, "source")[0] || "Google News";
-    const rawDescription = getTagContent(item, "description")[0] || "";
-    const description = stripHtml(rawDescription);
 
     let imageUrl = "";
     const mediaUrls = getTagAttr(item, "media:content", "url");
