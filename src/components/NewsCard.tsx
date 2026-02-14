@@ -1,6 +1,7 @@
 "use client";
 
-import { ExternalLink, Clock } from "lucide-react";
+import { useState } from "react";
+import { ExternalLink, Clock, Newspaper } from "lucide-react";
 import { decodeEntities, type NewsArticle } from "@/lib/api";
 
 interface NewsCardProps {
@@ -34,6 +35,8 @@ function resolveImageUrl(imageUrl: string): string {
 
 export default function NewsCard({ article, topicColor }: NewsCardProps) {
   const imgSrc = resolveImageUrl(article.imageUrl);
+  const [imgFailed, setImgFailed] = useState(false);
+  const showFallback = !imgSrc || imgFailed;
 
   return (
     <a
@@ -43,18 +46,24 @@ export default function NewsCard({ article, topicColor }: NewsCardProps) {
       className="group bg-[var(--surface)] overflow-hidden border border-[var(--border)] hover:border-[var(--border-light)] transition-all flex flex-col h-full card-hover"
       style={{ ["--card-accent" as string]: topicColor || "var(--accent)" }}
     >
-      {/* Image — gradient background shows through if image is missing or broken */}
+      {/* Image — fallback with source name + icon when image is missing or broken */}
       <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460]">
-        {imgSrc && (
+        {imgSrc && !imgFailed && (
           <img
             src={imgSrc}
             alt=""
             loading="lazy"
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-            onError={(e) => {
-              (e.target as HTMLImageElement).style.display = "none";
-            }}
+            onError={() => setImgFailed(true)}
           />
+        )}
+        {showFallback && (
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 px-4">
+            <Newspaper size={28} className="text-white/25" />
+            <span className="text-white/40 text-xs text-center truncate max-w-full">
+              {article.source}
+            </span>
+          </div>
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
       </div>
