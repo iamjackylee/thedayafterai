@@ -148,8 +148,8 @@ export default function EthicsPolicyPage() {
               </li>
               <li>
                 <strong className="text-white">AI Market Insights</strong> — AI
-                forecasts the next-day price direction of a single U.S.-listed
-                stock each day. This is an experimental feature published for
+                forecasts the price direction of a U.S.-listed stock over the
+                next five trading days. This is an experimental feature published for
                 educational and experimental purposes only. It does not
                 constitute financial product advice. See our{" "}
                 <Link
