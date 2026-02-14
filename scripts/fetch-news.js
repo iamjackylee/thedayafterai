@@ -20,6 +20,7 @@ const PLAYLIST_URL = `https://www.youtube.com/playlist?list=${PLAYLIST_ID}`;
 
 const OUTPUT_DIR = path.join(__dirname, "..", "public", "data");
 const SCREENSHOTS_DIR = path.join(__dirname, "..", "public", "data", "screenshots");
+const IMAGES_DIR = path.join(__dirname, "..", "public", "images");
 const PREFETCHED_PATH = path.join(OUTPUT_DIR, "prefetched.json");
 const URL_CACHE_PATH = path.join(OUTPUT_DIR, "url-cache.json");
 const CUSTOM_JSON_PATH = path.join(OUTPUT_DIR, "custom-articles.json");
@@ -930,6 +931,9 @@ async function resolveArticles(articles) {
   saveUrlCache(cache);
   console.log(`Resolution done: ${resolved} resolved, ${failed} failed`);
 
+  // Download extracted images locally for faster UI display
+  await downloadArticleImages(articles);
+
   // Screenshot fallback — capture hero images for articles still missing images
   await captureScreenshots(articles, cache);
 
@@ -998,6 +1002,117 @@ async function fetchOgImageHttp(url) {
 
   } catch { /* timeout or network error — skip */ }
   return "";
+}
+
+// ── Local image download & optimization ─────────────────────────────
+// After og:image extraction, download each article's image locally into
+// public/images/{category}/{hash}.webp for faster UI display and to avoid
+// hotlinking / CORS issues. Uses sharp for resize + WebP conversion.
+// Falls back to raw download if sharp is unavailable.
+
+const IMAGE_DL_CONCURRENCY = 10;
+
+/** Download article images locally, optimise with sharp if available.
+ *  Inserts between HTTP og:image extraction and screenshot fallback. */
+async function downloadArticleImages(articles) {
+  const toDownload = articles.filter((a) =>
+    a.imageUrl && a.imageUrl.startsWith("http") && !a.imageUrl.includes("unsplash.com")
+  );
+  if (toDownload.length === 0) return;
+
+  let sharp;
+  try { sharp = require("sharp"); } catch {
+    console.warn("sharp not installed — skipping local image download (images served from external URLs)");
+    return;
+  }
+
+  console.log(`Downloading ${toDownload.length} article images locally...`);
+  let downloaded = 0, skipped = 0, failed = 0;
+
+  for (let i = 0; i < toDownload.length; i += IMAGE_DL_CONCURRENCY) {
+    const batch = toDownload.slice(i, i + IMAGE_DL_CONCURRENCY);
+    await Promise.allSettled(batch.map(async (article) => {
+      const category = article.topic || "technology-innovation";
+      const categoryDir = path.join(IMAGES_DIR, category);
+      fs.mkdirSync(categoryDir, { recursive: true });
+
+      const hash = screenshotHash(article.imageUrl);
+      const filename = `${hash}.webp`;
+      const localPath = `images/${category}/${filename}`;
+      const fullPath = path.join(categoryDir, filename);
+
+      // Skip if already downloaded in a previous run
+      if (fs.existsSync(fullPath)) {
+        const stat = fs.statSync(fullPath);
+        if (stat.size > 1000) {
+          article.imageUrl = localPath;
+          skipped++;
+          return;
+        }
+        // Tiny/corrupt file — re-download
+        fs.unlinkSync(fullPath);
+      }
+
+      try {
+        const res = await fetch(article.imageUrl, {
+          headers: { "User-Agent": BROWSER_UA },
+          redirect: "follow",
+          signal: AbortSignal.timeout(10000),
+        });
+        if (!res.ok) { failed++; return; }
+
+        const contentType = res.headers.get("content-type") || "";
+        if (!contentType.startsWith("image/")) { failed++; return; }
+
+        const buffer = Buffer.from(await res.arrayBuffer());
+        if (buffer.length < 1000) { failed++; return; }
+
+        // Resize to 600×400 and convert to WebP for consistent, fast thumbnails
+        await sharp(buffer)
+          .resize(600, 400, { fit: "cover", position: "centre" })
+          .webp({ quality: 80 })
+          .toFile(fullPath);
+
+        const stat = fs.statSync(fullPath);
+        if (stat.size < 500) {
+          fs.unlinkSync(fullPath);
+          failed++;
+          return;
+        }
+
+        article.imageUrl = localPath;
+        downloaded++;
+      } catch {
+        // Download or sharp error — leave the external URL as-is
+        failed++;
+      }
+    }));
+  }
+
+  console.log(`  Image download: ${downloaded} new, ${skipped} cached, ${failed} failed`);
+}
+
+/** Remove locally-downloaded images no longer referenced by any article. */
+function cleanupCategoryImages(articles) {
+  const referenced = new Set(
+    articles
+      .filter((a) => a.imageUrl?.startsWith("images/"))
+      .map((a) => a.imageUrl)
+  );
+  let removed = 0;
+  for (const category of CATEGORY_KEYS) {
+    const dir = path.join(IMAGES_DIR, category);
+    if (!fs.existsSync(dir)) continue;
+    for (const file of fs.readdirSync(dir)) {
+      if (file === ".gitkeep") continue;
+      const relPath = `images/${category}/${file}`;
+      if (!referenced.has(relPath)) {
+        fs.unlinkSync(path.join(dir, file));
+        removed++;
+      }
+    }
+  }
+  if (removed > 0) console.log(`Cleaned up ${removed} unused category images`);
 }
 
 // ── Screenshot-based image capture ─────────────────────────────────
@@ -1595,6 +1710,9 @@ async function main() {
   data.fetchedAt = new Date().toISOString();
   data.playlistUrl = PLAYLIST_URL;
   savePrefetched(data);
+
+  // Clean up downloaded images no longer referenced by any article
+  cleanupCategoryImages(data.news || []);
 
   await closePlaywright();
 

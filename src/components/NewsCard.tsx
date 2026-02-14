@@ -39,11 +39,11 @@ function formatDate(dateStr: string): string {
   }
 }
 
-/** Resolve image URL — local screenshot paths need the basePath prefix */
+/** Resolve image URL — local paths (screenshots + category images) need the basePath prefix */
 function resolveImageUrl(imageUrl: string): string {
   if (!imageUrl) return "";
-  // Local screenshot paths stored as "data/screenshots/xxx.jpg"
-  if (imageUrl.startsWith("data/")) {
+  // Local paths: "data/screenshots/xxx.jpg" or "images/{category}/xxx.webp"
+  if (imageUrl.startsWith("data/") || imageUrl.startsWith("images/")) {
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
     return `${basePath}/${imageUrl}`;
   }
