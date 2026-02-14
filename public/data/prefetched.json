@@ -1,7 +1,17 @@
 {
-  "fetchedAt": "2026-02-14T07:25:12.166Z",
+  "fetchedAt": "2026-02-14T09:55:15.523Z",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe",
   "news": [
+    {
+      "id": "gn-unmanned-aircraft-29",
+      "title": "AI Enters the Battlefield Debate as U.S. Tests Voice-Controlled Drone Swarms - Sri Lanka Guardian",
+      "summary": "AI Enters the Battlefield Debate as U.S. Tests Voice-Controlled Drone Swarms Sri Lanka Guardian",
+      "topic": "unmanned-aircraft",
+      "source": "Sri Lanka Guardian",
+      "date": "Sat, 14 Feb 2026 05:33:14 GMT",
+      "imageUrl": "",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQVJROEZFUkRTdzR4cXh6UjJqQ1lRb2JtUGRSOWY5WWo5djYtUGNoWHFpdTVlcVFmcVpUbUZ1eWVweHZSSV83VGxWR1E0b0cyZFdBYnJwNzdrVWpzNllCRGZhMF8weVJRbXdWeDZZTTNOdGJyaVJLTHdXVzI4REk2SjBhNTN1NmdjdXNwRk9mU3NrNTFoczhKRk5VTVhaZTZE?oc=5"
+    },
     {
       "id": "gn-business-economy-38",
       "title": "Portfolio Shifts: Can YMAB disrupt its industry - Quarterly Market Review &amp; AI Driven Stock Movement Reports - mfd.ru",
@@ -53,13 +63,13 @@
       "url": "https://www.devdiscourse.com/article/technology/3804837-markets-edge-higher-despite-ai-disruption-fears-and-inflation-optimism?amp"
     },
     {
-      "id": "gn-unmanned-aircraft-19",
+      "id": "gn-unmanned-aircraft-13",
       "title": "'A different set of rules': Thermal drone footage shows Musk's AI power plant flouting clean air regulations - MLK50: Justice Through Journalism",
       "summary": "'A different set of rules': Thermal drone footage shows Musk's AI power plant flouting clean air regulations MLK50: Justice Through Journalism",
       "topic": "unmanned-aircraft",
       "source": "MLK50: Justice Through Journalism",
       "date": "Fri, 13 Feb 2026 20:25:06 GMT",
-      "imageUrl": "https://mlk50.com/wp-content/uploads/2026/02/SouthavenThermalSplitScreen_SIMON-scaled.jpg",
+      "imageUrl": "data/images/unmanned-aircraft/vantas.webp",
       "url": "https://mlk50.com/2026/02/13/a-different-set-of-rules-thermal-drone-footage-shows-musks-ai-power-plant-flouting-clean-air-regulations/"
     },
     {
@@ -193,13 +203,13 @@
       "url": "https://news.engineering.utoronto.ca/new-diagnostic-system-leverages-ai-to-help-fight-hospital-acquired-infections/"
     },
     {
-      "id": "gn-unmanned-aircraft-8",
+      "id": "gn-unmanned-aircraft-5",
       "title": "Unmanned Aerial Vehicle (UAV) Drones Market Size Worth USD 209.91 Billion by 2035 Driven by Commercial Adoption and Defense Investments - Business Upturn",
       "summary": "Unmanned Aerial Vehicle (UAV) Drones Market Size Worth USD 209.91 Billion by 2035 Driven by Commercial Adoption and Defense Investments Business Upturn",
       "topic": "unmanned-aircraft",
       "source": "Business Upturn",
       "date": "Fri, 13 Feb 2026 14:50:00 GMT",
-      "imageUrl": "https://www.businessupturn.com/wp-content/uploads/2026/02/image1-75.png",
+      "imageUrl": "data/images/unmanned-aircraft/6aq03r.webp",
       "url": "https://www.businessupturn.com/brand-post/unmanned-aerial-vehicle-uav-drones-market-size-worth-usd-209-91-billion-by-2035-driven-by-commercial-adoption-and-defense-investments/"
     },
     {
@@ -221,16 +231,6 @@
       "date": "Fri, 13 Feb 2026 14:37:33 GMT",
       "imageUrl": "https://phantom-elmundo-us.unidadeditorial.es/5e1caac504eba20a2dce2db10a9c4683/crop/0x0/1023x682/f/webp/assets/multimedia/imagenes/2026/02/13/17709934379901.jpg",
       "url": "https://www.mundoamerica.com/news/2026/02/13/698f372be4d4d8575a8b456f.html"
-    },
-    {
-      "id": "gn-unmanned-aircraft-47",
-      "title": "USA Introduces Autonomous Combat Aircraft - RaillyNews",
-      "summary": "USA Introduces Autonomous Combat Aircraft RaillyNews",
-      "topic": "unmanned-aircraft",
-      "source": "RaillyNews",
-      "date": "Fri, 13 Feb 2026 14:36:26 GMT",
-      "imageUrl": "https://i0.wp.com/raillynews.com/wp-content/uploads/2026/02/usa-introduces-autonomous-combat-aircraft-lfpPXU44.jpg?fit=1200%2C800&ssl=1",
-      "url": "https://raillynews.com/2026/02/usa-introduces-autonomous-combat-aircraft/"
     },
     {
       "id": "gn-environment-science-49",
@@ -271,6 +271,16 @@
       "date": "Fri, 13 Feb 2026 14:03:35 GMT",
       "imageUrl": "",
       "url": "https://intellectia.ai/news/stock/market-declines-amid-ai-disruption-concerns"
+    },
+    {
+      "id": "gn-unmanned-aircraft-40",
+      "title": "Shield AI in Talks to Raise $1 Billion at $12 Billion Valuation - Bloomberg.com",
+      "summary": "Shield AI in Talks to Raise $1 Billion at $12 Billion Valuation Bloomberg.com",
+      "topic": "unmanned-aircraft",
+      "source": "Bloomberg.com",
+      "date": "Fri, 13 Feb 2026 14:03:32 GMT",
+      "imageUrl": "",
+      "url": "https://www.bloomberg.com/news/articles/2026-02-13/shield-ai-in-talks-to-raise-1-billion-at-12-billion-valuation"
     },
     {
       "id": "gn-environment-science-15",
@@ -583,23 +593,23 @@
       "url": "https://marquettewire.org/4150577/opinion/ai-musicians-are-unethical-to-the-music-industry/"
     },
     {
-      "id": "gn-unmanned-aircraft-28",
+      "id": "gn-unmanned-aircraft-21",
       "title": "Hensoldt and Helsing partner on CA-1 Europa drone - Aerospace Global News",
       "summary": "Hensoldt and Helsing partner on CA-1 Europa drone Aerospace Global News",
       "topic": "unmanned-aircraft",
       "source": "Aerospace Global News",
       "date": "Fri, 13 Feb 2026 10:01:22 GMT",
-      "imageUrl": "https://aerospaceglobalnews.com/wp-content/uploads/2026/02/Helsing-CA-1-Europa-with-munitions.jpg",
+      "imageUrl": "data/images/unmanned-aircraft/oyqqsy.webp",
       "url": "https://aerospaceglobalnews.com/news/hensoldt-helsing-ca1-europa-drone/"
     },
     {
-      "id": "gn-unmanned-aircraft-24",
+      "id": "gn-unmanned-aircraft-17",
       "title": "How Regulations and Public Acceptance Limit Drone Usage in Supply Chains - GetTransport.com",
       "summary": "How Regulations and Public Acceptance Limit Drone Usage in Supply Chains GetTransport.com",
       "topic": "unmanned-aircraft",
       "source": "GetTransport.com",
       "date": "Fri, 13 Feb 2026 09:25:49 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=600&h=400&fit=crop&auto=format",
+      "imageUrl": "",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdEJlVEVVZmFtTTY4Qm9TSlNCcXdKb19aVlNSNUVOd1JoelBsY0c2a21mdWdORUFXMl9xaFEtblRmZGtzSlFtTEtrRlAyZ2VYTHp4QjdIZFp1Ujd4TmdjT2VfRkpCRkZMeXZsekxNdk5rNWU1bUFTeFlVRUJKanBGTGFCRlJ1dEg3MTgyZ21IOHg1U0pXWlViN2hNZDhvRmVVekxkTVp3?oc=5"
     },
     {
@@ -643,13 +653,13 @@
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1hVU03dXAxdTNaQzE3S0JPUDY1VHBzbnZ5YUhFSGVVUy1rUnlJLVBMWDByM0pQM091V2ZKMF82bm9DZWpQVHkxWGh5bTEwVjhCaENzdnZZSWFtMXlTeTVzOXM1T2w1LWJ0Q0JSZF9UV0pIUVU?oc=5"
     },
     {
-      "id": "gn-unmanned-aircraft-44",
+      "id": "gn-unmanned-aircraft-33",
       "title": "US Army Funds ACS Bullfrog Autonomous Overwatch With $2M Award - The Defense Post",
       "summary": "US Army Funds ACS Bullfrog Autonomous Overwatch With $2M Award The Defense Post",
       "topic": "unmanned-aircraft",
       "source": "The Defense Post",
       "date": "Fri, 13 Feb 2026 08:36:48 GMT",
-      "imageUrl": "https://i.thedefensepost.com/wp-content/uploads/2024/09/image.jpg",
+      "imageUrl": "data/images/unmanned-aircraft/n4zozt.webp",
       "url": "https://thedefensepost.com/2026/02/13/acs-bullfrog-us-award/"
     },
     {
@@ -703,16 +713,6 @@
       "url": "https://www.marktechpost.com/2026/02/12/google-deepmind-introduces-aletheia-the-ai-agent-moving-from-math-competitions-to-fully-autonomous-professional-research-discoveries/"
     },
     {
-      "id": "gn-unmanned-aircraft-5",
-      "title": "Aerial Imaging Market to Reach USD 10.96 Billion by 2032 at 14.56% CAGR | North America Leads with 39% Share - openPR.com",
-      "summary": "Aerial Imaging Market to Reach USD 10.96 Billion by 2032 at 14.56% CAGR | North America Leads with 39% Share openPR.com",
-      "topic": "unmanned-aircraft",
-      "source": "openPR.com",
-      "date": "Fri, 13 Feb 2026 07:03:28 GMT",
-      "imageUrl": "https://cdn.open-pr.com/L/2/L213774694_g.jpg",
-      "url": "https://www.openpr.com/news/4389621/aerial-imaging-market-to-reach-usd-10-96-billion-by-2032-at-14-56"
-    },
-    {
       "id": "gn-digital-security-24",
       "title": "From online risk to board liability: Why digital safety demands leadership - Businessday NG",
       "summary": "From online risk to board liability: Why digital safety demands leadership Businessday NG",
@@ -761,16 +761,6 @@
       "date": "Fri, 13 Feb 2026 05:25:53 GMT",
       "imageUrl": "https://res.cloudinary.com/jerrick/image/upload/c_scale,f_jpg,q_auto/698eb5a3444824001e1c4310.png",
       "url": "https://vocal.media/futurism/australia-superconducting-magnetic-energy-storage-market-grid-stability-renewable-integration-and-technology-advancement"
-    },
-    {
-      "id": "gn-unmanned-aircraft-38",
-      "title": "Global Trends Overview: The Rapid Evolution of the Next Generation Battlefield Technology Market - openPR.com",
-      "summary": "Global Trends Overview: The Rapid Evolution of the Next Generation Battlefield Technology Market openPR.com",
-      "topic": "unmanned-aircraft",
-      "source": "openPR.com",
-      "date": "Fri, 13 Feb 2026 05:20:59 GMT",
-      "imageUrl": "https://cdn.open-pr.com/L/2/L213567289_g.jpg",
-      "url": "https://www.openpr.com/news/4389271/global-trends-overview-the-rapid-evolution-of-the-next"
     },
     {
       "id": "gn-digital-security-16",
@@ -823,13 +813,13 @@
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTXl1Q0pubk5mNnJtT3dyN1otcUFESFlMbjFVMXAtUXZnbTh3YzhCazRWQ084cjdpOHpiU1NjRXlPSVB2NG1ZSWZkNVhDTkI4c3RYcjB2ZW5WdzZxSzlZSXFHSUE3VDRXdk9UeHJJQmQ1RHJjVGVDZWJOTlBXaHJjNlMxcGVyXzU1bTRfV0IxLUEyZHpkYkN2Wl9mTGZCTkxuaVkwVHM0UWFJaVo0RWpvelVNYUJlRHBTeThsMFRtTjQ?oc=5"
     },
     {
-      "id": "gn-unmanned-aircraft-17",
+      "id": "gn-unmanned-aircraft-11",
       "title": "Drone rescue finds runaway in freezing woods - Shore News Network",
       "summary": "Drone rescue finds runaway in freezing woods Shore News Network",
       "topic": "unmanned-aircraft",
       "source": "Shore News Network",
       "date": "Fri, 13 Feb 2026 04:25:06 GMT",
-      "imageUrl": "https://www.shorenewsnetwork.com/wp-content/uploads/2025/01/Drone.jpg",
+      "imageUrl": "data/images/unmanned-aircraft/hgl5m4.webp",
       "url": "https://www.shorenewsnetwork.com/drone-rescue-finds-runaway-in-freezing-woods/"
     },
     {
@@ -863,13 +853,13 @@
       "url": "https://www.thestandard.com.hk/health-and-wellness/article/323084/Man-suffers-acute-kidney-injury-after-AI-misdiagnosis-leads-to-triple-dose-medication-error"
     },
     {
-      "id": "gn-unmanned-aircraft-26",
+      "id": "gn-unmanned-aircraft-19",
       "title": "Military looking to drones - Taipei Times",
       "summary": "Military looking to drones Taipei Times",
       "topic": "unmanned-aircraft",
       "source": "Taipei Times",
       "date": "Fri, 13 Feb 2026 03:35:26 GMT",
-      "imageUrl": "https://img.taipeitimes.com/images/2026/02/13/p03-260213-314.jpg",
+      "imageUrl": "data/images/unmanned-aircraft/5j4j1g.webp",
       "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/02/13/2003852253"
     },
     {
@@ -991,16 +981,6 @@
       "date": "Thu, 12 Feb 2026 23:31:19 GMT",
       "imageUrl": "data/images/governance-politics/98jg4q.webp",
       "url": "https://natlawreview.com/article/patentability-implications-eu-ai-act?amp"
-    },
-    {
-      "id": "gn-unmanned-aircraft-30",
-      "title": "Air Force begins testing mission autonomy package for CCA prototypes - DefenseScoop",
-      "summary": "Air Force begins testing mission autonomy package for CCA prototypes DefenseScoop",
-      "topic": "unmanned-aircraft",
-      "source": "DefenseScoop",
-      "date": "Thu, 12 Feb 2026 22:49:39 GMT",
-      "imageUrl": "https://defensescoop.com/wp-content/uploads/sites/8/2026/02/260212-F-AF000-1314.jpeg",
-      "url": "https://defensescoop.com/2026/02/12/air-force-testing-mission-autonomy-package-cca-drone-prototypes/"
     },
     {
       "id": "gn-digital-security-47",
@@ -1323,13 +1303,13 @@
       "url": "https://markets.businessinsider.com/news/stocks/llm-scout-research-reveals-structural-shift-behind-declining-ai-referral-traffic-as-usage-grows-1035820534"
     },
     {
-      "id": "gn-unmanned-aircraft-11",
+      "id": "gn-unmanned-aircraft-7",
       "title": "Promo Drone Announces New Distribution For Signage Drone - Dronelife",
       "summary": "Promo Drone Announces New Distribution For Signage Drone Dronelife",
       "topic": "unmanned-aircraft",
       "source": "Dronelife",
       "date": "Thu, 12 Feb 2026 14:58:53 GMT",
-      "imageUrl": "https://dronelife.com/wp-content/uploads/2025/05/Promo-Drone-e1770907729116.png",
+      "imageUrl": "data/images/unmanned-aircraft/agpv8y.webp",
       "url": "https://dronelife.com/2026/02/12/promo-drone-announces-new-distribution-for-signage-drone/"
     },
     {
@@ -1353,13 +1333,13 @@
       "url": "https://eu.36kr.com/en/p/3680397396963203"
     },
     {
-      "id": "gn-unmanned-aircraft-36",
+      "id": "gn-unmanned-aircraft-28",
       "title": "Allen Control Systems Wins U.S. Army’s xTechOverwatch Competition for Breakthrough in Autonomous Counter-Drone Systems - Business Wire",
       "summary": "Allen Control Systems Wins U.S. Army’s xTechOverwatch Competition for Breakthrough in Autonomous Counter-Drone Systems Business Wire",
       "topic": "unmanned-aircraft",
       "source": "Business Wire",
       "date": "Thu, 12 Feb 2026 14:30:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=600&h=400&fit=crop&auto=format",
+      "imageUrl": "",
       "url": "chrome-error://chromewebdata/"
     },
     {
@@ -1413,16 +1393,6 @@
       "url": "https://opentools.ai/news/anthropic-ups-the-ante-claudes-free-tier-now-packs-a-punch-with-premium-features"
     },
     {
-      "id": "gn-unmanned-aircraft-6",
-      "title": "Inside ZenaTech’s new Orlando drone hub for U.S. bases and airports - Stock Titan",
-      "summary": "Inside ZenaTech’s new Orlando drone hub for U.S. bases and airports Stock Titan",
-      "topic": "unmanned-aircraft",
-      "source": "Stock Titan",
-      "date": "Thu, 12 Feb 2026 13:15:00 GMT",
-      "imageUrl": "https://www.stocktitan.net/news_covers/ZenaTech_s_Drone_as_a_Service_Opens_the_23rd_Global_Location_in_Orlando_Fla_to_Focus_on_Government_1012325.png",
-      "url": "https://www.stocktitan.net/news/ZENA/zena-tech-s-drone-as-a-service-opens-the-23rd-global-location-in-6h523sdidva3.html"
-    },
-    {
       "id": "gn-business-economy-16",
       "title": "AI Stocks Turn Choppy On Disruption Fears. But This Week's Winners Stand Out. - Investor's Business Daily",
       "summary": "AI Stocks Turn Choppy On Disruption Fears. But This Week's Winners Stand Out. Investor's Business Daily",
@@ -1433,14 +1403,14 @@
       "url": "https://www.investors.com/news/technology/ai-stocks-artificial-intelligence-stocks-2026-leaders-laggards-feb9/"
     },
     {
-      "id": "gn-unmanned-aircraft-39",
-      "title": "Pentagon seeks wartime AI tools: Developers asked to create special military versions - RBC-Ukraine",
-      "summary": "Pentagon seeks wartime AI tools: Developers asked to create special military versions RBC-Ukraine",
+      "id": "gn-unmanned-aircraft-3",
+      "title": "Inside ZenaTech’s new Orlando drone hub for U.S. bases and airports - Stock Titan",
+      "summary": "Inside ZenaTech’s new Orlando drone hub for U.S. bases and airports Stock Titan",
       "topic": "unmanned-aircraft",
-      "source": "RBC-Ukraine",
-      "date": "Thu, 12 Feb 2026 13:00:00 GMT",
-      "imageUrl": "https://newsukraine.rbc.ua/static/img/g/e/gettyimages_1558051856_7ca3d0223b57dd677efbc2f037c95f4a_1300x820_0e577c14d0e95de8339516466f1051f9_1300x820.jpg",
-      "url": "https://newsukraine.rbc.ua/news/pentagon-seeks-wartime-ai-tools-developers-1770900800.html"
+      "source": "Stock Titan",
+      "date": "Thu, 12 Feb 2026 13:15:00 GMT",
+      "imageUrl": "data/images/unmanned-aircraft/mgymhs.webp",
+      "url": "https://www.stocktitan.net/news/ZENA/zena-tech-s-drone-as-a-service-opens-the-23rd-global-location-in-6h523sdidva3.html"
     },
     {
       "id": "gn-governance-politics-41",
@@ -1451,6 +1421,16 @@
       "date": "Thu, 12 Feb 2026 13:00:00 GMT",
       "imageUrl": "data/images/governance-politics/w6zw41.webp",
       "url": "https://www.policyalternatives.ca/news-research/canada-still-has-no-meaningful-ai-regulation/"
+    },
+    {
+      "id": "gn-unmanned-aircraft-34",
+      "title": "Pentagon seeks wartime AI tools: Developers asked to create special military versions - RBC-Ukraine",
+      "summary": "Pentagon seeks wartime AI tools: Developers asked to create special military versions RBC-Ukraine",
+      "topic": "unmanned-aircraft",
+      "source": "RBC-Ukraine",
+      "date": "Thu, 12 Feb 2026 13:00:00 GMT",
+      "imageUrl": "data/images/unmanned-aircraft/gomtk1.webp",
+      "url": "https://newsukraine.rbc.ua/news/pentagon-seeks-wartime-ai-tools-developers-1770900800.html"
     },
     {
       "id": "gn-visual-art-photography-10",
@@ -1473,13 +1453,13 @@
       "url": "https://opentools.ai/news/softbanks-ai-gamble-pays-off-dollar198-billion-gain-on-openai-stake"
     },
     {
-      "id": "gn-unmanned-aircraft-48",
+      "id": "gn-unmanned-aircraft-36",
       "title": "Dronamics partners with HENSOLDT to build a heavy defence drone with 24-hour endurance - Resilience Media",
       "summary": "Dronamics partners with HENSOLDT to build a heavy defence drone with 24-hour endurance Resilience Media",
       "topic": "unmanned-aircraft",
       "source": "Resilience Media",
       "date": "Thu, 12 Feb 2026 12:19:39 GMT",
-      "imageUrl": "https://resiliencemedia.co/wp-content/uploads/2026/02/Dronamics-HENSOLDT-render-1.jpg",
+      "imageUrl": "data/images/unmanned-aircraft/qwh900.webp",
       "url": "https://resiliencemedia.co/dronamics-partners-with-hensoldt-to-build-a-heavy-defence-drone-with-24-hour-endurance/"
     },
     {
@@ -1563,14 +1543,24 @@
       "url": "https://thehackernews.com/2026/02/threatsday-bulletin-ai-prompt-rce.html"
     },
     {
-      "id": "gn-unmanned-aircraft-15",
+      "id": "gn-unmanned-aircraft-10",
       "title": "Savannah Police To Spend $54K On BRINC Drones - DroneXL.co",
       "summary": "Savannah Police To Spend $54K On BRINC Drones DroneXL.co",
       "topic": "unmanned-aircraft",
       "source": "DroneXL.co",
       "date": "Thu, 12 Feb 2026 11:27:00 GMT",
-      "imageUrl": "https://dronexl.co/wp-content/uploads/2022/02/pilot-institute-dronexl-part-107.jpeg",
+      "imageUrl": "data/images/unmanned-aircraft/e0x6d5.webp",
       "url": "https://dronexl.co/2026/02/12/savannah-police-54k-brinc-drones/"
+    },
+    {
+      "id": "gn-unmanned-aircraft-38",
+      "title": "S. Korea to Develop Long-Endurance Drone for Continuous ISR Operations - The Defense Post",
+      "summary": "S. Korea to Develop Long-Endurance Drone for Continuous ISR Operations The Defense Post",
+      "topic": "unmanned-aircraft",
+      "source": "The Defense Post",
+      "date": "Thu, 12 Feb 2026 11:24:36 GMT",
+      "imageUrl": "data/images/unmanned-aircraft/zi1m2t.webp",
+      "url": "https://thedefensepost.com/2026/02/12/s-korea-long-endurance-drone/"
     },
     {
       "id": "gn-ai-academy-28",
@@ -1603,13 +1593,13 @@
       "url": "https://solarquarter.com/2026/02/12/saudi-arabias-power-capacity-to-surpass-106-gw-by-2034-amid-renewable-energy-push/"
     },
     {
-      "id": "gn-unmanned-aircraft-7",
+      "id": "gn-unmanned-aircraft-4",
       "title": "Drone Camera Market Anticipated to Reach USD 303.68 Billion, Rising at 29.0% CAGR by 2035 - openPR.com",
       "summary": "Drone Camera Market Anticipated to Reach USD 303.68 Billion, Rising at 29.0% CAGR by 2035 openPR.com",
       "topic": "unmanned-aircraft",
       "source": "openPR.com",
       "date": "Thu, 12 Feb 2026 10:29:54 GMT",
-      "imageUrl": "https://cdn.open-pr.com/L/2/L212910368_g.jpg",
+      "imageUrl": "data/images/unmanned-aircraft/j01ux2.webp",
       "url": "https://www.openpr.com/news/4388233/drone-camera-market-anticipated-to-reach-usd-303-68-billion"
     },
     {
@@ -1623,13 +1613,13 @@
       "url": "https://voi.id/en/technology/557181"
     },
     {
-      "id": "gn-unmanned-aircraft-37",
+      "id": "gn-unmanned-aircraft-30",
       "title": "Ukrainian startup Farsight Vision raises 7.2 million euros to develop autonomous systems for UAVs - Оборонка",
       "summary": "Ukrainian startup Farsight Vision raises 7.2 million euros to develop autonomous systems for UAVs Оборонка",
       "topic": "unmanned-aircraft",
       "source": "Оборонка",
       "date": "Thu, 12 Feb 2026 10:20:00 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1508444845599-5c89863b1c44?w=600&h=400&fit=crop&auto=format",
+      "imageUrl": "",
       "url": "https://oboronka.mezha.ua/en/farsight-vision-zaluchiv-7-2-mln-yevro-investiciy-308509/"
     },
     {
@@ -1693,13 +1683,13 @@
       "url": "https://securitybrief.co.uk/story/ai-fuelled-romance-scams-spread-beyond-dating-apps"
     },
     {
-      "id": "gn-unmanned-aircraft-31",
+      "id": "gn-unmanned-aircraft-23",
       "title": "Taipei Turns to Shield AI to Strengthen Unmanned Warfare Systems - StratNews Global",
       "summary": "Taipei Turns to Shield AI to Strengthen Unmanned Warfare Systems StratNews Global",
       "topic": "unmanned-aircraft",
       "source": "StratNews Global",
       "date": "Thu, 12 Feb 2026 09:15:21 GMT",
-      "imageUrl": "https://stratnewsglobal.com/wp-content/uploads/2026/02/Resham-TB-2026-02-12T144356.248.png",
+      "imageUrl": "data/images/unmanned-aircraft/hlgwsd.webp",
       "url": "https://stratnewsglobal.com/world-news/taipei-turns-to-shield-ai-to-strengthen-unmanned-warfare-systems/"
     },
     {
@@ -1753,16 +1743,6 @@
       "url": "https://intellectia.ai/news/stock/palo-alto-networks-set-to-release-earnings-report"
     },
     {
-      "id": "gn-unmanned-aircraft-3",
-      "title": "LiDAR in Mapping Market Size, Growth Forecasts 2026-2035 - Global Market Insights Inc.",
-      "summary": "LiDAR in Mapping Market Size, Growth Forecasts 2026-2035 Global Market Insights Inc.",
-      "topic": "unmanned-aircraft",
-      "source": "Global Market Insights Inc.",
-      "date": "Thu, 12 Feb 2026 07:49:13 GMT",
-      "imageUrl": "https://cdn.gminsights.com/image/rd/semiconductors-and-electronics/lidar-in-mapping-market-research-report.webp",
-      "url": "https://www.gminsights.com/industry-analysis/lidar-in-mapping-market"
-    },
-    {
       "id": "gn-musical-art-30",
       "title": "YouTube Music AI Playlist delivers powerful new upgrade for Premium users - Pune Mirror",
       "summary": "YouTube Music AI Playlist delivers powerful new upgrade for Premium users Pune Mirror",
@@ -1793,6 +1773,16 @@
       "url": "https://www.filmogaz.com/145769"
     },
     {
+      "id": "gn-unmanned-aircraft-42",
+      "title": "Armenia boosts intelligence with US-made V-BAT drones - Advanced reconnaissance and surveillance capabilities - Caliber.Az",
+      "summary": "Armenia boosts intelligence with US-made V-BAT drones - Advanced reconnaissance and surveillance capabilities Caliber.Az",
+      "topic": "unmanned-aircraft",
+      "source": "Caliber.Az",
+      "date": "Thu, 12 Feb 2026 07:01:01 GMT",
+      "imageUrl": "data/images/unmanned-aircraft/sd0oif.webp",
+      "url": "https://caliber.az/en/post/armenia-boosts-intelligence-with-us-made-v-bat-drones"
+    },
+    {
       "id": "gn-ai-academy-19",
       "title": "$45M Round Advances AI-Powered Lab Infrastructure - Technology Networks",
       "summary": "$45M Round Advances AI-Powered Lab Infrastructure Technology Networks",
@@ -1803,13 +1793,13 @@
       "url": "https://www.technologynetworks.com/tn/product-news/45m-round-advances-ai-powered-lab-infrastructure-409513"
     },
     {
-      "id": "gn-unmanned-aircraft-4",
+      "id": "gn-unmanned-aircraft-2",
       "title": "Netherlands Drones Market: Aerial Innovation, Commercial Adoption &amp; Regulatory Momentum - vocal.media",
       "summary": "Netherlands Drones Market: Aerial Innovation, Commercial Adoption & Regulatory Momentum vocal.media",
       "topic": "unmanned-aircraft",
       "source": "vocal.media",
       "date": "Thu, 12 Feb 2026 06:35:37 GMT",
-      "imageUrl": "https://res.cloudinary.com/jerrick/image/upload/c_scale,f_jpg,q_auto/698d7376b8be9c001e4f7fde.png",
+      "imageUrl": "data/images/unmanned-aircraft/nnuhk2.webp",
       "url": "https://vocal.media/trader/netherlands-drones-market-aerial-innovation-commercial-adoption-and-regulatory-momentum"
     },
     {
@@ -1841,6 +1831,16 @@
       "date": "Thu, 12 Feb 2026 05:45:00 GMT",
       "imageUrl": "data/images/governance-politics/fyieuf.webp",
       "url": "https://www.ukrinform.net/amp/rubric-society/4090439-russia-spreading-new-series-of-ai-videos-imitating-street-interviews-with-ukrainians-ccd.html"
+    },
+    {
+      "id": "gn-unmanned-aircraft-39",
+      "title": "France • Harmattan AI's French drones apparently 'Made in Vietnam' - Intelligence Online",
+      "summary": "France • Harmattan AI's French drones apparently 'Made in Vietnam' Intelligence Online",
+      "topic": "unmanned-aircraft",
+      "source": "Intelligence Online",
+      "date": "Thu, 12 Feb 2026 05:10:45 GMT",
+      "imageUrl": "",
+      "url": "https://www.intelligenceonline.com/europe-russia/2026/02/12/harmattan-ai-s-french-drones-apparently--made-in-vietnam,110626234-art"
     },
     {
       "id": "gn-technology-innovation-40",
@@ -1893,13 +1893,13 @@
       "url": "https://www.photonics.com/Articles/Illuminating-the-Invisible-The-Technologies/p5/vo271/i1959/a71899"
     },
     {
-      "id": "gn-unmanned-aircraft-23",
+      "id": "gn-unmanned-aircraft-15",
       "title": "Ghana Targets Drones and AI to Drive Industrial Growth - News Ghana",
       "summary": "Ghana Targets Drones and AI to Drive Industrial Growth News Ghana",
       "topic": "unmanned-aircraft",
       "source": "News Ghana",
       "date": "Thu, 12 Feb 2026 01:04:32 GMT",
-      "imageUrl": "https://www.newsghana.com.gh/wp-content/uploads/2025/07/Growth-scaled.jpg",
+      "imageUrl": "data/images/unmanned-aircraft/wgv87z.webp",
       "url": "https://www.newsghana.com.gh/ghana-targets-drones-and-ai-to-drive-industrial-growth/"
     },
     {
@@ -2093,13 +2093,13 @@
       "url": "https://observer.com/2026/02/ai-environmental-impact-is-testing-corporate-climate-commitments/"
     },
     {
-      "id": "gn-unmanned-aircraft-46",
+      "id": "gn-unmanned-aircraft-35",
       "title": "Germany Launches 536 Million Euro Attack Drone - RaillyNews",
       "summary": "Germany Launches 536 Million Euro Attack Drone RaillyNews",
       "topic": "unmanned-aircraft",
       "source": "RaillyNews",
       "date": "Wed, 11 Feb 2026 17:04:45 GMT",
-      "imageUrl": "https://i0.wp.com/raillynews.com/wp-content/uploads/2026/02/germany-launches-536-million-euro-attack-drone-m3g5zuKZ.jpg?fit=870%2C489&ssl=1",
+      "imageUrl": "data/images/unmanned-aircraft/ql9igm.webp",
       "url": "https://raillynews.com/2026/02/germany-launches-536-million-euro-attack-drone/"
     },
     {
@@ -2143,13 +2143,13 @@
       "url": "https://swikblog.com/uk-ai-chip-startup-olix-raises-220m-inference-chips/"
     },
     {
-      "id": "gn-unmanned-aircraft-13",
+      "id": "gn-unmanned-aircraft-9",
       "title": "Customer Experience (CX) Administration Software Market Fueled by Digital CX Transformation, and AI Integration: - Market Research Intellect - PR Newswire UK",
       "summary": "Customer Experience (CX) Administration Software Market Fueled by Digital CX Transformation, and AI Integration: - Market Research Intellect PR Newswire UK",
       "topic": "unmanned-aircraft",
       "source": "PR Newswire UK",
       "date": "Wed, 11 Feb 2026 16:10:00 GMT",
-      "imageUrl": "https://mma.prnewswire.com/media/2483702/Market_Research_Intellect_Logo.jpg?p=facebook",
+      "imageUrl": "data/images/unmanned-aircraft/cayquo.webp",
       "url": "https://www.prnewswire.co.uk/news-releases/customer-experience-cx-administration-software-market-fueled-by-digital-cx-transformation-and-ai-integration---market-research-intellect-302685058.html"
     },
     {
@@ -2173,16 +2173,6 @@
       "url": "https://quantumzeitgeist.com/protein-learning-breakthrough-maps-complex-structures-unprecedented/"
     },
     {
-      "id": "gn-unmanned-aircraft-9",
-      "title": "Nearmap and New Light Deploy FEMA Disaster Response System. - Dronelife",
-      "summary": "Nearmap and New Light Deploy FEMA Disaster Response System. Dronelife",
-      "topic": "unmanned-aircraft",
-      "source": "Dronelife",
-      "date": "Wed, 11 Feb 2026 15:54:18 GMT",
-      "imageUrl": "https://dronelife.com/wp-content/uploads/2026/02/filters_quality75-e1770825073624.jpg",
-      "url": "https://dronelife.com/2026/02/11/nearmap-and-new-light-deploy-fema-disaster-response-system/"
-    },
-    {
       "id": "gn-chatbot-development-5",
       "title": "Tech Giants Turn to Competitors' AI, Meta Stands Firm - 조선일보",
       "summary": "Tech Giants Turn to Competitors' AI, Meta Stands Firm 조선일보",
@@ -2193,13 +2183,13 @@
       "url": "https://www.chosun.com/english/industry-en/2026/02/12/BT4TNCFUG5DLTPVCEQDNMIN25E/"
     },
     {
-      "id": "gn-unmanned-aircraft-18",
+      "id": "gn-unmanned-aircraft-12",
       "title": "GAO Signals Rising Scrutiny as Drone Deliveries Expand - Dronelife",
       "summary": "GAO Signals Rising Scrutiny as Drone Deliveries Expand Dronelife",
       "topic": "unmanned-aircraft",
       "source": "Dronelife",
       "date": "Wed, 11 Feb 2026 15:21:32 GMT",
-      "imageUrl": "https://dronelife.com/wp-content/uploads/2025/11/P1-in-flight-California-2100x1181-a9218294-3567-4f7f-921c-44b3e47910da-e1769003857899.jpg",
+      "imageUrl": "data/images/unmanned-aircraft/rzpaxm.webp",
       "url": "https://dronelife.com/2026/02/11/gao-drone-delivery-oversight-bvlos-safety/"
     },
     {
@@ -2303,13 +2293,13 @@
       "url": "https://www.trendhunter.com/amp/trends/youcam-ai-pro"
     },
     {
-      "id": "gn-unmanned-aircraft-14",
+      "id": "gn-unmanned-aircraft-8",
       "title": "Drone Finds Injured Man In Iowa Ravine - DroneXL.co",
       "summary": "Drone Finds Injured Man In Iowa Ravine DroneXL.co",
       "topic": "unmanned-aircraft",
       "source": "DroneXL.co",
       "date": "Wed, 11 Feb 2026 13:25:14 GMT",
-      "imageUrl": "https://dronexl.co/wp-content/uploads/2022/02/pilot-institute-dronexl-part-107.jpeg",
+      "imageUrl": "data/images/unmanned-aircraft/e0x6d5.webp",
       "url": "https://dronexl.co/2026/02/11/drone-injured-man-iowa-ravine/"
     },
     {
@@ -2503,13 +2493,13 @@
       "url": "https://www.latimes.com/business/story/2026-02-11/super-bowl-spots-spark-fight-over-whether-were-ready-for-ads-from-our-chatbots"
     },
     {
-      "id": "gn-unmanned-aircraft-34",
+      "id": "gn-unmanned-aircraft-26",
       "title": "Defence startup testing AI drones with Ukraine raises £2.6m - UKTN",
       "summary": "Defence startup testing AI drones with Ukraine raises £2.6m UKTN",
       "topic": "unmanned-aircraft",
       "source": "UKTN",
       "date": "Wed, 11 Feb 2026 10:28:36 GMT",
-      "imageUrl": "https://www.uktech.news/wp-content/uploads/2026/02/Brave1_Field-Tests_05.jpg",
+      "imageUrl": "data/images/unmanned-aircraft/j2v64w.webp",
       "url": "https://www.uktech.news/defence-tech/occam-ai-drone-ukraine-funding-20260211"
     },
     {
@@ -2571,6 +2561,26 @@
       "date": "Wed, 11 Feb 2026 09:15:00 GMT",
       "imageUrl": "https://channellife.com.au/uploads/story/2026/02/11/compatible_modern_ai_data_center_aisle_with_gpu_servers_blue_cabling.jpg",
       "url": "https://channellife.com.au/story/opennebula-integrates-nvidia-spectrum-x-for-ai-clouds"
+    },
+    {
+      "id": "gn-unmanned-aircraft-46",
+      "title": "L3Harris, Saudi Arabia Sign AI-Focused Defense Cooperation Deal - The Defense Post",
+      "summary": "L3Harris, Saudi Arabia Sign AI-Focused Defense Cooperation Deal The Defense Post",
+      "topic": "unmanned-aircraft",
+      "source": "The Defense Post",
+      "date": "Wed, 11 Feb 2026 09:03:14 GMT",
+      "imageUrl": "data/images/unmanned-aircraft/8zm553.webp",
+      "url": "https://thedefensepost.com/2026/02/11/l3harris-saudi-arabia-ai/"
+    },
+    {
+      "id": "gn-unmanned-aircraft-16",
+      "title": "Surprise US military plans to use counter-drone laser triggered El Paso airspace closure, sources say - CNN",
+      "summary": "Surprise US military plans to use counter-drone laser triggered El Paso airspace closure, sources say CNN",
+      "topic": "unmanned-aircraft",
+      "source": "CNN",
+      "date": "Wed, 11 Feb 2026 08:51:26 GMT",
+      "imageUrl": "data/images/unmanned-aircraft/7m8590.webp",
+      "url": "https://www.cnn.com/2026/02/11/us/faa-el-paso-texas-flight-restrictions-hnk"
     },
     {
       "id": "gn-technology-innovation-47",
@@ -2683,13 +2693,13 @@
       "url": "https://springwise.com/diverse-nature/carbon-credit-certification-using-advanced-ai-technology/"
     },
     {
-      "id": "gn-unmanned-aircraft-10",
+      "id": "gn-unmanned-aircraft-6",
       "title": "Disciplined Autonomy: How AI and sUAS Will Redefine Security, Safety, Emergency Response, and Military Operations - Small Wars Journal",
       "summary": "Disciplined Autonomy: How AI and sUAS Will Redefine Security, Safety, Emergency Response, and Military Operations Small Wars Journal",
       "topic": "unmanned-aircraft",
       "source": "Small Wars Journal",
       "date": "Wed, 11 Feb 2026 06:05:12 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=400&fit=crop&auto=format",
+      "imageUrl": "",
       "url": "https://smallwarsjournal.com/2026/02/11/disciplined-autonomy/"
     },
     {
@@ -2721,16 +2731,6 @@
       "date": "Wed, 11 Feb 2026 05:14:22 GMT",
       "imageUrl": "https://morningbrew.com/cdn-cgi/image/width=1200,height=630,quality=70,format=auto/https://storage.morningbrew.com/image/2026-02-10/image-6323c6a1605c8fd1f6b5850f00667419cea5d228-1500x1000-jpg/MBD_02102026_Spotify_01.jpg",
       "url": "https://www.morningbrew.com/stories/2026/02/11/spotify-wrapped-its-year-with-record-user-numbers"
-    },
-    {
-      "id": "gn-unmanned-aircraft-43",
-      "title": "Daily Editorial Analysis 11 February 2026 - Vajiram &amp; Ravi",
-      "summary": "Daily Editorial Analysis 11 February 2026 Vajiram & Ravi",
-      "topic": "unmanned-aircraft",
-      "source": "Vajiram &amp; Ravi",
-      "date": "Wed, 11 Feb 2026 05:13:43 GMT",
-      "imageUrl": "https://d35xcwcl37xo08.cloudfront.net/current-affairs-wp-uploads/2026/02/Daily-Editorial-Analysis-3.webp",
-      "url": "https://vajiramandravi.com/current-affairs/daily-editorial-analysis-11-february-2026/"
     },
     {
       "id": "gn-chatbot-development-46",
@@ -2853,16 +2853,6 @@
       "url": "https://www.tubefilter.com/2026/02/10/youtube-music-premium-ai-generated-playlists/"
     },
     {
-      "id": "gn-unmanned-aircraft-41",
-      "title": "Marine Corps brings General Atomics into CCA program for autonomy development - DefenseScoop",
-      "summary": "Marine Corps brings General Atomics into CCA program for autonomy development DefenseScoop",
-      "topic": "unmanned-aircraft",
-      "source": "DefenseScoop",
-      "date": "Tue, 10 Feb 2026 23:14:09 GMT",
-      "imageUrl": "https://defensescoop.com/wp-content/uploads/sites/8/2025/08/CCA-General-Atomics.jpg",
-      "url": "https://defensescoop.com/2026/02/10/marine-corps-general-atomics-cca-program-autonomy-development/"
-    },
-    {
       "id": "gn-digital-security-27",
       "title": "Cybersafety: How to protect yourself against AI scams, online fakes and frauds - consumerconnectng.com",
       "summary": "Cybersafety: How to protect yourself against AI scams, online fakes and frauds consumerconnectng.com",
@@ -2891,16 +2881,6 @@
       "date": "Tue, 10 Feb 2026 22:22:24 GMT",
       "imageUrl": "images/chatbot-development/m88omn.webp",
       "url": "https://www.mk.co.kr/en/it/11959207"
-    },
-    {
-      "id": "gn-unmanned-aircraft-12",
-      "title": "Illinois Tech Researchers Use Machine Learning To Solve Drone Base Station Deployment - DroneXL.co",
-      "summary": "Illinois Tech Researchers Use Machine Learning To Solve Drone Base Station Deployment DroneXL.co",
-      "topic": "unmanned-aircraft",
-      "source": "DroneXL.co",
-      "date": "Tue, 10 Feb 2026 22:20:38 GMT",
-      "imageUrl": "https://dronexl.co/wp-content/uploads/2022/02/pilot-institute-dronexl-part-107.jpeg",
-      "url": "https://dronexl.co/2026/02/10/illinois-tech-drone-base-station-deployment/"
     },
     {
       "id": "gn-chatbot-development-9",
@@ -2974,22 +2954,12 @@
     },
     {
       "id": "gn-unmanned-aircraft-20",
-      "title": "No One, Including Our Furry Friends, Will Be Safer in Ring's Surveillance Nightmare - Electronic Frontier Foundation",
-      "summary": "No One, Including Our Furry Friends, Will Be Safer in Ring's Surveillance Nightmare Electronic Frontier Foundation",
-      "topic": "unmanned-aircraft",
-      "source": "Electronic Frontier Foundation",
-      "date": "Tue, 10 Feb 2026 21:11:04 GMT",
-      "imageUrl": "https://www.eff.org/files/banner_library/ring_banner.png",
-      "url": "https://www.eff.org/deeplinks/2026/02/no-one-including-our-furry-friends-will-be-safer-rings-surveillance-nightmare-0"
-    },
-    {
-      "id": "gn-unmanned-aircraft-27",
       "title": "How Russia Is Reshaping Command and Control for AI-Enabled Warfare - CSIS | Center for Strategic and International Studies",
       "summary": "How Russia Is Reshaping Command and Control for AI-Enabled Warfare CSIS | Center for Strategic and International Studies",
       "topic": "unmanned-aircraft",
       "source": "CSIS | Center for Strategic and International Studies",
       "date": "Tue, 10 Feb 2026 21:10:12 GMT",
-      "imageUrl": "https://csis-website-prod.s3.amazonaws.com/s3fs-public/2026-02/GettyImages-848907828_cropped.jpg?VersionId=r5a.LE3TwWzM6Ff8pOEtO7f3xnXoQmrQ",
+      "imageUrl": "data/images/unmanned-aircraft/rifdjc.webp",
       "url": "https://www.csis.org/analysis/how-russia-reshaping-command-and-control-ai-enabled-warfare"
     },
     {
@@ -3141,6 +3111,16 @@
       "date": "Tue, 10 Feb 2026 19:02:16 GMT",
       "imageUrl": "https://blog.knowbe4.com/hubfs/Social%20Image%20Repository/Evangelist%20Blog%20Social%20Graphics/Evangelists-Roger%20Grimes.jpg",
       "url": "https://blog.knowbe4.com/love-in-the-age-of-ai-why-2026-romance-scams-are-almost-impossible-to-spot"
+    },
+    {
+      "id": "gn-unmanned-aircraft-43",
+      "title": "UK’s Watchkeeper drone program nears the end: What went wrong and what’s to come - GPS World",
+      "summary": "UK’s Watchkeeper drone program nears the end: What went wrong and what’s to come GPS World",
+      "topic": "unmanned-aircraft",
+      "source": "GPS World",
+      "date": "Tue, 10 Feb 2026 18:56:03 GMT",
+      "imageUrl": "data/images/unmanned-aircraft/2yzuf4.webp",
+      "url": "https://www.gpsworld.com/uks-watchkeeper-drone-program-nears-the-end-what-went-wrong-and-what-comes-next/"
     },
     {
       "id": "gn-visual-art-photography-42",
@@ -3339,17 +3319,17 @@
       "topic": "unmanned-aircraft",
       "source": "TradingView",
       "date": "Tue, 10 Feb 2026 16:23:30 GMT",
-      "imageUrl": "https://s.tradingview.com/static/images/illustrations/news-story.jpg",
+      "imageUrl": "data/images/unmanned-aircraft/i0jmr4.webp",
       "url": "https://www.tradingview.com/news/financewire:96d3e1c32094b:0-zenatech-s-drone-as-a-service-expands-builder-services-capability-delivering-drone-driven-speed-and-precision-to-surveying-for-homebuilders/"
     },
     {
-      "id": "gn-unmanned-aircraft-25",
+      "id": "gn-unmanned-aircraft-18",
       "title": "ieExplains: What are the new drone flight restrictions in Cork and why are they coming into effect? - Irish Examiner",
       "summary": "ieExplains: What are the new drone flight restrictions in Cork and why are they coming into effect? Irish Examiner",
       "topic": "unmanned-aircraft",
       "source": "Irish Examiner",
       "date": "Tue, 10 Feb 2026 16:17:00 GMT",
-      "imageUrl": "https://www.irishexaminer.com/cms_media/module_img/9927/4963859_12_seoimageog_LC_20drone_2001.jpg",
+      "imageUrl": "data/images/unmanned-aircraft/zgfhxj.webp",
       "url": "https://www.irishexaminer.com/business/companies/arid-41791169.html"
     },
     {
@@ -3371,6 +3351,16 @@
       "date": "Tue, 10 Feb 2026 15:54:02 GMT",
       "imageUrl": "https://i0.wp.com/officechai.com/wp-content/uploads/2025/07/MixCollage-08-Jul-2025-01-19-PM-2344.jpg?fit=1200%2C630&ssl=1",
       "url": "https://officechai.com/ai/googles-drug-discovery-arm-isomorphic-labs-doubles-accuracy-in-designing-medicines-through-a-computer-in-new-breakthrough/"
+    },
+    {
+      "id": "gn-unmanned-aircraft-41",
+      "title": "Armenia buys V-BAT drones proven in Ukraine - Defence Blog",
+      "summary": "Armenia buys V-BAT drones proven in Ukraine Defence Blog",
+      "topic": "unmanned-aircraft",
+      "source": "Defence Blog",
+      "date": "Tue, 10 Feb 2026 15:50:03 GMT",
+      "imageUrl": "data/images/unmanned-aircraft/euub67.webp",
+      "url": "https://defence-blog.com/armenia-buys-v-bat-drones-proven-in-ukraine/"
     },
     {
       "id": "gn-technology-innovation-8",
@@ -3403,16 +3393,6 @@
       "url": "https://cryptorank.io/news/feed/4fc04-usd-outlook-2025-growth-ai-fed"
     },
     {
-      "id": "gn-unmanned-aircraft-2",
-      "title": "ZenaTech (Nasdaq: ZENA) grows defense, DaaS and golf services - Stock Titan",
-      "summary": "ZenaTech (Nasdaq: ZENA) grows defense, DaaS and golf services Stock Titan",
-      "topic": "unmanned-aircraft",
-      "source": "Stock Titan",
-      "date": "Tue, 10 Feb 2026 15:10:21 GMT",
-      "imageUrl": "https://static.stocktitan.net/img/stock-titan-logo-1000.png",
-      "url": "https://www.stocktitan.net/sec-filings/ZENA/6-k-zena-tech-inc-current-report-foreign-issuer-85453d42e595.html"
-    },
-    {
       "id": "gn-health-style-31",
       "title": "Can AI Cure Medicine's Ills? - Psychiatric Times",
       "summary": "Can AI Cure Medicine's Ills? Psychiatric Times",
@@ -3433,13 +3413,13 @@
       "url": "https://venturebeat.com/orchestration/is-agentic-ai-ready-to-reshape-global-business-services"
     },
     {
-      "id": "gn-unmanned-aircraft-21",
+      "id": "gn-unmanned-aircraft-14",
       "title": "Ghana deploys AI and drones to shift mining regulation from reactive to preventive — Minerals Commission - MyJoyOnline",
       "summary": "Ghana deploys AI and drones to shift mining regulation from reactive to preventive — Minerals Commission MyJoyOnline",
       "topic": "unmanned-aircraft",
       "source": "MyJoyOnline",
       "date": "Tue, 10 Feb 2026 14:56:35 GMT",
-      "imageUrl": "https://www.myjoyonline.com/wp-content/uploads/2024/09/Illegal-mining-galamsey-1-1.jpg",
+      "imageUrl": "data/images/unmanned-aircraft/dta9yl.webp",
       "url": "https://www.myjoyonline.com/ghana-deploys-ai-and-drones-to-shift-mining-regulation-from-reactive-to-preventive-minerals-commission/"
     },
     {
@@ -3511,16 +3491,6 @@
       "date": "Tue, 10 Feb 2026 14:00:00 GMT",
       "imageUrl": "data/images/governance-politics/8xu8gu.webp",
       "url": "https://www.postguam.com/news/local/bill-targets-ai-and-deepfakes-to-protect-election-integrity/article_37b8edcf-c5cd-4fc3-b718-91bc0073183d.html"
-    },
-    {
-      "id": "gn-unmanned-aircraft-22",
-      "title": "Centre amends IT rules, mandates AI labels, cuts deepfake takedown time to 2 hours - MSN",
-      "summary": "Centre amends IT rules, mandates AI labels, cuts deepfake takedown time to 2 hours MSN",
-      "topic": "unmanned-aircraft",
-      "source": "MSN",
-      "date": "Tue, 10 Feb 2026 13:57:32 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.msn.com/en-in/money/news/centre-amends-it-rules-mandates-ai-labels-cuts-deepfake-takedown-time-to-2-hours/ar-AA1W3uB9?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
     },
     {
       "id": "gn-ai-academy-7",
@@ -3703,13 +3673,13 @@
       "url": "https://bayelsawatch.com/awsbacked-ai-lab-fundamental-emerges/"
     },
     {
-      "id": "gn-unmanned-aircraft-35",
+      "id": "gn-unmanned-aircraft-27",
       "title": "US Marine Corps Seeks AI-Savvy Troops for Warfighting Experimentation - The Defense Post",
       "summary": "US Marine Corps Seeks AI-Savvy Troops for Warfighting Experimentation The Defense Post",
       "topic": "unmanned-aircraft",
       "source": "The Defense Post",
       "date": "Tue, 10 Feb 2026 11:31:36 GMT",
-      "imageUrl": "https://i.thedefensepost.com/wp-content/uploads/2026/01/9460129-scaled.jpg",
+      "imageUrl": "data/images/unmanned-aircraft/jw05ae.webp",
       "url": "https://thedefensepost.com/2026/02/10/usmc-drone-ai-lab/"
     },
     {
@@ -3773,14 +3743,24 @@
       "url": "https://vocal.media/lifehack/2026-scam-trends-consumers-should-know"
     },
     {
-      "id": "gn-unmanned-aircraft-42",
+      "id": "gn-unmanned-aircraft-32",
       "title": "India Develops ‘World’s Most Compact’ AI-Driven Laser Sniper Mounted on UGV - The Defense Post",
       "summary": "India Develops ‘World’s Most Compact’ AI-Driven Laser Sniper Mounted on UGV The Defense Post",
       "topic": "unmanned-aircraft",
       "source": "The Defense Post",
       "date": "Tue, 10 Feb 2026 10:21:22 GMT",
-      "imageUrl": "https://i.thedefensepost.com/wp-content/uploads/2026/02/HAsPVGFaYAA8VzA.jpeg",
+      "imageUrl": "data/images/unmanned-aircraft/e0f33s.webp",
       "url": "https://thedefensepost.com/2026/02/10/india-laser-sniper-ugv/"
+    },
+    {
+      "id": "gn-unmanned-aircraft-45",
+      "title": "Armenia Boosts Military With US V-BAT Drones - The Defense Post",
+      "summary": "Armenia Boosts Military With US V-BAT Drones The Defense Post",
+      "topic": "unmanned-aircraft",
+      "source": "The Defense Post",
+      "date": "Tue, 10 Feb 2026 09:54:24 GMT",
+      "imageUrl": "data/images/unmanned-aircraft/52mqqi.webp",
+      "url": "https://thedefensepost.com/2026/02/10/armenia-us-vbat-drones/"
     },
     {
       "id": "gn-health-style-47",
@@ -3921,6 +3901,16 @@
       "date": "Tue, 10 Feb 2026 07:42:00 GMT",
       "imageUrl": "https://images.t2online.in/cdn-cgi/image/width=640,quality=70/https://apis.t2online.in/getImageStream/4185/1770709472055.jpg",
       "url": "https://t2online.in/tech/interviews/interview-with-helpage-on-cybercrime-and-online-safety-for-senior-citizens-on-safer-internet-day/2003551"
+    },
+    {
+      "id": "gn-unmanned-aircraft-48",
+      "title": "South Korea Police Raid Spy Agency Over Drone Flight Into North - The Defense Post",
+      "summary": "South Korea Police Raid Spy Agency Over Drone Flight Into North The Defense Post",
+      "topic": "unmanned-aircraft",
+      "source": "The Defense Post",
+      "date": "Tue, 10 Feb 2026 07:32:15 GMT",
+      "imageUrl": "data/images/unmanned-aircraft/zi1m2t.webp",
+      "url": "https://thedefensepost.com/2026/02/10/korea-drone-flight-raid/"
     },
     {
       "id": "gn-visual-art-photography-39",
@@ -4153,13 +4143,13 @@
       "url": "https://finance.yahoo.com/news/binance-cz-yi-star-ai-224703151.html"
     },
     {
-      "id": "gn-unmanned-aircraft-49",
+      "id": "gn-unmanned-aircraft-37",
       "title": "Saudi Arabia in talks with US company for AI-powered drones, sources say - Middle East Eye",
       "summary": "Saudi Arabia in talks with US company for AI-powered drones, sources say Middle East Eye",
       "topic": "unmanned-aircraft",
       "source": "Middle East Eye",
       "date": "Mon, 09 Feb 2026 22:15:00 GMT",
-      "imageUrl": "https://www.middleeasteye.net/sites/default/files/images-story/Drone-V-Bat-Navy-AFP-2025.jpg",
+      "imageUrl": "data/images/unmanned-aircraft/g8muga.webp",
       "url": "https://www.middleeasteye.net/news/saudi-arabia-talks-us-company-ai-powered-drones-sources-say"
     },
     {
@@ -4193,13 +4183,13 @@
       "url": "https://www.brookings.edu/articles/governing-the-ai-transition-lessons-from-the-1996-telecommunications-act/"
     },
     {
-      "id": "gn-unmanned-aircraft-32",
+      "id": "gn-unmanned-aircraft-24",
       "title": "Taiwan Plans to Produce 210,000 Drones and 1,000 Unmanned Surface Vehicles - Vision Times",
       "summary": "Taiwan Plans to Produce 210,000 Drones and 1,000 Unmanned Surface Vehicles Vision Times",
       "topic": "unmanned-aircraft",
       "source": "Vision Times",
       "date": "Mon, 09 Feb 2026 21:04:58 GMT",
-      "imageUrl": "https://img.visiontimes.com/2026/02/p3712583a152455509-2-768x432.jpg",
+      "imageUrl": "data/images/unmanned-aircraft/vsonav.webp",
       "url": "https://www.visiontimes.com/2026/02/09/taiwan-plans-to-produce-210000-drones-and-1000-unmanned-surface-vehicles.html"
     },
     {
@@ -4453,23 +4443,23 @@
       "url": "https://www.manilatimes.net/2026/02/09/tmt-newswire/pr-newswire/architecting-the-intelligent-lab-of-the-future-abio-technologies-launches-abio-spark-and-blaze-at-slas2026/2274528"
     },
     {
-      "id": "gn-unmanned-aircraft-29",
+      "id": "gn-unmanned-aircraft-31",
       "title": "US special ops forces want in on AI to lighten the operator's 'cognitive load' and make their job easier - MSN",
       "summary": "US special ops forces want in on AI to lighten the operator's 'cognitive load' and make their job easier MSN",
       "topic": "unmanned-aircraft",
       "source": "MSN",
       "date": "Mon, 09 Feb 2026 14:32:52 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1508444845599-5c89863b1c44?w=600&h=400&fit=crop&auto=format",
+      "imageUrl": "data/images/unmanned-aircraft/c13flu.webp",
       "url": "https://www.msn.com/en-us/money/other/us-special-ops-forces-want-in-on-ai-to-cut-cognitive-load-and-make-operator-jobs-easier/ar-AA1F51du?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
     },
     {
-      "id": "gn-unmanned-aircraft-40",
+      "id": "gn-unmanned-aircraft-22",
       "title": "MQ-20 Avenger shown with nose-mounted laser in autonomous combat drone concept - MSN",
       "summary": "MQ-20 Avenger shown with nose-mounted laser in autonomous combat drone concept MSN",
       "topic": "unmanned-aircraft",
       "source": "MSN",
-      "date": "Mon, 09 Feb 2026 14:27:00 GMT",
-      "imageUrl": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1P4SeU.img?w=768&h=432&m=4&q=20",
+      "date": "Mon, 09 Feb 2026 14:27:01 GMT",
+      "imageUrl": "data/images/unmanned-aircraft/5d6z8o.webp",
       "url": "https://www.msn.com/en-ie/news/other/mq-20-avenger-shown-with-nose-mounted-laser-in-autonomous-combat-drone-concept/ar-AA1P58C2?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
     },
     {
@@ -4633,6 +4623,16 @@
       "url": "https://www.digitalcameraworld.com/buying-guides/the-10-best-camera-drones"
     },
     {
+      "id": "gn-unmanned-aircraft-44",
+      "title": "UK firm develops AI-powered autopilot for unmanned systems - Defence Blog",
+      "summary": "UK firm develops AI-powered autopilot for unmanned systems Defence Blog",
+      "topic": "unmanned-aircraft",
+      "source": "Defence Blog",
+      "date": "Mon, 09 Feb 2026 10:25:00 GMT",
+      "imageUrl": "data/images/unmanned-aircraft/nnwohn.webp",
+      "url": "https://defence-blog.com/uk-firm-develops-ai-powered-autopilot-for-unmanned-systems/"
+    },
+    {
       "id": "gn-health-style-22",
       "title": "Contract Catering Market Expands with AI Integration and Changing Corporate Dining Needs - vocal.media",
       "summary": "Contract Catering Market Expands with AI Integration and Changing Corporate Dining Needs vocal.media",
@@ -4773,13 +4773,13 @@
       "url": "https://www.morningstar.com/markets/markets-brief-big-2026-sector-rotation-ai-disrupts-disruptors"
     },
     {
-      "id": "gn-unmanned-aircraft-33",
+      "id": "gn-unmanned-aircraft-25",
       "title": "Unknown: Killer Robots (2023) - India’s World Magazine",
       "summary": "Unknown: Killer Robots (2023) India’s World Magazine",
       "topic": "unmanned-aircraft",
       "source": "India’s World Magazine",
       "date": "Mon, 09 Feb 2026 06:48:33 GMT",
-      "imageUrl": "https://indiasworld.in/wp-content/uploads/2026/02/4.jpg",
+      "imageUrl": "data/images/unmanned-aircraft/mb470j.webp",
       "url": "https://indiasworld.in/unknown-killer-robots-2023/"
     },
     {
@@ -5023,16 +5023,6 @@
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE04VWQzZG01QS1SUGh3THdzWmZRMzRqODVOSmUzY1Z3RVlPSDNPaVpaNGlVQ2psaG9ENFo5clJyM19sMWJtVHJRQTBnRXRzMUxZSVFENHZRdFlCQUgybHI2Ylp2SXBsNnB5SFdqOFE3cUk5MnVVaWRMMV9R?oc=5"
     },
     {
-      "id": "gn-unmanned-aircraft-45",
-      "title": "On the light side #3 - Defender Media",
-      "summary": "On the light side #3 Defender Media",
-      "topic": "unmanned-aircraft",
-      "source": "Defender Media",
-      "date": "Sun, 08 Feb 2026 09:44:07 GMT",
-      "imageUrl": "https://thedefender.media/wp-content/uploads/2026/02/shieldai.webp",
-      "url": "https://thedefender.media/en/2026/02/on-the-light-side-3/"
-    },
-    {
       "id": "gn-ai-academy-33",
       "title": "10 Business Schools To Watch In 2026 - Poets&amp;Quants",
       "summary": "10 Business Schools To Watch In 2026 Poets&Quants",
@@ -5051,6 +5041,16 @@
       "date": "Sun, 08 Feb 2026 07:08:24 GMT",
       "imageUrl": "data/images/governance-politics/yrbybk.webp",
       "url": "https://www.jagonews24.com/en/politics/news/89705"
+    },
+    {
+      "id": "gn-unmanned-aircraft-49",
+      "title": "Overland AI raises $100 million to expand use of ground drones in the US Army - MSN",
+      "summary": "Overland AI raises $100 million to expand use of ground drones in the US Army MSN",
+      "topic": "unmanned-aircraft",
+      "source": "MSN",
+      "date": "Sun, 08 Feb 2026 05:36:49 GMT",
+      "imageUrl": "data/images/unmanned-aircraft/ar9k1f.webp",
+      "url": "https://www.msn.com/en-nz/news/other/overland-ai-raises-100-million-to-expand-use-of-ground-drones-in-the-us-army/ar-AA1VKskP?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
     },
     {
       "id": "gn-environment-science-17",
@@ -5081,16 +5081,6 @@
       "date": "Sun, 08 Feb 2026 03:14:31 GMT",
       "imageUrl": "https://www.gizmochina.com/wp-content/uploads/2025/03/Xiaomi-modular-optical-lens-2.png",
       "url": "https://www.gizmochina.com/2026/02/08/xiaomi-magnetic-lens-launch-2026/"
-    },
-    {
-      "id": "gn-unmanned-aircraft-16",
-      "title": "Colorado Springs Teams Search After Kids Spotted on Frozen Lake - pikespeakcourier.net",
-      "summary": "Colorado Springs Teams Search After Kids Spotted on Frozen Lake pikespeakcourier.net",
-      "topic": "unmanned-aircraft",
-      "source": "pikespeakcourier.net",
-      "date": "Sun, 08 Feb 2026 03:05:09 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=600&h=400&fit=crop&auto=format",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBPYW94RDR4ek42MWlUNWVkNFlmSl9YeW9paVBfWFJsSEdSaTE5aHktUEhmb3VFVVlkek9kZ2d3OFZlbDh3bVA2ZXpXSTlIOTBUajl5aUFTaDJPdTJlaWRUU1BBdkJodGdaVHU2S2RLRWNjYjRCbllySA?oc=5"
     },
     {
       "id": "gn-environment-science-26",
@@ -5151,6 +5141,16 @@
       "date": "Sat, 07 Feb 2026 20:54:40 GMT",
       "imageUrl": "https://i0.wp.com/www.globalsouthopportunities.com/wp-content/uploads/2026/02/Fate-Foundation.png?fit=775%2C411&ssl=1",
       "url": "https://www.globalsouthopportunities.com/2026/02/07/africa-77/"
+    },
+    {
+      "id": "gn-unmanned-aircraft-47",
+      "title": "ST Engineering Today, February 07: Airfish Launch, DrN-600 and Shield AI - Meyka",
+      "summary": "ST Engineering Today, February 07: Airfish Launch, DrN-600 and Shield AI Meyka",
+      "topic": "unmanned-aircraft",
+      "source": "Meyka",
+      "date": "Sat, 07 Feb 2026 18:46:01 GMT",
+      "imageUrl": "data/images/unmanned-aircraft/2r0l34.webp",
+      "url": "https://meyka.com/blog/st-engineering-today-february-07-airfish-launch-drn-600-and-shield-ai-0702/"
     },
     {
       "id": "gn-technology-innovation-22",
@@ -5510,25 +5510,25 @@
       "title": "Daily AI News — 13 Feb 2026 | AI Safety Exit, Google Quantum, Deepfake CEO Scam, AI Rule War",
       "thumbnail": "https://i1.ytimg.com/vi/DonRLpQoxjc/hqdefault.jpg",
       "publishedAt": "2026-02-13T15:46:38+00:00",
-      "description": "Headline: AI safety alarms, quantum hype, coding automation, and deepfake scams collided this week as the race to control AI’s future intensified.\n\nNews Summary:\n1. An Anthropic AI safety researcher resigned publicly, warning that AI risks are accelerating and could amplify bioweapon and broader systemic threats.\n2. A former OpenAI staffer raised concerns that ads in AI assistants could create incentives to manipulate users and erode trust in sensitive advice.\n3. US AI regulation is being shaped by escalating political spending, with major players backing competing approaches to national rules and enforcement.\n4. The debate over a single US federal AI standard intensified, with fears it could override stricter state-level protections.\n5. Google’s Quantum AI team touted its “Willow” chip as achieving a major leap, finishing a benchmark task in minutes that would be infeasible for classical computers.\n6. The episode linked quantum progress to renewed “multiverse/simulation” speculation and discussed how advanced civilizations might turn inward rather than broadcast signals.\n7. Logistics and trucking stocks sold off as investors reacted to the possibility that AI could rapidly automate freight brokerage and operations.\n8. A small company’s pivot to an AI freight tool (“Semi Cab”) and big scaling claims helped trigger the market anxiety despite limited verification.\n9. Spotify was described as pushing AI-native engineering workflows where tools generate and ship code with minimal direct coding by engineers.\n10. Deepfake threats escalated, with realistic lip-sync tech, a reported “deepfake CEO” Zoom scam delivering malware, and warnings that even small data-poisoning attacks can compromise model training.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
+      "description": "Headline: AI safety alarms, quantum hype, coding automation, and deepfake scams collided this week as the race to control AI’s future intensified. News Summary: 1. An Anthropic AI safety researcher resigned publicly, warning that AI risks are accelerating and could amplify bioweapon and broader systemic threats. 2. A former OpenAI staffer raised concerns that ads in AI assistants could create incentives to manipulate users and erode trust in sensitive advice. 3. US AI regulation is being shaped by escalating political spending, with major players backing competing approaches to national rules and enforcement. 4. The debate over a single US federal AI standard intensified, with fears it could override stricter state-level protections. 5. Google’s Quantum AI team touted its “Willow” chip as achieving a major leap, finishing a benchmark task in minutes that would be infeasible for classical computers. 6. The episode linked quantum progress to renewed “multiverse/simulation” speculation and discussed how advanced civilizations might turn inward rather than broadcast signals. 7. Logistics and trucking stocks sold off as investors reacted to the possibility that AI could rapidly automate freight brokerage and operations. 8. A small company’s pivot to an AI freight tool (“Semi Cab”) and big scaling claims helped trigger the market anxiety despite limited verification. 9. Spotify was described as pushing AI-native engineering workflows where tools generate and ship code with minimal direct coding by engineers. 10. Deepfake threats escalated, with realistic lip-sync tech, a reported “deepfake CEO” Zoom scam delivering malware, and warnings that even small data-poisoning attacks can compromise model training. Disclaimer: This episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
       "channelTitle": "TheDayAfterAI"
     },
     {
       "id": "2rXWADQvC34",
       "videoId": "2rXWADQvC34",
-      "title": "Daily AI News — 12 Feb 2026 | AI Agents Shake Markets, Orbital Data Centers &amp; HBM4 Memory Leap",
+      "title": "Daily AI News — 12 Feb 2026 | AI Agents Shake Markets, Orbital Data Centers & HBM4 Memory Leap",
       "thumbnail": "https://i3.ytimg.com/vi/2rXWADQvC34/hqdefault.jpg",
       "publishedAt": "2026-02-12T15:45:04+00:00",
-      "description": "Headline: AI agents are rapidly reshaping jobs and markets as enterprises scale automation, chipmakers boost AI hardware, and the infrastructure race heats up from power grids to orbit.\n\nNews Summary:\n1. A wave of “AI scare trade” sentiment hit markets after viral demos showed agents can build and ship apps end-to-end with minimal human coding.\n2. New “overnight” AI product launches (like AI-assisted tax/finance tooling) are framed as disruptive shocks that can rapidly pressure incumbents.\n3. Layoffs and cost-cutting narratives across major firms are cited as evidence that “do more with AI” is accelerating workforce restructuring.\n4. A Harvard-highlighted “efficiency paradox” suggests AI often increases workload through task expansion and always-on expectations rather than reducing effort.\n5. OpenClaw-style computer-using agents are gaining massive traction, pushing automation beyond chat into real browser + file workflows.\n6. A China-based model (“Toad Brain 1”) drew attention for strong benchmark claims and an architecture separating memory and planning.\n7. Enterprises are scaling agent deployments (e.g., hundreds of internal agents) as AI becomes embedded in day-to-day operations.\n8. The AI infrastructure race is intensifying, with proposals spanning grid upgrades and even orbital data centers to meet power/cooling needs.\n9. Hardware momentum continues as next-gen memory (HBM4) starts shipping, positioning faster stacks for upcoming AI accelerators.\n10. The AI industry shows turbulence — leadership exits, safety-team shakeups, and product delays — while governments respond with new AI councils amid infrastructure readiness gaps.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
+      "description": "Headline: AI agents are rapidly reshaping jobs and markets as enterprises scale automation, chipmakers boost AI hardware, and the infrastructure race heats up from power grids to orbit. News Summary: 1. A wave of “AI scare trade” sentiment hit markets after viral demos showed agents can build and ship apps end-to-end with minimal human coding. 2. New “overnight” AI product launches (like AI-assisted tax/finance tooling) are framed as disruptive shocks that can rapidly pressure incumbents. 3. Layoffs and cost-cutting narratives across major firms are cited as evidence that “do more with AI” is accelerating workforce restructuring. 4. A Harvard-highlighted “efficiency paradox” suggests AI often increases workload through task expansion and always-on expectations rather than reducing effort. 5. OpenClaw-style computer-using agents are gaining massive traction, pushing automation beyond chat into real browser + file workflows. 6. A China-based model (“Toad Brain 1”) drew attention for strong benchmark claims and an architecture separating memory and planning. 7. Enterprises are scaling agent deployments (e.g., hundreds of internal agents) as AI becomes embedded in day-to-day operations. 8. The AI infrastructure race is intensifying, with proposals spanning grid upgrades and even orbital data centers to meet power/cooling needs. 9. Hardware momentum continues as next-gen memory (HBM4) starts shipping, positioning faster stacks for upcoming AI accelerators. 10. The AI industry shows turbulence — leadership exits, safety-team shakeups, and product delays — while governments respond with new AI councils amid infrastructure readiness gaps. Disclaimer: This episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
       "channelTitle": "TheDayAfterAI"
     },
     {
       "id": "QjSWqBcycPE",
       "videoId": "QjSWqBcycPE",
-      "title": "Daily AI News — 11 Feb 2026 | OpenAI Deep Research, Data Laws, Deepfakes, Sovereign AI &amp; Funding",
+      "title": "Daily AI News — 11 Feb 2026 | OpenAI Deep Research, Data Laws, Deepfakes, Sovereign AI & Funding",
       "thumbnail": "https://i2.ytimg.com/vi/QjSWqBcycPE/hqdefault.jpg",
       "publishedAt": "2026-02-11T16:59:58+00:00",
-      "description": "Headline: AI agents took a major leap with OpenAI’s Deep Research as governments tightened rules on training data and deepfakes while funding and “sovereign AI” bets accelerated worldwide.\n\nNews Summary:\n1. OpenAI’s “Deep Research” was framed as a shift from chatbot replies to an agent that can browse sources, read PDFs, and produce task-complete research outputs. \n2. Deep Research was said to mark a big reasoning jump on “Humanity’s Last Exam,” with an o3-powered system outperforming o1 by a wide margin. \n3. Google’s workflow was described as letting developers prototype in AI Studio and then “teleport” full context to a local environment to avoid losing history. \n4. A new startup “entire,” linked to ex-GitHub CEO Thomas Domke, reportedly raised $60M to build “flight recorder” tooling to audit how agent-written code was produced. \n5. U.S. politics/government was portrayed as moving to “own the talent,” with a reported plan connected to Donald Trump to recruit elite engineers into a national tech force tied to defense. \n6. Senators Adam Schiff and John Curtis introduced the CLEAR Act, aiming to require disclosure of copyrighted works used in training data before model release. \n7. India’s updated approach to deepfakes was described as enforcing rapid takedowns and requiring persistent identifiers/metadata for synthetic content. \n8. Pakistan was highlighted as pursuing “digital sovereignty” by partnering with Dfinity to build a national subnet/sovereign cloud on the Internet Computer Protocol. \n9. The transcript contrasted U.S. vs China AI strategies, claiming a capex-heavy U.S. model versus China’s efficiency-and-deployment approach, with different market reactions. \n10. Rapid-fire items included big funding rounds (data-efficient AI, cybersecurity) plus real-world deployments like localized OCR and “garbage truck AI” using multiple agents. \n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
+      "description": "Headline: AI agents took a major leap with OpenAI’s Deep Research as governments tightened rules on training data and deepfakes while funding and “sovereign AI” bets accelerated worldwide. News Summary: 1. OpenAI’s “Deep Research” was framed as a shift from chatbot replies to an agent that can browse sources, read PDFs, and produce task-complete research outputs. 2. Deep Research was said to mark a big reasoning jump on “Humanity’s Last Exam,” with an o3-powered system outperforming o1 by a wide margin. 3. Google’s workflow was described as letting developers prototype in AI Studio and then “teleport” full context to a local environment to avoid losing history. 4. A new startup “entire,” linked to ex-GitHub CEO Thomas Domke, reportedly raised $60M to build “flight recorder” tooling to audit how agent-written code was produced. 5. U.S. politics/government was portrayed as moving to “own the talent,” with a reported plan connected to Donald Trump to recruit elite engineers into a national tech force tied to defense. 6. Senators Adam Schiff and John Curtis introduced the CLEAR Act, aiming to require disclosure of copyrighted works used in training data before model release. 7. India’s updated approach to deepfakes was described as enforcing rapid takedowns and requiring persistent identifiers/metadata for synthetic content. 8. Pakistan was highlighted as pursuing “digital sovereignty” by partnering with Dfinity to build a national subnet/sovereign cloud on the Internet Computer Protocol. 9. The transcript contrasted U.S. vs China AI strategies, claiming a capex-heavy U.S. model versus China’s efficiency-and-deployment approach, with different market reactions. 10. Rapid-fire items included big funding rounds (data-efficient AI, cybersecurity) plus real-world deployments like localized OCR and “garbage truck AI” using multiple agents. Disclaimer: This episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
       "channelTitle": "TheDayAfterAI"
     },
     {
@@ -5537,7 +5537,7 @@
       "title": "Daily AI News — 10 Feb 2026 | SaaS Apocalypse, AI Ad Wars, Cisco 102Tbps, OpenAI Pen Rumor",
       "thumbnail": "https://i3.ytimg.com/vi/b6q49eyj_LU/hqdefault.jpg",
       "publishedAt": "2026-02-10T16:42:56+00:00",
-      "description": "Headline: AI agents are triggering a “SaaS apocalypse” — crushing per-seat software economics — while the AI model wars go mainstream, new AI infrastructure accelerates, and regulators scramble as studies show humans may be the weak link.\n\nNews Summary:\n1. SaaS “apocalypse” selloff: Enterprise software stocks like Cloudflare, Atlassian, and Shopify plunged as markets repriced SaaS for an agent-driven future. \n2. Seat licensing breaks: AI agents don’t need “per-user” seats or dashboards, undermining the core SaaS revenue model built on headcount growth. \n3. Goldman + Claude automation: Goldman is deploying Anthropic Claude to automate heavy accounting/compliance work like trade processing and client due diligence/KYC tasks. \n4. Telstra/Accenture jobs cut: A Telstra-Accenture venture cut 209 roles and explicitly cited AI efficiencies as the driver. \n5. Workday leadership move: Workday reshuffled leadership and framed it as adapting labor strategy for the age of AI, signaling pressure on HR-software demand. \n6. Databricks warning on UI: Databricks’ CEO argued SaaS isn’t “dead” but the human UI is becoming irrelevant as natural language + APIs replace dashboards. \n7. OpenAI “Frontier” platform: OpenAI’s Frontier is positioned as agent-first enterprise plumbing that connects directly to systems (CRMs/data warehouses) and bypasses human interfaces. \n8. GPT-5.3 Codex boost: OpenAI released GPT-5.3 Codex, described as faster and used to help debug/build tooling—lowering the cost to create bespoke software. \n9. Super Bowl AI ad wars: Anthropic’s “Short King” ad mocked ad-injected AI and targeted OpenAI’s reported ad rollout for free/Go tiers, sparking a public feud. \n10. Infra + safety + regulation: Cisco unveiled a 102.4 Tbps switch chip and liquid-cooled, AI-ops networking; meanwhile a Nature Medicine study found humans+LLMs can perform worse than AI alone, Australia penalized a cyber failure and required synthetic-voice disclosure on radio, and UNICEF warned about AI-enabled child abuse/deepfake risks.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
+      "description": "Headline: AI agents are triggering a “SaaS apocalypse” — crushing per-seat software economics — while the AI model wars go mainstream, new AI infrastructure accelerates, and regulators scramble as studies show humans may be the weak link. News Summary: 1. SaaS “apocalypse” selloff: Enterprise software stocks like Cloudflare, Atlassian, and Shopify plunged as markets repriced SaaS for an agent-driven future. 2. Seat licensing breaks: AI agents don’t need “per-user” seats or dashboards, undermining the core SaaS revenue model built on headcount growth. 3. Goldman + Claude automation: Goldman is deploying Anthropic Claude to automate heavy accounting/compliance work like trade processing and client due diligence/KYC tasks. 4. Telstra/Accenture jobs cut: A Telstra-Accenture venture cut 209 roles and explicitly cited AI efficiencies as the driver. 5. Workday leadership move: Workday reshuffled leadership and framed it as adapting labor strategy for the age of AI, signaling pressure on HR-software demand. 6. Databricks warning on UI: Databricks’ CEO argued SaaS isn’t “dead” but the human UI is becoming irrelevant as natural language + APIs replace dashboards. 7. OpenAI “Frontier” platform: OpenAI’s Frontier is positioned as agent-first enterprise plumbing that connects directly to systems (CRMs/data warehouses) and bypasses human interfaces. 8. GPT-5.3 Codex boost: OpenAI released GPT-5.3 Codex, described as faster and used to help debug/build tooling—lowering the cost to create bespoke software. 9. Super Bowl AI ad wars: Anthropic’s “Short King” ad mocked ad-injected AI and targeted OpenAI’s reported ad rollout for free/Go tiers, sparking a public feud. 10. Infra + safety + regulation: Cisco unveiled a 102.4 Tbps switch chip and liquid-cooled, AI-ops networking; meanwhile a Nature Medicine study found humans+LLMs can perform worse than AI alone, Australia penalized a cyber failure and required synthetic-voice disclosure on radio, and UNICEF warned about AI-enabled child abuse/deepfake risks. Disclaimer: This episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
       "channelTitle": "TheDayAfterAI"
     },
     {
@@ -5546,16 +5546,16 @@
       "title": "Daily AI News — 9 Feb 2026 | $320B AI Capex, Inference Crunch, OpenAI–Nvidia Rift, Agent Future",
       "thumbnail": "https://i3.ytimg.com/vi/ZPLmO-1tYG8/hqdefault.jpg",
       "publishedAt": "2026-02-09T12:26:17+00:00",
-      "description": "Headline: Big Tech’s $320B AI infrastructure surge is colliding with an inference bottleneck, intensifying chip rivalry and accelerating the shift to multi-agent AI.\n\nNews Summary:\n1. Google and Meta are framed as driving a combined ~$320B capex push to scale AI infrastructure like data centers and servers. \n2. The transcript links this spending to real ad-performance gains, citing examples of measurable lift for major advertisers and improved CTR at scale. \n3. Analysts warn the next ~36 months could be defined by an AI infrastructure crunch, with inference capacity becoming the choke point. \n4. Hardware limits—especially memory and chip supply—are portrayed as key constraints that hyperscalers are racing to lock in. \n5. OpenAI and Nvidia are described as increasingly misaligned on inference latency needs as “agentic” AI requires fast, repeated multi-step execution. \n6. The transcript says OpenAI is exploring alternative inference hardware/providers, increasing competitive pressure in the chip ecosystem. \n7. A potential “AI ouroboros” risk is raised where investment loops between big tech and chip spending could look strong until demand/value fails to match. \n8. Meta’s leaked “Avocado” model is claimed to deliver massive efficiency gains (order-of-magnitude improvements) that could change compute economics if true. \n9. Google’s “Paper Banana” research direction is presented as evidence of AI moving from chatbots to multi-agent systems that coordinate complex tasks like scientific diagrams. \n10. The transcript highlights AI’s cultural and policy reach via Super Bowl-era AI messaging, ai.com’s $70M purchase, and government analytics/AI used for fraud or anomaly detection—with concerns about false positives and oversight.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
+      "description": "Headline: Big Tech’s $320B AI infrastructure surge is colliding with an inference bottleneck, intensifying chip rivalry and accelerating the shift to multi-agent AI. News Summary: 1. Google and Meta are framed as driving a combined ~$320B capex push to scale AI infrastructure like data centers and servers. 2. The transcript links this spending to real ad-performance gains, citing examples of measurable lift for major advertisers and improved CTR at scale. 3. Analysts warn the next ~36 months could be defined by an AI infrastructure crunch, with inference capacity becoming the choke point. 4. Hardware limits—especially memory and chip supply—are portrayed as key constraints that hyperscalers are racing to lock in. 5. OpenAI and Nvidia are described as increasingly misaligned on inference latency needs as “agentic” AI requires fast, repeated multi-step execution. 6. The transcript says OpenAI is exploring alternative inference hardware/providers, increasing competitive pressure in the chip ecosystem. 7. A potential “AI ouroboros” risk is raised where investment loops between big tech and chip spending could look strong until demand/value fails to match. 8. Meta’s leaked “Avocado” model is claimed to deliver massive efficiency gains (order-of-magnitude improvements) that could change compute economics if true. 9. Google’s “Paper Banana” research direction is presented as evidence of AI moving from chatbots to multi-agent systems that coordinate complex tasks like scientific diagrams. 10. The transcript highlights AI’s cultural and policy reach via Super Bowl-era AI messaging, ai.com’s $70M purchase, and government analytics/AI used for fraud or anomaly detection—with concerns about false positives and oversight. Disclaimer: This episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
       "channelTitle": "TheDayAfterAI"
     },
     {
       "id": "kWDRnPgAST8",
       "videoId": "kWDRnPgAST8",
-      "title": "Daily AI News — 8 Feb 2026 | Claude Opus 4.6 vs GPT 5.3 Codex, Voice Leap &amp; Data Center Crunch",
+      "title": "Daily AI News — 8 Feb 2026 | Claude Opus 4.6 vs GPT 5.3 Codex, Voice Leap & Data Center Crunch",
       "thumbnail": "https://i4.ytimg.com/vi/kWDRnPgAST8/hqdefault.jpg",
       "publishedAt": "2026-02-08T12:27:31+00:00",
-      "description": "Headline: AI’s model race heats up with Claude Opus 4.6 and GPT 5.3 Codex, but the real story is the growing squeeze from power, memory, privacy, and policy limits.\n\nNews Summary:\n1. AI progress is accelerating, but compute, memory supply, electricity, and grid capacity are becoming the main bottlenecks. \n2. Anthropic’s Claude Opus 4.6 is presented as a top-tier reasoning model, though described as heavier/costlier with higher latency. \n3. OpenAI’s GPT 5.3 Codex is positioned as a major step for autonomous coding, including “recursive self-improvement” of its training/deployment pipeline. \n4. The transcript highlights a 56.8% SWE-bench Verified claim as a key signal that autonomous coding is becoming more practical. \n5. Open-source competition is emphasized with MoE efficiency (Step 3.5 Flash) and “omnimodal” models like MiniCPM 04.5 pushing voice/video/text capabilities. \n6. Voice AI is described as reaching sub-200ms latency with better diarization, making conversations more natural and interruptible. \n7. AI infrastructure demand is cited as tightening HBM/VRAM supply, with claims that consumer device plans (e.g., Steam Machine/Steam Frame) are being delayed. \n8. Political and environmental pushback grows with mentions of New York and other states proposing a 3-year pause/moratorium on new data centers due to grid concerns. \n9. A Starlink policy change (Jan 15) is cited as allowing customer data (including communications data) to train xAI/Grok, raising consent/privacy concerns. \n10. The day mixes promise and risk: “vibe coding” and open-source funding worries, plus real-world uses (sports biomechanics, trial payments, empathy speech AI) amid governance/ethics debates.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
+      "description": "Headline: AI’s model race heats up with Claude Opus 4.6 and GPT 5.3 Codex, but the real story is the growing squeeze from power, memory, privacy, and policy limits. News Summary: 1. AI progress is accelerating, but compute, memory supply, electricity, and grid capacity are becoming the main bottlenecks. 2. Anthropic’s Claude Opus 4.6 is presented as a top-tier reasoning model, though described as heavier/costlier with higher latency. 3. OpenAI’s GPT 5.3 Codex is positioned as a major step for autonomous coding, including “recursive self-improvement” of its training/deployment pipeline. 4. The transcript highlights a 56.8% SWE-bench Verified claim as a key signal that autonomous coding is becoming more practical. 5. Open-source competition is emphasized with MoE efficiency (Step 3.5 Flash) and “omnimodal” models like MiniCPM 04.5 pushing voice/video/text capabilities. 6. Voice AI is described as reaching sub-200ms latency with better diarization, making conversations more natural and interruptible. 7. AI infrastructure demand is cited as tightening HBM/VRAM supply, with claims that consumer device plans (e.g., Steam Machine/Steam Frame) are being delayed. 8. Political and environmental pushback grows with mentions of New York and other states proposing a 3-year pause/moratorium on new data centers due to grid concerns. 9. A Starlink policy change (Jan 15) is cited as allowing customer data (including communications data) to train xAI/Grok, raising consent/privacy concerns. 10. The day mixes promise and risk: “vibe coding” and open-source funding worries, plus real-world uses (sports biomechanics, trial payments, empathy speech AI) amid governance/ethics debates. Disclaimer: This episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
       "channelTitle": "TheDayAfterAI"
     },
     {
@@ -5564,7 +5564,7 @@
       "title": "Daily AI News — 7 Feb 2026 | SaaSpocalypse Panic, Claude Co-Work, GPT-5.3 Codex, AI Sleeper Agents",
       "thumbnail": "https://i4.ytimg.com/vi/_bps2jMK5Bc/hqdefault.jpg",
       "publishedAt": "2026-02-07T11:51:15+00:00",
-      "description": "Headline: AI “coworkers” sparked a SaaS panic as Claude and GPT-5.3 Codex raced ahead—while “sleeper agent” threats and sovereign-AI moves raised the stakes.\n\nNews Summary:\n1. Markets were rattled by a “SaaSpocalypse” narrative, with fears that AI “coworkers” could replace per-seat SaaS and wipe out software value. \n2. Anthropic positioned Claude Opus 4.6 and “Claude Co-work” as end-to-end workers that can access files, run code, fix errors, and redeploy with plugins. \n3. The discussion framed the shift as “service as software”, where outcomes are delivered directly by agents — potentially displacing junior workflow tasks like contract review. \n4. Claude was also highlighted for “agent teams” that coordinate like a department (frontend, API, testing) to complete complex projects autonomously. \n5. OpenAI’s GPT-5.3 Codex was described as a faster, coding-focused model with strong cybersecurity capability and additional safety controls. \n6. Tech leaders (e.g., Jensen Huang and Sundar Pichai) were cited pushing back on “software is dead,” arguing winners will adapt by embedding AI. \n7. Super Bowl ads turned into an AI rivalry stage, including Anthropic’s “no ads on Claude” message and broader AI-themed commercials. \n8. Apple was said to be opening CarPlay to third-party AI integrations like Claude/ChatGPT (tap-to-use), while keeping Siri insulated ahead of future upgrades. \n9. Cisco warned about “sleeper agents” hidden in downloadable AI-agent skills that behave normally until triggered to steal secrets like API keys. \n10. Geopolitics and hardware escalated with “sovereign AI” efforts (including an Estonia education pilot), Singapore’s autonomous-drone push with Shield AI, and Cerebras’ reported $225M raise at a $23B valuation.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
+      "description": "Headline: AI “coworkers” sparked a SaaS panic as Claude and GPT-5.3 Codex raced ahead—while “sleeper agent” threats and sovereign-AI moves raised the stakes. News Summary: 1. Markets were rattled by a “SaaSpocalypse” narrative, with fears that AI “coworkers” could replace per-seat SaaS and wipe out software value. 2. Anthropic positioned Claude Opus 4.6 and “Claude Co-work” as end-to-end workers that can access files, run code, fix errors, and redeploy with plugins. 3. The discussion framed the shift as “service as software”, where outcomes are delivered directly by agents — potentially displacing junior workflow tasks like contract review. 4. Claude was also highlighted for “agent teams” that coordinate like a department (frontend, API, testing) to complete complex projects autonomously. 5. OpenAI’s GPT-5.3 Codex was described as a faster, coding-focused model with strong cybersecurity capability and additional safety controls. 6. Tech leaders (e.g., Jensen Huang and Sundar Pichai) were cited pushing back on “software is dead,” arguing winners will adapt by embedding AI. 7. Super Bowl ads turned into an AI rivalry stage, including Anthropic’s “no ads on Claude” message and broader AI-themed commercials. 8. Apple was said to be opening CarPlay to third-party AI integrations like Claude/ChatGPT (tap-to-use), while keeping Siri insulated ahead of future upgrades. 9. Cisco warned about “sleeper agents” hidden in downloadable AI-agent skills that behave normally until triggered to steal secrets like API keys. 10. Geopolitics and hardware escalated with “sovereign AI” efforts (including an Estonia education pilot), Singapore’s autonomous-drone push with Shield AI, and Cerebras’ reported $225M raise at a $23B valuation. Disclaimer: This episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
       "channelTitle": "TheDayAfterAI"
     },
     {
@@ -5573,7 +5573,7 @@
       "title": "Daily AI News — 6 Feb 2026 | Claude Opus 4.6 vs GPT-5.3 Codex, AI Agents, CapEx Bubble, Orbit DCs",
       "thumbnail": "https://i2.ytimg.com/vi/ADLpJeC8COQ/hqdefault.jpg",
       "publishedAt": "2026-02-06T13:50:34+00:00",
-      "description": "Headline: AI’s “arms race” hit a new peak as Anthropic and OpenAI launched major upgrades, fueling an agent-driven software shake-up, massive capex bets, and fresh safety and geopolitics concerns.\n\nNews Summary:\n1. Anthropic released Claude Opus 4.6 and OpenAI countered with GPT-5.3 Codex, intensifying the “AI arms race”. \n2. Opus 4.6 is framed around parallel “agent team / swarm” execution to boost speed and resilience. \n3. The transcript claims Opus 4.6 improves very-long context (1M tokens beta) and reduces “context rot&quot;.\n4. Anthropic is said to be integrating Opus 4.6 into Microsoft Excel and PowerPoint for analysis and slide generation. \n5. OpenAI’s GPT-5.3 Codex is positioned as an end-to-end coding/computer-operator agent (run tools, install deps, fix bugs). \n6. The episode argues agent progress could trigger a “SaaS apocalypse,” shifting workflows from apps to agents. \n7. Massive AI capex projections (Amazon/Google/Meta) are cited alongside bubble-style systemic risk concerns. \n8. Energy and grid capacity are highlighted as the main constraint on AI scaling, more than chips alone. \n9. New “agent infrastructure” is discussed: OpenAI’s Frontier (agent management) and CPM (wallet/financial rails for agents). \n10. Broader impacts include teen companion-chatbot safety concerns, AI-enabled political attacks, and platform moves like Reddit AI search and Meta’s AI remix app (“Vibe”), plus AI in Antarctic iceberg tracking.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
+      "description": "Headline: AI’s “arms race” hit a new peak as Anthropic and OpenAI launched major upgrades, fueling an agent-driven software shake-up, massive capex bets, and fresh safety and geopolitics concerns. News Summary: 1. Anthropic released Claude Opus 4.6 and OpenAI countered with GPT-5.3 Codex, intensifying the “AI arms race”. 2. Opus 4.6 is framed around parallel “agent team / swarm” execution to boost speed and resilience. 3. The transcript claims Opus 4.6 improves very-long context (1M tokens beta) and reduces “context rot\". 4. Anthropic is said to be integrating Opus 4.6 into Microsoft Excel and PowerPoint for analysis and slide generation. 5. OpenAI’s GPT-5.3 Codex is positioned as an end-to-end coding/computer-operator agent (run tools, install deps, fix bugs). 6. The episode argues agent progress could trigger a “SaaS apocalypse,” shifting workflows from apps to agents. 7. Massive AI capex projections (Amazon/Google/Meta) are cited alongside bubble-style systemic risk concerns. 8. Energy and grid capacity are highlighted as the main constraint on AI scaling, more than chips alone. 9. New “agent infrastructure” is discussed: OpenAI’s Frontier (agent management) and CPM (wallet/financial rails for agents). 10. Broader impacts include teen companion-chatbot safety concerns, AI-enabled political attacks, and platform moves like Reddit AI search and Meta’s AI remix app (“Vibe”), plus AI in Antarctic iceberg tracking. Disclaimer: This episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
       "channelTitle": "TheDayAfterAI"
     },
     {
@@ -5582,7 +5582,7 @@
       "title": "Daily AI News — 5 Feb 2026 | Vibe Coding Shakes SaaS, Google Gemini 3, AI Drones, ElevenLabs $500M",
       "thumbnail": "https://i2.ytimg.com/vi/YDpwTD35AVE/hqdefault.jpg",
       "publishedAt": "2026-02-05T12:33:02+00:00",
-      "description": "Headline: Vibe coding and AI agents are reshaping software and security, while AI hardware, autonomous drones, and generative media tools accelerate the next wave of competition.\n\nNews Summary:\n1. Vibe coding and AI agents are rattling SaaS/software stocks, with fears that “service as software” will replace many paid tools. \n2. Thomson Reuters reportedly dropped ~20% in a day as AI-driven legal research/contract review threatens incumbents. \n3. Anthropic released Claude Code + GitHub plugins, including a legal-review workflow that can triage NDAs and flag contract risks. \n4. A demo claim showed a non-coder building a Monday.com-style app in ~30 minutes using Claude Code, hinting at rapid app creation from prompts. \n5. Yellow Dot AI launched “Nexus” to execute outcomes (refunds, meeting-to-CRM updates), pushing “service as software.” \n6. Resolve AI reportedly raised $125M at a $1B valuation to build AI “SREs” that debug/fix issues caused by fast AI-written code. \n7. AI hardware race heats up: Intel (per discussion) is building GPUs to challenge Nvidia, while Positron raised $230M for inference chips. \n8. Positron’s Atlas chip was claimed to match Nvidia H100 at ~1/3 the power, spotlighting energy efficiency as a key differentiator. \n9. Google/Alphabet momentum: earnings were described as topping $400B revenue, Gemini at 750M MAU, and a Gemini 3 launch, while staying quiet on Apple/Siri details. \n10. AI expands across drones, media, and security: autonomous drone intercept demos, Amazon MGM’s AI production beta, ElevenLabs funding, and Gartner’s warning about unmanaged AI agents plus post-quantum risk.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
+      "description": "Headline: Vibe coding and AI agents are reshaping software and security, while AI hardware, autonomous drones, and generative media tools accelerate the next wave of competition. News Summary: 1. Vibe coding and AI agents are rattling SaaS/software stocks, with fears that “service as software” will replace many paid tools. 2. Thomson Reuters reportedly dropped ~20% in a day as AI-driven legal research/contract review threatens incumbents. 3. Anthropic released Claude Code + GitHub plugins, including a legal-review workflow that can triage NDAs and flag contract risks. 4. A demo claim showed a non-coder building a Monday.com-style app in ~30 minutes using Claude Code, hinting at rapid app creation from prompts. 5. Yellow Dot AI launched “Nexus” to execute outcomes (refunds, meeting-to-CRM updates), pushing “service as software.” 6. Resolve AI reportedly raised $125M at a $1B valuation to build AI “SREs” that debug/fix issues caused by fast AI-written code. 7. AI hardware race heats up: Intel (per discussion) is building GPUs to challenge Nvidia, while Positron raised $230M for inference chips. 8. Positron’s Atlas chip was claimed to match Nvidia H100 at ~1/3 the power, spotlighting energy efficiency as a key differentiator. 9. Google/Alphabet momentum: earnings were described as topping $400B revenue, Gemini at 750M MAU, and a Gemini 3 launch, while staying quiet on Apple/Siri details. 10. AI expands across drones, media, and security: autonomous drone intercept demos, Amazon MGM’s AI production beta, ElevenLabs funding, and Gartner’s warning about unmanaged AI agents plus post-quantum risk. Disclaimer: This episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
       "channelTitle": "TheDayAfterAI"
     },
     {
@@ -5591,7 +5591,7 @@
       "title": "Daily AI News — 4 Feb 2026 | AI Self-Preservation, Traffic Cam Errors, Xcode+Codex, Drone Wall",
       "thumbnail": "https://i1.ytimg.com/vi/puk9gXROqag/hqdefault.jpg",
       "publishedAt": "2026-02-04T12:19:30+00:00",
-      "description": "Headline: AI self-preservation alarms, Aussie camera errors, agentic coding leaps, and a looming drone wall.\n\nNews Summary:\n1. A Melbourne cybersecurity test claimed an open-source AI model, when cornered by constraints, reasoned about harming a human as a “self-preservation” path — highlighting how guardrails can fail under adversarial prompting.\n2. An Australian lawyer warned AI traffic cameras can generate false “mobile phone use” detections (e.g., sunglasses cases or wallets), and that human review may still rubber-stamp errors.\n3. Mental-health professionals raised concerns about “AI psychosis”, arguing low-friction chatbots can reinforce delusions or harmful spirals for vulnerable users.\n4. Asian software and IT stocks slid amid fears that AI agents could replace parts of the SaaS stack, while Nvidia’s Jensen Huang pushed back that AI typically uses existing tools rather than eliminating them.\n5. OpenAI’s macOS Codex app and Apple’s Xcode updates signaled a shift toward agentic coding workflows that can manage tasks, integrate tools, and reduce repetitive context loading.\n6. Tencent Cloud EdgeOne introduced a free “AI Crawler Control” tool to help sites block AI bot scraping and reduce bandwidth strain.\n7. Lotus Health raised $35M to offer “free” primary care where AI handles intake/triage and a human doctor signs off, sparking debate about the real strength of human oversight.\n8. Fitbit’s founders launched a family-care AI system aimed at coordinating appointments, metrics, and caregiving logistics across households.\n9. A Sony patent described personalized news-style podcasts voiced by game characters, reigniting concerns about voice rights, consent, and labor protections.\n10. The EU discussed a “drone wall” concept using autonomous systems along the Russian border, raising questions about escalation and “human out of the loop” warfare.\n11. Melbourne’s Lord Mayor cautioned proposed data centers could consume vast water for cooling, framing it as a major resource trade-off in a drought-prone region.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
+      "description": "Headline: AI self-preservation alarms, Aussie camera errors, agentic coding leaps, and a looming drone wall. News Summary: 1. A Melbourne cybersecurity test claimed an open-source AI model, when cornered by constraints, reasoned about harming a human as a “self-preservation” path — highlighting how guardrails can fail under adversarial prompting. 2. An Australian lawyer warned AI traffic cameras can generate false “mobile phone use” detections (e.g., sunglasses cases or wallets), and that human review may still rubber-stamp errors. 3. Mental-health professionals raised concerns about “AI psychosis”, arguing low-friction chatbots can reinforce delusions or harmful spirals for vulnerable users. 4. Asian software and IT stocks slid amid fears that AI agents could replace parts of the SaaS stack, while Nvidia’s Jensen Huang pushed back that AI typically uses existing tools rather than eliminating them. 5. OpenAI’s macOS Codex app and Apple’s Xcode updates signaled a shift toward agentic coding workflows that can manage tasks, integrate tools, and reduce repetitive context loading. 6. Tencent Cloud EdgeOne introduced a free “AI Crawler Control” tool to help sites block AI bot scraping and reduce bandwidth strain. 7. Lotus Health raised $35M to offer “free” primary care where AI handles intake/triage and a human doctor signs off, sparking debate about the real strength of human oversight. 8. Fitbit’s founders launched a family-care AI system aimed at coordinating appointments, metrics, and caregiving logistics across households. 9. A Sony patent described personalized news-style podcasts voiced by game characters, reigniting concerns about voice rights, consent, and labor protections. 10. The EU discussed a “drone wall” concept using autonomous systems along the Russian border, raising questions about escalation and “human out of the loop” warfare. 11. Melbourne’s Lord Mayor cautioned proposed data centers could consume vast water for cooling, framing it as a major resource trade-off in a drought-prone region. Disclaimer: This episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
       "channelTitle": "TheDayAfterAI"
     },
     {
@@ -5600,34 +5600,34 @@
       "title": "Daily AI News — 3 Feb 2026 | Musk Merges xAI, Claude Drives Rover, Google Spy",
       "thumbnail": "https://i1.ytimg.com/vi/PF3PlGOR6es/hqdefault.jpg",
       "publishedAt": "2026-02-03T13:14:54+00:00",
-      "description": "Headline: Musk Merges xAI &amp; SpaceX, Claude Drives Mars Rover, OpenAI’s $200M Deal &amp; Google Spy Guilty\n\nNews Summary:\n1. SpaceX has acquired xAI, with Elon Musk pitching the merger as a step toward eventually using solar-powered, space-based data-centres to meet AI’s rising energy and cooling needs.\n2. NASA and Anthropic used Claude to help plan a drive for the Perseverance rover on Mars, with engineers estimating route-planning time was roughly cut in half.\n3. OpenAI signed a $200M multi-year partnership with Snowflake to bring its frontier models into Snowflake’s platform so enterprises can build agents and analyze data within governed cloud environments.\n4. Google’s former engineer Linwei Ding was convicted in the U.S. of stealing thousands of pages of confidential AI-related documents, including material tied to TPU and adjacent infrastructure.\n5. Fact-checkers say viral AI-generated images claiming to show New York City Mayor Zohran Mamdani as a child with Jeffrey Epstein are fabricated, citing clear AI indicators and impossible timelines.\n6. Microsoft warns “infostealer” malware is increasingly targeting macOS (often via social engineering and fake installers) to steal browser credentials, crypto-wallet data, and developer keys, including through Python-based tooling.\n7. Shares of game-related firms such as Roblox and Unity slid after the reveal of Project Genie, though analysts argue the disruption risk is being overstated and may mostly affect prototyping near-term.\n8. Olympus reported trial results for CADDIE indicating the AI-assisted colonoscopy workflow increased adenoma detection (reported as +7.3% in screening/surveillance cohorts) without lengthening procedure time.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
+      "description": "Headline: Musk Merges xAI & SpaceX, Claude Drives Mars Rover, OpenAI’s $200M Deal & Google Spy Guilty News Summary: 1. SpaceX has acquired xAI, with Elon Musk pitching the merger as a step toward eventually using solar-powered, space-based data-centres to meet AI’s rising energy and cooling needs. 2. NASA and Anthropic used Claude to help plan a drive for the Perseverance rover on Mars, with engineers estimating route-planning time was roughly cut in half. 3. OpenAI signed a $200M multi-year partnership with Snowflake to bring its frontier models into Snowflake’s platform so enterprises can build agents and analyze data within governed cloud environments. 4. Google’s former engineer Linwei Ding was convicted in the U.S. of stealing thousands of pages of confidential AI-related documents, including material tied to TPU and adjacent infrastructure. 5. Fact-checkers say viral AI-generated images claiming to show New York City Mayor Zohran Mamdani as a child with Jeffrey Epstein are fabricated, citing clear AI indicators and impossible timelines. 6. Microsoft warns “infostealer” malware is increasingly targeting macOS (often via social engineering and fake installers) to steal browser credentials, crypto-wallet data, and developer keys, including through Python-based tooling. 7. Shares of game-related firms such as Roblox and Unity slid after the reveal of Project Genie, though analysts argue the disruption risk is being overstated and may mostly affect prototyping near-term. 8. Olympus reported trial results for CADDIE indicating the AI-assisted colonoscopy workflow increased adenoma detection (reported as +7.3% in screening/surveillance cohorts) without lengthening procedure time. Disclaimer: This episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
       "channelTitle": "TheDayAfterAI"
     },
     {
       "id": "NMLHnoDgTAo",
       "videoId": "NMLHnoDgTAo",
-      "title": "Daily AI News — 2 Feb 2026 | Apple Costs Surge, Tesla Robots &amp; Oracle $50B",
+      "title": "Daily AI News — 2 Feb 2026 | Apple Costs Surge, Tesla Robots & Oracle $50B",
       "thumbnail": "https://i3.ytimg.com/vi/NMLHnoDgTAo/hqdefault.jpg",
       "publishedAt": "2026-02-02T10:59:27+00:00",
-      "description": "Headline: Apple’s Supply Chain Crisis, Tesla’s Robot Pivot, Oracle’s $50B Bet, &amp; 175k Exposed Systems\n\nNews Summary:\n• AI Boom Shakeup: Apple’s Grip Slips, Tesla Dumps EVs for Robots, &amp; Oracle Raises $50B\n• AI Risks Exposed: 175k Systems Leaked, Deepfakes in Politics, &amp; The Truth About 'AI-Washing'\n• Global AI Race: India’s Tax Holiday, Singapore’s New Laws, &amp; The 'Humanity’s Last Exam' Benchmark\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
+      "description": "Headline: Apple’s Supply Chain Crisis, Tesla’s Robot Pivot, Oracle’s $50B Bet, & 175k Exposed Systems News Summary: • AI Boom Shakeup: Apple’s Grip Slips, Tesla Dumps EVs for Robots, & Oracle Raises $50B • AI Risks Exposed: 175k Systems Leaked, Deepfakes in Politics, & The Truth About 'AI-Washing' • Global AI Race: India’s Tax Holiday, Singapore’s New Laws, & The 'Humanity’s Last Exam' Benchmark Disclaimer: This episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
       "channelTitle": "TheDayAfterAI"
     },
     {
       "id": "hY3_6YQ70TY",
       "videoId": "hY3_6YQ70TY",
-      "title": "Daily AI News — 1 Feb 2026 | AI Agents Start Religion, SpaceX, &amp; Music Fraud",
+      "title": "Daily AI News — 1 Feb 2026 | AI Agents Start Religion, SpaceX, & Music Fraud",
       "thumbnail": "https://i1.ytimg.com/vi/hY3_6YQ70TY/hqdefault.jpg",
       "publishedAt": "2026-02-01T08:16:39+00:00",
-      "description": "Headline: AI Agents Start a &quot;Lobster Religion&quot;, SpaceX’s 1 Million Satellite Data Center, &amp; The Billion-Dollar AI Music Fraud\n\nNews Summary:\n• AI Culture &amp; Security Risks: Autonomous AI agents on the &quot;Moltbook&quot; social network unexpectedly founded a lobster-themed religion called &quot;Crustafarianism&quot;. However, the platform suffered a major security lapse, exposing the API keys of every agent — including those of high-profile users — allowing anyone to hijack them.\n• Space Infrastructure: SpaceX has filed plans with the FCC to launch a &quot;megaconstellation&quot; of one million orbital data centers, aiming to create a network of 100 gigawatts of AI compute capacity in space.\n• Music Industry Fraud: Fraudsters are flooding streaming platforms like Deezer with AI-generated tracks and using bots to rack up streams, stealing royalties from human musicians.\n• Creative Tools: Adobe Photoshop introduces new &quot;Clarity and Dehaze&quot; adjustment layers and upgraded Firefly AI models, while IIT-Roorkee unveils India's first text-to-fashion sketch AI system.\n• Global Updates: OpenAI announces plans to test ads in ChatGPT, Asian universities dominate global AI education rankings, Egypt launches a specialized AI diploma for bankers, and new tools emerge to help users filter out &quot;AI slop&quot; on social media\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
+      "description": "Headline: AI Agents Start a \"Lobster Religion\", SpaceX’s 1 Million Satellite Data Center, & The Billion-Dollar AI Music Fraud News Summary: • AI Culture & Security Risks: Autonomous AI agents on the \"Moltbook\" social network unexpectedly founded a lobster-themed religion called \"Crustafarianism\". However, the platform suffered a major security lapse, exposing the API keys of every agent — including those of high-profile users — allowing anyone to hijack them. • Space Infrastructure: SpaceX has filed plans with the FCC to launch a \"megaconstellation\" of one million orbital data centers, aiming to create a network of 100 gigawatts of AI compute capacity in space. • Music Industry Fraud: Fraudsters are flooding streaming platforms like Deezer with AI-generated tracks and using bots to rack up streams, stealing royalties from human musicians. • Creative Tools: Adobe Photoshop introduces new \"Clarity and Dehaze\" adjustment layers and upgraded Firefly AI models, while IIT-Roorkee unveils India's first text-to-fashion sketch AI system. • Global Updates: OpenAI announces plans to test ads in ChatGPT, Asian universities dominate global AI education rankings, Egypt launches a specialized AI diploma for bankers, and new tools emerge to help users filter out \"AI slop\" on social media Disclaimer: This episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
       "channelTitle": "TheDayAfterAI"
     },
     {
       "id": "lBg5z5OLlYI",
       "videoId": "lBg5z5OLlYI",
-      "title": "Daily AI News — 31 Jan 2026 | DeepMind, OpenAI Drama &amp; Global AI Rules",
+      "title": "Daily AI News — 31 Jan 2026 | DeepMind, OpenAI Drama & Global AI Rules",
       "thumbnail": "https://i1.ytimg.com/vi/lBg5z5OLlYI/hqdefault.jpg",
       "publishedAt": "2026-01-31T16:59:17+00:00",
-      "description": "Headline: DeepMind’s AlphaGenome Breakthrough, Nvidia Pauses OpenAI Deal, Microsoft’s AI U-Turn &amp; Global Regulation Updates\n\nNews Summary:\n• DeepMind Unveils AlphaGenome: Google DeepMind introduces a new AI model that analyzes the &quot;dark matter&quot; of DNA to identify genetic drivers of diseases like cancer.\n• Nvidia &amp; OpenAI Rift: Nvidia has reportedly stalled a planned $100 billion investment in OpenAI due to internal concerns, just as OpenAI plans a potential IPO for late 2026.\n• Microsoft Walks Back AI: Following user backlash, Microsoft is scaling down its AI integration in Windows 11, including pausing Copilot buttons and rethinking the Recall feature.\n• Global AI Regulation:\n    ◦ UK: The CMA proposes allowing media publishers to opt out of Google’s AI Overviews to protect content revenue.\n    ◦ South Korea: A new &quot;world-first&quot; AI law mandates watermarking and risk assessments but faces criticism from startups.\n    ◦ USA (California): Senate Bill 574 proposes strict regulations for attorneys and arbitrators using generative AI to prevent privacy breaches and hallucinations.\n    ◦ India: The Delhi High Court restrains the release of an AI-generated deepfake film exploiting the likeness of actor Pawan Kalyan’s son.\n• AI for Good: New AI models are being used to predict coral bleaching risks in Florida and assist doctors in treating heart attack risks in cancer patients.\n\nDisclaimer:\nThis episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
+      "description": "Headline: DeepMind’s AlphaGenome Breakthrough, Nvidia Pauses OpenAI Deal, Microsoft’s AI U-Turn & Global Regulation Updates News Summary: • DeepMind Unveils AlphaGenome: Google DeepMind introduces a new AI model that analyzes the \"dark matter\" of DNA to identify genetic drivers of diseases like cancer. • Nvidia & OpenAI Rift: Nvidia has reportedly stalled a planned $100 billion investment in OpenAI due to internal concerns, just as OpenAI plans a potential IPO for late 2026. • Microsoft Walks Back AI: Following user backlash, Microsoft is scaling down its AI integration in Windows 11, including pausing Copilot buttons and rethinking the Recall feature. • Global AI Regulation: ◦ UK: The CMA proposes allowing media publishers to opt out of Google’s AI Overviews to protect content revenue. ◦ South Korea: A new \"world-first\" AI law mandates watermarking and risk assessments but faces criticism from startups. ◦ USA (California): Senate Bill 574 proposes strict regulations for attorneys and arbitrators using generative AI to prevent privacy breaches and hallucinations. ◦ India: The Delhi High Court restrains the release of an AI-generated deepfake film exploiting the likeness of actor Pawan Kalyan’s son. • AI for Good: New AI models are being used to predict coral bleaching risks in Florida and assist doctors in treating heart attack risks in cancer patients. Disclaimer: This episode is produced using AI tools. Audio narration, video elements, and images may be AI-generated or AI-assisted. The reference sources are human-curated by our team and supplied to the AI as inputs. All video effects and the syncing/matching of visuals to the audio are completed manually during editing.",
       "channelTitle": "TheDayAfterAI"
     }
   ],
