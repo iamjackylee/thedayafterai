@@ -379,8 +379,17 @@ function loadImageManifest() {
   try {
     const stat = fs.statSync(IMAGE_MANIFEST_PATH);
     if (Date.now() - stat.mtimeMs < MANIFEST_MAX_AGE_MS) {
-      _imageManifest = JSON.parse(fs.readFileSync(IMAGE_MANIFEST_PATH, "utf-8"));
-      return _imageManifest;
+      const loaded = JSON.parse(fs.readFileSync(IMAGE_MANIFEST_PATH, "utf-8"));
+      // Validate: at least one referenced file must actually exist on disk.
+      // This catches stale manifests where images were renamed/replaced.
+      const hasValid = (loaded.images || []).some((img) =>
+        fs.existsSync(path.join(FALLBACK_IMAGES_DIR, img.file))
+      );
+      if (hasValid) {
+        _imageManifest = loaded;
+        return _imageManifest;
+      }
+      console.log("Image manifest references non-existent files — rebuilding...");
     }
   } catch { /* missing or unreadable — rebuild */ }
   _imageManifest = buildImageManifest();
@@ -1324,6 +1333,39 @@ function applyFallbackImages(articles) {
   if (applied > 0) console.log(`  Applied ${applied} local fallback images`);
 }
 
+/** Global sanitization pass — runs on ALL articles before saving prefetched.json.
+ *  Catches stale paths from other categories that weren't processed this run,
+ *  clears generic stock image URLs, and ensures every article has a fallback. */
+function sanitizeAllArticles(articles) {
+  console.log("\n=== Sanitizing all articles ===");
+  let cleared = 0;
+
+  // 1. Clear Unsplash stock image URLs (generic images from old code, not real article images)
+  for (const article of articles) {
+    if (article.imageUrl && article.imageUrl.includes("images.unsplash.com")) {
+      article.imageUrl = "";
+      cleared++;
+    }
+  }
+  if (cleared > 0) console.log(`  Cleared ${cleared} generic Unsplash stock image URLs`);
+
+  // 2. Validate ALL local image paths (catches stale paths from categories not processed this run)
+  validateLocalImagePaths(articles);
+
+  // 3. Apply curated fallback images to any articles still missing images
+  let applied = 0;
+  for (const article of articles) {
+    if (!article.imageUrl) {
+      article.imageUrl = pickLocalFallback(article);
+      if (article.imageUrl) applied++;
+    }
+  }
+  if (applied > 0) console.log(`  Applied ${applied} fallback images to previously unfilled articles`);
+
+  const still = articles.filter((a) => !a.imageUrl).length;
+  if (still > 0) console.log(`  ${still} articles still have no image (will use frontend topic fallback)`);
+}
+
 // ── Manual image overrides ──────────────────────────────────────────
 // Override fallback images by dropping an image into public/data/image-overrides/.
 // Two matching methods (auto-scan is primary, JSON is optional fallback):
@@ -1864,6 +1906,10 @@ async function main() {
       console.log("\nYouTube + AI Market Insight: skipped (next refresh at 15-min boundary)");
     }
   }
+
+  // Global sanitization: validate all articles' image paths and apply fallbacks
+  // (catches stale paths from categories not processed this rotation run)
+  sanitizeAllArticles(data.news || []);
 
   // Save updated prefetched.json
   data.fetchedAt = new Date().toISOString();
