@@ -396,12 +396,44 @@ function loadImageManifest() {
   return _imageManifest;
 }
 
-/** Score how relevant an image's tags are to an article's text. */
+/** Fuzzy word-root comparison — two words share a root when both are ≥ 4
+ *  chars and agree on a prefix covering ≥ 75 % of the shorter word.
+ *  Short words (< 4 chars) require an exact match to avoid false positives. */
+function wordsRelated(a, b) {
+  if (a === b) return true;
+  const minLen = Math.min(a.length, b.length);
+  if (minLen < 4) return false;
+  const prefixLen = Math.max(4, Math.ceil(minLen * 0.75));
+  if (prefixLen > minLen) return false;
+  return a.slice(0, prefixLen) === b.slice(0, prefixLen);
+}
+
+/** Common English stop words — too generic to signal topic relevance. */
+const STOP_WORDS = new Set([
+  "a","an","the","and","or","but","in","on","at","to","for","of","with",
+  "by","from","as","is","was","are","be","been","has","had","do","does",
+  "did","will","would","could","should","may","can","it","its","this",
+  "that","not","no","so","if","than","into","set","new","more","also",
+  "how","what","which","who","all","each","out","up","via","per","amp",
+]);
+
+/** Score how relevant an image's tags are to an article's text.
+ *  Tags are deduplicated so repeated tags don't inflate scores, and
+ *  matching uses prefix-based fuzzy comparison (e.g. "trade" ↔ "trading").
+ *  Stop words are excluded from both sides to prevent noise matches. */
 function scoreRelevance(text, tags) {
-  const lower = text.toLowerCase();
+  const words = [...new Set(text.toLowerCase().split(/\W+/).filter(Boolean))]
+    .filter((w) => !STOP_WORDS.has(w));
+  const uniqueTags = [...new Set(tags.map((t) => t.toLowerCase()))]
+    .filter((t) => !STOP_WORDS.has(t));
   let score = 0;
-  for (const tag of tags) {
-    if (lower.includes(tag.toLowerCase())) score++;
+  for (const tag of uniqueTags) {
+    for (const word of words) {
+      if (wordsRelated(tag, word)) {
+        score++;
+        break;
+      }
+    }
   }
   return score;
 }
@@ -431,10 +463,14 @@ function pickLocalFallback(article) {
   // Sort descending by score
   scored.sort((a, b) => b.score - a.score);
 
-  // Gather the top tier — anything within 1 point of the best, or at least
-  // all zero-scorers (so hash diversity still works when nothing matches)
+  // Gather the top tier for hash-based diversity.  When the best score is
+  // low (< 3), use exact-match only so a single clear winner isn't diluted
+  // by the large pool of generic "ai"-only matches.  At higher scores the
+  // ±1 buffer provides healthy variety.  When nothing matches (best === 0)
+  // every image is eligible so the hash still diversifies.
   const best = scored[0].score;
-  const topTier = scored.filter((s) => s.score >= Math.max(best - 1, 0));
+  const threshold = best >= 3 ? best - 1 : best === 0 ? 0 : best;
+  const topTier = scored.filter((s) => s.score >= threshold);
 
   // Hash-based pick within the top tier for diversity across articles
   const hash = text.split("").reduce((acc, ch) => acc + ch.charCodeAt(0), 0);
