@@ -22,7 +22,7 @@ export default function DisclaimerPage() {
           >
             Disclaimer
           </h1>
-          <p className="text-sm text-[var(--muted)]">Last updated: February 13, 2026</p>
+          <p className="text-sm text-[var(--muted)]">Last updated: February 14, 2026</p>
         </header>
 
         <div className="prose-terms space-y-10 text-[var(--text-secondary)] leading-relaxed">
@@ -91,6 +91,10 @@ export default function DisclaimerPage() {
             <h2 className="text-xl font-bold text-white mb-4 border-l-4 border-[var(--accent)] pl-4">
               3. AI-Generated and AI-Assisted Content
             </h2>
+
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">
+              3.1 AI-Generated Text Content
+            </h3>
             <p>
               Portions of this Website, including news summaries, analyses, and market forecasts,
               are produced using artificial intelligence (AI) technologies. While this content is
@@ -105,6 +109,19 @@ export default function DisclaimerPage() {
               current, or free from error. You acknowledge and agree that AI-generated content is
               provided on an &ldquo;as is&rdquo; basis and should not be relied upon as the sole
               basis for any decision.
+            </p>
+
+            <h3 className="text-base font-semibold text-white mt-6 mb-2">
+              3.2 Images and Visual Content
+            </h3>
+            <p>
+              Images displayed on this Website are either sourced from the original publisher of
+              the linked article or produced using AI image-generation tools. Where an original
+              publisher image is unavailable or unsuitable, we may use an AI-generated image as a
+              visual placeholder. AI-generated images are not photographs and do not depict real
+              events, real persons, or real places unless expressly stated otherwise. We do not
+              warrant that any image — whether publisher-sourced or AI-generated — accurately
+              represents the content of the article it accompanies.
             </p>
           </section>
 
