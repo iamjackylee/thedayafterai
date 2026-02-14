@@ -1296,7 +1296,24 @@ function cleanupScreenshots(articles) {
   if (removed > 0) console.log(`Cleaned up ${removed} unused screenshots`);
 }
 
+/** Clear imageUrl for articles pointing at local files that don't actually exist.
+ *  This catches stale paths from previous code versions (e.g. images/{cat}/ vs data/images/{cat}/). */
+function validateLocalImagePaths(articles) {
+  let cleared = 0;
+  for (const article of articles) {
+    const img = article.imageUrl;
+    if (!img || img.startsWith("http")) continue; // skip external URLs
+    const fullPath = path.join(__dirname, "..", "public", img);
+    if (!fs.existsSync(fullPath)) {
+      article.imageUrl = "";
+      cleared++;
+    }
+  }
+  if (cleared > 0) console.log(`  Cleared ${cleared} broken local image paths`);
+}
+
 function applyFallbackImages(articles) {
+  validateLocalImagePaths(articles);
   let applied = 0;
   for (const article of articles) {
     if (!article.imageUrl) {
