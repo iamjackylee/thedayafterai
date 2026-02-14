@@ -23,6 +23,8 @@ const SCREENSHOTS_DIR = path.join(__dirname, "..", "public", "data", "screenshot
 const DOWNLOADED_IMAGES_DIR = path.join(__dirname, "..", "public", "data", "images");
 const FALLBACK_IMAGES_DIR = path.join(__dirname, "..", "public", "images", "news");
 const IMAGE_MANIFEST_PATH = path.join(__dirname, "..", "public", "images", "image-manifest.json");
+const IMAGE_OVERRIDES_DIR = path.join(__dirname, "..", "public", "data", "image-overrides");
+const IMAGE_OVERRIDES_PATH = path.join(OUTPUT_DIR, "image-overrides.json");
 const PREFETCHED_PATH = path.join(OUTPUT_DIR, "prefetched.json");
 const URL_CACHE_PATH = path.join(OUTPUT_DIR, "url-cache.json");
 const CUSTOM_JSON_PATH = path.join(OUTPUT_DIR, "custom-articles.json");
@@ -694,6 +696,7 @@ async function resolveArticles(articles) {
     console.log("All URLs resolved from cache and all have images!");
     saveUrlCache(cache);
     applyFallbackImages(articles);
+    await applyImageOverrides(articles);
     return;
   }
 
@@ -959,6 +962,7 @@ async function resolveArticles(articles) {
   await captureScreenshots(articles, cache);
 
   applyFallbackImages(articles);
+  await applyImageOverrides(articles);
   cleanupScreenshots(articles);
 }
 
@@ -1288,6 +1292,73 @@ function applyFallbackImages(articles) {
     }
   }
   if (applied > 0) console.log(`  Applied ${applied} local fallback images`);
+}
+
+// ── Manual image overrides ──────────────────────────────────────────
+// Users can override fallback images by:
+//   1. Dropping an image into public/data/image-overrides/
+//   2. Adding an entry in public/data/image-overrides.json mapping article URL → filename
+// The override is applied AFTER fallback images, replacing the fallback with the
+// user-provided image. Images are resized and converted to WebP via sharp.
+
+function loadImageOverrides() {
+  try {
+    const data = JSON.parse(fs.readFileSync(IMAGE_OVERRIDES_PATH, "utf-8"));
+    return data.overrides || {};
+  } catch { return {}; }
+}
+
+/** Apply manual image overrides for articles currently using fallback images.
+ *  Processes override images through sharp (resize + WebP) just like downloaded images. */
+async function applyImageOverrides(articles) {
+  const overrides = loadImageOverrides();
+  const overrideUrls = Object.keys(overrides);
+  if (overrideUrls.length === 0) return;
+
+  let sharp;
+  try { sharp = require("sharp"); } catch {
+    console.warn("sharp not installed — skipping image override processing");
+    return;
+  }
+
+  let applied = 0;
+  for (const article of articles) {
+    // Check if this article has an override (match by URL)
+    const overrideFile = overrides[article.url];
+    if (!overrideFile) continue;
+
+    // Find the override image file (support multiple extensions)
+    const overridePath = path.join(IMAGE_OVERRIDES_DIR, overrideFile);
+    if (!fs.existsSync(overridePath)) {
+      console.warn(`  Override image not found: ${overrideFile} (for ${article.url.slice(0, 60)}...)`);
+      continue;
+    }
+
+    // Process through sharp → WebP in the standard images directory
+    const category = article.topic || "technology-innovation";
+    const categoryDir = path.join(DOWNLOADED_IMAGES_DIR, category);
+    fs.mkdirSync(categoryDir, { recursive: true });
+
+    const hash = screenshotHash(`override-${article.url}`);
+    const filename = `override-${hash}.webp`;
+    const fullPath = path.join(categoryDir, filename);
+    const localPath = `data/images/${category}/${filename}`;
+
+    try {
+      await sharp(overridePath)
+        .resize(600, 400, { fit: "cover", position: "centre" })
+        .webp({ quality: 80 })
+        .toFile(fullPath);
+
+      article.imageUrl = localPath;
+      applied++;
+      console.log(`  Override applied: ${overrideFile} → ${article.title.slice(0, 50)}...`);
+    } catch (err) {
+      console.warn(`  Override processing failed for ${overrideFile}: ${err.message}`);
+    }
+  }
+
+  if (applied > 0) console.log(`  Applied ${applied} manual image overrides`);
 }
 
 // ── YouTube ────────────────────────────────────────────────────────
