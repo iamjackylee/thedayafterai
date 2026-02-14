@@ -80,15 +80,22 @@ export default function TermsPage() {
                 publication.
               </li>
               <li>
-                <strong className="text-white">AI Market Insights</strong> — a daily experiment in
-                which AI forecasts the price direction of a U.S.-listed stock over the next five trading days.
-                Results are published openly. This content is general information only, published
-                for educational and experimental purposes as part of an ongoing experiment. It
-                does not constitute financial product advice—whether general or personal—within the
-                meaning of section&nbsp;766B of the <em>Corporations Act 2001</em> (Cth), and is
-                not intended to influence any person in making a decision in relation to a
-                financial product. TheDayAfterAI does not hold an Australian Financial Services
-                Licence (AFSL) and is not authorised to provide financial services of any kind.
+                <strong className="text-white">AI Market Insights</strong> — a daily technology
+                experiment designed solely to test and evaluate the capability of artificial
+                intelligence in analysing publicly available financial market data. AI forecasts
+                the price direction of a U.S.-listed stock over the next five trading days, and
+                results are published openly. This feature is not published for the purpose of
+                attracting, encouraging, or inducing any person to trade. This content is general
+                information only and does not constitute financial product advice—whether general
+                or personal—within the meaning of section&nbsp;766B of the{" "}
+                <em>Corporations Act 2001</em> (Cth). TheDayAfterAI does not hold an Australian
+                Financial Services Licence (AFSL) and is not authorised to provide financial
+                services of any kind. For full details, including our interests disclosure, see
+                our{" "}
+                <Link href="/disclaimer" className="text-[var(--accent)] hover:underline">
+                  Disclaimer
+                </Link>{" "}
+                (Section&nbsp;4).
               </li>
               <li>
                 <strong className="text-white">AI News Hub</strong> — a curated dashboard of AI
