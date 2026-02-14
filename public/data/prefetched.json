@@ -1,7 +1,27 @@
 {
-  "fetchedAt": "2026-02-13T23:52:54.297Z",
+  "fetchedAt": "2026-02-14T01:28:11.261Z",
   "playlistUrl": "https://www.youtube.com/playlist?list=PLFDiWEVfJRSs6cucI99ugO8xh6kIekfqe",
   "news": [
+    {
+      "id": "gn-chatbot-development-17",
+      "title": "Anthropic's Value Doubles to $380 Billion on AI Agent Success - 조선일보",
+      "summary": "Anthropic's Value Doubles to $380 Billion on AI Agent Success 조선일보",
+      "topic": "chatbot-development",
+      "source": "조선일보",
+      "date": "Fri, 13 Feb 2026 23:05:27 GMT",
+      "imageUrl": "images/chatbot-development/rgjujs.webp",
+      "url": "https://www.chosun.com/english/industry-en/2026/02/14/O2FZRMARONGULEFCYNGP5QEWDI/"
+    },
+    {
+      "id": "gn-chatbot-development-3",
+      "title": "Anthropic got an 11% user boost from its OpenAI-bashing Super Bowl ad, data shows - CNBC",
+      "summary": "Anthropic got an 11% user boost from its OpenAI-bashing Super Bowl ad, data shows CNBC",
+      "topic": "chatbot-development",
+      "source": "CNBC",
+      "date": "Fri, 13 Feb 2026 22:45:48 GMT",
+      "imageUrl": "images/chatbot-development/ils2j9.webp",
+      "url": "https://www.cnbc.com/2026/02/13/anthropic-open-ai-super-bowl-ads.html"
+    },
     {
       "id": "gn-business-economy-21",
       "title": "Market Movers blog: US inflation drops to 2.4% in January as pressure mounts on Fed - Investment Week",
@@ -81,16 +101,6 @@
       "date": "Fri, 13 Feb 2026 16:30:11 GMT",
       "imageUrl": "https://bitcoinworld.co.in/wp-content/uploads/eur-chf-eases-swiss-inflation-muted.jpg",
       "url": "https://bitcoinworld.co.in/eur-chf-eases-swiss-inflation-muted/"
-    },
-    {
-      "id": "gn-chatbot-development-48",
-      "title": "How Measurement Can Fix Content Moderation's Language Equity Gap - Tech Policy Press",
-      "summary": "How Measurement Can Fix Content Moderation's Language Equity Gap Tech Policy Press",
-      "topic": "chatbot-development",
-      "source": "Tech Policy Press",
-      "date": "Fri, 13 Feb 2026 16:13:24 GMT",
-      "imageUrl": "https://cdn.sanity.io/images/3tzzh18d/production/17553f415f776d05deab3ca78d16fa365a847b5a-1200x675.png",
-      "url": "https://www.techpolicy.press/how-measurement-can-fix-content-moderations-language-equity-gap/"
     },
     {
       "id": "gn-health-style-13",
@@ -233,6 +243,16 @@
       "url": "https://www.altenergymag.com/news/2026/02/13/hybrid-solar-wind-market-to-reach-usd-23-billion-by-2032-driven-by-renewable-energy-integration-and-grid-modernization/46759/"
     },
     {
+      "id": "gn-chatbot-development-33",
+      "title": "Elon Musk Accuses Anthropic's Claude AI of Racial Bias After $380 Billion Valuation - Technobezz",
+      "summary": "Elon Musk Accuses Anthropic's Claude AI of Racial Bias After $380 Billion Valuation Technobezz",
+      "topic": "chatbot-development",
+      "source": "Technobezz",
+      "date": "Fri, 13 Feb 2026 13:31:12 GMT",
+      "imageUrl": "images/chatbot-development/4tvvse.webp",
+      "url": "https://www.technobezz.com/news/elon-musk-accuses-anthropics-claude-ai-of-racial-bias-after-380-billion-valuation"
+    },
+    {
       "id": "gn-business-economy-34",
       "title": "Emerging economies urged to lead global economic decisions - Daily Times",
       "summary": "Emerging economies urged to lead global economic decisions Daily Times",
@@ -263,23 +283,33 @@
       "url": "https://www.openpr.com/news/4390224/ai-in-energy-market-to-reach-us-99-48-billion-by-2032-north"
     },
     {
-      "id": "gn-chatbot-development-26",
+      "id": "gn-chatbot-development-48",
+      "title": "Ai’s Quantum Knowledge Tested: Models Fail 77% Of Core Concept Questions - Quantum Zeitgeist",
+      "summary": "Ai’s Quantum Knowledge Tested: Models Fail 77% Of Core Concept Questions Quantum Zeitgeist",
+      "topic": "chatbot-development",
+      "source": "Quantum Zeitgeist",
+      "date": "Fri, 13 Feb 2026 12:40:41 GMT",
+      "imageUrl": "images/chatbot-development/e5io04.webp",
+      "url": "https://quantumzeitgeist.com/77-percent-ai-quantum-models-knowledge-tested-fail-core-concept/"
+    },
+    {
+      "id": "gn-chatbot-development-23",
       "title": "Elon Musk Blasts Anthropic Claude as \"Evil\" After AI Startup Hits $380 Billion Valuation - Blockonomi",
       "summary": "Elon Musk Blasts Anthropic Claude as \"Evil\" After AI Startup Hits $380 Billion Valuation Blockonomi",
       "topic": "chatbot-development",
       "source": "Blockonomi",
       "date": "Fri, 13 Feb 2026 12:31:54 GMT",
-      "imageUrl": "https://blockonomi.com/wp-content/uploads/2026/02/Anthropic-Claude-1-scaled.jpg",
+      "imageUrl": "images/chatbot-development/w9nddu.webp",
       "url": "https://blockonomi.com/elon-musk-blasts-anthropic-claude-as-evil-after-ai-startup-hits-380-billion-valuation/"
     },
     {
-      "id": "gn-chatbot-development-34",
+      "id": "gn-chatbot-development-29",
       "title": "Anthropic Expands Claude Free Tier While OpenAI Adds ChatGPT Ads - WinBuzzer",
       "summary": "Anthropic Expands Claude Free Tier While OpenAI Adds ChatGPT Ads WinBuzzer",
       "topic": "chatbot-development",
       "source": "WinBuzzer",
       "date": "Fri, 13 Feb 2026 12:30:40 GMT",
-      "imageUrl": "https://winbuzzer.com/wp-content/uploads/2025/10/Anthropic-Claude-Skills.webp",
+      "imageUrl": "images/chatbot-development/5mc7lg.webp",
       "url": "https://winbuzzer.com/2026/02/13/anthropic-expands-claude-free-tier-openai-chatgpt-ads-xcxwbn/"
     },
     {
@@ -413,13 +443,13 @@
       "url": "https://www.openpr.com/news/4389999/digital-camera-market-growth-to-hit-usd-15-7-billion-at-a-5-32"
     },
     {
-      "id": "gn-chatbot-development-43",
+      "id": "gn-chatbot-development-40",
       "title": "Claude Opus 4.6 Rivals Emerge as AI Race Shifts Focus - Azat TV",
       "summary": "Claude Opus 4.6 Rivals Emerge as AI Race Shifts Focus Azat TV",
       "topic": "chatbot-development",
       "source": "Azat TV",
       "date": "Fri, 13 Feb 2026 10:40:13 GMT",
-      "imageUrl": "https://azat.tv/wp-content/uploads/2026/02/ai-models-competition.jpg",
+      "imageUrl": "images/chatbot-development/l5c7on.webp",
       "url": "https://azat.tv/en/claude-opus-4-6-rivals-emerge-ai-race-shifts-focus/"
     },
     {
@@ -563,13 +593,13 @@
       "url": "https://bitcoinworld.co.in/forex-today-eurozone-gdp-us-inflation/"
     },
     {
-      "id": "gn-chatbot-development-45",
+      "id": "gn-chatbot-development-42",
       "title": "The role of large language models in emergency care: a comprehensive benchmarking study - Nature",
       "summary": "The role of large language models in emergency care: a comprehensive benchmarking study Nature",
       "topic": "chatbot-development",
       "source": "Nature",
       "date": "Fri, 13 Feb 2026 08:04:59 GMT",
-      "imageUrl": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs44387-026-00078-2/MediaObjects/44387_2026_78_Fig1_HTML.png",
+      "imageUrl": "images/chatbot-development/fmvz04.webp",
       "url": "https://www.nature.com/articles/s44387-026-00078-2"
     },
     {
@@ -581,6 +611,16 @@
       "date": "Fri, 13 Feb 2026 07:56:34 GMT",
       "imageUrl": "https://www.manilatimes.net/theme_manilatimes/images/TMT_1920x1008.jpg",
       "url": "https://www.manilatimes.net/2026/02/13/tmt-newswire/pr-newswire/walnut-coding-brings-ai-education-to-schools-through-public-welfare-programming-courses/2277802"
+    },
+    {
+      "id": "gn-chatbot-development-45",
+      "title": "MiniMax's new open M2.5 and M2.5 Lightning near state-of-the-art while costing 1/20th of Claude Opus 4.6 - VentureBeat",
+      "summary": "MiniMax's new open M2.5 and M2.5 Lightning near state-of-the-art while costing 1/20th of Claude Opus 4.6 VentureBeat",
+      "topic": "chatbot-development",
+      "source": "VentureBeat",
+      "date": "Fri, 13 Feb 2026 07:51:47 GMT",
+      "imageUrl": "images/chatbot-development/wsc24z.webp",
+      "url": "https://venturebeat.com/technology/minimaxs-new-open-m2-5-and-m2-5-lightning-near-state-of-the-art-while"
     },
     {
       "id": "gn-business-economy-49",
@@ -913,14 +953,14 @@
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5DRFFBTDYwX21JTEJLalY1NHBKYml0TC1oMDRCaXVHeVJxWGRmVDIzekZmc2VGWGlwS2pJN1R1TnR0djE3aEJURjNCU09hZUNsbkFCV01WdXJlMU1MRUNMOEh0SQ?oc=5"
     },
     {
-      "id": "gn-chatbot-development-32",
-      "title": "Elon Musk slams Anthropic AI models as 'misanthropic and evil' in scathing social media post - AOL.com",
-      "summary": "Elon Musk slams Anthropic AI models as 'misanthropic and evil' in scathing social media post AOL.com",
+      "id": "gn-chatbot-development-13",
+      "title": "Elon Musk slams Anthropic AI models as 'misanthropic and evil' in scathing social media post - Fox Business",
+      "summary": "Elon Musk slams Anthropic AI models as 'misanthropic and evil' in scathing social media post Fox Business",
       "topic": "chatbot-development",
-      "source": "AOL.com",
+      "source": "Fox Business",
       "date": "Fri, 13 Feb 2026 00:12:00 GMT",
-      "imageUrl": "https://s.yimg.com/ny/api/res/1.2/eyaRpxJHn0sJD.2jGOq7jw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTI0MDA7aD0xMzUw/https://media.zenfs.com/en/aol_fox_business_239/b8516147d1621d87691972d0ea75a2ba",
-      "url": "https://www.aol.com/articles/elon-musk-slams-anthropic-ai-001226581.html?spot_im_comment_id=sp_IjnMf2Jd_a5ef8213-4829-34df-a7da-e81675d08294_c_2u2ZVMrXUoy8JnMxYcGfESCKYEv&spot_im_highlight_immediate=true&utm_medium=Share&utm_content=sp_IjnMf2Jd_a5ef8213-4829-34df-a7da-e81675d08294_c_2u2ZVMrXUoy8JnMxYcGfESCKYEv&spot_im_redirect_source=share&ow_module=conversation"
+      "imageUrl": "images/chatbot-development/7n2tks.webp",
+      "url": "https://www.foxbusiness.com/technology/elon-musk-slams-anthropic-ai-models-misanthropic-evil-scathing-social-media-post.amp"
     },
     {
       "id": "gn-digital-security-48",
@@ -1099,7 +1139,7 @@
       "topic": "chatbot-development",
       "source": "AOL.com",
       "date": "Thu, 12 Feb 2026 18:35:18 GMT",
-      "imageUrl": "https://s.yimg.com/ny/api/res/1.2/6R7jSHQsw71d9RaHJC3t9g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTI0MDA7aD0xNjAw/https://media.zenfs.com/en/aol_yahoo_finance_433/ba7e18bee16a9923ad70522fbc55123c",
+      "imageUrl": "images/chatbot-development/ge93oc.webp",
       "url": "https://www.aol.com/finance/openai-ceo-sam-altman-declares-141751028.html"
     },
     {
@@ -1121,6 +1161,16 @@
       "date": "Thu, 12 Feb 2026 18:15:00 GMT",
       "imageUrl": "https://snworksceo.imgix.net/ids/d87b06c2-c524-45a0-b3b4-36cf7049cc77.sized-1000x1000.jpg?w=800",
       "url": "https://www.idsnews.com/article/2026/02/opinion-mike-tyson-superbowl-ads-maha-ai-iu-bloomington-indiana"
+    },
+    {
+      "id": "gn-chatbot-development-30",
+      "title": "OpenAI Updates GPT-5.2 Instant to Improve Response Style - WinBuzzer",
+      "summary": "OpenAI Updates GPT-5.2 Instant to Improve Response Style WinBuzzer",
+      "topic": "chatbot-development",
+      "source": "WinBuzzer",
+      "date": "Thu, 12 Feb 2026 17:25:23 GMT",
+      "imageUrl": "images/chatbot-development/udbm4e.webp",
+      "url": "https://winbuzzer.com/2026/02/12/openai-updates-gpt-5-2-instant-improve-response-style-xcxwbn/"
     },
     {
       "id": "gn-musical-art-18",
@@ -1179,7 +1229,7 @@
       "topic": "chatbot-development",
       "source": "WebProNews",
       "date": "Thu, 12 Feb 2026 14:58:46 GMT",
-      "imageUrl": "https://www.webpronews.com/wp-content/uploads/2026/02/article-10042-1770908236.jpeg",
+      "imageUrl": "images/chatbot-development/30ce33.webp",
       "url": "https://www.webpronews.com/anthropic-loosens-the-velvet-rope-claudes-free-tier-gets-a-major-upgrade-in-a-bid-to-win-the-ai-arms-race/"
     },
     {
@@ -1223,13 +1273,23 @@
       "url": "https://www.advanced-television.com/2026/02/12/report-how-the-music-industry-is-battling-ai-music-flood/"
     },
     {
-      "id": "gn-chatbot-development-41",
+      "id": "gn-chatbot-development-47",
+      "title": "AI That Doesn't Fear 3-Bets: GPT-5.2 Model Becomes a Poker Champion in AI Showdown - SpadePoker",
+      "summary": "AI That Doesn't Fear 3-Bets: GPT-5.2 Model Becomes a Poker Champion in AI Showdown SpadePoker",
+      "topic": "chatbot-development",
+      "source": "SpadePoker",
+      "date": "Thu, 12 Feb 2026 13:42:59 GMT",
+      "imageUrl": "images/chatbot-development/2ptj91.webp",
+      "url": "https://www.spadepoker.tv/en/news/ai-that-doesnt-fear-3-bets-gpt-52-model-becomes-a-poker-champion-in-ai-showdown/"
+    },
+    {
+      "id": "gn-chatbot-development-38",
       "title": "AI Showdown: ChatGPT vs. Claude vs. Gemini in 2026! - OpenTools",
       "summary": "AI Showdown: ChatGPT vs. Claude vs. Gemini in 2026! OpenTools",
       "topic": "chatbot-development",
       "source": "OpenTools",
       "date": "Thu, 12 Feb 2026 13:36:39 GMT",
-      "imageUrl": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/b8f6eb8c-23c5-490d-21bb-19ce0a169700/contentthumbnail",
+      "imageUrl": "images/chatbot-development/6yx311.webp",
       "url": "https://opentools.ai/news/ai-showdown-chatgpt-vs-claude-vs-gemini-in-2026"
     },
     {
@@ -1243,13 +1303,13 @@
       "url": "https://www.youhodler.com/blog/how-to-avoid-crypto-scams"
     },
     {
-      "id": "gn-chatbot-development-42",
+      "id": "gn-chatbot-development-39",
       "title": "Anthropic Ups the Ante: Claude's Free Tier Now Packs a Punch with Premium Features! - OpenTools",
       "summary": "Anthropic Ups the Ante: Claude's Free Tier Now Packs a Punch with Premium Features! OpenTools",
       "topic": "chatbot-development",
       "source": "OpenTools",
       "date": "Thu, 12 Feb 2026 13:21:07 GMT",
-      "imageUrl": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/07d27235-a156-4213-3582-faf34a69bb00/public",
+      "imageUrl": "images/chatbot-development/ynj2rj.webp",
       "url": "https://opentools.ai/news/anthropic-ups-the-ante-claudes-free-tier-now-packs-a-punch-with-premium-features"
     },
     {
@@ -1261,16 +1321,6 @@
       "date": "Thu, 12 Feb 2026 13:15:00 GMT",
       "imageUrl": "https://www.stocktitan.net/news_covers/ZenaTech_s_Drone_as_a_Service_Opens_the_23rd_Global_Location_in_Orlando_Fla_to_Focus_on_Government_1012325.png",
       "url": "https://www.stocktitan.net/news/ZENA/zena-tech-s-drone-as-a-service-opens-the-23rd-global-location-in-6h523sdidva3.html"
-    },
-    {
-      "id": "gn-chatbot-development-36",
-      "title": "Alphabet (GOOGL) Stock: Why This 100-Year Bond Has Credit Markets Worried - Blockonomi",
-      "summary": "Alphabet (GOOGL) Stock: Why This 100-Year Bond Has Credit Markets Worried Blockonomi",
-      "topic": "chatbot-development",
-      "source": "Blockonomi",
-      "date": "Thu, 12 Feb 2026 13:11:35 GMT",
-      "imageUrl": "https://blockonomi.com/wp-content/uploads/2025/12/Alphabet-google-1-scaled.jpg",
-      "url": "https://blockonomi.com/alphabet-googl-stock-why-this-100-year-bond-has-credit-markets-worried/"
     },
     {
       "id": "gn-unmanned-aircraft-39",
@@ -1293,13 +1343,13 @@
       "url": "https://www.techbuzz.ai/articles/samsung-brings-ai-to-budget-phones-with-galaxy-a07-5g-launch"
     },
     {
-      "id": "gn-chatbot-development-44",
+      "id": "gn-chatbot-development-41",
       "title": "SoftBank's AI Gamble Pays Off: $19.8 Billion Gain on OpenAI Stake! - OpenTools",
       "summary": "SoftBank's AI Gamble Pays Off: $19.8 Billion Gain on OpenAI Stake! OpenTools",
       "topic": "chatbot-development",
       "source": "OpenTools",
       "date": "Thu, 12 Feb 2026 12:36:39 GMT",
-      "imageUrl": "https://imagedelivery.net/FCiXvK7dG4mSm_W_033WNA/95ad30e1-e3ae-4110-967a-4118ae38db00/public",
+      "imageUrl": "images/chatbot-development/vwq16g.webp",
       "url": "https://opentools.ai/news/softbanks-ai-gamble-pays-off-dollar198-billion-gain-on-openai-stake"
     },
     {
@@ -1433,13 +1483,13 @@
       "url": "https://www.openpr.com/news/4388233/drone-camera-market-anticipated-to-reach-usd-303-68-billion"
     },
     {
-      "id": "gn-chatbot-development-12",
+      "id": "gn-chatbot-development-11",
       "title": "Anthropic Sindir OpenAI Through Super Bowl Ads, Emphasizes Claude is Ad-Free in the Middle of the AI War - VOI.id",
       "summary": "Anthropic Sindir OpenAI Through Super Bowl Ads, Emphasizes Claude is Ad-Free in the Middle of the AI War VOI.id",
       "topic": "chatbot-development",
       "source": "VOI.id",
       "date": "Thu, 12 Feb 2026 10:26:10 GMT",
-      "imageUrl": "https://imgsrv2.voi.id/L7Q9f5alwnUqjJudNDnTXI6ElTJuG-0BphtlQTfwayY/auto/1200/675/sm/1/bG9jYWw6Ly8vcHVibGlzaGVycy81NTcxODEvMjAyNjAyMDgyMDQzLW1haW4uanBn.jpg",
+      "imageUrl": "images/chatbot-development/m7ndl0.webp",
       "url": "https://voi.id/en/technology/557181"
     },
     {
@@ -1493,13 +1543,13 @@
       "url": "https://www.thestandard.com.hk/world-news/article/324336/Singapore-sees-FY2026-budget-surplus-at-1pc-of-GDP"
     },
     {
-      "id": "gn-chatbot-development-46",
+      "id": "gn-chatbot-development-43",
       "title": "Zhipu AI Model GLM-5 Tops Benchmarks, Shares Jump 34% - Meyka",
       "summary": "Zhipu AI Model GLM-5 Tops Benchmarks, Shares Jump 34% Meyka",
       "topic": "chatbot-development",
       "source": "Meyka",
       "date": "Thu, 12 Feb 2026 09:39:36 GMT",
-      "imageUrl": "https://blog-meyka-wordpress.s3.us-east-2.amazonaws.com/wp-content/uploads/2026/02/Whisk_90838b78462929ab02a4d2984a455eb2dr.webp",
+      "imageUrl": "images/chatbot-development/3fch3l.webp",
       "url": "https://meyka.com/blog/zhipu-ai-model-glm-5-tops-benchmarks-shares-jump-34/"
     },
     {
@@ -1583,13 +1633,13 @@
       "url": "https://punemirror.com/entertainment/youtube/youtube-music-ai-playlist-premium-feature/"
     },
     {
-      "id": "gn-chatbot-development-40",
+      "id": "gn-chatbot-development-37",
       "title": "Anthropic’s Claude Surpasses Google Gemini as Top AI for Real Work - FilmoGaz",
       "summary": "Anthropic’s Claude Surpasses Google Gemini as Top AI for Real Work FilmoGaz",
       "topic": "chatbot-development",
       "source": "FilmoGaz",
       "date": "Thu, 12 Feb 2026 07:24:02 GMT",
-      "imageUrl": "https://www.filmogaz.com/uploads/images/202602/image_1200x675_698d8012c2cc2.webp",
+      "imageUrl": "images/chatbot-development/kasjc5.webp",
       "url": "https://www.filmogaz.com/145769"
     },
     {
@@ -1749,7 +1799,7 @@
       "topic": "chatbot-development",
       "source": "VentureBeat",
       "date": "Thu, 12 Feb 2026 00:12:51 GMT",
-      "imageUrl": "https://images.ctfassets.net/jdtwqhzvc2n1/dQV83itMFRGEKiT87OEGw/bf309d1debd7b55d3165a2c762addb20/SZWjerB5QqmiUg-LswgV3.jpg?w=800&q=75",
+      "imageUrl": "images/chatbot-development/21pdbs.webp",
       "url": "https://venturebeat.com/technology/z-ais-open-source-glm-5-achieves-record-low-hallucination-rate-and-leverages"
     },
     {
@@ -1813,13 +1863,13 @@
       "url": "https://www.globalbankingandfinance.com/trading-day-payrolls-surprise-another-yen-rise/"
     },
     {
-      "id": "gn-chatbot-development-3",
+      "id": "gn-chatbot-development-2",
       "title": "Artificial Intelligence Disrupts Business Models and Tech Markets - Vision Times",
       "summary": "Artificial Intelligence Disrupts Business Models and Tech Markets Vision Times",
       "topic": "chatbot-development",
       "source": "Vision Times",
       "date": "Wed, 11 Feb 2026 21:11:45 GMT",
-      "imageUrl": "https://img.visiontimes.com/2026/02/p3731171a514974563-1.jpg",
+      "imageUrl": "images/chatbot-development/77mww5.webp",
       "url": "https://www.visiontimes.com/2026/02/11/artificial-intelligence-disrupts-business-models-and-tech-markets.html"
     },
     {
@@ -1973,16 +2023,6 @@
       "url": "https://swikblog.com/uk-ai-chip-startup-olix-raises-220m-inference-chips/"
     },
     {
-      "id": "gn-chatbot-development-2",
-      "title": "Tech giants turn to competitors' AI, Meta stands firm - MSN",
-      "summary": "Tech giants turn to competitors' AI, Meta stands firm MSN",
-      "topic": "chatbot-development",
-      "source": "MSN",
-      "date": "Wed, 11 Feb 2026 16:17:21 GMT",
-      "imageUrl": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1W939c.img?w=768&h=419&m=4&q=80",
-      "url": "https://www.msn.com/en-xl/news/other/tech-giants-turn-to-competitors-ai-meta-stands-firm/ar-AA1W99kK"
-    },
-    {
       "id": "gn-unmanned-aircraft-13",
       "title": "Customer Experience (CX) Administration Software Market Fueled by Digital CX Transformation, and AI Integration: - Market Research Intellect - PR Newswire UK",
       "summary": "Customer Experience (CX) Administration Software Market Fueled by Digital CX Transformation, and AI Integration: - Market Research Intellect PR Newswire UK",
@@ -2021,6 +2061,16 @@
       "date": "Wed, 11 Feb 2026 15:54:18 GMT",
       "imageUrl": "https://dronelife.com/wp-content/uploads/2026/02/filters_quality75-e1770825073624.jpg",
       "url": "https://dronelife.com/2026/02/11/nearmap-and-new-light-deploy-fema-disaster-response-system/"
+    },
+    {
+      "id": "gn-chatbot-development-5",
+      "title": "Tech Giants Turn to Competitors' AI, Meta Stands Firm - 조선일보",
+      "summary": "Tech Giants Turn to Competitors' AI, Meta Stands Firm 조선일보",
+      "topic": "chatbot-development",
+      "source": "조선일보",
+      "date": "Wed, 11 Feb 2026 15:41:12 GMT",
+      "imageUrl": "images/chatbot-development/5uwh9x.webp",
+      "url": "https://www.chosun.com/english/industry-en/2026/02/12/BT4TNCFUG5DLTPVCEQDNMIN25E/"
     },
     {
       "id": "gn-unmanned-aircraft-18",
@@ -2223,13 +2273,13 @@
       "url": "https://trendsresearch.org/insight/ai-driven-influence-operations-threats-to-middle-eastern-information-sovereignty-in-the-age-of-synthetic-media/"
     },
     {
-      "id": "gn-chatbot-development-5",
+      "id": "gn-chatbot-development-4",
       "title": "Google Gemini’s dominance is over — Anthropic’s new Claude is now the best AI for real work - Tom's Guide",
       "summary": "Google Gemini’s dominance is over — Anthropic’s new Claude is now the best AI for real work Tom's Guide",
       "topic": "chatbot-development",
       "source": "Tom's Guide",
       "date": "Wed, 11 Feb 2026 12:05:00 GMT",
-      "imageUrl": "https://cdn.mos.cms.futurecdn.net/JJRERgoMoG89VPQroNSv3h-2560-80.jpg",
+      "imageUrl": "images/chatbot-development/5slpjb.webp",
       "url": "https://www.tomsguide.com/ai/google-geminis-dominance-is-over-anthropics-new-claude-is-now-the-best-ai-for-real-work"
     },
     {
@@ -2303,13 +2353,13 @@
       "url": "https://www.indiablooms.com/life/youtube-just-changed-music-forever-new-ai-playlist-feature-is-here/details"
     },
     {
-      "id": "gn-chatbot-development-4",
+      "id": "gn-chatbot-development-1",
       "title": "Super Bowl spots spark fight over whether we’re ready for ads from our chatbots - Los Angeles Times",
       "summary": "Super Bowl spots spark fight over whether we’re ready for ads from our chatbots Los Angeles Times",
       "topic": "chatbot-development",
       "source": "Los Angeles Times",
       "date": "Wed, 11 Feb 2026 11:00:00 GMT",
-      "imageUrl": "https://ca-times.brightspotcdn.com/dims4/default/8b49748/2147483647/strip/false/crop/6240x4160+0+0/resize/1486x991!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F68%2F1b%2Fe2efb39740c5aa2ebe59341a1e61%2Fhttps-delivery-gettyimages.com%2Fdownloads%2F2185275126",
+      "imageUrl": "images/chatbot-development/48n7w5.webp",
       "url": "https://www.latimes.com/business/story/2026-02-11/super-bowl-spots-spark-fight-over-whether-were-ready-for-ads-from-our-chatbots"
     },
     {
@@ -2543,13 +2593,13 @@
       "url": "https://vajiramandravi.com/current-affairs/daily-editorial-analysis-11-february-2026/"
     },
     {
-      "id": "gn-chatbot-development-49",
-      "title": "Milestone: 100B Diffusion Language Model Reaches 892 Tokens/Second, Successfully Exploring an Alternative Path for AI - 36 Kr",
-      "summary": "Milestone: 100B Diffusion Language Model Reaches 892 Tokens/Second, Successfully Exploring an Alternative Path for AI 36 Kr",
+      "id": "gn-chatbot-development-46",
+      "title": "Milestone: 100B Diffusion Language Model Reaches 892 Tokens/Second, Successfully Exploring an Alternative Path for AI - 36氪",
+      "summary": "Milestone: 100B Diffusion Language Model Reaches 892 Tokens/Second, Successfully Exploring an Alternative Path for AI 36氪",
       "topic": "chatbot-development",
-      "source": "36 Kr",
+      "source": "36氪",
       "date": "Wed, 11 Feb 2026 04:52:11 GMT",
-      "imageUrl": "https://img.36krcdn.com/hsossms/20260211/v2_3e90df2eca8a4cc3a24e3ecd05ebeafd@5091053@ai_oswg1056057oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+      "imageUrl": "images/chatbot-development/9gjc3m.webp",
       "url": "https://eu.36kr.com/en/p/3678264053719682"
     },
     {
@@ -2719,7 +2769,7 @@
       "topic": "chatbot-development",
       "source": "매일경제",
       "date": "Tue, 10 Feb 2026 22:22:24 GMT",
-      "imageUrl": "https://wimg.mk.co.kr/news/cms/202602/11/news-g.v1.20260210.f218fde85f75434f869f14baf89d5652_P1.jpg",
+      "imageUrl": "images/chatbot-development/m88omn.webp",
       "url": "https://www.mk.co.kr/en/it/11959207"
     },
     {
@@ -2733,13 +2783,13 @@
       "url": "https://dronexl.co/2026/02/10/illinois-tech-drone-base-station-deployment/"
     },
     {
-      "id": "gn-chatbot-development-11",
+      "id": "gn-chatbot-development-9",
       "title": "EXCLUSIVE: These Super Bowl Ads Won With AI, but Not Social Media - ADWEEK",
       "summary": "EXCLUSIVE: These Super Bowl Ads Won With AI, but Not Social Media ADWEEK",
       "topic": "chatbot-development",
       "source": "ADWEEK",
       "date": "Tue, 10 Feb 2026 22:01:14 GMT",
-      "imageUrl": "https://static-www.adweek.com/wp-content/uploads/2026/02/chatgpt-at-symbol-2024.webp?w=652&h=366&crop=1",
+      "imageUrl": "images/chatbot-development/dikwy0.webp",
       "url": "https://www.adweek.com/media/exclusive-these-super-bowl-ads-won-with-ai-but-not-social-media/"
     },
     {
@@ -2963,13 +3013,13 @@
       "url": "https://petapixel.com/2026/02/10/us-air-force-bans-meta-smart-glasses-over-operational-security/"
     },
     {
-      "id": "gn-chatbot-development-39",
+      "id": "gn-chatbot-development-36",
       "title": "Google Gemini Was Fastest Growing AI Platform In January 2026, Usage Grew 19.2% - OfficeChai",
       "summary": "Google Gemini Was Fastest Growing AI Platform In January 2026, Usage Grew 19.2% OfficeChai",
       "topic": "chatbot-development",
       "source": "OfficeChai",
       "date": "Tue, 10 Feb 2026 18:45:34 GMT",
-      "imageUrl": "https://i0.wp.com/officechai.com/wp-content/uploads/2025/12/Gemini_SS.width-1300.jpg?fit=1300%2C731&ssl=1",
+      "imageUrl": "images/chatbot-development/asqemx.webp",
       "url": "https://officechai.com/ai/google-gemini-was-fastest-growing-ai-platform-in-january-2026-usage-grew-19-2/"
     },
     {
@@ -3191,6 +3241,16 @@
       "date": "Tue, 10 Feb 2026 15:21:00 GMT",
       "imageUrl": "https://news.finterra.ai/wp-content/uploads/2026/02/9b43ebfb-b6a4-473e-a1f2-61f63112c098-1024x683.png",
       "url": "https://markets.financialcontent.com/stocks/article/finterra-2026-2-10-the-architect-of-intelligence-a-deep-dive-into-nvidia-nvda-in-2026"
+    },
+    {
+      "id": "gn-chatbot-development-49",
+      "title": "New Study Reveals the Limits of ChatGPT for Medical Self-Diagnosis - ucstrategies.com",
+      "summary": "New Study Reveals the Limits of ChatGPT for Medical Self-Diagnosis ucstrategies.com",
+      "topic": "chatbot-development",
+      "source": "ucstrategies.com",
+      "date": "Tue, 10 Feb 2026 15:17:28 GMT",
+      "imageUrl": "images/chatbot-development/gjexdt.webp",
+      "url": "https://ucstrategies.com/news/new-study-reveals-the-limits-of-chatgpt-for-medical-self-diagnosis/"
     },
     {
       "id": "gn-business-economy-13",
@@ -3563,16 +3623,6 @@
       "url": "https://thedefensepost.com/2026/02/10/india-laser-sniper-ugv/"
     },
     {
-      "id": "gn-chatbot-development-9",
-      "title": "Goodcall - Goodcall",
-      "summary": "Goodcall Goodcall",
-      "topic": "chatbot-development",
-      "source": "Goodcall",
-      "date": "Tue, 10 Feb 2026 10:00:24 GMT",
-      "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop&auto=format",
-      "url": "https://www.goodcall.com/voice-ai/ai-like-chatgpt"
-    },
-    {
       "id": "gn-governance-politics-38",
       "title": "Far-left nonprofits in the hot seat as lawmaker exposes them for 'sowing chaos' in US - Fox News",
       "summary": "Far-left nonprofits in the hot seat as lawmaker exposes them for 'sowing chaos' in US Fox News",
@@ -3723,16 +3773,6 @@
       "url": "https://nerdbot.com/2026/02/09/ai-enhanced-thermal-cameras-whats-new/"
     },
     {
-      "id": "gn-chatbot-development-18",
-      "title": "I tested Gemini 3 Flash vs Claude 4.6 Opus in 9 tough challenges — here’s the winner - Tom's Guide",
-      "summary": "I tested Gemini 3 Flash vs Claude 4.6 Opus in 9 tough challenges — here’s the winner Tom's Guide",
-      "topic": "chatbot-development",
-      "source": "Tom's Guide",
-      "date": "Tue, 10 Feb 2026 06:31:54 GMT",
-      "imageUrl": "https://cdn.mos.cms.futurecdn.net/Qu6zuTTsiB3oukez8hpoiZ-2000-80.jpg",
-      "url": "https://www.tomsguide.com/ai/i-tested-gemini-3-flash-vs-claude-4-6-opus-in-9-tough-challenges-heres-the-winner"
-    },
-    {
       "id": "gn-governance-politics-29",
       "title": "The Epstein Files and China’s Information War Against the Dalai Lama - Central Tibetan Administration",
       "summary": "The Epstein Files and China’s Information War Against the Dalai Lama Central Tibetan Administration",
@@ -3741,6 +3781,16 @@
       "date": "Tue, 10 Feb 2026 06:30:36 GMT",
       "imageUrl": "https://tibet.net/wp-content/uploads/2026/02/thediplomat_2025-07-24-140253.jpg",
       "url": "https://tibet.net/the-epstein-files-and-chinas-information-war-against-the-dalai-lama/"
+    },
+    {
+      "id": "gn-chatbot-development-16",
+      "title": "I tested Gemini 3 Flash vs Claude 4.6 Opus in 9 tough challenges — here’s the winner - Tom's Guide",
+      "summary": "I tested Gemini 3 Flash vs Claude 4.6 Opus in 9 tough challenges — here’s the winner Tom's Guide",
+      "topic": "chatbot-development",
+      "source": "Tom's Guide",
+      "date": "Tue, 10 Feb 2026 06:30:00 GMT",
+      "imageUrl": "images/chatbot-development/84ebdn.webp",
+      "url": "https://www.tomsguide.com/ai/i-tested-gemini-3-flash-vs-claude-4-6-opus-in-9-tough-challenges-heres-the-winner"
     },
     {
       "id": "gn-business-economy-25",
@@ -3933,13 +3983,13 @@
       "url": "https://www.businesstoday.com.my/2026/02/10/singapore-raises-2026-growth-outlook-to-2-4-after-strong-2025/"
     },
     {
-      "id": "gn-chatbot-development-35",
+      "id": "gn-chatbot-development-32",
       "title": "Altman touts ChatGPT rebound, unveils new model as OpenAI pursues $100B - CHOSUNBIZ - Chosunbiz",
       "summary": "Altman touts ChatGPT rebound, unveils new model as OpenAI pursues $100B - CHOSUNBIZ Chosunbiz",
       "topic": "chatbot-development",
       "source": "Chosunbiz",
       "date": "Tue, 10 Feb 2026 00:16:00 GMT",
-      "imageUrl": "https://biz.chosun.com/resizer/v2/E2DKN6STMRNSHM24L7SDHV76SA.jpg?auth=7088eadd37caf0a1f4323adc0b25afed3db69539a1c274ec19ec8a265ef5485c&width=1200&height=630&smart=true",
+      "imageUrl": "images/chatbot-development/lb6o92.webp",
       "url": "https://biz.chosun.com/en/en-it/2026/02/10/ZEUTJPKVE5FHNOG36J7WEBF53Y/"
     },
     {
@@ -3973,13 +4023,13 @@
       "url": "https://www.9news.com.au/national/romance-scam-ai-intimacy-romance-scams-more-sophisticated-than-ever-technology-news/3136643f-ebd1-40cf-bd5a-f29887f33bbc"
     },
     {
-      "id": "gn-chatbot-development-23",
+      "id": "gn-chatbot-development-24",
       "title": "OpenAI Crosses the Rubicon: ChatGPT's First Ads Signal a Seismic Shift in How AI Makes Money - WebProNews",
       "summary": "OpenAI Crosses the Rubicon: ChatGPT's First Ads Signal a Seismic Shift in How AI Makes Money WebProNews",
       "topic": "chatbot-development",
       "source": "WebProNews",
       "date": "Mon, 09 Feb 2026 23:30:54 GMT",
-      "imageUrl": "https://www.webpronews.com/wp-content/uploads/2026/02/article-9863-1770679756.jpeg",
+      "imageUrl": "images/chatbot-development/4kur22.webp",
       "url": "https://www.webpronews.com/openai-crosses-the-rubicon-chatgpts-first-ads-signal-a-seismic-shift-in-how-ai-makes-money/"
     },
     {
@@ -4153,13 +4203,13 @@
       "url": "https://www.newagebd.net/post/opinion/290690/can-democracy-survive-without-shared-reality"
     },
     {
-      "id": "gn-chatbot-development-7",
+      "id": "gn-chatbot-development-8",
       "title": "ChatGPT Growth Surges Past 10% Monthly Amid Rising AI Competition - techi.com",
       "summary": "ChatGPT Growth Surges Past 10% Monthly Amid Rising AI Competition techi.com",
       "topic": "chatbot-development",
       "source": "techi.com",
       "date": "Mon, 09 Feb 2026 17:38:27 GMT",
-      "imageUrl": "https://www.techi.com/wp-content/uploads/2026/02/2025-02-09-OpenAI-CEO-says-ChatGPT-back-to-over-10-monthly-growth-CNBC-reports-1200x600.webp",
+      "imageUrl": "images/chatbot-development/jwm3w0.webp",
       "url": "https://www.techi.com/chatgpt-10-percent-growth-ai-competition/"
     },
     {
@@ -4273,24 +4323,24 @@
       "url": "https://sg.finance.yahoo.com/news/ai-led-demand-continue-singapore-155413765.html"
     },
     {
-      "id": "gn-chatbot-development-38",
+      "id": "gn-chatbot-development-35",
       "title": "California State University System Partners With Tech Giants to Become First AI-Empowered University Network - Technobezz",
       "summary": "California State University System Partners With Tech Giants to Become First AI-Empowered University Network Technobezz",
       "topic": "chatbot-development",
       "source": "Technobezz",
       "date": "Mon, 09 Feb 2026 15:33:31 GMT",
-      "imageUrl": "https://cdn.technobezz.com/c/Technobezz_2026_02_09_T103138_029_b143d27f0a.png",
+      "imageUrl": "images/chatbot-development/vg4gaf.webp",
       "url": "https://www.technobezz.com/news/california-state-university-system-partners-with-tech-giants-to-become-first-ai-empowered-university-network"
     },
     {
-      "id": "gn-chatbot-development-16",
-      "title": "Report: OpenAI CEO says ChatGPT back to over 10% monthly growth - AOL.com",
-      "summary": "Report: OpenAI CEO says ChatGPT back to over 10% monthly growth AOL.com",
+      "id": "gn-chatbot-development-18",
+      "title": "Google Gemini Just Set XRP’s “Realistic Ceiling” for 2026 — and It’s Not What Bulls Want to Hear - 24/7 Wall St.",
+      "summary": "Google Gemini Just Set XRP’s “Realistic Ceiling” for 2026 — and It’s Not What Bulls Want to Hear 24/7 Wall St.",
       "topic": "chatbot-development",
-      "source": "AOL.com",
-      "date": "Mon, 09 Feb 2026 15:19:40 GMT",
-      "imageUrl": "https://s.yimg.com/cv/apiv2/aolfp/images/og-image.png",
-      "url": "https://www.aol.com/articles/openai-ceo-says-chatgpt-back-144434803.html?utm_source=spotim&utm_medium=spotim_recirculation&spot_im_comment_id=sp_IjnMf2Jd_23501346_c_4CW0lC&spot_im_highlight_immediate=true"
+      "source": "24/7 Wall St.",
+      "date": "Mon, 09 Feb 2026 15:22:45 GMT",
+      "imageUrl": "images/chatbot-development/vtpwdb.webp",
+      "url": "https://247wallst.com/investing/2026/02/09/google-gemini-just-set-xrps-realistic-ceiling-for-2026-and-its-not-what-bulls-want-to-hear/"
     },
     {
       "id": "gn-environment-science-12",
@@ -4303,14 +4353,14 @@
       "url": "https://farmonaut.com/mining/ore-sorting-boosting-mining-efficiency-sustainability"
     },
     {
-      "id": "gn-chatbot-development-17",
-      "title": "OpenAI CEO says ChatGPT back to over 10% monthly growth, CNBC reports - WTAQ",
-      "summary": "OpenAI CEO says ChatGPT back to over 10% monthly growth, CNBC reports WTAQ",
+      "id": "gn-chatbot-development-7",
+      "title": "OpenAI CEO says ChatGPT back to over 10% monthly growth, CNBC reports - Reuters",
+      "summary": "OpenAI CEO says ChatGPT back to over 10% monthly growth, CNBC reports Reuters",
       "topic": "chatbot-development",
-      "source": "WTAQ",
-      "date": "Mon, 09 Feb 2026 14:48:45 GMT",
-      "imageUrl": "https://storage.googleapis.com/media.mwcradio.com/mimesis/2026-02/09/2026-02-09T144810Z_2_LYNXMPEM180XU_RTROPTP_3_OPENAI-CHATGPT-ADS.JPG",
-      "url": "https://wtaq.com/2026/02/09/openai-ceo-says-chatgpt-back-to-over-10-monthly-growth-cnbc-reports/"
+      "source": "Reuters",
+      "date": "Mon, 09 Feb 2026 14:44:44 GMT",
+      "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop&auto=format",
+      "url": "https://www.reuters.com/business/openai-ceo-says-chatgpt-back-over-10-monthly-growth-cnbc-reports-2026-02-09/"
     },
     {
       "id": "gn-ai-academy-23",
@@ -4343,13 +4393,13 @@
       "url": "https://www.msn.com/en-ie/news/other/mq-20-avenger-shown-with-nose-mounted-laser-in-autonomous-combat-drone-concept/ar-AA1P58C2?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
     },
     {
-      "id": "gn-chatbot-development-47",
+      "id": "gn-chatbot-development-44",
       "title": "Opus 4.6, Codex 5.3, and the post-benchmark era - Interconnects AI",
       "summary": "Opus 4.6, Codex 5.3, and the post-benchmark era Interconnects AI",
       "topic": "chatbot-development",
       "source": "Interconnects AI",
       "date": "Mon, 09 Feb 2026 14:03:12 GMT",
-      "imageUrl": "https://substack-post-media.s3.amazonaws.com/public/images/93f85dee-802e-496f-909b-a0f579a994eb_3182x1790.png",
+      "imageUrl": "images/chatbot-development/3vggj5.webp",
       "url": "https://www.interconnects.ai/p/opus-46-vs-codex-53"
     },
     {
@@ -4373,16 +4423,6 @@
       "url": "https://www.chemistryworld.com/news/india-eu-trade-deal-will-cut-tariffs-and-enable-economic-migration/4022913.article"
     },
     {
-      "id": "gn-chatbot-development-27",
-      "title": "OpenAI's ChatGPT growth reaccelerates past 10% as $100B round looms - The Tech Buzz",
-      "summary": "OpenAI's ChatGPT growth reaccelerates past 10% as $100B round looms The Tech Buzz",
-      "topic": "chatbot-development",
-      "source": "The Tech Buzz",
-      "date": "Mon, 09 Feb 2026 13:42:00 GMT",
-      "imageUrl": "https://charming-card-d91ad3487b.media.strapiapp.com/file_f5f3915085.png",
-      "url": "https://www.techbuzz.ai/articles/openai-s-chatgpt-growth-reaccelerates-past-10-as-100b-round-looms"
-    },
-    {
       "id": "gn-health-style-21",
       "title": "GBT Technologies, Inc. (OTC: GTCH) Wholly Owned Subsidiary, “Cube Wellness Technologies”, Enters Digital Wellness Sector with First Major Investment in Smart Wellness AI Machines to Support Nationwide University Rollout and Appoints New Board Mem - Yahoo Finance",
       "summary": "GBT Technologies, Inc. (OTC: GTCH) Wholly Owned Subsidiary, “Cube Wellness Technologies”, Enters Digital Wellness Sector with First Major Investment in Smart Wellness AI Machines to Support Nationwide University Rollout and Appoints New Board Mem Yahoo Finance",
@@ -4403,13 +4443,13 @@
       "url": "https://farmonaut.com/mining/phoenix-copper-2026-leading-sustainable-mining"
     },
     {
-      "id": "gn-chatbot-development-29",
+      "id": "gn-chatbot-development-26",
       "title": "Bot Games Launches AI Agent Competition with 1 BTC Prize Pool, Open Source Only - openPR.com",
       "summary": "Bot Games Launches AI Agent Competition with 1 BTC Prize Pool, Open Source Only openPR.com",
       "topic": "chatbot-development",
       "source": "openPR.com",
       "date": "Mon, 09 Feb 2026 13:05:23 GMT",
-      "imageUrl": "https://cdn.open-pr.com/L/2/L206225985_g.jpg",
+      "imageUrl": "images/chatbot-development/5lsaa9.webp",
       "url": "https://www.openpr.com/news/4381079/bot-games-launches-ai-agent-competition-with-1-btc-prize-pool"
     },
     {
@@ -4421,16 +4461,6 @@
       "date": "Mon, 09 Feb 2026 12:30:00 GMT",
       "imageUrl": "https://www.cnet.com/a/img/resize/6f3560d17ff4435a447e6cc6ea8183d248ab4cfd/hub/2025/12/18/1db337ed-c54b-495d-8d84-db4a766ccf1f/person-using-workout-app.jpg?auto=webp&fit=crop&height=675&width=1200",
       "url": "https://www.cnet.com/health/fitness/best-workout-apps/"
-    },
-    {
-      "id": "gn-chatbot-development-24",
-      "title": "OpenAI vs. Anthropic Super Bowl ad clash and trash talk signals a new era in the battle over AI - Fortune",
-      "summary": "OpenAI vs. Anthropic Super Bowl ad clash and trash talk signals a new era in the battle over AI Fortune",
-      "topic": "chatbot-development",
-      "source": "Fortune",
-      "date": "Mon, 09 Feb 2026 12:06:00 GMT",
-      "imageUrl": "https://fortune.com/img-assets/wp-content/uploads/2026/02/OpenAI-v-Anthropic-Superbowl-Ads.jpg",
-      "url": "https://fortune.com/2026/02/09/super-bowl-ads-anthropic-openai-rivalry-trash-talk-ai-agent-war/"
     },
     {
       "id": "gn-visual-art-photography-46",
@@ -4533,13 +4563,13 @@
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNTJDVDlscjVneVR4QlpSeUc1WTNhdndKcTBCLXMzMmhBclQ4RE0wajNQVGgybVMyQ2Q5dW5XdGNVRGtwRm95NmFsTDE3N3VPNUpYYjlBYkFoa1Vpb3hnTzBkMzl6V0U3T2VoLTFOZDYyVzVIeVZ1cTRGNEdjWmpfWl9ZYkpFSmszWnh5OU9XR0tLRmw2azJJZEUzSkIzLVhlWFZ6cE92aGxGS3NpQkdiSzAyVTI1QQ?oc=5"
     },
     {
-      "id": "gn-chatbot-development-8",
+      "id": "gn-chatbot-development-6",
       "title": "EU Commission targets Meta’s blockade of rival AI chatbots on WhatsApp - Techzine Global",
       "summary": "EU Commission targets Meta’s blockade of rival AI chatbots on WhatsApp Techzine Global",
       "topic": "chatbot-development",
       "source": "Techzine Global",
       "date": "Mon, 09 Feb 2026 10:05:26 GMT",
-      "imageUrl": "https://www.techzine.eu/wp-content/uploads/2025/01/Whatsapp_unsplash.jpg",
+      "imageUrl": "images/chatbot-development/3hhjys.webp",
       "url": "https://www.techzine.eu/news/applications/138615/eu-commission-targets-meta-s-blockade-of-rival-ai-chatbots-on-whatsapp/"
     },
     {
@@ -4653,13 +4683,13 @@
       "url": "https://www.simplilearn.com/top-cyber-security-projects-article"
     },
     {
-      "id": "gn-chatbot-development-13",
+      "id": "gn-chatbot-development-12",
       "title": "20 Best Generative AI Tools of 2026 | Top Picks and Benefits - Simplilearn.com",
       "summary": "20 Best Generative AI Tools of 2026 | Top Picks and Benefits Simplilearn.com",
       "topic": "chatbot-development",
       "source": "Simplilearn.com",
       "date": "Mon, 09 Feb 2026 08:00:00 GMT",
-      "imageUrl": "https://www.simplilearn.com/ice9/free_resources_article_thumb/Top_Generative_AI_Tools.jpg",
+      "imageUrl": "images/chatbot-development/kylsf6.webp",
       "url": "https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/top-generative-ai-tools"
     },
     {
@@ -4753,13 +4783,13 @@
       "url": "https://scitechdaily.com/breakthrough-ai-tool-identifies-25-previously-unknown-magnetic-materials/"
     },
     {
-      "id": "gn-chatbot-development-1",
+      "id": "gn-chatbot-development-0",
       "title": "The Best AI Chatbots We've Tested for 2026 - PCMag",
       "summary": "The Best AI Chatbots We've Tested for 2026 PCMag",
       "topic": "chatbot-development",
       "source": "PCMag",
       "date": "Mon, 09 Feb 2026 04:41:15 GMT",
-      "imageUrl": "https://i.pcmag.com/imagery/roundups/01AY6LKrl2he2T0GJgvaDXG-2..v1730125763.png",
+      "imageUrl": "images/chatbot-development/6mkgde.webp",
       "url": "https://www.pcmag.com/picks/the-best-ai-chatbots?test_uuid=04IpBmWGZleS0I0J3epvMrC&test_variant=B"
     },
     {
@@ -4903,16 +4933,6 @@
       "url": "https://techmitra.in/20-best-chatgpt-prompts-for-health-and-fitness/"
     },
     {
-      "id": "gn-chatbot-development-6",
-      "title": "Apple Prepares to Enable Third-Party AI Voice Assistants in CarPlay - MLQ.ai",
-      "summary": "Apple Prepares to Enable Third-Party AI Voice Assistants in CarPlay MLQ.ai",
-      "topic": "chatbot-development",
-      "source": "MLQ.ai",
-      "date": "Sun, 08 Feb 2026 15:25:22 GMT",
-      "imageUrl": "https://mlqpdf.s3.amazonaws.com/news_images/apple-carplay.png",
-      "url": "https://mlq.ai/news/apple-prepares-to-enable-third-party-ai-voice-assistants-in-carplay/"
-    },
-    {
       "id": "gn-visual-art-photography-24",
       "title": "Samsung innovates the Galaxy S26 Ultra’s camera with anti-glare technology and realistic skin colors - Mix Vale",
       "summary": "Samsung innovates the Galaxy S26 Ultra’s camera with anti-glare technology and realistic skin colors Mix Vale",
@@ -4999,7 +5019,7 @@
       "topic": "chatbot-development",
       "source": "The Financial Express",
       "date": "Sun, 08 Feb 2026 04:18:55 GMT",
-      "imageUrl": "https://images.financialexpressdigital.com/2026/02/Untitled-design-2026-02-06T163820.416.jpg?quality=100",
+      "imageUrl": "images/chatbot-development/yldu9b.webp",
       "url": "https://www.financialexpress.com/india-news/anthropic-claude-opus-4-6-explained-a-powerful-model-for-real-world-coding-enterprise-agents-and-professional-work/4133608/"
     },
     {
@@ -5063,13 +5083,13 @@
       "url": "https://www.webpronews.com/the-telephoto-extender-how-a-clever-optical-trick-could-redefine-smartphone-zoom-in-2026/"
     },
     {
-      "id": "gn-chatbot-development-33",
+      "id": "gn-chatbot-development-31",
       "title": "The $1.2 Trillion Question: Why Wall Street's Panic Over AI Killing Enterprise Software Defies Logic, History, and Common Sense - WebProNews",
       "summary": "The $1.2 Trillion Question: Why Wall Street's Panic Over AI Killing Enterprise Software Defies Logic, History, and Common Sense WebProNews",
       "topic": "chatbot-development",
       "source": "WebProNews",
       "date": "Sat, 07 Feb 2026 22:05:34 GMT",
-      "imageUrl": "https://www.webpronews.com/wp-content/uploads/2026/02/article-9636-1770501847.jpeg",
+      "imageUrl": "images/chatbot-development/t5tjcp.webp",
       "url": "https://www.webpronews.com/the-1-2-trillion-question-why-wall-streets-panic-over-ai-killing-enterprise-software-defies-logic-history-and-common-sense/"
     },
     {
@@ -5119,7 +5139,7 @@
       "topic": "chatbot-development",
       "source": "WinBuzzer",
       "date": "Sat, 07 Feb 2026 17:39:23 GMT",
-      "imageUrl": "https://winbuzzer.com/wp-content/uploads/2026/02/Apple-Carplay.jpg",
+      "imageUrl": "images/chatbot-development/6obrsg.webp",
       "url": "https://winbuzzer.com/2026/02/07/apple-opens-carplay-chatgpt-claude-gemini-xcxwbn/"
     },
     {
@@ -5253,6 +5273,16 @@
       "url": "https://farmonaut.com/precision-farming/iot-for-smart-farming-7-game-changing-systems-for-2026"
     },
     {
+      "id": "gn-chatbot-development-34",
+      "title": "Anthropic Launches Claude Opus 4.6: A Big Step in AI Competition - indiaherald.com",
+      "summary": "Anthropic Launches Claude Opus 4.6: A Big Step in AI Competition indiaherald.com",
+      "topic": "chatbot-development",
+      "source": "indiaherald.com",
+      "date": "Sat, 07 Feb 2026 09:04:27 GMT",
+      "imageUrl": "images/chatbot-development/nlw8fn.webp",
+      "url": "https://www.indiaherald.com/Viral/Read/994877498/Anthropic-Launches-Claude-Opus-A-Big-Step-in-AI-Competition"
+    },
+    {
       "id": "gn-environment-science-21",
       "title": "Saracen Mineral: Leading Gold Mining In Western Australia - Farmonaut",
       "summary": "Saracen Mineral: Leading Gold Mining In Western Australia Farmonaut",
@@ -5263,13 +5293,13 @@
       "url": "https://farmonaut.com/mining/saracen-mineral-leading-gold-mining-in-western-australia"
     },
     {
-      "id": "gn-chatbot-development-31",
+      "id": "gn-chatbot-development-28",
       "title": "Silicon Valley's Most Expensive Halftime: AI Giants Wage a Multimillion-Dollar War for Super Bowl Supremacy - WebProNews",
       "summary": "Silicon Valley's Most Expensive Halftime: AI Giants Wage a Multimillion-Dollar War for Super Bowl Supremacy WebProNews",
       "topic": "chatbot-development",
       "source": "WebProNews",
       "date": "Sat, 07 Feb 2026 08:19:44 GMT",
-      "imageUrl": "https://www.webpronews.com/wp-content/uploads/2026/02/article-9591-1770452232.jpeg",
+      "imageUrl": "images/chatbot-development/iyvcsu.webp",
       "url": "https://www.webpronews.com/silicon-valleys-most-expensive-halftime-ai-giants-wage-a-multimillion-dollar-war-for-super-bowl-supremacy/"
     },
     {
@@ -5333,13 +5363,13 @@
       "url": "https://vietbao.vn/en/canh-bao-lua-dao-deepfake-gia-giong-gia-hinh-nguoi-quen-dip-tet-581362.html"
     },
     {
-      "id": "gn-chatbot-development-30",
+      "id": "gn-chatbot-development-27",
       "title": "Google may soon allow users to import chat history from ChatGPT and other chatbots - Moneycontrol",
       "summary": "Google may soon allow users to import chat history from ChatGPT and other chatbots Moneycontrol",
       "topic": "chatbot-development",
       "source": "Moneycontrol",
       "date": "Sat, 07 Feb 2026 03:24:51 GMT",
-      "imageUrl": "https://images.moneycontrol.com/static-mcnews/2026/02/20260207032439_aiapps-2.jpg",
+      "imageUrl": "images/chatbot-development/oe0jo.webp",
       "url": "https://www.moneycontrol.com/technology/google-may-soon-allow-users-to-import-chat-history-from-chatgpt-and-other-chatbots-article-13816532.html"
     },
     {
@@ -5383,16 +5413,6 @@
       "url": "https://www.nytimes.com/2026/02/06/us/politics/trump-obamas-video-apes-truth-social.html"
     },
     {
-      "id": "gn-chatbot-development-0",
-      "title": "The best AI chatbots of 2026: Expert tested and reviewed - ZDNET",
-      "summary": "The best AI chatbots of 2026: Expert tested and reviewed ZDNET",
-      "topic": "chatbot-development",
-      "source": "ZDNET",
-      "date": "Sat, 07 Feb 2026 00:23:00 GMT",
-      "imageUrl": "https://www.zdnet.com/a/img/resize/4747280f6ca180529815938384b21944d9ea2fb8/2025/10/26/6447acd3-2b72-4756-89c5-0dbbbc9c1611/gettyimages-2239372581.jpg?auto=webp&fit=crop&height=675&width=1200",
-      "url": "https://www.zdnet.com/article/best-ai-chatbot/"
-    },
-    {
       "id": "gn-technology-innovation-2",
       "title": "Big Tech firms are beginning to resemble IBM during the 1960s - Bitget",
       "summary": "Big Tech firms are beginning to resemble IBM during the 1960s Bitget",
@@ -5401,16 +5421,6 @@
       "date": "Fri, 06 Feb 2026 23:03:35 GMT",
       "imageUrl": "https://img.bgstatic.com/multiLang/web/cfe162fef73d2e018d93ed311c178bb6.jpeg",
       "url": "https://www.bitget.com/news/detail/12560605187709"
-    },
-    {
-      "id": "gn-chatbot-development-37",
-      "title": "Funny but dishonest: Sam Altman blasts Anthropic’s ChatGPT Super Bowl ad jab - MSN",
-      "summary": "Funny but dishonest: Sam Altman blasts Anthropic’s ChatGPT Super Bowl ad jab MSN",
-      "topic": "chatbot-development",
-      "source": "MSN",
-      "date": "Fri, 06 Feb 2026 22:38:09 GMT",
-      "imageUrl": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1VHf1R.img?w=768&h=576&m=4&q=65",
-      "url": "https://www.msn.com/en-in/money/news/funny-but-dishonest-sam-altman-blasts-anthropic-s-chatgpt-super-bowl-ad-jab/ar-AA1VHI1i?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1"
     },
     {
       "id": "gn-visual-art-photography-44",
@@ -5441,16 +5451,6 @@
       "date": "Fri, 06 Feb 2026 21:51:51 GMT",
       "imageUrl": "https://cdn.trendhunterstatic.com/thumbs/599/nutrition-tracker.jpeg",
       "url": "https://www.trendhunter.com/trends/nutrition-tracker"
-    },
-    {
-      "id": "gn-chatbot-development-28",
-      "title": "Apple Opens CarPlay to ChatGPT and Other AI Chatbots - Gadget Review",
-      "summary": "Apple Opens CarPlay to ChatGPT and Other AI Chatbots Gadget Review",
-      "topic": "chatbot-development",
-      "source": "Gadget Review",
-      "date": "Fri, 06 Feb 2026 20:09:58 GMT",
-      "imageUrl": "https://www.gadgetreview.com/wp-content/uploads/CarPlay3.jpg",
-      "url": "https://www.gadgetreview.com/apple-opens-carplay-to-chatgpt-and-other-ai-chatbots"
     },
     {
       "id": "gn-ai-academy-8",
