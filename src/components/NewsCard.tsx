@@ -33,10 +33,29 @@ function resolveImageUrl(imageUrl: string): string {
   return imageUrl;
 }
 
+/** Topic-based curated fallback images — used when the primary image fails to load.
+ *  Maps each topic to a representative image from public/images/news/. */
+const TOPIC_FALLBACK: Record<string, string> = {
+  "ai-academy": "images/news/foundations-research.webp",
+  "business-economy": "images/news/global-economy.webp",
+  "chatbot-development": "images/news/market-competition.webp",
+  "digital-security": "images/news/security-defence.webp",
+  "environment-science": "images/news/climate-earth.webp",
+  "governance-politics": "images/news/regulation-law.webp",
+  "health-style": "images/news/medical-ai.webp",
+  "musical-art": "images/news/music-creation.webp",
+  "technology-innovation": "images/news/hardware-chips.webp",
+  "unmanned-aircraft": "images/news/civilian-drones.webp",
+  "visual-art-photography": "images/news/artistic-innovation.webp",
+};
+
 export default function NewsCard({ article, topicColor }: NewsCardProps) {
   const imgSrc = resolveImageUrl(article.imageUrl);
   const [imgFailed, setImgFailed] = useState(false);
+  const fallbackSrc = resolveImageUrl(TOPIC_FALLBACK[article.topic] || "");
+  const [fallbackFailed, setFallbackFailed] = useState(false);
   const showFallback = !imgSrc || imgFailed;
+  const showNameCard = showFallback && (!fallbackSrc || fallbackFailed);
 
   return (
     <a
@@ -46,7 +65,7 @@ export default function NewsCard({ article, topicColor }: NewsCardProps) {
       className="group bg-[var(--surface)] overflow-hidden border border-[var(--border)] hover:border-[var(--border-light)] transition-all flex flex-col h-full card-hover"
       style={{ ["--card-accent" as string]: topicColor || "var(--accent)" }}
     >
-      {/* Image — fallback with source name + icon when image is missing or broken */}
+      {/* Image — primary → topic fallback → name card */}
       <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460]">
         {imgSrc && !imgFailed && (
           <img
@@ -57,7 +76,16 @@ export default function NewsCard({ article, topicColor }: NewsCardProps) {
             onError={() => setImgFailed(true)}
           />
         )}
-        {showFallback && (
+        {showFallback && fallbackSrc && !fallbackFailed && (
+          <img
+            src={fallbackSrc}
+            alt=""
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            onError={() => setFallbackFailed(true)}
+          />
+        )}
+        {showNameCard && (
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 px-4">
             <Newspaper size={28} className="text-white/25" />
             <span className="text-white/40 text-xs text-center truncate max-w-full">
